@@ -41,12 +41,12 @@ export default defineConfig({
             urlPattern: ({ url }) => url.pathname.endsWith('.mp3'),
             handler: 'CacheFirst',
             options: {
-              cacheName: 'audio', // keep in sync with src/audio/prefetch.ts
+              cacheName: 'audio',
               // Pages sends Vary: Accept-Encoding and <audio> sends different headers than fetch().
               matchOptions: { ignoreVary: true },
               // Safari requests media with Range; serve 206 slices from the full cached file.
               rangeRequests: true,
-              cacheableResponse: { statuses: [200] },
+              cacheableResponse: { statuses: [0, 200] }, // never cache 206 partials
               expiration: { maxEntries: 20000, purgeOnQuotaError: false },
             },
           },

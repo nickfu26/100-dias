@@ -3,9 +3,9 @@ import { Link } from 'react-router';
 import appAudio from '../../content/app-audio.json';
 import { VOICES } from '../config';
 import { loadManifest, manifestInfo, type Speed, type Voice } from '../audio/manifest';
-import { playSpanish, playUrl, stopAudio } from '../audio/player';
-import { prefetchAudio } from '../audio/prefetch';
+import { playSpanish, playUrl, preloadAudio, stopAudio } from '../audio/player';
 import { spanishVoices, speak, whenVoicesReady } from '../audio/ttsFallback';
+import { onDebug } from '../lib/debugLog';
 import { isStandalone, storageStatus } from '../lib/storage';
 import { bestScore, type SpeechScore } from '../speech/fuzzy';
 import {
@@ -72,18 +72,25 @@ export function MicTest() {
 
   const addLog = useCallback((msg: string) => {
     const t = new Date().toLocaleTimeString('es-ES', { hour12: false });
-    setLog((l) => [`${t}  ${msg}`, ...l].slice(0, 40));
+    setLog((l) => [`${t}  ${msg}`, ...l].slice(0, 200));
   }, []);
 
+  // Low-level audio/speech events (media events, recognition events, watchdogs) → log.
+  useEffect(() => onDebug(addLog), [addLog]);
+
   useEffect(() => {
-    loadManifest().then(() =>
-      prefetchAudio(PHRASES.map((p) => p.es)).then((n) => n && addLog(`cached ${n} audio files for offline`)),
-    );
+    loadManifest().then(async (m) => {
+      if (!m) return addLog('✗ audio manifest failed to load');
+      const t0 = performance.now();
+      const n = await preloadAudio(PHRASES.map((p) => p.es));
+      addLog(`preloaded ${n} clips into memory in ${Math.round(performance.now() - t0)} ms`);
+    });
     return () => stopAudio();
   }, [addLog]);
 
   // ---------- Listening ----------
   function play(text: string, voice: Voice, key: string) {
+    addLog(`tap ▶ "${text}" ${VOICES[voice].name} ${speed}`);
     setPlaying(key);
     playSpanish(text, { voice, speed })
       .then((src) => addLog(`▶ "${text}" · ${VOICES[voice].name} · ${speed} · ${src === 'file' ? 'MP3' : 'system voice (fallback)'}`))
@@ -91,6 +98,8 @@ export function MicTest() {
       .finally(() => setPlaying((p) => (p === key ? null : p)));
   }
   function playSystem(text: string, key: string) {
+    stopAudio();
+    addLog(`tap ▶ "${text}" system voice`);
     setPlaying(key);
     speak(text, 'f', speed === 'slow')
       .then(() => addLog(`▶ "${text}" · system voice ${spanishVoices()[0]?.name ?? '(none)'}`))
@@ -110,7 +119,8 @@ export function MicTest() {
       session.current.stop();
       return;
     }
-    stopAudio();
+    addLog('tap 🎤');
+    setPlaying(null);
     setOutcome(null);
     setScore(null);
     setInterim('');
@@ -168,7 +178,7 @@ export function MicTest() {
   function playMine() {
     if (!recording) return;
     setPlaying('mine');
-    playUrl(recording.url)
+    playUrl(recording.url, 'my recording')
       .catch((e: Error) => addLog(`✗ playback: ${e.message}`))
       .finally(() => setPlaying(null));
   }
@@ -177,7 +187,7 @@ export function MicTest() {
     setPlaying('compare');
     playSpanish(phrase.es, { voice, speed: 'normal' })
       .then(() => new Promise((r) => setTimeout(r, 350)))
-      .then(() => playUrl(recording.url))
+      .then(() => playUrl(recording.url, 'my recording'))
       .then(() => addLog('⇄ compared native → mine'))
       .catch((e: Error) => addLog(`✗ compare: ${e.name} ${e.message}`))
       .finally(() => setPlaying(null));

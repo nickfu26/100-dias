@@ -1,0 +1,59 @@
+{
+ "generated": "2026-09-27T03:49:02+00:00",
+ "voices": {
+  "f": "es-ES-ElviraNeural",
+  "m": "es-ES-AlvaroNeural"
+ },
+ "slowRate": "-30%",
+ "slowPolicy": "all",
+ "entries": {
+  "Hola, ¿qué tal?": {
+   "id": "9e18b99aaf0c",
+   "slow": true
+  },
+  "Me gusta mucho el jamón.": {
+   "id": "e5d9767131fc",
+   "slow": true
+  },
+  "Tengo cinco años.": {
+   "id": "5f4c49d8e9a1",
+   "slow": true
+  },
+  "Un zumo de naranja, por favor.": {
+   "id": "57a6b1489136",
+   "slow": true
+  },
+  "Vale, gracias.": {
+   "id": "59e9bbf7f3ad",
+   "slow": true
+  },
+  "casa": {
+   "id": "81bce1f3bf34",
+   "slow": true
+  },
+  "caza": {
+   "id": "820dde826464",
+   "slow": true
+  },
+  "papa": {
+   "id": "f722f20fc568",
+   "slow": true
+  },
+  "papá": {
+   "id": "bec5e7268a89",
+   "slow": true
+  },
+  "pero": {
+   "id": "98fc7b34760f",
+   "slow": true
+  },
+  "perro": {
+   "id": "6139bdc23a06",
+   "slow": true
+  },
+  "¿Cómo os llamáis?": {
+   "id": "7290d628ef87",
+   "slow": true
+  }
+ }
+}

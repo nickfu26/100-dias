@@ -1,0 +1,72 @@
+/* Azulejo: cream glazed paper, cobalt ink, terracotta accent. */
+:root {
+  color-scheme: light;
+
+  --paper: oklch(96.4% 0.02 85);
+  --paper-raised: oklch(98.8% 0.01 85);
+  --paper-sunk: oklch(92% 0.028 82);
+  --paper-edge: oklch(83% 0.035 80); /* tile underside on light tiles */
+  --ink: oklch(27% 0.09 264);
+  --ink-soft: oklch(46% 0.06 264);
+  --ink-faint: oklch(62% 0.04 264);
+
+  --cobalt: oklch(42% 0.17 264);
+  --cobalt-deep: oklch(31% 0.14 264);
+  --cobalt-wash: oklch(91% 0.035 264);
+  --on-cobalt: oklch(97.5% 0.015 85);
+
+  --terra: oklch(60% 0.15 38);
+  --terra-deep: oklch(47% 0.14 36);
+  --on-terra: oklch(98% 0.01 60);
+
+  --ok: oklch(52% 0.12 150);
+  --ok-wash: oklch(92% 0.05 150);
+  --bad: oklch(52% 0.19 25);
+  --bad-wash: oklch(93% 0.04 25);
+  --warn: oklch(62% 0.13 75);
+  --warn-wash: oklch(93% 0.06 85);
+
+  --font-display: 'Young Serif', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'Lexend', system-ui, -apple-system, sans-serif;
+
+  --r-s: 10px;
+  --r-m: 16px;
+  --r-l: 24px;
+  --r-pill: 999px;
+
+  --tap: 56px; /* minimum primary tap target */
+  --gutter: 16px;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --lift-1: 0 1px 2px oklch(27% 0.09 264 / 0.08), 0 2px 8px -2px oklch(27% 0.09 264 / 0.12);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --paper: oklch(19% 0.035 264);
+    --paper-raised: oklch(24% 0.04 264);
+    --paper-sunk: oklch(15.5% 0.03 264);
+    --paper-edge: oklch(12% 0.03 264);
+    --ink: oklch(93% 0.015 85);
+    --ink-soft: oklch(76% 0.02 85);
+    --ink-faint: oklch(60% 0.025 264);
+
+    --cobalt: oklch(58% 0.16 264);
+    --cobalt-deep: oklch(40% 0.14 264);
+    --cobalt-wash: oklch(28% 0.06 264);
+    --on-cobalt: oklch(98% 0.01 85);
+
+    --terra: oklch(67% 0.14 40);
+    --terra-deep: oklch(50% 0.13 38);
+
+    --ok: oklch(72% 0.13 150);
+    --ok-wash: oklch(28% 0.05 150);
+    --bad: oklch(70% 0.16 25);
+    --bad-wash: oklch(28% 0.06 25);
+    --warn: oklch(80% 0.13 80);
+    --warn-wash: oklch(30% 0.05 80);
+
+    --lift-1: 0 0 0 1px oklch(100% 0 0 / 0.06);
+  }
+}

@@ -1,0 +1,271 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 3px solid var(--terra);
+  outline-offset: 3px;
+  border-radius: var(--r-s);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.1;
+  text-wrap: balance;
+  margin: 0;
+}
+
+p {
+  text-wrap: pretty;
+  margin: 0;
+}
+
+/* ---------- App frame ---------- */
+
+.frame {
+  max-width: 34rem;
+  margin: 0 auto;
+  min-height: 100dvh;
+  padding: 0 calc(var(--gutter) + env(safe-area-inset-right)) calc(32px + env(safe-area-inset-bottom))
+    calc(var(--gutter) + env(safe-area-inset-left));
+}
+
+/* The azulejo band: the signature strip across the top of every screen. */
+.band {
+  height: calc(18px + env(safe-area-inset-top));
+  margin: 0 calc(-1 * var(--gutter) - env(safe-area-inset-left)) 0 calc(-1 * var(--gutter) - env(safe-area-inset-right));
+  background-color: var(--cobalt);
+  background-image:
+    radial-gradient(circle at 50% 100%, var(--paper) 0 5px, transparent 5.5px),
+    radial-gradient(circle at 0 100%, var(--terra) 0 3px, transparent 3.5px),
+    radial-gradient(circle at 100% 100%, var(--terra) 0 3px, transparent 3.5px);
+  background-size: 18px 18px;
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 60px;
+}
+
+.wordmark {
+  font-family: var(--font-display);
+  font-size: 24px;
+  letter-spacing: -0.012em;
+  color: var(--cobalt);
+  text-decoration: none;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0 12px 0 6px;
+  margin-left: -6px;
+  color: var(--ink-soft);
+  text-decoration: none;
+  border-radius: var(--r-s);
+}
+
+/* ---------- Tiles (buttons) ---------- */
+
+.tile {
+  --tile-bg: var(--cobalt);
+  --tile-fg: var(--on-cobalt);
+  --tile-edge: var(--cobalt-deep);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: var(--tap);
+  padding: 0 20px;
+  border: 0;
+  border-radius: var(--r-m);
+  background: var(--tile-bg);
+  color: var(--tile-fg);
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  box-shadow: 0 4px 0 var(--tile-edge);
+  transform: translateY(0);
+  transition-property: transform, box-shadow;
+  transition-duration: 90ms;
+  transition-timing-function: ease-out;
+  user-select: none;
+}
+.tile:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 var(--tile-edge);
+}
+.tile:disabled {
+  opacity: 0.45;
+  cursor: default;
+  transform: none;
+}
+.tile--block {
+  display: flex;
+  width: 100%;
+  min-height: 64px;
+}
+.tile--light {
+  --tile-bg: var(--paper-raised);
+  --tile-fg: var(--ink);
+  --tile-edge: var(--paper-edge);
+}
+.tile--terra {
+  --tile-bg: var(--terra);
+  --tile-fg: var(--on-terra);
+  --tile-edge: var(--terra-deep);
+}
+.tile--small {
+  min-height: 44px;
+  padding: 0 14px;
+  font-size: 15px;
+  border-radius: var(--r-s);
+  box-shadow: 0 3px 0 var(--tile-edge);
+}
+.tile--small:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 var(--tile-edge);
+}
+.tile[aria-pressed='true'] {
+  --tile-bg: var(--cobalt);
+  --tile-fg: var(--on-cobalt);
+  --tile-edge: var(--cobalt-deep);
+}
+
+/* ---------- Type helpers ---------- */
+
+.eyebrow {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--terra-deep);
+}
+@media (prefers-color-scheme: dark) {
+  .eyebrow {
+    color: var(--terra);
+  }
+}
+.muted {
+  color: var(--ink-soft);
+}
+.es {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+.section {
+  margin-top: 36px;
+}
+.section > h2 {
+  font-size: 26px;
+  letter-spacing: -0.012em;
+  margin-bottom: 4px;
+}
+.section > .lede {
+  color: var(--ink-soft);
+  margin-bottom: 16px;
+}
+
+/* ---------- Progress ---------- */
+
+.bar {
+  height: 10px;
+  border-radius: var(--r-pill);
+  background: var(--paper-sunk);
+  overflow: hidden;
+}
+.bar > span {
+  display: block;
+  height: 100%;
+  background: var(--terra);
+  border-radius: inherit;
+  transform-origin: left;
+  transition: transform 600ms var(--ease-out);
+}
+
+/* ---------- Feedback motion (signature: stamp + shake) ---------- */
+
+@keyframes stamp {
+  from {
+    opacity: 0;
+    transform: scale(1.7) rotate(-14deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(-6deg);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-6px);
+  }
+  40%,
+  80% {
+    transform: translateX(6px);
+  }
+}
+.stamp {
+  animation: stamp 280ms var(--ease-out) both;
+}
+.shake {
+  animation: shake 320ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    transition-duration: 1ms !important;
+  }
+}

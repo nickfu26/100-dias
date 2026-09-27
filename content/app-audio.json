@@ -1,0 +1,17 @@
+{
+  "$schema": "./app-audio.schema.json",
+  "phrases": [
+    { "es": "Hola, ¿qué tal?", "en": "Hi, how's it going?", "note": "Everyday greeting" },
+    { "es": "Vale, gracias.", "en": "OK, thanks.", "note": "Distinción: gra-θias" },
+    { "es": "papá", "en": "dad", "note": "Stress on the last syllable" },
+    { "es": "papa", "en": "potato", "note": "Stress on the first syllable — different audio file from papá" },
+    { "es": "casa", "en": "house", "note": "s /s/" },
+    { "es": "caza", "en": "hunt", "note": "z /θ/" },
+    { "es": "pero", "en": "but", "note": "Single tap r" },
+    { "es": "perro", "en": "dog", "note": "Trilled rr" },
+    { "es": "¿Cómo os llamáis?", "en": "What are your names? (you all)", "note": "vosotros" },
+    { "es": "Un zumo de naranja, por favor.", "en": "An orange juice, please.", "note": "Longer sentence; Spain vocabulary" },
+    { "es": "Me gusta mucho el jamón.", "en": "I really like ham.", "note": "Strong Castilian j" },
+    { "es": "Tengo cinco años.", "en": "I am five years old.", "note": "Recognisers may return the digit 5" }
+  ]
+}

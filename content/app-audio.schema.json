@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "App audio strings",
+  "description": "Spanish strings used by app screens outside lessons (e.g. the /mic-test page). Each gets audio exactly like lesson strings (both voices, normal + slow).",
+  "type": "object",
+  "required": ["phrases"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "phrases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["es", "en"],
+        "additionalProperties": false,
+        "properties": {
+          "es": { "type": "string", "minLength": 1, "description": "Spanish text; audio key is the exact string (accents preserved)." },
+          "en": { "type": "string", "minLength": 1 },
+          "note": { "type": "string", "description": "What this phrase tests." }
+        }
+      }
+    }
+  }
+}

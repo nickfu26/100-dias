@@ -1,0 +1,854 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://100-dias.local/content/schema.json",
+  "title": "100 Días lesson content",
+  "description": "Schema for content/day-XXX.json (one lesson per calendar day) and content/checkpoint-N.json (end-of-level tests). Dialect: Peninsular Spanish (es-ES). Every Spanish string listed in the 'Spanish text' fields below gets pre-generated audio (Elvira + Álvaro, normal + slow) via `npm run audio`. Audio is looked up by the exact string (Unicode NFC, trimmed, internal whitespace collapsed) — accents, case and punctuation are preserved, so 'papá' and 'papa' are different recordings. Accent-insensitive comparison is used ONLY when scoring speech recognition.",
+  "$defs": {
+    "day": {
+      "type": "object",
+      "description": "One daily lesson. File name must be day-XXX.json with XXX = zero-padded `day`.",
+      "required": [
+        "day",
+        "level",
+        "title",
+        "objectives",
+        "teach",
+        "vocab",
+        "exercises"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "$schema": {
+          "type": "string"
+        },
+        "day": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100,
+          "description": "Course day 1–100. Day 1 = 2026-10-01 (local date)."
+        },
+        "level": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "description": "1 Sounds & Letters (1–10), 2 Words (11–35), 3 Phrases (36–60), 4 Sentences (61–85), 5 Paragraphs (86–100). Must match the day range."
+        },
+        "title": {
+          "$ref": "#/$defs/bilingual"
+        },
+        "objectives": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 5,
+          "items": {
+            "type": "string",
+            "minLength": 3
+          },
+          "description": "What the learner can do after this lesson, in English, shown on the lesson intro screen."
+        },
+        "teach": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/teachCard"
+          },
+          "description": "Teaching cards shown in order before the exercises. Keep each card to one idea."
+        },
+        "vocab": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/vocab"
+          },
+          "description": "New items introduced today. Each becomes an FSRS review card. Items may be reviewed on later days but must be introduced (defined) exactly once across the course."
+        },
+        "exercises": {
+          "type": "array",
+          "minItems": 4,
+          "items": {
+            "$ref": "#/$defs/exercise"
+          },
+          "description": "New-material exercises for today (~60% of the session; FSRS reviews fill the rest). Voices alternate Elvira/Álvaro by position unless `voice` is pinned."
+        }
+      }
+    },
+    "checkpoint": {
+      "type": "object",
+      "description": "End-of-level test. File name checkpoint-N.json. Unlocks once every day of the level is completed.",
+      "required": [
+        "checkpoint",
+        "level",
+        "title",
+        "passMark",
+        "exercises"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "$schema": {
+          "type": "string"
+        },
+        "checkpoint": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "description": "Equals `level`."
+        },
+        "level": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "title": {
+          "$ref": "#/$defs/bilingual"
+        },
+        "passMark": {
+          "type": "number",
+          "minimum": 0.5,
+          "maximum": 1,
+          "description": "Fraction of exercises that must be correct on first try to pass (e.g. 0.8)."
+        },
+        "exercises": {
+          "type": "array",
+          "minItems": 10,
+          "items": {
+            "$ref": "#/$defs/exercise"
+          },
+          "description": "Exercise ids use the prefix cN- (e.g. c1-01). May only reference vocab from this level or earlier."
+        }
+      }
+    },
+    "bilingual": {
+      "type": "object",
+      "required": [
+        "en",
+        "es"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "es": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Spanish text (gets audio)."
+        }
+      }
+    },
+    "spanish": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Spanish text (gets audio). Use Spain vocabulary (coche, ordenador, móvil, zumo, vale) and correct accents/inverted punctuation (¿ ¡)."
+    },
+    "voice": {
+      "enum": [
+        "auto",
+        "f",
+        "m"
+      ],
+      "default": "auto",
+      "description": "auto = alternate by position in the session; f = es-ES-ElviraNeural; m = es-ES-AlvaroNeural."
+    },
+    "teachCard": {
+      "type": "object",
+      "required": [
+        "kind"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "note",
+            "sound",
+            "minimalPair",
+            "conjugation",
+            "phrase"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "note"
+              }
+            }
+          },
+          "then": {
+            "description": "Free-form explanation. Light Markdown: **bold**, *italic*, line breaks.",
+            "properties": {
+              "kind": {
+                "const": "note"
+              },
+              "md": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "kind",
+              "md"
+            ],
+            "additionalProperties": false
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "sound"
+              }
+            }
+          },
+          "then": {
+            "description": "A sound/letter card. `examples` are Spanish words that get audio.",
+            "properties": {
+              "kind": {
+                "const": "sound"
+              },
+              "grapheme": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Letters shown big, e.g. 'z · ce · ci'. Display only (no audio)."
+              },
+              "ipa": {
+                "type": "string",
+                "minLength": 1,
+                "description": "IPA without slashes, e.g. 'θ'."
+              },
+              "tip": {
+                "type": "string",
+                "minLength": 1,
+                "description": "English articulation tip."
+              },
+              "examples": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 8,
+                "items": {
+                  "$ref": "#/$defs/spanish"
+                }
+              }
+            },
+            "required": [
+              "kind",
+              "grapheme",
+              "ipa",
+              "tip",
+              "examples"
+            ],
+            "additionalProperties": false
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "minimalPair"
+              }
+            }
+          },
+          "then": {
+            "description": "Two words differing by one sound (e.g. casa /s/ vs caza /θ/). Both get audio.",
+            "properties": {
+              "kind": {
+                "const": "minimalPair"
+              },
+              "a": {
+                "$ref": "#/$defs/spanish"
+              },
+              "b": {
+                "$ref": "#/$defs/spanish"
+              },
+              "aEn": {
+                "type": "string"
+              },
+              "bEn": {
+                "type": "string"
+              },
+              "contrast": {
+                "type": "string",
+                "description": "Label for the contrast, e.g. 's vs θ'."
+              }
+            },
+            "required": [
+              "kind",
+              "a",
+              "b",
+              "aEn",
+              "bEn"
+            ],
+            "additionalProperties": false
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "conjugation"
+              }
+            }
+          },
+          "then": {
+            "description": "Full present-tense (or other tense) table. All six persons are REQUIRED, including vosotros. Audio is generated for 'pronoun + form' (e.g. 'vosotros sois').",
+            "properties": {
+              "kind": {
+                "const": "conjugation"
+              },
+              "verb": {
+                "$ref": "#/$defs/spanish"
+              },
+              "verbEn": {
+                "type": "string"
+              },
+              "tense": {
+                "enum": [
+                  "present",
+                  "present-perfect",
+                  "preterite",
+                  "imperfect",
+                  "future",
+                  "conditional",
+                  "imperative",
+                  "present-subjunctive"
+                ]
+              },
+              "forms": {
+                "type": "object",
+                "required": [
+                  "yo",
+                  "tu",
+                  "el",
+                  "nosotros",
+                  "vosotros",
+                  "ellos"
+                ],
+                "additionalProperties": false,
+                "description": "Keys are ASCII; the app renders them as yo / tú / él, ella, usted / nosotros/as / vosotros/as / ellos, ellas, ustedes.",
+                "properties": {
+                  "yo": {
+                    "type": "string"
+                  },
+                  "tu": {
+                    "type": "string"
+                  },
+                  "el": {
+                    "type": "string"
+                  },
+                  "nosotros": {
+                    "type": "string"
+                  },
+                  "vosotros": {
+                    "type": "string"
+                  },
+                  "ellos": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "required": [
+              "kind",
+              "verb",
+              "verbEn",
+              "tense",
+              "forms"
+            ],
+            "additionalProperties": false
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "phrase"
+              }
+            }
+          },
+          "then": {
+            "description": "A useful chunk to learn whole (e.g. '¿Qué tal?').",
+            "properties": {
+              "kind": {
+                "const": "phrase"
+              },
+              "es": {
+                "$ref": "#/$defs/spanish"
+              },
+              "en": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "es",
+              "en"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "vocab": {
+      "type": "object",
+      "required": [
+        "id",
+        "es",
+        "en",
+        "pos"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "description": "Stable, course-wide unique id (ASCII slug of the Spanish, e.g. 'zumo', 'que-tal', 'papa-dad'). Used as the FSRS card key — never rename after release."
+        },
+        "es": {
+          "$ref": "#/$defs/spanish",
+          "description": "Spanish form as taught, with article for nouns: 'el zumo', 'la mañana'."
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pos": {
+          "enum": [
+            "noun",
+            "verb",
+            "adj",
+            "adv",
+            "pron",
+            "prep",
+            "conj",
+            "interj",
+            "num",
+            "det",
+            "phrase",
+            "letter"
+          ]
+        },
+        "gender": {
+          "enum": [
+            "m",
+            "f",
+            "mf"
+          ],
+          "description": "Nouns only."
+        },
+        "ipa": {
+          "type": "string",
+          "description": "Castilian IPA without slashes (distinción: 'ˈθumo')."
+        },
+        "note": {
+          "type": "string",
+          "description": "E.g. 'LatAm: jugo' or usage notes."
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "exerciseBase": {
+      "type": "object",
+      "required": [
+        "id",
+        "type"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^(d[0-9]{3}|c[1-5])-[0-9]{2}$",
+          "description": "dXXX-NN for day exercises, cN-NN for checkpoints. Unique course-wide."
+        },
+        "type": {
+          "enum": [
+            "listen-choose",
+            "match-pairs",
+            "fill-blank",
+            "build-sentence",
+            "dictation",
+            "repeat",
+            "shadow"
+          ]
+        },
+        "vocab": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Vocab ids graded by this exercise (FSRS). Must be defined today or earlier. Omit to auto-detect vocab whose `es` (without article) appears in the exercise."
+        },
+        "voice": {
+          "$ref": "#/$defs/voice"
+        },
+        "prompt": {
+          "type": "string",
+          "description": "Optional English instruction overriding the default for the type."
+        }
+      }
+    },
+    "exercise": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/exerciseBase"
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "listen-choose"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/$defs/listenChoose"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "match-pairs"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/$defs/matchPairs"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "fill-blank"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/$defs/fillBlank"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "build-sentence"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/$defs/buildSentence"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "dictation"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/$defs/dictation"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "repeat"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/$defs/repeat"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "shadow"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/$defs/shadow"
+          }
+        }
+      ]
+    },
+    "listenChoose": {
+      "description": "Play `audio`; learner picks the matching option. With optionsLang 'es' each option also has audio; with 'en' options are meanings.",
+      "properties": {
+        "id": true,
+        "vocab": true,
+        "voice": true,
+        "prompt": true,
+        "type": {
+          "const": "listen-choose"
+        },
+        "audio": {
+          "$ref": "#/$defs/spanish"
+        },
+        "options": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 6,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "optionsLang": {
+          "enum": [
+            "es",
+            "en"
+          ],
+          "default": "es"
+        },
+        "answer": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Index into options."
+        }
+      },
+      "required": [
+        "type",
+        "audio",
+        "options",
+        "answer"
+      ],
+      "additionalProperties": false
+    },
+    "matchPairs": {
+      "description": "Tap-to-match Spanish ↔ English. Spanish side gets audio on tap.",
+      "properties": {
+        "id": true,
+        "vocab": true,
+        "voice": true,
+        "prompt": true,
+        "type": {
+          "const": "match-pairs"
+        },
+        "pairs": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 6,
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "$ref": "#/$defs/spanish"
+              },
+              {
+                "type": "string",
+                "minLength": 1
+              }
+            ],
+            "minItems": 2,
+            "maxItems": 2
+          }
+        }
+      },
+      "required": [
+        "type",
+        "pairs"
+      ],
+      "additionalProperties": false
+    },
+    "fillBlank": {
+      "description": "Sentence with exactly one blank marked {{answer}}, e.g. 'Un {{zumo}} de naranja.'. Audio is the full sentence with the blank filled. With `options` it is multiple choice; without, typed (accent-lenient like dictation).",
+      "properties": {
+        "id": true,
+        "vocab": true,
+        "voice": true,
+        "prompt": true,
+        "type": {
+          "const": "fill-blank"
+        },
+        "es": {
+          "type": "string",
+          "pattern": "^[^{}]*\\{\\{[^{}]+\\}\\}[^{}]*$"
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "options": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 6,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          },
+          "description": "Must include the answer."
+        },
+        "accept": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Extra accepted typed answers."
+        }
+      },
+      "required": [
+        "type",
+        "es",
+        "en"
+      ],
+      "additionalProperties": false
+    },
+    "buildSentence": {
+      "description": "Tap word tiles into order. Tiles = `es` split on spaces (punctuation stays attached, compared loosely) plus distractors.",
+      "properties": {
+        "id": true,
+        "vocab": true,
+        "voice": true,
+        "prompt": true,
+        "type": {
+          "const": "build-sentence"
+        },
+        "es": {
+          "$ref": "#/$defs/spanish"
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "distractors": {
+          "type": "array",
+          "maxItems": 4,
+          "items": {
+            "type": "string"
+          }
+        },
+        "direction": {
+          "enum": [
+            "en-to-es",
+            "audio-to-es"
+          ],
+          "default": "en-to-es",
+          "description": "Show the English, or only play the audio."
+        }
+      },
+      "required": [
+        "type",
+        "es",
+        "en"
+      ],
+      "additionalProperties": false
+    },
+    "dictation": {
+      "description": "Hear `es`, type it. Case and punctuation are ignored. Missing/wrong accents are ACCEPTED but flagged with a 'watch the accent' correction. Wrong letters are wrong.",
+      "properties": {
+        "id": true,
+        "vocab": true,
+        "voice": true,
+        "prompt": true,
+        "type": {
+          "const": "dictation"
+        },
+        "es": {
+          "$ref": "#/$defs/spanish"
+        },
+        "accept": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Alternative correct spellings (e.g. digits '5' for 'cinco')."
+        },
+        "hint": {
+          "type": "string",
+          "description": "English hint shown on request."
+        }
+      },
+      "required": [
+        "type",
+        "es"
+      ],
+      "additionalProperties": false
+    },
+    "repeat": {
+      "description": "Say `es` aloud; SpeechRecognition (es-ES) checks INTELLIGIBILITY only — accent/diacritic-insensitive word match with per-word feedback. It cannot verify individual phonemes (θ/s, r/rr, j); use `shadow` for sound drills. Falls back to shadowing when recognition is unavailable.",
+      "properties": {
+        "id": true,
+        "vocab": true,
+        "voice": true,
+        "prompt": true,
+        "type": {
+          "const": "repeat"
+        },
+        "es": {
+          "$ref": "#/$defs/spanish"
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "minScore": {
+          "type": "number",
+          "minimum": 0.3,
+          "maximum": 1,
+          "default": 0.7,
+          "description": "Word-match score needed to pass."
+        }
+      },
+      "required": [
+        "type",
+        "es",
+        "en"
+      ],
+      "additionalProperties": false
+    },
+    "shadow": {
+      "description": "Sound drill: listen, record yourself (MediaRecorder), compare with the native audio, then self-rate. Use for specific sounds (θ, rr, j, vowels, stress).",
+      "properties": {
+        "id": true,
+        "vocab": true,
+        "voice": true,
+        "prompt": true,
+        "type": {
+          "const": "shadow"
+        },
+        "es": {
+          "$ref": "#/$defs/spanish"
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "listenFor": {
+          "type": "string",
+          "description": "English guidance on what to compare, e.g. 'the th sound in gracias'."
+        }
+      },
+      "required": [
+        "type",
+        "es",
+        "en"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "if": {
+    "required": [
+      "day"
+    ]
+  },
+  "then": {
+    "$ref": "#/$defs/day"
+  },
+  "else": {
+    "$ref": "#/$defs/checkpoint"
+  }
+}

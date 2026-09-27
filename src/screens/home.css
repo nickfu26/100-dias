@@ -1,0 +1,81 @@
+.home-date {
+  font-size: 15px;
+  text-align: right;
+}
+.home-date::first-letter {
+  text-transform: uppercase;
+}
+
+.hero-day {
+  padding: 28px 0 28px;
+}
+.hero-num {
+  font-family: var(--font-display);
+  font-size: 96px;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  color: var(--cobalt);
+  margin: 6px 0 12px;
+}
+.hero-title {
+  font-size: 32px;
+  letter-spacing: -0.022em;
+  margin-bottom: 12px;
+}
+
+.home-hint {
+  font-size: 15px;
+  margin-top: 12px;
+}
+
+.levels {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+}
+.level {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 14px;
+  align-items: start;
+  padding: 14px 0;
+}
+.level + .level {
+  border-top: 1px solid color-mix(in oklch, var(--ink) 10%, transparent);
+}
+/* Each level number sits on a small glazed tile. */
+.level-num {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--r-s);
+  background: var(--cobalt-wash);
+  color: var(--cobalt);
+  font-family: var(--font-display);
+  font-size: 22px;
+}
+.level-body {
+  display: grid;
+  gap: 2px;
+}
+.level-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+.level-name {
+  font-weight: 600;
+  font-size: 18px;
+}
+.level-days {
+  font-size: 14px;
+  white-space: nowrap;
+}
+.level-en {
+  font-size: 14px;
+  margin-bottom: 8px;
+}

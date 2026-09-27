@@ -15,10 +15,18 @@ import {
   type RecognitionOutcome,
   type RecognitionSession,
 } from '../speech/recognition';
-import { pickMimeType, recorderAvailable, startRecording, type Recording, type RecorderSession } from '../speech/recorder';
+import { pickMimeType, recorderAvailable, releaseMic, startRecording, type Recording, type RecorderSession } from '../speech/recorder';
 import './micTest.css';
 
 const PHRASES = appAudio.phrases;
+
+const MIC_ERROR_HELP: Record<string, string> = {
+  NotAllowedError:
+    'Allow the microphone: tap Grabar again and choose “Allow”. If no prompt appears, open Settings → Safari → Microphone, set it to “Ask” or “Allow”, then reopen 100 Días.',
+  NotFoundError: 'No microphone was found.',
+  NotReadableError: 'The microphone is in use by another app (a call, Voice Memos…). Close it and try again.',
+  AbortError: 'The microphone was interrupted. Try again.',
+};
 const PASS = 0.7;
 
 type Check = { label: string; state: 'yes' | 'no' | 'info'; detail: string };
@@ -85,7 +93,10 @@ export function MicTest() {
       const n = await preloadAudio(PHRASES.map((p) => p.es));
       addLog(`preloaded ${n} clips into memory in ${Math.round(performance.now() - t0)} ms`);
     });
-    return () => stopAudio();
+    return () => {
+      stopAudio();
+      releaseMic();
+    };
   }, [addLog]);
 
   // ---------- Listening ----------
@@ -145,6 +156,8 @@ export function MicTest() {
   // ---------- Recording ----------
   const [recording, setRecording] = useState<Recording | null>(null);
   const [recorder, setRecorder] = useState<RecorderSession | null>(null);
+  const [recStarting, setRecStarting] = useState(false);
+  const [micError, setMicError] = useState<string | null>(null);
   const [elapsed, setElapsed] = useState(0);
 
   useEffect(() => {
@@ -154,26 +167,38 @@ export function MicTest() {
     return () => clearInterval(id);
   }, [recorder]);
 
-  async function toggleRecording() {
+  function toggleRecording() {
     if (recorder) {
       recorder.stop();
       return;
     }
     stopAudio();
-    try {
-      if (recording) URL.revokeObjectURL(recording.url);
-      setRecording(null);
-      const r = await startRecording(10_000);
-      setRecorder(r);
-      addLog('● recording…');
-      const result = await r.result;
-      setRecording(result);
-      addLog(`■ recorded ${(result.durationMs / 1000).toFixed(1)} s · ${result.mimeType} · ${(result.blob.size / 1024).toFixed(0)} KB`);
-    } catch (e) {
-      addLog(`✗ recording: ${(e as Error).name} ${(e as Error).message}`);
-    } finally {
-      setRecorder(null);
-    }
+    // First statement after stopAudio: getUserMedia runs synchronously inside the tap (iOS).
+    const pending = startRecording(10_000);
+    addLog('tap ● record → getUserMedia called');
+    setRecStarting(true);
+    setMicError(null);
+    if (recording) URL.revokeObjectURL(recording.url);
+    setRecording(null);
+    pending
+      .then((r) => {
+        setRecStarting(false);
+        setRecorder(r);
+        addLog('● recording…');
+        return r.result;
+      })
+      .then((result) => {
+        setRecording(result);
+        addLog(`■ recorded ${(result.durationMs / 1000).toFixed(1)} s · ${result.mimeType} · ${(result.blob.size / 1024).toFixed(0)} KB · mic released`);
+      })
+      .catch((e: Error) => {
+        addLog(`✗ recording: ${e.name} ${e.message}`);
+        setMicError(MIC_ERROR_HELP[e.name] ?? `Recording failed (${e.name}). See the log.`);
+      })
+      .finally(() => {
+        setRecStarting(false);
+        setRecorder(null);
+      });
   }
   function playMine() {
     if (!recording) return;
@@ -197,7 +222,7 @@ export function MicTest() {
   const [copied, setCopied] = useState(false);
   function copyReport() {
     const text = [
-      '100 Días — mic test report',
+      `100 Días — mic test report · build ${__APP_VERSION__}`,
       navigator.userAgent,
       ...checks.map((c) => `${c.state === 'yes' ? '✓' : c.state === 'no' ? '✗' : '·'} ${c.label}: ${c.detail}`),
       '',
@@ -213,6 +238,12 @@ export function MicTest() {
   }
 
   const listening = recState !== 'idle';
+  const recordingBusy = recStarting || recorder !== null;
+  const audioBusy = playing !== null;
+  // The mic is exclusive: recognition, recording and playback never overlap.
+  const micDisabled = !recognitionCtor() || (!listening && (recordingBusy || audioBusy));
+  const recordDisabled = !recorderAvailable() || (!recorder && (listening || audioBusy || recStarting));
+  const playDisabled = listening || recordingBusy;
   const passed = score && score.score >= PASS;
 
   return (
@@ -226,6 +257,7 @@ export function MicTest() {
       <p className="eyebrow">Prueba de micrófono</p>
       <h1 className="mic-title">Does this phone hear you?</h1>
       <p className="muted">Run each section, then tap “Copy report” and paste it back to me.</p>
+      <p className="build num">Build {__APP_VERSION__}</p>
 
       {/* 1. Device */}
       <section className="section" aria-labelledby="dev-h">
@@ -271,12 +303,12 @@ export function MicTest() {
                     key={v}
                     className="tile tile--small"
                     data-playing={playing === `${i}${v}` || undefined}
-                    onClick={() => play(p.es, v, `${i}${v}`)}
+                    disabled={playDisabled} onClick={() => play(p.es, v, `${i}${v}`)}
                   >
                     ▶ {VOICES[v].name}
                   </button>
                 ))}
-                <button className="tile tile--light tile--small" onClick={() => playSystem(p.es, `${i}s`)}>
+                <button className="tile tile--light tile--small" disabled={playDisabled} onClick={() => playSystem(p.es, `${i}s`)}>
                   Sistema
                 </button>
               </div>
@@ -314,10 +346,10 @@ export function MicTest() {
           <p className="say-target" lang="es-ES">{phrase.es}</p>
           <p className="muted">{phrase.en}</p>
           <div className="say-row">
-            <button className="tile tile--light tile--small" onClick={() => play(phrase.es, 'f', 'say-f')}>
+            <button className="tile tile--light tile--small" disabled={playDisabled} onClick={() => play(phrase.es, 'f', 'say-f')}>
               ▶ Elvira
             </button>
-            <button className="tile tile--light tile--small" onClick={() => play(phrase.es, 'm', 'say-m')}>
+            <button className="tile tile--light tile--small" disabled={playDisabled} onClick={() => play(phrase.es, 'm', 'say-m')}>
               ▶ Álvaro
             </button>
           </div>
@@ -326,7 +358,7 @@ export function MicTest() {
             className={`mic-btn${listening ? ' mic-btn--on' : ''}`}
             onClick={toggleRecognition}
             aria-label={listening ? 'Stop listening' : 'Start speaking'}
-            disabled={!recognitionCtor()}
+            disabled={micDisabled}
           >
             <svg viewBox="0 0 24 24" width="36" height="36" aria-hidden="true">
               <rect x="9" y="3" width="6" height="11" rx="3" fill="currentColor" />
@@ -336,7 +368,11 @@ export function MicTest() {
           <p className="mic-status muted" aria-live="polite">
             {!recognitionCtor()
               ? 'Speech recognition unavailable here'
-              : recState === 'starting'
+              : recordingBusy && !listening
+                ? 'Recording in progress: stop it first'
+                : audioBusy && !listening
+                  ? 'Waiting for audio to finish…'
+                  : recState === 'starting'
                 ? 'Starting…'
                 : recState === 'listening'
                   ? interim || 'Escuchando… habla ahora'
@@ -384,9 +420,11 @@ export function MicTest() {
         <button
           className={`tile tile--block ${recorder ? 'tile--terra' : ''}`}
           onClick={toggleRecording}
-          disabled={!recorderAvailable()}
+          disabled={recordDisabled}
         >
-          {recorder ? (
+          {recStarting ? (
+            'Allow the microphone…'
+          ) : recorder ? (
             <>
               ■ Parar <span className="num">{elapsed.toFixed(1)} s</span>
             </>
@@ -396,15 +434,20 @@ export function MicTest() {
             '● Grabar'
           )}
         </button>
+        {micError && (
+          <p className="error" role="alert">
+            {micError}
+          </p>
+        )}
         {recording && (
           <div className="shadow-row">
-            <button className="tile tile--light tile--small" onClick={playMine}>
+            <button className="tile tile--light tile--small" disabled={playDisabled} onClick={playMine}>
               ▶ Mi voz
             </button>
-            <button className="tile tile--light tile--small" onClick={() => compare('f')}>
+            <button className="tile tile--light tile--small" disabled={playDisabled} onClick={() => compare('f')}>
               ⇄ Elvira → yo
             </button>
-            <button className="tile tile--light tile--small" onClick={() => compare('m')}>
+            <button className="tile tile--light tile--small" disabled={playDisabled} onClick={() => compare('m')}>
               ⇄ Álvaro → yo
             </button>
           </div>

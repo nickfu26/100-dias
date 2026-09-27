@@ -94,7 +94,7 @@ export function isAudioPlaying(): boolean {
   return settleCurrent !== null;
 }
 
-const START_TIMEOUT_MS = 6000;
+const START_TIMEOUT_MS = 5000;
 
 /** Start `src` on the shared element. The promise ALWAYS settles (watchdogs). */
 function playSrc(src: string, rate: number, what: string): Promise<void> {
@@ -106,7 +106,10 @@ function playSrc(src: string, rate: number, what: string): Promise<void> {
   return new Promise<void>((resolve, reject) => {
     let done = false;
     let endDog: ReturnType<typeof setTimeout> | undefined;
-    const startDog = setTimeout(() => fail(new Error('play-timeout: never started')), START_TIMEOUT_MS);
+    const startDog = setTimeout(() => {
+      debug(`media never started within ${START_TIMEOUT_MS / 1000} s · ${what}`);
+      fail(new Error('play-timeout'));
+    }, START_TIMEOUT_MS);
 
     const onPlaying = () => {
       if (gen !== generation) return;
@@ -148,6 +151,7 @@ function playSrc(src: string, rate: number, what: string): Promise<void> {
     a.playbackRate = rate;
     a.preservesPitch = true;
     // play() is called synchronously in the same tick as the tap.
+    debug(`play() called · ${what}`);
     const p = a.play();
     p.then(
       () => debug(`play() resolved · ${what}`),

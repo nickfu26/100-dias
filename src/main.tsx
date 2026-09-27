@@ -8,9 +8,22 @@ import './styles/global.css';
 import { App } from './App';
 import { loadManifest } from './audio/manifest';
 import { requestPersistentStorage } from './lib/storage';
+import { registerSW } from 'virtual:pwa-register';
 
 void loadManifest();
 void requestPersistentStorage();
+
+// autoUpdate: when a new service worker takes over, the page reloads onto the new build.
+// iOS Home Screen apps resume rather than relaunch, so also check on return to foreground.
+registerSW({
+  immediate: true,
+  onRegisteredSW(_url, reg) {
+    if (!reg) return;
+    const check = () => reg.update().catch(() => {});
+    document.addEventListener('visibilitychange', () => document.visibilityState === 'visible' && check());
+    setInterval(check, 30 * 60 * 1000);
+  },
+});
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

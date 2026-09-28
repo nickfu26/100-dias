@@ -21,6 +21,8 @@
     { "kind": "minimalPair", "a": "pero", "b": "perro", "aEn": "but", "bEn": "dog", "contrast": "ɾ vs r" },
     { "kind": "minimalPair", "a": "caro", "b": "carro", "aEn": "expensive", "bEn": "cart, trolley (Latin America: car)", "contrast": "ɾ vs r" },
     { "kind": "sound", "grapheme": "ñ", "ipa": "ɲ", "tip": "Like the ny in 'canyon', but as one sound: press the middle of your tongue against the roof of your mouth.", "examples": ["España", "mañana", "señor", "señora"] },
+    { "kind": "phrase", "es": "Buenas tardes.", "en": "Good afternoon. / Good evening.", "note": "From lunch (about 2 pm) until it gets dark. Tap the r in tardes lightly." },
+    { "kind": "phrase", "es": "Buenas noches.", "en": "Good evening. / Good night.", "note": "After dark, as a hello or a goodbye. Friends often shorten all three greetings to just ¡Buenas!" },
     { "kind": "phrase", "es": "¿Puedes repetirlo?", "en": "Can you repeat that?", "note": "The r at the start of repetir is trilled. To someone you'd address as usted: ¿Puede repetirlo?" },
     { "kind": "phrase", "es": "Más despacio, por favor.", "en": "Slower, please.", "note": "Más (more) has an accent. Use it together with no entiendo." }
   ],
@@ -33,7 +35,8 @@
     { "id": "espana", "es": "España", "en": "Spain", "pos": "noun", "gender": "f", "ipa": "esˈpaɲa" },
     { "id": "manana", "es": "mañana", "en": "tomorrow", "pos": "adv", "ipa": "maˈɲana", "note": "La mañana = the morning. Mañana por la mañana = tomorrow morning." },
     { "id": "senor", "es": "el señor", "en": "the gentleman; Mr; sir", "pos": "noun", "gender": "m", "ipa": "seˈɲoɾ" },
-    { "id": "senora", "es": "la señora", "en": "the lady; Mrs; madam", "pos": "noun", "gender": "f", "ipa": "seˈɲoɾa" }
+    { "id": "buenas-tardes", "es": "buenas tardes", "en": "good afternoon, good evening", "pos": "phrase", "ipa": "ˈbwenas ˈtaɾðes", "note": "From lunch (about 2 pm) until dark.", "tags": ["survival", "greetings"] },
+    { "id": "buenas-noches", "es": "buenas noches", "en": "good evening, good night", "pos": "phrase", "ipa": "ˈbwenas ˈnotʃes", "note": "After dark, for hello and goodbye.", "tags": ["survival", "greetings"] }
   ],
   "exercises": [
     { "id": "d006-01", "type": "listen-choose", "prompt": "One r or two? Pick the word you hear.", "audio": "perro", "options": ["pero", "perro"], "answer": 1, "vocab": ["perro"] },
@@ -41,7 +44,7 @@
     { "id": "d006-03", "type": "listen-choose", "prompt": "One r or two? Pick the word you hear.", "audio": "carro", "options": ["caro", "carro"], "answer": 1, "vocab": [] },
     { "id": "d006-04", "type": "listen-choose", "audio": "mañana", "optionsLang": "en", "options": ["tomorrow", "today", "now"], "answer": 0, "vocab": ["manana"] },
     { "id": "d006-05", "type": "match-pairs", "pairs": [["pero", "but"], ["el perro", "the dog"], ["caro", "expensive"], ["mañana", "tomorrow"], ["España", "Spain"]], "vocab": ["pero", "perro", "caro", "manana", "espana"] },
-    { "id": "d006-06", "type": "match-pairs", "pairs": [["¿Puedes repetirlo?", "Can you repeat that?"], ["más despacio", "slower"], ["el señor", "the gentleman"], ["la señora", "the lady"]], "vocab": ["puedes-repetirlo", "mas-despacio", "senor", "senora"] },
+    { "id": "d006-06", "type": "match-pairs", "pairs": [["¿Puedes repetirlo?", "Can you repeat that?"], ["más despacio", "slower"], ["el señor", "the gentleman"], ["buenas tardes", "good afternoon"], ["buenas noches", "good night"]], "vocab": ["puedes-repetirlo", "mas-despacio", "senor", "buenas-tardes", "buenas-noches"] },
     { "id": "d006-07", "type": "fill-blank", "prompt": "One r or two?", "es": "Es muy {{caro}}.", "en": "It's very expensive.", "options": ["caro", "carro"], "vocab": ["muy", "caro"] },
     { "id": "d006-08", "type": "fill-blank", "es": "Hoy no, {{mañana}}.", "en": "Not today, tomorrow.", "options": ["mañana", "ahora", "aquí"], "vocab": ["hoy", "manana"] },
     { "id": "d006-09", "type": "fill-blank", "es": "Más {{despacio}}, por favor.", "en": "Slower, please.", "options": ["despacio", "perro", "caro"], "vocab": ["mas-despacio", "por-favor"] },
@@ -53,9 +56,11 @@
     { "id": "d006-15", "type": "repeat", "es": "¿Puedes repetirlo?", "en": "Can you repeat that?", "vocab": ["puedes-repetirlo"] },
     { "id": "d006-16", "type": "repeat", "es": "Más despacio, por favor.", "en": "Slower, please.", "vocab": ["mas-despacio", "por-favor"] },
     { "id": "d006-17", "type": "shadow", "es": "pero, perro", "en": "but, dog", "listenFor": "One quick tap in pero, a trill in perro.", "vocab": ["pero", "perro"] },
-    { "id": "d006-18", "type": "shadow", "es": "España, mañana, señora", "en": "Spain, tomorrow, lady", "listenFor": "ñ is one smooth 'ny' sound, not n + y.", "vocab": ["espana", "manana", "senora"] },
-    { "id": "d006-19", "type": "listen-choose", "prompt": "Review: what does it mean?", "audio": "el agua", "optionsLang": "en", "options": ["the water", "the ham", "the dog"], "answer": 0, "vocab": ["agua"] },
-    { "id": "d006-20", "type": "dictation", "prompt": "Review: type what you hear.", "es": "hija", "hint": "daughter", "vocab": ["hija"] },
-    { "id": "d006-21", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Perdón, no entiendo.", "en": "Sorry, I don't understand.", "vocab": ["perdon", "no-entiendo"] }
+    { "id": "d006-18", "type": "shadow", "es": "España, mañana, señora", "en": "Spain, tomorrow, lady", "listenFor": "ñ is one smooth 'ny' sound, not n + y.", "vocab": ["espana", "manana"] },
+    { "id": "d006-19", "type": "listen-choose", "audio": "buenas noches", "optionsLang": "en", "options": ["good night", "good morning", "good afternoon"], "answer": 0, "vocab": ["buenas-noches"] },
+    { "id": "d006-20", "type": "repeat", "es": "Buenas tardes, ¿qué tal?", "en": "Good afternoon, how's it going?", "vocab": ["buenas-tardes", "que-tal"] },
+    { "id": "d006-21", "type": "listen-choose", "prompt": "Review: what does it mean?", "audio": "el agua", "optionsLang": "en", "options": ["the water", "the ham", "the dog"], "answer": 0, "vocab": ["agua"] },
+    { "id": "d006-22", "type": "dictation", "prompt": "Review: type what you hear.", "es": "hija", "hint": "daughter", "vocab": ["hija"] },
+    { "id": "d006-23", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Perdón, no entiendo.", "en": "Sorry, I don't understand.", "vocab": ["perdon", "no-entiendo"] }
   ]
 }

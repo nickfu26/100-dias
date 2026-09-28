@@ -26,7 +26,8 @@
     },
     { "kind": "note", "md": "You'll hear the soft d everywhere in Spain: **nada** ≈ NA-tha, **Madrid** ≈ ma-DRITH. Keep it gentle. It's a light touch, not a strong English *th*." },
     { "kind": "phrase", "es": "Por favor.", "en": "Please.", "note": "Tap the r's lightly, like the tt in American 'butter'. The v sounds like b." },
-    { "kind": "phrase", "es": "Perdón.", "en": "Sorry. / Excuse me.", "note": "Use it when you bump into someone, need to get past, or want someone's attention. Stress -DÓN." }
+    { "kind": "phrase", "es": "Perdón.", "en": "Sorry. / Excuse me.", "note": "Use it when you bump into someone, need to get past, or want someone's attention. Stress -DÓN." },
+    { "kind": "phrase", "es": "¿Y tú?", "en": "And you?", "note": "Bounce a question back: —¿Qué tal? —Bien, ¿y tú? Say it as one unit: i-TU." }
   ],
   "vocab": [
     { "id": "por-favor", "es": "por favor", "en": "please", "pos": "phrase", "ipa": "poɾ faˈβoɾ", "tags": ["survival"] },
@@ -37,7 +38,7 @@
     { "id": "nada", "es": "nada", "en": "nothing", "pos": "pron", "ipa": "ˈnaða" },
     { "id": "todo", "es": "todo", "en": "everything, all", "pos": "pron", "ipa": "ˈtoðo" },
     { "id": "hotel", "es": "el hotel", "en": "the hotel", "pos": "noun", "gender": "m", "ipa": "oˈtel" },
-    { "id": "queso", "es": "el queso", "en": "the cheese", "pos": "noun", "gender": "m", "ipa": "ˈkeso" },
+    { "id": "y-tu", "es": "¿Y tú?", "en": "And you?", "pos": "phrase", "ipa": "i ˈtu", "tags": ["survival"] },
     { "id": "ordenador", "es": "el ordenador", "en": "the computer", "pos": "noun", "gender": "m", "ipa": "oɾðenaˈðoɾ", "note": "Latin America: la computadora." }
   ],
   "exercises": [
@@ -47,7 +48,7 @@
     { "id": "d003-04", "type": "listen-choose", "prompt": "Soft d or t? Pick the word you hear.", "audio": "nada", "options": ["nada", "nata"], "answer": 0, "vocab": ["nada"] },
     { "id": "d003-05", "type": "listen-choose", "audio": "el ordenador", "optionsLang": "en", "options": ["the computer", "the hotel", "the cheese"], "answer": 0, "vocab": ["ordenador"] },
     { "id": "d003-06", "type": "match-pairs", "pairs": [["por favor", "please"], ["perdón", "sorry / excuse me"], ["hoy", "today"], ["ahora", "now"], ["aquí", "here"]], "vocab": ["por-favor", "perdon", "hoy", "ahora", "aqui"] },
-    { "id": "d003-07", "type": "match-pairs", "pairs": [["el hotel", "the hotel"], ["el queso", "the cheese"], ["el ordenador", "the computer"], ["nada", "nothing"], ["todo", "everything"]], "vocab": ["hotel", "queso", "ordenador", "nada", "todo"] },
+    { "id": "d003-07", "type": "match-pairs", "pairs": [["el hotel", "the hotel"], ["el ordenador", "the computer"], ["nada", "nothing"], ["todo", "everything"], ["¿Y tú?", "And you?"]], "vocab": ["hotel", "ordenador", "nada", "todo", "y-tu"] },
     { "id": "d003-08", "type": "fill-blank", "es": "Un café, {{por favor}}.", "en": "A coffee, please.", "options": ["por favor", "perdón", "nada"], "vocab": ["cafe", "por-favor"] },
     { "id": "d003-09", "type": "fill-blank", "es": "{{Hoy}} no, gracias.", "en": "Not today, thanks.", "options": ["Hoy", "Hola", "Aquí"], "vocab": ["hoy", "gracias"] },
     { "id": "d003-10", "type": "fill-blank", "es": "{{Todo}} bien.", "en": "All good.", "options": ["Todo", "Nada", "Hoy"], "vocab": ["todo", "bien"] },
@@ -62,6 +63,6 @@
     { "id": "d003-19", "type": "shadow", "es": "hola, hotel, hoy, ahora", "en": "hello, hotel, today, now", "listenFor": "No h sound at all. Each word starts on the vowel.", "vocab": ["hola", "hotel", "hoy", "ahora"] },
     { "id": "d003-20", "type": "listen-choose", "prompt": "Review: what does it mean?", "audio": "vale", "optionsLang": "en", "options": ["OK", "thank you", "very"], "answer": 0, "vocab": ["vale"] },
     { "id": "d003-21", "type": "dictation", "prompt": "Review: type what you hear.", "es": "gracias", "hint": "thank you", "vocab": ["gracias"] },
-    { "id": "d003-22", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Muy bien, ¿y tú?", "en": "Very well, and you?", "vocab": ["muy", "bien", "y-and", "tu-you"] }
+    { "id": "d003-22", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Muy bien, ¿y tú?", "en": "Very well, and you?", "vocab": ["muy", "bien", "y-tu"] }
   ]
 }

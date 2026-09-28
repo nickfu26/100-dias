@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-28T02:38:04+00:00",
+ "generated": "2026-09-28T02:43:04+00:00",
  "voices": {
   "f": "es-ES-ElviraNeural",
   "m": "es-ES-AlvaroNeural"
@@ -21,6 +21,18 @@
   },
   "Ahora no, mañana.": {
    "id": "7303c25eb875",
+   "slow": true
+  },
+  "Buenas noches.": {
+   "id": "69011223f6e0",
+   "slow": true
+  },
+  "Buenas tardes, ¿qué tal?": {
+   "id": "1e58a879c9d1",
+   "slow": true
+  },
+  "Buenas tardes.": {
+   "id": "bb059af29f05",
    "slow": true
   },
   "Buenos días.": {
@@ -53,6 +65,10 @@
   },
   "El acento": {
    "id": "4f1f82618f26",
+   "slow": true
+  },
+  "Encantado. Encantada.": {
+   "id": "ffd6bb99d860",
    "slow": true
   },
   "Es muy caro.": {
@@ -347,6 +363,14 @@
    "id": "d4e2f6084164",
    "slow": true
   },
+  "buenas noches": {
+   "id": "ce6a70e6d988",
+   "slow": true
+  },
+  "buenas tardes": {
+   "id": "033678943ebe",
+   "slow": true
+  },
   "buenos días": {
    "id": "a25b998dff5d",
    "slow": true
@@ -561,6 +585,10 @@
   },
   "encantado": {
    "id": "78f29cc2c705",
+   "slow": true
+  },
+  "encantado, encantada": {
+   "id": "743d91309d75",
    "slow": true
   },
   "gato": {
@@ -1053,6 +1081,10 @@
   },
   "¿Qué tal?": {
    "id": "a8506c246b78",
+   "slow": true
+  },
+  "¿Y tú?": {
+   "id": "6c3a47647674",
    "slow": true
   },
   "él se llama": {

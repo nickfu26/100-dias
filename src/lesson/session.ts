@@ -31,6 +31,23 @@ export interface LessonSnapshot {
   queue: SessionItem[];
   pos: number;
   results: Record<string, ItemResult>; // by exercise id
+  /** Exercise ids when the run started; a saved run is only resumed if the lesson still matches. */
+  exIds?: string;
+}
+
+const fingerprint = (lesson: DayLesson) => lesson.exercises.map((e) => e.id).join(',');
+
+/** A saved run can resume only if it belongs to this exact version of the lesson. */
+export function canResume(s: LessonSnapshot | undefined, lesson: DayLesson): s is LessonSnapshot {
+  return (
+    !!s &&
+    s.day === lesson.day &&
+    s.exIds === fingerprint(lesson) &&
+    s.phase !== 'done' &&
+    s.queue.every((q) => q.ex >= 0 && q.ex < lesson.exercises.length) &&
+    s.pos <= s.queue.length &&
+    s.teachIndex >= 0
+  );
 }
 
 /** Speaking exercises are not re-queued: a retry would just repeat the same attempt. */
@@ -51,6 +68,7 @@ export function newSnapshot(lesson: DayLesson, now = new Date()): LessonSnapshot
     queue: lesson.exercises.map((ex, i) => ({ ex: i, voice: voiceFor(ex, i), retry: false })),
     pos: 0,
     results: {},
+    exIds: fingerprint(lesson),
   };
 }
 

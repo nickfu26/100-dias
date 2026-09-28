@@ -662,3 +662,24 @@
   gap: 4px;
   font-weight: 600;
 }
+
+/* ---------- Resume ---------- */
+.resume {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: var(--r-l);
+  background: var(--paper-sunk);
+}
+.resume-where {
+  font-weight: 600;
+}
+.finish-streak {
+  justify-self: start;
+  padding: 8px 14px;
+  border-radius: var(--r-m);
+  background: var(--terra);
+  color: var(--on-terra);
+  font-weight: 600;
+}

@@ -9,9 +9,10 @@ import { loadDay } from '../content/loader';
 import type { DayLesson, Exercise } from '../content/types';
 import { ExerciseView, defaultPrompt } from '../exercises/ExerciseView';
 import type { Answer } from '../exercises/types';
-import { answer, newSnapshot, progressFraction, score, type LessonSnapshot } from '../lesson/session';
+import { answer, canResume, newSnapshot, progressFraction, score, type LessonSnapshot } from '../lesson/session';
 import { TeachCardView, VocabCard } from '../lesson/TeachCardView';
 import { useSettings } from '../lib/settings';
+import { activeProgress, completeDay, discardSnapshot, saveSnapshot, streakOf, useProgress } from '../progress/store';
 import { isDayUnlocked } from '../progress/unlock';
 import './lesson.css';
 
@@ -51,6 +52,11 @@ function Message({ text }: { text: string }) {
 function LessonRun({ lesson, preview }: { lesson: DayLesson; preview: boolean }) {
   const navigate = useNavigate();
   const [snap, setSnap] = useState<LessonSnapshot>(() => newSnapshot(lesson));
+  // A half-finished run of this lesson, offered on the intro screen.
+  const [saved, setSaved] = useState<LessonSnapshot | null>(() => {
+    const s = activeProgress().get().inProgress[lesson.day];
+    return canResume(s, lesson) ? s : null;
+  });
   const [pending, setPending] = useState<Answer | null>(null);
   const teachCount = lesson.teach.length + (lesson.vocab.length ? 1 : 0);
   const topRef = useRef<HTMLDivElement>(null);
@@ -60,9 +66,16 @@ function LessonRun({ lesson, preview }: { lesson: DayLesson; preview: boolean })
     void preloadAudio(lessonStrings(lesson), ['f', 'm'], ['normal']);
   }, [lesson]);
 
+  // Every step is saved, so closing the app (or iOS killing it) resumes at the same card.
   const commit = (next: LessonSnapshot) => {
     setSnap(next);
     setPending(null);
+    if (next.phase === 'done') {
+      const sc = score(next);
+      completeDay(lesson.day, sc.correct, sc.graded);
+    } else if (next.phase !== 'intro') {
+      saveSnapshot(next);
+    }
     topRef.current?.scrollIntoView({ block: 'start' });
   };
 
@@ -79,7 +92,22 @@ function LessonRun({ lesson, preview }: { lesson: DayLesson; preview: boolean })
         {preview && <PreviewBanner compact />}
       </div>
 
-      {snap.phase === 'intro' && <Intro lesson={lesson} onStart={() => commit({ ...snap, phase: teachCount ? 'teach' : 'exercises' })} />}
+      {snap.phase === 'intro' && (
+        <Intro
+          lesson={lesson}
+          saved={saved}
+          onStart={() => {
+            if (saved) discardSnapshot(lesson.day);
+            setSaved(null);
+            commit({ ...newSnapshot(lesson), phase: teachCount ? 'teach' : 'exercises' });
+          }}
+          onResume={() => {
+            if (!saved) return;
+            setSaved(null);
+            commit({ ...saved, updatedAt: new Date().toISOString() });
+          }}
+        />
+      )}
 
       {snap.phase === 'teach' && (
         <section className="teach">
@@ -142,7 +170,17 @@ function LessonRun({ lesson, preview }: { lesson: DayLesson; preview: boolean })
   );
 }
 
-function Intro({ lesson, onStart }: { lesson: DayLesson; onStart: () => void }) {
+function Intro({
+  lesson,
+  saved,
+  onStart,
+  onResume,
+}: {
+  lesson: DayLesson;
+  saved: LessonSnapshot | null;
+  onStart: () => void;
+  onResume: () => void;
+}) {
   const { play, playing } = usePlay();
   return (
     <section className="intro">
@@ -161,9 +199,34 @@ function Intro({ lesson, onStart }: { lesson: DayLesson; onStart: () => void }) 
         <span className="num">{lesson.vocab.length}</span> new words · <span className="num">{lesson.exercises.length}</span> exercises · about
         20 minutes. Headphones help.
       </p>
-      <button className="tile tile--block tile--terra intro-go" onClick={onStart}>
-        Empezar
-      </button>
+      {saved ? (
+        <div className="resume">
+          <p className="resume-where">
+            You stopped at{' '}
+            {saved.phase === 'teach' ? (
+              <>
+                card <span className="num">{saved.teachIndex + 1}</span>
+              </>
+            ) : (
+              <>
+                exercise <span className="num">{Math.min(saved.pos + 1, saved.queue.length)}</span> of{' '}
+                <span className="num">{saved.queue.length}</span>
+              </>
+            )}
+            .
+          </p>
+          <button className="tile tile--block tile--terra" onClick={onResume}>
+            Continuar
+          </button>
+          <button className="tile tile--block tile--light" onClick={onStart}>
+            Empezar de nuevo
+          </button>
+        </div>
+      ) : (
+        <button className="tile tile--block tile--terra intro-go" onClick={onStart}>
+          Empezar
+        </button>
+      )}
     </section>
   );
 }
@@ -206,6 +269,7 @@ function Feedback({ answer: a, ex, onContinue }: { answer: Answer; ex: Exercise;
 
 function Finish({ lesson, snap, preview }: { lesson: DayLesson; snap: LessonSnapshot; preview: boolean }) {
   const s = useMemo(() => score(snap), [snap]);
+  const streak = streakOf(useProgress().activeDates);
   const pct = s.graded ? Math.round((s.correct / s.graded) * 100) : 100;
   const missed = s.missed.map((id) => lesson.exercises.find((e) => e.id === id)).filter(Boolean) as Exercise[];
   return (
@@ -218,7 +282,13 @@ function Finish({ lesson, snap, preview }: { lesson: DayLesson; snap: LessonSnap
           right first time (<span className="num">{s.correct}</span> of <span className="num">{s.graded}</span>)
         </span>
       </p>
-      {preview && <p className="muted small">Preview run: saved separately, doesn't count towards your streak.</p>}
+      {preview ? (
+        <p className="muted small">Preview run: saved separately, doesn't count towards your streak.</p>
+      ) : (
+        <p className="finish-streak">
+          <span className="num">{streak.days}</span> {streak.days === 1 ? 'día seguido' : 'días seguidos'}
+        </p>
+      )}
       {missed.length > 0 && (
         <div className="finish-missed">
           <h2 className="intro-h">Worth another look</h2>

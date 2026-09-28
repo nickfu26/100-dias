@@ -1,0 +1,69 @@
+{
+  "$schema": "./schema.json",
+  "day": 8,
+  "level": 1,
+  "title": { "en": "The alphabet and your name", "es": "El abecedario" },
+  "objectives": [
+    "Say the names of the letters",
+    "Spell your name aloud",
+    "Ask one person or a group their names",
+    "Ask how a word is spelled"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "The Spanish alphabet has 27 letters. The only extra one is **ñ**. **ch** and **ll** are written with two letters but aren't letters of their own any more.\n\nIn Spain, **v** is **uve**, **w** is **uve doble** and **y** is **i griega**. You'll also see **ye**, which the Real Academia now recommends, but i griega is what most people say."
+    },
+    { "kind": "phrase", "es": "a, be, ce, de, e, efe, ge", "en": "A, B, C, D, E, F, G", "note": "ce = θe, ge = xe (the strong j sound)." },
+    { "kind": "phrase", "es": "hache, i, jota, ka, ele, eme, ene, eñe", "en": "H, I, J, K, L, M, N, Ñ", "note": "h is called hache even though it's silent." },
+    { "kind": "phrase", "es": "o, pe, cu, erre, ese, te, u", "en": "O, P, Q, R, S, T, U", "note": "r is erre, with a trill." },
+    { "kind": "phrase", "es": "uve, uve doble, equis, i griega, zeta", "en": "V, W, X, Y, Z", "note": "zeta = θeta." },
+    {
+      "kind": "conjugation",
+      "verb": "llamarse",
+      "verbEn": "to be called",
+      "tense": "present",
+      "forms": { "yo": "me llamo", "tu": "te llamas", "el": "se llama", "nosotros": "nos llamamos", "vosotros": "os llamáis", "ellos": "se llaman" }
+    },
+    { "kind": "phrase", "es": "¿Cómo te llamas?", "en": "What's your name?", "note": "Literally 'How do you call yourself?'. The tú form." },
+    { "kind": "phrase", "es": "Me llamo Ana.", "en": "My name is Ana." },
+    { "kind": "phrase", "es": "¿Cómo os llamáis?", "en": "What are your names? (to a group)", "note": "The vosotros form, used all over Spain for 'you all'. In Latin America: ¿Cómo se llaman?" },
+    { "kind": "phrase", "es": "¿Cómo se escribe?", "en": "How do you spell it?", "note": "Answer by spelling it out. Ana: a, ene, a." },
+    { "kind": "note", "md": "**tu** without an accent means *your*: **tu nombre** = your name. **tú** with an accent means *you*. That's the same accent trick as sí/si." }
+  ],
+  "vocab": [
+    { "id": "como-te-llamas", "es": "¿Cómo te llamas?", "en": "What's your name?", "pos": "phrase", "ipa": "ˈkomo te ˈʝamas", "tags": ["survival"] },
+    { "id": "me-llamo", "es": "me llamo…", "en": "my name is…", "pos": "phrase", "ipa": "me ˈʝamo", "tags": ["survival"] },
+    { "id": "como-os-llamais", "es": "¿Cómo os llamáis?", "en": "What are your names? (you all)", "pos": "phrase", "ipa": "ˈkomo os ʝaˈmais", "note": "vosotros. Latin America: ¿Cómo se llaman?" },
+    { "id": "como-se-escribe", "es": "¿Cómo se escribe?", "en": "How do you spell it?", "pos": "phrase", "ipa": "ˈkomo se esˈkɾiβe", "tags": ["survival"] },
+    { "id": "encantado", "es": "encantado", "en": "nice to meet you", "pos": "adj", "ipa": "eŋkanˈtaðo", "note": "A woman says encantada." },
+    { "id": "nombre", "es": "el nombre", "en": "the name, first name", "pos": "noun", "gender": "m", "ipa": "ˈnombɾe" },
+    { "id": "apellido", "es": "el apellido", "en": "the surname", "pos": "noun", "gender": "m", "ipa": "apeˈʝiðo", "note": "People in Spain have two surnames: the first from their father, the second from their mother." },
+    { "id": "letra", "es": "la letra", "en": "the letter (of the alphabet)", "pos": "noun", "gender": "f", "ipa": "ˈletɾa", "note": "A letter you post is una carta." },
+    { "id": "tu-your", "es": "tu", "en": "your (informal)", "pos": "det", "ipa": "tu", "note": "No accent. tú with an accent = you." }
+  ],
+  "exercises": [
+    { "id": "d008-01", "type": "listen-choose", "prompt": "Which letter is this?", "audio": "hache", "optionsLang": "en", "options": ["H", "J", "G"], "answer": 0, "vocab": [] },
+    { "id": "d008-02", "type": "listen-choose", "prompt": "Which letter is this?", "audio": "jota", "optionsLang": "en", "options": ["J", "H", "Y"], "answer": 0, "vocab": [] },
+    { "id": "d008-03", "type": "listen-choose", "prompt": "Which letter is this?", "audio": "uve", "optionsLang": "en", "options": ["V", "B", "W"], "answer": 0, "vocab": [] },
+    { "id": "d008-04", "type": "listen-choose", "prompt": "Which letter is this?", "audio": "i griega", "optionsLang": "en", "options": ["Y", "I", "LL"], "answer": 0, "vocab": [] },
+    { "id": "d008-05", "type": "listen-choose", "prompt": "Listen to the spelling. Which word is it?", "audio": "pe, e, erre, erre, o", "optionsLang": "en", "options": ["perro", "pero", "pelo"], "answer": 0, "vocab": ["perro"] },
+    { "id": "d008-06", "type": "listen-choose", "prompt": "Listen to the spelling. Which word is it?", "audio": "ce, a, ele, ele, e", "optionsLang": "en", "options": ["calle", "playa", "llave"], "answer": 0, "vocab": ["calle"] },
+    { "id": "d008-07", "type": "match-pairs", "pairs": [["¿Cómo te llamas?", "What's your name?"], ["me llamo…", "my name is…"], ["¿Cómo se escribe?", "How do you spell it?"], ["encantado", "nice to meet you"], ["¿Cómo os llamáis?", "What are your names? (you all)"]], "vocab": ["como-te-llamas", "me-llamo", "como-se-escribe", "encantado", "como-os-llamais"] },
+    { "id": "d008-08", "type": "match-pairs", "pairs": [["el nombre", "the name"], ["el apellido", "the surname"], ["la letra", "the letter"], ["tu", "your"], ["tú", "you"]], "vocab": ["nombre", "apellido", "letra", "tu-your", "tu-you"] },
+    { "id": "d008-09", "type": "fill-blank", "es": "Me {{llamo}} Ana.", "en": "My name is Ana.", "options": ["llamo", "llamas", "llamáis"], "vocab": ["me-llamo"] },
+    { "id": "d008-10", "type": "fill-blank", "es": "¿Cómo te {{llamas}}?", "en": "What's your name?", "options": ["llamo", "llamas", "llamáis"], "vocab": ["como-te-llamas"] },
+    { "id": "d008-11", "type": "fill-blank", "es": "¿Cómo os {{llamáis}}?", "en": "What are your names? (to a group of friends)", "options": ["llamo", "llamas", "llamáis"], "vocab": ["como-os-llamais"] },
+    { "id": "d008-12", "type": "build-sentence", "es": "Hola, me llamo Pablo. ¿Y tú?", "en": "Hi, my name is Pablo. And you?", "distractors": ["llamas"], "vocab": ["hola", "me-llamo", "y-and", "tu-you"] },
+    { "id": "d008-13", "type": "build-sentence", "es": "¿Cómo se escribe tu apellido?", "en": "How do you spell your surname?", "distractors": ["tú"], "vocab": ["como-se-escribe", "tu-your", "apellido"] },
+    { "id": "d008-14", "type": "dictation", "es": "nombre", "hint": "name", "vocab": ["nombre"] },
+    { "id": "d008-15", "type": "dictation", "es": "encantado", "hint": "nice to meet you (said by a man)", "vocab": ["encantado"] },
+    { "id": "d008-16", "type": "repeat", "es": "¿Cómo te llamas?", "en": "What's your name?", "vocab": ["como-te-llamas"] },
+    { "id": "d008-17", "type": "repeat", "es": "Me llamo Ana. Encantada.", "en": "My name is Ana. Nice to meet you.", "vocab": ["me-llamo", "encantado"] },
+    { "id": "d008-18", "type": "shadow", "es": "a, be, ce, de, e, efe, ge", "en": "A, B, C, D, E, F, G", "listenFor": "ce is θe and ge is xe, with the strong j sound.", "vocab": [] },
+    { "id": "d008-19", "type": "shadow", "es": "¿Cómo os llamáis?", "en": "What are your names? (you all)", "listenFor": "ll sounds like y, and the stress falls on -MÁIS.", "vocab": ["como-os-llamais"] },
+    { "id": "d008-20", "type": "listen-choose", "prompt": "Review: what does it mean?", "audio": "la llave", "optionsLang": "en", "options": ["the key", "the street", "the wine"], "answer": 0, "vocab": ["llave"] },
+    { "id": "d008-21", "type": "dictation", "prompt": "Review: type what you hear.", "es": "leche", "hint": "milk", "vocab": ["leche"] },
+    { "id": "d008-22", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Un café con leche, por favor.", "en": "A coffee with milk, please.", "vocab": ["cafe", "leche", "por-favor"] }
+  ]
+}

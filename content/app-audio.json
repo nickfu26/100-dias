@@ -4,7 +4,7 @@
     { "es": "Hola, ¿qué tal?", "en": "Hi, how's it going?", "note": "Everyday greeting" },
     { "es": "Vale, gracias.", "en": "OK, thanks.", "note": "Distinción: gra-θias" },
     { "es": "papá", "en": "dad", "note": "Stress on the last syllable" },
-    { "es": "papa", "en": "potato", "note": "Stress on the first syllable — different audio file from papá" },
+    { "es": "papa", "en": "the Pope (Latin America: potato)", "note": "Stress on the first syllable — different audio file from papá. In Spain a potato is una patata." },
     { "es": "casa", "en": "house", "note": "s /s/" },
     { "es": "caza", "en": "hunt", "note": "z /θ/" },
     { "es": "pero", "en": "but", "note": "Single tap r" },

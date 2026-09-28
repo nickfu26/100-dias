@@ -1,0 +1,62 @@
+{
+  "$schema": "./schema.json",
+  "day": 9,
+  "level": 1,
+  "title": { "en": "Numbers 0–10 and prices", "es": "Los números del cero al diez" },
+  "objectives": [
+    "Count from 0 to 10",
+    "Use un / una with nouns",
+    "Ask how much something is and understand the price",
+    "Order two or three of something"
+  ],
+  "teach": [
+    { "kind": "phrase", "es": "cero, uno, dos, tres, cuatro, cinco", "en": "0, 1, 2, 3, 4, 5", "note": "You already know cero (day 4) and uno (day 1)." },
+    { "kind": "phrase", "es": "seis, siete, ocho, nueve, diez", "en": "6, 7, 8, 9, 10" },
+    {
+      "kind": "note",
+      "md": "Sounds to watch:\n\n- **cinco** = **θ**IN-ko, and **diez** ends in θ: DYETH.\n- **seis** and **siete** start with a plain **s**.\n- **ocho** has the *ch* of *church*.\n- **nueve** = NWEH-βe, with a soft b sound for the v.\n- **cuatro** and **tres**: a quick tapped r."
+    },
+    {
+      "kind": "note",
+      "md": "**uno** becomes **un** before a masculine noun and **una** before a feminine one: **un café**, **una cerveza**. The other numbers never change: **dos cafés**, **dos cervezas**."
+    },
+    { "kind": "phrase", "es": "¿Cuánto es?", "en": "How much is it?", "note": "Ask at the counter or when paying. Cuánto has an accent because it's a question word." },
+    { "kind": "phrase", "es": "Son cinco euros.", "en": "It's five euros.", "note": "For exactly one euro: Es un euro." }
+  ],
+  "vocab": [
+    { "id": "dos", "es": "dos", "en": "two", "pos": "num", "ipa": "ˈdos" },
+    { "id": "tres", "es": "tres", "en": "three", "pos": "num", "ipa": "ˈtɾes" },
+    { "id": "cuatro", "es": "cuatro", "en": "four", "pos": "num", "ipa": "ˈkwatɾo" },
+    { "id": "cinco", "es": "cinco", "en": "five", "pos": "num", "ipa": "ˈθiŋko" },
+    { "id": "seis", "es": "seis", "en": "six", "pos": "num", "ipa": "ˈseis" },
+    { "id": "siete", "es": "siete", "en": "seven", "pos": "num", "ipa": "ˈsjete" },
+    { "id": "ocho", "es": "ocho", "en": "eight", "pos": "num", "ipa": "ˈotʃo" },
+    { "id": "nueve", "es": "nueve", "en": "nine", "pos": "num", "ipa": "ˈnweβe" },
+    { "id": "diez", "es": "diez", "en": "ten", "pos": "num", "ipa": "ˈdjeθ" },
+    { "id": "cuanto-es", "es": "¿Cuánto es?", "en": "How much is it?", "pos": "phrase", "ipa": "ˈkwanto ˈes", "tags": ["survival"] }
+  ],
+  "exercises": [
+    { "id": "d009-01", "type": "listen-choose", "audio": "cinco", "options": ["cinco", "seis", "siete"], "answer": 0, "vocab": ["cinco"] },
+    { "id": "d009-02", "type": "listen-choose", "audio": "seis", "options": ["tres", "seis", "diez"], "answer": 1, "vocab": ["seis"] },
+    { "id": "d009-03", "type": "listen-choose", "audio": "diez", "options": ["dos", "diez", "nueve"], "answer": 1, "vocab": ["diez"] },
+    { "id": "d009-04", "type": "listen-choose", "audio": "ocho", "options": ["cuatro", "ocho", "uno"], "answer": 1, "vocab": ["ocho"] },
+    { "id": "d009-05", "type": "match-pairs", "pairs": [["dos", "2"], ["cuatro", "4"], ["seis", "6"], ["ocho", "8"], ["diez", "10"]], "vocab": ["dos", "cuatro", "seis", "ocho", "diez"] },
+    { "id": "d009-06", "type": "match-pairs", "pairs": [["uno", "1"], ["tres", "3"], ["cinco", "5"], ["siete", "7"], ["nueve", "9"]], "vocab": ["uno", "tres", "cinco", "siete", "nueve"] },
+    { "id": "d009-07", "type": "dictation", "es": "cinco", "accept": ["5"], "hint": "a number", "vocab": ["cinco"] },
+    { "id": "d009-08", "type": "dictation", "es": "nueve", "accept": ["9"], "hint": "a number", "vocab": ["nueve"] },
+    { "id": "d009-09", "type": "dictation", "es": "siete", "accept": ["7"], "hint": "a number", "vocab": ["siete"] },
+    { "id": "d009-10", "type": "fill-blank", "es": "{{Dos}} cafés, por favor.", "en": "Two coffees, please.", "options": ["Dos", "Diez", "Tres"], "vocab": ["dos", "cafe", "por-favor"] },
+    { "id": "d009-11", "type": "fill-blank", "es": "Son {{cinco}} euros.", "en": "It's five euros.", "options": ["cinco", "seis", "siete"], "vocab": ["cinco"] },
+    { "id": "d009-12", "type": "fill-blank", "es": "{{Una}} cerveza y un zumo, por favor.", "en": "A beer and a juice, please.", "options": ["Una", "Un", "Uno"], "vocab": ["uno", "cerveza", "zumo"] },
+    { "id": "d009-13", "type": "listen-choose", "prompt": "How much is it?", "audio": "Son ocho euros.", "optionsLang": "en", "options": ["€8", "€4", "€6"], "answer": 0, "vocab": ["ocho"] },
+    { "id": "d009-14", "type": "listen-choose", "prompt": "How much is it?", "audio": "Son tres euros.", "optionsLang": "en", "options": ["€3", "€2", "€10"], "answer": 0, "vocab": ["tres"] },
+    { "id": "d009-15", "type": "build-sentence", "es": "¿Cuánto es? Son cuatro euros.", "en": "How much is it? — It's four euros.", "distractors": ["dos"], "vocab": ["cuanto-es", "cuatro"] },
+    { "id": "d009-16", "type": "build-sentence", "es": "Un zumo y dos cafés, por favor.", "en": "One juice and two coffees, please.", "distractors": ["tres"], "vocab": ["uno", "zumo", "dos", "cafe"] },
+    { "id": "d009-17", "type": "repeat", "es": "¿Cuánto es?", "en": "How much is it?", "vocab": ["cuanto-es"] },
+    { "id": "d009-18", "type": "repeat", "es": "uno, dos, tres, cuatro, cinco", "en": "1, 2, 3, 4, 5", "vocab": ["uno", "dos", "tres", "cuatro", "cinco"] },
+    { "id": "d009-19", "type": "shadow", "es": "seis, siete, ocho, nueve, diez", "en": "6, 7, 8, 9, 10", "listenFor": "s in seis and siete, ch in ocho, θ at the end of diez.", "vocab": ["seis", "siete", "ocho", "nueve", "diez"] },
+    { "id": "d009-20", "type": "listen-choose", "prompt": "Review: what does it mean?", "audio": "¿Cómo os llamáis?", "optionsLang": "en", "options": ["What are your names? (you all)", "What's your name?", "How do you spell it?"], "answer": 0, "vocab": ["como-os-llamais"] },
+    { "id": "d009-21", "type": "dictation", "prompt": "Review: type what you hear.", "es": "apellido", "hint": "surname", "vocab": ["apellido"] },
+    { "id": "d009-22", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Hola, me llamo Pablo. ¿Y tú?", "en": "Hi, my name is Pablo. And you?", "vocab": ["hola", "me-llamo", "y-and", "tu-you"] }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "./schema.json",
+  "day": 5,
+  "level": 1,
+  "title": { "en": "J, GE, GI and hard G", "es": "La jota y la ge" },
+  "objectives": [
+    "Pronounce j and ge/gi as Spain's strong x sound",
+    "Keep g hard in ga, go, gu, gue, gui",
+    "Soften g between vowels",
+    "Say you don't understand, and say bye"
+  ],
+  "teach": [
+    { "kind": "sound", "grapheme": "j · ge · gi", "ipa": "x", "tip": "Lift the back of your tongue towards the soft palate and push air through, like the 'ch' in Scottish 'loch'. It's much rougher than English h, and in Spain it's strong.", "examples": ["jamón", "hijo", "gente", "rojo"] },
+    { "kind": "sound", "grapheme": "ga · go · gu · gue · gui", "ipa": "ɡ", "tip": "A hard g, as in 'go'. To keep it hard before e or i, write gue or gui; that u is silent.", "examples": ["gato", "gracias", "guitarra"] },
+    { "kind": "sound", "grapheme": "g (soft)", "ipa": "ɣ", "tip": "Between vowels the g relaxes: the back of the tongue almost touches, and air keeps flowing. It's softer than English g but not as rough as j.", "examples": ["amigo", "agua", "luego"] },
+    { "kind": "minimalPair", "a": "hijo", "b": "higo", "aEn": "son", "bEn": "fig", "contrast": "x vs ɣ" },
+    { "kind": "note", "md": "**ge/gi** and **je/ji** sound the same (**gente**, **jefe**), so you learn the spelling word by word. Ga, go, gu and gue, gui are always hard." },
+    { "kind": "phrase", "es": "No entiendo.", "en": "I don't understand.", "note": "en-TYEN-do. Pair it with a smile, and people will slow down or rephrase." },
+    { "kind": "phrase", "es": "Hasta luego.", "en": "See you later. / Bye.", "note": "The everyday bye in Spain, even to a shop assistant you'll never see again. Silent h, soft g: AS-ta LWEH-ɣo." }
+  ],
+  "vocab": [
+    { "id": "no-entiendo", "es": "no entiendo", "en": "I don't understand", "pos": "phrase", "ipa": "no enˈtjendo", "tags": ["survival"] },
+    { "id": "hasta-luego", "es": "hasta luego", "en": "see you later, bye", "pos": "phrase", "ipa": "ˈasta ˈlweɣo", "tags": ["survival", "greetings"] },
+    { "id": "jamon", "es": "el jamón", "en": "the ham", "pos": "noun", "gender": "m", "ipa": "xaˈmon", "note": "Jamón serrano and jamón ibérico are cured ham; cooked ham is jamón york." },
+    { "id": "hijo", "es": "el hijo", "en": "the son", "pos": "noun", "gender": "m", "ipa": "ˈixo", "note": "Plural los hijos = sons, or children." },
+    { "id": "hija", "es": "la hija", "en": "the daughter", "pos": "noun", "gender": "f", "ipa": "ˈixa" },
+    { "id": "agua", "es": "el agua", "en": "the water", "pos": "noun", "gender": "f", "ipa": "ˈaɣwa", "note": "Feminine, but it takes el because it starts with a stressed a: el agua fría." },
+    { "id": "amigo", "es": "el amigo", "en": "the friend (male)", "pos": "noun", "gender": "m", "ipa": "aˈmiɣo", "note": "A female friend is la amiga." },
+    { "id": "gente", "es": "la gente", "en": "people", "pos": "noun", "gender": "f", "ipa": "ˈxente", "note": "Singular in Spanish: la gente es simpática = people are nice." },
+    { "id": "gato", "es": "el gato", "en": "the cat", "pos": "noun", "gender": "m", "ipa": "ˈɡato" }
+  ],
+  "exercises": [
+    { "id": "d005-01", "type": "listen-choose", "prompt": "x or ɣ? Pick the word you hear.", "audio": "hijo", "options": ["hijo", "higo"], "answer": 0, "vocab": ["hijo"] },
+    { "id": "d005-02", "type": "listen-choose", "prompt": "x or ɣ? Pick the word you hear.", "audio": "higo", "options": ["hijo", "higo"], "answer": 1, "vocab": [] },
+    { "id": "d005-03", "type": "listen-choose", "audio": "el jamón", "optionsLang": "en", "options": ["the ham", "the cheese", "the water"], "answer": 0, "vocab": ["jamon"] },
+    { "id": "d005-04", "type": "listen-choose", "audio": "hasta luego", "optionsLang": "en", "options": ["see you later", "I don't understand", "good morning"], "answer": 0, "vocab": ["hasta-luego"] },
+    { "id": "d005-05", "type": "listen-choose", "audio": "la gente", "optionsLang": "en", "options": ["people", "the cat", "the daughter"], "answer": 0, "vocab": ["gente"] },
+    { "id": "d005-06", "type": "match-pairs", "pairs": [["el hijo", "the son"], ["la hija", "the daughter"], ["el amigo", "the friend"], ["la gente", "people"], ["el gato", "the cat"]], "vocab": ["hijo", "hija", "amigo", "gente", "gato"] },
+    { "id": "d005-07", "type": "match-pairs", "pairs": [["el agua", "the water"], ["el jamón", "the ham"], ["no entiendo", "I don't understand"], ["hasta luego", "see you later"]], "vocab": ["agua", "jamon", "no-entiendo", "hasta-luego"] },
+    { "id": "d005-08", "type": "fill-blank", "es": "Perdón, no {{entiendo}}.", "en": "Sorry, I don't understand.", "options": ["entiendo", "siento", "hijo"], "vocab": ["perdon", "no-entiendo"] },
+    { "id": "d005-09", "type": "fill-blank", "es": "Hay mucha {{gente}}.", "en": "There are a lot of people.", "options": ["gente", "agua", "hija"], "vocab": ["gente"] },
+    { "id": "d005-10", "type": "fill-blank", "es": "Agua, por {{favor}}.", "en": "Water, please.", "options": ["favor", "luego", "nada"], "vocab": ["agua", "por-favor"] },
+    { "id": "d005-11", "type": "build-sentence", "es": "Perdón, no entiendo.", "en": "Sorry, I don't understand.", "distractors": ["siento"], "vocab": ["perdon", "no-entiendo"] },
+    { "id": "d005-12", "type": "build-sentence", "es": "Vale, hasta luego.", "en": "OK, see you later.", "distractors": ["hola"], "vocab": ["vale", "hasta-luego"] },
+    { "id": "d005-13", "type": "dictation", "es": "jamón", "hint": "ham (with an accent)", "vocab": ["jamon"] },
+    { "id": "d005-14", "type": "dictation", "es": "gato", "hint": "cat", "vocab": ["gato"] },
+    { "id": "d005-15", "type": "dictation", "es": "hijo", "hint": "son (silent h, strong j)", "vocab": ["hijo"] },
+    { "id": "d005-16", "type": "repeat", "es": "No entiendo.", "en": "I don't understand.", "vocab": ["no-entiendo"] },
+    { "id": "d005-17", "type": "repeat", "es": "Vale, hasta luego.", "en": "OK, see you later.", "vocab": ["vale", "hasta-luego"] },
+    { "id": "d005-18", "type": "shadow", "es": "jamón, hijo, gente", "en": "ham, son, people", "listenFor": "The same strong sound from the back of the throat for j and ge.", "vocab": ["jamon", "hijo", "gente"] },
+    { "id": "d005-19", "type": "shadow", "es": "gato, amigo, agua", "en": "cat, friend, water", "listenFor": "Hard g at the start of gato, soft g between the vowels in amigo and agua.", "vocab": ["gato", "amigo", "agua"] },
+    { "id": "d005-20", "type": "listen-choose", "prompt": "Review: what does it mean?", "audio": "la ciudad", "optionsLang": "en", "options": ["the city", "the centre", "the square"], "answer": 0, "vocab": ["ciudad"] },
+    { "id": "d005-21", "type": "dictation", "prompt": "Review: type what you hear.", "es": "cerveza", "hint": "beer (z and c both sound θ)", "vocab": ["cerveza"] },
+    { "id": "d005-22", "type": "repeat", "prompt": "Review: say it aloud.", "es": "—Gracias. —De nada.", "en": "Thanks. — You're welcome.", "vocab": ["gracias", "de-nada"] }
+  ]
+}

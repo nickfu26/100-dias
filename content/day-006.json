@@ -1,0 +1,61 @@
+{
+  "$schema": "./schema.json",
+  "day": 6,
+  "level": 1,
+  "title": { "en": "R, RR and Ñ", "es": "La erre y la eñe" },
+  "objectives": [
+    "Tell a single tap r from a trilled rr",
+    "Know when a single r is trilled",
+    "Pronounce ñ",
+    "Ask someone to repeat or slow down"
+  ],
+  "teach": [
+    { "kind": "sound", "grapheme": "r (single tap)", "ipa": "ɾ", "tip": "One quick flick of the tongue tip behind the top teeth, like the tt in American 'butter' or dd in 'ladder'.", "examples": ["pero", "caro", "ahora", "por favor"] },
+    {
+      "kind": "sound",
+      "grapheme": "rr · r- at the start of a word",
+      "ipa": "r",
+      "tip": "A trill: several fast taps. Relax the tongue tip and let the air make it flutter. Practise with 'dr-dr-dr'. Until the trill comes, a strong, long tap is understood. A single r after n, l or s is also trilled.",
+      "examples": ["perro", "carro", "rojo", "repetir"]
+    },
+    { "kind": "minimalPair", "a": "pero", "b": "perro", "aEn": "but", "bEn": "dog", "contrast": "ɾ vs r" },
+    { "kind": "minimalPair", "a": "caro", "b": "carro", "aEn": "expensive", "bEn": "cart, trolley (Latin America: car)", "contrast": "ɾ vs r" },
+    { "kind": "sound", "grapheme": "ñ", "ipa": "ɲ", "tip": "Like the ny in 'canyon', but as one sound: press the middle of your tongue against the roof of your mouth.", "examples": ["España", "mañana", "señor", "señora"] },
+    { "kind": "phrase", "es": "¿Puedes repetirlo?", "en": "Can you repeat that?", "note": "The r at the start of repetir is trilled. To someone you'd address as usted: ¿Puede repetirlo?" },
+    { "kind": "phrase", "es": "Más despacio, por favor.", "en": "Slower, please.", "note": "Más (more) has an accent. Use it together with no entiendo." }
+  ],
+  "vocab": [
+    { "id": "puedes-repetirlo", "es": "¿Puedes repetirlo?", "en": "Can you repeat that?", "pos": "phrase", "ipa": "ˈpweðes repeˈtiɾlo", "note": "Formal (usted): ¿Puede repetirlo?", "tags": ["survival"] },
+    { "id": "mas-despacio", "es": "más despacio", "en": "slower, more slowly", "pos": "phrase", "ipa": "ˈmas desˈpaθjo", "note": "Más despacio, por favor.", "tags": ["survival"] },
+    { "id": "pero", "es": "pero", "en": "but", "pos": "conj", "ipa": "ˈpeɾo" },
+    { "id": "perro", "es": "el perro", "en": "the dog", "pos": "noun", "gender": "m", "ipa": "ˈpero" },
+    { "id": "caro", "es": "caro", "en": "expensive", "pos": "adj", "ipa": "ˈkaɾo", "note": "Feminine: cara." },
+    { "id": "espana", "es": "España", "en": "Spain", "pos": "noun", "gender": "f", "ipa": "esˈpaɲa" },
+    { "id": "manana", "es": "mañana", "en": "tomorrow", "pos": "adv", "ipa": "maˈɲana", "note": "La mañana = the morning. Mañana por la mañana = tomorrow morning." },
+    { "id": "senor", "es": "el señor", "en": "the gentleman; Mr; sir", "pos": "noun", "gender": "m", "ipa": "seˈɲoɾ" },
+    { "id": "senora", "es": "la señora", "en": "the lady; Mrs; madam", "pos": "noun", "gender": "f", "ipa": "seˈɲoɾa" }
+  ],
+  "exercises": [
+    { "id": "d006-01", "type": "listen-choose", "prompt": "One r or two? Pick the word you hear.", "audio": "perro", "options": ["pero", "perro"], "answer": 1, "vocab": ["perro"] },
+    { "id": "d006-02", "type": "listen-choose", "prompt": "One r or two? Pick the word you hear.", "audio": "pero", "options": ["pero", "perro"], "answer": 0, "vocab": ["pero"] },
+    { "id": "d006-03", "type": "listen-choose", "prompt": "One r or two? Pick the word you hear.", "audio": "carro", "options": ["caro", "carro"], "answer": 1, "vocab": [] },
+    { "id": "d006-04", "type": "listen-choose", "audio": "mañana", "optionsLang": "en", "options": ["tomorrow", "today", "now"], "answer": 0, "vocab": ["manana"] },
+    { "id": "d006-05", "type": "match-pairs", "pairs": [["pero", "but"], ["el perro", "the dog"], ["caro", "expensive"], ["mañana", "tomorrow"], ["España", "Spain"]], "vocab": ["pero", "perro", "caro", "manana", "espana"] },
+    { "id": "d006-06", "type": "match-pairs", "pairs": [["¿Puedes repetirlo?", "Can you repeat that?"], ["más despacio", "slower"], ["el señor", "the gentleman"], ["la señora", "the lady"]], "vocab": ["puedes-repetirlo", "mas-despacio", "senor", "senora"] },
+    { "id": "d006-07", "type": "fill-blank", "prompt": "One r or two?", "es": "Es muy {{caro}}.", "en": "It's very expensive.", "options": ["caro", "carro"], "vocab": ["muy", "caro"] },
+    { "id": "d006-08", "type": "fill-blank", "es": "Hoy no, {{mañana}}.", "en": "Not today, tomorrow.", "options": ["mañana", "ahora", "aquí"], "vocab": ["hoy", "manana"] },
+    { "id": "d006-09", "type": "fill-blank", "es": "Más {{despacio}}, por favor.", "en": "Slower, please.", "options": ["despacio", "perro", "caro"], "vocab": ["mas-despacio", "por-favor"] },
+    { "id": "d006-10", "type": "build-sentence", "es": "Perdón, ¿puedes repetirlo?", "en": "Sorry, can you repeat that?", "distractors": ["pero"], "vocab": ["perdon", "puedes-repetirlo"] },
+    { "id": "d006-11", "type": "build-sentence", "es": "No entiendo. Más despacio, por favor.", "en": "I don't understand. Slower, please.", "distractors": ["mañana"], "vocab": ["no-entiendo", "mas-despacio", "por-favor"] },
+    { "id": "d006-12", "type": "dictation", "es": "perro", "hint": "dog (double r)", "vocab": ["perro"] },
+    { "id": "d006-13", "type": "dictation", "es": "pero", "hint": "but (single r)", "vocab": ["pero"] },
+    { "id": "d006-14", "type": "dictation", "es": "España", "hint": "Spain (don't forget the ñ)", "vocab": ["espana"] },
+    { "id": "d006-15", "type": "repeat", "es": "¿Puedes repetirlo?", "en": "Can you repeat that?", "vocab": ["puedes-repetirlo"] },
+    { "id": "d006-16", "type": "repeat", "es": "Más despacio, por favor.", "en": "Slower, please.", "vocab": ["mas-despacio", "por-favor"] },
+    { "id": "d006-17", "type": "shadow", "es": "pero, perro", "en": "but, dog", "listenFor": "One quick tap in pero, a trill in perro.", "vocab": ["pero", "perro"] },
+    { "id": "d006-18", "type": "shadow", "es": "España, mañana, señora", "en": "Spain, tomorrow, lady", "listenFor": "ñ is one smooth 'ny' sound, not n + y.", "vocab": ["espana", "manana", "senora"] },
+    { "id": "d006-19", "type": "listen-choose", "prompt": "Review: what does it mean?", "audio": "el agua", "optionsLang": "en", "options": ["the water", "the ham", "the dog"], "answer": 0, "vocab": ["agua"] },
+    { "id": "d006-20", "type": "dictation", "prompt": "Review: type what you hear.", "es": "hija", "hint": "daughter", "vocab": ["hija"] },
+    { "id": "d006-21", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Perdón, no entiendo.", "en": "Sorry, I don't understand.", "vocab": ["perdon", "no-entiendo"] }
+  ]
+}

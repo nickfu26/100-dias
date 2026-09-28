@@ -1,0 +1,66 @@
+{
+  "$schema": "./schema.json",
+  "day": 10,
+  "level": 1,
+  "title": { "en": "Numbers 11–20 and sound review", "es": "Del once al veinte y repaso" },
+  "objectives": [
+    "Count from 11 to 20",
+    "Spell 16–19 and 21–29 correctly, with the right accents",
+    "Understand prices up to 20 euros",
+    "Review every Level 1 sound before the checkpoint"
+  ],
+  "teach": [
+    { "kind": "phrase", "es": "once, doce, trece, catorce, quince", "en": "11, 12, 13, 14, 15", "note": "Five one-off words, and every one has a θ: ON-θe, DO-θe, TRE-θe, ka-TOR-θe, KIN-θe." },
+    { "kind": "phrase", "es": "dieciséis, diecisiete, dieciocho, diecinueve, veinte", "en": "16, 17, 18, 19, 20" },
+    {
+      "kind": "note",
+      "md": "**16–19 are 'ten and six', squeezed into one word:** diez y seis → **dieciséis**.\n\n- The z of **diez** turns into c before i (the day 4 spelling rule): **dieci-**.\n- **dieciséis** needs an accent. It ends in s and is stressed on the last syllable, which breaks rule 1 from day 2. The others follow the rules: diecisiete, dieciocho, diecinueve."
+    },
+    {
+      "kind": "note",
+      "md": "**21–29 work the same way**, from **veinte**: veinti + number, as one word.\n\n- With an accent: **veintidós, veintitrés, veintiséis** (they end in s and are stressed on the last syllable).\n- Without one: veintiuno, veinticuatro, veinticinco, veintisiete, veintiocho, veintinueve.\n- Before a masculine noun, veintiuno becomes **veintiún**: veintiún euros.\n\nFrom 31 on it's three words: **treinta y uno**."
+    },
+    {
+      "kind": "note",
+      "md": "**Level 1 sound checklist**\n\n- Five pure vowels: a e i o u\n- Stress and written accents: papa / papá\n- Silent h; soft d in nada\n- θ for z/ce/ci, s for s: casa / caza\n- Strong j for j/ge/gi; hard and soft g: gato, amigo\n- Tap r and trilled rr: pero / perro\n- ñ in España\n- ll = y; b = v; ch as in church"
+    }
+  ],
+  "vocab": [
+    { "id": "once", "es": "once", "en": "eleven", "pos": "num", "ipa": "ˈonθe" },
+    { "id": "doce", "es": "doce", "en": "twelve", "pos": "num", "ipa": "ˈdoθe" },
+    { "id": "trece", "es": "trece", "en": "thirteen", "pos": "num", "ipa": "ˈtɾeθe" },
+    { "id": "catorce", "es": "catorce", "en": "fourteen", "pos": "num", "ipa": "kaˈtoɾθe" },
+    { "id": "quince", "es": "quince", "en": "fifteen", "pos": "num", "ipa": "ˈkinθe" },
+    { "id": "dieciseis", "es": "dieciséis", "en": "sixteen", "pos": "num", "ipa": "djeθiˈseis" },
+    { "id": "diecisiete", "es": "diecisiete", "en": "seventeen", "pos": "num", "ipa": "djeθiˈsjete" },
+    { "id": "dieciocho", "es": "dieciocho", "en": "eighteen", "pos": "num", "ipa": "djeθiˈotʃo" },
+    { "id": "diecinueve", "es": "diecinueve", "en": "nineteen", "pos": "num", "ipa": "djeθiˈnweβe" },
+    { "id": "veinte", "es": "veinte", "en": "twenty", "pos": "num", "ipa": "ˈbeinte" }
+  ],
+  "exercises": [
+    { "id": "d010-01", "type": "listen-choose", "audio": "doce", "options": ["dos", "doce", "diez"], "answer": 1, "vocab": ["doce"] },
+    { "id": "d010-02", "type": "listen-choose", "audio": "trece", "options": ["tres", "trece", "diez"], "answer": 1, "vocab": ["trece"] },
+    { "id": "d010-03", "type": "listen-choose", "audio": "catorce", "options": ["cuatro", "catorce", "quince"], "answer": 1, "vocab": ["catorce"] },
+    { "id": "d010-04", "type": "listen-choose", "audio": "quince", "options": ["cinco", "quince", "once"], "answer": 1, "vocab": ["quince"] },
+    { "id": "d010-05", "type": "listen-choose", "audio": "dieciséis", "options": ["seis", "dieciséis", "diecisiete"], "answer": 1, "vocab": ["dieciseis"] },
+    { "id": "d010-06", "type": "match-pairs", "pairs": [["once", "11"], ["doce", "12"], ["trece", "13"], ["catorce", "14"], ["quince", "15"]], "vocab": ["once", "doce", "trece", "catorce", "quince"] },
+    { "id": "d010-07", "type": "match-pairs", "pairs": [["dieciséis", "16"], ["diecisiete", "17"], ["dieciocho", "18"], ["diecinueve", "19"], ["veinte", "20"]], "vocab": ["dieciseis", "diecisiete", "dieciocho", "diecinueve", "veinte"] },
+    { "id": "d010-08", "type": "fill-blank", "prompt": "Type the number in words.", "es": "Son {{dieciséis}} euros.", "en": "It's sixteen euros.", "accept": ["16"], "vocab": ["dieciseis"] },
+    { "id": "d010-09", "type": "fill-blank", "es": "Son {{veinte}} euros.", "en": "It's twenty euros.", "options": ["veinte", "doce", "trece"], "vocab": ["veinte"] },
+    { "id": "d010-10", "type": "dictation", "es": "quince", "accept": ["15"], "hint": "a number", "vocab": ["quince"] },
+    { "id": "d010-11", "type": "dictation", "es": "dieciséis", "accept": ["16"], "hint": "a number (watch the accent)", "vocab": ["dieciseis"] },
+    { "id": "d010-12", "type": "dictation", "es": "catorce", "accept": ["14"], "hint": "a number", "vocab": ["catorce"] },
+    { "id": "d010-13", "type": "listen-choose", "prompt": "How much is it?", "audio": "Son doce euros.", "optionsLang": "en", "options": ["€12", "€2", "€10"], "answer": 0, "vocab": ["doce"] },
+    { "id": "d010-14", "type": "listen-choose", "prompt": "How much is it?", "audio": "Son diecinueve euros.", "optionsLang": "en", "options": ["€19", "€9", "€17"], "answer": 0, "vocab": ["diecinueve"] },
+    { "id": "d010-15", "type": "build-sentence", "es": "¿Cuánto es? Son quince euros.", "en": "How much is it? — It's fifteen euros.", "distractors": ["cinco"], "vocab": ["cuanto-es", "quince"] },
+    { "id": "d010-16", "type": "repeat", "es": "once, doce, trece, catorce, quince", "en": "11, 12, 13, 14, 15", "vocab": ["once", "doce", "trece", "catorce", "quince"] },
+    { "id": "d010-17", "type": "repeat", "es": "dieciséis, diecisiete, dieciocho, diecinueve, veinte", "en": "16, 17, 18, 19, 20", "vocab": ["dieciseis", "diecisiete", "dieciocho", "diecinueve", "veinte"] },
+    { "id": "d010-18", "type": "shadow", "es": "doce, trece, catorce, quince", "en": "12, 13, 14, 15", "listenFor": "θ in every one: DO-θe, TRE-θe, ka-TOR-θe, KIN-θe.", "vocab": ["doce", "trece", "catorce", "quince"] },
+    { "id": "d010-19", "type": "listen-choose", "prompt": "Review: s or θ?", "audio": "caza", "options": ["casa", "caza"], "answer": 1, "vocab": [] },
+    { "id": "d010-20", "type": "listen-choose", "prompt": "Review: one r or two?", "audio": "perro", "options": ["pero", "perro"], "answer": 1, "vocab": ["perro"] },
+    { "id": "d010-21", "type": "listen-choose", "prompt": "Review: where is the stress?", "audio": "papá", "options": ["papa", "papá"], "answer": 1, "vocab": [] },
+    { "id": "d010-22", "type": "dictation", "prompt": "Review: type what you hear.", "es": "llave", "hint": "key", "vocab": ["llave"] },
+    { "id": "d010-23", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Perdón, no entiendo. ¿Puedes repetirlo?", "en": "Sorry, I don't understand. Can you repeat that?", "vocab": ["perdon", "no-entiendo", "puedes-repetirlo"] },
+    { "id": "d010-24", "type": "shadow", "prompt": "Review: shadow it.", "es": "Gracias, vale, hasta luego.", "en": "Thanks, OK, see you later.", "listenFor": "θ in gracias, a b sound in vale, the soft g in luego.", "vocab": ["gracias", "vale", "hasta-luego"] }
+  ]
+}

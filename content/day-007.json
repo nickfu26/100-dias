@@ -1,0 +1,67 @@
+{
+  "$schema": "./schema.json",
+  "day": 7,
+  "level": 1,
+  "title": { "en": "LL and Y, B and V, CH", "es": "La elle, la i griega, la be, la uve y la che" },
+  "objectives": [
+    "Say ll and y the same way",
+    "Say b and v the same way, softening between vowels",
+    "Pronounce ch",
+    "Ask how to say something in Spanish"
+  ],
+  "teach": [
+    {
+      "kind": "sound",
+      "grapheme": "ll · y",
+      "ipa": "ʝ",
+      "tip": "In most of Spain today ll and y sound the same (this is called yeísmo). It's like the y in 'yes', with a bit more contact, and after a pause or n it can sound close to the j in 'jam'. Only the spelling is different.",
+      "examples": ["la calle", "la playa", "yo", "la llave"]
+    },
+    { "kind": "note", "md": "**y** on its own (meaning *and*) and **y** at the end of a word are a vowel, [i]: **y**, **muy**, **hoy**." },
+    {
+      "kind": "sound",
+      "grapheme": "b · v",
+      "ipa": "b · β",
+      "tip": "b and v are the same sound. After a pause or m/n, it's a firm b (vale, bien). Everywhere else, especially between vowels, the lips come close without closing (β). Never bite your lip for an English v.",
+      "examples": ["vale", "bien", "el vino", "por favor"]
+    },
+    { "kind": "sound", "grapheme": "ch", "ipa": "tʃ", "tip": "As in 'church'.", "examples": ["mucho", "la leche", "el coche", "ocho"] },
+    { "kind": "phrase", "es": "¿Cómo se dice esto en español?", "en": "How do you say this in Spanish?", "note": "Point at something and ask. It also works with an English word: ¿Cómo se dice 'fork'?" },
+    { "kind": "phrase", "es": "Muchas gracias.", "en": "Thank you very much.", "note": "Muchas, not muchos, because gracias is feminine." }
+  ],
+  "vocab": [
+    { "id": "como-se-dice", "es": "¿Cómo se dice…?", "en": "How do you say…?", "pos": "phrase", "ipa": "ˈkomo se ˈðiθe", "note": "¿Cómo se dice esto en español? = How do you say this in Spanish?", "tags": ["survival"] },
+    { "id": "muchas-gracias", "es": "muchas gracias", "en": "thank you very much", "pos": "phrase", "ipa": "ˈmutʃas ˈɣɾaθjas", "tags": ["survival"] },
+    { "id": "mucho", "es": "mucho", "en": "a lot, much", "pos": "adv", "ipa": "ˈmutʃo" },
+    { "id": "yo", "es": "yo", "en": "I", "pos": "pron", "ipa": "ˈʝo" },
+    { "id": "calle", "es": "la calle", "en": "the street", "pos": "noun", "gender": "f", "ipa": "ˈkaʝe" },
+    { "id": "playa", "es": "la playa", "en": "the beach", "pos": "noun", "gender": "f", "ipa": "ˈplaʝa" },
+    { "id": "llave", "es": "la llave", "en": "the key", "pos": "noun", "gender": "f", "ipa": "ˈʝaβe" },
+    { "id": "vino", "es": "el vino", "en": "the wine", "pos": "noun", "gender": "m", "ipa": "ˈbino", "note": "Vino tinto = red wine; vino blanco = white wine." },
+    { "id": "leche", "es": "la leche", "en": "the milk", "pos": "noun", "gender": "f", "ipa": "ˈletʃe", "note": "Café con leche (coffee with milk) is the standard coffee order in Spain." },
+    { "id": "coche", "es": "el coche", "en": "the car", "pos": "noun", "gender": "m", "ipa": "ˈkotʃe", "note": "Latin America: el carro or el auto." }
+  ],
+  "exercises": [
+    { "id": "d007-01", "type": "listen-choose", "audio": "la calle", "optionsLang": "en", "options": ["the street", "the key", "the beach"], "answer": 0, "vocab": ["calle"] },
+    { "id": "d007-02", "type": "listen-choose", "audio": "la playa", "optionsLang": "en", "options": ["the beach", "the street", "the milk"], "answer": 0, "vocab": ["playa"] },
+    { "id": "d007-03", "type": "listen-choose", "audio": "el coche", "optionsLang": "en", "options": ["the car", "the cat", "the dog"], "answer": 0, "vocab": ["coche"] },
+    { "id": "d007-04", "type": "match-pairs", "pairs": [["la calle", "the street"], ["la playa", "the beach"], ["la llave", "the key"], ["yo", "I"], ["mucho", "a lot"]], "vocab": ["calle", "playa", "llave", "yo", "mucho"] },
+    { "id": "d007-05", "type": "match-pairs", "pairs": [["el vino", "the wine"], ["la leche", "the milk"], ["el coche", "the car"], ["muchas gracias", "thank you very much"], ["¿Cómo se dice…?", "How do you say…?"]], "vocab": ["vino", "leche", "coche", "muchas-gracias", "como-se-dice"] },
+    { "id": "d007-06", "type": "fill-blank", "es": "Un café con {{leche}}, por favor.", "en": "A coffee with milk, please.", "options": ["leche", "llave", "playa"], "vocab": ["cafe", "leche", "por-favor"] },
+    { "id": "d007-07", "type": "fill-blank", "es": "{{Muchas}} gracias.", "en": "Thank you very much.", "options": ["Muchas", "Mucho", "Muy"], "vocab": ["muchas-gracias"] },
+    { "id": "d007-08", "type": "fill-blank", "es": "Un {{vino}}, por favor.", "en": "A wine, please.", "options": ["vino", "coche", "yo"], "vocab": ["vino", "por-favor"] },
+    { "id": "d007-09", "type": "build-sentence", "es": "¿Cómo se dice esto en español?", "en": "How do you say this in Spanish?", "distractors": ["mucho"], "vocab": ["como-se-dice"] },
+    { "id": "d007-10", "type": "build-sentence", "es": "Un café con leche, por favor.", "en": "A coffee with milk, please.", "distractors": ["vino"], "vocab": ["cafe", "leche", "por-favor"] },
+    { "id": "d007-11", "type": "dictation", "es": "calle", "hint": "street (spelled with ll)", "vocab": ["calle"] },
+    { "id": "d007-12", "type": "dictation", "es": "playa", "hint": "beach (spelled with y)", "vocab": ["playa"] },
+    { "id": "d007-13", "type": "dictation", "es": "vino", "hint": "wine (v, though it sounds like b)", "vocab": ["vino"] },
+    { "id": "d007-14", "type": "dictation", "es": "coche", "hint": "car", "vocab": ["coche"] },
+    { "id": "d007-15", "type": "repeat", "es": "Muchas gracias.", "en": "Thank you very much.", "vocab": ["muchas-gracias"] },
+    { "id": "d007-16", "type": "repeat", "es": "¿Cómo se dice esto en español?", "en": "How do you say this in Spanish?", "vocab": ["como-se-dice"] },
+    { "id": "d007-17", "type": "shadow", "es": "la calle, la playa, yo", "en": "the street, the beach, I", "listenFor": "ll and y make exactly the same sound.", "vocab": ["calle", "playa", "yo"] },
+    { "id": "d007-18", "type": "shadow", "es": "vale, bien, el vino, por favor", "en": "OK, well, the wine, please", "listenFor": "A firm b in vale and bien; softer lips in el vino and favor. No English v.", "vocab": ["vale", "bien", "vino", "por-favor"] },
+    { "id": "d007-19", "type": "listen-choose", "prompt": "Review: one r or two?", "audio": "caro", "options": ["caro", "carro"], "answer": 0, "vocab": ["caro"] },
+    { "id": "d007-20", "type": "dictation", "prompt": "Review: type what you hear.", "es": "mañana", "hint": "tomorrow", "vocab": ["manana"] },
+    { "id": "d007-21", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Hoy no, mañana.", "en": "Not today, tomorrow.", "vocab": ["hoy", "manana"] }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "./schema.json",
+  "day": 1,
+  "level": 1,
+  "title": { "en": "The five vowels", "es": "Las vocales" },
+  "objectives": [
+    "Pronounce a, e, i, o, u short and pure",
+    "Say hello, good morning and goodbye",
+    "Say yes and no"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "Spanish has **five vowels**, and each one always sounds the same.\n\nKeep them **short and pure**. English *no* glides into *noh-oo*; Spanish **no** is just [o] and stops.\n\nUnstressed vowels keep their full sound too. There is no lazy *uh*: **casa** is KA-sa, never KA-suh."
+    },
+    { "kind": "sound", "grapheme": "a", "ipa": "a", "tip": "Mouth open, like the a in 'father', but shorter.", "examples": ["casa", "mapa", "hola"] },
+    { "kind": "sound", "grapheme": "e", "ipa": "e", "tip": "Between the e in 'bed' and 'bay', with no 'y' glide at the end.", "examples": ["mesa", "leche", "tres"] },
+    { "kind": "sound", "grapheme": "i", "ipa": "i", "tip": "Like the ee in 'see', but shorter.", "examples": ["sí", "piso", "vino"] },
+    { "kind": "sound", "grapheme": "o", "ipa": "o", "tip": "Round your lips and stop. No 'oh-oo' glide.", "examples": ["no", "hola", "ocho"] },
+    { "kind": "sound", "grapheme": "u", "ipa": "u", "tip": "Like the oo in 'food', lips rounded, short.", "examples": ["tú", "uno", "mucho"] },
+    {
+      "kind": "note",
+      "md": "When **u** or **i** sits next to another vowel, it glides into it: **buenos** = BWEH-nos, **adiós** = a-DYOS.\n\nA written accent stops the glide: **días** is DÍ-as, two syllables."
+    },
+    { "kind": "phrase", "es": "Hola.", "en": "Hi. / Hello.", "note": "The h is silent: OH-la. Fine with anyone, at any time of day." },
+    { "kind": "phrase", "es": "Buenos días.", "en": "Good morning.", "note": "In Spain it's used until lunch, which is around 2–3 pm. People often say both: Hola, buenos días." },
+    { "kind": "phrase", "es": "Adiós.", "en": "Goodbye.", "note": "Stress on -DIÓS. People also say adiós as a quick hello when passing someone in the street." }
+  ],
+  "vocab": [
+    { "id": "hola", "es": "hola", "en": "hi, hello", "pos": "interj", "ipa": "ˈola", "tags": ["survival", "greetings"] },
+    { "id": "buenos-dias", "es": "buenos días", "en": "good morning", "pos": "phrase", "ipa": "ˈbwenos ˈðias", "note": "Until lunchtime (about 2–3 pm).", "tags": ["survival", "greetings"] },
+    { "id": "adios", "es": "adiós", "en": "goodbye", "pos": "interj", "ipa": "aˈðjos", "tags": ["survival", "greetings"] },
+    { "id": "si-yes", "es": "sí", "en": "yes", "pos": "adv", "ipa": "ˈsi", "note": "With an accent. Without it, si means 'if'." },
+    { "id": "no", "es": "no", "en": "no, not", "pos": "adv", "ipa": "ˈno" },
+    { "id": "casa", "es": "la casa", "en": "the house, home", "pos": "noun", "gender": "f", "ipa": "ˈkasa" },
+    { "id": "mesa", "es": "la mesa", "en": "the table", "pos": "noun", "gender": "f", "ipa": "ˈmesa" },
+    { "id": "tu-you", "es": "tú", "en": "you (informal)", "pos": "pron", "ipa": "ˈtu", "note": "In Spain tú is used with most people your age or younger, and often with strangers too." },
+    { "id": "uno", "es": "uno", "en": "one", "pos": "num", "ipa": "ˈuno", "note": "Before a masculine noun it becomes un: un café." }
+  ],
+  "exercises": [
+    { "id": "d001-01", "type": "listen-choose", "prompt": "Listen to the vowels. Which word do you hear?", "audio": "casa", "options": ["casa", "cosa", "caso"], "answer": 0, "vocab": ["casa"] },
+    { "id": "d001-02", "type": "listen-choose", "prompt": "Listen to the vowels. Which word do you hear?", "audio": "piso", "options": ["paso", "peso", "piso"], "answer": 2, "vocab": [] },
+    { "id": "d001-03", "type": "listen-choose", "prompt": "Listen to the vowels. Which word do you hear?", "audio": "mesa", "options": ["masa", "mesa", "misa"], "answer": 1, "vocab": ["mesa"] },
+    { "id": "d001-04", "type": "listen-choose", "audio": "adiós", "optionsLang": "en", "options": ["goodbye", "hello", "good morning"], "answer": 0, "vocab": ["adios"] },
+    { "id": "d001-05", "type": "listen-choose", "audio": "buenos días", "optionsLang": "en", "options": ["good morning", "goodbye", "yes"], "answer": 0, "vocab": ["buenos-dias"] },
+    { "id": "d001-06", "type": "match-pairs", "pairs": [["hola", "hello"], ["adiós", "goodbye"], ["buenos días", "good morning"], ["sí", "yes"], ["no", "no"]], "vocab": ["hola", "adios", "buenos-dias", "si-yes", "no"] },
+    { "id": "d001-07", "type": "match-pairs", "pairs": [["la casa", "the house"], ["la mesa", "the table"], ["tú", "you"], ["uno", "one"]], "vocab": ["casa", "mesa", "tu-you", "uno"] },
+    { "id": "d001-08", "type": "fill-blank", "es": "{{Hola}}, buenos días.", "en": "Hello, good morning.", "options": ["Hola", "Adiós", "No"], "vocab": ["hola", "buenos-dias"] },
+    { "id": "d001-09", "type": "fill-blank", "es": "—¿Uno? —{{Sí}}, uno.", "en": "One? — Yes, one.", "options": ["Sí", "No", "Hola"], "vocab": ["si-yes", "uno"] },
+    { "id": "d001-10", "type": "build-sentence", "es": "Hola, buenos días.", "en": "Hello, good morning.", "distractors": ["adiós"], "vocab": ["hola", "buenos-dias"] },
+    { "id": "d001-11", "type": "dictation", "es": "hola", "hint": "hello (the h is written but silent)", "vocab": ["hola"] },
+    { "id": "d001-12", "type": "dictation", "es": "mesa", "hint": "table", "vocab": ["mesa"] },
+    { "id": "d001-13", "type": "dictation", "es": "sí", "hint": "yes (with an accent)", "vocab": ["si-yes"] },
+    { "id": "d001-14", "type": "dictation", "es": "uno", "accept": ["1"], "hint": "one", "vocab": ["uno"] },
+    { "id": "d001-15", "type": "repeat", "es": "Hola, buenos días.", "en": "Hello, good morning.", "vocab": ["hola", "buenos-dias"] },
+    { "id": "d001-16", "type": "repeat", "es": "Adiós.", "en": "Goodbye.", "vocab": ["adios"] },
+    { "id": "d001-17", "type": "shadow", "es": "a, e, i, o, u", "en": "the five vowels", "listenFor": "Each vowel short and pure. Listen for no glide at the end of e and o.", "vocab": [] },
+    { "id": "d001-18", "type": "shadow", "es": "la casa, la mesa", "en": "the house, the table", "listenFor": "Both a's in casa sound the same. No 'uh' in the unstressed syllable.", "vocab": ["casa", "mesa"] }
+  ]
+}

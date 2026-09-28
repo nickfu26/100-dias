@@ -1,0 +1,66 @@
+{
+  "$schema": "./schema.json",
+  "day": 2,
+  "level": 1,
+  "title": { "en": "Stress and written accents", "es": "El acento" },
+  "objectives": [
+    "Find the stressed syllable in any word",
+    "Know when a word needs a written accent",
+    "Ask how someone is and answer",
+    "Say OK and thank you"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "Every Spanish word has **one stressed syllable**, and three rules tell you which:\n\n1. Ends in a **vowel, n or s** → stress the **second-to-last** syllable: **CA**-sa, **HO**-la, **BUE**-nos.\n2. Ends in **any other consonant** → stress the **last** syllable: ho-**TEL**, Ma-**DRID**.\n3. A **written accent** (´) overrides both rules: a-**DIÓS**, ca-**FÉ**, **MÓ**-vil.\n\nSo when you see an accent, stress that syllable. When you don't, the rules work it out."
+    },
+    { "kind": "minimalPair", "a": "papa", "b": "papá", "aEn": "the Pope (Latin America: potato)", "bEn": "dad", "contrast": "PA-pa vs pa-PÁ" },
+    {
+      "kind": "note",
+      "md": "Some short words are spelled the same, so the accent tells you which one is meant. **On their own they sound the same.** The difference is only in writing, and in which word gets stressed in a sentence."
+    },
+    { "kind": "minimalPair", "a": "sí", "b": "si", "aEn": "yes", "bEn": "if", "contrast": "same sound, the accent marks meaning" },
+    { "kind": "minimalPair", "a": "té", "b": "te", "aEn": "tea", "bEn": "you (as object: te llamo = I'll call you)", "contrast": "same sound, the accent marks meaning" },
+    { "kind": "note", "md": "Questions open with **¿** and exclamations with **¡**, so you know from the start how to say the sentence: **¿Qué tal?**" },
+    { "kind": "phrase", "es": "¿Qué tal?", "en": "How's it going?", "note": "The most common casual greeting in Spain: Hola, ¿qué tal? The qu sounds like k; the u is silent." },
+    { "kind": "phrase", "es": "Muy bien, ¿y tú?", "en": "Very well, and you?", "note": "Just bien is fine too." },
+    { "kind": "phrase", "es": "Vale.", "en": "OK.", "note": "Spain's all-purpose OK, for agreeing, confirming or wrapping up. It sounds like BA-le, because v sounds like b." },
+    { "kind": "phrase", "es": "Gracias.", "en": "Thank you.", "note": "GRA-θjas. The c is a 'th' sound, which you'll practise on day 4. Stress the first syllable." }
+  ],
+  "vocab": [
+    { "id": "que-tal", "es": "¿Qué tal?", "en": "How's it going?", "pos": "phrase", "ipa": "ke ˈtal", "tags": ["survival", "greetings"] },
+    { "id": "bien", "es": "bien", "en": "well, fine", "pos": "adv", "ipa": "ˈbjen" },
+    { "id": "muy", "es": "muy", "en": "very", "pos": "adv", "ipa": "ˈmui" },
+    { "id": "y-and", "es": "y", "en": "and", "pos": "conj", "ipa": "i" },
+    { "id": "vale", "es": "vale", "en": "OK", "pos": "interj", "ipa": "ˈbale", "note": "Very Spanish from Spain. Latin America uses okay, bueno or dale instead.", "tags": ["survival"] },
+    { "id": "gracias", "es": "gracias", "en": "thank you, thanks", "pos": "interj", "ipa": "ˈɡɾaθjas", "tags": ["survival"] },
+    { "id": "cafe", "es": "el café", "en": "the coffee; the café", "pos": "noun", "gender": "m", "ipa": "kaˈfe" },
+    { "id": "menu", "es": "el menú", "en": "the menu; the set lunch", "pos": "noun", "gender": "m", "ipa": "meˈnu", "note": "El menú del día is the fixed-price set lunch in Spain. The list of dishes is la carta." },
+    { "id": "autobus", "es": "el autobús", "en": "the bus", "pos": "noun", "gender": "m", "ipa": "awtoˈβus", "note": "People also say el bus." },
+    { "id": "movil", "es": "el móvil", "en": "the mobile phone", "pos": "noun", "gender": "m", "ipa": "ˈmoβil", "note": "Latin America: el celular." }
+  ],
+  "exercises": [
+    { "id": "d002-01", "type": "listen-choose", "prompt": "Where is the stress? Pick the word you hear.", "audio": "papá", "options": ["papa", "papá"], "answer": 1, "vocab": [] },
+    { "id": "d002-02", "type": "listen-choose", "prompt": "Where is the stress? Pick the word you hear.", "audio": "papa", "options": ["papa", "papá"], "answer": 0, "vocab": [] },
+    { "id": "d002-03", "type": "listen-choose", "prompt": "Which syllable is stressed?", "audio": "el autobús", "optionsLang": "en", "options": ["AU-to-bus", "au-TO-bus", "au-to-BUS"], "answer": 2, "vocab": ["autobus"] },
+    { "id": "d002-04", "type": "listen-choose", "prompt": "Which syllable is stressed?", "audio": "el móvil", "optionsLang": "en", "options": ["MO-vil", "mo-VIL"], "answer": 0, "vocab": ["movil"] },
+    { "id": "d002-05", "type": "listen-choose", "prompt": "Which syllable is stressed?", "audio": "gracias", "optionsLang": "en", "options": ["GRA-cias", "gra-CIAS"], "answer": 0, "vocab": ["gracias"] },
+    { "id": "d002-06", "type": "listen-choose", "prompt": "Which syllable is stressed?", "audio": "el menú", "optionsLang": "en", "options": ["ME-nu", "me-NU"], "answer": 1, "vocab": ["menu"] },
+    { "id": "d002-07", "type": "match-pairs", "pairs": [["¿Qué tal?", "How's it going?"], ["muy", "very"], ["bien", "well"], ["vale", "OK"], ["gracias", "thank you"]], "vocab": ["que-tal", "muy", "bien", "vale", "gracias"] },
+    { "id": "d002-08", "type": "match-pairs", "pairs": [["el café", "the coffee"], ["el menú", "the menu"], ["el autobús", "the bus"], ["el móvil", "the mobile phone"], ["y", "and"]], "vocab": ["cafe", "menu", "autobus", "movil", "y-and"] },
+    { "id": "d002-09", "type": "fill-blank", "prompt": "Yes or if? Pick the right spelling.", "es": "{{Sí}}, gracias.", "en": "Yes, thank you.", "options": ["Sí", "Si"], "vocab": ["si-yes", "gracias"] },
+    { "id": "d002-10", "type": "fill-blank", "prompt": "Tea or you? Pick the right spelling.", "es": "Un café y un {{té}}.", "en": "A coffee and a tea.", "options": ["té", "te"], "vocab": ["cafe", "y-and"] },
+    { "id": "d002-11", "type": "fill-blank", "es": "Muy {{bien}}, ¿y tú?", "en": "Very well, and you?", "options": ["bien", "vale", "muy"], "vocab": ["muy", "bien", "y-and", "tu-you"] },
+    { "id": "d002-12", "type": "build-sentence", "es": "Hola, ¿qué tal?", "en": "Hi, how's it going?", "distractors": ["adiós"], "vocab": ["hola", "que-tal"] },
+    { "id": "d002-13", "type": "build-sentence", "es": "Muy bien, ¿y tú?", "en": "Very well, and you?", "distractors": ["vale"], "vocab": ["muy", "bien", "y-and", "tu-you"] },
+    { "id": "d002-14", "type": "dictation", "es": "café", "hint": "coffee (remember the accent)", "vocab": ["cafe"] },
+    { "id": "d002-15", "type": "dictation", "es": "vale", "hint": "OK (the v sounds like b)", "vocab": ["vale"] },
+    { "id": "d002-16", "type": "repeat", "es": "Hola, ¿qué tal?", "en": "Hi, how's it going?", "vocab": ["hola", "que-tal"] },
+    { "id": "d002-17", "type": "repeat", "es": "Vale, gracias.", "en": "OK, thanks.", "vocab": ["vale", "gracias"] },
+    { "id": "d002-18", "type": "shadow", "es": "papa, papá", "en": "Pope, dad", "listenFor": "Move the stress: PA-pa, then pa-PÁ.", "vocab": [] },
+    { "id": "d002-19", "type": "shadow", "es": "el café, el menú, el autobús", "en": "the coffee, the menu, the bus", "listenFor": "Hit the last syllable each time: ca-FÉ, me-NÚ, au-to-BÚS.", "vocab": ["cafe", "menu", "autobus"] },
+    { "id": "d002-20", "type": "listen-choose", "prompt": "Review: what does it mean?", "audio": "adiós", "optionsLang": "en", "options": ["goodbye", "yes", "hello"], "answer": 0, "vocab": ["adios"] },
+    { "id": "d002-21", "type": "dictation", "prompt": "Review: type what you hear.", "es": "la casa", "hint": "the house", "vocab": ["casa"] },
+    { "id": "d002-22", "type": "fill-blank", "prompt": "Review: complete the greeting.", "es": "Hola, {{buenos}} días.", "en": "Hello, good morning.", "options": ["buenos", "muy", "uno"], "vocab": ["hola", "buenos-dias"] }
+  ]
+}

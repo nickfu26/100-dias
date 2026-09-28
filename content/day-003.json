@@ -1,0 +1,67 @@
+{
+  "$schema": "./schema.json",
+  "day": 3,
+  "level": 1,
+  "title": { "en": "Easy consonants and silent h", "es": "Consonantes fáciles y la hache muda" },
+  "objectives": [
+    "Say p, t and k without a puff of air",
+    "Never pronounce h",
+    "Hear the soft d between vowels",
+    "Say please and excuse me"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "Good news: **m, n, f, l** and **s** sound much as they do in English.\n\n**p, t** and **k** are softer. English puts a puff of air after them (hold your hand in front of your mouth and say *top*). Spanish doesn't, so **todo** and **papá** barely move the air."
+    },
+    { "kind": "sound", "grapheme": "h", "ipa": "∅", "tip": "Always silent. Just start on the vowel: hola = OH-la, hotel = o-TEL.", "examples": ["hola", "hotel", "hoy", "ahora"] },
+    { "kind": "sound", "grapheme": "t", "ipa": "t̪", "tip": "The tongue tip touches the back of your top teeth, not the ridge behind them. No puff of air.", "examples": ["todo", "tomate", "hotel"] },
+    { "kind": "sound", "grapheme": "c · qu", "ipa": "k", "tip": "c before a, o, u, and qu before e, i, both sound like k. The u in que/qui is silent.", "examples": ["casa", "queso", "aquí"] },
+    {
+      "kind": "sound",
+      "grapheme": "d (soft)",
+      "ipa": "ð",
+      "tip": "Between vowels, after r and at the end of a word, d softens to the 'th' in 'this': just a light touch of the tongue on the teeth. After a pause, n or l it's a firm d.",
+      "examples": ["nada", "todo", "Madrid", "perdón"]
+    },
+    { "kind": "note", "md": "You'll hear the soft d everywhere in Spain: **nada** ≈ NA-tha, **Madrid** ≈ ma-DRITH. Keep it gentle. It's a light touch, not a strong English *th*." },
+    { "kind": "phrase", "es": "Por favor.", "en": "Please.", "note": "Tap the r's lightly, like the tt in American 'butter'. The v sounds like b." },
+    { "kind": "phrase", "es": "Perdón.", "en": "Sorry. / Excuse me.", "note": "Use it when you bump into someone, need to get past, or want someone's attention. Stress -DÓN." }
+  ],
+  "vocab": [
+    { "id": "por-favor", "es": "por favor", "en": "please", "pos": "phrase", "ipa": "poɾ faˈβoɾ", "tags": ["survival"] },
+    { "id": "perdon", "es": "perdón", "en": "sorry, excuse me", "pos": "interj", "ipa": "peɾˈðon", "note": "Also: perdona (to someone you'd call tú).", "tags": ["survival"] },
+    { "id": "hoy", "es": "hoy", "en": "today", "pos": "adv", "ipa": "ˈoi" },
+    { "id": "ahora", "es": "ahora", "en": "now", "pos": "adv", "ipa": "aˈoɾa" },
+    { "id": "aqui", "es": "aquí", "en": "here", "pos": "adv", "ipa": "aˈki" },
+    { "id": "nada", "es": "nada", "en": "nothing", "pos": "pron", "ipa": "ˈnaða" },
+    { "id": "todo", "es": "todo", "en": "everything, all", "pos": "pron", "ipa": "ˈtoðo" },
+    { "id": "hotel", "es": "el hotel", "en": "the hotel", "pos": "noun", "gender": "m", "ipa": "oˈtel" },
+    { "id": "queso", "es": "el queso", "en": "the cheese", "pos": "noun", "gender": "m", "ipa": "ˈkeso" },
+    { "id": "ordenador", "es": "el ordenador", "en": "the computer", "pos": "noun", "gender": "m", "ipa": "oɾðenaˈðoɾ", "note": "Latin America: la computadora." }
+  ],
+  "exercises": [
+    { "id": "d003-01", "type": "listen-choose", "audio": "hoy", "optionsLang": "en", "options": ["today", "now", "here"], "answer": 0, "vocab": ["hoy"] },
+    { "id": "d003-02", "type": "listen-choose", "audio": "ahora", "optionsLang": "en", "options": ["now", "today", "nothing"], "answer": 0, "vocab": ["ahora"] },
+    { "id": "d003-03", "type": "listen-choose", "audio": "aquí", "optionsLang": "en", "options": ["here", "everything", "please"], "answer": 0, "vocab": ["aqui"] },
+    { "id": "d003-04", "type": "listen-choose", "prompt": "Soft d or t? Pick the word you hear.", "audio": "nada", "options": ["nada", "nata"], "answer": 0, "vocab": ["nada"] },
+    { "id": "d003-05", "type": "listen-choose", "audio": "el ordenador", "optionsLang": "en", "options": ["the computer", "the hotel", "the cheese"], "answer": 0, "vocab": ["ordenador"] },
+    { "id": "d003-06", "type": "match-pairs", "pairs": [["por favor", "please"], ["perdón", "sorry / excuse me"], ["hoy", "today"], ["ahora", "now"], ["aquí", "here"]], "vocab": ["por-favor", "perdon", "hoy", "ahora", "aqui"] },
+    { "id": "d003-07", "type": "match-pairs", "pairs": [["el hotel", "the hotel"], ["el queso", "the cheese"], ["el ordenador", "the computer"], ["nada", "nothing"], ["todo", "everything"]], "vocab": ["hotel", "queso", "ordenador", "nada", "todo"] },
+    { "id": "d003-08", "type": "fill-blank", "es": "Un café, {{por favor}}.", "en": "A coffee, please.", "options": ["por favor", "perdón", "nada"], "vocab": ["cafe", "por-favor"] },
+    { "id": "d003-09", "type": "fill-blank", "es": "{{Hoy}} no, gracias.", "en": "Not today, thanks.", "options": ["Hoy", "Hola", "Aquí"], "vocab": ["hoy", "gracias"] },
+    { "id": "d003-10", "type": "fill-blank", "es": "{{Todo}} bien.", "en": "All good.", "options": ["Todo", "Nada", "Hoy"], "vocab": ["todo", "bien"] },
+    { "id": "d003-11", "type": "build-sentence", "es": "Un café, por favor.", "en": "A coffee, please.", "distractors": ["perdón"], "vocab": ["cafe", "por-favor"] },
+    { "id": "d003-12", "type": "build-sentence", "es": "Ahora no, gracias.", "en": "Not now, thanks.", "distractors": ["hoy"], "vocab": ["ahora", "gracias"] },
+    { "id": "d003-13", "type": "dictation", "es": "hotel", "hint": "hotel (the h is written but silent)", "vocab": ["hotel"] },
+    { "id": "d003-14", "type": "dictation", "es": "nada", "hint": "nothing", "vocab": ["nada"] },
+    { "id": "d003-15", "type": "dictation", "es": "aquí", "hint": "here (accent on the i)", "vocab": ["aqui"] },
+    { "id": "d003-16", "type": "repeat", "es": "Por favor.", "en": "Please.", "vocab": ["por-favor"] },
+    { "id": "d003-17", "type": "repeat", "es": "Perdón.", "en": "Sorry. / Excuse me.", "vocab": ["perdon"] },
+    { "id": "d003-18", "type": "shadow", "es": "nada, todo, Madrid", "en": "nothing, everything, Madrid", "listenFor": "The soft d between vowels and at the end of Madrid: a light 'th' as in 'this'.", "vocab": ["nada", "todo"] },
+    { "id": "d003-19", "type": "shadow", "es": "hola, hotel, hoy, ahora", "en": "hello, hotel, today, now", "listenFor": "No h sound at all. Each word starts on the vowel.", "vocab": ["hola", "hotel", "hoy", "ahora"] },
+    { "id": "d003-20", "type": "listen-choose", "prompt": "Review: what does it mean?", "audio": "vale", "optionsLang": "en", "options": ["OK", "thank you", "very"], "answer": 0, "vocab": ["vale"] },
+    { "id": "d003-21", "type": "dictation", "prompt": "Review: type what you hear.", "es": "gracias", "hint": "thank you", "vocab": ["gracias"] },
+    { "id": "d003-22", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Muy bien, ¿y tú?", "en": "Very well, and you?", "vocab": ["muy", "bien", "y-and", "tu-you"] }
+  ]
+}

@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-27T03:49:02+00:00",
+ "generated": "2026-09-28T02:38:04+00:00",
  "voices": {
   "f": "es-ES-ElviraNeural",
   "m": "es-ES-AlvaroNeural"
@@ -7,52 +7,1068 @@
  "slowRate": "-30%",
  "slowPolicy": "all",
  "entries": {
+  "Adiós.": {
+   "id": "9961cceabf42",
+   "slow": true
+  },
+  "Agua, por favor.": {
+   "id": "6322da0ac714",
+   "slow": true
+  },
+  "Ahora no, gracias.": {
+   "id": "eff68f63e6d1",
+   "slow": true
+  },
+  "Ahora no, mañana.": {
+   "id": "7303c25eb875",
+   "slow": true
+  },
+  "Buenos días.": {
+   "id": "241e4b13a411",
+   "slow": true
+  },
+  "Consonantes fáciles y la hache muda": {
+   "id": "e2e92f32b32b",
+   "slow": true
+  },
+  "De nada.": {
+   "id": "c310b65511ac",
+   "slow": true
+  },
+  "Del once al veinte y repaso": {
+   "id": "14d76f203254",
+   "slow": true
+  },
+  "Dos cafés con leche y un agua, por favor.": {
+   "id": "fc5ebcd0e5d1",
+   "slow": true
+  },
+  "Dos cafés, por favor.": {
+   "id": "e3f1f6134f4b",
+   "slow": true
+  },
+  "El abecedario": {
+   "id": "84ce9dedc902",
+   "slow": true
+  },
+  "El acento": {
+   "id": "4f1f82618f26",
+   "slow": true
+  },
+  "Es muy caro.": {
+   "id": "5c5b7489cd89",
+   "slow": true
+  },
+  "España": {
+   "id": "1ea132ffbd7c",
+   "slow": true
+  },
+  "España, mañana, señora": {
+   "id": "43d461ac819b",
+   "slow": true
+  },
+  "Gracias, vale, hasta luego.": {
+   "id": "6992b666ff68",
+   "slow": true
+  },
+  "Gracias.": {
+   "id": "3eec18fc9795",
+   "slow": true
+  },
+  "Hasta luego.": {
+   "id": "c39dd2e76f5f",
+   "slow": true
+  },
+  "Hay mucha gente.": {
+   "id": "2fc75bfd3e17",
+   "slow": true
+  },
+  "Hola, buenos días.": {
+   "id": "ef2c1e881471",
+   "slow": true
+  },
+  "Hola, me llamo Pablo. ¿Y tú?": {
+   "id": "ca281f56d08f",
+   "slow": true
+  },
   "Hola, ¿qué tal?": {
    "id": "9e18b99aaf0c",
+   "slow": true
+  },
+  "Hola.": {
+   "id": "5a383fbf2ea3",
+   "slow": true
+  },
+  "Hoy no, gracias.": {
+   "id": "ad30e282503e",
+   "slow": true
+  },
+  "Hoy no, mañana.": {
+   "id": "3919641bde53",
+   "slow": true
+  },
+  "La cena es a las diez.": {
+   "id": "c3c4b427b364",
+   "slow": true
+  },
+  "La distinción": {
+   "id": "5175f69a083b",
+   "slow": true
+  },
+  "La elle, la i griega, la be, la uve y la che": {
+   "id": "af3144c89576",
+   "slow": true
+  },
+  "La erre y la eñe": {
+   "id": "e6bd8c584b0a",
+   "slow": true
+  },
+  "La jota y la ge": {
+   "id": "f33b6ba13217",
+   "slow": true
+  },
+  "Las vocales": {
+   "id": "4e6f528b8ad4",
+   "slow": true
+  },
+  "Lo siento, hoy no.": {
+   "id": "c32f40ac58e1",
+   "slow": true
+  },
+  "Lo siento.": {
+   "id": "cd626d0e33a3",
+   "slow": true
+  },
+  "Los números del cero al diez": {
+   "id": "50d97207ce28",
+   "slow": true
+  },
+  "Madrid": {
+   "id": "7a2191964a3d",
    "slow": true
   },
   "Me gusta mucho el jamón.": {
    "id": "e5d9767131fc",
    "slow": true
   },
+  "Me llamo Ana.": {
+   "id": "b9257675bfcd",
+   "slow": true
+  },
+  "Me llamo Ana. Encantada.": {
+   "id": "71394bd10ab8",
+   "slow": true
+  },
+  "Me llamo Carmen. ¿Cómo te llamas?": {
+   "id": "2a8130c879ca",
+   "slow": true
+  },
+  "Muchas gracias.": {
+   "id": "04a4f089b6be",
+   "slow": true
+  },
+  "Muy bien, ¿y tú?": {
+   "id": "29a7b118640f",
+   "slow": true
+  },
+  "Más despacio, por favor.": {
+   "id": "02b4fd4d60b9",
+   "slow": true
+  },
+  "No entiendo.": {
+   "id": "f82376e0e113",
+   "slow": true
+  },
+  "No entiendo. Más despacio, por favor.": {
+   "id": "777b48ba81c1",
+   "slow": true
+  },
+  "No, nada. Todo bien.": {
+   "id": "f84a75fe3690",
+   "slow": true
+  },
+  "Perdón, no entiendo.": {
+   "id": "7253ba4522e8",
+   "slow": true
+  },
+  "Perdón, no entiendo. ¿Puedes repetirlo?": {
+   "id": "246684f8e097",
+   "slow": true
+  },
+  "Perdón, ¿puedes repetirlo?": {
+   "id": "b2efff1b63f5",
+   "slow": true
+  },
+  "Perdón.": {
+   "id": "a0c4da078de0",
+   "slow": true
+  },
+  "Por favor.": {
+   "id": "0cb4dc00702a",
+   "slow": true
+  },
+  "Prueba del nivel uno": {
+   "id": "7665db802d27",
+   "slow": true
+  },
+  "Son cinco euros.": {
+   "id": "e31a2149d461",
+   "slow": true
+  },
+  "Son diecinueve euros.": {
+   "id": "24100266cd88",
+   "slow": true
+  },
+  "Son dieciséis euros.": {
+   "id": "22efbbb3e7ce",
+   "slow": true
+  },
+  "Son doce euros.": {
+   "id": "719ab7eccee2",
+   "slow": true
+  },
+  "Son ocho euros.": {
+   "id": "e75683724a3c",
+   "slow": true
+  },
+  "Son tres euros.": {
+   "id": "82da7fe3fa8a",
+   "slow": true
+  },
+  "Son veinte euros.": {
+   "id": "9d586b30f67e",
+   "slow": true
+  },
+  "Sí, gracias.": {
+   "id": "0baeb93cc1c2",
+   "slow": true
+  },
+  "Sí, vale. Muchas gracias.": {
+   "id": "3a95e134a5b3",
+   "slow": true
+  },
   "Tengo cinco años.": {
    "id": "5f4c49d8e9a1",
+   "slow": true
+  },
+  "Todo bien, gracias.": {
+   "id": "53919f7e8ec3",
+   "slow": true
+  },
+  "Todo bien.": {
+   "id": "e0137ccca1e9",
+   "slow": true
+  },
+  "Un café con leche, por favor.": {
+   "id": "6091528a54e3",
+   "slow": true
+  },
+  "Un café y un té.": {
+   "id": "3787557f7692",
+   "slow": true
+  },
+  "Un café y una cerveza, por favor.": {
+   "id": "47b4cdd0c60d",
+   "slow": true
+  },
+  "Un café, por favor.": {
+   "id": "62673b67bf88",
+   "slow": true
+  },
+  "Un vino, por favor.": {
+   "id": "e72ae33dc74b",
    "slow": true
   },
   "Un zumo de naranja, por favor.": {
    "id": "57a6b1489136",
    "slow": true
   },
+  "Un zumo y dos cafés, por favor.": {
+   "id": "c456215eea87",
+   "slow": true
+  },
+  "Un zumo, por favor.": {
+   "id": "2c5d5393674e",
+   "slow": true
+  },
+  "Una cerveza y un zumo, por favor.": {
+   "id": "c74c6f04671d",
+   "slow": true
+  },
   "Vale, gracias.": {
    "id": "59e9bbf7f3ad",
+   "slow": true
+  },
+  "Vale, hasta luego.": {
+   "id": "a27bb5bae3e3",
+   "slow": true
+  },
+  "Vale.": {
+   "id": "62fd7c007f31",
+   "slow": true
+  },
+  "Yo me llamo Pablo. Encantado.": {
+   "id": "4e1adff9f009",
+   "slow": true
+  },
+  "a, be, ce, de, e, efe, ge": {
+   "id": "1d6b612099fb",
+   "slow": true
+  },
+  "a, e, i, o, u": {
+   "id": "f73220c38b47",
+   "slow": true
+  },
+  "adiós": {
+   "id": "01674e46d255",
+   "slow": true
+  },
+  "agua": {
+   "id": "c1962c232baf",
+   "slow": true
+  },
+  "ahora": {
+   "id": "317914bb85c2",
+   "slow": true
+  },
+  "amigo": {
+   "id": "01f07beb8567",
+   "slow": true
+  },
+  "apellido": {
+   "id": "e7445d58e739",
+   "slow": true
+  },
+  "aquí": {
+   "id": "fe01be3cb3e2",
+   "slow": true
+  },
+  "bien": {
+   "id": "d4e2f6084164",
+   "slow": true
+  },
+  "buenos días": {
+   "id": "a25b998dff5d",
+   "slow": true
+  },
+  "café": {
+   "id": "f424452a9673",
+   "slow": true
+  },
+  "calle": {
+   "id": "8f9f97eb45ed",
+   "slow": true
+  },
+  "caro": {
+   "id": "732849d5bc94",
+   "slow": true
+  },
+  "carro": {
+   "id": "3959fc6166e0",
    "slow": true
   },
   "casa": {
    "id": "81bce1f3bf34",
    "slow": true
   },
+  "casa, caza": {
+   "id": "f16df25bd2b9",
+   "slow": true
+  },
+  "caso": {
+   "id": "9652dd35d2dd",
+   "slow": true
+  },
+  "catorce": {
+   "id": "94087dc244cc",
+   "slow": true
+  },
   "caza": {
    "id": "820dde826464",
+   "slow": true
+  },
+  "ce, a, ele, ele, e": {
+   "id": "1ba7b2b656dc",
+   "slow": true
+  },
+  "cena": {
+   "id": "62e5582aace0",
+   "slow": true
+  },
+  "cero": {
+   "id": "74cbf12e072b",
+   "slow": true
+  },
+  "cero, uno, dos, tres, cuatro, cinco": {
+   "id": "bfa5b9bc2167",
+   "slow": true
+  },
+  "cerveza": {
+   "id": "e996f592b0e4",
+   "slow": true
+  },
+  "ciento": {
+   "id": "7b1ca82dd1a3",
+   "slow": true
+  },
+  "cinco": {
+   "id": "a097b33b7758",
+   "slow": true
+  },
+  "coche": {
+   "id": "33feb9d01a09",
+   "slow": true
+  },
+  "cosa": {
+   "id": "ab09653b80db",
+   "slow": true
+  },
+  "cuatro": {
+   "id": "a37e3bea6f0b",
+   "slow": true
+  },
+  "de nada": {
+   "id": "671cfd4fde3f",
+   "slow": true
+  },
+  "diecinueve": {
+   "id": "05ceedc0dacf",
+   "slow": true
+  },
+  "dieciocho": {
+   "id": "03eaff523508",
+   "slow": true
+  },
+  "diecisiete": {
+   "id": "614a443a44db",
+   "slow": true
+  },
+  "dieciséis": {
+   "id": "a7be45493f5d",
+   "slow": true
+  },
+  "dieciséis, diecisiete, dieciocho, diecinueve, veinte": {
+   "id": "b1c2b85a9706",
+   "slow": true
+  },
+  "diez": {
+   "id": "8c95def646b6",
+   "slow": true
+  },
+  "doce": {
+   "id": "c24b8eb0d02c",
+   "slow": true
+  },
+  "doce, trece, catorce, quince": {
+   "id": "602f53bbe13a",
+   "slow": true
+  },
+  "dos": {
+   "id": "e67f16d28ac3",
+   "slow": true
+  },
+  "el agua": {
+   "id": "76277cc030a3",
+   "slow": true
+  },
+  "el amigo": {
+   "id": "80476a2baef8",
+   "slow": true
+  },
+  "el apellido": {
+   "id": "ad6a17db7010",
+   "slow": true
+  },
+  "el autobús": {
+   "id": "1c8c182a8cb3",
+   "slow": true
+  },
+  "el café": {
+   "id": "b309e34c0e94",
+   "slow": true
+  },
+  "el café, el menú, el autobús": {
+   "id": "276d6f613c60",
+   "slow": true
+  },
+  "el centro": {
+   "id": "efad9daee7c5",
+   "slow": true
+  },
+  "el centro de la ciudad": {
+   "id": "3dbda7e6e3b1",
+   "slow": true
+  },
+  "el coche": {
+   "id": "1cd6c8235362",
+   "slow": true
+  },
+  "el gato": {
+   "id": "1085e3cc91b1",
+   "slow": true
+  },
+  "el hijo": {
+   "id": "6540f2953b1b",
+   "slow": true
+  },
+  "el hotel": {
+   "id": "5a850769534a",
+   "slow": true
+  },
+  "el jamón": {
+   "id": "acfceb687c5c",
+   "slow": true
+  },
+  "el menú": {
+   "id": "99506bddb457",
+   "slow": true
+  },
+  "el móvil": {
+   "id": "05c10adf5414",
+   "slow": true
+  },
+  "el nombre": {
+   "id": "5c175cb4b480",
+   "slow": true
+  },
+  "el ordenador": {
+   "id": "d130d78c4feb",
+   "slow": true
+  },
+  "el perro": {
+   "id": "15cc1ee3c319",
+   "slow": true
+  },
+  "el queso": {
+   "id": "7ca684b5d476",
+   "slow": true
+  },
+  "el señor": {
+   "id": "8c81fea09c44",
+   "slow": true
+  },
+  "el vino": {
+   "id": "77706bd8c0f8",
+   "slow": true
+  },
+  "el zumo": {
+   "id": "85357cbd6c24",
+   "slow": true
+  },
+  "ellos se llaman": {
+   "id": "d67eb8b3bb4a",
+   "slow": true
+  },
+  "encantado": {
+   "id": "78f29cc2c705",
+   "slow": true
+  },
+  "gato": {
+   "id": "8f39c63d5047",
+   "slow": true
+  },
+  "gato, amigo, agua": {
+   "id": "7368130bc2fa",
+   "slow": true
+  },
+  "ge, a, te, o": {
+   "id": "a67ec30688f3",
+   "slow": true
+  },
+  "gente": {
+   "id": "b52e0a7a806e",
+   "slow": true
+  },
+  "gracias": {
+   "id": "a30b3970f3a5",
+   "slow": true
+  },
+  "gracias, cerveza, plaza": {
+   "id": "bba18d30d7ff",
+   "slow": true
+  },
+  "guitarra": {
+   "id": "4436a76d1c8a",
+   "slow": true
+  },
+  "hache": {
+   "id": "ed01695c414f",
+   "slow": true
+  },
+  "hache, i, jota, ka, ele, eme, ene, eñe": {
+   "id": "ba695d890f25",
+   "slow": true
+  },
+  "hasta luego": {
+   "id": "15fee4809bf5",
+   "slow": true
+  },
+  "higo": {
+   "id": "d073257f1b84",
+   "slow": true
+  },
+  "hija": {
+   "id": "15df97469da8",
+   "slow": true
+  },
+  "hijo": {
+   "id": "cf233a5cdeed",
+   "slow": true
+  },
+  "hola": {
+   "id": "99800b85d338",
+   "slow": true
+  },
+  "hola, hotel, hoy, ahora": {
+   "id": "21b730a46802",
+   "slow": true
+  },
+  "hotel": {
+   "id": "14e833557d06",
+   "slow": true
+  },
+  "hoy": {
+   "id": "ec80f5690620",
+   "slow": true
+  },
+  "i griega": {
+   "id": "fa75ce70e6f9",
+   "slow": true
+  },
+  "jamón": {
+   "id": "8d298a01d5ca",
+   "slow": true
+  },
+  "jamón, hijo, gente": {
+   "id": "1978fd05a31f",
+   "slow": true
+  },
+  "jota": {
+   "id": "9a02f63cf75b",
+   "slow": true
+  },
+  "la calle": {
+   "id": "7a0a8927d566",
+   "slow": true
+  },
+  "la calle, la playa, yo": {
+   "id": "739721294a45",
+   "slow": true
+  },
+  "la casa": {
+   "id": "d70b579be499",
+   "slow": true
+  },
+  "la casa, la mesa": {
+   "id": "22eece223209",
+   "slow": true
+  },
+  "la cena": {
+   "id": "68d14837bffc",
+   "slow": true
+  },
+  "la cerveza": {
+   "id": "d8210d0932cd",
+   "slow": true
+  },
+  "la ciudad": {
+   "id": "a5165b44ef3c",
+   "slow": true
+  },
+  "la gente": {
+   "id": "62cca4eb8908",
+   "slow": true
+  },
+  "la hija": {
+   "id": "27351904c1ef",
+   "slow": true
+  },
+  "la leche": {
+   "id": "0af6e3fde0a5",
+   "slow": true
+  },
+  "la letra": {
+   "id": "4d211aeab696",
+   "slow": true
+  },
+  "la llave": {
+   "id": "3912d423d502",
+   "slow": true
+  },
+  "la mesa": {
+   "id": "2693bfb600fe",
+   "slow": true
+  },
+  "la playa": {
+   "id": "04bbc2c59c5a",
+   "slow": true
+  },
+  "la plaza": {
+   "id": "107bf33ec19a",
+   "slow": true
+  },
+  "la señora": {
+   "id": "8558870ec709",
+   "slow": true
+  },
+  "leche": {
+   "id": "3c60405a251f",
+   "slow": true
+  },
+  "llamarse": {
+   "id": "01e70bf7cbde",
+   "slow": true
+  },
+  "llave": {
+   "id": "b48663d247ed",
+   "slow": true
+  },
+  "lo siento": {
+   "id": "557d905c450f",
+   "slow": true
+  },
+  "luego": {
+   "id": "11e6ab9f3ce4",
+   "slow": true
+  },
+  "mapa": {
+   "id": "4a472d01a3c9",
+   "slow": true
+  },
+  "masa": {
+   "id": "2a1e2e18004b",
+   "slow": true
+  },
+  "mañana": {
+   "id": "8727ae650349",
+   "slow": true
+  },
+  "me llamo…": {
+   "id": "5d27ab5224a7",
+   "slow": true
+  },
+  "mesa": {
+   "id": "f04cc316d72b",
+   "slow": true
+  },
+  "misa": {
+   "id": "d4bd1f7dacc1",
+   "slow": true
+  },
+  "muchas gracias": {
+   "id": "f965d0ccc699",
+   "slow": true
+  },
+  "mucho": {
+   "id": "5629cc17d58f",
+   "slow": true
+  },
+  "muy": {
+   "id": "060ab0c0903d",
+   "slow": true
+  },
+  "más despacio": {
+   "id": "1ae51300af20",
+   "slow": true
+  },
+  "nada": {
+   "id": "a3fcfe3a3beb",
+   "slow": true
+  },
+  "nada, todo, Madrid": {
+   "id": "3ec8d8cf811b",
+   "slow": true
+  },
+  "nata": {
+   "id": "d683c820daad",
+   "slow": true
+  },
+  "no": {
+   "id": "fd1286353570",
+   "slow": true
+  },
+  "no entiendo": {
+   "id": "f7aad0bb4818",
+   "slow": true
+  },
+  "nombre": {
+   "id": "4832ec78c988",
+   "slow": true
+  },
+  "nosotros nos llamamos": {
+   "id": "a30692d30364",
+   "slow": true
+  },
+  "nueve": {
+   "id": "0a1307a02953",
+   "slow": true
+  },
+  "o, pe, cu, erre, ese, te, u": {
+   "id": "75ce774563fc",
+   "slow": true
+  },
+  "ocho": {
+   "id": "311047fbb074",
+   "slow": true
+  },
+  "once": {
+   "id": "1863835675e3",
+   "slow": true
+  },
+  "once, doce, trece, catorce, quince": {
+   "id": "bcec7e150bbd",
    "slow": true
   },
   "papa": {
    "id": "f722f20fc568",
    "slow": true
   },
+  "papa, papá": {
+   "id": "98b1a18451db",
+   "slow": true
+  },
   "papá": {
    "id": "bec5e7268a89",
+   "slow": true
+  },
+  "paso": {
+   "id": "5d32ee2e794d",
+   "slow": true
+  },
+  "pe, e, erre, erre, o": {
+   "id": "c45e03f0b0bc",
+   "slow": true
+  },
+  "perdón": {
+   "id": "e2b4cc30bbd6",
    "slow": true
   },
   "pero": {
    "id": "98fc7b34760f",
    "slow": true
   },
+  "pero, perro": {
+   "id": "6401700ae5fd",
+   "slow": true
+  },
   "perro": {
    "id": "6139bdc23a06",
    "slow": true
   },
+  "peso": {
+   "id": "b0c7efa6f3eb",
+   "slow": true
+  },
+  "piso": {
+   "id": "90d94ae30f3b",
+   "slow": true
+  },
+  "playa": {
+   "id": "abd5cf4ffb5b",
+   "slow": true
+  },
+  "plaza": {
+   "id": "2366c31fc3f3",
+   "slow": true
+  },
+  "por favor": {
+   "id": "e392209eb260",
+   "slow": true
+  },
+  "queso": {
+   "id": "8e5fc65edb4d",
+   "slow": true
+  },
+  "quince": {
+   "id": "3841f10e3a41",
+   "slow": true
+  },
+  "repetir": {
+   "id": "69820d08768a",
+   "slow": true
+  },
+  "rojo": {
+   "id": "af6c1a0ca271",
+   "slow": true
+  },
+  "seis": {
+   "id": "ba1579348513",
+   "slow": true
+  },
+  "seis, siete, ocho, nueve, diez": {
+   "id": "d9e3457158ee",
+   "slow": true
+  },
+  "señor": {
+   "id": "93f6a8523ab7",
+   "slow": true
+  },
+  "señora": {
+   "id": "e04d588b971f",
+   "slow": true
+  },
+  "si": {
+   "id": "7dd9b3388122",
+   "slow": true
+  },
+  "siento": {
+   "id": "2ef577b634a8",
+   "slow": true
+  },
+  "siete": {
+   "id": "c0bdfc8b5282",
+   "slow": true
+  },
+  "sí": {
+   "id": "5e06bd15f983",
+   "slow": true
+  },
+  "te": {
+   "id": "33e9505d1294",
+   "slow": true
+  },
+  "todo": {
+   "id": "05f20a71783d",
+   "slow": true
+  },
+  "tomate": {
+   "id": "13f20098aaeb",
+   "slow": true
+  },
+  "trece": {
+   "id": "0f72d7d73e80",
+   "slow": true
+  },
+  "tres": {
+   "id": "0c9598733896",
+   "slow": true
+  },
+  "tu": {
+   "id": "a3da4c6307d2",
+   "slow": true
+  },
+  "té": {
+   "id": "77bb3d0baf63",
+   "slow": true
+  },
+  "tú": {
+   "id": "044e993fbe3c",
+   "slow": true
+  },
+  "tú te llamas": {
+   "id": "bb09799bf0ca",
+   "slow": true
+  },
+  "uno": {
+   "id": "81b6f50734d1",
+   "slow": true
+  },
+  "uno, dos, tres, cuatro, cinco": {
+   "id": "d4fe68d8a493",
+   "slow": true
+  },
+  "uve": {
+   "id": "f52a9644cc24",
+   "slow": true
+  },
+  "uve, uve doble, equis, i griega, zeta": {
+   "id": "4c7934a30f8e",
+   "slow": true
+  },
+  "vale": {
+   "id": "24c4de7fefa3",
+   "slow": true
+  },
+  "vale, bien, el vino, por favor": {
+   "id": "677391bc70f7",
+   "slow": true
+  },
+  "veinte": {
+   "id": "3b1b17811d3b",
+   "slow": true
+  },
+  "vino": {
+   "id": "f0e4876639b7",
+   "slow": true
+  },
+  "vosotros os llamáis": {
+   "id": "6cc2c8d4c485",
+   "slow": true
+  },
+  "y": {
+   "id": "95cb0bfd2977",
+   "slow": true
+  },
+  "yo": {
+   "id": "c41975d1dae1",
+   "slow": true
+  },
+  "yo me llamo": {
+   "id": "56319b36abe1",
+   "slow": true
+  },
+  "¿Cuánto es?": {
+   "id": "e8e44f230f53",
+   "slow": true
+  },
+  "¿Cuánto es? Son cuatro euros.": {
+   "id": "f3a968553450",
+   "slow": true
+  },
+  "¿Cuánto es? Son quince euros.": {
+   "id": "095b8f35788c",
+   "slow": true
+  },
+  "¿Cuánto es? —Son cuatro euros.": {
+   "id": "837d4c728957",
+   "slow": true
+  },
   "¿Cómo os llamáis?": {
    "id": "7290d628ef87",
+   "slow": true
+  },
+  "¿Cómo se dice esto en español?": {
+   "id": "64b1ac97b4f3",
+   "slow": true
+  },
+  "¿Cómo se dice…?": {
+   "id": "29a42b561536",
+   "slow": true
+  },
+  "¿Cómo se escribe tu apellido?": {
+   "id": "f26836f70670",
+   "slow": true
+  },
+  "¿Cómo se escribe?": {
+   "id": "0be1dfac5ecd",
+   "slow": true
+  },
+  "¿Cómo te llamas?": {
+   "id": "f9d4d5f29080",
+   "slow": true
+  },
+  "¿Puedes repetirlo?": {
+   "id": "7283f108a072",
+   "slow": true
+  },
+  "¿Qué tal?": {
+   "id": "a8506c246b78",
+   "slow": true
+  },
+  "él se llama": {
+   "id": "97bf3ed6174f",
+   "slow": true
+  },
+  "—Gracias. —De nada.": {
+   "id": "dd922cd855d1",
+   "slow": true
+  },
+  "—¿Qué tal? —Muy bien, ¿y tú?": {
+   "id": "eadb6f306bc3",
+   "slow": true
+  },
+  "—¿Uno? —Sí, uno.": {
+   "id": "c925db4fb0aa",
    "slow": true
   }
  }

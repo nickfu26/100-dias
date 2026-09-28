@@ -1,0 +1,60 @@
+{
+  "$schema": "./schema.json",
+  "day": 4,
+  "level": 1,
+  "title": { "en": "Z, CE, CI: the Spanish 'th'", "es": "La distinción" },
+  "objectives": [
+    "Pronounce z, ce and ci as θ ('th' in 'think')",
+    "Keep s as a clear s",
+    "Hear the difference between casa and caza",
+    "Apologise and say you're welcome"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "In most of Spain, **z**, and **c** before **e** or **i**, sound like the *th* in *think*. **s** is always an s. Keeping the two apart is called **distinción**, and it's the sound people notice first in Castilian Spanish.\n\nIn the Canary Islands, parts of Andalusia and all of Latin America, both are pronounced s (*seseo*). You'll be understood either way, but this course uses Castilian."
+    },
+    { "kind": "sound", "grapheme": "z · ce · ci", "ipa": "θ", "tip": "Put the tip of your tongue between your teeth and blow, without using your voice. It's the 'th' in 'think', never the one in 'this'.", "examples": ["gracias", "cero", "cerveza", "plaza"] },
+    { "kind": "sound", "grapheme": "s", "ipa": "s", "tip": "Always an s, never a z sound. In central and northern Spain it's made with the tongue tip raised, so it can sound slightly like 'sh'.", "examples": ["sí", "casa", "mesa", "siento"] },
+    { "kind": "minimalPair", "a": "casa", "b": "caza", "aEn": "house", "bEn": "hunting", "contrast": "s vs θ" },
+    { "kind": "minimalPair", "a": "siento", "b": "ciento", "aEn": "I feel (lo siento = I'm sorry)", "bEn": "hundred (ciento uno = 101)", "contrast": "s vs θ" },
+    { "kind": "note", "md": "Spelling: **z** goes before a, o, u (**zumo, plaza**). Before e and i you write **c** instead (**cero, cena, ciudad**). You'll see z turn into c when a word changes: **vez → veces**." },
+    { "kind": "phrase", "es": "Lo siento.", "en": "I'm sorry.", "note": "A real apology. For bumping into someone, perdón is enough." },
+    { "kind": "phrase", "es": "De nada.", "en": "You're welcome.", "note": "The reply to gracias. The d in nada is soft: NA-ða." }
+  ],
+  "vocab": [
+    { "id": "lo-siento", "es": "lo siento", "en": "I'm sorry", "pos": "phrase", "ipa": "lo ˈsjento", "tags": ["survival"] },
+    { "id": "de-nada", "es": "de nada", "en": "you're welcome", "pos": "phrase", "ipa": "de ˈnaða", "tags": ["survival"] },
+    { "id": "cero", "es": "cero", "en": "zero", "pos": "num", "ipa": "ˈθeɾo" },
+    { "id": "zumo", "es": "el zumo", "en": "the juice", "pos": "noun", "gender": "m", "ipa": "ˈθumo", "note": "Latin America: el jugo. Zumo de naranja = orange juice." },
+    { "id": "cerveza", "es": "la cerveza", "en": "the beer", "pos": "noun", "gender": "f", "ipa": "θeɾˈβeθa", "note": "In a bar, una caña is a small draught beer." },
+    { "id": "cena", "es": "la cena", "en": "dinner", "pos": "noun", "gender": "f", "ipa": "ˈθena", "note": "In Spain dinner is late, often 9–10 pm." },
+    { "id": "plaza", "es": "la plaza", "en": "the square", "pos": "noun", "gender": "f", "ipa": "ˈplaθa" },
+    { "id": "centro", "es": "el centro", "en": "the (town) centre", "pos": "noun", "gender": "m", "ipa": "ˈθentɾo" },
+    { "id": "ciudad", "es": "la ciudad", "en": "the city", "pos": "noun", "gender": "f", "ipa": "θjuˈðað", "note": "The final d is very soft. In Madrid many people say it as θ: ciudaz." }
+  ],
+  "exercises": [
+    { "id": "d004-01", "type": "listen-choose", "prompt": "s or θ? Pick the word you hear.", "audio": "caza", "options": ["casa", "caza"], "answer": 1, "vocab": [] },
+    { "id": "d004-02", "type": "listen-choose", "prompt": "s or θ? Pick the word you hear.", "audio": "casa", "options": ["casa", "caza"], "answer": 0, "vocab": ["casa"] },
+    { "id": "d004-03", "type": "listen-choose", "prompt": "s or θ? Pick the word you hear.", "audio": "ciento", "options": ["siento", "ciento"], "answer": 1, "vocab": [] },
+    { "id": "d004-04", "type": "listen-choose", "audio": "la cerveza", "optionsLang": "en", "options": ["the beer", "dinner", "the square"], "answer": 0, "vocab": ["cerveza"] },
+    { "id": "d004-05", "type": "listen-choose", "audio": "el centro", "optionsLang": "en", "options": ["the centre", "the city", "zero"], "answer": 0, "vocab": ["centro"] },
+    { "id": "d004-06", "type": "match-pairs", "pairs": [["lo siento", "I'm sorry"], ["de nada", "you're welcome"], ["cero", "zero"], ["el zumo", "the juice"], ["la cena", "dinner"]], "vocab": ["lo-siento", "de-nada", "cero", "zumo", "cena"] },
+    { "id": "d004-07", "type": "match-pairs", "pairs": [["la ciudad", "the city"], ["el centro", "the centre"], ["la plaza", "the square"], ["la cerveza", "the beer"]], "vocab": ["ciudad", "centro", "plaza", "cerveza"] },
+    { "id": "d004-08", "type": "fill-blank", "es": "—Gracias. —De {{nada}}.", "en": "Thanks. — You're welcome.", "options": ["nada", "todo", "cero"], "vocab": ["gracias", "de-nada"] },
+    { "id": "d004-09", "type": "fill-blank", "prompt": "s or c? Pick the right spelling.", "es": "Lo {{siento}}.", "en": "I'm sorry.", "options": ["siento", "ciento"], "vocab": ["lo-siento"] },
+    { "id": "d004-10", "type": "fill-blank", "es": "Un {{zumo}}, por favor.", "en": "A juice, please.", "options": ["zumo", "cero", "centro"], "vocab": ["zumo", "por-favor"] },
+    { "id": "d004-11", "type": "build-sentence", "es": "Un café y una cerveza, por favor.", "en": "A coffee and a beer, please.", "distractors": ["cena"], "vocab": ["cafe", "y-and", "cerveza", "por-favor"] },
+    { "id": "d004-12", "type": "build-sentence", "es": "Lo siento, hoy no.", "en": "Sorry, not today.", "distractors": ["nada"], "vocab": ["lo-siento", "hoy"] },
+    { "id": "d004-13", "type": "dictation", "es": "cena", "hint": "dinner", "vocab": ["cena"] },
+    { "id": "d004-14", "type": "dictation", "es": "plaza", "hint": "square (z, not s)", "vocab": ["plaza"] },
+    { "id": "d004-15", "type": "dictation", "es": "cero", "accept": ["0"], "hint": "zero", "vocab": ["cero"] },
+    { "id": "d004-16", "type": "repeat", "es": "Lo siento.", "en": "I'm sorry.", "vocab": ["lo-siento"] },
+    { "id": "d004-17", "type": "repeat", "es": "Un zumo, por favor.", "en": "A juice, please.", "vocab": ["zumo", "por-favor"] },
+    { "id": "d004-18", "type": "shadow", "es": "casa, caza", "en": "house, hunting", "listenFor": "A clear s in casa, then θ with the tongue between the teeth in caza.", "vocab": ["casa"] },
+    { "id": "d004-19", "type": "shadow", "es": "gracias, cerveza, plaza", "en": "thanks, beer, square", "listenFor": "Every z, ce and ci is θ, but the s at the end of gracias stays s: GRA-θjas.", "vocab": ["gracias", "cerveza", "plaza"] },
+    { "id": "d004-20", "type": "listen-choose", "prompt": "Review: what does it mean?", "audio": "perdón", "optionsLang": "en", "options": ["sorry / excuse me", "please", "nothing"], "answer": 0, "vocab": ["perdon"] },
+    { "id": "d004-21", "type": "dictation", "prompt": "Review: type what you hear.", "es": "ahora", "hint": "now (silent h)", "vocab": ["ahora"] },
+    { "id": "d004-22", "type": "build-sentence", "prompt": "Review: put the words in order.", "direction": "audio-to-es", "es": "Todo bien, gracias.", "en": "All good, thanks.", "distractors": ["nada"], "vocab": ["todo", "bien", "gracias"] }
+  ]
+}

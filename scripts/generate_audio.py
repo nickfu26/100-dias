@@ -100,6 +100,8 @@ async def run_jobs(jobs: list[tuple[str, str, str, Path]], concurrency: int, lab
 
 
 def main() -> None:
+    # Windows consoles default to cp1252, which cannot print the Spanish text or arrows below.
+    sys.stdout.reconfigure(encoding="utf-8")
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--slow-policy", choices=["auto", "all", "multiword"], default="auto")
     ap.add_argument("--budget-mb", type=float, default=400)

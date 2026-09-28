@@ -66,3 +66,73 @@
   font-size: 13px;
   color: var(--ink-faint);
 }
+
+/* ---------- Backup ---------- */
+.backup-last {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.backup-last--never {
+  color: var(--bad);
+}
+.backup-actions {
+  display: grid;
+  justify-items: start;
+  gap: 10px;
+}
+.backup-h3 {
+  margin: 28px 0 4px;
+  font-size: 22px;
+}
+.backup-h3 + .muted {
+  margin-bottom: 12px;
+}
+.paste {
+  margin-top: 10px;
+}
+.paste summary {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+.paste textarea {
+  width: 100%;
+  margin: 4px 0 10px;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: var(--r-m);
+  background: var(--paper-raised);
+  box-shadow: inset 0 0 0 2px color-mix(in oklch, var(--ink) 15%, transparent);
+  font: 14px/1.4 ui-monospace, Menlo, Consolas, monospace;
+  resize: vertical;
+}
+.restore {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: var(--r-l);
+  background: var(--warn-wash);
+  display: grid;
+  gap: 10px;
+}
+.restore-h {
+  font-weight: 600;
+}
+.restore-list {
+  margin: 0;
+  padding-left: 1.2em;
+  display: grid;
+  gap: 4px;
+}
+.restore-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.backup-status {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: var(--r-m);
+  background: var(--ok-wash);
+}

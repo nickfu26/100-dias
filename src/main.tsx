@@ -5,6 +5,7 @@ import '@fontsource/lexend/latin-400.css';
 import '@fontsource/lexend/latin-600.css';
 import './styles/tokens.css';
 import './styles/global.css';
+import './styles/speech.css';
 import { App } from './App';
 import { loadManifest } from './audio/manifest';
 import { requestPersistentStorage } from './lib/storage';

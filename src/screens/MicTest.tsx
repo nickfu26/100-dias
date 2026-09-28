@@ -16,17 +16,11 @@ import {
   type RecognitionSession,
 } from '../speech/recognition';
 import { pickMimeType, recorderAvailable, releaseMic, startRecording, type Recording, type RecorderSession } from '../speech/recorder';
+import { MIC_ERROR_HELP } from '../speech/micErrors';
 import './micTest.css';
 
 const PHRASES = appAudio.phrases;
 
-const MIC_ERROR_HELP: Record<string, string> = {
-  NotAllowedError:
-    'Allow the microphone: tap Grabar again and choose “Allow”. If no prompt appears, open Settings → Safari → Microphone, set it to “Ask” or “Allow”, then reopen 100 Días.',
-  NotFoundError: 'No microphone was found.',
-  NotReadableError: 'The microphone is in use by another app (a call, Voice Memos…). Close it and try again.',
-  AbortError: 'The microphone was interrupted. Try again.',
-};
 const PASS = 0.7;
 
 type Check = { label: string; state: 'yes' | 'no' | 'info'; detail: string };

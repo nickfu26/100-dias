@@ -5,19 +5,29 @@ import { ProgressBar } from '../components/ProgressBar';
 import { PreviewBanner } from '../components/PreviewBanner';
 import { usePlay } from '../components/usePlay';
 import { lessonStrings } from '../content/audioStrings';
-import { loadDay } from '../content/loader';
-import type { DayLesson, Exercise } from '../content/types';
+import { loadCheckpoint, loadDay } from '../content/loader';
+import type { Checkpoint, DayLesson, Exercise } from '../content/types';
 import { ExerciseView, defaultPrompt } from '../exercises/ExerciseView';
 import type { Answer } from '../exercises/types';
 import { Rating } from 'ts-fsrs';
 import { allExercises, answer, canResume, isReviewItem, newSnapshot, progressFraction, score, type LessonSnapshot } from '../lesson/session';
 import { TeachCardView, VocabCard } from '../lesson/TeachCardView';
 import { useSettings } from '../lib/settings';
-import { activeProgress, completeDay, discardSnapshot, finishReviewSession, saveSnapshot, streakOf, useProgress } from '../progress/store';
+import {
+  activeProgress,
+  completeDay,
+  discardSnapshot,
+  finishReviewSession,
+  recordCheckpoint,
+  saveSnapshot,
+  streakOf,
+  useProgress,
+  type CheckpointAttempt,
+} from '../progress/store';
 import { activeCards, applyRatings, dueIds, sessionRatings } from '../srs/cards';
 import { buildReviews, loadVocabIndex } from '../srs/reviews';
 import { exerciseStrings } from '../content/audioStrings';
-import { isDayUnlocked } from '../progress/unlock';
+import { isCheckpointUnlocked, isDayUnlocked } from '../progress/unlock';
 import './lesson.css';
 
 export function Lesson() {
@@ -57,10 +67,51 @@ export function Review() {
   return <LessonRun key={`review-${preview}-${key}`} lesson={REVIEW_LESSON} preview={preview} />;
 }
 
-/** Due cards → review exercises (null while loading). Words introduced in this lesson are left out. */
-function useReviews(lesson: DayLesson): Exercise[] | null {
-  const [reviews, setReviews] = useState<Exercise[] | null>(null);
+interface TestInfo {
+  n: number;
+  passMark: number;
+}
+
+/** A checkpoint runs through the lesson player as exercises only, stored under day −N. */
+function checkpointLesson(cp: Checkpoint): DayLesson {
+  return {
+    day: -cp.checkpoint,
+    level: cp.level,
+    title: cp.title,
+    objectives: ['Show you can hear, read, spell and say everything from this level'],
+    teach: [],
+    vocab: [],
+    exercises: cp.exercises,
+  };
+}
+
+export function CheckpointScreen() {
+  const n = Number(useParams().n);
+  const { preview } = useSettings();
+  const progress = useProgress();
+  const { key } = useLocation();
+  const [cp, setCp] = useState<Checkpoint | null | undefined>(undefined);
   useEffect(() => {
+    let alive = true;
+    loadCheckpoint(n).then((c) => alive && setCp(c));
+    return () => {
+      alive = false;
+    };
+  }, [n]);
+  const lesson = useMemo(() => (cp ? checkpointLesson(cp) : null), [cp]);
+
+  if (cp === undefined) return <Message text="Cargando…" />;
+  if (cp === null || !lesson) return <Message text={`There is no test for level ${n} yet.`} />;
+  if (!isCheckpointUnlocked(cp.level, preview, progress.completed))
+    return <Message text={`The level ${n} test opens once every day of the level is done.`} />;
+  return <LessonRun key={`cp-${n}-${preview}-${key}`} lesson={lesson} preview={preview} test={{ n, passMark: cp.passMark }} />;
+}
+
+/** Due cards → review exercises (null while loading). Words introduced in this lesson are left out. */
+function useReviews(lesson: DayLesson, skip: boolean): Exercise[] | null {
+  const [reviews, setReviews] = useState<Exercise[] | null>(skip ? [] : null);
+  useEffect(() => {
+    if (skip) return;
     let alive = true;
     const fallback = setTimeout(() => alive && setReviews((r) => r ?? []), 4000); // never block the lesson
     loadVocabIndex()
@@ -76,7 +127,7 @@ function useReviews(lesson: DayLesson): Exercise[] | null {
       alive = false;
       clearTimeout(fallback);
     };
-  }, [lesson]);
+  }, [lesson, skip]);
   return reviews;
 }
 
@@ -93,7 +144,7 @@ function Message({ text }: { text: string }) {
   );
 }
 
-function LessonRun({ lesson, preview }: { lesson: DayLesson; preview: boolean }) {
+function LessonRun({ lesson, preview, test }: { lesson: DayLesson; preview: boolean; test?: TestInfo }) {
   const navigate = useNavigate();
   const [snap, setSnap] = useState<LessonSnapshot>(() => newSnapshot(lesson));
   // A half-finished run of this lesson, offered on the intro screen.
@@ -104,7 +155,9 @@ function LessonRun({ lesson, preview }: { lesson: DayLesson; preview: boolean })
   const [pending, setPending] = useState<Answer | null>(null);
   const teachCount = lesson.teach.length + (lesson.vocab.length ? 1 : 0);
   const topRef = useRef<HTMLDivElement>(null);
-  const reviews = useReviews(lesson);
+  const reviews = useReviews(lesson, !!test);
+  const [attempt, setAttempt] = useState<CheckpointAttempt | null>(null);
+  const fresh = () => newSnapshot(lesson, reviews ?? [], new Date(), { noRetry: !!test });
 
   // Warm today's audio (both voices, normal speed) so taps play instantly and offline.
   useEffect(() => {
@@ -122,7 +175,8 @@ function LessonRun({ lesson, preview }: { lesson: DayLesson; preview: boolean })
       for (const v of lesson.vocab) if (ratings[v.id] === undefined && !cards[v.id]) ratings[v.id] = Rating.Good;
       applyRatings(ratings);
       const sc = score(next);
-      if (lesson.day > 0) completeDay(lesson.day, sc.correct, sc.graded);
+      if (test) setAttempt(recordCheckpoint(test.n, sc.correct, sc.graded, test.passMark));
+      else if (lesson.day > 0) completeDay(lesson.day, sc.correct, sc.graded);
       else finishReviewSession();
     } else if (next.phase !== 'intro') {
       saveSnapshot(next);
@@ -148,10 +202,11 @@ function LessonRun({ lesson, preview }: { lesson: DayLesson; preview: boolean })
           lesson={lesson}
           saved={saved}
           reviews={reviews}
+          test={test}
           onStart={() => {
             if (saved) discardSnapshot(lesson.day);
             setSaved(null);
-            commit({ ...newSnapshot(lesson, reviews ?? []), phase: teachCount ? 'teach' : 'exercises' });
+            commit({ ...fresh(), phase: teachCount ? 'teach' : 'exercises' });
           }}
           onResume={() => {
             if (!saved) return;
@@ -221,7 +276,12 @@ function LessonRun({ lesson, preview }: { lesson: DayLesson; preview: boolean })
         <Feedback answer={pending} ex={ex} onContinue={() => commit(answer(snap, lesson, pending.correct, pending.note))} />
       )}
 
-      {snap.phase === 'done' && <Finish lesson={lesson} snap={snap} preview={preview} />}
+      {snap.phase === 'done' &&
+        (test ? (
+          <TestResult lesson={lesson} snap={snap} test={test} attempt={attempt} onRetry={() => commit({ ...fresh(), phase: 'exercises' })} />
+        ) : (
+          <Finish lesson={lesson} snap={snap} preview={preview} />
+        ))}
     </main>
   );
 }
@@ -230,16 +290,19 @@ function Intro({
   lesson,
   saved,
   reviews,
+  test,
   onStart,
   onResume,
 }: {
   lesson: DayLesson;
   saved: LessonSnapshot | null;
   reviews: Exercise[] | null;
+  test?: TestInfo;
   onStart: () => void;
   onResume: () => void;
 }) {
   const { play, playing } = usePlay();
+  const record = useProgress().checkpoints?.[test?.n ?? -1];
   const reviewOnly = lesson.day === 0;
   const reviewWords = new Set((reviews ?? []).flatMap((r) => r.vocab ?? [])).size;
   if (reviewOnly && reviews?.length === 0 && !saved) {
@@ -256,7 +319,7 @@ function Intro({
   }
   return (
     <section className="intro">
-      <p className="eyebrow">{reviewOnly ? 'Repaso' : `Día ${lesson.day}`}</p>
+      <p className="eyebrow">{test ? `Prueba · Nivel ${test.n}` : reviewOnly ? 'Repaso' : `Día ${lesson.day}`}</p>
       <button className="intro-title" onClick={() => play(lesson.title.es, 'f')} data-playing={playing !== null || undefined} lang="es-ES">
         {lesson.title.es}
       </button>
@@ -267,6 +330,26 @@ function Intro({
           <li key={o}>{o}</li>
         ))}
       </ul>
+      {test ? (
+        <div className="test-rules">
+          <p>
+            <span className="num">{lesson.exercises.length}</span> exercises covering every sound and word of the level. To pass you need{' '}
+            <strong className="num">{Math.round(test.passMark * 100)}%</strong> right first time.
+          </p>
+          <p className="muted small">
+            No second chances inside the test, and speaking exercises aren't scored. You can retake it as often as you like.
+          </p>
+          {record && record.attempts.length > 0 && (
+            <p className="muted small">
+              {record.passedOn ? '✓ Passed. ' : ''}
+              Attempts: <span className="num">{record.attempts.length}</span> · best{' '}
+              <span className="num">
+                {Math.max(...record.attempts.map((a) => (a.graded ? Math.round((a.correct / a.graded) * 100) : 0)))}%
+              </span>
+            </p>
+          )}
+        </div>
+      ) : (
       <p className="muted small">
         {!reviewOnly && (
           <>
@@ -284,6 +367,7 @@ function Intro({
         ) : null}
         {reviewOnly ? '.' : ' · about 20 minutes. Headphones help.'}
       </p>
+      )}
       {saved ? (
         <div className="resume">
           <p className="resume-where">
@@ -389,6 +473,69 @@ function Finish({ lesson, snap, preview }: { lesson: DayLesson; snap: LessonSnap
       <Link to="/" className="tile tile--block">
         Volver al inicio
       </Link>
+    </section>
+  );
+}
+
+function TestResult({
+  lesson,
+  snap,
+  test,
+  attempt,
+  onRetry,
+}: {
+  lesson: DayLesson;
+  snap: LessonSnapshot;
+  test: TestInfo;
+  attempt: CheckpointAttempt | null;
+  onRetry: () => void;
+}) {
+  const s = score(snap);
+  const pct = s.graded ? Math.round((s.correct / s.graded) * 100) : 0;
+  const passed = attempt?.passed ?? pct >= test.passMark * 100;
+  const need = Math.ceil(test.passMark * s.graded);
+  const missed = s.missed.map((id) => lesson.exercises.find((e) => e.id === id)).filter(Boolean) as Exercise[];
+  return (
+    <section className="finish">
+      <p className="eyebrow">Prueba · Nivel {test.n}</p>
+      <h1 className={`finish-title stamp${passed ? '' : ' finish-title--fail'}`}>{passed ? '¡Aprobado!' : 'Casi…'}</h1>
+      <p className="finish-score">
+        <span className="num finish-num">{pct}%</span>
+        <span className="muted">
+          <span className="num">{s.correct}</span> of <span className="num">{s.graded}</span> right first time · pass mark{' '}
+          <span className="num">{Math.round(test.passMark * 100)}%</span>
+        </span>
+      </p>
+      <p>
+        {passed
+          ? `Level ${test.n} is done. ¡Enhorabuena! Keep up the daily reviews and it will stay with you.`
+          : `You needed ${need}. Look over the ones below, then have another go. Retakes are unlimited.`}
+      </p>
+      {missed.length > 0 && (
+        <div className="finish-missed">
+          <h2 className="intro-h">{passed ? 'Worth another look' : 'To practise'}</h2>
+          <ul>
+            {missed.map((e) => (
+              <li key={e.id} lang="es-ES">
+                {'es' in e ? e.es.replace(/\{\{|\}\}/g, '') : 'audio' in e ? e.audio : e.pairs.map((p) => p[0]).join(' · ')}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+      {!passed && (
+        <button className="tile tile--block tile--terra" onClick={onRetry}>
+          Repetir la prueba
+        </button>
+      )}
+      <Link to="/" className={`tile tile--block${passed ? '' : ' tile--light'}`}>
+        Volver al inicio
+      </Link>
+      {passed && (
+        <button className="link-btn" onClick={onRetry}>
+          Retake it anyway
+        </button>
+      )}
     </section>
   );
 }

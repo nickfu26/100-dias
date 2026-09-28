@@ -686,3 +686,15 @@
   color: var(--on-terra);
   font-weight: 600;
 }
+
+/* ---------- Checkpoint ---------- */
+.test-rules {
+  display: grid;
+  gap: 8px;
+  padding: 14px 16px;
+  border-radius: var(--r-m);
+  background: var(--cobalt-wash);
+}
+.finish-title--fail {
+  color: var(--bad);
+}

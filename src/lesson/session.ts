@@ -35,6 +35,8 @@ export interface LessonSnapshot {
   exIds?: string;
   /** Review exercises generated from due FSRS cards when the run started. */
   reviews?: Exercise[];
+  /** Tests (checkpoints) don't re-queue misses: one attempt per exercise. */
+  noRetry?: boolean;
 }
 
 export const allExercises = (lesson: DayLesson, s: LessonSnapshot): Exercise[] => [...lesson.exercises, ...(s.reviews ?? [])];
@@ -63,7 +65,7 @@ export function voiceFor(ex: Exercise, position: number): Voice {
   return position % 2 === 0 ? 'f' : 'm';
 }
 
-export function newSnapshot(lesson: DayLesson, reviews: Exercise[] = [], now = new Date()): LessonSnapshot {
+export function newSnapshot(lesson: DayLesson, reviews: Exercise[] = [], now = new Date(), opts: { noRetry?: boolean } = {}): LessonSnapshot {
   const all = [...lesson.exercises, ...reviews];
   return {
     day: lesson.day,
@@ -76,6 +78,7 @@ export function newSnapshot(lesson: DayLesson, reviews: Exercise[] = [], now = n
     results: {},
     exIds: fingerprint(lesson),
     ...(reviews.length ? { reviews } : {}),
+    ...(opts.noRetry ? { noRetry: true } : {}),
   };
 }
 
@@ -93,7 +96,7 @@ export function answer(s: LessonSnapshot, lesson: DayLesson, correct: boolean | 
     results[ex.id] = { ...results[ex.id]!, retryCorrect: correct === true };
   } else {
     results[ex.id] = { firstTry: correct, ...(note ? { note } : {}) };
-    if (correct === false && !NO_RETRY.includes(ex.type)) {
+    if (correct === false && !s.noRetry && !NO_RETRY.includes(ex.type)) {
       queue = [...queue, { ex: item.ex, voice: item.voice === 'f' ? 'm' : 'f', retry: true }];
     }
   }

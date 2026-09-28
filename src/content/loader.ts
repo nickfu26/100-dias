@@ -14,6 +14,11 @@ export const AVAILABLE_DAYS: number[] = Object.keys(dayModules)
   .filter((n) => n > 0)
   .sort((a, b) => a - b);
 
+/** Levels that have a checkpoint file. */
+export const AVAILABLE_CHECKPOINTS: number[] = Object.keys(checkpointModules)
+  .map((p) => Number(/checkpoint-(\d+)\.json$/.exec(p)?.[1]))
+  .filter((n) => n > 0);
+
 export function dayTitle(day: number): Bilingual | undefined {
   return dayIndex[day];
 }

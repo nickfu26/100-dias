@@ -13,11 +13,23 @@ export interface DayRecord {
   graded: number;
 }
 
+export interface CheckpointAttempt {
+  on: string; // local YYYY-MM-DD
+  correct: number;
+  graded: number;
+  passed: boolean;
+}
+export interface CheckpointRecord {
+  attempts: CheckpointAttempt[];
+  passedOn?: string;
+}
+
 export interface ProgressData {
   completed: Record<string, DayRecord>; // by day number
   /** Local dates on which at least one lesson was finished. */
   activeDates: string[];
-  inProgress: Record<string, LessonSnapshot>; // by day number
+  inProgress: Record<string, LessonSnapshot>; // by day number (0 = review, −N = checkpoint N)
+  checkpoints?: Record<string, CheckpointRecord>; // by level
 }
 
 const EMPTY: ProgressData = { completed: {}, activeDates: [], inProgress: {} };
@@ -61,6 +73,25 @@ export function completeDay(day: number, correct: number, graded: number, today 
       inProgress,
     };
   });
+}
+
+/** Record a checkpoint attempt; it also counts for the streak. */
+export function recordCheckpoint(n: number, correct: number, graded: number, passMark: number, today = localDateKey()): CheckpointAttempt {
+  const attempt: CheckpointAttempt = { on: today, correct, graded, passed: graded > 0 && correct / graded >= passMark };
+  activeProgress().set((p) => {
+    const prev = p.checkpoints?.[n] ?? { attempts: [] };
+    const { [-n]: _, ...inProgress } = p.inProgress;
+    return {
+      ...p,
+      checkpoints: {
+        ...p.checkpoints,
+        [n]: { attempts: [...prev.attempts, attempt], passedOn: prev.passedOn ?? (attempt.passed ? today : undefined) },
+      },
+      activeDates: p.activeDates.includes(today) ? p.activeDates : [...p.activeDates, today].sort(),
+      inProgress,
+    };
+  });
+  return attempt;
 }
 
 /** A review-only session counts for the streak but completes no day. It's saved under day 0. */

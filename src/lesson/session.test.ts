@@ -38,6 +38,13 @@ describe('session', () => {
     expect(score(s)).toEqual({ correct: 1, graded: 3, missed: ['d001-01', 'd001-02'] });
   });
 
+  it('tests (noRetry) never re-queue a miss', () => {
+    let s: LessonSnapshot = { ...newSnapshot(lesson, [], new Date(), { noRetry: true }), phase: 'exercises' };
+    s = answer(s, lesson, false);
+    expect(s.queue).toHaveLength(3);
+    expect(s.results['d001-01']).toEqual({ firstTry: false });
+  });
+
   it('does not grade skipped speaking', () => {
     let s: LessonSnapshot = { ...newSnapshot(lesson), phase: 'exercises', pos: 1 };
     s = answer(s, lesson, null, 'skipped');

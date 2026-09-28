@@ -205,3 +205,17 @@ a.day:active {
 .review-go {
   margin-top: 20px;
 }
+
+.day--test .day-num {
+  background: var(--terra);
+  color: var(--on-terra);
+  font-family: var(--font-body);
+}
+.day--locked.day--test .day-num {
+  background: var(--paper-sunk);
+  color: var(--ink-faint);
+}
+.day--test .day-num--done {
+  background: var(--ok-wash);
+  color: var(--ok);
+}

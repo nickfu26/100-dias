@@ -3,11 +3,11 @@ import { Link } from 'react-router';
 import { ProgressBar } from '../components/ProgressBar';
 import { PreviewBanner } from '../components/PreviewBanner';
 import { COURSE_START, LEVELS, TOTAL_DAYS, levelForDay } from '../config';
-import { AVAILABLE_DAYS, dayTitle } from '../content/loader';
+import { AVAILABLE_CHECKPOINTS, AVAILABLE_DAYS, dayTitle } from '../content/loader';
 import { courseDayOn, dateKeyForDay, formatLongEs, localDateKey } from '../lib/date';
 import { useSettings } from '../lib/settings';
 import { streakOf, useProgress } from '../progress/store';
-import { isDayUnlocked } from '../progress/unlock';
+import { isCheckpointUnlocked, isDayUnlocked } from '../progress/unlock';
 import { backfillCards } from '../srs/backfill';
 import { dueIds, useCards } from '../srs/cards';
 import './home.css';
@@ -39,6 +39,16 @@ export function Home() {
 
   const shownLevel = levelForDay(focus ?? Math.max(1, Math.min(todayDay, TOTAL_DAYS))) ?? LEVELS[0]!;
   const levelDays = Array.from({ length: shownLevel.lastDay - shownLevel.firstDay + 1 }, (_, i) => shownLevel.firstDay + i);
+
+  // The level test: open once the level's days are done (or in Preview).
+  const cpLevel = shownLevel.level;
+  const hasCp = AVAILABLE_CHECKPOINTS.includes(cpLevel);
+  const cpOpen = hasCp && isCheckpointUnlocked(cpLevel, preview, progress.completed);
+  const cpRecord = progress.checkpoints?.[cpLevel];
+  const cpBest = cpRecord?.attempts.length
+    ? Math.max(...cpRecord.attempts.map((a) => (a.graded ? Math.round((a.correct / a.graded) * 100) : 0)))
+    : null;
+  const cpDue = cpOpen && !cpRecord?.passedOn && focus === undefined;
 
   return (
     <main>
@@ -96,6 +106,18 @@ export function Home() {
               </p>
             )}
           </>
+        ) : cpDue ? (
+          <>
+            <p className="eyebrow">Nivel {cpLevel} · completado</p>
+            <h1 className="hero-title hero-title--lesson">Prueba del nivel {cpLevel}</h1>
+            <p className="muted hero-en">
+              Level {cpLevel} test: every sound and word so far. Pass with 80%; retake as often as you like.
+              {cpBest !== null && <> Best so far: <span className="num">{cpBest}%</span>.</>}
+            </p>
+            <Link to={`/checkpoint/${cpLevel}`} className="tile tile--block tile--terra hero-go">
+              {cpRecord?.attempts.length ? 'Repetir la prueba' : 'Hacer la prueba'}
+            </Link>
+          </>
         ) : allCaughtUp ? (
           <>
             <p className="eyebrow">Hoy</p>
@@ -103,7 +125,9 @@ export function Home() {
             <p className="muted">
               {after
                 ? 'All 100 days are done. Keep reviewing to hold on to what you learned.'
-                : `You're up to date. Día ${Math.min(todayDay + 1, TOTAL_DAYS)} unlocks tomorrow.`}
+                : AVAILABLE_DAYS.includes(todayDay + 1)
+                  ? `You're up to date. Día ${todayDay + 1} unlocks tomorrow.`
+                  : "You're up to date. The next lessons are on their way."}
             </p>
             {due > 0 && (
               <Link to="/review" className="tile tile--block hero-go review-go">
@@ -174,6 +198,33 @@ export function Home() {
               </li>
             );
           })}
+          {hasCp && (
+            <li key="cp">
+              {cpOpen ? (
+                <Link to={`/checkpoint/${cpLevel}`} className={`day day--test${cpDue ? ' day--focus' : ''}`}>
+                  <span className={`day-num${cpRecord?.passedOn ? ' day-num--done' : ''}`} aria-hidden="true">
+                    {cpRecord?.passedOn ? '✓' : '★'}
+                  </span>
+                  <span className="day-body">
+                    <span className="day-title">Prueba del nivel {cpLevel}</span>
+                    <span className="muted day-sub">
+                      {cpRecord?.passedOn ? `aprobada · best ${cpBest}%` : cpBest !== null ? `best ${cpBest}% · pass at 80%` : 'Level test · pass at 80%'}
+                    </span>
+                  </span>
+                </Link>
+              ) : (
+                <div className="day day--locked day--test" aria-disabled="true">
+                  <span className="day-num" aria-hidden="true">
+                    ★
+                  </span>
+                  <span className="day-body">
+                    <span className="day-title">Prueba del nivel {cpLevel}</span>
+                    <span className="muted day-sub">opens when Días {shownLevel.firstDay}–{shownLevel.lastDay} are done</span>
+                  </span>
+                </div>
+              )}
+            </li>
+          )}
         </ol>
       </section>
 

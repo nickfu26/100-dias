@@ -63,6 +63,18 @@ export function completeDay(day: number, correct: number, graded: number, today 
   });
 }
 
+/** A review-only session counts for the streak but completes no day. It's saved under day 0. */
+export function finishReviewSession(today = localDateKey()) {
+  activeProgress().set((p) => {
+    const { 0: _, ...inProgress } = p.inProgress;
+    return {
+      ...p,
+      activeDates: p.activeDates.includes(today) ? p.activeDates : [...p.activeDates, today].sort(),
+      inProgress,
+    };
+  });
+}
+
 export function resetPreviewProgress() {
   previewProgress.set(EMPTY);
 }

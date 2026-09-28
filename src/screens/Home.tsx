@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router';
 import { ProgressBar } from '../components/ProgressBar';
 import { PreviewBanner } from '../components/PreviewBanner';
@@ -7,6 +8,8 @@ import { courseDayOn, dateKeyForDay, formatLongEs, localDateKey } from '../lib/d
 import { useSettings } from '../lib/settings';
 import { streakOf, useProgress } from '../progress/store';
 import { isDayUnlocked } from '../progress/unlock';
+import { backfillCards } from '../srs/backfill';
+import { dueIds, useCards } from '../srs/cards';
 import './home.css';
 
 function formatShortEs(key: string): string {
@@ -20,6 +23,11 @@ export function Home() {
   const { preview } = useSettings();
   const progress = useProgress();
   const streak = streakOf(progress.activeDates, today);
+  const cards = useCards();
+  const due = dueIds(cards, today).length;
+  useEffect(() => {
+    void backfillCards();
+  }, [preview]);
 
   const unlocked = AVAILABLE_DAYS.filter((d) => isDayUnlocked(d, preview, today));
   const pending = unlocked.filter((d) => !progress.completed[d]);
@@ -77,6 +85,11 @@ export function Home() {
             <Link to={`/day/${focus}`} className="tile tile--block tile--terra hero-go">
               {progress.inProgress[focus] ? 'Continuar' : 'Empezar'}
             </Link>
+            {due > 0 && (
+              <p className="muted home-hint">
+                Includes a review of <span className="num">{Math.min(due, 20)}</span> {due === 1 ? 'word' : 'words'} from earlier days.
+              </p>
+            )}
             {!preview && focus < todayDay && (
               <p className="muted home-hint">
                 {pendingCount} days to catch up, oldest first. One or two a day is plenty.
@@ -92,6 +105,11 @@ export function Home() {
                 ? 'All 100 days are done. Keep reviewing to hold on to what you learned.'
                 : `You're up to date. Día ${Math.min(todayDay + 1, TOTAL_DAYS)} unlocks tomorrow.`}
             </p>
+            {due > 0 && (
+              <Link to="/review" className="tile tile--block hero-go review-go">
+                Repasar · <span className="num">{due}</span> {due === 1 ? 'palabra' : 'palabras'}
+              </Link>
+            )}
           </>
         ) : (
           <>

@@ -6,7 +6,7 @@ import type { DayLesson, Exercise } from '../content/types';
 export type Phase = 'intro' | 'teach' | 'exercises' | 'done';
 
 export interface SessionItem {
-  /** Index into lesson.exercises */
+  /** Index into allExercises(): the lesson's exercises, then the generated reviews */
   ex: number;
   voice: Voice;
   /** A second attempt at an exercise missed earlier in this session. */
@@ -33,7 +33,12 @@ export interface LessonSnapshot {
   results: Record<string, ItemResult>; // by exercise id
   /** Exercise ids when the run started; a saved run is only resumed if the lesson still matches. */
   exIds?: string;
+  /** Review exercises generated from due FSRS cards when the run started. */
+  reviews?: Exercise[];
 }
+
+export const allExercises = (lesson: DayLesson, s: LessonSnapshot): Exercise[] => [...lesson.exercises, ...(s.reviews ?? [])];
+export const isReviewItem = (lesson: DayLesson, item: SessionItem) => item.ex >= lesson.exercises.length;
 
 const fingerprint = (lesson: DayLesson) => lesson.exercises.map((e) => e.id).join(',');
 
@@ -44,7 +49,7 @@ export function canResume(s: LessonSnapshot | undefined, lesson: DayLesson): s i
     s.day === lesson.day &&
     s.exIds === fingerprint(lesson) &&
     s.phase !== 'done' &&
-    s.queue.every((q) => q.ex >= 0 && q.ex < lesson.exercises.length) &&
+    s.queue.every((q) => q.ex >= 0 && q.ex < lesson.exercises.length + (s.reviews?.length ?? 0)) &&
     s.pos <= s.queue.length &&
     s.teachIndex >= 0
   );
@@ -58,17 +63,19 @@ export function voiceFor(ex: Exercise, position: number): Voice {
   return position % 2 === 0 ? 'f' : 'm';
 }
 
-export function newSnapshot(lesson: DayLesson, now = new Date()): LessonSnapshot {
+export function newSnapshot(lesson: DayLesson, reviews: Exercise[] = [], now = new Date()): LessonSnapshot {
+  const all = [...lesson.exercises, ...reviews];
   return {
     day: lesson.day,
     startedAt: now.toISOString(),
     updatedAt: now.toISOString(),
     phase: 'intro',
     teachIndex: 0,
-    queue: lesson.exercises.map((ex, i) => ({ ex: i, voice: voiceFor(ex, i), retry: false })),
+    queue: all.map((ex, i) => ({ ex: i, voice: voiceFor(ex, i), retry: false })),
     pos: 0,
     results: {},
     exIds: fingerprint(lesson),
+    ...(reviews.length ? { reviews } : {}),
   };
 }
 
@@ -79,7 +86,7 @@ export function newSnapshot(lesson: DayLesson, now = new Date()): LessonSnapshot
 export function answer(s: LessonSnapshot, lesson: DayLesson, correct: boolean | null, note?: ItemResult['note']): LessonSnapshot {
   const item = s.queue[s.pos];
   if (!item) return s;
-  const ex = lesson.exercises[item.ex]!;
+  const ex = allExercises(lesson, s)[item.ex]!;
   const results = { ...s.results };
   let queue = s.queue;
   if (item.retry) {

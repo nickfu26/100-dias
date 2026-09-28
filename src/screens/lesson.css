@@ -318,6 +318,9 @@
 .exercise {
   padding-top: 8px;
 }
+.retry-tag--review {
+  background: var(--cobalt-wash);
+}
 .ex-prompt {
   display: flex;
   align-items: center;

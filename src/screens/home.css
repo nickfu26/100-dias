@@ -201,3 +201,7 @@ a.day:active {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+.review-go {
+  margin-top: 20px;
+}

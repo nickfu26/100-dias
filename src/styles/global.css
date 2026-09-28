@@ -269,3 +269,29 @@ p {
     transition-duration: 1ms !important;
   }
 }
+
+/* ---------- Preview banner ---------- */
+.preview-banner {
+  margin: 4px 0 8px;
+  padding: 10px 14px;
+  border-radius: var(--r-m);
+  background: var(--warn-wash);
+  color: var(--ink);
+  font-size: 14px;
+}
+.preview-banner a {
+  color: inherit;
+}
+.preview-banner--compact {
+  display: inline-block;
+  margin: 0;
+  padding: 4px 10px;
+  border-radius: var(--r-pill);
+  font-size: 12px;
+}
+
+.page-title {
+  font-size: 34px;
+  letter-spacing: -0.022em;
+  margin: 6px 0 0;
+}

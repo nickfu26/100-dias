@@ -79,3 +79,125 @@
   font-size: 14px;
   margin-bottom: 8px;
 }
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.icon-btn {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin-right: -10px;
+  border-radius: var(--r-s);
+  color: var(--ink-soft);
+}
+
+.hero-title--lesson {
+  font-size: 38px;
+  margin: 8px 0 6px;
+}
+.hero-en {
+  margin-bottom: 20px;
+}
+.hero-go {
+  margin-top: 4px;
+}
+
+.streak {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: var(--r-m);
+  background: var(--paper-sunk);
+  font-size: 15px;
+}
+.streak-num {
+  display: grid;
+  place-items: center;
+  min-width: 40px;
+  height: 40px;
+  padding: 0 8px;
+  border-radius: var(--r-s);
+  background: var(--paper-raised);
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--ink-soft);
+}
+.streak--today .streak-num {
+  background: var(--terra);
+  color: var(--on-terra);
+}
+
+/* ---------- Day list ---------- */
+.days {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.day {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  align-items: center;
+  gap: 14px;
+  min-height: 64px;
+  padding: 10px 12px;
+  border-radius: var(--r-m);
+  background: var(--paper-raised);
+  box-shadow: var(--lift-1);
+  color: inherit;
+  text-decoration: none;
+}
+a.day:active {
+  transform: translateY(1px);
+}
+.day--focus {
+  box-shadow: inset 0 0 0 2px var(--terra), var(--lift-1);
+}
+.day--locked {
+  background: transparent;
+  box-shadow: inset 0 0 0 1px color-mix(in oklch, var(--ink) 12%, transparent);
+  color: var(--ink-faint);
+}
+.day-num {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--r-s);
+  background: var(--cobalt-wash);
+  color: var(--cobalt);
+  font-family: var(--font-display);
+  font-size: 20px;
+}
+.day--locked .day-num {
+  background: var(--paper-sunk);
+  color: var(--ink-faint);
+}
+.day-num--done {
+  background: var(--ok-wash);
+  color: var(--ok);
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+.day-body {
+  display: grid;
+  min-width: 0;
+}
+.day-title {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.day-sub {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

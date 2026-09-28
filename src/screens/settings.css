@@ -1,0 +1,68 @@
+.setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.setting-name {
+  font-size: 26px;
+  letter-spacing: -0.012em;
+}
+.setting-en {
+  font-size: 14px;
+}
+.setting-help {
+  margin-top: 12px;
+  color: var(--ink-soft);
+  font-size: 15px;
+}
+.setting-extra {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 12px 14px;
+  border-radius: var(--r-m);
+  background: var(--paper-sunk);
+}
+
+/* A glazed tile that slides: terracotta when on. */
+.switch {
+  flex: none;
+  position: relative;
+  width: 64px;
+  height: 38px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--r-s);
+  background: var(--paper-sunk);
+  box-shadow: inset 0 0 0 2px var(--paper-edge);
+  transition: background-color 160ms ease-out;
+}
+.switch-knob {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  background: var(--paper-raised);
+  box-shadow: 0 2px 0 var(--paper-edge);
+  transition: transform 180ms var(--ease-out);
+}
+.switch[aria-checked='true'] {
+  background: var(--terra);
+  box-shadow: none;
+}
+.switch[aria-checked='true'] .switch-knob {
+  transform: translateX(26px);
+  box-shadow: 0 2px 0 var(--terra-deep);
+}
+
+.settings-build {
+  margin-top: 40px;
+  font-size: 13px;
+  color: var(--ink-faint);
+}

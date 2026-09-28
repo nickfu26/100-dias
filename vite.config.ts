@@ -2,6 +2,8 @@ import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 import { execSync } from 'node:child_process';
+import { readdirSync, readFileSync } from 'node:fs';
+import type { Plugin } from 'vite';
 
 // GitHub Pages serves the site from /<repo>/; the deploy workflow sets BASE_PATH.
 const base = process.env.BASE_PATH ?? '/';
@@ -16,10 +18,32 @@ const sha = (() => {
 })();
 const appVersion = `${sha} · ${new Date().toISOString().slice(0, 16).replace('T', ' ')} UTC`;
 
+// `virtual:day-index`: day number → title, so the home screen lists days without
+// bundling every lesson (lessons themselves stay lazy chunks).
+function dayIndex(): Plugin {
+  const id = 'virtual:day-index';
+  const resolved = '\0' + id;
+  return {
+    name: 'day-index',
+    resolveId: (s) => (s === id ? resolved : undefined),
+    load(s) {
+      if (s !== resolved) return;
+      const index: Record<number, unknown> = {};
+      for (const f of readdirSync('content').filter((n) => /^day-\d{3}\.json$/.test(n))) {
+        this.addWatchFile(`content/${f}`);
+        const { day, title } = JSON.parse(readFileSync(`content/${f}`, 'utf8'));
+        index[day] = title;
+      }
+      return `export default ${JSON.stringify(index)};`;
+    },
+  };
+}
+
 export default defineConfig({
   base,
   define: { __APP_VERSION__: JSON.stringify(appVersion) },
   plugins: [
+    dayIndex(),
     react(),
     VitePWA({
       registerType: 'autoUpdate',

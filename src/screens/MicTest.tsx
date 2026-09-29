@@ -118,6 +118,7 @@ export function MicTest() {
   const [outcome, setOutcome] = useState<RecognitionOutcome | null>(null);
   const [score, setScore] = useState<SpeechScore | null>(null);
   const session = useRef<RecognitionSession | null>(null);
+  const [closing, setClosing] = useState(false); // old session still shutting down
 
   function toggleRecognition() {
     if (session.current) {
@@ -136,6 +137,8 @@ export function MicTest() {
       target: phrase.es,
     });
     session.current = s;
+    setClosing(true);
+    s.closed.then(() => setClosing(false));
     s.result.then((o) => {
       session.current = null;
       setRecState('idle');
@@ -236,7 +239,7 @@ export function MicTest() {
   const recordingBusy = recStarting || recorder !== null;
   const audioBusy = playing !== null;
   // The mic is exclusive: recognition, recording and playback never overlap.
-  const micDisabled = !recognitionCtor() || (!listening && (recordingBusy || audioBusy));
+  const micDisabled = !recognitionCtor() || (!listening && (closing || recordingBusy || audioBusy));
   const recordDisabled = !recorderAvailable() || (!recorder && (listening || audioBusy || recStarting));
   const playDisabled = listening || recordingBusy;
   const passed = score && score.score >= PASS;

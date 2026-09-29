@@ -40,6 +40,9 @@ export interface RecognitionOutcome {
 
 export interface RecognitionSession {
   result: Promise<RecognitionOutcome>;
+  // Settles when the recogniser has really shut down ('end'), or CLOSE_FALLBACK_MS after the
+  // result if 'end' never comes. Don't start another session before this (iOS can hang).
+  closed: Promise<void>;
   stop: () => void; // finish and deliver what was heard
   abort: () => void;
 }
@@ -51,6 +54,7 @@ const END_GRACE_MS = 1200;
 // End of speech: iOS often never delivers a final result, so stop once the interim
 // transcript has been stable this long (or already says the target).
 const SILENCE_MS = 1200;
+const CLOSE_FALLBACK_MS = 1000;
 
 /**
  * One utterance of es-ES recognition. Start it from a tap handler.
@@ -64,7 +68,7 @@ export function recognizeOnce(
 ): RecognitionSession {
   const found = recognitionCtor();
   if (!found) {
-    return { result: Promise.resolve({ alternatives: [], error: 'unsupported' }), stop() {}, abort() {} };
+    return { result: Promise.resolve({ alternatives: [], error: 'unsupported' }), closed: Promise.resolve(), stop() {}, abort() {} };
   }
 
   // iOS: recognition can hang if the mic is held by getUserMedia or audio is playing.
@@ -85,11 +89,24 @@ export function recognizeOnce(
   const t0 = performance.now();
   const ms = () => `+${Math.round(performance.now() - t0)}ms`;
 
+  let isClosed = false;
+  let resolveClosed!: () => void;
+  const closed = new Promise<void>((resolve) => (resolveClosed = resolve));
+  const markClosed = () => {
+    isClosed = true;
+    resolveClosed();
+  };
+
   const result = new Promise<RecognitionOutcome>((resolve) => {
     let done = false;
     finish = (reason) => {
       if (done) return;
       done = true;
+      setTimeout(() => {
+        if (isClosed) return;
+        debug(`rec: no 'end' ${CLOSE_FALLBACK_MS}ms after result ${ms()} → treat as closed`);
+        markClosed();
+      }, CLOSE_FALLBACK_MS);
       clearTimeout(startDog);
       clearTimeout(watchdog);
       clearTimeout(graceDog);
@@ -149,7 +166,10 @@ export function recognizeOnce(
     error = er.error;
     debug(`rec: error ${er.error}${er.message ? ` (${er.message})` : ''} ${ms()}`);
   });
-  rec.addEventListener('end', () => finish());
+  rec.addEventListener('end', () => {
+    finish();
+    markClosed();
+  });
 
   // Stop listening and score what we have; don't wait for a final result that may never come.
   function endOfSpeech(why: string) {
@@ -170,6 +190,7 @@ export function recognizeOnce(
 
   return {
     result,
+    closed,
     stop: () => {
       debug(`rec: stop() ${ms()}`);
       try {

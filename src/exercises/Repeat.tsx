@@ -19,6 +19,7 @@ export function Repeat(props: ExerciseProps<R>) {
   const [error, setError] = useState<string | null>(null);
   const [tries, setTries] = useState(0);
   const session = useRef<RecognitionSession | null>(null);
+  const [closing, setClosing] = useState(false); // old session still shutting down
   const min = ex.minScore ?? 0.7;
 
   useEffect(() => () => session.current?.abort(), []);
@@ -33,6 +34,8 @@ export function Repeat(props: ExerciseProps<R>) {
     setState('starting');
     const s = recognizeOnce({ onListening: () => setState('listening'), onInterim: setInterim, target: ex.es });
     session.current = s;
+    setClosing(true);
+    s.closed.then(() => setClosing(false));
     s.result.then((o) => {
       session.current = null;
       setState('idle');
@@ -70,7 +73,7 @@ export function Repeat(props: ExerciseProps<R>) {
         <button
           className={`mic-btn${state === 'listening' ? ' mic-btn--on' : state === 'starting' ? ' mic-btn--ready' : ''}`}
           onClick={toggle}
-          disabled={answered || outOfTries}
+          disabled={answered || outOfTries || (!listening && closing)}
           aria-label={listening ? 'Stop listening' : 'Say it'}
         >
           <svg viewBox="0 0 24 24" width="36" height="36" aria-hidden="true">

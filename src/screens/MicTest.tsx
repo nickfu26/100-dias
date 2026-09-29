@@ -131,8 +131,9 @@ export function MicTest() {
     setInterim('');
     setRecState('starting');
     const s = recognizeOnce({
-      onStart: () => setRecState('listening'),
+      onListening: () => setRecState('listening'),
       onInterim: setInterim,
+      target: phrase.es,
     });
     session.current = s;
     s.result.then((o) => {
@@ -349,7 +350,7 @@ export function MicTest() {
           </div>
 
           <button
-            className={`mic-btn${listening ? ' mic-btn--on' : ''}`}
+            className={`mic-btn${recState === 'listening' ? ' mic-btn--on' : recState === 'starting' ? ' mic-btn--ready' : ''}`}
             onClick={toggleRecognition}
             aria-label={listening ? 'Stop listening' : 'Start speaking'}
             disabled={micDisabled}
@@ -367,7 +368,7 @@ export function MicTest() {
                 : audioBusy && !listening
                   ? 'Waiting for audio to finish…'
                   : recState === 'starting'
-                ? 'Starting…'
+                ? 'Getting ready…'
                 : recState === 'listening'
                   ? interim || 'Escuchando… habla ahora'
                   : 'Tap the tile and say the phrase'}

@@ -32,6 +32,10 @@
 .mic-btn:disabled {
   opacity: 0.4;
 }
+/* Tapped, but the recogniser isn't capturing audio yet: no pulse, no colour change. */
+.mic-btn--ready {
+  opacity: 0.65;
+}
 .mic-btn--on {
   background: var(--cobalt);
   box-shadow: 0 5px 0 var(--cobalt-deep);

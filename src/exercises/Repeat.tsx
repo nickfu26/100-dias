@@ -31,7 +31,7 @@ export function Repeat(props: ExerciseProps<R>) {
     setError(null);
     setInterim('');
     setState('starting');
-    const s = recognizeOnce({ onStart: () => setState('listening'), onInterim: setInterim });
+    const s = recognizeOnce({ onListening: () => setState('listening'), onInterim: setInterim, target: ex.es });
     session.current = s;
     s.result.then((o) => {
       session.current = null;
@@ -68,7 +68,7 @@ export function Repeat(props: ExerciseProps<R>) {
 
       <div className="center-col">
         <button
-          className={`mic-btn${listening ? ' mic-btn--on' : ''}`}
+          className={`mic-btn${state === 'listening' ? ' mic-btn--on' : state === 'starting' ? ' mic-btn--ready' : ''}`}
           onClick={toggle}
           disabled={answered || outOfTries}
           aria-label={listening ? 'Stop listening' : 'Say it'}
@@ -80,7 +80,7 @@ export function Repeat(props: ExerciseProps<R>) {
         </button>
         <p className="mic-status muted" aria-live="polite">
           {state === 'starting'
-            ? 'Starting…'
+            ? 'Getting ready…'
             : state === 'listening'
               ? interim || 'Escuchando… habla ahora'
               : answered

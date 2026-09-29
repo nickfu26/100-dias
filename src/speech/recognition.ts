@@ -1,6 +1,7 @@
 import { stopAudio } from '../audio/player';
 import { SPEECH_LANG } from '../config';
 import { debug } from '../lib/debugLog';
+import { scoringText } from '../lib/text';
 import { releaseMic } from './recorder';
 
 // Minimal typings: lib.dom's coverage of Web Speech varies by TS version.
@@ -47,13 +48,20 @@ const LOGGED_EVENTS = ['start', 'audiostart', 'soundstart', 'speechstart', 'spee
 const START_TIMEOUT_MS = 4000;
 const WATCHDOG_MS = 8000;
 const END_GRACE_MS = 1200;
+// End of speech: iOS often never delivers a final result, so stop once the interim
+// transcript has been stable this long (or already says the target).
+const SILENCE_MS = 1200;
 
 /**
  * One utterance of es-ES recognition. Start it from a tap handler.
  * Recognition checks intelligibility only — it cannot judge individual phonemes.
  * The result promise ALWAYS settles: iOS sometimes never fires onend/onresult.
+ * `onListening` fires on 'audiostart' — only then is the mic actually capturing (the first
+ * start() can take ~3 s on iOS). With `target`, a matching interim ends the utterance at once.
  */
-export function recognizeOnce(opts: { onInterim?: (text: string) => void; onStart?: () => void } = {}): RecognitionSession {
+export function recognizeOnce(
+  opts: { onInterim?: (text: string) => void; onListening?: () => void; target?: string } = {},
+): RecognitionSession {
   const found = recognitionCtor();
   if (!found) {
     return { result: Promise.resolve({ alternatives: [], error: 'unsupported' }), stop() {}, abort() {} };
@@ -85,6 +93,7 @@ export function recognizeOnce(opts: { onInterim?: (text: string) => void; onStar
       clearTimeout(startDog);
       clearTimeout(watchdog);
       clearTimeout(graceDog);
+      clearTimeout(silenceDog);
       // Safari sometimes ends without a final result; use the last interim text.
       if (!finals.length && lastInterim) finals = [{ text: lastInterim, confidence: 0 }];
       const alternatives = finals.filter((a) => a.text).sort((a, b) => b.confidence - a.confidence);
@@ -93,6 +102,8 @@ export function recognizeOnce(opts: { onInterim?: (text: string) => void; onStar
   });
 
   let graceDog: ReturnType<typeof setTimeout> | undefined;
+  let silenceDog: ReturnType<typeof setTimeout> | undefined;
+  const targetKey = opts.target ? scoringText(opts.target) : '';
   const abortThenFinish = (reason: string) => {
     forced ??= reason;
     debug(`rec: ${reason} ${ms()} → abort()`);
@@ -108,10 +119,8 @@ export function recognizeOnce(opts: { onInterim?: (text: string) => void; onStar
   const watchdog = setTimeout(() => abortThenFinish('watchdog'), WATCHDOG_MS);
 
   for (const ev of LOGGED_EVENTS) rec.addEventListener(ev, () => debug(`rec: ${ev} ${ms()}`));
-  rec.addEventListener('start', () => {
-    clearTimeout(startDog);
-    opts.onStart?.();
-  });
+  rec.addEventListener('start', () => clearTimeout(startDog));
+  rec.addEventListener('audiostart', () => opts.onListening?.());
   rec.addEventListener('result', (e) => {
     const r = e as RecEvent;
     let interim = '';
@@ -126,10 +135,13 @@ export function recognizeOnce(opts: { onInterim?: (text: string) => void; onStar
         interim += res[0]!.transcript;
       }
     }
-    if (interim) {
+    if (interim && interim.trim() !== lastInterim) {
       lastInterim = interim.trim();
       debug(`rec: result interim "${lastInterim}" ${ms()}`);
       opts.onInterim?.(lastInterim);
+      clearTimeout(silenceDog);
+      if (targetKey && scoringText(lastInterim) === targetKey) endOfSpeech('interim matches target');
+      else silenceDog = setTimeout(() => endOfSpeech(`interim stable ${SILENCE_MS}ms`), SILENCE_MS);
     }
   });
   rec.addEventListener('error', (e) => {
@@ -138,6 +150,15 @@ export function recognizeOnce(opts: { onInterim?: (text: string) => void; onStar
     debug(`rec: error ${er.error}${er.message ? ` (${er.message})` : ''} ${ms()}`);
   });
   rec.addEventListener('end', () => finish());
+
+  // Stop listening and score what we have; don't wait for a final result that may never come.
+  function endOfSpeech(why: string) {
+    debug(`rec: end of speech (${why}) ${ms()} → stop()`);
+    try {
+      rec.stop();
+    } catch { /* ignore */ }
+    finish();
+  }
 
   try {
     rec.start();

@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
+import { useMicQuiet } from '../audio/activity';
 import { ListenButtons } from '../components/AudioButtons';
+import { debug } from '../lib/debugLog';
 import type { Repeat as R } from '../content/types';
 import { bestScore, type SpeechScore } from '../speech/fuzzy';
 import { recognitionAvailable, recognizeOnce, RECOGNITION_ERROR_HELP, type RecognitionSession } from '../speech/recognition';
@@ -24,7 +26,8 @@ export function Repeat(props: ExerciseProps<R>) {
   const [tries, setTries] = useState(0);
   const [failures, setFailures] = useState(0);
   const session = useRef<RecognitionSession | null>(null);
-  const [closing, setClosing] = useState(false); // old session still shutting down
+  // App-wide: no clip playing and no recogniser (from this or the previous exercise) still closing.
+  const micQuiet = useMicQuiet();
   const min = ex.minScore ?? 0.7;
 
   useEffect(() => () => session.current?.abort(), []);
@@ -34,14 +37,13 @@ export function Repeat(props: ExerciseProps<R>) {
 
   function toggle() {
     if (session.current) return session.current.stop();
+    debug(`lesson 🎤 "${ex.es}" · ${ex.id} · try ${tries + 1} · failures ${failures}`);
     setScore(null);
     setError(null);
     setInterim('');
     setState('starting');
     const s = recognizeOnce({ onListening: () => setState('listening'), onInterim: setInterim, target: ex.es });
     session.current = s;
-    setClosing(true);
-    s.closed.then(() => setClosing(false));
     s.result.then((o) => {
       session.current = null;
       setState('idle');
@@ -84,7 +86,7 @@ export function Repeat(props: ExerciseProps<R>) {
         <button
           className={`mic-btn${state === 'listening' ? ' mic-btn--on' : state === 'starting' ? ' mic-btn--ready' : ''}`}
           onClick={toggle}
-          disabled={answered || outOfTries || (!listening && closing)}
+          disabled={answered || outOfTries || (!listening && !micQuiet)}
           aria-label={listening ? 'Stop listening' : 'Say it'}
         >
           <svg viewBox="0 0 24 24" width="36" height="36" aria-hidden="true">
@@ -99,6 +101,8 @@ export function Repeat(props: ExerciseProps<R>) {
               ? interim || 'Escuchando… habla ahora'
               : answered
                 ? ''
+                : !micQuiet
+                  ? 'Un momento…'
                 : score && !passed
                   ? outOfTries
                     ? 'Recognition didn’t catch it. That happens; move on.'

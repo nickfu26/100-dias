@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate, useParams } from 'react-router';
+import { preferPlayAndRecord } from '../audio/activity';
 import { preloadAudio } from '../audio/player';
+import { debug } from '../lib/debugLog';
 import { ProgressBar } from '../components/ProgressBar';
 import { PreviewBanner } from '../components/PreviewBanner';
 import { usePlay } from '../components/usePlay';
@@ -174,6 +176,12 @@ function LessonRun({ lesson, preview, test }: { lesson: DayLesson; preview: bool
   // Warm today's audio (both voices, normal speed) so taps play instantly and offline.
   useEffect(() => {
     void preloadAudio(lessonStrings(lesson), ['f', 'm'], ['normal']);
+  }, [lesson]);
+
+  // Same audio-session setup as the mic test, so 🎤 sees the same conditions in both.
+  useEffect(() => {
+    debug(`lesson open: day ${lesson.day}`);
+    preferPlayAndRecord();
   }, [lesson]);
 
   // Every step is saved, so closing the app (or iOS killing it) resumes at the same card.

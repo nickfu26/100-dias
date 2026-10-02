@@ -1,4 +1,5 @@
 import { debug } from '../lib/debugLog';
+import { trackActivity } from './activity';
 import { resolveAudio, type Speed, type Voice } from './manifest';
 import { cancelSpeech, speak } from './ttsFallback';
 
@@ -173,7 +174,11 @@ export interface PlayOptions {
  * Call synchronously from a tap handler: nothing is awaited before play().
  * Always settles, with the source that was used.
  */
-export function playSpanish(text: string, { voice, speed = 'normal' }: PlayOptions): Promise<PlaySource> {
+export function playSpanish(text: string, opts: PlayOptions): Promise<PlaySource> {
+  return trackActivity(`"${text}"`, playSpanishInner(text, opts));
+}
+
+function playSpanishInner(text: string, { voice, speed = 'normal' }: PlayOptions): Promise<PlaySource> {
   const slow = speed === 'slow';
   const resolved = resolveAudio(text, voice, speed);
   if (!resolved) {
@@ -199,5 +204,5 @@ export function playSpanish(text: string, { voice, speed = 'normal' }: PlayOptio
 
 /** Play a blob URL (e.g. the learner's own recording) through the same element. */
 export function playUrl(url: string, what = 'recording'): Promise<void> {
-  return playSrc(url, 1, what);
+  return trackActivity(what, playSrc(url, 1, what));
 }

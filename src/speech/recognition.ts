@@ -1,3 +1,4 @@
+import { audioSessionType, beginActivity } from '../audio/activity';
 import { stopAudio } from '../audio/player';
 import { SPEECH_LANG } from '../config';
 import { debug } from '../lib/debugLog';
@@ -54,7 +55,17 @@ const END_GRACE_MS = 1200;
 // End of speech: iOS often never delivers a final result, so stop once the interim
 // transcript has been stable this long (or already says the target).
 const SILENCE_MS = 1200;
+// No 'end' this long after the result: abort() the recogniser, then wait up to
+// ABORT_CLOSE_MS more for 'end' before treating it as closed.
 const CLOSE_FALLBACK_MS = 1000;
+const ABORT_CLOSE_MS = 1500;
+// speechstart but no transcript this long: iOS has stalled; stop and let the learner retry
+// instead of waiting for the 8 s watchdog.
+const SPEECH_NO_RESULT_MS = 3000;
+
+// The recogniser that hasn't sent 'end' yet, whichever screen started it. A new session aborts
+// it first: two live recognisers on iOS give the second one silence until the watchdog fires.
+let live: { abort: () => void } | null = null;
 
 /**
  * One utterance of es-ES recognition. Start it from a tap handler.
@@ -71,10 +82,16 @@ export function recognizeOnce(
     return { result: Promise.resolve({ alternatives: [], error: 'unsupported' }), closed: Promise.resolve(), stop() {}, abort() {} };
   }
 
+  // Normally the 🎤 button is disabled until the last session closed (useMicQuiet); this is the backstop.
+  if (live) {
+    debug('rec: previous recogniser still open → abort() it first');
+    live.abort();
+  }
   // iOS: recognition can hang if the mic is held by getUserMedia or audio is playing.
   stopAudio();
   releaseMic();
 
+  // A fresh instance every attempt; instances are never reused.
   const rec = new found.ctor();
   rec.lang = SPEECH_LANG;
   rec.continuous = false;
@@ -92,8 +109,14 @@ export function recognizeOnce(
   let isClosed = false;
   let resolveClosed!: () => void;
   const closed = new Promise<void>((resolve) => (resolveClosed = resolve));
+  const endActivity = beginActivity('recognition');
+  const self = { abort: () => { try { rec.abort(); } catch { /* ignore */ } } };
+  live = self;
   const markClosed = () => {
+    if (isClosed) return;
     isClosed = true;
+    if (live === self) live = null;
+    endActivity();
     resolveClosed();
   };
 
@@ -104,13 +127,19 @@ export function recognizeOnce(
       done = true;
       setTimeout(() => {
         if (isClosed) return;
-        debug(`rec: no 'end' ${CLOSE_FALLBACK_MS}ms after result ${ms()} → treat as closed`);
-        markClosed();
+        debug(`rec: no 'end' ${CLOSE_FALLBACK_MS}ms after result ${ms()} → abort()`);
+        self.abort();
+        setTimeout(() => {
+          if (isClosed) return;
+          debug(`rec: still no 'end' ${ms()} → treat as closed`);
+          markClosed();
+        }, ABORT_CLOSE_MS);
       }, CLOSE_FALLBACK_MS);
       clearTimeout(startDog);
       clearTimeout(watchdog);
       clearTimeout(graceDog);
       clearTimeout(silenceDog);
+      clearTimeout(speechDog);
       // Safari sometimes ends without a final result; use the last interim text.
       if (!finals.length && lastInterim) finals = [{ text: lastInterim, confidence: 0 }];
       const alternatives = finals.filter((a) => a.text).sort((a, b) => b.confidence - a.confidence);
@@ -120,6 +149,7 @@ export function recognizeOnce(
 
   let graceDog: ReturnType<typeof setTimeout> | undefined;
   let silenceDog: ReturnType<typeof setTimeout> | undefined;
+  let speechDog: ReturnType<typeof setTimeout> | undefined;
   const targetKey = opts.target ? scoringText(opts.target) : '';
   const abortThenFinish = (reason: string) => {
     forced ??= reason;
@@ -138,7 +168,14 @@ export function recognizeOnce(
   for (const ev of LOGGED_EVENTS) rec.addEventListener(ev, () => debug(`rec: ${ev} ${ms()}`));
   rec.addEventListener('start', () => clearTimeout(startDog));
   rec.addEventListener('audiostart', () => opts.onListening?.());
+  rec.addEventListener('speechstart', () => {
+    clearTimeout(speechDog);
+    speechDog = setTimeout(() => {
+      if (!lastInterim && !finals.length) endOfSpeech(`speechstart but no result in ${SPEECH_NO_RESULT_MS}ms`);
+    }, SPEECH_NO_RESULT_MS);
+  });
   rec.addEventListener('result', (e) => {
+    clearTimeout(speechDog);
     const r = e as RecEvent;
     let interim = '';
     for (let i = r.resultIndex; i < r.results.length; i++) {
@@ -182,7 +219,7 @@ export function recognizeOnce(
 
   try {
     rec.start();
-    debug('rec: start() called');
+    debug(`rec: start() called · fresh instance · lang ${rec.lang} · audioSession ${audioSessionType()}${opts.target ? ` · target "${opts.target}"` : ''}`);
   } catch (e) {
     debug(`rec: start() threw ${(e as Error).name}: ${(e as Error).message}`);
     finish('start-failed');
@@ -212,7 +249,7 @@ export const RECOGNITION_ERROR_HELP: Record<string, string> = {
   network: 'Recognition needs a network connection on this device.',
   aborted: 'Recognition was cancelled.',
   'language-not-supported': 'es-ES recognition is not supported on this device.',
-  watchdog: 'Recognition stopped responding after 8 s and was reset. The event log shows the last step it reached.',
+  watchdog: `Recognition stopped responding after ${WATCHDOG_MS / 1000} s and was reset. The event log shows the last step it reached.`,
   'start-timeout': 'Recognition never started (no “start” event within 4 s) and was reset.',
   'start-failed': 'Recognition could not start. See the event log.',
 };

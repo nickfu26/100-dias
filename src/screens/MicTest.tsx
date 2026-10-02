@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router';
 import appAudio from '../../content/app-audio.json';
 import { VOICES } from '../config';
+import { preferPlayAndRecord, trackActivity, useMicQuiet } from '../audio/activity';
 import { loadManifest, manifestInfo, type Speed, type Voice } from '../audio/manifest';
 import { playSpanish, playUrl, preloadAudio, stopAudio } from '../audio/player';
 import { spanishVoices, speak, whenVoicesReady } from '../audio/ttsFallback';
@@ -81,6 +82,7 @@ export function MicTest() {
   useEffect(() => onDebug(addLog), [addLog]);
 
   useEffect(() => {
+    preferPlayAndRecord();
     loadManifest().then(async (m) => {
       if (!m) return addLog('✗ audio manifest failed to load');
       const t0 = performance.now();
@@ -106,7 +108,7 @@ export function MicTest() {
     stopAudio();
     addLog(`tap ▶ "${text}" system voice`);
     setPlaying(key);
-    speak(text, 'f', speed === 'slow')
+    trackActivity('system voice', speak(text, 'f', speed === 'slow'))
       .then(() => addLog(`▶ "${text}" · system voice ${spanishVoices()[0]?.name ?? '(none)'}`))
       .catch((e: Error) => addLog(`✗ system voice: ${e.message}`))
       .finally(() => setPlaying((p) => (p === key ? null : p)));
@@ -118,7 +120,7 @@ export function MicTest() {
   const [outcome, setOutcome] = useState<RecognitionOutcome | null>(null);
   const [score, setScore] = useState<SpeechScore | null>(null);
   const session = useRef<RecognitionSession | null>(null);
-  const [closing, setClosing] = useState(false); // old session still shutting down
+  const micQuiet = useMicQuiet(); // same gate as lessons: nothing playing, no recogniser closing
 
   function toggleRecognition() {
     if (session.current) {
@@ -137,8 +139,6 @@ export function MicTest() {
       target: phrase.es,
     });
     session.current = s;
-    setClosing(true);
-    s.closed.then(() => setClosing(false));
     s.result.then((o) => {
       session.current = null;
       setRecState('idle');
@@ -239,7 +239,7 @@ export function MicTest() {
   const recordingBusy = recStarting || recorder !== null;
   const audioBusy = playing !== null;
   // The mic is exclusive: recognition, recording and playback never overlap.
-  const micDisabled = !recognitionCtor() || (!listening && (closing || recordingBusy || audioBusy));
+  const micDisabled = !recognitionCtor() || (!listening && (!micQuiet || recordingBusy || audioBusy));
   const recordDisabled = !recorderAvailable() || (!recorder && (listening || audioBusy || recStarting));
   const playDisabled = listening || recordingBusy;
   const passed = score && score.score >= PASS;

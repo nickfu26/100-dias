@@ -8,6 +8,7 @@ import { lessonStrings } from '../content/audioStrings';
 import { loadCheckpoint, loadDay } from '../content/loader';
 import type { Checkpoint, DayLesson, Exercise } from '../content/types';
 import { ExerciseView, defaultPrompt } from '../exercises/ExerciseView';
+import { SpeakingProvider, type SpeakingSession } from '../exercises/speaking';
 import type { Answer } from '../exercises/types';
 import { Rating } from 'ts-fsrs';
 import { allExercises, answer, canResume, isReviewItem, newSnapshot, progressFraction, score, type LessonSnapshot } from '../lesson/session';
@@ -158,6 +159,17 @@ function LessonRun({ lesson, preview, test }: { lesson: DayLesson; preview: bool
   const reviews = useReviews(lesson, !!test);
   const [attempt, setAttempt] = useState<CheckpointAttempt | null>(null);
   const fresh = () => newSnapshot(lesson, reviews ?? [], new Date(), { noRetry: !!test });
+  const { speakingMode } = useSettings();
+  // Once recognition fails and the learner opts out, 🎤 exercises are record & compare until the lesson closes.
+  const [recordSession, setRecordSession] = useState(false);
+  const speaking = useMemo<SpeakingSession>(
+    () => ({
+      recordOnly: speakingMode === 'record' || recordSession,
+      reason: speakingMode === 'record' ? 'Speaking mode is Record & compare (Ajustes).' : recordSession ? 'Record & compare for the rest of this lesson.' : undefined,
+      recordRestOfSession: () => setRecordSession(true),
+    }),
+    [speakingMode, recordSession],
+  );
 
   // Warm today's audio (both voices, normal speed) so taps play instantly and offline.
   useEffect(() => {
@@ -262,13 +274,15 @@ function LessonRun({ lesson, preview, test }: { lesson: DayLesson; preview: bool
             )}
             {ex.prompt ?? defaultPrompt(ex)}
           </p>
-          <ExerciseView
-            key={`${snap.pos}`}
-            ex={ex}
-            voice={item.voice}
-            answered={pending !== null}
-            onAnswer={(a) => setPending(a)}
-          />
+          <SpeakingProvider value={speaking}>
+            <ExerciseView
+              key={`${snap.pos}`}
+              ex={ex}
+              voice={item.voice}
+              answered={pending !== null}
+              onAnswer={(a) => setPending(a)}
+            />
+          </SpeakingProvider>
         </section>
       )}
 

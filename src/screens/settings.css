@@ -136,3 +136,12 @@
   border-radius: var(--r-m);
   background: var(--ok-wash);
 }
+.segmented {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+#device-h ~ .tile + .tile {
+  margin-top: 10px;
+}

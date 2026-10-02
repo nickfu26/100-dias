@@ -144,3 +144,18 @@
   text-align: left;
   font-size: 15px;
 }
+/* Long-press reveals "Copy speech log": keep iOS from selecting text or opening its callout. */
+.error--press {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+.error--press .tile {
+  margin-top: 10px;
+}
+.speak-offer {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  margin-top: 8px;
+}

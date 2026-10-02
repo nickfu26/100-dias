@@ -91,7 +91,7 @@ export function parseBackup(text: string): Backup {
   return {
     ...(raw as unknown as Backup),
     data: {
-      settings: isObj(d.settings) ? (d.settings as unknown as Settings) : settingsStore.get(),
+      settings: { ...settingsStore.get(), ...(isObj(d.settings) ? (d.settings as unknown as Partial<Settings>) : {}) },
       progress: d.progress as unknown as ProgressData,
       previewProgress: isProgress(d.previewProgress) ? (d.previewProgress as unknown as ProgressData) : previewProgress.get(),
       cards: d.cards as CardMap,

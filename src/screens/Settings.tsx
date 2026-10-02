@@ -4,7 +4,8 @@ import { formatLongEs, localDateKey } from '../lib/date';
 import { useStore } from '../lib/persisted';
 import { Link } from 'react-router';
 import { resetPreviewProgress, useProgress } from '../progress/store';
-import { setPreview, useSettings } from '../lib/settings';
+import { copySpeechLog } from '../lib/debugLog';
+import { setPreview, setSpeakingMode, useSettings, type SpeakingMode } from '../lib/settings';
 import './settings.css';
 
 export function Settings() {
@@ -65,6 +66,8 @@ export function Settings() {
         )}
       </section>
 
+      <SpeakingSection />
+
       <BackupSection />
 
       <section className="section" aria-labelledby="device-h">
@@ -73,10 +76,61 @@ export function Settings() {
         <Link to="/mic-test" className="tile tile--light tile--block">
           Prueba de micrófono
         </Link>
+        <SpeechLogButton />
       </section>
 
       <p className="build num settings-build">Build {__APP_VERSION__}</p>
     </main>
+  );
+}
+
+const MODES: { id: SpeakingMode; label: string }[] = [
+  { id: 'recognition', label: 'Recognition' },
+  { id: 'record', label: 'Record & compare' },
+];
+
+function SpeakingSection() {
+  const { speakingMode } = useSettings();
+  return (
+    <section className="section" aria-labelledby="speak-h">
+      <h2 id="speak-h" className="setting-name">Hablar</h2>
+      <p className="muted setting-en">Speaking mode</p>
+      <div className="segmented" role="group" aria-labelledby="speak-h">
+        {MODES.map((m) => (
+          <button
+            key={m.id}
+            aria-pressed={speakingMode === m.id}
+            className="tile tile--light tile--small"
+            onClick={() => setSpeakingMode(m.id)}
+          >
+            {m.label}
+          </button>
+        ))}
+      </div>
+      <p className="setting-help">
+        {speakingMode === 'recognition'
+          ? 'Say each 🎤 phrase and speech recognition checks it. If it fails in a lesson, you can switch to recording for the rest of that lesson.'
+          : 'Record yourself, play it back next to the native voice, and rate it yourself. Works everywhere, offline too.'}
+      </p>
+    </section>
+  );
+}
+
+/** For reports from real lessons: everything audio and recognition logged since the app opened. */
+function SpeechLogButton() {
+  const [copied, setCopied] = useState<boolean | null>(null);
+  return (
+    <button
+      className="tile tile--light tile--block"
+      onClick={() =>
+        copySpeechLog().then((ok) => {
+          setCopied(ok);
+          setTimeout(() => setCopied(null), 2500);
+        })
+      }
+    >
+      {copied === null ? 'Copy last speech log' : copied ? 'Copiado ✓' : 'Clipboard unavailable'}
+    </button>
   );
 }
 

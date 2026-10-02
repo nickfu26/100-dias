@@ -4,26 +4,32 @@ import type { Repeat as R } from '../content/types';
 import { bestScore, type SpeechScore } from '../speech/fuzzy';
 import { recognitionAvailable, recognizeOnce, RECOGNITION_ERROR_HELP, type RecognitionSession } from '../speech/recognition';
 import { Shadow } from './Shadow';
+import { SpeechError, useSpeaking } from './speaking';
 import type { ExerciseProps } from './types';
 
 const MAX_TRIES = 3;
+// Recognition errors (heard nothing, hung, reset) before this exercise switches to record & compare.
+const MAX_FAILURES = 2;
 // Errors that mean recognition can't work on this device: switch to shadowing.
 const FATAL = ['unsupported', 'not-allowed', 'service-not-allowed', 'language-not-supported', 'start-failed'];
 
 export function Repeat(props: ExerciseProps<R>) {
   const { ex, voice, answered, onAnswer } = props;
-  const [fallback, setFallback] = useState<string | null>(recognitionAvailable() ? null : 'Speech recognition isn’t available here, so this one is shadowing.');
+  const speaking = useSpeaking();
+  const [fallback, setFallback] = useState<string | null>(recognitionAvailable() ? null : 'Speech recognition isn’t available here, so this one is record & compare.');
   const [state, setState] = useState<'idle' | 'starting' | 'listening'>('idle');
   const [interim, setInterim] = useState('');
   const [score, setScore] = useState<SpeechScore | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [tries, setTries] = useState(0);
+  const [failures, setFailures] = useState(0);
   const session = useRef<RecognitionSession | null>(null);
   const [closing, setClosing] = useState(false); // old session still shutting down
   const min = ex.minScore ?? 0.7;
 
   useEffect(() => () => session.current?.abort(), []);
 
+  if (speaking.recordOnly) return <Shadow {...props} ex={{ es: ex.es, en: ex.en }} fallbackReason={speaking.reason} />;
   if (fallback) return <Shadow {...props} ex={{ es: ex.es, en: ex.en }} fallbackReason={fallback} />;
 
   function toggle() {
@@ -40,12 +46,17 @@ export function Repeat(props: ExerciseProps<R>) {
       session.current = null;
       setState('idle');
       if (o.error && FATAL.includes(o.error)) {
-        setFallback(`${RECOGNITION_ERROR_HELP[o.error] ?? 'Speech recognition failed.'} Using shadowing instead.`);
+        speaking.recordRestOfSession();
+        setFallback(`${RECOGNITION_ERROR_HELP[o.error] ?? 'Speech recognition failed.'} Using record & compare instead.`);
         return;
       }
       if (o.error) {
-        setError(RECOGNITION_ERROR_HELP[o.error] ?? 'Nothing was recognised. Try again.');
-        return; // didn't hear anything: doesn't use up a try
+        // Didn't hear anything: doesn't use up a try.
+        const n = failures + 1;
+        setFailures(n);
+        if (n >= MAX_FAILURES) setFallback('Recognition didn’t catch that twice, so this one is record & compare.');
+        else setError('Didn’t catch that. Tap 🎤 to try again.');
+        return;
       }
       const sc = bestScore(ex.es, o.alternatives.map((a) => a.text));
       setScore(sc);
@@ -106,9 +117,12 @@ export function Repeat(props: ExerciseProps<R>) {
           ))}
         </p>
       )}
-      {error && (
-        <p className="error" role="alert">
-          {error}
+      {error && <SpeechError>{error}</SpeechError>}
+      {failures > 0 && !answered && (
+        <p className="speak-offer">
+          <button className="link-btn" onClick={speaking.recordRestOfSession}>
+            Use record &amp; compare for the rest of this lesson
+          </button>
         </p>
       )}
       {outOfTries && !answered && (

@@ -85,8 +85,8 @@ export function Settings() {
 }
 
 const MODES: { id: SpeakingMode; label: string }[] = [
-  { id: 'recognition', label: 'Recognition' },
   { id: 'record', label: 'Record & compare' },
+  { id: 'recognition', label: 'Recognition (beta)' },
 ];
 
 function SpeakingSection() {
@@ -109,7 +109,7 @@ function SpeakingSection() {
       </div>
       <p className="setting-help">
         {speakingMode === 'recognition'
-          ? 'Say each 🎤 phrase and speech recognition checks it. If it fails in a lesson, you can switch to recording for the rest of that lesson.'
+          ? 'Beta: say each 🎤 phrase and speech recognition checks it. It is still unreliable on iPhone; if it fails in a lesson, you can switch to recording for the rest of that lesson.'
           : 'Record yourself, play it back next to the native voice, and rate it yourself. Works everywhere, offline too.'}
       </p>
     </section>

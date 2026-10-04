@@ -1,4 +1,5 @@
 // Shadowing: record the learner, then play it back next to the native audio.
+import { enterRecordSession } from '../audio/activity';
 import { debug } from '../lib/debugLog';
 
 const MIME_CANDIDATES = ['audio/mp4', 'audio/webm;codecs=opus', 'audio/webm', 'audio/aac', 'audio/ogg;codecs=opus'];
@@ -46,6 +47,7 @@ export function releaseMic() {
 /** Start recording (call from a tap). Auto-stops after maxMs. */
 export async function startRecording(maxMs = 10_000): Promise<RecorderSession> {
   releaseMic();
+  enterRecordSession();
   const stream = await navigator.mediaDevices.getUserMedia({
     audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true },
   });

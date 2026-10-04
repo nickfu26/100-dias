@@ -58,26 +58,29 @@ export function useMicQuiet(): boolean {
   return useSyncExternalStore(subscribe, micQuiet, micQuiet);
 }
 
+type SessionType = 'playback' | 'play-and-record';
+
 /**
- * Ask iOS (Safari 16.4+) for a play-and-record session, so playback earlier in the lesson
- * doesn't leave the session in playback-only mode. Called on lesson and mic-test mount so
- * both screens run the same setup.
+ * iOS (Safari 16.4+) audio session. 'play-and-record' routes playback to the earpiece, so it
+ * is only set right before the mic starts; every clip and system voice switches back to
+ * 'playback' (loudspeaker, ignores the silent switch). Listening must always be audible.
  */
-export function preferPlayAndRecord() {
+function setAudioSession(type: SessionType) {
   const s = (navigator as Navigator & { audioSession?: { type: string } }).audioSession;
-  if (!s || typeof s.type !== 'string') {
-    debug('audioSession: API unavailable');
-    return;
-  }
-  if (s.type === 'play-and-record') return;
+  if (!s || typeof s.type !== 'string' || s.type === type) return;
   const was = s.type;
   try {
-    s.type = 'play-and-record';
+    s.type = type;
     debug(`audioSession: ${was} → ${s.type}`);
   } catch (e) {
-    debug(`audioSession: set failed ${(e as Error).message}`);
+    debug(`audioSession: set ${type} failed ${(e as Error).message}`);
   }
 }
+
+/** Before any clip, system voice or playback of a recording. */
+export const enterPlaybackSession = () => setAudioSession('playback');
+/** Right before recognition or recording starts, never earlier. */
+export const enterRecordSession = () => setAudioSession('play-and-record');
 
 export function audioSessionType(): string {
   return (navigator as Navigator & { audioSession?: { type: string } }).audioSession?.type ?? 'n/a';

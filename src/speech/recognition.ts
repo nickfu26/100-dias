@@ -1,4 +1,4 @@
-import { audioSessionType, beginActivity } from '../audio/activity';
+import { audioSessionType, beginActivity, enterRecordSession } from '../audio/activity';
 import { stopAudio } from '../audio/player';
 import { SPEECH_LANG } from '../config';
 import { debug } from '../lib/debugLog';
@@ -218,6 +218,7 @@ export function recognizeOnce(
   }
 
   try {
+    enterRecordSession();
     rec.start();
     debug(`rec: start() called · fresh instance · lang ${rec.lang} · audioSession ${audioSessionType()}${opts.target ? ` · target "${opts.target}"` : ''}`);
   } catch (e) {

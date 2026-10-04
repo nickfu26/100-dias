@@ -1,4 +1,5 @@
 import { debug } from '../lib/debugLog';
+import { enterPlaybackSession } from './activity';
 import type { Voice } from './manifest';
 
 const FEMALE = /elvira|m[oó]nica|helena|laura|luc[ií]a|paulina|marisol|conchita|sara|ximena|elena/i;
@@ -43,6 +44,7 @@ export function cancelSpeech() {
 export function speak(text: string, voice: Voice, slow: boolean): Promise<void> {
   if (!ttsAvailable()) return Promise.reject(new Error('speechSynthesis unavailable'));
   cancelSpeech();
+  enterPlaybackSession();
   const u = new SpeechSynthesisUtterance(text);
   u.lang = 'es-ES';
   const v = pickVoice(voice);

@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate, useParams } from 'react-router';
-import { preferPlayAndRecord } from '../audio/activity';
 import { preloadAudio } from '../audio/player';
 import { debug } from '../lib/debugLog';
 import { ProgressBar } from '../components/ProgressBar';
@@ -167,7 +166,7 @@ function LessonRun({ lesson, preview, test }: { lesson: DayLesson; preview: bool
   const speaking = useMemo<SpeakingSession>(
     () => ({
       recordOnly: speakingMode === 'record' || recordSession,
-      reason: speakingMode === 'record' ? 'Speaking mode is Record & compare (Ajustes).' : recordSession ? 'Record & compare for the rest of this lesson.' : undefined,
+      reason: speakingMode === 'record' ? 'Recognition is off (Ajustes → Hablar).' : recordSession ? 'Record & compare for the rest of this lesson.' : undefined,
       recordRestOfSession: () => setRecordSession(true),
     }),
     [speakingMode, recordSession],
@@ -178,10 +177,8 @@ function LessonRun({ lesson, preview, test }: { lesson: DayLesson; preview: bool
     void preloadAudio(lessonStrings(lesson), ['f', 'm'], ['normal']);
   }, [lesson]);
 
-  // Same audio-session setup as the mic test, so 🎤 sees the same conditions in both.
   useEffect(() => {
     debug(`lesson open: day ${lesson.day}`);
-    preferPlayAndRecord();
   }, [lesson]);
 
   // Every step is saved, so closing the app (or iOS killing it) resumes at the same card.

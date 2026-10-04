@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router';
 import appAudio from '../../content/app-audio.json';
 import { VOICES } from '../config';
-import { preferPlayAndRecord, trackActivity, useMicQuiet } from '../audio/activity';
+import { trackActivity, useMicQuiet } from '../audio/activity';
 import { loadManifest, manifestInfo, type Speed, type Voice } from '../audio/manifest';
 import { playSpanish, playUrl, preloadAudio, stopAudio } from '../audio/player';
 import { spanishVoices, speak, whenVoicesReady } from '../audio/ttsFallback';
@@ -82,7 +82,6 @@ export function MicTest() {
   useEffect(() => onDebug(addLog), [addLog]);
 
   useEffect(() => {
-    preferPlayAndRecord();
     loadManifest().then(async (m) => {
       if (!m) return addLog('✗ audio manifest failed to load');
       const t0 = performance.now();

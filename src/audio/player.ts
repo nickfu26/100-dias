@@ -1,5 +1,5 @@
 import { debug } from '../lib/debugLog';
-import { trackActivity } from './activity';
+import { enterPlaybackSession, trackActivity } from './activity';
 import { resolveAudio, type Speed, type Voice } from './manifest';
 import { cancelSpeech, speak } from './ttsFallback';
 
@@ -100,6 +100,7 @@ const START_TIMEOUT_MS = 5000;
 /** Start `src` on the shared element. The promise ALWAYS settles (watchdogs). */
 function playSrc(src: string, rate: number, what: string): Promise<void> {
   stopAudio();
+  enterPlaybackSession(); // after 🎤 the session is play-and-record, which plays from the earpiece
   const gen = generation;
   const a = audioEl();
   label = what;

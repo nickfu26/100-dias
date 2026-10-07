@@ -1,0 +1,59 @@
+{
+  "$schema": "./schema.json",
+  "day": 39,
+  "level": 3,
+  "title": { "en": "A table for two", "es": "Una mesa para dos" },
+  "objectives": [
+    "Ask for a table, with or without a booking",
+    "Answer ¿Cuántos sois? and ¿Fuera o dentro?",
+    "Ask when the kitchen opens",
+    "Fit in with Madrid's late meal times"
+  ],
+  "teach": [
+    { "kind": "phrase", "es": "Hola, buenas. ¿Tienen mesa?", "en": "Hi. Do you have a table?", "note": "Buenas is the all-day greeting in Spain. Tienen = ustedes (the restaurant). ¿Tenéis mesa? is also normal." },
+    { "kind": "phrase", "es": "¿Cuántos sois? — Dos. Una mesa para dos.", "en": "How many are you? — Two. A table for two.", "note": "sois = you all are (vosotros). In a formal place: ¿Cuántos son?" },
+    { "kind": "phrase", "es": "Tengo una reserva a nombre de Smith.", "en": "I have a booking under the name Smith.", "note": "a nombre de = in the name of. Be ready to spell it: ese, eme, i, te, hache." },
+    { "kind": "phrase", "es": "¿Fuera o dentro?", "en": "Outside or inside?", "note": "Fuera = on the terraza. In January many terraces have patio heaters, and Madrid's sunny lunchtimes can make them pleasant." },
+    {
+      "kind": "note",
+      "md": "**Madrid kitchen hours** (from day 22, now in practice):\n\n- **Lunch**: kitchens open around **13:30** and close around **16:00**.\n- **Dinner**: from around **20:30**. Before that, many restaurants only serve drinks and tapas.\n\nArrive at 19:00 and you may hear: *La cocina abre a las ocho y media.*"
+    },
+    { "kind": "phrase", "es": "¿A qué hora abre la cocina?", "en": "What time does the kitchen open?", "note": "la cocina = the kitchen, and also a cuisine: la cocina española." },
+    { "kind": "note", "md": "**Booking.** Popular places fill up on Friday and Saturday nights and at Sunday lunch, so book ahead. Many take bookings online or by WhatsApp. On weekdays, walking in is usually fine." }
+  ],
+  "vocab": [
+    { "id": "tienen-mesa", "es": "¿Tienen mesa?", "en": "Do you have a table?", "pos": "phrase", "ipa": "ˈtjenen ˈmesa", "note": "Also ¿Tenéis mesa?", "tags": ["restaurant", "survival"] },
+    { "id": "cuantos-sois", "es": "¿Cuántos sois?", "en": "How many are you?", "pos": "phrase", "ipa": "ˈkwantos ˈsois", "note": "Formal: ¿Cuántos son?", "tags": ["restaurant"] },
+    { "id": "mesa-para-dos", "es": "una mesa para dos", "en": "a table for two", "pos": "phrase", "ipa": "ˈuna ˈmesa ˈpaɾa ˈðos", "tags": ["restaurant", "survival"] },
+    { "id": "tengo-una-reserva", "es": "Tengo una reserva a nombre de…", "en": "I have a booking under the name…", "pos": "phrase", "ipa": "ˈteŋgo ˈuna reˈseɾβa a ˈnombɾe ðe", "tags": ["restaurant"] },
+    { "id": "fuera-dentro", "es": "fuera, dentro", "en": "outside, inside", "pos": "adv", "ipa": "ˈfweɾa, ˈdentɾo", "note": "¿Fuera o dentro? Fuera = on the terraza.", "tags": ["restaurant"] },
+    { "id": "terraza", "es": "la terraza", "en": "outdoor seating, terrace", "pos": "noun", "gender": "f", "ipa": "teˈraθa", "tags": ["restaurant", "madrid"] },
+    { "id": "cocina", "es": "la cocina", "en": "kitchen; cuisine", "pos": "noun", "gender": "f", "ipa": "koˈθina", "note": "¿A qué hora abre la cocina?", "tags": ["restaurant"] }
+  ],
+  "exercises": [
+    { "id": "d039-01", "type": "listen-choose", "audio": "¿Cuántos sois?", "options": ["¿Cuántos sois?", "¿Cuántos son?", "¿Cuánto es?"], "answer": 0, "vocab": ["cuantos-sois"] },
+    { "id": "d039-02", "type": "listen-choose", "audio": "¿Fuera o dentro?", "options": ["¿Fuera o dentro?", "¿Fuera o terraza?", "¿Dentro o cerca?"], "answer": 0, "vocab": ["fuera-dentro"] },
+    { "id": "d039-03", "type": "listen-choose", "audio": "la cocina", "options": ["la cocina", "el cocido", "la comida"], "answer": 0, "vocab": ["cocina"] },
+    { "id": "d039-04", "type": "match-pairs", "pairs": [["¿Tienen mesa?", "Do you have a table?"], ["¿Cuántos sois?", "How many are you?"], ["una mesa para dos", "a table for two"], ["fuera", "outside"], ["dentro", "inside"], ["la cocina", "kitchen"]], "vocab": ["tienen-mesa", "cuantos-sois", "mesa-para-dos", "fuera-dentro", "cocina"] },
+    { "id": "d039-05", "type": "fill-blank", "es": "Hola, buenas. ¿{{Tienen}} mesa?", "en": "Hi. Do you have a table?", "options": ["Tienen", "Tengo", "Hay"], "vocab": ["tienen-mesa"] },
+    { "id": "d039-06", "type": "fill-blank", "es": "Una mesa {{para}} dos, por favor.", "en": "A table for two, please.", "options": ["para", "de", "con"], "vocab": ["mesa-para-dos"] },
+    { "id": "d039-07", "type": "fill-blank", "es": "Tengo una {{reserva}} a nombre de Smith.", "en": "I have a booking under the name Smith.", "options": ["reserva", "mesa", "cocina"], "vocab": ["tengo-una-reserva"] },
+    { "id": "d039-08", "type": "fill-blank", "es": "¿Fuera o {{dentro}}? — Fuera, en la terraza.", "en": "Outside or inside? — Outside, on the terrace.", "options": ["dentro", "cerca", "allí"], "vocab": ["fuera-dentro", "terraza"] },
+    { "id": "d039-09", "type": "fill-blank", "es": "¿A qué hora abre la {{cocina}}?", "en": "What time does the kitchen open?", "options": ["cocina", "comida", "terraza"], "vocab": ["cocina", "a-que-hora", "abre"] },
+    { "id": "d039-10", "type": "listen-choose", "prompt": "When can they eat?", "audio": "La cocina abre a las ocho y media.", "optionsLang": "en", "options": ["From 20:30", "From 18:30", "From 08:30"], "answer": 0, "vocab": ["cocina", "abre", "y-media"] },
+    { "id": "d039-11", "type": "listen-choose", "prompt": "What does the waiter offer?", "audio": "Dentro no hay mesa. ¿En la terraza?", "optionsLang": "en", "options": ["A table outside", "A table inside", "A table later"], "answer": 0, "vocab": ["fuera-dentro", "terraza", "no-hay"] },
+    { "id": "d039-12", "type": "listen-choose", "prompt": "What's the booking?", "audio": "Tengo una reserva a nombre de García, para cuatro.", "optionsLang": "en", "options": ["García, four people", "García, two people", "Four bookings"], "answer": 0, "vocab": ["tengo-una-reserva", "cuatro"] },
+    { "id": "d039-13", "type": "listen-choose", "prompt": "Does the restaurant have a table?", "audio": "¿Tenéis mesa para dos? — Ahora no, en media hora.", "optionsLang": "en", "options": ["Not now, in half an hour", "Yes, right now", "No, they're full all night"], "answer": 0, "vocab": ["tienen-mesa", "ahora"] },
+    { "id": "d039-14", "type": "dictation", "es": "una mesa para dos", "hint": "a table for two", "vocab": ["mesa-para-dos"] },
+    { "id": "d039-15", "type": "dictation", "es": "la terraza", "hint": "terrace (rr, z)", "vocab": ["terraza"] },
+    { "id": "d039-16", "type": "dictation", "es": "dentro", "hint": "inside", "vocab": ["fuera-dentro"] },
+    { "id": "d039-17", "type": "build-sentence", "es": "Hola, buenas. ¿Tienen mesa para dos?", "en": "Hi. Do you have a table for two?", "distractors": ["tengo", "de"], "vocab": ["tienen-mesa", "mesa-para-dos"] },
+    { "id": "d039-18", "type": "build-sentence", "es": "Tengo una reserva a nombre de Smith.", "en": "I have a booking under the name Smith.", "distractors": ["para", "mesa"], "vocab": ["tengo-una-reserva"] },
+    { "id": "d039-19", "type": "build-sentence", "direction": "audio-to-es", "es": "Dentro, por favor. Fuera hace frío.", "en": "Inside, please. It's cold outside.", "distractors": ["terraza"], "vocab": ["fuera-dentro", "hace-frio"] },
+    { "id": "d039-20", "type": "repeat", "prompt": "At the door, no booking:", "es": "Hola, buenas. ¿Tienen mesa para dos?", "en": "Hi. Do you have a table for two?", "vocab": ["tienen-mesa", "mesa-para-dos"] },
+    { "id": "d039-21", "type": "repeat", "prompt": "At the door, with a booking:", "es": "Buenas noches. Tengo una reserva a nombre de Smith.", "en": "Good evening. I have a booking under the name Smith.", "vocab": ["tengo-una-reserva", "buenas-noches"] },
+    { "id": "d039-22", "type": "shadow", "es": "¿Cuántos sois? — Somos dos.", "en": "How many are you? — There are two of us.", "listenFor": "sois and somos from ser: the waiter asks with sois, you answer with somos.", "vocab": ["cuantos-sois"] },
+    { "id": "d039-23", "type": "listen-choose", "prompt": "Review: how will she pay?", "audio": "¿Me cobras? En efectivo.", "optionsLang": "en", "options": ["In cash", "By card", "By phone"], "answer": 0, "vocab": ["me-cobras", "en-efectivo"] },
+    { "id": "d039-24", "type": "repeat", "prompt": "Review: breakfast order.", "es": "¿Me pones una tostada con tomate y un cortado?", "en": "Can I have toast with tomato and a cortado?", "vocab": ["me-pones", "tostada-con-tomate", "cortado"] }
+  ]
+}

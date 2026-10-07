@@ -1,0 +1,63 @@
+{
+  "$schema": "./schema.json",
+  "day": 36,
+  "level": 3,
+  "title": { "en": "At the bar", "es": "En la barra" },
+  "objectives": [
+    "Order at a Madrid bar the way locals do: ¿Me pones…?",
+    "Understand the barman: ¿Qué te pongo? ¿Algo más?",
+    "Order for two with para mí and ¿y para ti?",
+    "Ask for another round and say that's all"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**How Madrid orders.** At the bar (*la barra*), people don't say *I want*. They use **poner** (*to put*): *put me a beer*.\n\n- **¿Me pones una caña?** Can I have a beer? (literally *Do you put me a beer?*)\n- **Ponme una caña, por favor.** A beer, please. (literally *Put me a beer*)\n\nBoth are normal and friendly in Spain, not rude. Use *tú* with bar staff: that's the norm."
+    },
+    { "kind": "phrase", "es": "¿Qué te pongo?", "en": "What can I get you?", "note": "What the barman says. Same verb, poner: 'What do I put you?'. Pongo = I put (irregular, like tengo)." },
+    { "kind": "phrase", "es": "¿Me pones una caña, por favor?", "en": "Can I have a small beer, please?", "note": "Your go-to order. To an older waiter in a formal place, use usted: ¿Me pone…? or Póngame…" },
+    { "kind": "phrase", "es": "Para mí, un café con leche. ¿Y para ti?", "en": "A white coffee for me. And for you?", "note": "mí with an accent = me (after para). Without the accent, mi = my." },
+    { "kind": "phrase", "es": "Otra, por favor.", "en": "Another one, please.", "note": "Hold up your glass: otra caña, otra copa. For a coffee or a wine glass of tinto: otro." },
+    { "kind": "phrase", "es": "¿Algo más? No, nada más, gracias.", "en": "Anything else? No, that's all, thanks.", "note": "The barman's last question, and the answer that ends the order." },
+    {
+      "kind": "note",
+      "md": "**Bar etiquette**\n\n- Stand at the bar or sit at a table. At the bar it's quicker and sometimes cheaper.\n- You usually **pay at the end**, not with each order.\n- Catch the barman's eye and say *¡Perdón!* if you need to. You'll learn paying on day 38."
+    }
+  ],
+  "vocab": [
+    { "id": "que-te-pongo", "es": "¿Qué te pongo?", "en": "What can I get you?", "pos": "phrase", "ipa": "ˈke te ˈpoŋgo", "note": "Heard from bar staff. Formal: ¿Qué le pongo?", "tags": ["restaurant"] },
+    { "id": "me-pones", "es": "¿Me pones…?", "en": "Can I have…? (ordering)", "pos": "phrase", "ipa": "me ˈpones", "note": "Spain. Usted: ¿Me pone…?", "tags": ["restaurant", "survival"] },
+    { "id": "ponme", "es": "Ponme…", "en": "I'll have… / Give me… (ordering)", "pos": "phrase", "ipa": "ˈpomme", "note": "Add por favor. Usted: Póngame…", "tags": ["restaurant"] },
+    { "id": "para-mi", "es": "para mí", "en": "for me", "pos": "phrase", "ipa": "ˈpaɾa ˈmi", "note": "Accent on mí (me). mi without it = my.", "tags": ["restaurant"] },
+    { "id": "y-para-ti", "es": "¿Y para ti?", "en": "And for you?", "pos": "phrase", "ipa": "i ˈpaɾa ˈti", "note": "No accent on ti.", "tags": ["restaurant"] },
+    { "id": "otra-por-favor", "es": "Otra, por favor.", "en": "Another one, please.", "pos": "phrase", "ipa": "ˈotɾa poɾ faˈβoɾ", "note": "Otro for masculine drinks: otro café.", "tags": ["restaurant"] },
+    { "id": "algo-mas", "es": "¿Algo más?", "en": "Anything else?", "pos": "phrase", "ipa": "ˈalɣo ˈmas", "note": "algo = something.", "tags": ["restaurant", "shopping"] },
+    { "id": "nada-mas", "es": "Nada más.", "en": "That's all. Nothing else.", "pos": "phrase", "ipa": "ˈnaða ˈmas", "tags": ["restaurant", "shopping"] }
+  ],
+  "exercises": [
+    { "id": "d036-01", "type": "listen-choose", "audio": "¿Qué te pongo?", "options": ["¿Qué te pongo?", "¿Qué tal?", "¿Qué tomas?"], "answer": 0, "vocab": ["que-te-pongo"] },
+    { "id": "d036-02", "type": "listen-choose", "audio": "¿Me pones una caña?", "options": ["¿Me pones una caña?", "¿Me pone una caña?", "¿Quieres una caña?"], "answer": 0, "vocab": ["me-pones", "cana"] },
+    { "id": "d036-03", "type": "listen-choose", "audio": "Nada más, gracias.", "options": ["Nada más, gracias.", "De nada, gracias.", "Algo más, gracias."], "answer": 0, "vocab": ["nada-mas"] },
+    { "id": "d036-04", "type": "match-pairs", "pairs": [["¿Qué te pongo?", "What can I get you?"], ["¿Me pones…?", "Can I have…?"], ["para mí", "for me"], ["¿Y para ti?", "And for you?"], ["¿Algo más?", "Anything else?"], ["Nada más.", "That's all."]], "vocab": ["que-te-pongo", "me-pones", "para-mi", "y-para-ti", "algo-mas", "nada-mas"] },
+    { "id": "d036-05", "type": "fill-blank", "es": "¿Me {{pones}} un café con leche?", "en": "Can I have a white coffee?", "options": ["pones", "pongo", "quieres"], "prompt": "To the barman (tú).", "vocab": ["me-pones", "cafe-con-leche"] },
+    { "id": "d036-06", "type": "fill-blank", "es": "{{Ponme}} un vino tinto, por favor.", "en": "A red wine, please.", "options": ["Ponme", "Pones", "Pongo"], "vocab": ["ponme", "vino-tinto"] },
+    { "id": "d036-07", "type": "fill-blank", "es": "Para {{mí}}, una caña.", "en": "A beer for me.", "options": ["mí", "mi", "yo"], "prompt": "Which one means 'me'?", "vocab": ["para-mi", "cana"] },
+    { "id": "d036-08", "type": "fill-blank", "es": "¿Y para {{ti}}?", "en": "And for you?", "options": ["ti", "tú", "te"], "vocab": ["y-para-ti"] },
+    { "id": "d036-09", "type": "fill-blank", "es": "{{Otra}}, por favor.", "en": "Another one, please. (another caña)", "options": ["Otra", "Otro", "Una otra"], "vocab": ["otra-por-favor"] },
+    { "id": "d036-10", "type": "fill-blank", "es": "¿Algo {{más}}?", "en": "Anything else?", "options": ["más", "nada", "mucho"], "vocab": ["algo-mas"] },
+    { "id": "d036-11", "type": "listen-choose", "prompt": "The barman asks. What does he want to know?", "audio": "Hola, buenas. ¿Qué te pongo?", "optionsLang": "en", "options": ["What you'd like", "Where you're from", "If you want the bill"], "answer": 0, "vocab": ["que-te-pongo"] },
+    { "id": "d036-12", "type": "listen-choose", "prompt": "Who orders what?", "audio": "Para mí, un cortado. Y para ella, un té.", "optionsLang": "en", "options": ["Him: cortado · Her: tea", "Him: tea · Her: cortado", "Both: cortado"], "answer": 0, "vocab": ["para-mi", "cortado", "te"] },
+    { "id": "d036-13", "type": "listen-choose", "prompt": "Is he finished ordering?", "audio": "¿Algo más? — Sí, otra caña, por favor.", "optionsLang": "en", "options": ["No, he wants another beer", "Yes, that's all", "He wants the bill"], "answer": 0, "vocab": ["algo-mas", "otra-por-favor"] },
+    { "id": "d036-14", "type": "listen-choose", "prompt": "Formal or informal?", "audio": "¿Me pone un café solo, por favor?", "optionsLang": "en", "options": ["Formal (usted)", "Informal (tú)"], "answer": 0, "vocab": ["me-pones", "cafe-solo"] },
+    { "id": "d036-15", "type": "dictation", "es": "¿Me pones una caña?", "hint": "Can I have a beer?", "vocab": ["me-pones", "cana"] },
+    { "id": "d036-16", "type": "dictation", "es": "para mí", "hint": "for me (accent on the i)", "vocab": ["para-mi"] },
+    { "id": "d036-17", "type": "dictation", "es": "Nada más.", "hint": "That's all.", "vocab": ["nada-mas"] },
+    { "id": "d036-18", "type": "build-sentence", "es": "¿Me pones dos cañas, por favor?", "en": "Can I have two beers, please?", "distractors": ["pongo", "quiero"], "vocab": ["me-pones", "cana"] },
+    { "id": "d036-19", "type": "build-sentence", "es": "Para mí, un tinto de verano. ¿Y para ti?", "en": "A tinto de verano for me. And for you?", "distractors": ["mi", "tú"], "vocab": ["para-mi", "tinto-de-verano", "y-para-ti"] },
+    { "id": "d036-20", "type": "build-sentence", "direction": "audio-to-es", "es": "No, nada más, gracias.", "en": "No, that's all, thanks.", "distractors": ["algo"], "vocab": ["nada-mas"] },
+    { "id": "d036-21", "type": "repeat", "prompt": "The barman says ¿Qué te pongo? You answer:", "es": "¿Me pones una caña, por favor?", "en": "Can I have a beer, please?", "vocab": ["me-pones", "cana"] },
+    { "id": "d036-22", "type": "repeat", "prompt": "Your glass is empty. Ask for another:", "es": "Otra, por favor.", "en": "Another one, please.", "vocab": ["otra-por-favor"] },
+    { "id": "d036-23", "type": "shadow", "es": "Ponme un café con leche, por favor.", "en": "A white coffee, please.", "listenFor": "Ponme said as POM-me: the n turns into m before m. Keep it quick and friendly.", "vocab": ["ponme", "cafe-con-leche"] },
+    { "id": "d036-24", "type": "listen-choose", "prompt": "Review: how much?", "audio": "Son cuatro con veinte.", "optionsLang": "en", "options": ["€4.20", "€4.12", "€24"], "answer": 0, "vocab": ["son-con", "cuatro", "veinte"] }
+  ]
+}

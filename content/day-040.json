@@ -1,0 +1,57 @@
+{
+  "$schema": "./schema.json",
+  "day": 40,
+  "level": 3,
+  "title": { "en": "The menú del día", "es": "El menú del día" },
+  "objectives": [
+    "Know what a menú del día includes",
+    "Ask what's on for the first and second course",
+    "Check whether the drink is included",
+    "Ask the waiter for a recommendation"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**El menú del día** is Spain's fixed-price lunch, mostly **Monday to Friday**. For one price (often around €13–20 in central Madrid) you get:\n\n- **de primero**: a first course (soup, salad, lentils, pasta…)\n- **de segundo**: a main (meat or fish, usually with chips or salad)\n- **pan** and **una bebida** (water, a glass of wine or beer, a soft drink)\n- **postre o café**: dessert or coffee\n\nIt's the best-value meal in Spain, and it's what Madrid's office workers eat at 14:00."
+    },
+    { "kind": "phrase", "es": "¿Qué hay de primero?", "en": "What is there for the first course?", "note": "Often there's no printed menu: the waiter recites three or four options. Listen for de primero tenemos…" },
+    { "kind": "phrase", "es": "De primero, sopa. Y de segundo, pollo.", "en": "Soup to start, and chicken for the main.", "note": "de primero / de segundo = as a first / second course. Use the same words to order." },
+    { "kind": "phrase", "es": "¿Está incluida la bebida?", "en": "Is the drink included?", "note": "Usually yes, with the menú. A coffee instead of dessert is usually included too. A coffee after dessert usually isn't." },
+    { "kind": "phrase", "es": "¿Qué me recomienda?", "en": "What do you recommend?", "note": "Usted form, for the waiter. If they're using tú with you: ¿Qué me recomiendas?" },
+    { "kind": "phrase", "es": "¿Postre o café?", "en": "Dessert or coffee?", "note": "The waiter's question at the end. Answer with one: Café, por favor. Or: De postre, flan." }
+  ],
+  "vocab": [
+    { "id": "menu-del-dia", "es": "el menú del día", "en": "set lunch menu (menu of the day)", "pos": "phrase", "ipa": "el meˈnu ðel ˈdia", "note": "Weekday lunch, fixed price, drink and bread included.", "tags": ["restaurant", "madrid"] },
+    { "id": "que-hay-de-primero", "es": "¿Qué hay de primero?", "en": "What's there for the first course?", "pos": "phrase", "ipa": "ˈke ˈai ðe pɾiˈmeɾo", "tags": ["restaurant"] },
+    { "id": "de-segundo", "es": "de segundo…", "en": "for the main course…", "pos": "phrase", "ipa": "de seˈɣundo", "note": "de primero = for the first course.", "tags": ["restaurant"] },
+    { "id": "esta-incluida-la-bebida", "es": "¿Está incluida la bebida?", "en": "Is the drink included?", "pos": "phrase", "ipa": "esˈta iŋkluˈiða la βeˈβiða", "note": "la bebida = drink. Incluido for masculine: ¿Está incluido el pan?", "tags": ["restaurant"] },
+    { "id": "que-me-recomienda", "es": "¿Qué me recomienda?", "en": "What do you recommend?", "pos": "phrase", "ipa": "ˈke me rekoˈmjenda", "note": "Usted. With tú: ¿Qué me recomiendas?", "tags": ["restaurant"] },
+    { "id": "postre-o-cafe", "es": "¿Postre o café?", "en": "Dessert or coffee?", "pos": "phrase", "ipa": "ˈpostɾe o kaˈfe", "tags": ["restaurant"] }
+  ],
+  "exercises": [
+    { "id": "d040-01", "type": "listen-choose", "audio": "¿Qué hay de primero?", "options": ["¿Qué hay de primero?", "¿Qué hay de postre?", "¿Qué hora es?"], "answer": 0, "vocab": ["que-hay-de-primero"] },
+    { "id": "d040-02", "type": "listen-choose", "audio": "¿Qué me recomienda?", "options": ["¿Qué me recomienda?", "¿Qué me pones?", "¿Qué lleva?"], "answer": 0, "vocab": ["que-me-recomienda"] },
+    { "id": "d040-03", "type": "listen-choose", "audio": "¿Está incluida la bebida?", "options": ["¿Está incluida la bebida?", "¿Está incluido el pan?", "¿Está abierta la cocina?"], "answer": 0, "vocab": ["esta-incluida-la-bebida"] },
+    { "id": "d040-04", "type": "match-pairs", "pairs": [["el menú del día", "set lunch"], ["de primero", "first course"], ["de segundo", "main course"], ["¿Postre o café?", "Dessert or coffee?"], ["¿Qué me recomienda?", "What do you recommend?"]], "vocab": ["menu-del-dia", "que-hay-de-primero", "de-segundo", "postre-o-cafe", "que-me-recomienda"] },
+    { "id": "d040-05", "type": "fill-blank", "es": "¿Qué hay {{de}} primero?", "en": "What's there for the first course?", "options": ["de", "para", "con"], "vocab": ["que-hay-de-primero"] },
+    { "id": "d040-06", "type": "fill-blank", "es": "De primero, ensalada. Y de {{segundo}}, pescado.", "en": "Salad to start, and fish for the main.", "options": ["segundo", "primero", "postre"], "vocab": ["de-segundo", "ensalada", "pescado"] },
+    { "id": "d040-07", "type": "fill-blank", "es": "¿Está {{incluida}} la bebida?", "en": "Is the drink included?", "options": ["incluida", "incluido"], "prompt": "bebida is feminine.", "vocab": ["esta-incluida-la-bebida"] },
+    { "id": "d040-08", "type": "fill-blank", "es": "¿Qué me {{recomienda}}?", "en": "What do you recommend? (usted)", "options": ["recomienda", "recomiendas", "recomiendo"], "vocab": ["que-me-recomienda"] },
+    { "id": "d040-09", "type": "fill-blank", "es": "¿Postre {{o}} café?", "en": "Dessert or coffee?", "options": ["o", "y", "con"], "vocab": ["postre-o-cafe"] },
+    { "id": "d040-10", "type": "listen-choose", "prompt": "What are the first-course options?", "audio": "De primero tenemos sopa castellana o ensalada mixta.", "optionsLang": "en", "options": ["Garlic soup or mixed salad", "Garlic soup or chicken", "Mixed salad or fish"], "answer": 0, "vocab": ["que-hay-de-primero", "sopa", "ensalada"] },
+    { "id": "d040-11", "type": "listen-choose", "prompt": "What does the waiter recommend?", "audio": "Le recomiendo el pescado. Está muy bueno hoy.", "optionsLang": "en", "options": ["The fish", "The meat", "The chicken"], "answer": 0, "vocab": ["que-me-recomienda", "pescado"] },
+    { "id": "d040-12", "type": "listen-choose", "prompt": "Is the drink included?", "audio": "Sí, la bebida está incluida. Agua, vino o cerveza.", "optionsLang": "en", "options": ["Yes: water, wine or beer", "No, drinks are extra", "Only water"], "answer": 0, "vocab": ["esta-incluida-la-bebida", "agua", "vino", "cerveza"] },
+    { "id": "d040-13", "type": "listen-choose", "prompt": "How much is the menú del día?", "audio": "El menú del día cuesta catorce con cincuenta.", "optionsLang": "en", "options": ["€14.50", "€40.50", "€14.15"], "answer": 0, "vocab": ["menu-del-dia", "cuesta", "catorce", "cincuenta"] },
+    { "id": "d040-14", "type": "dictation", "es": "el menú del día", "hint": "set lunch (accents on ú and í)", "vocab": ["menu-del-dia"] },
+    { "id": "d040-15", "type": "dictation", "es": "de segundo", "hint": "for the main course", "vocab": ["de-segundo"] },
+    { "id": "d040-16", "type": "dictation", "es": "¿Postre o café?", "hint": "Dessert or coffee?", "vocab": ["postre-o-cafe"] },
+    { "id": "d040-17", "type": "build-sentence", "es": "De primero, sopa, y de segundo, pollo con verduras.", "en": "Soup to start, and chicken with vegetables for the main.", "distractors": ["postre", "para"], "vocab": ["que-hay-de-primero", "de-segundo", "sopa", "pollo", "verduras"] },
+    { "id": "d040-18", "type": "build-sentence", "es": "¿El café está incluido en el menú?", "en": "Is the coffee included in the menu?", "distractors": ["incluida", "la"], "vocab": ["esta-incluida-la-bebida", "menu"] },
+    { "id": "d040-19", "type": "build-sentence", "direction": "audio-to-es", "es": "¿Qué hay de primero hoy?", "en": "What's on for the first course today?", "distractors": ["segundo"], "vocab": ["que-hay-de-primero", "hoy"] },
+    { "id": "d040-20", "type": "repeat", "prompt": "You can't decide. Ask the waiter:", "es": "¿Qué me recomienda?", "en": "What do you recommend?", "vocab": ["que-me-recomienda"] },
+    { "id": "d040-21", "type": "repeat", "prompt": "Order your menú:", "es": "De primero, la ensalada, y de segundo, el pescado, por favor.", "en": "The salad to start and the fish for the main, please.", "vocab": ["de-segundo", "ensalada", "pescado"] },
+    { "id": "d040-22", "type": "repeat", "prompt": "The waiter asks ¿Postre o café? You answer:", "es": "Un café solo, por favor.", "en": "A black coffee, please.", "vocab": ["postre-o-cafe", "cafe-solo"] },
+    { "id": "d040-23", "type": "shadow", "es": "¿Está incluida la bebida?", "en": "Is the drink included?", "listenFor": "in-klu-I-da: stress on the I, and both b sounds in bebida soft, almost like a v.", "vocab": ["esta-incluida-la-bebida"] },
+    { "id": "d040-24", "type": "listen-choose", "prompt": "Review: what does the waiter ask?", "audio": "¿Cuántos sois? ¿Fuera o dentro?", "optionsLang": "en", "options": ["How many, and inside or out", "Do you have a booking", "What time you want to eat"], "answer": 0, "vocab": ["cuantos-sois", "fuera-dentro"] }
+  ]
+}

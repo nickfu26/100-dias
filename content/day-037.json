@@ -1,0 +1,61 @@
+{
+  "$schema": "./schema.json",
+  "day": 37,
+  "level": 3,
+  "title": { "en": "Tapas and raciones", "es": "Tapas y raciones" },
+  "objectives": [
+    "Ask what tapas a bar has",
+    "Order a ración, a media ración, or something to share",
+    "Ask what's in a dish with ¿Qué lleva?",
+    "Ask if a free tapa comes with your drink"
+  ],
+  "teach": [
+    { "kind": "phrase", "es": "¿Qué tapas tenéis?", "en": "What tapas do you have?", "note": "tenéis = you all have (vosotros). In Spain you talk to the bar as a group: ¿Tenéis…?" },
+    {
+      "kind": "note",
+      "md": "**Three sizes** (you met *tapa* and *ración* on day 14):\n\n- **una tapa**: a few bites\n- **media ración**: a half plate. Not every bar does them, so ask: *¿Tenéis media ración?*\n- **una ración**: a full plate, meant to share\n\nTwo or three *raciones* between two people make a meal."
+    },
+    { "kind": "phrase", "es": "Una ración de croquetas y media de calamares.", "en": "A plate of croquettes and a half plate of squid.", "note": "After the first one, media alone means media ración." },
+    { "kind": "phrase", "es": "¿Qué lleva?", "en": "What's in it?", "note": "Literally 'What does it carry?'. The answer: Lleva jamón y queso. Useful for anything unfamiliar on the board." },
+    { "kind": "phrase", "es": "Unos huevos rotos para compartir.", "en": "Huevos rotos to share.", "note": "A Madrid classic: fried eggs broken over chips, often with jamón. Para compartir also tells the waiter to bring extra plates." },
+    {
+      "kind": "note",
+      "md": "**The free tapa.** In many Madrid bars, a drink comes with a small free tapa: a few olives, crisps, a bite of tortilla. Not all bars do it. To ask:\n\n**¿Ponéis tapa?** = Do you give a tapa (with drinks)?\n\nIn Granada, free tapas are famously big. In Madrid, think of them as a small bonus."
+    },
+    { "kind": "phrase", "es": "Unos pimientos de Padrón.", "en": "Some Padrón peppers.", "note": "Small fried green peppers. Unos pican y otros no: some are hot and some aren't." }
+  ],
+  "vocab": [
+    { "id": "que-tapas-teneis", "es": "¿Qué tapas tenéis?", "en": "What tapas do you have?", "pos": "phrase", "ipa": "ˈke ˈtapas teˈneis", "note": "Usted: ¿Qué tapas tienen?", "tags": ["restaurant"] },
+    { "id": "una-racion-de", "es": "Una ración de…", "en": "A plate of… (to share)", "pos": "phrase", "ipa": "ˈuna raˈθjon de", "tags": ["restaurant"] },
+    { "id": "media-racion", "es": "media ración", "en": "half plate", "pos": "phrase", "ipa": "ˈmeðja raˈθjon", "note": "Ask first: ¿Tenéis media ración?", "tags": ["restaurant"] },
+    { "id": "que-lleva", "es": "¿Qué lleva?", "en": "What's in it?", "pos": "phrase", "ipa": "ˈke ˈʝeβa", "note": "Answer: Lleva… = It has…", "tags": ["restaurant", "survival"] },
+    { "id": "para-compartir", "es": "para compartir", "en": "to share", "pos": "phrase", "ipa": "ˈpaɾa kompaɾˈtiɾ", "tags": ["restaurant"] },
+    { "id": "poneis-tapa", "es": "¿Ponéis tapa?", "en": "Do you give a free tapa (with drinks)?", "pos": "phrase", "ipa": "poˈneis ˈtapa", "tags": ["restaurant", "madrid"] }
+  ],
+  "exercises": [
+    { "id": "d037-01", "type": "listen-choose", "audio": "¿Qué lleva?", "options": ["¿Qué lleva?", "¿Qué llega?", "¿Qué hay?"], "answer": 0, "vocab": ["que-lleva"] },
+    { "id": "d037-02", "type": "listen-choose", "audio": "media ración", "options": ["media ración", "una ración", "la estación"], "answer": 0, "vocab": ["media-racion"] },
+    { "id": "d037-03", "type": "listen-choose", "audio": "¿Ponéis tapa?", "options": ["¿Ponéis tapa?", "¿Me pones una tapa?", "¿Qué tapas tenéis?"], "answer": 0, "vocab": ["poneis-tapa"] },
+    { "id": "d037-04", "type": "match-pairs", "pairs": [["¿Qué tapas tenéis?", "What tapas do you have?"], ["Una ración de…", "A plate of…"], ["media ración", "half plate"], ["¿Qué lleva?", "What's in it?"], ["para compartir", "to share"], ["¿Ponéis tapa?", "Is there a free tapa?"]], "vocab": ["que-tapas-teneis", "una-racion-de", "media-racion", "que-lleva", "para-compartir", "poneis-tapa"] },
+    { "id": "d037-05", "type": "fill-blank", "es": "¿Qué tapas {{tenéis}}?", "en": "What tapas do you have?", "options": ["tenéis", "tienes", "tengo"], "prompt": "Talking to the bar (vosotros).", "vocab": ["que-tapas-teneis"] },
+    { "id": "d037-06", "type": "fill-blank", "es": "Una ración {{de}} patatas bravas.", "en": "A plate of patatas bravas.", "options": ["de", "con", "para"], "vocab": ["una-racion-de", "patatas-bravas"] },
+    { "id": "d037-07", "type": "fill-blank", "es": "{{Media}} ración de jamón, por favor.", "en": "A half plate of ham, please.", "options": ["Media", "Medio", "Mitad"], "vocab": ["media-racion", "jamon"] },
+    { "id": "d037-08", "type": "fill-blank", "es": "¿Qué {{lleva}} la tortilla?", "en": "What's in the tortilla?", "options": ["lleva", "llega", "es"], "vocab": ["que-lleva", "tortilla"] },
+    { "id": "d037-09", "type": "fill-blank", "es": "Una tortilla para {{compartir}}.", "en": "A tortilla to share.", "options": ["compartir", "mí", "ti"], "vocab": ["para-compartir", "tortilla"] },
+    { "id": "d037-10", "type": "listen-choose", "prompt": "What's in the croquettes?", "audio": "¿Qué llevan las croquetas? — Llevan jamón.", "optionsLang": "en", "options": ["Ham", "Cheese", "Chicken"], "answer": 0, "vocab": ["que-lleva", "croquetas", "jamon"] },
+    { "id": "d037-11", "type": "listen-choose", "prompt": "Does this bar give free tapas?", "audio": "¿Ponéis tapa? — Sí. Con la caña, aceitunas.", "optionsLang": "en", "options": ["Yes, olives with the beer", "No, never", "Only with wine"], "answer": 0, "vocab": ["poneis-tapa"] },
+    { "id": "d037-12", "type": "listen-choose", "prompt": "What do they order?", "audio": "Una ración de calamares y media de croquetas.", "optionsLang": "en", "options": ["Full squid + half croquettes", "Half squid + full croquettes", "Two full plates"], "answer": 0, "vocab": ["una-racion-de", "calamares", "croquetas"] },
+    { "id": "d037-13", "type": "listen-choose", "prompt": "What's the problem?", "audio": "No tenemos media ración. Ración, sí.", "optionsLang": "en", "options": ["No half plates, only full ones", "No full plates, only half ones", "They're out of food"], "answer": 0, "vocab": ["media-racion"] },
+    { "id": "d037-14", "type": "dictation", "es": "¿Qué lleva?", "hint": "What's in it?", "vocab": ["que-lleva"] },
+    { "id": "d037-15", "type": "dictation", "es": "para compartir", "hint": "to share", "vocab": ["para-compartir"] },
+    { "id": "d037-16", "type": "dictation", "es": "media ración", "hint": "half plate", "vocab": ["media-racion"] },
+    { "id": "d037-17", "type": "build-sentence", "es": "¿Qué tapas tenéis hoy?", "en": "What tapas do you have today?", "distractors": ["tienes", "hay"], "vocab": ["que-tapas-teneis", "hoy"] },
+    { "id": "d037-18", "type": "build-sentence", "es": "Una ración de croquetas para compartir, por favor.", "en": "A plate of croquettes to share, please.", "distractors": ["media", "con"], "vocab": ["una-racion-de", "croquetas", "para-compartir"] },
+    { "id": "d037-19", "type": "build-sentence", "direction": "audio-to-es", "es": "¿Tenéis media ración de calamares?", "en": "Do you have a half plate of squid?", "distractors": ["tienes"], "vocab": ["media-racion", "calamares"] },
+    { "id": "d037-20", "type": "repeat", "prompt": "Point at the board and ask:", "es": "Perdón, ¿qué lleva?", "en": "Excuse me, what's in it?", "vocab": ["que-lleva"] },
+    { "id": "d037-21", "type": "repeat", "prompt": "Order for the table:", "es": "Unas patatas bravas y una ración de calamares para compartir.", "en": "Patatas bravas and a plate of squid to share.", "vocab": ["patatas-bravas", "una-racion-de", "calamares", "para-compartir"] },
+    { "id": "d037-22", "type": "shadow", "es": "¿Ponéis tapa con la caña?", "en": "Do you give a tapa with the beer?", "listenFor": "Stress on NÉIS in ponéis, and caña with a clear ñ.", "vocab": ["poneis-tapa", "cana"] },
+    { "id": "d037-23", "type": "fill-blank", "prompt": "Review: at the bar.", "es": "¿Me {{pones}} un vino blanco?", "en": "Can I have a white wine?", "options": ["pones", "pongo", "pone"], "vocab": ["me-pones", "vino-blanco"] },
+    { "id": "d037-24", "type": "repeat", "prompt": "Review: the barman asks ¿Algo más?", "es": "No, nada más, gracias.", "en": "No, that's all, thanks.", "vocab": ["nada-mas"] }
+  ]
+}

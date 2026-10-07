@@ -1,0 +1,63 @@
+{
+  "$schema": "./schema.json",
+  "day": 38,
+  "level": 3,
+  "title": { "en": "Breakfast and paying", "es": "Desayunar y pagar" },
+  "objectives": [
+    "Order a Madrid bar breakfast",
+    "Ask to pay: ¿Me cobras? ¿Cuánto te debo?",
+    "Say how you'll pay: con tarjeta or en efectivo"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**A Madrid bar breakfast** is quick and standing up:\n\n- **un café con leche** or **un cortado**\n- **una tostada con tomate**: toast with grated tomato, olive oil and salt\n- or **un pincho de tortilla**: a wedge of tortilla de patatas\n\nMany bars do a breakfast deal: coffee + toast for a few euros, often on a board by the door."
+    },
+    { "kind": "phrase", "es": "¿Me pones un café con leche y una tostada con tomate?", "en": "Can I have a white coffee and toast with tomato?", "note": "Usually you get two halves of a large roll. Media tostada = just one half." },
+    { "kind": "phrase", "es": "Un pincho de tortilla, por favor.", "en": "A slice of tortilla, please.", "note": "pincho = a single portion, here one slice. Ask for it caliente if you want it warmed up." },
+    {
+      "kind": "note",
+      "md": "**Asking to pay.** In a bar you pay at the end, at the counter or at your table:\n\n- **¿Me cobras?** Can I pay? (literally *Will you charge me?*)\n- **¿Cuánto te debo?** How much do I owe you?\n\nBoth use *tú*, which is normal with bar staff. *¿Cuánto es?* (day 9) works too."
+    },
+    { "kind": "phrase", "es": "¿Me cobras, por favor?", "en": "Can I pay, please?", "note": "The most Spanish way to ask. Say it as the barman passes." },
+    { "kind": "phrase", "es": "¿Con tarjeta o en efectivo?", "en": "By card or in cash?", "note": "What they'll ask you. Answer: Con tarjeta. Cards and phone payments work almost everywhere in Madrid, even for one coffee." },
+    {
+      "kind": "note",
+      "md": "**Tipping** is small in Spain. In a bar, leaving the coins from your change is plenty. Nobody expects a percentage.\n\nWhen you hand over the money or the card: **Aquí tienes** (here you are)."
+    }
+  ],
+  "vocab": [
+    { "id": "tostada-con-tomate", "es": "una tostada con tomate", "en": "toast with tomato", "pos": "phrase", "ipa": "ˈuna tosˈtaða kon toˈmate", "note": "Grated tomato, olive oil, salt. Media tostada = half.", "tags": ["restaurant", "madrid"] },
+    { "id": "pincho-de-tortilla", "es": "un pincho de tortilla", "en": "a slice of tortilla", "pos": "phrase", "ipa": "um ˈpintʃo ðe toɾˈtiʝa", "note": "pincho = a single bar portion.", "tags": ["restaurant", "madrid"] },
+    { "id": "me-cobras", "es": "¿Me cobras?", "en": "Can I pay? (to bar staff)", "pos": "phrase", "ipa": "me ˈkoβɾas", "note": "From cobrar, to charge. Usted: ¿Me cobra?", "tags": ["restaurant", "survival"] },
+    { "id": "cuanto-te-debo", "es": "¿Cuánto te debo?", "en": "How much do I owe you?", "pos": "phrase", "ipa": "ˈkwanto te ˈðeβo", "note": "Usted: ¿Cuánto le debo?", "tags": ["restaurant", "shopping"] },
+    { "id": "con-tarjeta", "es": "con tarjeta", "en": "by card", "pos": "phrase", "ipa": "kon taɾˈxeta", "note": "la tarjeta = the card.", "tags": ["shopping", "survival"] },
+    { "id": "en-efectivo", "es": "en efectivo", "en": "in cash", "pos": "phrase", "ipa": "en efekˈtiβo", "tags": ["shopping", "survival"] }
+  ],
+  "exercises": [
+    { "id": "d038-01", "type": "listen-choose", "audio": "¿Me cobras?", "options": ["¿Me cobras?", "¿Me pones?", "¿Me compras?"], "answer": 0, "vocab": ["me-cobras"] },
+    { "id": "d038-02", "type": "listen-choose", "audio": "en efectivo", "options": ["en efectivo", "con tarjeta", "en el metro"], "answer": 0, "vocab": ["en-efectivo"] },
+    { "id": "d038-03", "type": "listen-choose", "audio": "un pincho de tortilla", "options": ["un pincho de tortilla", "una tapa de tortilla", "una tostada con tomate"], "answer": 0, "vocab": ["pincho-de-tortilla"] },
+    { "id": "d038-04", "type": "match-pairs", "pairs": [["una tostada con tomate", "toast with tomato"], ["un pincho de tortilla", "a slice of tortilla"], ["¿Me cobras?", "Can I pay?"], ["¿Cuánto te debo?", "How much do I owe you?"], ["con tarjeta", "by card"], ["en efectivo", "in cash"]], "vocab": ["tostada-con-tomate", "pincho-de-tortilla", "me-cobras", "cuanto-te-debo", "con-tarjeta", "en-efectivo"] },
+    { "id": "d038-05", "type": "fill-blank", "es": "¿Me {{cobras}}, por favor?", "en": "Can I pay, please?", "options": ["cobras", "pones", "debo"], "vocab": ["me-cobras"] },
+    { "id": "d038-06", "type": "fill-blank", "es": "¿Cuánto te {{debo}}?", "en": "How much do I owe you?", "options": ["debo", "cobras", "cuesta"], "vocab": ["cuanto-te-debo"] },
+    { "id": "d038-07", "type": "fill-blank", "es": "{{Con}} tarjeta, por favor.", "en": "By card, please.", "options": ["Con", "En", "De"], "vocab": ["con-tarjeta"] },
+    { "id": "d038-08", "type": "fill-blank", "es": "{{En}} efectivo.", "en": "In cash.", "options": ["En", "Con", "De"], "vocab": ["en-efectivo"] },
+    { "id": "d038-09", "type": "fill-blank", "es": "Una tostada {{con}} tomate.", "en": "Toast with tomato.", "options": ["con", "de", "sin"], "vocab": ["tostada-con-tomate"] },
+    { "id": "d038-10", "type": "listen-choose", "prompt": "What does the barman ask?", "audio": "¿Con tarjeta o en efectivo?", "optionsLang": "en", "options": ["Card or cash?", "Here or to take away?", "Anything else?"], "answer": 0, "vocab": ["con-tarjeta", "en-efectivo"] },
+    { "id": "d038-11", "type": "listen-choose", "prompt": "How much does she owe?", "audio": "¿Cuánto te debo? — Son tres con ochenta.", "optionsLang": "en", "options": ["€3.80", "€3.18", "€8.30"], "answer": 0, "vocab": ["cuanto-te-debo", "son-con", "ochenta"] },
+    { "id": "d038-12", "type": "listen-choose", "prompt": "What does he have for breakfast?", "audio": "Un cortado y un pincho de tortilla.", "optionsLang": "en", "options": ["Cortado + tortilla", "Cortado + toast", "White coffee + tortilla"], "answer": 0, "vocab": ["cortado", "pincho-de-tortilla"] },
+    { "id": "d038-13", "type": "listen-choose", "prompt": "What does she want?", "audio": "Para mí, un café con leche y media tostada con tomate.", "optionsLang": "en", "options": ["White coffee + half a toast", "White coffee + a whole toast", "Black coffee + half a toast"], "answer": 0, "vocab": ["para-mi", "cafe-con-leche", "tostada-con-tomate"] },
+    { "id": "d038-14", "type": "dictation", "es": "¿Me cobras?", "hint": "Can I pay?", "vocab": ["me-cobras"] },
+    { "id": "d038-15", "type": "dictation", "es": "con tarjeta", "hint": "by card (j = throaty)", "vocab": ["con-tarjeta"] },
+    { "id": "d038-16", "type": "dictation", "es": "¿Cuánto te debo?", "hint": "How much do I owe you?", "vocab": ["cuanto-te-debo"] },
+    { "id": "d038-17", "type": "build-sentence", "es": "¿Me pones un cortado y una tostada con tomate?", "en": "Can I have a cortado and toast with tomato?", "distractors": ["pongo", "sin"], "vocab": ["me-pones", "cortado", "tostada-con-tomate"] },
+    { "id": "d038-18", "type": "build-sentence", "es": "¿Me cobras? Con tarjeta, por favor.", "en": "Can I pay? By card, please.", "distractors": ["en", "pones"], "vocab": ["me-cobras", "con-tarjeta"] },
+    { "id": "d038-19", "type": "build-sentence", "direction": "audio-to-es", "es": "¿Cuánto te debo? ¿Puedo pagar en efectivo?", "en": "How much do I owe you? Can I pay in cash?", "distractors": ["con"], "vocab": ["cuanto-te-debo", "puedo", "pagar", "en-efectivo"] },
+    { "id": "d038-20", "type": "repeat", "prompt": "Order breakfast:", "es": "¿Me pones un café con leche y un pincho de tortilla?", "en": "Can I have a white coffee and a slice of tortilla?", "vocab": ["me-pones", "cafe-con-leche", "pincho-de-tortilla"] },
+    { "id": "d038-21", "type": "repeat", "prompt": "You're done. Ask to pay:", "es": "¿Me cobras, por favor?", "en": "Can I pay, please?", "vocab": ["me-cobras"] },
+    { "id": "d038-22", "type": "shadow", "es": "¿Con tarjeta o en efectivo? Con tarjeta.", "en": "Card or cash? Card.", "listenFor": "The throaty j in tarjeta, and the c in efectivo said as a soft k: e-fek-TI-vo.", "vocab": ["con-tarjeta", "en-efectivo"] },
+    { "id": "d038-23", "type": "listen-choose", "prompt": "Review: what's in it?", "audio": "¿Qué lleva? — Lleva queso y jamón.", "optionsLang": "en", "options": ["Cheese and ham", "Cheese and tomato", "Ham and egg"], "answer": 0, "vocab": ["que-lleva", "queso", "jamon"] },
+    { "id": "d038-24", "type": "repeat", "prompt": "Review: order to share.", "es": "Una ración de croquetas para compartir.", "en": "A plate of croquettes to share.", "vocab": ["una-racion-de", "croquetas", "para-compartir"] }
+  ]
+}

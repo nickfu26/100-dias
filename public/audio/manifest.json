@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-07T16:05:54+00:00",
+ "generated": "2026-10-07T16:16:53+00:00",
  "voices": {
   "f": "es-ES-ElviraNeural",
   "m": "es-ES-AlvaroNeural"
@@ -43,6 +43,10 @@
    "id": "7303c25eb875",
    "slow": true
   },
+  "Algo más, gracias.": {
+   "id": "4a6e9778ecc9",
+   "slow": true
+  },
   "Ana está cansada.": {
    "id": "2aa3fed6991a",
    "slow": true
@@ -65,6 +69,10 @@
   },
   "Buenas noches.": {
    "id": "69011223f6e0",
+   "slow": true
+  },
+  "Buenas noches. Tengo una reserva a nombre de Smith.": {
+   "id": "458d7b7f5b09",
    "slow": true
   },
   "Buenas tardes, ¿qué tal?": {
@@ -119,6 +127,10 @@
    "id": "9e0a3a481591",
    "slow": true
   },
+  "Con tarjeta, por favor.": {
+   "id": "75cc80f5132c",
+   "slow": true
+  },
   "Consonantes fáciles y la hache muda": {
    "id": "e2e92f32b32b",
    "slow": true
@@ -127,12 +139,36 @@
    "id": "b09779d803dd",
    "slow": true
   },
+  "De nada, gracias.": {
+   "id": "c90a9653f733",
+   "slow": true
+  },
   "De nada.": {
    "id": "c310b65511ac",
    "slow": true
   },
   "De postre, chocolate con churros.": {
    "id": "764fb0bff290",
+   "slow": true
+  },
+  "De primero tenemos sopa castellana o ensalada mixta.": {
+   "id": "e0af6ffe37af",
+   "slow": true
+  },
+  "De primero, ensalada. Y de segundo, pescado.": {
+   "id": "b409982efecc",
+   "slow": true
+  },
+  "De primero, la ensalada, y de segundo, el pescado, por favor.": {
+   "id": "eca08aec85bb",
+   "slow": true
+  },
+  "De primero, sopa, y de segundo, pollo con verduras.": {
+   "id": "1332c92a5232",
+   "slow": true
+  },
+  "De primero, sopa. Y de segundo, pollo.": {
+   "id": "a1fab260c147",
    "slow": true
   },
   "De tapas": {
@@ -145,6 +181,18 @@
   },
   "Del veintiuno al cincuenta": {
    "id": "50e942e2ca3f",
+   "slow": true
+  },
+  "Dentro no hay mesa. ¿En la terraza?": {
+   "id": "4d8b8a095cd9",
+   "slow": true
+  },
+  "Dentro, por favor. Fuera hace frío.": {
+   "id": "07b2257b9d5c",
+   "slow": true
+  },
+  "Desayunar y pagar": {
+   "id": "bf855ce600eb",
    "slow": true
   },
   "Dos bocadillos de calamares y dos cañas.": {
@@ -223,6 +271,14 @@
    "id": "29668868a790",
    "slow": true
   },
+  "El menú del día": {
+   "id": "3c97baeca1ec",
+   "slow": true
+  },
+  "El menú del día cuesta catorce con cincuenta.": {
+   "id": "69e0360f3940",
+   "slow": true
+  },
   "El mercado está cerca de la plaza.": {
    "id": "761a52752bb6",
    "slow": true
@@ -275,8 +331,16 @@
    "id": "7f02e69cee27",
    "slow": true
   },
+  "En efectivo.": {
+   "id": "0ee4479c61de",
+   "slow": true
+  },
   "En enero tengo abrigo, gorro y guantes.": {
    "id": "d6f4cd45051f",
+   "slow": true
+  },
+  "En la barra": {
+   "id": "170f1d7e2af1",
    "slow": true
   },
   "En la ciudad": {
@@ -459,6 +523,18 @@
    "id": "714a15c9e884",
    "slow": true
   },
+  "Hola, buenas. ¿Qué te pongo?": {
+   "id": "adfb07ec09e1",
+   "slow": true
+  },
+  "Hola, buenas. ¿Tienen mesa para dos?": {
+   "id": "bd94a3c2a72b",
+   "slow": true
+  },
+  "Hola, buenas. ¿Tienen mesa?": {
+   "id": "bd814d257593",
+   "slow": true
+  },
   "Hola, buenos días.": {
    "id": "ef2c1e881471",
    "slow": true
@@ -541,6 +617,10 @@
   },
   "La chaqueta y el abrigo.": {
    "id": "2449c5e98fc7",
+   "slow": true
+  },
+  "La cocina abre a las ocho y media.": {
+   "id": "bea064c0fc3f",
    "slow": true
   },
   "La comida": {
@@ -629,6 +709,10 @@
   },
   "Las vocales": {
    "id": "4e6f528b8ad4",
+   "slow": true
+  },
+  "Le recomiendo el pescado. Está muy bueno hoy.": {
+   "id": "25cadd17b138",
    "slow": true
   },
   "Llegamos a Madrid el miércoles.": {
@@ -831,6 +915,10 @@
    "id": "2a8130c879ca",
    "slow": true
   },
+  "Media ración de jamón, por favor.": {
+   "id": "8001f97a10a6",
+   "slow": true
+  },
   "Mis amigos trabajan en Madrid.": {
    "id": "d0cb6f719ea6",
    "slow": true
@@ -845,6 +933,14 @@
   },
   "Más despacio, por favor.": {
    "id": "02b4fd4d60b9",
+   "slow": true
+  },
+  "Nada más, gracias.": {
+   "id": "ca85cb343291",
+   "slow": true
+  },
+  "Nada más.": {
+   "id": "3ab19b826c6a",
    "slow": true
   },
   "Necesito ir a la farmacia.": {
@@ -903,8 +999,16 @@
    "id": "b9c3919a6e0f",
    "slow": true
   },
+  "No tenemos media ración. Ración, sí.": {
+   "id": "6d0c1fa9d6d4",
+   "slow": true
+  },
   "No, está muy lejos.": {
    "id": "4d5155e7f135",
+   "slow": true
+  },
+  "No, nada más, gracias.": {
+   "id": "ac067436fa7f",
    "slow": true
   },
   "No, nada. Todo bien.": {
@@ -927,8 +1031,32 @@
    "id": "3670c6fe51c4",
    "slow": true
   },
+  "Otra, por favor.": {
+   "id": "161fa76d59bb",
+   "slow": true
+  },
   "Otro café, por favor.": {
    "id": "ce9f095cdd79",
+   "slow": true
+  },
+  "Para mí, un café con leche y media tostada con tomate.": {
+   "id": "cb14fc9d8253",
+   "slow": true
+  },
+  "Para mí, un café con leche. ¿Y para ti?": {
+   "id": "ac14b24215c7",
+   "slow": true
+  },
+  "Para mí, un cortado. Y para ella, un té.": {
+   "id": "aa0abd8a1097",
+   "slow": true
+  },
+  "Para mí, un tinto de verano. ¿Y para ti?": {
+   "id": "b601fbddaa30",
+   "slow": true
+  },
+  "Para mí, una caña.": {
+   "id": "481ae8d0f3be",
    "slow": true
   },
   "Perdón, no entiendo.": {
@@ -987,6 +1115,10 @@
    "id": "ca7fe1023707",
    "slow": true
   },
+  "Perdón, ¿qué lleva?": {
+   "id": "fa616beb0e73",
+   "slow": true
+  },
   "Perdón, ¿tiene pan?": {
    "id": "50421b235a67",
    "slow": true
@@ -1013,6 +1145,18 @@
   },
   "Pollo con verduras, por favor.": {
    "id": "311eb90b41e7",
+   "slow": true
+  },
+  "Ponme un café con leche, por favor.": {
+   "id": "04148d8eaf4a",
+   "slow": true
+  },
+  "Ponme un vino tinto, por favor.": {
+   "id": "352dab4c1640",
+   "slow": true
+  },
+  "Ponme…": {
+   "id": "51d45b0191d5",
    "slow": true
   },
   "Por Madrid": {
@@ -1121,6 +1265,10 @@
   },
   "Son cuarenta y cinco con veinte.": {
    "id": "67eda37c8686",
+   "slow": true
+  },
+  "Son cuatro con veinte.": {
+   "id": "350014a5c810",
    "slow": true
   },
   "Son diecinueve euros.": {
@@ -1259,8 +1407,16 @@
    "id": "0baeb93cc1c2",
    "slow": true
   },
+  "Sí, la bebida está incluida. Agua, vino o cerveza.": {
+   "id": "160bef97e726",
+   "slow": true
+  },
   "Sí, vale. Muchas gracias.": {
    "id": "3a95e134a5b3",
+   "slow": true
+  },
+  "Tapas y raciones": {
+   "id": "e370c65f6f85",
    "slow": true
   },
   "Tengo calor. Quiero agua.": {
@@ -1331,6 +1487,18 @@
    "id": "b8dd36f47417",
    "slow": true
   },
+  "Tengo una reserva a nombre de García, para cuatro.": {
+   "id": "81b095415be5",
+   "slow": true
+  },
+  "Tengo una reserva a nombre de Smith.": {
+   "id": "f2264d731727",
+   "slow": true
+  },
+  "Tengo una reserva a nombre de…": {
+   "id": "638f1b6b8770",
+   "slow": true
+  },
   "Tengo veintinueve años y soy de Estados Unidos.": {
    "id": "2b3bcdc239e0",
    "slow": true
@@ -1395,6 +1563,10 @@
    "id": "dd1ae4dc4123",
    "slow": true
   },
+  "Un café solo, por favor.": {
+   "id": "3fd09b18882b",
+   "slow": true
+  },
   "Un café y un té.": {
    "id": "3787557f7692",
    "slow": true
@@ -1407,12 +1579,20 @@
    "id": "62673b67bf88",
    "slow": true
   },
+  "Un cortado y un pincho de tortilla.": {
+   "id": "b42fe32cb07a",
+   "slow": true
+  },
   "Un cortado, por favor.": {
    "id": "754090c1bb74",
    "slow": true
   },
   "Un paraguas negro.": {
    "id": "a40e41380bb4",
+   "slow": true
+  },
+  "Un pincho de tortilla, por favor.": {
+   "id": "07ab7b654374",
    "slow": true
   },
   "Un tinto de verano y agua sin gas, por favor.": {
@@ -1483,8 +1663,16 @@
    "id": "f8ec62645dcf",
    "slow": true
   },
+  "Una mesa para dos": {
+   "id": "2569599bd874",
+   "slow": true
+  },
   "Una mesa para dos, por favor.": {
    "id": "c7e78539e047",
+   "slow": true
+  },
+  "Una ración de calamares y media de croquetas.": {
+   "id": "c4158b8f8e2f",
    "slow": true
   },
   "Una ración de calamares, por favor.": {
@@ -1493,6 +1681,18 @@
   },
   "Una ración de calamares.": {
    "id": "6e0a66020d7e",
+   "slow": true
+  },
+  "Una ración de croquetas para compartir, por favor.": {
+   "id": "b77ca8fdb8cf",
+   "slow": true
+  },
+  "Una ración de croquetas para compartir.": {
+   "id": "81aa31b33584",
+   "slow": true
+  },
+  "Una ración de croquetas y media de calamares.": {
+   "id": "6f87502ca81e",
    "slow": true
   },
   "Una ración de croquetas y unas aceitunas.": {
@@ -1507,6 +1707,14 @@
    "id": "183587865c58",
    "slow": true
   },
+  "Una ración de patatas bravas.": {
+   "id": "50d8011fe8bc",
+   "slow": true
+  },
+  "Una ración de…": {
+   "id": "05e274f025bb",
+   "slow": true
+  },
   "Una sopa y carne con patatas.": {
    "id": "52a630ac6589",
    "slow": true
@@ -1517,6 +1725,14 @@
   },
   "Una tapa de tortilla, por favor.": {
    "id": "e6b323bb1e65",
+   "slow": true
+  },
+  "Una tortilla para compartir.": {
+   "id": "8f5ea82774ce",
+   "slow": true
+  },
+  "Una tostada con tomate.": {
+   "id": "9de82b84c51e",
    "slow": true
   },
   "Unas camisetas blancas.": {
@@ -1531,12 +1747,24 @@
    "id": "dedb7f3e490f",
    "slow": true
   },
+  "Unas patatas bravas y una ración de calamares para compartir.": {
+   "id": "2be548fb6d46",
+   "slow": true
+  },
   "Unas patatas bravas y unas aceitunas.": {
    "id": "1b552f7713eb",
    "slow": true
   },
   "Unos guantes grises.": {
    "id": "23b7a2dc2958",
+   "slow": true
+  },
+  "Unos huevos rotos para compartir.": {
+   "id": "3578c3432417",
+   "slow": true
+  },
+  "Unos pimientos de Padrón.": {
+   "id": "20af01d81f44",
    "slow": true
   },
   "Vais al Prado, ¿no?": {
@@ -1875,6 +2103,10 @@
    "id": "33feb9d01a09",
    "slow": true
   },
+  "con tarjeta": {
+   "id": "7c4b65a9005b",
+   "slow": true
+  },
   "cosa": {
    "id": "ab09653b80db",
    "slow": true
@@ -1913,6 +2145,22 @@
   },
   "de nada": {
    "id": "671cfd4fde3f",
+   "slow": true
+  },
+  "de primero": {
+   "id": "bd1de1be11cb",
+   "slow": true
+  },
+  "de segundo": {
+   "id": "a6f29d2e211f",
+   "slow": true
+  },
+  "de segundo…": {
+   "id": "e3c79cf8e1b3",
+   "slow": true
+  },
+  "dentro": {
+   "id": "c3b20c913fc7",
    "slow": true
   },
   "diciembre": {
@@ -2035,6 +2283,10 @@
    "id": "1cd6c8235362",
    "slow": true
   },
+  "el cocido": {
+   "id": "a652c07c88c2",
+   "slow": true
+  },
   "el cocido madrileño": {
    "id": "5a556bd2a804",
    "slow": true
@@ -2121,6 +2373,10 @@
   },
   "el menú": {
    "id": "99506bddb457",
+   "slow": true
+  },
+  "el menú del día": {
+   "id": "cb75f7de910f",
    "slow": true
   },
   "el mercado": {
@@ -2287,6 +2543,14 @@
    "id": "0940d9c1d515",
    "slow": true
   },
+  "en efectivo": {
+   "id": "16cb2286a42d",
+   "slow": true
+  },
+  "en el metro": {
+   "id": "270bea54ca46",
+   "slow": true
+  },
   "en punto": {
    "id": "9b16682d31e7",
    "slow": true
@@ -2381,6 +2645,14 @@
   },
   "francés, francesa": {
    "id": "4e220770a1d8",
+   "slow": true
+  },
+  "fuera": {
+   "id": "0f0308fa8c65",
+   "slow": true
+  },
+  "fuera, dentro": {
+   "id": "235ed6b8ddf8",
    "slow": true
   },
   "gato": {
@@ -2591,6 +2863,10 @@
    "id": "501527b5f304",
    "slow": true
   },
+  "la cocina": {
+   "id": "33ee6c90480d",
+   "slow": true
+  },
   "la comida": {
    "id": "d39e7cb428ba",
    "slow": true
@@ -2689,6 +2965,10 @@
   },
   "la taquilla": {
    "id": "4f3d306025af",
+   "slow": true
+  },
+  "la terraza": {
+   "id": "7d0b40a43dec",
    "slow": true
   },
   "la tienda": {
@@ -2899,6 +3179,10 @@
    "id": "5d27ab5224a7",
    "slow": true
   },
+  "media ración": {
+   "id": "300249a24b55",
+   "slow": true
+  },
   "menos cuarto": {
    "id": "c75a5379256e",
    "slow": true
@@ -3077,6 +3361,14 @@
   },
   "papá": {
    "id": "bec5e7268a89",
+   "slow": true
+  },
+  "para compartir": {
+   "id": "365897eb5bbc",
+   "slow": true
+  },
+  "para mí": {
+   "id": "2206248ee43a",
    "slow": true
   },
   "paso": {
@@ -3435,6 +3727,10 @@
    "id": "0cf27092467b",
    "slow": true
   },
+  "un pincho de tortilla": {
+   "id": "c721021aa29c",
+   "slow": true
+  },
   "un taxi blanco": {
    "id": "8475bca8212b",
    "slow": true
@@ -3451,8 +3747,24 @@
    "id": "565e9fc4b981",
    "slow": true
   },
+  "una mesa para dos": {
+   "id": "a0f196e1d210",
+   "slow": true
+  },
+  "una ración": {
+   "id": "35683fe28996",
+   "slow": true
+  },
+  "una tapa de tortilla": {
+   "id": "81ed8034e302",
+   "slow": true
+  },
   "una tortilla de patatas": {
    "id": "7914c14a55a1",
+   "slow": true
+  },
+  "una tostada con tomate": {
+   "id": "cd92ec8d6fb3",
    "slow": true
   },
   "unas aceitunas y pan": {
@@ -3655,6 +3967,10 @@
    "id": "b32a0eae718d",
    "slow": true
   },
+  "¿A qué hora abre la cocina?": {
+   "id": "b588a27efb2d",
+   "slow": true
+  },
   "¿A qué hora abre?": {
    "id": "1e7abbc2ea6d",
    "slow": true
@@ -3689,6 +4005,26 @@
   },
   "¿Agua con gas o sin gas?": {
    "id": "4f39c642acd4",
+   "slow": true
+  },
+  "¿Algo más?": {
+   "id": "7f7a8444f4c2",
+   "slow": true
+  },
+  "¿Algo más? No, nada más, gracias.": {
+   "id": "ed2e2feca0d2",
+   "slow": true
+  },
+  "¿Algo más? — Sí, otra caña, por favor.": {
+   "id": "b35caaa1a39d",
+   "slow": true
+  },
+  "¿Con tarjeta o en efectivo?": {
+   "id": "c59454ee7b7a",
+   "slow": true
+  },
+  "¿Con tarjeta o en efectivo? Con tarjeta.": {
+   "id": "1000a729178c",
    "slow": true
   },
   "¿Cuál es tu hotel?": {
@@ -3771,6 +4107,18 @@
    "id": "837d4c728957",
    "slow": true
   },
+  "¿Cuánto te debo?": {
+   "id": "56c3ae3fb2bc",
+   "slow": true
+  },
+  "¿Cuánto te debo? ¿Puedo pagar en efectivo?": {
+   "id": "36edc76f8e70",
+   "slow": true
+  },
+  "¿Cuánto te debo? — Son tres con ochenta.": {
+   "id": "cf30f18ec3e3",
+   "slow": true
+  },
   "¿Cuántos años tienes?": {
    "id": "ca8c6a998137",
    "slow": true
@@ -3785,6 +4133,26 @@
   },
   "¿Cuántos bocadillos?": {
    "id": "4e4e8ad06da6",
+   "slow": true
+  },
+  "¿Cuántos sois?": {
+   "id": "23630ea842bb",
+   "slow": true
+  },
+  "¿Cuántos sois? ¿Fuera o dentro?": {
+   "id": "6b71b5f40146",
+   "slow": true
+  },
+  "¿Cuántos sois? — Dos. Una mesa para dos.": {
+   "id": "aafe8efce417",
+   "slow": true
+  },
+  "¿Cuántos sois? — Somos dos.": {
+   "id": "11540fda398b",
+   "slow": true
+  },
+  "¿Cuántos son?": {
+   "id": "cafaa7f63990",
    "slow": true
   },
   "¿Cuántos?": {
@@ -3843,6 +4211,10 @@
    "id": "d40382980c90",
    "slow": true
   },
+  "¿Dentro o cerca?": {
+   "id": "0c2c0668064a",
+   "slow": true
+  },
   "¿Dónde está el centro? ¿Está lejos?": {
    "id": "074ec94affd4",
    "slow": true
@@ -3887,6 +4259,10 @@
    "id": "30e5464f5106",
    "slow": true
   },
+  "¿El café está incluido en el menú?": {
+   "id": "406d066fed4a",
+   "slow": true
+  },
   "¿Eres español? No, soy estadounidense.": {
    "id": "e2e0885f7cbb",
    "slow": true
@@ -3897,6 +4273,30 @@
   },
   "¿Eres inglés?": {
    "id": "bc05b53fb634",
+   "slow": true
+  },
+  "¿Está abierta la cocina?": {
+   "id": "084d4e282d3e",
+   "slow": true
+  },
+  "¿Está incluida la bebida?": {
+   "id": "ba2300c86c1d",
+   "slow": true
+  },
+  "¿Está incluido el pan?": {
+   "id": "d6619b9a1763",
+   "slow": true
+  },
+  "¿Fuera o dentro?": {
+   "id": "384775ed371d",
+   "slow": true
+  },
+  "¿Fuera o dentro? — Fuera, en la terraza.": {
+   "id": "6971020c511a",
+   "slow": true
+  },
+  "¿Fuera o terraza?": {
+   "id": "e5218451f4be",
    "slow": true
   },
   "¿Habla inglés?": {
@@ -3971,6 +4371,94 @@
    "id": "3a2fdeceeba9",
    "slow": true
   },
+  "¿Me cobras, por favor?": {
+   "id": "6b5fa352790d",
+   "slow": true
+  },
+  "¿Me cobras?": {
+   "id": "2d4d2e954ad9",
+   "slow": true
+  },
+  "¿Me cobras? Con tarjeta, por favor.": {
+   "id": "e84631bccdde",
+   "slow": true
+  },
+  "¿Me cobras? En efectivo.": {
+   "id": "e49d821d648f",
+   "slow": true
+  },
+  "¿Me compras?": {
+   "id": "5b3a466bb558",
+   "slow": true
+  },
+  "¿Me pone un café solo, por favor?": {
+   "id": "3a2693c38ed1",
+   "slow": true
+  },
+  "¿Me pone una caña?": {
+   "id": "7dd1ac78d158",
+   "slow": true
+  },
+  "¿Me pones dos cañas, por favor?": {
+   "id": "d17663d13f05",
+   "slow": true
+  },
+  "¿Me pones un café con leche y un pincho de tortilla?": {
+   "id": "fd54197c526a",
+   "slow": true
+  },
+  "¿Me pones un café con leche y una tostada con tomate?": {
+   "id": "ce7d079bf452",
+   "slow": true
+  },
+  "¿Me pones un café con leche?": {
+   "id": "7184db5ec637",
+   "slow": true
+  },
+  "¿Me pones un cortado y una tostada con tomate?": {
+   "id": "2a052cf0113e",
+   "slow": true
+  },
+  "¿Me pones un vino blanco?": {
+   "id": "015ab63c6ea3",
+   "slow": true
+  },
+  "¿Me pones una caña, por favor?": {
+   "id": "6df6da5c297b",
+   "slow": true
+  },
+  "¿Me pones una caña?": {
+   "id": "8720195f384a",
+   "slow": true
+  },
+  "¿Me pones una tapa?": {
+   "id": "2272a2de8ece",
+   "slow": true
+  },
+  "¿Me pones una tostada con tomate y un cortado?": {
+   "id": "6e9d75384b24",
+   "slow": true
+  },
+  "¿Me pones?": {
+   "id": "08860f5051ee",
+   "slow": true
+  },
+  "¿Me pones…?": {
+   "id": "8634670b96cd",
+   "slow": true
+  },
+  "¿Ponéis tapa con la caña?": {
+   "id": "e5e7bc8c1ff9",
+   "slow": true
+  },
+  "¿Ponéis tapa?": {
+   "id": "6902db9cbe7c",
+   "slow": true
+  },
+  "¿Ponéis tapa? — Sí. Con la caña, aceitunas.": {
+   "id": "954241022ea4",
+   "slow": true
+  },
   "¿Por qué no vamos en metro?": {
    "id": "465b4cb8f777",
    "slow": true
@@ -3981,6 +4469,10 @@
   },
   "¿Por qué? Porque hace frío.": {
    "id": "47fbd5212be5",
+   "slow": true
+  },
+  "¿Postre o café?": {
+   "id": "5717d94410e4",
    "slow": true
   },
   "¿Puedes repetirlo?": {
@@ -4031,6 +4523,22 @@
    "id": "d7b83f8ef05a",
    "slow": true
   },
+  "¿Qué hay de postre?": {
+   "id": "cfccd9dce4cf",
+   "slow": true
+  },
+  "¿Qué hay de primero hoy?": {
+   "id": "8aa18ac2bd77",
+   "slow": true
+  },
+  "¿Qué hay de primero?": {
+   "id": "61445e4c0793",
+   "slow": true
+  },
+  "¿Qué hay?": {
+   "id": "98780457eb33",
+   "slow": true
+  },
   "¿Qué hora es?": {
    "id": "f9555b50b884",
    "slow": true
@@ -4039,12 +4547,52 @@
    "id": "581577bce92c",
    "slow": true
   },
+  "¿Qué llega?": {
+   "id": "6f6b184c550b",
+   "slow": true
+  },
+  "¿Qué lleva la tortilla?": {
+   "id": "469ec2e93495",
+   "slow": true
+  },
+  "¿Qué lleva?": {
+   "id": "87b2ffc9d30e",
+   "slow": true
+  },
+  "¿Qué lleva? — Lleva queso y jamón.": {
+   "id": "15cc81281f0d",
+   "slow": true
+  },
+  "¿Qué llevan las croquetas? — Llevan jamón.": {
+   "id": "9217dac641a0",
+   "slow": true
+  },
+  "¿Qué me pones?": {
+   "id": "585d35b4335a",
+   "slow": true
+  },
+  "¿Qué me recomienda?": {
+   "id": "f689378c34ae",
+   "slow": true
+  },
   "¿Qué tal?": {
    "id": "a8506c246b78",
    "slow": true
   },
   "¿Qué tapa quieres?": {
    "id": "54be7bbf6640",
+   "slow": true
+  },
+  "¿Qué tapas tenéis hoy?": {
+   "id": "c7a24599817e",
+   "slow": true
+  },
+  "¿Qué tapas tenéis?": {
+   "id": "4b33d8ca5733",
+   "slow": true
+  },
+  "¿Qué te pongo?": {
+   "id": "b17569161847",
    "slow": true
   },
   "¿Qué tiempo hace hoy en Madrid?": {
@@ -4057,6 +4605,10 @@
   },
   "¿Qué tiempo hace? Hace sol, pero hace frío.": {
    "id": "d1734b2eb9ca",
+   "slow": true
+  },
+  "¿Qué tomas?": {
+   "id": "23b8bbf8d96f",
    "slow": true
   },
   "¿Qué tomas? Una caña.": {
@@ -4107,6 +4659,14 @@
    "id": "15607bb316d3",
    "slow": true
   },
+  "¿Tenéis media ración de calamares?": {
+   "id": "a09739c9dfa5",
+   "slow": true
+  },
+  "¿Tenéis mesa para dos? — Ahora no, en media hora.": {
+   "id": "9e9f6a6a9628",
+   "slow": true
+  },
   "¿Tiene agua sin gas?": {
    "id": "866ba65d233d",
    "slow": true
@@ -4135,6 +4695,10 @@
    "id": "b4dea162c582",
    "slow": true
   },
+  "¿Tienen mesa?": {
+   "id": "abebd0248979",
+   "slow": true
+  },
   "¿Tienes agua?": {
    "id": "01b9667251c5",
    "slow": true
@@ -4157,6 +4721,10 @@
   },
   "¿Y a ti? A mí también. / A mí no.": {
    "id": "51e2066a40df",
+   "slow": true
+  },
+  "¿Y para ti?": {
+   "id": "1dfa60137147",
    "slow": true
   },
   "¿Y tú?": {

@@ -1,0 +1,59 @@
+{
+  "$schema": "./schema.json",
+  "day": 44,
+  "level": 3,
+  "title": { "en": "Tickets for the Prado", "es": "Entradas para el Prado" },
+  "objectives": [
+    "Buy museum tickets and ask about discounts",
+    "Know the Prado's free hours",
+    "Find the cloakroom and the audio guide",
+    "Ask whether photos are allowed"
+  ],
+  "teach": [
+    { "kind": "phrase", "es": "Hola. Dos entradas, por favor.", "en": "Hi. Two tickets, please.", "note": "la entrada = museum or show ticket (and entrance). A transport ticket is el billete." },
+    { "kind": "phrase", "es": "¿Hay descuento para estudiantes?", "en": "Is there a discount for students?", "note": "Students and over-65s usually pay less, and under-18s often go free. Have ID ready." },
+    {
+      "kind": "note",
+      "md": "**The Prado.** Open **10:00–20:00** Monday to Saturday, and **10:00–19:00** on Sundays.\n\n**La entrada gratuita** (free entry) is the last two hours: **18:00–20:00** Monday to Saturday, **17:00–19:00** on Sundays. A long queue (**la cola**) forms before then, so arrive early.\n\nThe Reina Sofía (Guernica) is closed on Tuesdays."
+    },
+    { "kind": "phrase", "es": "¿Dónde está la cola para la entrada gratuita?", "en": "Where's the queue for free entry?", "note": "la cola = the queue. Hacer cola = to queue. Gratis also means free: la entrada es gratis." },
+    { "kind": "phrase", "es": "¿Dónde está el guardarropa?", "en": "Where's the cloakroom?", "note": "Big bags and backpacks have to go to the guardarropa. It's free." },
+    { "kind": "phrase", "es": "Una audioguía, por favor.", "en": "An audio guide, please.", "note": "Ask: ¿La tienen en inglés? But try the Spanish one for a room or two." },
+    { "kind": "phrase", "es": "¿Se pueden hacer fotos? — En el Prado, no.", "en": "Can you take photos? — Not in the Prado.", "note": "hacer fotos = to take photos (Spain). Photos aren't allowed in the Prado's galleries. Other museums vary, so ask." }
+  ],
+  "vocab": [
+    { "id": "dos-entradas", "es": "Dos entradas, por favor.", "en": "Two tickets, please.", "pos": "phrase", "ipa": "ˈdos enˈtɾaðas poɾ faˈβoɾ", "tags": ["sights"] },
+    { "id": "hay-descuento", "es": "¿Hay descuento?", "en": "Is there a discount?", "pos": "phrase", "ipa": "ˈai ðesˈkwento", "note": "el descuento = discount. ¿Hay descuento para estudiantes?", "tags": ["sights", "shopping"] },
+    { "id": "entrada-gratuita", "es": "la entrada gratuita", "en": "free entry", "pos": "phrase", "ipa": "la enˈtɾaða ɣɾaˈtwita", "note": "Also: la entrada es gratis.", "tags": ["sights", "madrid"] },
+    { "id": "cola", "es": "la cola", "en": "queue, line", "pos": "noun", "gender": "f", "ipa": "ˈkola", "note": "hacer cola = to queue.", "tags": ["sights"] },
+    { "id": "guardarropa", "es": "el guardarropa", "en": "cloakroom", "pos": "noun", "gender": "m", "ipa": "gwaɾðaˈropa", "note": "Masculine, even though it ends in -a.", "tags": ["sights"] },
+    { "id": "audioguia", "es": "la audioguía", "en": "audio guide", "pos": "noun", "gender": "f", "ipa": "awðjoˈɣia", "tags": ["sights"] },
+    { "id": "se-pueden-hacer-fotos", "es": "¿Se pueden hacer fotos?", "en": "Can you take photos?", "pos": "phrase", "ipa": "se ˈpweðen aˈθeɾ ˈfotos", "note": "hacer fotos = to take photos.", "tags": ["sights"] }
+  ],
+  "exercises": [
+    { "id": "d044-01", "type": "listen-choose", "audio": "Dos entradas, por favor.", "options": ["Dos entradas, por favor.", "Dos cañas, por favor.", "Dos salidas, por favor."], "answer": 0, "vocab": ["dos-entradas"] },
+    { "id": "d044-02", "type": "listen-choose", "audio": "el guardarropa", "options": ["el guardarropa", "la audioguía", "la taquilla"], "answer": 0, "vocab": ["guardarropa"] },
+    { "id": "d044-03", "type": "listen-choose", "audio": "¿Hay descuento?", "options": ["¿Hay descuento?", "¿Hay cuenta?", "¿Hay entradas?"], "answer": 0, "vocab": ["hay-descuento"] },
+    { "id": "d044-04", "type": "match-pairs", "pairs": [["Dos entradas, por favor.", "Two tickets, please."], ["¿Hay descuento?", "Is there a discount?"], ["la entrada gratuita", "free entry"], ["la cola", "the queue"], ["el guardarropa", "cloakroom"], ["la audioguía", "audio guide"]], "vocab": ["dos-entradas", "hay-descuento", "entrada-gratuita", "cola", "guardarropa", "audioguia"] },
+    { "id": "d044-05", "type": "fill-blank", "es": "Dos {{entradas}}, por favor.", "en": "Two tickets, please. (at the museum)", "options": ["entradas", "salidas", "billetes"], "prompt": "Museum tickets.", "vocab": ["dos-entradas"] },
+    { "id": "d044-06", "type": "fill-blank", "es": "¿Hay {{descuento}} para estudiantes?", "en": "Is there a discount for students?", "options": ["descuento", "cuenta", "entrada"], "vocab": ["hay-descuento"] },
+    { "id": "d044-07", "type": "fill-blank", "es": "¿Se pueden hacer {{fotos}}?", "en": "Can you take photos?", "options": ["fotos", "colas", "entradas"], "vocab": ["se-pueden-hacer-fotos"] },
+    { "id": "d044-08", "type": "fill-blank", "es": "La entrada es {{gratuita}} de seis a ocho.", "en": "Entry is free from six to eight.", "options": ["gratuita", "gratuito", "cerrada"], "vocab": ["entrada-gratuita", "seis", "ocho"] },
+    { "id": "d044-09", "type": "fill-blank", "es": "¿Dónde está el {{guardarropa}}?", "en": "Where's the cloakroom?", "options": ["guardarropa", "audioguía", "taquilla"], "vocab": ["guardarropa", "donde-esta"] },
+    { "id": "d044-10", "type": "listen-choose", "prompt": "When is entry free?", "audio": "La entrada es gratuita de seis a ocho de la tarde.", "optionsLang": "en", "options": ["6–8 pm", "6–8 am", "All day"], "answer": 0, "vocab": ["entrada-gratuita", "de-la-tarde"] },
+    { "id": "d044-11", "type": "listen-choose", "prompt": "Can she take photos?", "audio": "¿Se pueden hacer fotos? — No, en el museo no se puede.", "optionsLang": "en", "options": ["No, not in the museum", "Yes, without flash", "Only at the entrance"], "answer": 0, "vocab": ["se-pueden-hacer-fotos", "museo"] },
+    { "id": "d044-12", "type": "listen-choose", "prompt": "What's the problem?", "audio": "Hoy no hay entradas. Mañana, sí.", "optionsLang": "en", "options": ["Sold out today, but there are tickets tomorrow", "Closed tomorrow", "No discount today"], "answer": 0, "vocab": ["no-hay", "entrada", "manana"] },
+    { "id": "d044-13", "type": "listen-choose", "prompt": "Where's the queue?", "audio": "La cola de la entrada gratuita está allí, al final de la calle.", "optionsLang": "en", "options": ["Over there, at the end of the street", "Inside the museum", "Opposite the station"], "answer": 0, "vocab": ["cola", "entrada-gratuita", "al-final-de"] },
+    { "id": "d044-14", "type": "dictation", "es": "la audioguía", "hint": "audio guide (accent on the í)", "vocab": ["audioguia"] },
+    { "id": "d044-15", "type": "dictation", "es": "¿Hay descuento?", "hint": "Is there a discount?", "vocab": ["hay-descuento"] },
+    { "id": "d044-16", "type": "dictation", "es": "la cola", "hint": "the queue", "vocab": ["cola"] },
+    { "id": "d044-17", "type": "build-sentence", "es": "Dos entradas y una audioguía, por favor.", "en": "Two tickets and an audio guide, please.", "distractors": ["salidas", "un"], "vocab": ["dos-entradas", "audioguia"] },
+    { "id": "d044-18", "type": "build-sentence", "es": "¿A qué hora cierra el museo hoy?", "en": "What time does the museum close today?", "distractors": ["abre", "cuándo"], "vocab": ["a-que-hora", "cierra", "museo", "hoy"] },
+    { "id": "d044-19", "type": "build-sentence", "direction": "audio-to-es", "es": "¿Se pueden hacer fotos aquí?", "en": "Can you take photos here?", "distractors": ["puedo"], "vocab": ["se-pueden-hacer-fotos", "aqui"] },
+    { "id": "d044-20", "type": "repeat", "prompt": "At the ticket desk:", "es": "Hola. Dos entradas, por favor. ¿Hay descuento?", "en": "Hi. Two tickets, please. Is there a discount?", "vocab": ["dos-entradas", "hay-descuento"] },
+    { "id": "d044-21", "type": "repeat", "prompt": "You have a big bag:", "es": "Perdone, ¿dónde está el guardarropa?", "en": "Excuse me, where's the cloakroom?", "vocab": ["perdone", "guardarropa", "donde-esta"] },
+    { "id": "d044-22", "type": "shadow", "es": "el guardarropa", "en": "the cloakroom", "listenFor": "The rolled rr in the middle: guar-da-RRO-pa.", "vocab": ["guardarropa"] },
+    { "id": "d044-23", "type": "listen-choose", "prompt": "Review: where is the museum?", "audio": "Gira a la izquierda. El museo está enfrente.", "optionsLang": "en", "options": ["Turn left; it's opposite", "Turn right; it's opposite", "Turn left; it's next door"], "answer": 0, "vocab": ["a-la-izquierda", "enfrente-de", "museo"] },
+    { "id": "d044-24", "type": "repeat", "prompt": "Review: ask if you can walk there.", "es": "¿Está lejos? ¿Se puede ir andando?", "en": "Is it far? Can you walk there?", "vocab": ["esta-lejos", "se-puede", "andando"] }
+  ]
+}

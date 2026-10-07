@@ -51,15 +51,15 @@ How to read the tables:
 | Day | Date | Title (en / es) | Situation | Key phrases (new) |
 |---|---|---|---|---|
 | 36 | Nov 5 | At the bar / *En la barra* | Bars & cafés 1 | ¿Me pones una caña?, Ponme…, Para mí…, ¿Y para ti?, Otra, por favor, Nada más |
-| 37 | Nov 6 | Tapas and raciones / *Tapas y raciones* | Bars & cafés 2 | ¿Qué tapas tenéis?, Una ración de…, Media ración, ¿Qué lleva?, Para compartir, ¿Ponéis tapa? (free tapa with a drink) |
+| 37 | Nov 6 | Tapas and raciones / *Tapas y raciones* | Bars & cafés 2 | ¿Qué tapas tenéis?, Una ración de…, Media ración, ¿Qué lleva?, Para compartir, ¿Ponéis tapa? (free tapa with a drink), ¿Lleva carne?, Soy vegetariano/a (moved up from day 41) |
 | 38 | Nov 7 | Breakfast and paying / *Desayunar y pagar* | Bars & cafés 3 | Una tostada con tomate, Chocolate con churros, ¿Me cobras?, ¿Cuánto te debo?, Con tarjeta, En efectivo |
 | 39 | Nov 8 | A table for two / *Una mesa para dos* | Restaurants 1: booking, Madrid hours | ¿Tienen mesa?, Una mesa para dos, Tengo una reserva, ¿A qué hora abre la cocina?, Fuera / dentro (terraza) |
 | 40 | Nov 9 | The menú del día / *El menú del día* | Restaurants 2 | ¿Qué hay de primero?, De segundo…, ¿Postre o café?, ¿Está incluida la bebida?, ¿Qué me recomienda? |
-| 41 | Nov 10 | During the meal / *¿Todo bien?* | Restaurants 3 | ¿Nos trae más pan?, Está buenísimo, Soy vegetariano/a, Soy alérgico/a a…, La cuenta, por favor, ¿Se deja propina? |
+| 41 | Nov 10 | During the meal / *¿Todo bien?* | Restaurants 3 | ¿Nos trae más pan?, Está buenísimo, Soy alérgico/a a…, el marisco, ¿Todo bien?, La cuenta, por favor, ¿Se deja propina? |
 | 42 | Nov 11 | Asking the way / *¿Por dónde se va?* | Directions 1 | Perdone…, ¿Para ir a…?, ¿Está lejos?, ¿Hay un… por aquí?, ¿Por dónde se va a Sol? |
 | 43 | Nov 12 | Understanding the answer / *Todo recto* | Directions 2 (Sol, Gran Vía, Plaza Mayor) | todo recto, a la derecha / izquierda, la primera / segunda calle, al lado de, enfrente de, al final de |
 | 44 | Nov 13 | Tickets for the Prado / *Entradas para el Prado* | Directions 3: sights & museums | Dos entradas, por favor, ¿Hay descuento?, ¿A qué hora cierra?, la entrada gratuita, el guardarropa, la audioguía, ¿Se pueden hacer fotos? |
-| 45 | Nov 14 | Just looking / *Solo estoy mirando* | Shopping 1 | Solo estoy mirando, ¿Lo tiene en…?, ¿Puedo probármelo?, ¿Dónde están los probadores?, ¿Qué talla tiene? |
+| 45 | Nov 14 | Just looking / *Solo estoy mirando* | Shopping 1 | Solo estoy mirando, ¿Lo tiene en…?, ¿Puedo probármelo?, ¿Dónde están los probadores?, ¿Qué talla tiene?, ¿Te puedo ayudar?, Me queda grande / pequeño |
 | 46 | Nov 15 | The January sales / *Las rebajas* | Shopping 2: rebajas (Gran Vía, Preciados, El Corte Inglés) | ¿Está rebajado?, el treinta por ciento de descuento, ¿Cuánto cuesta ahora?, Me lo llevo, ¿Puedo cambiarlo?, el ticket regalo, ¿Me hace el tax free? (VAT refund: based on residence outside the EU, so it applies to a US resident) |
 | 47 | Nov 16 | Markets and haggling / *El mercado y el Rastro* | Shopping 3: San Miguel, El Rastro | ¿Cuánto pide por esto?, ¿Me hace un precio?, ¿Me lo deja en diez?, Es un poco caro, Le doy ocho, Trato hecho |
 | 48 | Nov 17 | Checking in / *Tengo una reserva* | Hotel 1 | Tengo una reserva a nombre de…, para cuatro noches, ¿Me deja su pasaporte?, la habitación, la planta, el ascensor, la tarjeta de la habitación |

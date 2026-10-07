@@ -1,0 +1,63 @@
+{
+  "$schema": "./schema.json",
+  "day": 41,
+  "level": 3,
+  "title": { "en": "During the meal", "es": "¿Todo bien?" },
+  "objectives": [
+    "Answer the waiter's ¿Todo bien?",
+    "Ask for more of something: ¿Nos trae…?",
+    "Say you're allergic to something",
+    "Ask for the bill, and know what to tip"
+  ],
+  "teach": [
+    { "kind": "phrase", "es": "¿Todo bien? — Sí, todo muy bien, gracias.", "en": "Everything OK? — Yes, all very good, thanks.", "note": "The waiter's check partway through the meal. A quick answer is all they want." },
+    { "kind": "phrase", "es": "¿Nos trae más pan, por favor?", "en": "Could you bring us more bread, please?", "note": "trae = you bring (usted). Just you: ¿Me trae…? With tú: ¿Nos traes…? In many Madrid restaurants bread comes without asking and goes on the bill." },
+    { "kind": "phrase", "es": "Está buenísimo.", "en": "It's delicious.", "note": "-ísimo = really, very: buenísimo = really good. For the croquetas: Están buenísimas." },
+    {
+      "kind": "note",
+      "md": "**Allergies.** Say **Soy alérgico a…** (a man) or **Soy alérgica a…** (a woman):\n\n- **los frutos secos**: nuts\n- **el marisco**: shellfish and seafood\n- **el gluten**, **la lactosa**\n\n*a + el = al*: *Soy alérgica al marisco.* Restaurants in the EU must be able to tell you which of the 14 main allergens each dish contains, so you can also ask: *¿Lleva marisco?*"
+    },
+    { "kind": "phrase", "es": "Soy alérgico al marisco. ¿Lleva marisco?", "en": "I'm allergic to shellfish. Does it have shellfish in it?", "note": "A woman says alérgica. In Madrid, watch for marisco in paella and in some croquetas." },
+    { "kind": "phrase", "es": "La cuenta, por favor.", "en": "The bill, please.", "note": "In Spain the waiter won't bring the bill until you ask: bringing it early would be rushing you. Catch their eye and mime signing in the air if it's busy." },
+    {
+      "kind": "note",
+      "md": "**Tipping (la propina).** Service is included in the price, and nobody expects a percentage.\n\n- In a bar: leave the small coins from your change.\n- In a restaurant: round up, or leave a few euros if you were happy. 5–10% is generous.\n\nCard machines usually don't ask about a tip, so leave it in coins on the table."
+    },
+    { "kind": "phrase", "es": "¿Se deja propina?", "en": "Do people leave a tip?", "note": "se deja = one leaves. A Spanish friend will probably say: Un poco, si quieres." }
+  ],
+  "vocab": [
+    { "id": "todo-bien", "es": "¿Todo bien?", "en": "Everything OK?", "pos": "phrase", "ipa": "ˈtoðo ˈβjen", "note": "Heard from the waiter. Answer: Sí, todo muy bien.", "tags": ["restaurant"] },
+    { "id": "nos-trae", "es": "¿Nos trae…?", "en": "Could you bring us…?", "pos": "phrase", "ipa": "nos ˈtɾae", "note": "Usted. With tú: ¿Nos traes…? Just you: ¿Me trae…?", "tags": ["restaurant"] },
+    { "id": "esta-buenisimo", "es": "Está buenísimo.", "en": "It's delicious.", "pos": "phrase", "ipa": "esˈta βweˈnisimo", "note": "Plural: Están buenísimos, buenísimas.", "tags": ["restaurant"] },
+    { "id": "soy-alergico", "es": "Soy alérgico a…, soy alérgica a…", "en": "I'm allergic to…", "pos": "phrase", "ipa": "soi aˈleɾxiko a, soi aˈleɾxika a", "note": "alérgico (man), alérgica (woman). a + el = al.", "tags": ["restaurant", "survival"] },
+    { "id": "marisco", "es": "el marisco", "en": "shellfish, seafood", "pos": "noun", "gender": "m", "ipa": "maˈɾisko", "tags": ["restaurant"] },
+    { "id": "la-cuenta", "es": "La cuenta, por favor.", "en": "The bill, please.", "pos": "phrase", "ipa": "la ˈkwenta poɾ faˈβoɾ", "note": "la cuenta = the bill. At the bar: ¿Me cobras?", "tags": ["restaurant", "survival"] },
+    { "id": "se-deja-propina", "es": "¿Se deja propina?", "en": "Do people leave a tip?", "pos": "phrase", "ipa": "se ˈðexa pɾoˈpina", "note": "la propina = the tip.", "tags": ["restaurant"] }
+  ],
+  "exercises": [
+    { "id": "d041-01", "type": "listen-choose", "audio": "¿Todo bien?", "options": ["¿Todo bien?", "¿Muy bien?", "¿Todo aquí?"], "answer": 0, "vocab": ["todo-bien"] },
+    { "id": "d041-02", "type": "listen-choose", "audio": "La cuenta, por favor.", "options": ["La cuenta, por favor.", "La carta, por favor.", "La cena, por favor."], "answer": 0, "vocab": ["la-cuenta"] },
+    { "id": "d041-03", "type": "listen-choose", "audio": "Soy alérgica al marisco.", "options": ["Soy alérgica al marisco.", "Soy alérgica al pescado.", "Soy vegetariana."], "answer": 0, "vocab": ["soy-alergico", "marisco"] },
+    { "id": "d041-04", "type": "match-pairs", "pairs": [["¿Todo bien?", "Everything OK?"], ["¿Nos trae…?", "Could you bring us…?"], ["Está buenísimo.", "It's delicious."], ["el marisco", "shellfish"], ["La cuenta, por favor.", "The bill, please."], ["¿Se deja propina?", "Do people tip?"]], "vocab": ["todo-bien", "nos-trae", "esta-buenisimo", "marisco", "la-cuenta", "se-deja-propina"] },
+    { "id": "d041-05", "type": "fill-blank", "es": "¿Nos {{trae}} más pan, por favor?", "en": "Could you bring us more bread, please?", "options": ["trae", "tiene", "es"], "vocab": ["nos-trae", "pan"] },
+    { "id": "d041-06", "type": "fill-blank", "es": "Está {{buenísimo}}.", "en": "It's delicious.", "options": ["buenísimo", "mucho", "nada"], "vocab": ["esta-buenisimo"] },
+    { "id": "d041-07", "type": "fill-blank", "es": "Soy {{alérgico}} al marisco.", "en": "I'm allergic to shellfish.", "options": ["alérgico", "alérgica"], "prompt": "A man is speaking.", "vocab": ["soy-alergico", "marisco"] },
+    { "id": "d041-08", "type": "fill-blank", "es": "La {{cuenta}}, por favor.", "en": "The bill, please.", "options": ["cuenta", "carta", "cena"], "vocab": ["la-cuenta"] },
+    { "id": "d041-09", "type": "fill-blank", "es": "¿Se deja {{propina}}?", "en": "Do people leave a tip?", "options": ["propina", "cuenta", "comida"], "vocab": ["se-deja-propina"] },
+    { "id": "d041-10", "type": "listen-choose", "prompt": "What does the waiter ask?", "audio": "¿Todo bien? ¿Algo más?", "optionsLang": "en", "options": ["Is everything OK? Anything else?", "Do you want the bill?", "Do you have a booking?"], "answer": 0, "vocab": ["todo-bien", "algo-mas"] },
+    { "id": "d041-11", "type": "listen-choose", "prompt": "Do you have to tip?", "audio": "La propina no es obligatoria. El servicio está incluido.", "optionsLang": "en", "options": ["No: service is included", "Yes: add 10%", "Only if you pay by card"], "answer": 0, "vocab": ["se-deja-propina"] },
+    { "id": "d041-12", "type": "listen-choose", "prompt": "What does the waiter warn you about?", "audio": "Perdón, la paella lleva marisco.", "optionsLang": "en", "options": ["The paella has shellfish in it", "The paella has meat in it", "There's no paella today"], "answer": 0, "vocab": ["marisco", "que-lleva"] },
+    { "id": "d041-13", "type": "listen-choose", "prompt": "How much is the bill?", "audio": "Aquí tiene la cuenta. Son cuarenta y dos con cincuenta.", "optionsLang": "en", "options": ["€42.50", "€52.40", "€12.50"], "answer": 0, "vocab": ["la-cuenta", "son-con", "cuarenta", "dos", "cincuenta"] },
+    { "id": "d041-14", "type": "dictation", "es": "La cuenta, por favor.", "hint": "The bill, please.", "vocab": ["la-cuenta"] },
+    { "id": "d041-15", "type": "dictation", "es": "el marisco", "hint": "shellfish", "vocab": ["marisco"] },
+    { "id": "d041-16", "type": "dictation", "es": "¿Todo bien?", "hint": "Everything OK?", "vocab": ["todo-bien"] },
+    { "id": "d041-17", "type": "build-sentence", "es": "¿Nos trae más pan, por favor?", "en": "Could you bring us more bread, please?", "distractors": ["pones", "mesa"], "vocab": ["nos-trae", "pan"] },
+    { "id": "d041-18", "type": "build-sentence", "es": "Soy alérgica al marisco. ¿Lleva marisco?", "en": "I'm allergic to shellfish (a woman). Does it have shellfish in it?", "distractors": ["alérgico", "carne"], "vocab": ["soy-alergico", "marisco", "que-lleva"] },
+    { "id": "d041-19", "type": "build-sentence", "direction": "audio-to-es", "es": "Está buenísimo, gracias.", "en": "It's delicious, thanks.", "distractors": ["bien"], "vocab": ["esta-buenisimo"] },
+    { "id": "d041-20", "type": "repeat", "prompt": "The waiter asks ¿Todo bien? You answer:", "es": "Sí, todo muy bien. Está buenísimo.", "en": "Yes, all very good. It's delicious.", "vocab": ["todo-bien", "esta-buenisimo"] },
+    { "id": "d041-21", "type": "repeat", "prompt": "You've finished. Catch the waiter's eye:", "es": "Perdón, la cuenta, por favor.", "en": "Excuse me, the bill, please.", "vocab": ["la-cuenta", "perdon"] },
+    { "id": "d041-22", "type": "shadow", "es": "Está buenísimo.", "en": "It's delicious.", "listenFor": "Stress on NÍ: bwe-NÍ-si-mo. After está, the b is soft, lips barely touching.", "vocab": ["esta-buenisimo"] },
+    { "id": "d041-23", "type": "listen-choose", "prompt": "Review: what are the main-course options?", "audio": "De segundo, pollo o pescado.", "optionsLang": "en", "options": ["Chicken or fish", "Soup or salad", "Meat or fish"], "answer": 0, "vocab": ["de-segundo", "pollo", "pescado"] },
+    { "id": "d041-24", "type": "listen-choose", "prompt": "Review: what does he want to know?", "audio": "Soy vegetariano. ¿Lleva jamón?", "optionsLang": "en", "options": ["If it has ham in it", "If they have ham", "How much the ham is"], "answer": 0, "vocab": ["soy-vegetariano", "lleva-carne", "jamon"] }
+  ]
+}

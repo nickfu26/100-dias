@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-07T16:16:53+00:00",
+ "generated": "2026-10-07T17:32:35+00:00",
  "voices": {
   "f": "es-ES-ElviraNeural",
   "m": "es-ES-AlvaroNeural"
@@ -61,6 +61,10 @@
   },
   "Ana y Pablo van al bar.": {
    "id": "f1781059f81a",
+   "slow": true
+  },
+  "Aquí tiene la cuenta. Son cuarenta y dos con cincuenta.": {
+   "id": "b98dfe2b74b1",
    "slow": true
   },
   "Ayer, hoy y mañana.": {
@@ -171,6 +175,10 @@
    "id": "a1fab260c147",
    "slow": true
   },
+  "De segundo, pollo o pescado.": {
+   "id": "545cfd078f9d",
+   "slow": true
+  },
   "De tapas": {
    "id": "1ebbcea6a963",
    "slow": true
@@ -215,6 +223,10 @@
    "id": "06b9c84e7d9c",
    "slow": true
   },
+  "Dos entradas y una audioguía, por favor.": {
+   "id": "d22d019e5063",
+   "slow": true
+  },
   "Dos entradas, por favor.": {
    "id": "08d4fa433917",
    "slow": true
@@ -223,8 +235,16 @@
    "id": "589000395c54",
    "slow": true
   },
+  "Dos salidas, por favor.": {
+   "id": "c9e4733faad2",
+   "slow": true
+  },
   "El abecedario": {
    "id": "84ce9dedc902",
+   "slow": true
+  },
+  "El abrigo me queda grande.": {
+   "id": "5cfd89a27129",
    "slow": true
   },
   "El acento": {
@@ -233,6 +253,10 @@
   },
   "El aeropuerto está lejos del centro.": {
    "id": "1fe48d2cb213",
+   "slow": true
+  },
+  "El banco está al lado del hotel.": {
+   "id": "9a9a28d87915",
    "slow": true
   },
   "El banco está allí, cerca de la tienda.": {
@@ -257,6 +281,10 @@
   },
   "El hotel es caro.": {
    "id": "da1a04acaf8c",
+   "slow": true
+  },
+  "El hotel está al lado del museo.": {
+   "id": "300618ec10be",
    "slow": true
   },
   "El hotel está allí, muy cerca.": {
@@ -285,6 +313,10 @@
   },
   "El metro está allí, a la salida de la estación.": {
    "id": "e17c201e7020",
+   "slow": true
+  },
+  "El metro está enfrente del banco.": {
+   "id": "dfef446f6902",
    "slow": true
   },
   "El miércoles trece de enero.": {
@@ -331,6 +363,10 @@
    "id": "7f02e69cee27",
    "slow": true
   },
+  "En azul no, pero lo tengo en gris y en negro.": {
+   "id": "0a302687ae08",
+   "slow": true
+  },
   "En efectivo.": {
    "id": "0ee4479c61de",
    "slow": true
@@ -351,6 +387,10 @@
    "id": "ffd6bb99d860",
    "slow": true
   },
+  "Entradas para el Prado": {
+   "id": "492bccc0f6d7",
+   "slow": true
+  },
   "Es francesa.": {
    "id": "4ced3616d687",
    "slow": true
@@ -361,6 +401,14 @@
   },
   "Es inglés.": {
    "id": "801b70c52136",
+   "slow": true
+  },
+  "Es la primera calle a la izquierda.": {
+   "id": "63bd2c90e120",
+   "slow": true
+  },
+  "Es la segunda calle a la derecha.": {
+   "id": "744f6ae2e7dc",
    "slow": true
   },
   "Es la una en punto.": {
@@ -431,12 +479,28 @@
    "id": "4bfc9205e5bc",
    "slow": true
   },
+  "Está a cinco minutos andando.": {
+   "id": "75fef3bb4703",
+   "slow": true
+  },
+  "Está a diez minutos andando.": {
+   "id": "550784f87d37",
+   "slow": true
+  },
   "Está allí, no está lejos.": {
    "id": "51a4db708415",
    "slow": true
   },
   "Está allí.": {
    "id": "070dfb8a4aac",
+   "slow": true
+  },
+  "Está buenísimo, gracias.": {
+   "id": "9bb1d648658b",
+   "slow": true
+  },
+  "Está buenísimo.": {
+   "id": "42a715e584ee",
    "slow": true
   },
   "Está cerca. No está lejos.": {
@@ -449,6 +513,18 @@
   },
   "Está nublado.": {
    "id": "6dbfe586fcab",
+   "slow": true
+  },
+  "Gira a la derecha. Gira a la izquierda.": {
+   "id": "6306e8c439b8",
+   "slow": true
+  },
+  "Gira a la izquierda.": {
+   "id": "0d641172e13f",
+   "slow": true
+  },
+  "Gira a la izquierda. El museo está enfrente.": {
+   "id": "4e53dd23527c",
    "slow": true
   },
   "Gracias, vale, hasta luego.": {
@@ -555,6 +631,14 @@
    "id": "5a383fbf2ea3",
    "slow": true
   },
+  "Hola. Dos entradas, por favor.": {
+   "id": "b15fb8759d58",
+   "slow": true
+  },
+  "Hola. Dos entradas, por favor. ¿Hay descuento?": {
+   "id": "bcb82b7d0b28",
+   "slow": true
+  },
   "Hoy es martes y mañana es miércoles.": {
    "id": "2980032f5278",
    "slow": true
@@ -573,6 +657,10 @@
   },
   "Hoy hace mucho frío.": {
    "id": "10dad0c947a6",
+   "slow": true
+  },
+  "Hoy no hay entradas. Mañana, sí.": {
+   "id": "7b4c1d9bbdde",
    "slow": true
   },
   "Hoy no, gracias.": {
@@ -599,12 +687,20 @@
    "id": "04c276c95a71",
    "slow": true
   },
+  "La carta, por favor.": {
+   "id": "74232e67dd9d",
+   "slow": true
+  },
   "La catedral está cerca.": {
    "id": "69a653bc334c",
    "slow": true
   },
   "La cena es a las diez.": {
    "id": "c3c4b427b364",
+   "slow": true
+  },
+  "La cena, por favor.": {
+   "id": "8dbbc57fcf33",
    "slow": true
   },
   "La cerveza, por favor.": {
@@ -623,6 +719,10 @@
    "id": "bea064c0fc3f",
    "slow": true
   },
+  "La cola de la entrada gratuita está allí, al final de la calle.": {
+   "id": "4dd6a3092586",
+   "slow": true
+  },
   "La comida": {
    "id": "5959f525842a",
    "slow": true
@@ -631,12 +731,24 @@
    "id": "d8597c70eedf",
    "slow": true
   },
+  "La cuenta, por favor.": {
+   "id": "e086436c9a56",
+   "slow": true
+  },
   "La distinción": {
    "id": "5175f69a083b",
    "slow": true
   },
   "La elle, la i griega, la be, la uve y la che": {
    "id": "af3144c89576",
+   "slow": true
+  },
+  "La entrada es gratuita de seis a ocho de la tarde.": {
+   "id": "b9a8734c5f0f",
+   "slow": true
+  },
+  "La entrada es gratuita de seis a ocho.": {
+   "id": "3aaa702998cb",
    "slow": true
   },
   "La erre y la eñe": {
@@ -651,12 +763,28 @@
    "id": "b7495b0f78d7",
    "slow": true
   },
+  "La farmacia está enfrente de la estación.": {
+   "id": "c9d2863dfc4f",
+   "slow": true
+  },
   "La jota y la ge": {
    "id": "f33b6ba13217",
    "slow": true
   },
   "La mano.": {
    "id": "7a30c44f05b8",
+   "slow": true
+  },
+  "La primera a la derecha y la segunda a la izquierda.": {
+   "id": "0f7725577e29",
+   "slow": true
+  },
+  "La primera a la derecha, la segunda a la izquierda.": {
+   "id": "b486065997bc",
+   "slow": true
+  },
+  "La propina no es obligatoria. El servicio está incluido.": {
+   "id": "9b87d03d9aac",
    "slow": true
   },
   "La ropa": {
@@ -763,6 +891,10 @@
    "id": "44a8d82283fb",
    "slow": true
   },
+  "Los domingos, la entrada es gratuita de cinco a siete.": {
+   "id": "cfca972cc1bd",
+   "slow": true
+  },
   "Los domingos.": {
    "id": "b90ce60fa4de",
    "slow": true
@@ -781,6 +913,10 @@
   },
   "Los números del cero al diez": {
    "id": "50d97207ce28",
+   "slow": true
+  },
+  "Los probadores están al final, a la derecha.": {
+   "id": "2d261de1abe8",
    "slow": true
   },
   "Los zapatos marrones, por favor.": {
@@ -915,6 +1051,18 @@
    "id": "2a8130c879ca",
    "slow": true
   },
+  "Me queda grande. Me queda pequeño.": {
+   "id": "4c14c58f84b0",
+   "slow": true
+  },
+  "Me queda pequeño.": {
+   "id": "6f867c79d746",
+   "slow": true
+  },
+  "Me queda pequeño. ¿Lo tiene en otra talla?": {
+   "id": "10372167b69d",
+   "slow": true
+  },
   "Media ración de jamón, por favor.": {
    "id": "8001f97a10a6",
    "slow": true
@@ -1007,12 +1155,20 @@
    "id": "4d5155e7f135",
    "slow": true
   },
+  "No, gracias. Solo estoy mirando.": {
+   "id": "cf5e1b459dac",
+   "slow": true
+  },
   "No, nada más, gracias.": {
    "id": "ac067436fa7f",
    "slow": true
   },
   "No, nada. Todo bien.": {
    "id": "f84a75fe3690",
+   "slow": true
+  },
+  "No, no está lejos. Está a cinco minutos andando.": {
+   "id": "5aca6d1803de",
    "slow": true
   },
   "No, no hay.": {
@@ -1059,6 +1215,50 @@
    "id": "481ae8d0f3be",
    "slow": true
   },
+  "Perdona…": {
+   "id": "c30151277778",
+   "slow": true
+  },
+  "Perdone, ¿dónde está el guardarropa?": {
+   "id": "2f3b7bdb850e",
+   "slow": true
+  },
+  "Perdone, ¿hay un cajero por aquí?": {
+   "id": "8e723e72fbf3",
+   "slow": true
+  },
+  "Perdone, ¿para ir a la Plaza Mayor?": {
+   "id": "cd2984def6e8",
+   "slow": true
+  },
+  "Perdone, ¿para ir a la Puerta del Sol?": {
+   "id": "a7639922bef8",
+   "slow": true
+  },
+  "Perdone, ¿por dónde se va a Sol?": {
+   "id": "fe890b6f0fe6",
+   "slow": true
+  },
+  "Perdone, ¿por dónde se va a la Plaza Mayor?": {
+   "id": "e83a2ba9b0a7",
+   "slow": true
+  },
+  "Perdone, ¿por dónde se va a la estación de Atocha?": {
+   "id": "87642980a40a",
+   "slow": true
+  },
+  "Perdone…": {
+   "id": "f8e740070150",
+   "slow": true
+  },
+  "Perdón, la cuenta, por favor.": {
+   "id": "594362cc1cab",
+   "slow": true
+  },
+  "Perdón, la paella lleva marisco.": {
+   "id": "4d01bfe1372d",
+   "slow": true
+  },
   "Perdón, no entiendo.": {
    "id": "7253ba4522e8",
    "slow": true
@@ -1097,6 +1297,10 @@
   },
   "Perdón, ¿hay un supermercado cerca?": {
    "id": "9500285c55c8",
+   "slow": true
+  },
+  "Perdón, ¿lleva carne o jamón?": {
+   "id": "d0283c788cb6",
    "slow": true
   },
   "Perdón, ¿puede repetir, por favor?": {
@@ -1165,6 +1369,10 @@
   },
   "Por favor.": {
    "id": "0cb4dc00702a",
+   "slow": true
+  },
+  "Por favor…": {
+   "id": "8b05ddea309e",
    "slow": true
   },
   "Prueba del nivel dos": {
@@ -1253,6 +1461,38 @@
   },
   "Repaso del nivel dos": {
    "id": "caae1e09c12f",
+   "slow": true
+  },
+  "Sigue todo recto y gira a la derecha.": {
+   "id": "37d4e479aff4",
+   "slow": true
+  },
+  "Sigue todo recto.": {
+   "id": "7f335d382ce2",
+   "slow": true
+  },
+  "Sigue todo recto. El museo está al final de la calle.": {
+   "id": "6eccb948019e",
+   "slow": true
+  },
+  "Solo estoy buscando.": {
+   "id": "cb4af763b51f",
+   "slow": true
+  },
+  "Solo estoy mirando": {
+   "id": "20980636cccd",
+   "slow": true
+  },
+  "Solo estoy mirando, gracias.": {
+   "id": "9f608f5f483e",
+   "slow": true
+  },
+  "Solo estoy mirando.": {
+   "id": "084e4b697f43",
+   "slow": true
+  },
+  "Solo estoy pagando.": {
+   "id": "65a145e99761",
    "slow": true
   },
   "Son catorce euros.": {
@@ -1371,6 +1611,30 @@
    "id": "d809a322cf0f",
    "slow": true
   },
+  "Soy alérgica al marisco.": {
+   "id": "bf54f8a72341",
+   "slow": true
+  },
+  "Soy alérgica al marisco. ¿Lleva marisco?": {
+   "id": "89915c68b1b1",
+   "slow": true
+  },
+  "Soy alérgica al pescado.": {
+   "id": "e9b298cfc84d",
+   "slow": true
+  },
+  "Soy alérgico al marisco.": {
+   "id": "462943574ac0",
+   "slow": true
+  },
+  "Soy alérgico al marisco. ¿Lleva marisco?": {
+   "id": "33ac56444b41",
+   "slow": true
+  },
+  "Soy alérgico a…, soy alérgica a…": {
+   "id": "b4fc7a6c470a",
+   "slow": true
+  },
   "Soy de Estados Unidos, pero estoy en Madrid.": {
    "id": "d91aefc87b32",
    "slow": true
@@ -1403,12 +1667,32 @@
    "id": "5b387b9572ca",
    "slow": true
   },
+  "Soy vegetariana.": {
+   "id": "10e34687e90e",
+   "slow": true
+  },
+  "Soy vegetariana. ¿Las croquetas llevan carne?": {
+   "id": "92d159486de4",
+   "slow": true
+  },
+  "Soy vegetariano, soy vegetariana.": {
+   "id": "138e40ef228a",
+   "slow": true
+  },
+  "Soy vegetariano. ¿Lleva jamón?": {
+   "id": "844381fb8877",
+   "slow": true
+  },
   "Sí, gracias.": {
    "id": "0baeb93cc1c2",
    "slow": true
   },
   "Sí, la bebida está incluida. Agua, vino o cerveza.": {
    "id": "160bef97e726",
+   "slow": true
+  },
+  "Sí, todo muy bien. Está buenísimo.": {
+   "id": "1d95a268fa95",
    "slow": true
   },
   "Sí, vale. Muchas gracias.": {
@@ -1519,6 +1803,18 @@
    "id": "e0137ccca1e9",
    "slow": true
   },
+  "Todo recto": {
+   "id": "1f869bef04b9",
+   "slow": true
+  },
+  "Todo recto y la primera a la derecha.": {
+   "id": "6c53a91fd99b",
+   "slow": true
+  },
+  "Todo recto, y la segunda a la derecha.": {
+   "id": "16485301ef6a",
+   "slow": true
+  },
   "Tom y Kate son estadounidenses.": {
    "id": "cd4987d8eae5",
    "slow": true
@@ -1621,6 +1917,10 @@
   },
   "Un zumo, por favor.": {
    "id": "2c5d5393674e",
+   "slow": true
+  },
+  "Una audioguía, por favor.": {
+   "id": "d7368b4f84f7",
    "slow": true
   },
   "Una botella de agua y dos vasos.": {
@@ -1863,6 +2163,14 @@
    "id": "f032e9e87460",
    "slow": true
   },
+  "a la derecha": {
+   "id": "058471a84a2a",
+   "slow": true
+  },
+  "a la izquierda": {
+   "id": "e1ffea8634d2",
+   "slow": true
+  },
   "a la una, a las…": {
    "id": "fa4824c08d07",
    "slow": true
@@ -1889,6 +2197,10 @@
   },
   "a las siete menos cuarto de la tarde": {
    "id": "c3f1c70963c5",
+   "slow": true
+  },
+  "a … minutos": {
+   "id": "2e32b092a1c4",
    "slow": true
   },
   "a, be, ce, de, e, efe, ge": {
@@ -1931,6 +2243,18 @@
    "id": "317914bb85c2",
    "slow": true
   },
+  "al final de": {
+   "id": "5272d05efb3b",
+   "slow": true
+  },
+  "al lado": {
+   "id": "3d08876737bb",
+   "slow": true
+  },
+  "al lado de": {
+   "id": "58b2fedc77cd",
+   "slow": true
+  },
   "alemana": {
    "id": "4703cf2ede81",
    "slow": true
@@ -1945,6 +2269,10 @@
   },
   "amigo": {
    "id": "01f07beb8567",
+   "slow": true
+  },
+  "andando": {
+   "id": "d98da8d22739",
    "slow": true
   },
   "apellido": {
@@ -2041,6 +2369,10 @@
   },
   "cena": {
    "id": "62e5582aace0",
+   "slow": true
+  },
+  "cenando": {
+   "id": "9b69db2099ec",
    "slow": true
   },
   "cerca": {
@@ -2331,6 +2663,10 @@
    "id": "64ae4a2d4ab8",
    "slow": true
   },
+  "el guardarropa": {
+   "id": "521572455580",
+   "slow": true
+  },
   "el hijo": {
    "id": "6540f2953b1b",
    "slow": true
@@ -2361,6 +2697,10 @@
   },
   "el lunes": {
    "id": "78b09cd46e1f",
+   "slow": true
+  },
+  "el marisco": {
+   "id": "802e6b04ca85",
    "slow": true
   },
   "el martes": {
@@ -2567,6 +2907,10 @@
    "id": "6d5e647d87a5",
    "slow": true
   },
+  "enfrente de": {
+   "id": "bae92a23fcb9",
+   "slow": true
+  },
   "eres": {
    "id": "a3ef4bb56146",
    "slow": true
@@ -2699,6 +3043,10 @@
    "id": "df2e99bf62be",
    "slow": true
   },
+  "hablando": {
+   "id": "f551655b6548",
+   "slow": true
+  },
   "hablar": {
    "id": "18c35a29fc2f",
    "slow": true
@@ -2799,6 +3147,10 @@
    "id": "3efd4c0fe185",
    "slow": true
   },
+  "la audioguía": {
+   "id": "3e27cc55eb14",
+   "slow": true
+  },
   "la botella": {
    "id": "156a7a5de535",
    "slow": true
@@ -2867,6 +3219,10 @@
    "id": "33ee6c90480d",
    "slow": true
   },
+  "la cola": {
+   "id": "afe6b34544f7",
+   "slow": true
+  },
   "la comida": {
    "id": "d39e7cb428ba",
    "slow": true
@@ -2877,6 +3233,10 @@
   },
   "la entrada": {
    "id": "ec468a24953c",
+   "slow": true
+  },
+  "la entrada gratuita": {
+   "id": "e50c1c40725c",
    "slow": true
   },
   "la espalda": {
@@ -2933,6 +3293,10 @@
   },
   "la plaza": {
    "id": "107bf33ec19a",
+   "slow": true
+  },
+  "la primera, la segunda": {
+   "id": "7303bd8312d7",
    "slow": true
   },
   "la ración": {
@@ -3177,6 +3541,10 @@
   },
   "me llamo…": {
    "id": "5d27ab5224a7",
+   "slow": true
+  },
+  "me queda grande, me queda pequeño": {
+   "id": "5bfc2e6a89d0",
    "slow": true
   },
   "media ración": {
@@ -3615,6 +3983,18 @@
    "id": "05f20a71783d",
    "slow": true
   },
+  "todo bien": {
+   "id": "eecf4cb6f29a",
+   "slow": true
+  },
+  "todo cerca": {
+   "id": "4f287836dae5",
+   "slow": true
+  },
+  "todo recto": {
+   "id": "31191462b2c0",
+   "slow": true
+  },
   "tomar": {
    "id": "026a02225735",
    "slow": true
@@ -3749,10 +4129,6 @@
   },
   "una mesa para dos": {
    "id": "a0f196e1d210",
-   "slow": true
-  },
-  "una ración": {
-   "id": "35683fe28996",
    "slow": true
   },
   "una tapa de tortilla": {
@@ -3963,6 +4339,10 @@
    "id": "456de1ee8799",
    "slow": true
   },
+  "¿A la derecha o a la izquierda?": {
+   "id": "3de64fca6f15",
+   "slow": true
+  },
   "¿A qué hora abre el museo?": {
    "id": "b32a0eae718d",
    "slow": true
@@ -3973,6 +4353,10 @@
   },
   "¿A qué hora abre?": {
    "id": "1e7abbc2ea6d",
+   "slow": true
+  },
+  "¿A qué hora cierra el museo hoy?": {
+   "id": "5583caa4ff6f",
    "slow": true
   },
   "¿A qué hora cierra? A las ocho y media de la tarde.": {
@@ -4005,6 +4389,10 @@
   },
   "¿Agua con gas o sin gas?": {
    "id": "4f39c642acd4",
+   "slow": true
+  },
+  "¿Al Prado? Está lejos. Veinte minutos andando, o en metro.": {
+   "id": "0bf37821029f",
    "slow": true
   },
   "¿Algo más?": {
@@ -4219,12 +4607,20 @@
    "id": "074ec94affd4",
    "slow": true
   },
+  "¿Dónde está el guardarropa?": {
+   "id": "d0508e781363",
+   "slow": true
+  },
   "¿Dónde está el hotel?": {
    "id": "2505d736d08a",
    "slow": true
   },
   "¿Dónde está el museo?": {
    "id": "8e1c942ea87d",
+   "slow": true
+  },
+  "¿Dónde está la cola para la entrada gratuita?": {
+   "id": "8e38d1e23e77",
    "slow": true
   },
   "¿Dónde está la estación?": {
@@ -4243,12 +4639,20 @@
    "id": "734b5b73cadf",
    "slow": true
   },
+  "¿Dónde está la taquilla?": {
+   "id": "56250cca0598",
+   "slow": true
+  },
   "¿Dónde está?": {
    "id": "9870d59827ea",
    "slow": true
   },
   "¿Dónde están los aseos?": {
    "id": "2a4b884e3560",
+   "slow": true
+  },
+  "¿Dónde están los probadores?": {
+   "id": "e6f28361305b",
    "slow": true
   },
   "¿Dónde estás?": {
@@ -4279,12 +4683,44 @@
    "id": "084d4e282d3e",
    "slow": true
   },
+  "¿Está abierto?": {
+   "id": "1a8fa43ae00a",
+   "slow": true
+  },
+  "¿Está cerca?": {
+   "id": "a5919d606c13",
+   "slow": true
+  },
   "¿Está incluida la bebida?": {
    "id": "ba2300c86c1d",
    "slow": true
   },
   "¿Está incluido el pan?": {
    "id": "d6619b9a1763",
+   "slow": true
+  },
+  "¿Está lejos el museo?": {
+   "id": "9175a0b670a1",
+   "slow": true
+  },
+  "¿Está lejos?": {
+   "id": "9d8d304818d2",
+   "slow": true
+  },
+  "¿Está lejos? ¿Se puede ir andando?": {
+   "id": "145b5c2b4cc3",
+   "slow": true
+  },
+  "¿Está lejos? — No, a cinco minutos andando.": {
+   "id": "cdc41a1546de",
+   "slow": true
+  },
+  "¿Está lejos? — No, está a cinco minutos andando.": {
+   "id": "16561a19f621",
+   "slow": true
+  },
+  "¿Está lejos? — No, está cerca.": {
+   "id": "6db0f290b900",
    "slow": true
   },
   "¿Fuera o dentro?": {
@@ -4331,6 +4767,22 @@
    "id": "5365706b1857",
    "slow": true
   },
+  "¿Hay cuenta?": {
+   "id": "49e23a224a47",
+   "slow": true
+  },
+  "¿Hay descuento para estudiantes?": {
+   "id": "e56e5c1f7c12",
+   "slow": true
+  },
+  "¿Hay descuento?": {
+   "id": "a99bff12063f",
+   "slow": true
+  },
+  "¿Hay entradas?": {
+   "id": "130ee7311bc3",
+   "slow": true
+  },
   "¿Hay jamón? No, no hay.": {
    "id": "2e31e8ac5160",
    "slow": true
@@ -4355,8 +4807,16 @@
    "id": "1aaa9075063b",
    "slow": true
   },
+  "¿Hay un cajero por aquí?": {
+   "id": "90d67178ccad",
+   "slow": true
+  },
   "¿Hay un hotel cerca?": {
    "id": "10be62de9dfc",
+   "slow": true
+  },
+  "¿Hay un supermercado por aquí?": {
+   "id": "09ec44912882",
    "slow": true
   },
   "¿Hay una farmacia cerca del hotel?": {
@@ -4367,8 +4827,44 @@
    "id": "6a19ee6c0769",
    "slow": true
   },
+  "¿Hay un… por aquí?": {
+   "id": "f24cc603f441",
+   "slow": true
+  },
   "¿Hay…?": {
    "id": "3a2fdeceeba9",
+   "slow": true
+  },
+  "¿La Plaza Mayor? Sigue la calle Mayor todo recto. Está a la izquierda.": {
+   "id": "9eca13d6a784",
+   "slow": true
+  },
+  "¿Lleva carne?": {
+   "id": "ff886a8472ed",
+   "slow": true
+  },
+  "¿Lleva carne? Soy vegetariano.": {
+   "id": "3d241a694000",
+   "slow": true
+  },
+  "¿Lleva leche?": {
+   "id": "c22c083d30cb",
+   "slow": true
+  },
+  "¿Lo tiene en azul?": {
+   "id": "05fb5b3fdaa0",
+   "slow": true
+  },
+  "¿Lo tiene en negro?": {
+   "id": "b4191ba7f39d",
+   "slow": true
+  },
+  "¿Lo tiene en una talla más grande?": {
+   "id": "b7d3626de228",
+   "slow": true
+  },
+  "¿Lo tiene en…?": {
+   "id": "56bdd9b7c073",
    "slow": true
   },
   "¿Me cobras, por favor?": {
@@ -4431,6 +4927,10 @@
    "id": "8720195f384a",
    "slow": true
   },
+  "¿Me pones una caña? ¿Ponéis tapa?": {
+   "id": "d23bc0d9b438",
+   "slow": true
+  },
   "¿Me pones una tapa?": {
    "id": "2272a2de8ece",
    "slow": true
@@ -4447,6 +4947,26 @@
    "id": "8634670b96cd",
    "slow": true
   },
+  "¿Me puedes ayudar?": {
+   "id": "f7c510585827",
+   "slow": true
+  },
+  "¿Muy bien?": {
+   "id": "a6d78ab94254",
+   "slow": true
+  },
+  "¿Nos trae más pan, por favor?": {
+   "id": "49162b3d0089",
+   "slow": true
+  },
+  "¿Nos trae…?": {
+   "id": "9f82c232a056",
+   "slow": true
+  },
+  "¿Para ir a…?": {
+   "id": "c84f1936507b",
+   "slow": true
+  },
   "¿Ponéis tapa con la caña?": {
    "id": "e5e7bc8c1ff9",
    "slow": true
@@ -4457,6 +4977,18 @@
   },
   "¿Ponéis tapa? — Sí. Con la caña, aceitunas.": {
    "id": "954241022ea4",
+   "slow": true
+  },
+  "¿Por dónde se va a Sol?": {
+   "id": "bfa733409109",
+   "slow": true
+  },
+  "¿Por dónde se va a…?": {
+   "id": "ee4bf95f42e2",
+   "slow": true
+  },
+  "¿Por dónde se va?": {
+   "id": "b9e8e811793c",
    "slow": true
   },
   "¿Por qué no vamos en metro?": {
@@ -4493,6 +5025,18 @@
   },
   "¿Puedo pagar aquí? Sí, vale.": {
    "id": "69bcf250418d",
+   "slow": true
+  },
+  "¿Puedo probármela?": {
+   "id": "1837334996e6",
+   "slow": true
+  },
+  "¿Puedo probármelo?": {
+   "id": "2c1a981a8354",
+   "slow": true
+  },
+  "¿Puedo probármelo? ¿Dónde están los probadores?": {
+   "id": "fc55d77c5b81",
    "slow": true
   },
   "¿Puedo…?": {
@@ -4579,6 +5123,14 @@
    "id": "a8506c246b78",
    "slow": true
   },
+  "¿Qué talla tiene?": {
+   "id": "4d25c6a8dbc6",
+   "slow": true
+  },
+  "¿Qué talla tiene? ¿La treinta y ocho?": {
+   "id": "1d2aac4ae72b",
+   "slow": true
+  },
   "¿Qué tapa quieres?": {
    "id": "54be7bbf6640",
    "slow": true
@@ -4619,12 +5171,32 @@
    "id": "ab5d422f66ae",
    "slow": true
   },
+  "¿Se deja propina?": {
+   "id": "3699ba34e520",
+   "slow": true
+  },
   "¿Se puede ir en metro?": {
    "id": "b6d08679b33b",
    "slow": true
   },
   "¿Se puede?": {
    "id": "3a907f604284",
+   "slow": true
+  },
+  "¿Se pueden hacer fotos aquí?": {
+   "id": "84fcad0dd3ac",
+   "slow": true
+  },
+  "¿Se pueden hacer fotos?": {
+   "id": "c5e8adfb0cd7",
+   "slow": true
+  },
+  "¿Se pueden hacer fotos? — En el Prado, no.": {
+   "id": "6f55f41c5571",
+   "slow": true
+  },
+  "¿Se pueden hacer fotos? — No, en el museo no se puede.": {
+   "id": "657a574fd49d",
    "slow": true
   },
   "¿Se puede…?": {
@@ -4657,6 +5229,18 @@
   },
   "¿Te gusta…?": {
    "id": "15607bb316d3",
+   "slow": true
+  },
+  "¿Te puedo ayudar?": {
+   "id": "22df5253e4d3",
+   "slow": true
+  },
+  "¿Te puedo ayudar? — No, gracias. Solo estoy mirando.": {
+   "id": "61a6fb89cfc7",
+   "slow": true
+  },
+  "¿Te puedo pagar?": {
+   "id": "1daf7e61404d",
    "slow": true
   },
   "¿Tenéis media ración de calamares?": {
@@ -4709,6 +5293,26 @@
   },
   "¿Tienes…?, ¿Tiene…?": {
    "id": "82a8402e29bc",
+   "slow": true
+  },
+  "¿Todo aquí?": {
+   "id": "94a00fe80986",
+   "slow": true
+  },
+  "¿Todo bien?": {
+   "id": "9d21a98748f1",
+   "slow": true
+  },
+  "¿Todo bien? ¿Algo más?": {
+   "id": "ca22d9a39ec6",
+   "slow": true
+  },
+  "¿Todo bien? — Sí, todo muy bien, gracias.": {
+   "id": "46fb679836a3",
+   "slow": true
+  },
+  "¿Una farmacia? Sí, hay una allí, cerca del metro.": {
+   "id": "475062b94766",
    "slow": true
   },
   "¿Usted es de Madrid?": {

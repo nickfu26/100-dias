@@ -1,0 +1,61 @@
+{
+  "$schema": "./schema.json",
+  "day": 42,
+  "level": 3,
+  "title": { "en": "Asking the way", "es": "¿Por dónde se va?" },
+  "objectives": [
+    "Stop a stranger politely with Perdone…",
+    "Ask the way: ¿Para ir a…? ¿Por dónde se va a…?",
+    "Ask if there's a cash machine or pharmacy nearby",
+    "Understand how far it is: a cinco minutos andando"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**Stopping someone.** To a stranger in the street, use the *usted* form: **Perdone…** (*Excuse me…*). To someone your age in a relaxed setting, *Perdona…* is fine. *Perdón* works anywhere.\n\nThen ask in as few words as possible. Madrileños answer fast, with lots of pointing."
+    },
+    { "kind": "phrase", "es": "Perdone, ¿para ir a la Plaza Mayor?", "en": "Excuse me, how do I get to the Plaza Mayor?", "note": "Literally 'to go to…?'. The shortest way to ask. a + el = al: ¿Para ir al Prado?" },
+    { "kind": "phrase", "es": "¿Por dónde se va a Sol?", "en": "Which way is it to Sol?", "note": "Literally 'Which way does one go to Sol?'. Sol = the Puerta del Sol, the centre of Madrid." },
+    { "kind": "phrase", "es": "¿Hay un cajero por aquí?", "en": "Is there a cash machine around here?", "note": "por aquí = around here. Feminine: ¿Hay una farmacia por aquí?" },
+    { "kind": "phrase", "es": "¿Está lejos? — No, está a cinco minutos andando.", "en": "Is it far? — No, it's five minutes' walk.", "note": "a … minutos = … minutes away. andando = on foot, walking. Also a pie." },
+    {
+      "kind": "note",
+      "md": "**Central Madrid is walkable.** From Sol:\n\n- **Plaza Mayor**: about 5 minutes\n- **Gran Vía**: about 5 minutes\n- **The Prado**: about 15–20 minutes\n\nSo the answer you'll hear most is *andando*, not *en metro*."
+    }
+  ],
+  "vocab": [
+    { "id": "perdone", "es": "Perdone…", "en": "Excuse me… (to a stranger)", "pos": "phrase", "ipa": "peɾˈðone", "note": "Usted. With tú: Perdona…", "tags": ["directions", "survival"] },
+    { "id": "para-ir-a", "es": "¿Para ir a…?", "en": "How do I get to…?", "pos": "phrase", "ipa": "ˈpaɾa ˈiɾ a", "note": "¿Para ir al Prado? ¿Para ir a la estación?", "tags": ["directions", "survival"] },
+    { "id": "por-donde-se-va", "es": "¿Por dónde se va a…?", "en": "Which way is it to…?", "pos": "phrase", "ipa": "poɾ ˈðonde se ˈβa a", "tags": ["directions"] },
+    { "id": "hay-por-aqui", "es": "¿Hay un… por aquí?", "en": "Is there a… around here?", "pos": "phrase", "ipa": "ˈai un poɾ aˈki", "note": "Feminine: ¿Hay una… por aquí?", "tags": ["directions", "survival"] },
+    { "id": "esta-lejos", "es": "¿Está lejos?", "en": "Is it far?", "pos": "phrase", "ipa": "esˈta ˈlexos", "tags": ["directions"] },
+    { "id": "a-minutos", "es": "a … minutos", "en": "… minutes away", "pos": "phrase", "ipa": "a miˈnutos", "note": "Está a diez minutos = It's ten minutes away.", "tags": ["directions"] },
+    { "id": "andando", "es": "andando", "en": "on foot, walking", "pos": "adv", "ipa": "anˈdando", "note": "Also a pie.", "tags": ["directions"] }
+  ],
+  "exercises": [
+    { "id": "d042-01", "type": "listen-choose", "audio": "Perdone…", "options": ["Perdone…", "Perdona…", "Por favor…"], "answer": 0, "vocab": ["perdone"] },
+    { "id": "d042-02", "type": "listen-choose", "audio": "¿Está lejos?", "options": ["¿Está lejos?", "¿Está cerca?", "¿Está abierto?"], "answer": 0, "vocab": ["esta-lejos"] },
+    { "id": "d042-03", "type": "listen-choose", "audio": "andando", "options": ["andando", "hablando", "cenando"], "answer": 0, "vocab": ["andando"] },
+    { "id": "d042-04", "type": "match-pairs", "pairs": [["Perdone…", "Excuse me…"], ["¿Para ir a…?", "How do I get to…?"], ["¿Por dónde se va a…?", "Which way to…?"], ["¿Hay un… por aquí?", "Is there a… around here?"], ["¿Está lejos?", "Is it far?"], ["andando", "on foot"]], "vocab": ["perdone", "para-ir-a", "por-donde-se-va", "hay-por-aqui", "esta-lejos", "andando"] },
+    { "id": "d042-05", "type": "fill-blank", "es": "Perdone, ¿{{para}} ir a la Plaza Mayor?", "en": "Excuse me, how do I get to the Plaza Mayor?", "options": ["para", "por", "de"], "vocab": ["perdone", "para-ir-a", "plaza"] },
+    { "id": "d042-06", "type": "fill-blank", "es": "¿Hay un cajero por {{aquí}}?", "en": "Is there a cash machine around here?", "options": ["aquí", "lejos", "cerca"], "vocab": ["hay-por-aqui", "cajero"] },
+    { "id": "d042-07", "type": "fill-blank", "es": "¿Por {{dónde}} se va a Sol?", "en": "Which way is it to Sol?", "options": ["dónde", "qué", "cuándo"], "vocab": ["por-donde-se-va"] },
+    { "id": "d042-08", "type": "fill-blank", "es": "Está a diez {{minutos}} andando.", "en": "It's ten minutes' walk.", "options": ["minutos", "euros", "años"], "vocab": ["a-minutos", "andando", "diez"] },
+    { "id": "d042-09", "type": "fill-blank", "es": "¿Está {{lejos}}? — No, está cerca.", "en": "Is it far? — No, it's close.", "options": ["lejos", "cerca", "aquí"], "vocab": ["esta-lejos", "cerca"] },
+    { "id": "d042-10", "type": "listen-choose", "prompt": "How far is it?", "audio": "No, no está lejos. Está a cinco minutos andando.", "optionsLang": "en", "options": ["Five minutes on foot", "Fifteen minutes on foot", "Five minutes by metro"], "answer": 0, "vocab": ["esta-lejos", "a-minutos", "andando", "cinco"] },
+    { "id": "d042-11", "type": "listen-choose", "prompt": "Is there a pharmacy nearby?", "audio": "¿Una farmacia? Sí, hay una allí, cerca del metro.", "optionsLang": "en", "options": ["Yes, over there near the metro", "No, it's far", "Yes, inside the station"], "answer": 0, "vocab": ["hay-por-aqui", "farmacia", "alli", "metro"] },
+    { "id": "d042-12", "type": "listen-choose", "prompt": "How do you get to the Prado?", "audio": "¿Al Prado? Está lejos. Veinte minutos andando, o en metro.", "optionsLang": "en", "options": ["20 minutes' walk, or take the metro", "2 minutes' walk", "Only by metro"], "answer": 0, "vocab": ["para-ir-a", "esta-lejos", "andando", "veinte", "metro"] },
+    { "id": "d042-13", "type": "listen-choose", "prompt": "Where does he want to go?", "audio": "Perdone, ¿por dónde se va a la estación de Atocha?", "optionsLang": "en", "options": ["Atocha station", "Atocha market", "The airport"], "answer": 0, "vocab": ["perdone", "por-donde-se-va", "estacion"] },
+    { "id": "d042-14", "type": "dictation", "es": "¿Está lejos?", "hint": "Is it far?", "vocab": ["esta-lejos"] },
+    { "id": "d042-15", "type": "dictation", "es": "andando", "hint": "on foot", "vocab": ["andando"] },
+    { "id": "d042-16", "type": "dictation", "es": "¿Por dónde se va a Sol?", "hint": "Which way to Sol?", "vocab": ["por-donde-se-va"] },
+    { "id": "d042-17", "type": "build-sentence", "es": "Perdone, ¿para ir a la Puerta del Sol?", "en": "Excuse me, how do I get to the Puerta del Sol?", "distractors": ["por", "perdón"], "vocab": ["perdone", "para-ir-a"] },
+    { "id": "d042-18", "type": "build-sentence", "es": "¿Hay un supermercado por aquí?", "en": "Is there a supermarket around here?", "distractors": ["allí", "una"], "vocab": ["hay-por-aqui", "supermercado"] },
+    { "id": "d042-19", "type": "build-sentence", "direction": "audio-to-es", "es": "¿Está lejos el museo?", "en": "Is the museum far?", "distractors": ["cerca"], "vocab": ["esta-lejos", "museo"] },
+    { "id": "d042-20", "type": "repeat", "prompt": "Stop someone in the street:", "es": "Perdone, ¿por dónde se va a la Plaza Mayor?", "en": "Excuse me, which way is it to the Plaza Mayor?", "vocab": ["perdone", "por-donde-se-va", "plaza"] },
+    { "id": "d042-21", "type": "repeat", "prompt": "You need cash:", "es": "Perdone, ¿hay un cajero por aquí?", "en": "Excuse me, is there a cash machine around here?", "vocab": ["perdone", "hay-por-aqui", "cajero"] },
+    { "id": "d042-22", "type": "shadow", "es": "Está a cinco minutos andando.", "en": "It's five minutes' walk.", "listenFor": "Both stressed in the middle: mi-NU-tos, an-DAN-do. Está a runs together: es-TA-a.", "vocab": ["a-minutos", "andando"] },
+    { "id": "d042-23", "type": "fill-blank", "prompt": "Review: end of the meal.", "es": "La {{cuenta}}, por favor.", "en": "The bill, please.", "options": ["cuenta", "carta", "cena"], "vocab": ["la-cuenta"] },
+    { "id": "d042-24", "type": "listen-choose", "prompt": "Review: what does he ask?", "audio": "¿Me pones una caña? ¿Ponéis tapa?", "optionsLang": "en", "options": ["For a beer, and if a free tapa comes with it", "For two beers", "For the bill"], "answer": 0, "vocab": ["me-pones", "cana", "poneis-tapa"] }
+  ]
+}

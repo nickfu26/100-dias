@@ -1,0 +1,59 @@
+{
+  "$schema": "./schema.json",
+  "day": 45,
+  "level": 3,
+  "title": { "en": "Just looking", "es": "Solo estoy mirando" },
+  "objectives": [
+    "Answer the shop assistant: Solo estoy mirando",
+    "Ask for another colour or size: ¿Lo tiene en…?",
+    "Ask to try something on, and find the fitting rooms",
+    "Say it doesn't fit: Me queda grande, me queda pequeño"
+  ],
+  "teach": [
+    { "kind": "phrase", "es": "¿Te puedo ayudar? — No, gracias. Solo estoy mirando.", "en": "Can I help you? — No, thanks. I'm just looking.", "note": "What you'll hear as you walk in. Formal: ¿Le puedo ayudar? Solo is written without an accent now; you'll still see sólo on older signs." },
+    { "kind": "phrase", "es": "¿Lo tiene en negro?", "en": "Do you have it in black?", "note": "lo = it (el jersey, el abrigo). For la chaqueta: ¿La tiene en negro? Also: ¿Lo tiene en otra talla? = in another size." },
+    { "kind": "phrase", "es": "¿Puedo probármelo?", "en": "Can I try it on?", "note": "probar + me + lo, written as one word. For la chaqueta: probármela. For los pantalones: probármelos." },
+    { "kind": "phrase", "es": "¿Dónde están los probadores?", "en": "Where are the fitting rooms?", "note": "están = they are (estar). Some shops limit how many items you can take in." },
+    { "kind": "phrase", "es": "¿Qué talla tiene?", "en": "What size are you?", "note": "The assistant asking you. For shoes: ¿Qué número tiene?" },
+    {
+      "kind": "note",
+      "md": "**Sizes.** Spain uses European sizes, which don't match US ones. Look up your EU size before you go.\n\n- Clothes: **la talla** (38, 40, 42… or S, M, L)\n- Shoes: **el número** (38, 42…)"
+    },
+    { "kind": "phrase", "es": "Me queda grande. Me queda pequeño.", "en": "It's too big on me. It's too small on me.", "note": "quedar = to fit. Agree with the item: la chaqueta me queda pequeña. Plural: los pantalones me quedan grandes." }
+  ],
+  "vocab": [
+    { "id": "te-puedo-ayudar", "es": "¿Te puedo ayudar?", "en": "Can I help you?", "pos": "phrase", "ipa": "te ˈpweðo aʝuˈðaɾ", "note": "Heard from shop staff. Formal: ¿Le puedo ayudar?", "tags": ["shopping"] },
+    { "id": "solo-estoy-mirando", "es": "Solo estoy mirando.", "en": "I'm just looking.", "pos": "phrase", "ipa": "ˈsolo esˈtoi miˈɾando", "tags": ["shopping"] },
+    { "id": "lo-tiene-en", "es": "¿Lo tiene en…?", "en": "Do you have it in…?", "pos": "phrase", "ipa": "lo ˈtjene en", "note": "Feminine item: ¿La tiene en…? With tú: ¿Lo tienes en…?", "tags": ["shopping"] },
+    { "id": "puedo-probarmelo", "es": "¿Puedo probármelo?", "en": "Can I try it on?", "pos": "phrase", "ipa": "ˈpweðo pɾoˈβaɾmelo", "note": "Feminine: probármela. Plural: probármelos.", "tags": ["shopping"] },
+    { "id": "donde-estan-los-probadores", "es": "¿Dónde están los probadores?", "en": "Where are the fitting rooms?", "pos": "phrase", "ipa": "ˈdonde esˈtan los pɾoβaˈðoɾes", "note": "el probador = fitting room.", "tags": ["shopping"] },
+    { "id": "que-talla-tiene", "es": "¿Qué talla tiene?", "en": "What size are you?", "pos": "phrase", "ipa": "ˈke ˈtaʝa ˈtjene", "note": "Shoes: ¿Qué número tiene?", "tags": ["shopping"] },
+    { "id": "me-queda", "es": "me queda grande, me queda pequeño", "en": "it's too big / too small on me", "pos": "phrase", "ipa": "me ˈkeða ˈɣɾande, me ˈkeða peˈkeɲo", "note": "Plural: me quedan.", "tags": ["shopping"] }
+  ],
+  "exercises": [
+    { "id": "d045-01", "type": "listen-choose", "audio": "¿Te puedo ayudar?", "options": ["¿Te puedo ayudar?", "¿Te puedo pagar?", "¿Me puedes ayudar?"], "answer": 0, "vocab": ["te-puedo-ayudar"] },
+    { "id": "d045-02", "type": "listen-choose", "audio": "Solo estoy mirando.", "options": ["Solo estoy mirando.", "Solo estoy buscando.", "Solo estoy pagando."], "answer": 0, "vocab": ["solo-estoy-mirando"] },
+    { "id": "d045-03", "type": "listen-choose", "audio": "¿Dónde están los probadores?", "options": ["¿Dónde están los probadores?", "¿Dónde están los aseos?", "¿Dónde está la taquilla?"], "answer": 0, "vocab": ["donde-estan-los-probadores"] },
+    { "id": "d045-04", "type": "match-pairs", "pairs": [["¿Te puedo ayudar?", "Can I help you?"], ["Solo estoy mirando.", "I'm just looking."], ["¿Lo tiene en…?", "Do you have it in…?"], ["¿Puedo probármelo?", "Can I try it on?"], ["¿Qué talla tiene?", "What size are you?"], ["Me queda pequeño.", "It's too small on me."]], "vocab": ["te-puedo-ayudar", "solo-estoy-mirando", "lo-tiene-en", "puedo-probarmelo", "que-talla-tiene", "me-queda"] },
+    { "id": "d045-05", "type": "fill-blank", "es": "Solo estoy {{mirando}}, gracias.", "en": "I'm just looking, thanks.", "options": ["mirando", "hablando", "pagando"], "vocab": ["solo-estoy-mirando"] },
+    { "id": "d045-06", "type": "fill-blank", "es": "¿Lo tiene {{en}} azul?", "en": "Do you have it in blue?", "options": ["en", "de", "con"], "vocab": ["lo-tiene-en", "azul"] },
+    { "id": "d045-07", "type": "fill-blank", "es": "¿Puedo {{probármela}}?", "en": "Can I try it on? (la chaqueta)", "options": ["probármela", "probármelo", "probármelos"], "vocab": ["puedo-probarmelo", "chaqueta"] },
+    { "id": "d045-08", "type": "fill-blank", "es": "¿Dónde {{están}} los probadores?", "en": "Where are the fitting rooms?", "options": ["están", "está", "es"], "vocab": ["donde-estan-los-probadores"] },
+    { "id": "d045-09", "type": "fill-blank", "es": "Me queda {{pequeño}}. ¿Lo tiene en otra talla?", "en": "It's too small. Do you have it in another size? (el jersey)", "options": ["pequeño", "pequeña", "grande"], "vocab": ["me-queda", "lo-tiene-en", "talla", "otro"] },
+    { "id": "d045-10", "type": "listen-choose", "prompt": "What does the assistant want to know?", "audio": "¿Qué talla tiene? ¿La treinta y ocho?", "optionsLang": "en", "options": ["Your size: 38?", "The price: €38?", "Your shoe size: 38?"], "answer": 0, "vocab": ["que-talla-tiene", "treinta", "ocho"] },
+    { "id": "d045-11", "type": "listen-choose", "prompt": "Do they have it?", "audio": "En azul no, pero lo tengo en gris y en negro.", "optionsLang": "en", "options": ["Not in blue, but in grey and black", "Only in blue", "Not in any other colour"], "answer": 0, "vocab": ["lo-tiene-en", "azul", "gris", "negro", "pero"] },
+    { "id": "d045-12", "type": "listen-choose", "prompt": "Where are the fitting rooms?", "audio": "Los probadores están al final, a la derecha.", "optionsLang": "en", "options": ["At the end, on the right", "Next to the entrance", "At the end, on the left"], "answer": 0, "vocab": ["donde-estan-los-probadores", "al-final-de", "a-la-derecha"] },
+    { "id": "d045-13", "type": "listen-choose", "prompt": "What's wrong with the coat?", "audio": "El abrigo me queda grande.", "optionsLang": "en", "options": ["It's too big", "It's too small", "It's too expensive"], "answer": 0, "vocab": ["me-queda", "abrigo"] },
+    { "id": "d045-14", "type": "dictation", "es": "Solo estoy mirando.", "hint": "I'm just looking.", "vocab": ["solo-estoy-mirando"] },
+    { "id": "d045-15", "type": "dictation", "es": "¿Puedo probármelo?", "hint": "Can I try it on? (one word, accent on the a)", "vocab": ["puedo-probarmelo"] },
+    { "id": "d045-16", "type": "dictation", "es": "¿Lo tiene en negro?", "hint": "Do you have it in black?", "vocab": ["lo-tiene-en", "negro"] },
+    { "id": "d045-17", "type": "build-sentence", "es": "¿Lo tiene en una talla más grande?", "en": "Do you have it in a bigger size?", "distractors": ["pequeño", "la"], "vocab": ["lo-tiene-en", "talla", "grande"] },
+    { "id": "d045-18", "type": "build-sentence", "es": "Me queda pequeño. ¿Lo tiene en otra talla?", "en": "It's too small on me. Do you have it in another size?", "distractors": ["grande", "una"], "vocab": ["me-queda", "lo-tiene-en", "otro", "talla"] },
+    { "id": "d045-19", "type": "build-sentence", "direction": "audio-to-es", "es": "Solo estoy mirando, gracias.", "en": "I'm just looking, thanks.", "distractors": ["buscando"], "vocab": ["solo-estoy-mirando"] },
+    { "id": "d045-20", "type": "repeat", "prompt": "The assistant says ¿Te puedo ayudar? You answer:", "es": "No, gracias. Solo estoy mirando.", "en": "No, thanks. I'm just looking.", "vocab": ["solo-estoy-mirando"] },
+    { "id": "d045-21", "type": "repeat", "prompt": "You like a jersey:", "es": "¿Puedo probármelo? ¿Dónde están los probadores?", "en": "Can I try it on? Where are the fitting rooms?", "vocab": ["puedo-probarmelo", "donde-estan-los-probadores"] },
+    { "id": "d045-22", "type": "shadow", "es": "¿Puedo probármelo?", "en": "Can I try it on?", "listenFor": "One long word: pro-BAR-me-lo. The stress stays on BAR, which is why it gets an accent.", "vocab": ["puedo-probarmelo"] },
+    { "id": "d045-23", "type": "listen-choose", "prompt": "Review: when is the Prado free on Sundays?", "audio": "Los domingos, la entrada es gratuita de cinco a siete.", "optionsLang": "en", "options": ["5–7 pm", "All day", "It's closed on Sundays"], "answer": 0, "vocab": ["entrada-gratuita", "domingo", "cinco", "siete"] },
+    { "id": "d045-24", "type": "fill-blank", "prompt": "Review: directions.", "es": "Todo recto y la primera a la {{derecha}}.", "en": "Straight on and the first on the right.", "options": ["derecha", "final", "lado"], "vocab": ["todo-recto", "primera-segunda", "a-la-derecha"] }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "./schema.json",
+  "day": 43,
+  "level": 3,
+  "title": { "en": "Understanding the answer", "es": "Todo recto" },
+  "objectives": [
+    "Follow directions: todo recto, a la derecha, a la izquierda",
+    "Count streets: la primera, la segunda",
+    "Understand where things are: al lado de, enfrente de, al final de",
+    "Walk from Sol to the Plaza Mayor and Gran Vía"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**What you'll hear.** Directions come as quick instructions. You only need to *understand* these verbs:\n\n- **sigue** / **siga** todo recto: keep going straight on\n- **gira** / **gire** a la derecha: turn right\n- **coge** / **coja** la primera calle: take the first street\n\nThe first form is *tú*, the second *usted*. Listen for the direction words: *recto, derecha, izquierda, primera, segunda*."
+    },
+    { "kind": "phrase", "es": "Sigue todo recto.", "en": "Keep going straight on.", "note": "recto = straight. Todo recto is the most common phrase in Spanish directions." },
+    { "kind": "phrase", "es": "Gira a la derecha. Gira a la izquierda.", "en": "Turn right. Turn left.", "note": "derecha = right, izquierda = left. Point as you repeat them back: that's what locals do." },
+    { "kind": "phrase", "es": "La primera a la derecha, la segunda a la izquierda.", "en": "First right, second left.", "note": "The word calle is often dropped: la primera = la primera calle." },
+    {
+      "kind": "minimalPair",
+      "a": "al lado de",
+      "b": "al final de",
+      "aEn": "next to",
+      "bEn": "at the end of",
+      "contrast": "Both start with al. Listen for lado (side) vs final (end)."
+    },
+    { "kind": "phrase", "es": "El metro está enfrente del banco.", "en": "The metro is opposite the bank.", "note": "enfrente de = opposite. de + el = del." },
+    {
+      "kind": "note",
+      "md": "**Real Madrid directions, from Sol:**\n\n- **Plaza Mayor**: take *calle Mayor* straight on. The plaza is on the left, through an archway.\n- **Gran Vía**: take *calle de la Montera* straight up. Gran Vía is at the end of the street.\n\nAt Sol, look for the *Kilómetro Cero* plaque on the ground: the point all Spain's road distances are measured from."
+    }
+  ],
+  "vocab": [
+    { "id": "todo-recto", "es": "todo recto", "en": "straight on", "pos": "phrase", "ipa": "ˈtoðo ˈrekto", "note": "Sigue / siga todo recto = keep going straight on.", "tags": ["directions"] },
+    { "id": "a-la-derecha", "es": "a la derecha", "en": "on the right; to the right", "pos": "phrase", "ipa": "a la ðeˈɾetʃa", "note": "Gira a la derecha = turn right.", "tags": ["directions"] },
+    { "id": "a-la-izquierda", "es": "a la izquierda", "en": "on the left; to the left", "pos": "phrase", "ipa": "a la iθˈkjeɾða", "tags": ["directions"] },
+    { "id": "primera-segunda", "es": "la primera, la segunda", "en": "the first, the second (street)", "pos": "phrase", "ipa": "la pɾiˈmeɾa, la seˈɣunda", "note": "Masculine: el primero, el segundo.", "tags": ["directions"] },
+    { "id": "al-lado-de", "es": "al lado de", "en": "next to", "pos": "prep", "ipa": "al ˈlaðo ðe", "note": "de + el = del: al lado del hotel.", "tags": ["directions"] },
+    { "id": "enfrente-de", "es": "enfrente de", "en": "opposite", "pos": "prep", "ipa": "eɱˈfɾente ðe", "tags": ["directions"] },
+    { "id": "al-final-de", "es": "al final de", "en": "at the end of", "pos": "prep", "ipa": "al fiˈnal de", "note": "Al final de la calle = at the end of the street.", "tags": ["directions"] }
+  ],
+  "exercises": [
+    { "id": "d043-01", "type": "listen-choose", "audio": "a la derecha", "options": ["a la derecha", "a la izquierda", "al lado"], "answer": 0, "vocab": ["a-la-derecha"] },
+    { "id": "d043-02", "type": "listen-choose", "audio": "todo recto", "options": ["todo recto", "todo cerca", "todo bien"], "answer": 0, "vocab": ["todo-recto"] },
+    { "id": "d043-03", "type": "listen-choose", "audio": "enfrente de", "options": ["enfrente de", "al lado de", "al final de"], "answer": 0, "vocab": ["enfrente-de"] },
+    { "id": "d043-04", "type": "match-pairs", "pairs": [["todo recto", "straight on"], ["a la derecha", "on the right"], ["a la izquierda", "on the left"], ["al lado de", "next to"], ["enfrente de", "opposite"], ["al final de", "at the end of"]], "vocab": ["todo-recto", "a-la-derecha", "a-la-izquierda", "al-lado-de", "enfrente-de", "al-final-de"] },
+    { "id": "d043-05", "type": "fill-blank", "es": "Sigue todo {{recto}}.", "en": "Keep going straight on.", "options": ["recto", "bien", "aquí"], "vocab": ["todo-recto"] },
+    { "id": "d043-06", "type": "fill-blank", "es": "Gira a la {{izquierda}}.", "en": "Turn left.", "options": ["izquierda", "derecha", "primera"], "vocab": ["a-la-izquierda"] },
+    { "id": "d043-07", "type": "fill-blank", "es": "Es la {{segunda}} calle a la derecha.", "en": "It's the second street on the right.", "options": ["segunda", "primera", "dos"], "vocab": ["primera-segunda", "a-la-derecha", "calle"] },
+    { "id": "d043-08", "type": "fill-blank", "es": "El banco está al {{lado}} del hotel.", "en": "The bank is next to the hotel.", "options": ["lado", "final", "enfrente"], "vocab": ["al-lado-de", "banco", "hotel"] },
+    { "id": "d043-09", "type": "fill-blank", "es": "La farmacia está {{enfrente}} de la estación.", "en": "The pharmacy is opposite the station.", "options": ["enfrente", "lado", "final"], "vocab": ["enfrente-de", "farmacia", "estacion"] },
+    { "id": "d043-10", "type": "listen-choose", "prompt": "Where is the museum?", "audio": "Sigue todo recto. El museo está al final de la calle.", "optionsLang": "en", "options": ["At the end of the street", "First on the right", "Opposite the station"], "answer": 0, "vocab": ["todo-recto", "al-final-de", "museo"] },
+    { "id": "d043-11", "type": "listen-choose", "prompt": "Which way?", "audio": "La primera a la derecha y la segunda a la izquierda.", "optionsLang": "en", "options": ["First right, then second left", "First left, then second right", "Second right, then first left"], "answer": 0, "vocab": ["primera-segunda", "a-la-derecha", "a-la-izquierda"] },
+    { "id": "d043-12", "type": "listen-choose", "prompt": "Where is the metro?", "audio": "El metro está enfrente del banco.", "optionsLang": "en", "options": ["Opposite the bank", "Next to the bank", "At the end of the street"], "answer": 0, "vocab": ["enfrente-de", "metro", "banco"] },
+    { "id": "d043-13", "type": "listen-choose", "prompt": "From Sol: how do you get to the Plaza Mayor?", "audio": "¿La Plaza Mayor? Sigue la calle Mayor todo recto. Está a la izquierda.", "optionsLang": "en", "options": ["Straight along calle Mayor, on the left", "Straight along calle Mayor, on the right", "First left, then straight on"], "answer": 0, "vocab": ["todo-recto", "a-la-izquierda", "calle", "plaza"] },
+    { "id": "d043-14", "type": "dictation", "es": "a la derecha", "hint": "on the right", "vocab": ["a-la-derecha"] },
+    { "id": "d043-15", "type": "dictation", "es": "a la izquierda", "hint": "on the left (z, qu)", "vocab": ["a-la-izquierda"] },
+    { "id": "d043-16", "type": "dictation", "es": "todo recto", "hint": "straight on", "vocab": ["todo-recto"] },
+    { "id": "d043-17", "type": "build-sentence", "es": "Sigue todo recto y gira a la derecha.", "en": "Keep going straight on and turn right.", "distractors": ["izquierda", "lado"], "vocab": ["todo-recto", "a-la-derecha"] },
+    { "id": "d043-18", "type": "build-sentence", "es": "El hotel está al lado del museo.", "en": "The hotel is next to the museum.", "distractors": ["enfrente", "final"], "vocab": ["al-lado-de", "hotel", "museo"] },
+    { "id": "d043-19", "type": "build-sentence", "direction": "audio-to-es", "es": "Es la primera calle a la izquierda.", "en": "It's the first street on the left.", "distractors": ["segunda"], "vocab": ["primera-segunda", "a-la-izquierda", "calle"] },
+    { "id": "d043-20", "type": "repeat", "prompt": "Check you understood:", "es": "¿A la derecha o a la izquierda?", "en": "Right or left?", "vocab": ["a-la-derecha", "a-la-izquierda"] },
+    { "id": "d043-21", "type": "repeat", "prompt": "Repeat the directions back:", "es": "Todo recto, y la segunda a la derecha.", "en": "Straight on, and the second on the right.", "vocab": ["todo-recto", "primera-segunda", "a-la-derecha"] },
+    { "id": "d043-22", "type": "shadow", "es": "a la izquierda", "en": "on the left", "listenFor": "iz-KIER-da: the z is a th sound in Madrid, and qu is a hard k.", "vocab": ["a-la-izquierda"] },
+    { "id": "d043-23", "type": "listen-choose", "prompt": "Review: how far is it?", "audio": "¿Está lejos? — No, a cinco minutos andando.", "optionsLang": "en", "options": ["Five minutes' walk", "Fifteen minutes' walk", "Five minutes by metro"], "answer": 0, "vocab": ["esta-lejos", "a-minutos", "andando"] },
+    { "id": "d043-24", "type": "repeat", "prompt": "Review: ask the way to Sol.", "es": "Perdone, ¿por dónde se va a Sol?", "en": "Excuse me, which way is it to Sol?", "vocab": ["perdone", "por-donde-se-va"] }
+  ]
+}

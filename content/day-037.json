@@ -7,7 +7,8 @@
     "Ask what tapas a bar has",
     "Order a ración, a media ración, or something to share",
     "Ask what's in a dish with ¿Qué lleva?",
-    "Ask if a free tapa comes with your drink"
+    "Ask if a free tapa comes with your drink",
+    "Check whether a dish has meat, and say you're vegetarian"
   ],
   "teach": [
     { "kind": "phrase", "es": "¿Qué tapas tenéis?", "en": "What tapas do you have?", "note": "tenéis = you all have (vosotros). In Spain you talk to the bar as a group: ¿Tenéis…?" },
@@ -17,6 +18,7 @@
     },
     { "kind": "phrase", "es": "Una ración de croquetas y media de calamares.", "en": "A plate of croquettes and a half plate of squid.", "note": "After the first one, media alone means media ración." },
     { "kind": "phrase", "es": "¿Qué lleva?", "en": "What's in it?", "note": "Literally 'What does it carry?'. The answer: Lleva jamón y queso. Useful for anything unfamiliar on the board." },
+    { "kind": "phrase", "es": "¿Lleva carne? Soy vegetariano.", "en": "Does it have meat in it? I'm vegetarian.", "note": "A woman says soy vegetariana. Ask about jamón too: ham, chorizo and tuna turn up in dishes that look vegetarian, and some people don't count jamón as carne. ¿Lleva jamón? ¿Lleva pescado? Vegan = vegano, vegana." },
     { "kind": "phrase", "es": "Unos huevos rotos para compartir.", "en": "Huevos rotos to share.", "note": "A Madrid classic: fried eggs broken over chips, often with jamón. Para compartir also tells the waiter to bring extra plates." },
     {
       "kind": "note",
@@ -30,11 +32,13 @@
     { "id": "media-racion", "es": "media ración", "en": "half plate", "pos": "phrase", "ipa": "ˈmeðja raˈθjon", "note": "Ask first: ¿Tenéis media ración?", "tags": ["restaurant"] },
     { "id": "que-lleva", "es": "¿Qué lleva?", "en": "What's in it?", "pos": "phrase", "ipa": "ˈke ˈʝeβa", "note": "Answer: Lleva… = It has…", "tags": ["restaurant", "survival"] },
     { "id": "para-compartir", "es": "para compartir", "en": "to share", "pos": "phrase", "ipa": "ˈpaɾa kompaɾˈtiɾ", "tags": ["restaurant"] },
-    { "id": "poneis-tapa", "es": "¿Ponéis tapa?", "en": "Do you give a free tapa (with drinks)?", "pos": "phrase", "ipa": "poˈneis ˈtapa", "tags": ["restaurant", "madrid"] }
+    { "id": "poneis-tapa", "es": "¿Ponéis tapa?", "en": "Do you give a free tapa (with drinks)?", "pos": "phrase", "ipa": "poˈneis ˈtapa", "tags": ["restaurant", "madrid"] },
+    { "id": "lleva-carne", "es": "¿Lleva carne?", "en": "Does it have meat in it?", "pos": "phrase", "ipa": "ˈʝeβa ˈkaɾne", "note": "Also ¿Lleva jamón? ¿Lleva pescado?", "tags": ["restaurant", "survival"] },
+    { "id": "soy-vegetariano", "es": "Soy vegetariano, soy vegetariana.", "en": "I'm vegetarian.", "pos": "phrase", "ipa": "soi βexetaˈɾjano, soi βexetaˈɾjana", "note": "vegetariano (man), vegetariana (woman). Vegan: vegano, vegana.", "tags": ["restaurant", "survival"] }
   ],
   "exercises": [
     { "id": "d037-01", "type": "listen-choose", "audio": "¿Qué lleva?", "options": ["¿Qué lleva?", "¿Qué llega?", "¿Qué hay?"], "answer": 0, "vocab": ["que-lleva"] },
-    { "id": "d037-02", "type": "listen-choose", "audio": "media ración", "options": ["media ración", "una ración", "la estación"], "answer": 0, "vocab": ["media-racion"] },
+    { "id": "d037-02", "type": "listen-choose", "audio": "¿Lleva carne?", "options": ["¿Lleva carne?", "¿Lleva leche?", "¿Qué lleva?"], "answer": 0, "vocab": ["lleva-carne"] },
     { "id": "d037-03", "type": "listen-choose", "audio": "¿Ponéis tapa?", "options": ["¿Ponéis tapa?", "¿Me pones una tapa?", "¿Qué tapas tenéis?"], "answer": 0, "vocab": ["poneis-tapa"] },
     { "id": "d037-04", "type": "match-pairs", "pairs": [["¿Qué tapas tenéis?", "What tapas do you have?"], ["Una ración de…", "A plate of…"], ["media ración", "half plate"], ["¿Qué lleva?", "What's in it?"], ["para compartir", "to share"], ["¿Ponéis tapa?", "Is there a free tapa?"]], "vocab": ["que-tapas-teneis", "una-racion-de", "media-racion", "que-lleva", "para-compartir", "poneis-tapa"] },
     { "id": "d037-05", "type": "fill-blank", "es": "¿Qué tapas {{tenéis}}?", "en": "What tapas do you have?", "options": ["tenéis", "tienes", "tengo"], "prompt": "Talking to the bar (vosotros).", "vocab": ["que-tapas-teneis"] },
@@ -47,8 +51,8 @@
     { "id": "d037-12", "type": "listen-choose", "prompt": "What do they order?", "audio": "Una ración de calamares y media de croquetas.", "optionsLang": "en", "options": ["Full squid + half croquettes", "Half squid + full croquettes", "Two full plates"], "answer": 0, "vocab": ["una-racion-de", "calamares", "croquetas"] },
     { "id": "d037-13", "type": "listen-choose", "prompt": "What's the problem?", "audio": "No tenemos media ración. Ración, sí.", "optionsLang": "en", "options": ["No half plates, only full ones", "No full plates, only half ones", "They're out of food"], "answer": 0, "vocab": ["media-racion"] },
     { "id": "d037-14", "type": "dictation", "es": "¿Qué lleva?", "hint": "What's in it?", "vocab": ["que-lleva"] },
-    { "id": "d037-15", "type": "dictation", "es": "para compartir", "hint": "to share", "vocab": ["para-compartir"] },
-    { "id": "d037-16", "type": "dictation", "es": "media ración", "hint": "half plate", "vocab": ["media-racion"] },
+    { "id": "d037-15", "type": "repeat", "prompt": "You don't eat meat. Before you order, ask:", "es": "Perdón, ¿lleva carne o jamón?", "en": "Excuse me, does it have meat or ham in it?", "vocab": ["lleva-carne", "jamon"] },
+    { "id": "d037-16", "type": "listen-choose", "prompt": "What does she tell the waiter?", "audio": "Soy vegetariana. ¿Las croquetas llevan carne?", "optionsLang": "en", "options": ["She's vegetarian: do the croquettes have meat?", "She wants the croquettes with meat", "She wants a half plate of croquettes"], "answer": 0, "vocab": ["soy-vegetariano", "lleva-carne", "croquetas"] },
     { "id": "d037-17", "type": "build-sentence", "es": "¿Qué tapas tenéis hoy?", "en": "What tapas do you have today?", "distractors": ["tienes", "hay"], "vocab": ["que-tapas-teneis", "hoy"] },
     { "id": "d037-18", "type": "build-sentence", "es": "Una ración de croquetas para compartir, por favor.", "en": "A plate of croquettes to share, please.", "distractors": ["media", "con"], "vocab": ["una-racion-de", "croquetas", "para-compartir"] },
     { "id": "d037-19", "type": "build-sentence", "direction": "audio-to-es", "es": "¿Tenéis media ración de calamares?", "en": "Do you have a half plate of squid?", "distractors": ["tienes"], "vocab": ["media-racion", "calamares"] },

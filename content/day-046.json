@@ -1,0 +1,62 @@
+{
+  "$schema": "./schema.json",
+  "day": 46,
+  "level": 3,
+  "title": { "en": "The January sales", "es": "Las rebajas" },
+  "objectives": [
+    "Ask if something is reduced and read the discount",
+    "Say you'll take it: Me lo llevo",
+    "Ask to exchange it, and ask for a gift receipt",
+    "Ask for the tax-free form as a non-EU resident"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**Las rebajas** will be on when you arrive. The big shopping streets:\n\n- **Gran Vía**: the big chains\n- **calle de Preciados**: a pedestrian street from Sol to Callao\n- **El Corte Inglés** (Preciados and Callao): Spain's department store, with everything on many floors\n\nPrices are marked as a percentage: *-30%* or *30% de descuento*."
+    },
+    { "kind": "phrase", "es": "¿Está rebajado?", "en": "Is it reduced?", "note": "For a feminine item: ¿Está rebajada la chaqueta? Plural: ¿Están rebajados los zapatos?" },
+    { "kind": "phrase", "es": "Tiene el treinta por ciento de descuento.", "en": "It's 30% off.", "note": "por ciento = percent. Ciento has a th sound in Madrid. ¿Cuánto cuesta ahora? = How much is it now?" },
+    { "kind": "phrase", "es": "Me lo llevo.", "en": "I'll take it.", "note": "Literally 'I take it with me'. For a feminine item: Me la llevo. Plural: Me los llevo." },
+    { "kind": "phrase", "es": "¿Puedo cambiarlo? ¿Me pone un ticket regalo?", "en": "Can I exchange it? Can you give me a gift receipt?", "note": "Big chains usually let you exchange or return with the receipt, but rules can be stricter in the sales, so ask. You may hear: ¿Es para regalo? = Is it a gift?" },
+    {
+      "kind": "note",
+      "md": "**Tax free (VAT refund).** You live outside the EU, so you can get Spain's VAT (IVA) back on things you buy and take home.\n\n- At the till, say **¿Me hace el tax free?** and show your **pasaporte**. Spaniards say *tax free* in English.\n- The shop gives you an electronic form (DIVA).\n- You leave the EU from Barajas on your flight to Marrakesh, so you validate the form there, at a DIVA kiosk, **before** you check in your bags. Keep what you bought where you can show it."
+    },
+    { "kind": "phrase", "es": "¿Me hace el tax free, por favor?", "en": "Can you do the tax-free form, please?", "note": "hace = you do, make (usted). With tú: ¿Me haces el tax free?" }
+  ],
+  "vocab": [
+    { "id": "rebajas", "es": "las rebajas", "en": "the sales", "pos": "noun", "gender": "f", "ipa": "las reˈβaxas", "note": "Winter sales start in early January.", "tags": ["shopping", "madrid"] },
+    { "id": "esta-rebajado", "es": "¿Está rebajado?", "en": "Is it reduced?", "pos": "phrase", "ipa": "esˈta reβaˈxaðo", "note": "Feminine: rebajada. Plural: rebajados, rebajadas.", "tags": ["shopping"] },
+    { "id": "por-ciento-de-descuento", "es": "el treinta por ciento de descuento", "en": "30% off", "pos": "phrase", "ipa": "el ˈtɾeinta poɾ ˈθjento ðe ðesˈkwento", "note": "por ciento = percent.", "tags": ["shopping"] },
+    { "id": "me-lo-llevo", "es": "Me lo llevo.", "en": "I'll take it.", "pos": "phrase", "ipa": "me lo ˈʝeβo", "note": "Feminine: Me la llevo. Plural: Me los llevo.", "tags": ["shopping", "survival"] },
+    { "id": "puedo-cambiarlo", "es": "¿Puedo cambiarlo?", "en": "Can I exchange it?", "pos": "phrase", "ipa": "ˈpweðo kamˈbjaɾlo", "note": "Feminine: cambiarla.", "tags": ["shopping"] },
+    { "id": "ticket-regalo", "es": "el ticket regalo", "en": "gift receipt", "pos": "noun", "gender": "m", "ipa": "el ˈtiket reˈɣalo", "note": "el regalo = gift. el ticket = receipt.", "tags": ["shopping"] },
+    { "id": "me-hace-el-tax-free", "es": "¿Me hace el tax free?", "en": "Can you do the tax-free form?", "pos": "phrase", "ipa": "me ˈaθe el taks ˈfɾi", "note": "Bring your passport. Validate it at Barajas before you check in your bags.", "tags": ["shopping"] }
+  ],
+  "exercises": [
+    { "id": "d046-01", "type": "listen-choose", "audio": "¿Está rebajado?", "options": ["¿Está rebajado?", "¿Está cerrado?", "¿Está incluido?"], "answer": 0, "vocab": ["esta-rebajado"] },
+    { "id": "d046-02", "type": "listen-choose", "audio": "Me lo llevo.", "options": ["Me lo llevo.", "Me lo pruebo.", "Me llamo Lola."], "answer": 0, "vocab": ["me-lo-llevo"] },
+    { "id": "d046-03", "type": "listen-choose", "audio": "el ticket regalo", "options": ["el ticket regalo", "la tarjeta regalo", "el tax free"], "answer": 0, "vocab": ["ticket-regalo"] },
+    { "id": "d046-04", "type": "match-pairs", "pairs": [["las rebajas", "the sales"], ["¿Está rebajado?", "Is it reduced?"], ["Me lo llevo.", "I'll take it."], ["¿Puedo cambiarlo?", "Can I exchange it?"], ["el ticket regalo", "gift receipt"], ["¿Me hace el tax free?", "Can you do the tax-free form?"]], "vocab": ["rebajas", "esta-rebajado", "me-lo-llevo", "puedo-cambiarlo", "ticket-regalo", "me-hace-el-tax-free"] },
+    { "id": "d046-05", "type": "fill-blank", "es": "¿El abrigo está {{rebajado}}?", "en": "Is the coat reduced?", "options": ["rebajado", "rebajada", "cerrado"], "prompt": "abrigo is masculine.", "vocab": ["esta-rebajado", "abrigo"] },
+    { "id": "d046-06", "type": "fill-blank", "es": "Tiene el {{treinta}} por ciento de descuento.", "en": "It's 30% off.", "options": ["treinta", "trece", "tres"], "vocab": ["por-ciento-de-descuento"] },
+    { "id": "d046-07", "type": "fill-blank", "es": "Me lo {{llevo}}.", "en": "I'll take it.", "options": ["llevo", "lleva", "llevas"], "vocab": ["me-lo-llevo"] },
+    { "id": "d046-08", "type": "fill-blank", "es": "¿Puedo {{cambiarlo}}?", "en": "Can I exchange it? (el jersey)", "options": ["cambiarlo", "cambiarla", "cambiarlos"], "vocab": ["puedo-cambiarlo", "jersey"] },
+    { "id": "d046-09", "type": "fill-blank", "es": "Un ticket {{regalo}}, por favor.", "en": "A gift receipt, please.", "options": ["regalo", "rebajas", "descuento"], "vocab": ["ticket-regalo"] },
+    { "id": "d046-10", "type": "listen-choose", "prompt": "How much is it now?", "audio": "Con el treinta por ciento de descuento, cuesta cincuenta y seis euros.", "optionsLang": "en", "options": ["€56", "€30", "€86"], "answer": 0, "vocab": ["por-ciento-de-descuento", "cuesta", "cincuenta", "seis", "euro"] },
+    { "id": "d046-11", "type": "listen-choose", "prompt": "Can she exchange it?", "audio": "Sí, con el ticket puedes cambiarlo en treinta días.", "optionsLang": "en", "options": ["Yes, within 30 days with the receipt", "No, sale items can't be exchanged", "Yes, without the receipt"], "answer": 0, "vocab": ["puedo-cambiarlo", "treinta"] },
+    { "id": "d046-12", "type": "listen-choose", "prompt": "What does the assistant ask?", "audio": "¿Es para regalo?", "optionsLang": "en", "options": ["If it's a gift", "If it's on sale", "If you want to try it on"], "answer": 0, "vocab": ["ticket-regalo"] },
+    { "id": "d046-13", "type": "listen-choose", "prompt": "What does the shop need for the tax-free form?", "audio": "Para el tax free, necesito su pasaporte.", "optionsLang": "en", "options": ["Your passport", "Your card", "Your hotel"], "answer": 0, "vocab": ["me-hace-el-tax-free", "necesito"] },
+    { "id": "d046-14", "type": "dictation", "es": "las rebajas", "hint": "the sales", "vocab": ["rebajas"] },
+    { "id": "d046-15", "type": "dictation", "es": "Me lo llevo.", "hint": "I'll take it.", "vocab": ["me-lo-llevo"] },
+    { "id": "d046-16", "type": "dictation", "es": "¿Está rebajado?", "hint": "Is it reduced?", "vocab": ["esta-rebajado"] },
+    { "id": "d046-17", "type": "build-sentence", "es": "Me lo llevo, con tarjeta.", "en": "I'll take it, by card.", "distractors": ["llevas", "en"], "vocab": ["me-lo-llevo", "con-tarjeta"] },
+    { "id": "d046-18", "type": "build-sentence", "es": "¿Puedo cambiarlo con el ticket regalo?", "en": "Can I exchange it with the gift receipt?", "distractors": ["cambiarla", "de"], "vocab": ["puedo-cambiarlo", "ticket-regalo"] },
+    { "id": "d046-19", "type": "build-sentence", "direction": "audio-to-es", "es": "¿Cuánto cuesta ahora?", "en": "How much is it now?", "distractors": ["cuestan"], "vocab": ["cuanto", "cuesta", "ahora"] },
+    { "id": "d046-20", "type": "repeat", "prompt": "You like the jersey:", "es": "Me lo llevo. ¿Puedo cambiarlo?", "en": "I'll take it. Can I exchange it?", "vocab": ["me-lo-llevo", "puedo-cambiarlo"] },
+    { "id": "d046-21", "type": "repeat", "prompt": "At the till, passport in hand:", "es": "¿Me hace el tax free, por favor?", "en": "Can you do the tax-free form, please?", "vocab": ["me-hace-el-tax-free"] },
+    { "id": "d046-22", "type": "shadow", "es": "el treinta por ciento de descuento", "en": "30% off", "listenFor": "ciento with a th sound: THYEN-to. The c in descuento is a k: des-KWEN-to.", "vocab": ["por-ciento-de-descuento"] },
+    { "id": "d046-23", "type": "listen-choose", "prompt": "Review: what does she say?", "audio": "Me queda pequeño. ¿Lo tiene en otra talla?", "optionsLang": "en", "options": ["It's too small; is there another size?", "It's too big; is there another colour?", "Can I try it on?"], "answer": 0, "vocab": ["me-queda", "lo-tiene-en", "talla"] },
+    { "id": "d046-24", "type": "repeat", "prompt": "Review: ask the way to Gran Vía.", "es": "Perdone, ¿por dónde se va a la Gran Vía?", "en": "Excuse me, which way is it to Gran Vía?", "vocab": ["perdone", "por-donde-se-va"] }
+  ]
+}

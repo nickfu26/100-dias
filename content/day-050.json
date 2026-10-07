@@ -1,0 +1,58 @@
+{
+  "$schema": "./schema.json",
+  "day": 50,
+  "level": 3,
+  "title": { "en": "Checking out", "es": "Dejar la habitación" },
+  "objectives": [
+    "Check out: Quiero dejar la habitación",
+    "Leave your suitcase at the hotel for the day",
+    "Ask reception to call a taxi",
+    "Say what you have to do: tengo que…"
+  ],
+  "teach": [
+    { "kind": "phrase", "es": "Buenos días. Quiero dejar la habitación.", "en": "Good morning. I'd like to check out.", "note": "Literally 'I want to leave the room'. Check-out is usually at 12:00. Ask: ¿A qué hora tengo que dejar la habitación?" },
+    { "kind": "phrase", "es": "Tengo que estar en el aeropuerto a las tres.", "en": "I have to be at the airport at three.", "note": "tengo que + verb = I have to… The same tener you know: tengo que pagar, tengo que ir." },
+    { "kind": "phrase", "es": "¿Puedo dejar la maleta aquí?", "en": "Can I leave my suitcase here?", "note": "la maleta = suitcase. Almost every hotel will keep it after check-out, often free. Your Sunday flight to Marrakesh makes this useful." },
+    { "kind": "phrase", "es": "¿Me pide un taxi para el aeropuerto?", "en": "Could you call me a taxi to the airport?", "note": "pide = you ask for, order (usted). Literally 'Will you ask for a taxi for me?'." },
+    {
+      "kind": "note",
+      "md": "**Taxis in Madrid** are white with a red diagonal stripe. A green light on the roof means it's free.\n\nBetween the city centre (inside the M-30 ring road) and Barajas there's a **fixed fare**, whichever terminal. The price is shown inside the taxi. Apps like Uber and Cabify work too."
+    },
+    { "kind": "phrase", "es": "¿Me hace la factura a nombre de Smith?", "en": "Can you make out the invoice to Smith?", "note": "la factura = a full invoice with your name, for expenses. A simple receipt is el ticket or el recibo." }
+  ],
+  "vocab": [
+    { "id": "quiero-dejar-la-habitacion", "es": "Quiero dejar la habitación.", "en": "I'd like to check out.", "pos": "phrase", "ipa": "ˈkjeɾo ðeˈxaɾ la aβitaˈθjon", "note": "dejar = to leave (something).", "tags": ["hotel"] },
+    { "id": "tengo-que", "es": "tengo que…", "en": "I have to…", "pos": "phrase", "ipa": "ˈteŋgo ke", "note": "+ verb: tengo que ir, tengo que pagar.", "tags": ["survival"] },
+    { "id": "maleta", "es": "la maleta", "en": "suitcase", "pos": "noun", "gender": "f", "ipa": "maˈleta", "tags": ["hotel", "airport"] },
+    { "id": "puedo-dejar-la-maleta", "es": "¿Puedo dejar la maleta aquí?", "en": "Can I leave my suitcase here?", "pos": "phrase", "ipa": "ˈpweðo ðeˈxaɾ la maˈleta aˈki", "tags": ["hotel"] },
+    { "id": "taxi", "es": "el taxi", "en": "taxi", "pos": "noun", "gender": "m", "ipa": "ˈtaksi", "tags": ["transport"] },
+    { "id": "me-pide-un-taxi", "es": "¿Me pide un taxi?", "en": "Could you call me a taxi?", "pos": "phrase", "ipa": "me ˈpiðe un ˈtaksi", "note": "With tú: ¿Me pides un taxi?", "tags": ["hotel", "transport"] },
+    { "id": "factura", "es": "la factura", "en": "invoice (with your name)", "pos": "noun", "gender": "f", "ipa": "fakˈtuɾa", "note": "A simple receipt: el ticket, el recibo.", "tags": ["hotel", "shopping"] }
+  ],
+  "exercises": [
+    { "id": "d050-01", "type": "listen-choose", "audio": "Quiero dejar la habitación.", "options": ["Quiero dejar la habitación.", "Quiero ver la habitación.", "Quiero otra habitación."], "answer": 0, "vocab": ["quiero-dejar-la-habitacion"] },
+    { "id": "d050-02", "type": "listen-choose", "audio": "la maleta", "options": ["la maleta", "la mesa", "la entrada"], "answer": 0, "vocab": ["maleta"] },
+    { "id": "d050-03", "type": "listen-choose", "audio": "¿Me pide un taxi?", "options": ["¿Me pide un taxi?", "¿Me pone un té?", "¿Me trae un taxi?"], "answer": 0, "vocab": ["me-pide-un-taxi"] },
+    { "id": "d050-04", "type": "match-pairs", "pairs": [["Quiero dejar la habitación.", "I'd like to check out."], ["tengo que…", "I have to…"], ["la maleta", "suitcase"], ["¿Puedo dejar la maleta aquí?", "Can I leave my suitcase here?"], ["¿Me pide un taxi?", "Could you call me a taxi?"], ["la factura", "invoice"]], "vocab": ["quiero-dejar-la-habitacion", "tengo-que", "maleta", "puedo-dejar-la-maleta", "me-pide-un-taxi", "factura"] },
+    { "id": "d050-05", "type": "fill-blank", "es": "Quiero {{dejar}} la habitación.", "en": "I'd like to check out.", "options": ["dejar", "tomar", "llegar"], "vocab": ["quiero-dejar-la-habitacion"] },
+    { "id": "d050-06", "type": "fill-blank", "es": "¿Puedo dejar la {{maleta}} aquí?", "en": "Can I leave my suitcase here?", "options": ["maleta", "mesa", "cola"], "vocab": ["puedo-dejar-la-maleta", "maleta"] },
+    { "id": "d050-07", "type": "fill-blank", "es": "¿Me {{pide}} un taxi, por favor?", "en": "Could you call me a taxi, please?", "options": ["pide", "pones", "cobras"], "vocab": ["me-pide-un-taxi"] },
+    { "id": "d050-08", "type": "fill-blank", "es": "¿Me hace la {{factura}} a nombre de Smith?", "en": "Can you make out the invoice to Smith?", "options": ["factura", "maleta", "cola"], "vocab": ["factura"] },
+    { "id": "d050-09", "type": "fill-blank", "es": "{{Tengo}} que estar en el aeropuerto a las tres.", "en": "I have to be at the airport at three.", "options": ["Tengo", "Estoy", "Soy"], "vocab": ["tengo-que", "aeropuerto", "a-las"] },
+    { "id": "d050-10", "type": "listen-choose", "prompt": "When is check-out?", "audio": "Tiene que dejar la habitación a las doce.", "optionsLang": "en", "options": ["12:00", "2:00", "10:00"], "answer": 0, "vocab": ["tengo-que", "quiero-dejar-la-habitacion", "a-las", "doce"] },
+    { "id": "d050-11", "type": "listen-choose", "prompt": "Where can he leave the suitcase?", "audio": "Sí. La maleta, aquí, al lado de la entrada.", "optionsLang": "en", "options": ["Here, next to the entrance", "In the room", "At the station"], "answer": 0, "vocab": ["maleta", "al-lado-de", "entrada"] },
+    { "id": "d050-12", "type": "listen-choose", "prompt": "When does the taxi arrive?", "audio": "El taxi llega en cinco minutos.", "optionsLang": "en", "options": ["In 5 minutes", "In 15 minutes", "In 50 minutes"], "answer": 0, "vocab": ["taxi", "llegar", "a-minutos"] },
+    { "id": "d050-13", "type": "listen-choose", "prompt": "What does reception ask?", "audio": "¿Algo del minibar?", "optionsLang": "en", "options": ["Did you take anything from the minibar?", "Do you want a drink?", "Anything else for breakfast?"], "answer": 0, "vocab": ["algo-mas"] },
+    { "id": "d050-14", "type": "dictation", "es": "la maleta", "hint": "suitcase", "vocab": ["maleta"] },
+    { "id": "d050-15", "type": "dictation", "es": "la factura", "hint": "invoice", "vocab": ["factura"] },
+    { "id": "d050-16", "type": "dictation", "es": "¿Me pide un taxi?", "hint": "Could you call me a taxi?", "vocab": ["me-pide-un-taxi"] },
+    { "id": "d050-17", "type": "build-sentence", "es": "¿Puedo dejar la maleta aquí?", "en": "Can I leave my suitcase here?", "distractors": ["mesa", "allí"], "vocab": ["puedo-dejar-la-maleta"] },
+    { "id": "d050-18", "type": "build-sentence", "es": "Tengo que estar en el aeropuerto a las tres.", "en": "I have to be at the airport at three.", "distractors": ["soy", "de"], "vocab": ["tengo-que", "aeropuerto", "a-las"] },
+    { "id": "d050-19", "type": "build-sentence", "direction": "audio-to-es", "es": "Quiero dejar la habitación, por favor.", "en": "I'd like to check out, please.", "distractors": ["tener"], "vocab": ["quiero-dejar-la-habitacion"] },
+    { "id": "d050-20", "type": "repeat", "prompt": "At reception, last morning:", "es": "Buenos días. Quiero dejar la habitación. ¿Puedo dejar la maleta aquí?", "en": "Good morning. I'd like to check out. Can I leave my suitcase here?", "vocab": ["quiero-dejar-la-habitacion", "puedo-dejar-la-maleta", "buenos-dias"] },
+    { "id": "d050-21", "type": "repeat", "prompt": "You need to get to Barajas:", "es": "¿Me pide un taxi para el aeropuerto, por favor?", "en": "Could you call me a taxi to the airport, please?", "vocab": ["me-pide-un-taxi", "aeropuerto"] },
+    { "id": "d050-22", "type": "shadow", "es": "¿Me pide un taxi?", "en": "Could you call me a taxi?", "listenFor": "taxi = TAK-si. In pide the d is soft, close to the th in 'this'.", "vocab": ["me-pide-un-taxi"] },
+    { "id": "d050-23", "type": "listen-choose", "prompt": "Review: what are the problems?", "audio": "No hay agua caliente y la luz no funciona.", "optionsLang": "en", "options": ["No hot water, and the light doesn't work", "No towels, and the heating is off", "No hot water, and the wifi doesn't work"], "answer": 0, "vocab": ["agua-caliente", "luz", "no-funciona"] },
+    { "id": "d050-24", "type": "repeat", "prompt": "Review: ask for another towel.", "es": "¿Me puede traer otra toalla, por favor?", "en": "Could you bring me another towel, please?", "vocab": ["me-puede-traer", "toalla", "otro"] }
+  ]
+}

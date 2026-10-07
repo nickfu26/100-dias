@@ -1,0 +1,56 @@
+{
+  "$schema": "./schema.json",
+  "day": 49,
+  "level": 3,
+  "title": { "en": "The heating doesn't work", "es": "No funciona la calefacción" },
+  "objectives": [
+    "Report a problem: … no funciona, no hay agua caliente",
+    "Ask reception to bring something: ¿Me puede traer…?",
+    "Ask for the wifi password"
+  ],
+  "teach": [
+    { "kind": "phrase", "es": "La calefacción no funciona.", "en": "The heating doesn't work.", "note": "funciona = works (functions). Works for anything: La luz no funciona. El wifi no funciona. In January you'll want the calefacción." },
+    { "kind": "phrase", "es": "No hay agua caliente.", "en": "There's no hot water.", "note": "caliente = hot (for things). For the weather or how you feel, it's calor: hace calor, tengo calor." },
+    {
+      "kind": "note",
+      "md": "**Two Spanish hotel tricks** before you call reception:\n\n- **The lights** often only work with the key card in the slot by the door.\n- **The heating** is often a wall unit with a remote (*el mando*). Look for the sun or flame symbol.\n\nIf it still doesn't work, call reception: *Hola, llamo de la habitación ciento doce…* (Hi, I'm calling from room 112)."
+    },
+    { "kind": "phrase", "es": "¿Me puede traer otra toalla, por favor?", "en": "Could you bring me another towel, please?", "note": "puede = you can (usted), plus traer = to bring. The same pattern works for anything: ¿Me puede traer agua?" },
+    { "kind": "phrase", "es": "¿Cuál es la contraseña del wifi?", "en": "What's the wifi password?", "note": "In Spain wifi is said 'WEE-fee' (often written güifi as a joke). The password is often on the key-card holder." }
+  ],
+  "vocab": [
+    { "id": "no-funciona", "es": "… no funciona.", "en": "… doesn't work.", "pos": "phrase", "ipa": "no funˈθjona", "note": "Plural: no funcionan.", "tags": ["hotel", "survival"] },
+    { "id": "calefaccion", "es": "la calefacción", "en": "heating", "pos": "noun", "gender": "f", "ipa": "kalefakˈθjon", "tags": ["hotel"] },
+    { "id": "agua-caliente", "es": "el agua caliente", "en": "hot water", "pos": "phrase", "ipa": "el ˈaɣwa kaˈljente", "note": "caliente = hot (things). No hay agua caliente.", "tags": ["hotel"] },
+    { "id": "me-puede-traer", "es": "¿Me puede traer…?", "en": "Could you bring me…?", "pos": "phrase", "ipa": "me ˈpweðe tɾaˈeɾ", "note": "traer = to bring. With tú: ¿Me puedes traer…?", "tags": ["hotel", "restaurant"] },
+    { "id": "toalla", "es": "la toalla", "en": "towel", "pos": "noun", "gender": "f", "ipa": "toˈaʝa", "tags": ["hotel"] },
+    { "id": "contrasena-wifi", "es": "¿Cuál es la contraseña del wifi?", "en": "What's the wifi password?", "pos": "phrase", "ipa": "ˈkwal es la kontɾaˈseɲa ðel ˈwifi", "note": "la contraseña = password.", "tags": ["hotel"] },
+    { "id": "luz", "es": "la luz", "en": "light; electricity", "pos": "noun", "gender": "f", "ipa": "ˈluθ", "note": "Plural: las luces.", "tags": ["hotel"] }
+  ],
+  "exercises": [
+    { "id": "d049-01", "type": "listen-choose", "audio": "La calefacción no funciona.", "options": ["La calefacción no funciona.", "La habitación no funciona.", "La cocina no funciona."], "answer": 0, "vocab": ["calefaccion", "no-funciona"] },
+    { "id": "d049-02", "type": "listen-choose", "audio": "la toalla", "options": ["la toalla", "la tortilla", "la talla"], "answer": 0, "vocab": ["toalla"] },
+    { "id": "d049-03", "type": "listen-choose", "audio": "No hay agua caliente.", "options": ["No hay agua caliente.", "No hay agua con gas.", "No hay agua fría."], "answer": 0, "vocab": ["agua-caliente", "no-hay"] },
+    { "id": "d049-04", "type": "match-pairs", "pairs": [["la calefacción", "heating"], ["no funciona", "doesn't work"], ["el agua caliente", "hot water"], ["¿Me puede traer…?", "Could you bring me…?"], ["la toalla", "towel"], ["la luz", "the light"]], "vocab": ["calefaccion", "no-funciona", "agua-caliente", "me-puede-traer", "toalla", "luz"] },
+    { "id": "d049-05", "type": "fill-blank", "es": "La calefacción no {{funciona}}.", "en": "The heating doesn't work.", "options": ["funciona", "funcionas", "está"], "vocab": ["calefaccion", "no-funciona"] },
+    { "id": "d049-06", "type": "fill-blank", "es": "No hay agua {{caliente}}.", "en": "There's no hot water.", "options": ["caliente", "calor", "cerca"], "vocab": ["agua-caliente", "no-hay"] },
+    { "id": "d049-07", "type": "fill-blank", "es": "¿Me puede {{traer}} otra toalla?", "en": "Could you bring me another towel?", "options": ["traer", "trae", "tengo"], "vocab": ["me-puede-traer", "toalla", "otro"] },
+    { "id": "d049-08", "type": "fill-blank", "es": "¿Cuál es la {{contraseña}} del wifi?", "en": "What's the wifi password?", "options": ["contraseña", "cuenta", "llave"], "vocab": ["contrasena-wifi"] },
+    { "id": "d049-09", "type": "fill-blank", "es": "La {{luz}} del baño no funciona.", "en": "The bathroom light doesn't work.", "options": ["luz", "toalla", "agua"], "vocab": ["luz", "no-funciona", "aseos"] },
+    { "id": "d049-10", "type": "listen-choose", "prompt": "What's the wifi password?", "audio": "La contraseña es hotel, uno, dos, tres.", "optionsLang": "en", "options": ["hotel123", "hotel321", "hotel12"], "answer": 0, "vocab": ["contrasena-wifi", "hotel", "uno", "dos", "tres"] },
+    { "id": "d049-11", "type": "listen-choose", "prompt": "What will reception do?", "audio": "Vale. Ahora le traigo otra toalla.", "optionsLang": "en", "options": ["Bring another towel now", "Change your room", "Fix the heating tomorrow"], "answer": 0, "vocab": ["toalla", "ahora", "otro"] },
+    { "id": "d049-12", "type": "listen-choose", "prompt": "Why don't the lights work?", "audio": "Para la luz, la tarjeta de la habitación va aquí, al lado de la puerta.", "optionsLang": "en", "options": ["The key card goes in the slot by the door", "The light is broken", "The lights go off at night"], "answer": 0, "vocab": ["luz", "tarjeta-habitacion", "al-lado-de"] },
+    { "id": "d049-13", "type": "listen-choose", "prompt": "What's the problem?", "audio": "Hace mucho frío en la habitación. La calefacción no funciona.", "optionsLang": "en", "options": ["The room is cold: the heating doesn't work", "The room is too hot", "There's no hot water"], "answer": 0, "vocab": ["hace-frio", "habitacion", "calefaccion", "no-funciona"] },
+    { "id": "d049-14", "type": "dictation", "es": "la toalla", "hint": "towel (ll)", "vocab": ["toalla"] },
+    { "id": "d049-15", "type": "dictation", "es": "no funciona", "hint": "doesn't work", "vocab": ["no-funciona"] },
+    { "id": "d049-16", "type": "dictation", "es": "la calefacción", "hint": "heating (cc, accent on the o)", "vocab": ["calefaccion"] },
+    { "id": "d049-17", "type": "build-sentence", "es": "¿Me puede traer otra toalla, por favor?", "en": "Could you bring me another towel, please?", "distractors": ["trae", "una"], "vocab": ["me-puede-traer", "toalla", "otro"] },
+    { "id": "d049-18", "type": "build-sentence", "es": "No hay agua caliente en la habitación.", "en": "There's no hot water in the room.", "distractors": ["frío", "de"], "vocab": ["agua-caliente", "no-hay", "habitacion"] },
+    { "id": "d049-19", "type": "build-sentence", "direction": "audio-to-es", "es": "La luz no funciona.", "en": "The light doesn't work.", "distractors": ["es"], "vocab": ["luz", "no-funciona"] },
+    { "id": "d049-20", "type": "repeat", "prompt": "Call reception:", "es": "Hola, la calefacción de la habitación no funciona.", "en": "Hi, the heating in the room doesn't work.", "vocab": ["calefaccion", "habitacion", "no-funciona"] },
+    { "id": "d049-21", "type": "repeat", "prompt": "Ask for the wifi:", "es": "Perdone, ¿cuál es la contraseña del wifi?", "en": "Excuse me, what's the wifi password?", "vocab": ["perdone", "contrasena-wifi"] },
+    { "id": "d049-22", "type": "shadow", "es": "La calefacción no funciona.", "en": "The heating doesn't work.", "listenFor": "Two th sounds: ka-le-fak-THYON, fun-THYO-na. In calefacción the first c is a k and the second a th.", "vocab": ["calefaccion", "no-funciona"] },
+    { "id": "d049-23", "type": "listen-choose", "prompt": "Review: where's the room?", "audio": "La habitación está en la segunda planta. El ascensor, a la derecha.", "optionsLang": "en", "options": ["Second floor; lift on the right", "Second floor; lift on the left", "First floor; lift on the right"], "answer": 0, "vocab": ["habitacion", "planta", "ascensor", "a-la-derecha"] },
+    { "id": "d049-24", "type": "fill-blank", "prompt": "Review: at the Rastro.", "es": "¿Me lo {{deja}} en diez?", "en": "Will you let me have it for ten?", "options": ["deja", "doy", "hace"], "vocab": ["me-lo-deja-en", "diez"] }
+  ]
+}

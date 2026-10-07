@@ -1,0 +1,57 @@
+{
+  "$schema": "./schema.json",
+  "day": 48,
+  "level": 3,
+  "title": { "en": "Checking in", "es": "Tengo una reserva" },
+  "objectives": [
+    "Check in: give your name and the number of nights",
+    "Understand the receptionist: ¿Me deja su pasaporte?",
+    "Find your room: la planta, el ascensor",
+    "Count floors the Spanish way"
+  ],
+  "teach": [
+    { "kind": "phrase", "es": "Buenas tardes. Tengo una reserva a nombre de Smith, para cuatro noches.", "en": "Good afternoon. I have a booking under the name Smith, for four nights.", "note": "You met Tengo una reserva a nombre de… on day 39. para … noches = for … nights. Wednesday 13 to Sunday 17 is four nights." },
+    { "kind": "phrase", "es": "¿Me deja su pasaporte, por favor?", "en": "Can I see your passport, please?", "note": "Literally 'Will you lend me your passport?'. Spanish hotels must register every guest, so they always ask." },
+    { "kind": "phrase", "es": "Aquí tiene la tarjeta de la habitación.", "en": "Here's your room key card.", "note": "la habitación = the room. In older hotels you may still get la llave (the key)." },
+    {
+      "kind": "note",
+      "md": "**Floors (las plantas)** are counted the European way:\n\n- **la planta baja** (often *0* or *B* in the lift): the ground floor\n- **la primera planta**: one floor up (a US *second floor*)\n- **la segunda planta**: two floors up\n\nSo *la habitación está en la primera planta* means one floor above the street."
+    },
+    { "kind": "phrase", "es": "El ascensor está al final, a la derecha.", "en": "The lift is at the end, on the right.", "note": "el ascensor = the lift, elevator. Spanish hotel lifts are often tiny: one person and a suitcase." },
+    { "kind": "phrase", "es": "¿Está incluido el desayuno?", "en": "Is breakfast included?", "note": "The same pattern as ¿Está incluida la bebida? (day 40). Ask the times: ¿A qué hora es el desayuno?" }
+  ],
+  "vocab": [
+    { "id": "para-noches", "es": "para … noches", "en": "for … nights", "pos": "phrase", "ipa": "ˈpaɾa ˈnotʃes", "note": "la noche = night. Para una noche, para cuatro noches.", "tags": ["hotel"] },
+    { "id": "me-deja-su-pasaporte", "es": "¿Me deja su pasaporte?", "en": "Can I see your passport?", "pos": "phrase", "ipa": "me ˈðexa su pasaˈpoɾte", "note": "el pasaporte = passport. su = your (usted).", "tags": ["hotel", "survival"] },
+    { "id": "habitacion", "es": "la habitación", "en": "room (hotel, bedroom)", "pos": "noun", "gender": "f", "ipa": "aβitaˈθjon", "note": "The h is silent.", "tags": ["hotel"] },
+    { "id": "planta", "es": "la planta", "en": "floor (of a building)", "pos": "noun", "gender": "f", "ipa": "ˈplanta", "note": "la planta baja = the ground floor.", "tags": ["hotel", "shopping"] },
+    { "id": "ascensor", "es": "el ascensor", "en": "lift, elevator", "pos": "noun", "gender": "m", "ipa": "asθenˈsoɾ", "tags": ["hotel"] },
+    { "id": "tarjeta-habitacion", "es": "la tarjeta de la habitación", "en": "room key card", "pos": "phrase", "ipa": "la taɾˈxeta ðe la aβitaˈθjon", "tags": ["hotel"] }
+  ],
+  "exercises": [
+    { "id": "d048-01", "type": "listen-choose", "audio": "la habitación", "options": ["la habitación", "la estación", "la ración"], "answer": 0, "vocab": ["habitacion"] },
+    { "id": "d048-02", "type": "listen-choose", "audio": "el ascensor", "options": ["el ascensor", "el aeropuerto", "el autobús"], "answer": 0, "vocab": ["ascensor"] },
+    { "id": "d048-03", "type": "listen-choose", "audio": "¿Me deja su pasaporte?", "options": ["¿Me deja su pasaporte?", "¿Me deja su tarjeta?", "¿Tiene su pasaporte?"], "answer": 0, "vocab": ["me-deja-su-pasaporte"] },
+    { "id": "d048-04", "type": "match-pairs", "pairs": [["para cuatro noches", "for four nights"], ["¿Me deja su pasaporte?", "Can I see your passport?"], ["la habitación", "room"], ["la planta", "floor"], ["el ascensor", "lift"], ["la tarjeta de la habitación", "room key card"]], "vocab": ["para-noches", "me-deja-su-pasaporte", "habitacion", "planta", "ascensor", "tarjeta-habitacion"] },
+    { "id": "d048-05", "type": "fill-blank", "es": "Tengo una reserva para cuatro {{noches}}.", "en": "I have a booking for four nights.", "options": ["noches", "años", "euros"], "vocab": ["tengo-una-reserva", "para-noches", "cuatro"] },
+    { "id": "d048-06", "type": "fill-blank", "es": "Su habitación está en la segunda {{planta}}.", "en": "Your room is on the second floor.", "options": ["planta", "calle", "mesa"], "prompt": "Counted from the planta baja.", "vocab": ["habitacion", "planta", "primera-segunda"] },
+    { "id": "d048-07", "type": "fill-blank", "es": "El {{ascensor}} está a la derecha.", "en": "The lift is on the right.", "options": ["ascensor", "habitación", "planta"], "vocab": ["ascensor", "a-la-derecha"] },
+    { "id": "d048-08", "type": "fill-blank", "es": "Aquí tiene la {{tarjeta}} de la habitación.", "en": "Here's your room key card.", "options": ["tarjeta", "planta", "cuenta"], "vocab": ["tarjeta-habitacion"] },
+    { "id": "d048-09", "type": "fill-blank", "es": "¿Me deja su {{pasaporte}}, por favor?", "en": "Can I see your passport, please?", "options": ["pasaporte", "habitación", "planta"], "vocab": ["me-deja-su-pasaporte"] },
+    { "id": "d048-10", "type": "listen-choose", "prompt": "Where's the room?", "audio": "La habitación ciento doce está en la primera planta.", "optionsLang": "en", "options": ["Room 112, first floor", "Room 102, first floor", "Room 112, ground floor"], "answer": 0, "vocab": ["habitacion", "planta", "doce", "primera-segunda"] },
+    { "id": "d048-11", "type": "listen-choose", "prompt": "Is breakfast included?", "audio": "¿Está incluido el desayuno? — Sí, de siete a diez y media.", "optionsLang": "en", "options": ["Yes, 7:00–10:30", "No, it's extra", "Yes, 7:00–10:00"], "answer": 0, "vocab": ["desayuno", "esta-incluida-la-bebida", "y-media"] },
+    { "id": "d048-12", "type": "listen-choose", "prompt": "What does the receptionist need?", "audio": "Buenas tardes. ¿Me deja su pasaporte, por favor?", "optionsLang": "en", "options": ["Your passport", "Your card", "Your booking name"], "answer": 0, "vocab": ["me-deja-su-pasaporte", "buenas-tardes"] },
+    { "id": "d048-13", "type": "listen-choose", "prompt": "Where's the lift?", "audio": "El ascensor está al final, a la izquierda.", "optionsLang": "en", "options": ["At the end, on the left", "Next to reception", "At the end, on the right"], "answer": 0, "vocab": ["ascensor", "al-final-de", "a-la-izquierda"] },
+    { "id": "d048-14", "type": "dictation", "es": "la habitación", "hint": "room (silent h)", "vocab": ["habitacion"] },
+    { "id": "d048-15", "type": "dictation", "es": "el ascensor", "hint": "lift (sc)", "vocab": ["ascensor"] },
+    { "id": "d048-16", "type": "dictation", "es": "para cuatro noches", "hint": "for four nights", "vocab": ["para-noches", "cuatro"] },
+    { "id": "d048-17", "type": "build-sentence", "es": "Tengo una reserva para cuatro noches.", "en": "I have a booking for four nights.", "distractors": ["mesa", "días"], "vocab": ["tengo-una-reserva", "para-noches", "cuatro"] },
+    { "id": "d048-18", "type": "build-sentence", "es": "¿En qué planta está la habitación?", "en": "What floor is the room on?", "distractors": ["calle", "es"], "vocab": ["planta", "habitacion", "que"] },
+    { "id": "d048-19", "type": "build-sentence", "direction": "audio-to-es", "es": "¿Está incluido el desayuno?", "en": "Is breakfast included?", "distractors": ["incluida"], "vocab": ["esta-incluida-la-bebida", "desayuno"] },
+    { "id": "d048-20", "type": "repeat", "prompt": "At reception:", "es": "Buenas tardes. Tengo una reserva a nombre de Smith, para cuatro noches.", "en": "Good afternoon. I have a booking under the name Smith, for four nights.", "vocab": ["tengo-una-reserva", "para-noches", "buenas-tardes"] },
+    { "id": "d048-21", "type": "repeat", "prompt": "Ask where the lift is:", "es": "Perdone, ¿dónde está el ascensor?", "en": "Excuse me, where's the lift?", "vocab": ["perdone", "ascensor", "donde-esta"] },
+    { "id": "d048-22", "type": "shadow", "es": "la habitación", "en": "the room", "listenFor": "The h is silent: a-bi-ta-THYON, stress on the last syllable. La and a run together: la-bi-ta-THYON.", "vocab": ["habitacion"] },
+    { "id": "d048-23", "type": "listen-choose", "prompt": "Review: what does the seller say?", "audio": "¿Me hace un precio? — Vale, doce.", "optionsLang": "en", "options": ["OK, twelve", "No deal", "Twenty"], "answer": 0, "vocab": ["me-hace-un-precio", "doce"] },
+    { "id": "d048-24", "type": "repeat", "prompt": "Review: at the till.", "es": "Me lo llevo, con tarjeta.", "en": "I'll take it, by card.", "vocab": ["me-lo-llevo", "con-tarjeta"] }
+  ]
+}

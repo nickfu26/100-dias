@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-07T17:32:35+00:00",
+ "generated": "2026-10-07T19:47:03+00:00",
  "voices": {
   "f": "es-ES-ElviraNeural",
   "m": "es-ES-AlvaroNeural"
@@ -67,6 +67,10 @@
    "id": "b98dfe2b74b1",
    "slow": true
   },
+  "Aquí tiene la tarjeta de la habitación.": {
+   "id": "7f95c28659c2",
+   "slow": true
+  },
   "Ayer, hoy y mañana.": {
    "id": "605340220c38",
    "slow": true
@@ -87,8 +91,24 @@
    "id": "bb059af29f05",
    "slow": true
   },
+  "Buenas tardes. Tengo una reserva a nombre de Smith, para cuatro noches.": {
+   "id": "ad8657dc75b4",
+   "slow": true
+  },
+  "Buenas tardes. ¿Me deja su pasaporte, por favor?": {
+   "id": "fbc68816a855",
+   "slow": true
+  },
   "Buenos días.": {
    "id": "241e4b13a411",
+   "slow": true
+  },
+  "Buenos días. Quiero dejar la habitación.": {
+   "id": "e4246fa822b7",
+   "slow": true
+  },
+  "Buenos días. Quiero dejar la habitación. ¿Puedo dejar la maleta aquí?": {
+   "id": "e3a33f984994",
    "slow": true
   },
   "Busco el metro. ¿Está lejos?": {
@@ -129,6 +149,10 @@
   },
   "Claudia es alemana.": {
    "id": "9e0a3a481591",
+   "slow": true
+  },
+  "Con el treinta por ciento de descuento, cuesta cincuenta y seis euros.": {
+   "id": "ac27636e5ad5",
    "slow": true
   },
   "Con tarjeta, por favor.": {
@@ -181,6 +205,10 @@
   },
   "De tapas": {
    "id": "1ebbcea6a963",
+   "slow": true
+  },
+  "Dejar la habitación": {
+   "id": "f6547f3e6c29",
    "slow": true
   },
   "Del once al veinte y repaso": {
@@ -239,6 +267,10 @@
    "id": "c9e4733faad2",
    "slow": true
   },
+  "El Rastro es los domingos por la mañana.": {
+   "id": "a13750af2f6b",
+   "slow": true
+  },
   "El abecedario": {
    "id": "84ce9dedc902",
    "slow": true
@@ -253,6 +285,18 @@
   },
   "El aeropuerto está lejos del centro.": {
    "id": "1fe48d2cb213",
+   "slow": true
+  },
+  "El ascensor está a la derecha.": {
+   "id": "e3829e19ecf9",
+   "slow": true
+  },
+  "El ascensor está al final, a la derecha.": {
+   "id": "c134f18bc9be",
+   "slow": true
+  },
+  "El ascensor está al final, a la izquierda.": {
+   "id": "9aa08bebf70e",
    "slow": true
   },
   "El banco está al lado del hotel.": {
@@ -311,6 +355,10 @@
    "id": "761a52752bb6",
    "slow": true
   },
+  "El mercado y el Rastro": {
+   "id": "ffe1d07bfee2",
+   "slow": true
+  },
   "El metro está allí, a la salida de la estación.": {
    "id": "e17c201e7020",
    "slow": true
@@ -341,6 +389,10 @@
   },
   "El sábado y el domingo son el fin de semana.": {
    "id": "e7d62b264c7c",
+   "slow": true
+  },
+  "El taxi llega en cinco minutos.": {
+   "id": "e8b80fe4fe9f",
    "slow": true
   },
   "El tiempo en enero": {
@@ -429,6 +481,26 @@
   },
   "Es pequeña. ¿Tiene una talla grande?": {
    "id": "4f4eb419ad04",
+   "slow": true
+  },
+  "Es un poco caro.": {
+   "id": "4a6724a971be",
+   "slow": true
+  },
+  "Es un poco caro. Le doy diez.": {
+   "id": "284f5a07d4a1",
+   "slow": true
+  },
+  "Es un poco caro. ¿Me hace un precio?": {
+   "id": "e8e01d87e85d",
+   "slow": true
+  },
+  "Es un poco caro. ¿Me lo deja en diez?": {
+   "id": "f8520f988465",
+   "slow": true
+  },
+  "Es un poco raro.": {
+   "id": "a180ad9e8993",
    "slow": true
   },
   "España": {
@@ -551,6 +623,10 @@
    "id": "7b19567ef2d9",
    "slow": true
   },
+  "Hace mucho frío en la habitación. La calefacción no funciona.": {
+   "id": "e03d1435a1d8",
+   "slow": true
+  },
   "Hace sol, pero hace mucho frío.": {
    "id": "92292487f16c",
    "slow": true
@@ -613,6 +689,10 @@
   },
   "Hola, buenos días.": {
    "id": "ef2c1e881471",
+   "slow": true
+  },
+  "Hola, la calefacción de la habitación no funciona.": {
+   "id": "5ee5ff711787",
    "slow": true
   },
   "Hola, me llamo Pablo. Encantado.": {
@@ -679,6 +759,10 @@
    "id": "67aeff077d83",
    "slow": true
   },
+  "La calefacción no funciona.": {
+   "id": "964f5143420a",
+   "slow": true
+  },
   "La calle y la plaza.": {
    "id": "eb4a39ff2608",
    "slow": true
@@ -719,6 +803,10 @@
    "id": "bea064c0fc3f",
    "slow": true
   },
+  "La cocina no funciona.": {
+   "id": "1bdfcdcac1a5",
+   "slow": true
+  },
   "La cola de la entrada gratuita está allí, al final de la calle.": {
    "id": "4dd6a3092586",
    "slow": true
@@ -729,6 +817,10 @@
   },
   "La comida es a las dos y media.": {
    "id": "d8597c70eedf",
+   "slow": true
+  },
+  "La contraseña es hotel, uno, dos, tres.": {
+   "id": "c73eced6b5f4",
    "slow": true
   },
   "La cuenta, por favor.": {
@@ -767,8 +859,28 @@
    "id": "c9d2863dfc4f",
    "slow": true
   },
+  "La habitación ciento doce está en la primera planta.": {
+   "id": "89da4a4feb41",
+   "slow": true
+  },
+  "La habitación está en la segunda planta. El ascensor, a la derecha.": {
+   "id": "0d9c760c8639",
+   "slow": true
+  },
+  "La habitación no funciona.": {
+   "id": "e0434780f143",
+   "slow": true
+  },
   "La jota y la ge": {
    "id": "f33b6ba13217",
+   "slow": true
+  },
+  "La luz del baño no funciona.": {
+   "id": "768ea41d0a1b",
+   "slow": true
+  },
+  "La luz no funciona.": {
+   "id": "5778100389ca",
    "slow": true
   },
   "La mano.": {
@@ -835,8 +947,24 @@
    "id": "2d8d76a6a19f",
    "slow": true
   },
+  "Las rebajas": {
+   "id": "310a86a7aaf3",
+   "slow": true
+  },
   "Las vocales": {
    "id": "4e6f528b8ad4",
+   "slow": true
+  },
+  "Le doy ocho euros.": {
+   "id": "d0176c295087",
+   "slow": true
+  },
+  "Le doy ocho.": {
+   "id": "be8fbf983cf4",
+   "slow": true
+  },
+  "Le doy…": {
+   "id": "c2793e08afb3",
    "slow": true
   },
   "Le recomiendo el pescado. Está muy bueno hoy.": {
@@ -1051,6 +1179,26 @@
    "id": "2a8130c879ca",
    "slow": true
   },
+  "Me llamo Lola.": {
+   "id": "125c7ead951c",
+   "slow": true
+  },
+  "Me lo llevo, con tarjeta.": {
+   "id": "e4ffbdd70869",
+   "slow": true
+  },
+  "Me lo llevo.": {
+   "id": "e04dec9cf510",
+   "slow": true
+  },
+  "Me lo llevo. ¿Puedo cambiarlo?": {
+   "id": "56f8babc0a7b",
+   "slow": true
+  },
+  "Me lo pruebo.": {
+   "id": "c00ea344eeab",
+   "slow": true
+  },
   "Me queda grande. Me queda pequeño.": {
    "id": "4c14c58f84b0",
    "slow": true
@@ -1127,6 +1275,30 @@
    "id": "777b48ba81c1",
    "slow": true
   },
+  "No funciona la calefacción": {
+   "id": "5d4e0ceafe45",
+   "slow": true
+  },
+  "No hay agua caliente en la habitación.": {
+   "id": "ccbb6ea5563c",
+   "slow": true
+  },
+  "No hay agua caliente y la luz no funciona.": {
+   "id": "e77c3d5bd0ba",
+   "slow": true
+  },
+  "No hay agua caliente.": {
+   "id": "7396f6df265d",
+   "slow": true
+  },
+  "No hay agua con gas.": {
+   "id": "4d90051fb939",
+   "slow": true
+  },
+  "No hay agua fría.": {
+   "id": "94aa1afc241e",
+   "slow": true
+  },
   "No hay cerveza.": {
    "id": "a869822876da",
    "slow": true
@@ -1195,6 +1367,14 @@
    "id": "ce9f095cdd79",
    "slow": true
   },
+  "Para el tax free, necesito su pasaporte.": {
+   "id": "ee87a32245ff",
+   "slow": true
+  },
+  "Para la luz, la tarjeta de la habitación va aquí, al lado de la puerta.": {
+   "id": "85b0c595f06d",
+   "slow": true
+  },
   "Para mí, un café con leche y media tostada con tomate.": {
    "id": "cb14fc9d8253",
    "slow": true
@@ -1219,6 +1399,18 @@
    "id": "c30151277778",
    "slow": true
   },
+  "Perdone, ¿cuál es la contraseña del wifi?": {
+   "id": "1b6447bdf195",
+   "slow": true
+  },
+  "Perdone, ¿cuánto pide por esto?": {
+   "id": "294388a6fe92",
+   "slow": true
+  },
+  "Perdone, ¿dónde está el ascensor?": {
+   "id": "46942fd28efa",
+   "slow": true
+  },
   "Perdone, ¿dónde está el guardarropa?": {
    "id": "2f3b7bdb850e",
    "slow": true
@@ -1237,6 +1429,10 @@
   },
   "Perdone, ¿por dónde se va a Sol?": {
    "id": "fe890b6f0fe6",
+   "slow": true
+  },
+  "Perdone, ¿por dónde se va a la Gran Vía?": {
+   "id": "43d5c801d7d5",
    "slow": true
   },
   "Perdone, ¿por dónde se va a la Plaza Mayor?": {
@@ -1447,12 +1643,28 @@
    "id": "57fc229d18aa",
    "slow": true
   },
+  "Quiero dejar la habitación, por favor.": {
+   "id": "b087cbd2efa4",
+   "slow": true
+  },
+  "Quiero dejar la habitación.": {
+   "id": "acbb652a1f2d",
+   "slow": true
+  },
   "Quiero otra cerveza.": {
    "id": "9791edc254e6",
    "slow": true
   },
+  "Quiero otra habitación.": {
+   "id": "3942139db3ec",
+   "slow": true
+  },
   "Quiero un café.": {
    "id": "745e64a4fdb6",
+   "slow": true
+  },
+  "Quiero ver la habitación.": {
+   "id": "74b7fe8a294a",
    "slow": true
   },
   "Quiero…": {
@@ -1683,6 +1895,14 @@
    "id": "844381fb8877",
    "slow": true
   },
+  "Su habitación está en la segunda planta.": {
+   "id": "34c7a95da1c7",
+   "slow": true
+  },
+  "Sí, con el ticket puedes cambiarlo en treinta días.": {
+   "id": "c8ef8d735778",
+   "slow": true
+  },
   "Sí, gracias.": {
    "id": "0baeb93cc1c2",
    "slow": true
@@ -1697,6 +1917,10 @@
   },
   "Sí, vale. Muchas gracias.": {
    "id": "3a95e134a5b3",
+   "slow": true
+  },
+  "Sí. La maleta, aquí, al lado de la entrada.": {
+   "id": "5e539f9fd485",
    "slow": true
   },
   "Tapas y raciones": {
@@ -1759,6 +1983,10 @@
    "id": "b900def927e1",
    "slow": true
   },
+  "Tengo que estar en el aeropuerto a las tres.": {
+   "id": "131015406763",
+   "slow": true
+  },
   "Tengo sed. Agua, por favor.": {
    "id": "4ffafbf5fbb4",
    "slow": true
@@ -1769,6 +1997,10 @@
   },
   "Tengo un abrigo negro y una bufanda roja.": {
    "id": "b8dd36f47417",
+   "slow": true
+  },
+  "Tengo una reserva": {
+   "id": "44e24f506248",
    "slow": true
   },
   "Tengo una reserva a nombre de García, para cuatro.": {
@@ -1783,6 +2015,10 @@
    "id": "638f1b6b8770",
    "slow": true
   },
+  "Tengo una reserva para cuatro noches.": {
+   "id": "fec11d3754d0",
+   "slow": true
+  },
   "Tengo veintinueve años y soy de Estados Unidos.": {
    "id": "2b3bcdc239e0",
    "slow": true
@@ -1793,6 +2029,18 @@
   },
   "Tengo…": {
    "id": "9e2954381755",
+   "slow": true
+  },
+  "Tiene el treinta por ciento de descuento.": {
+   "id": "a4c466c937e3",
+   "slow": true
+  },
+  "Tiene el veinte por ciento de descuento.": {
+   "id": "95f66010189e",
+   "slow": true
+  },
+  "Tiene que dejar la habitación a las doce.": {
+   "id": "5199b8a5b703",
    "slow": true
   },
   "Todo bien, gracias.": {
@@ -1815,12 +2063,20 @@
    "id": "16485301ef6a",
    "slow": true
   },
+  "Todo recto.": {
+   "id": "d013d82bf98f",
+   "slow": true
+  },
   "Tom y Kate son estadounidenses.": {
    "id": "cd4987d8eae5",
    "slow": true
   },
   "Trabajo en Estados Unidos, pero hablo español.": {
    "id": "41b3cbefc7b1",
+   "slow": true
+  },
+  "Trato hecho.": {
+   "id": "bc366055993d",
    "slow": true
   },
   "Treinta y uno.": {
@@ -1889,6 +2145,10 @@
   },
   "Un pincho de tortilla, por favor.": {
    "id": "07ab7b654374",
+   "slow": true
+  },
+  "Un ticket regalo, por favor.": {
+   "id": "d506f83dd607",
    "slow": true
   },
   "Un tinto de verano y agua sin gas, por favor.": {
@@ -2071,6 +2331,10 @@
    "id": "f40900d913ce",
    "slow": true
   },
+  "Vale, diez. — Trato hecho.": {
+   "id": "63afba10e72d",
+   "slow": true
+  },
   "Vale, gracias.": {
    "id": "59e9bbf7f3ad",
    "slow": true
@@ -2079,8 +2343,16 @@
    "id": "a27bb5bae3e3",
    "slow": true
   },
+  "Vale, te lo dejo en doce. — Trato hecho.": {
+   "id": "907147b49241",
+   "slow": true
+  },
   "Vale.": {
    "id": "62fd7c007f31",
+   "slow": true
+  },
+  "Vale. Ahora le traigo otra toalla.": {
+   "id": "3e656ad3bff5",
    "slow": true
   },
   "Vamos al centro en metro.": {
@@ -2551,12 +2823,20 @@
    "id": "76277cc030a3",
    "slow": true
   },
+  "el agua caliente": {
+   "id": "69b5e90c2037",
+   "slow": true
+  },
   "el amigo": {
    "id": "80476a2baef8",
    "slow": true
   },
   "el apellido": {
    "id": "ad6a17db7010",
+   "slow": true
+  },
+  "el ascensor": {
+   "id": "617ff87de2b3",
    "slow": true
   },
   "el autobús": {
@@ -2803,12 +3083,28 @@
    "id": "8703e6c5380e",
    "slow": true
   },
+  "el tax free": {
+   "id": "e60e66b47c6d",
+   "slow": true
+  },
+  "el taxi": {
+   "id": "cfabfee4ae59",
+   "slow": true
+  },
+  "el ticket regalo": {
+   "id": "bf61b03557e0",
+   "slow": true
+  },
   "el tinto de verano": {
    "id": "3409d7b6a050",
    "slow": true
   },
   "el trece de enero": {
    "id": "a61016b18936",
+   "slow": true
+  },
+  "el treinta por ciento de descuento": {
+   "id": "7d5effd6d533",
    "slow": true
   },
   "el tren": {
@@ -2937,6 +3233,10 @@
   },
   "estar": {
    "id": "c72ef9660b1d",
+   "slow": true
+  },
+  "esto": {
+   "id": "ed477376c477",
    "slow": true
   },
   "estoy": {
@@ -3163,6 +3463,10 @@
    "id": "ea93219240db",
    "slow": true
   },
+  "la calefacción": {
+   "id": "1cbed2e3e17b",
+   "slow": true
+  },
   "la calle": {
    "id": "7a0a8927d566",
    "slow": true
@@ -3247,6 +3551,10 @@
    "id": "464444603c45",
    "slow": true
   },
+  "la factura": {
+   "id": "a61b7f6d9950",
+   "slow": true
+  },
   "la farmacia": {
    "id": "c4ee15c82065",
    "slow": true
@@ -3257,6 +3565,10 @@
   },
   "la gente": {
    "id": "62cca4eb8908",
+   "slow": true
+  },
+  "la habitación": {
+   "id": "0e54e21bbffe",
    "slow": true
   },
   "la hija": {
@@ -3275,6 +3587,14 @@
    "id": "3912d423d502",
    "slow": true
   },
+  "la luz": {
+   "id": "cdd6b297ee2b",
+   "slow": true
+  },
+  "la maleta": {
+   "id": "56429c363ab7",
+   "slow": true
+  },
   "la mano": {
    "id": "6fc0efb1d33e",
    "slow": true
@@ -3285,6 +3605,10 @@
   },
   "la parada": {
    "id": "1743a9e61b15",
+   "slow": true
+  },
+  "la planta": {
+   "id": "8123a2b4819d",
    "slow": true
   },
   "la playa": {
@@ -3331,12 +3655,24 @@
    "id": "4f3d306025af",
    "slow": true
   },
+  "la tarjeta de la habitación": {
+   "id": "7af7537b4a69",
+   "slow": true
+  },
+  "la tarjeta regalo": {
+   "id": "d530fa798bc8",
+   "slow": true
+  },
   "la terraza": {
    "id": "7d0b40a43dec",
    "slow": true
   },
   "la tienda": {
    "id": "ae81c1640165",
+   "slow": true
+  },
+  "la toalla": {
+   "id": "d06035c2009e",
    "slow": true
   },
   "la tortilla": {
@@ -3377,6 +3713,10 @@
   },
   "las patatas bravas": {
    "id": "02df50047d0c",
+   "slow": true
+  },
+  "las rebajas": {
+   "id": "6e640e711828",
    "slow": true
   },
   "las trece quince": {
@@ -3623,6 +3963,10 @@
    "id": "f7aad0bb4818",
    "slow": true
   },
+  "no funciona": {
+   "id": "426aa8949b3e",
+   "slow": true
+  },
   "no hay": {
    "id": "9e0d290ac4b5",
    "slow": true
@@ -3735,8 +4079,16 @@
    "id": "365897eb5bbc",
    "slow": true
   },
+  "para cuatro noches": {
+   "id": "a6bb9b53eef6",
+   "slow": true
+  },
   "para mí": {
    "id": "2206248ee43a",
+   "slow": true
+  },
+  "para … noches": {
+   "id": "a46be3da1051",
    "slow": true
   },
   "paso": {
@@ -3961,6 +4313,10 @@
   },
   "tengo hambre": {
    "id": "a7acd263ff7d",
+   "slow": true
+  },
+  "tengo que…": {
+   "id": "6af3ba88e272",
    "slow": true
   },
   "tengo sed": {
@@ -4395,6 +4751,10 @@
    "id": "0bf37821029f",
    "slow": true
   },
+  "¿Algo del minibar?": {
+   "id": "209d8d7256a9",
+   "slow": true
+  },
   "¿Algo más?": {
    "id": "7f7a8444f4c2",
    "slow": true
@@ -4413,6 +4773,10 @@
   },
   "¿Con tarjeta o en efectivo? Con tarjeta.": {
    "id": "1000a729178c",
+   "slow": true
+  },
+  "¿Cuál es la contraseña del wifi?": {
+   "id": "017aab2214db",
    "slow": true
   },
   "¿Cuál es tu hotel?": {
@@ -4437,6 +4801,10 @@
   },
   "¿Cuántas cervezas? Treinta y una.": {
    "id": "eb2655aaf806",
+   "slow": true
+  },
+  "¿Cuánto cuesta ahora?": {
+   "id": "cf6f68483795",
    "slow": true
   },
   "¿Cuánto cuesta el bocadillo?": {
@@ -4493,6 +4861,10 @@
   },
   "¿Cuánto es? —Son cuatro euros.": {
    "id": "837d4c728957",
+   "slow": true
+  },
+  "¿Cuánto pide por esto?": {
+   "id": "ca3d70b57e33",
    "slow": true
   },
   "¿Cuánto te debo?": {
@@ -4663,8 +5035,16 @@
    "id": "30e5464f5106",
    "slow": true
   },
+  "¿El abrigo está rebajado?": {
+   "id": "0422cb529ae3",
+   "slow": true
+  },
   "¿El café está incluido en el menú?": {
    "id": "406d066fed4a",
+   "slow": true
+  },
+  "¿En qué planta está la habitación?": {
+   "id": "49af2cdd7d77",
    "slow": true
   },
   "¿Eres español? No, soy estadounidense.": {
@@ -4679,6 +5059,14 @@
    "id": "bc05b53fb634",
    "slow": true
   },
+  "¿Es para regalo?": {
+   "id": "2f1f8da2255a",
+   "slow": true
+  },
+  "¿Esto? Quince euros.": {
+   "id": "ae6fa9b6b903",
+   "slow": true
+  },
   "¿Está abierta la cocina?": {
    "id": "084d4e282d3e",
    "slow": true
@@ -4691,12 +5079,28 @@
    "id": "a5919d606c13",
    "slow": true
   },
+  "¿Está cerrado?": {
+   "id": "a2ded8be0069",
+   "slow": true
+  },
   "¿Está incluida la bebida?": {
    "id": "ba2300c86c1d",
    "slow": true
   },
+  "¿Está incluido el desayuno?": {
+   "id": "13f73894bb63",
+   "slow": true
+  },
+  "¿Está incluido el desayuno? — Sí, de siete a diez y media.": {
+   "id": "d0027706b91f",
+   "slow": true
+  },
   "¿Está incluido el pan?": {
    "id": "d6619b9a1763",
+   "slow": true
+  },
+  "¿Está incluido?": {
+   "id": "584fe5d2441a",
    "slow": true
   },
   "¿Está lejos el museo?": {
@@ -4721,6 +5125,10 @@
   },
   "¿Está lejos? — No, está cerca.": {
    "id": "6db0f290b900",
+   "slow": true
+  },
+  "¿Está rebajado?": {
+   "id": "5d1e87ed5a94",
    "slow": true
   },
   "¿Fuera o dentro?": {
@@ -4887,8 +5295,72 @@
    "id": "5b3a466bb558",
    "slow": true
   },
+  "¿Me deja su pasaporte, por favor?": {
+   "id": "2d98a3f92e1b",
+   "slow": true
+  },
+  "¿Me deja su pasaporte?": {
+   "id": "5fc5b228af1b",
+   "slow": true
+  },
+  "¿Me deja su tarjeta?": {
+   "id": "e11da9429f69",
+   "slow": true
+  },
+  "¿Me hace el tax free, por favor?": {
+   "id": "2619a804f2c4",
+   "slow": true
+  },
+  "¿Me hace el tax free?": {
+   "id": "0a5b705db3e4",
+   "slow": true
+  },
+  "¿Me hace la factura a nombre de Smith?": {
+   "id": "36c25d825f1c",
+   "slow": true
+  },
+  "¿Me hace un precio?": {
+   "id": "f77ec1132fd9",
+   "slow": true
+  },
+  "¿Me hace un precio? — Vale, doce.": {
+   "id": "45ac5efcfc69",
+   "slow": true
+  },
+  "¿Me lo deja en diez?": {
+   "id": "bfb1366d90e9",
+   "slow": true
+  },
+  "¿Me lo deja en…?": {
+   "id": "d73df872f1c8",
+   "slow": true
+  },
+  "¿Me pide un taxi para el aeropuerto, por favor?": {
+   "id": "67a1942d3890",
+   "slow": true
+  },
+  "¿Me pide un taxi para el aeropuerto?": {
+   "id": "c000a3cb00a5",
+   "slow": true
+  },
+  "¿Me pide un taxi, por favor?": {
+   "id": "29cd38dac591",
+   "slow": true
+  },
+  "¿Me pide un taxi?": {
+   "id": "9a2244804c33",
+   "slow": true
+  },
   "¿Me pone un café solo, por favor?": {
    "id": "3a2693c38ed1",
+   "slow": true
+  },
+  "¿Me pone un precio?": {
+   "id": "c1226b700297",
+   "slow": true
+  },
+  "¿Me pone un té?": {
+   "id": "29ea2e416311",
    "slow": true
   },
   "¿Me pone una caña?": {
@@ -4947,8 +5419,24 @@
    "id": "8634670b96cd",
    "slow": true
   },
+  "¿Me puede traer otra toalla, por favor?": {
+   "id": "41e712ec56d2",
+   "slow": true
+  },
+  "¿Me puede traer otra toalla?": {
+   "id": "5fb6f5f5eba3",
+   "slow": true
+  },
+  "¿Me puede traer…?": {
+   "id": "a46bb64388b5",
+   "slow": true
+  },
   "¿Me puedes ayudar?": {
    "id": "f7c510585827",
+   "slow": true
+  },
+  "¿Me trae un taxi?": {
+   "id": "02d074b9f4de",
    "slow": true
   },
   "¿Muy bien?": {
@@ -4961,6 +5449,10 @@
   },
   "¿Nos trae…?": {
    "id": "9f82c232a056",
+   "slow": true
+  },
+  "¿Ocho? No, no. ¿Diez?": {
+   "id": "347d4cd19c0d",
    "slow": true
   },
   "¿Para ir a…?": {
@@ -5009,6 +5501,22 @@
   },
   "¿Puedes repetirlo?": {
    "id": "7283f108a072",
+   "slow": true
+  },
+  "¿Puedo cambiarlo con el ticket regalo?": {
+   "id": "43586c7f9c57",
+   "slow": true
+  },
+  "¿Puedo cambiarlo?": {
+   "id": "e5ba5c0ab770",
+   "slow": true
+  },
+  "¿Puedo cambiarlo? ¿Me pone un ticket regalo?": {
+   "id": "9c0db165a45f",
+   "slow": true
+  },
+  "¿Puedo dejar la maleta aquí?": {
+   "id": "0d565e7b2e9e",
    "slow": true
   },
   "¿Puedo ir ahora?": {
@@ -5267,6 +5775,10 @@
    "id": "e5cab1eb7c6e",
    "slow": true
   },
+  "¿Tiene su pasaporte?": {
+   "id": "b2b6cac6139b",
+   "slow": true
+  },
   "¿Tiene una botella de agua?": {
    "id": "4b3140f0d145",
    "slow": true
@@ -5413,6 +5925,10 @@
   },
   "—¿Uno? —Sí, uno.": {
    "id": "c925db4fb0aa",
+   "slow": true
+  },
+  "… no funciona.": {
+   "id": "5cda02170bf3",
    "slow": true
   }
  }

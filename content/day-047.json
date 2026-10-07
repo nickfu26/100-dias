@@ -1,0 +1,57 @@
+{
+  "$schema": "./schema.json",
+  "day": 47,
+  "level": 3,
+  "title": { "en": "Markets and haggling", "es": "El mercado y el Rastro" },
+  "objectives": [
+    "Know where you can haggle in Madrid, and where you can't",
+    "Ask the price of something: ¿Cuánto pide por esto?",
+    "Make an offer and close the deal"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**El Rastro** is Madrid's flea market: **Sunday mornings** (and public holidays), roughly 9:00 to 15:00, on the streets down from La Latina metro.\n\n- Haggling is normal at the stalls. Keep it friendly: offer a bit below the price, not half.\n- It gets very crowded. Keep your phone and wallet in a front pocket.\n- Your only Sunday is the 17th, the day you fly to Marrakesh. A morning visit works if your flight is in the afternoon.\n\n**El Mercado de San Miguel** (next to the Plaza Mayor) is a covered food market with fixed prices. No haggling there, or in shops."
+    },
+    { "kind": "phrase", "es": "Perdone, ¿cuánto pide por esto?", "en": "Excuse me, how much do you want for this?", "note": "esto = this (thing), when you point and don't know the word. pide = you ask (usted). Many stallholders use tú: ¿Cuánto pides?" },
+    { "kind": "phrase", "es": "Es un poco caro. ¿Me hace un precio?", "en": "It's a bit expensive. Can you do me a deal?", "note": "un poco = a bit. ¿Me hace un precio? = literally 'Will you make me a price?'." },
+    { "kind": "phrase", "es": "¿Me lo deja en diez?", "en": "Will you let me have it for ten?", "note": "dejar en = to let something go for (a price). Feminine: ¿Me la deja en diez?" },
+    { "kind": "phrase", "es": "Le doy ocho.", "en": "I'll give you eight.", "note": "le = (to) you, usted. With tú: Te doy ocho." },
+    { "kind": "phrase", "es": "Vale, diez. — Trato hecho.", "en": "OK, ten. — Deal.", "note": "Trato hecho = deal done. Shake on it, pay in cash: stalls rarely take cards." }
+  ],
+  "vocab": [
+    { "id": "esto", "es": "esto", "en": "this (thing)", "pos": "pron", "ipa": "ˈesto", "note": "For pointing at something without naming it.", "tags": ["shopping"] },
+    { "id": "cuanto-pide", "es": "¿Cuánto pide por esto?", "en": "How much do you want for this?", "pos": "phrase", "ipa": "ˈkwanto ˈpiðe poɾ ˈesto", "note": "With tú: ¿Cuánto pides?", "tags": ["shopping", "madrid"] },
+    { "id": "es-un-poco-caro", "es": "Es un poco caro.", "en": "It's a bit expensive.", "pos": "phrase", "ipa": "es um ˈpoko ˈkaɾo", "note": "un poco = a bit.", "tags": ["shopping"] },
+    { "id": "me-hace-un-precio", "es": "¿Me hace un precio?", "en": "Can you do me a deal?", "pos": "phrase", "ipa": "me ˈaθe um ˈpɾeθjo", "note": "el precio = price. With tú: ¿Me haces un precio?", "tags": ["shopping"] },
+    { "id": "me-lo-deja-en", "es": "¿Me lo deja en…?", "en": "Will you let me have it for…?", "pos": "phrase", "ipa": "me lo ˈðexa en", "note": "With tú: ¿Me lo dejas en…?", "tags": ["shopping"] },
+    { "id": "le-doy", "es": "Le doy…", "en": "I'll give you…", "pos": "phrase", "ipa": "le ˈðoi", "note": "doy = I give. With tú: Te doy…", "tags": ["shopping"] },
+    { "id": "trato-hecho", "es": "Trato hecho.", "en": "Deal.", "pos": "phrase", "ipa": "ˈtɾato ˈetʃo", "tags": ["shopping"] }
+  ],
+  "exercises": [
+    { "id": "d047-01", "type": "listen-choose", "audio": "¿Me hace un precio?", "options": ["¿Me hace un precio?", "¿Me pone un precio?", "¿Me hace el tax free?"], "answer": 0, "vocab": ["me-hace-un-precio"] },
+    { "id": "d047-02", "type": "listen-choose", "audio": "Trato hecho.", "options": ["Trato hecho.", "Todo recto.", "Nada más."], "answer": 0, "vocab": ["trato-hecho"] },
+    { "id": "d047-03", "type": "listen-choose", "audio": "Es un poco caro.", "options": ["Es un poco caro.", "Es un poco raro.", "Es muy caro."], "answer": 0, "vocab": ["es-un-poco-caro"] },
+    { "id": "d047-04", "type": "match-pairs", "pairs": [["¿Cuánto pide por esto?", "How much do you want for this?"], ["¿Me hace un precio?", "Can you do me a deal?"], ["¿Me lo deja en…?", "Will you let me have it for…?"], ["Es un poco caro.", "It's a bit expensive."], ["Le doy…", "I'll give you…"], ["Trato hecho.", "Deal."]], "vocab": ["cuanto-pide", "me-hace-un-precio", "me-lo-deja-en", "es-un-poco-caro", "le-doy", "trato-hecho"] },
+    { "id": "d047-05", "type": "fill-blank", "es": "¿Cuánto pide por {{esto}}?", "en": "How much do you want for this?", "options": ["esto", "aquí", "todo"], "vocab": ["cuanto-pide", "esto"] },
+    { "id": "d047-06", "type": "fill-blank", "es": "¿Me lo deja {{en}} diez?", "en": "Will you let me have it for ten?", "options": ["en", "a", "por"], "vocab": ["me-lo-deja-en", "diez"] },
+    { "id": "d047-07", "type": "fill-blank", "es": "Es un poco {{caro}}.", "en": "It's a bit expensive. (esto)", "options": ["caro", "cara", "mucho"], "prompt": "esto takes the masculine form.", "vocab": ["es-un-poco-caro", "caro"] },
+    { "id": "d047-08", "type": "fill-blank", "es": "Le {{doy}} ocho euros.", "en": "I'll give you eight euros.", "options": ["doy", "tengo", "pongo"], "vocab": ["le-doy", "ocho", "euro"] },
+    { "id": "d047-09", "type": "fill-blank", "es": "Trato {{hecho}}.", "en": "Deal.", "options": ["hecho", "bien", "todo"], "vocab": ["trato-hecho"] },
+    { "id": "d047-10", "type": "listen-choose", "prompt": "What's the first price?", "audio": "¿Esto? Quince euros.", "optionsLang": "en", "options": ["€15", "€50", "€5"], "answer": 0, "vocab": ["esto", "quince", "euro"] },
+    { "id": "d047-11", "type": "listen-choose", "prompt": "Does the seller accept eight?", "audio": "¿Ocho? No, no. ¿Diez?", "optionsLang": "en", "options": ["No, he offers ten", "Yes, eight is fine", "No, he wants fifteen"], "answer": 0, "vocab": ["ocho", "diez"] },
+    { "id": "d047-12", "type": "listen-choose", "prompt": "What's the final price?", "audio": "Vale, te lo dejo en doce. — Trato hecho.", "optionsLang": "en", "options": ["€12", "€20", "€2"], "answer": 0, "vocab": ["me-lo-deja-en", "doce", "trato-hecho"] },
+    { "id": "d047-13", "type": "listen-choose", "prompt": "When is the Rastro?", "audio": "El Rastro es los domingos por la mañana.", "optionsLang": "en", "options": ["Sunday mornings", "Saturday mornings", "Every day"], "answer": 0, "vocab": ["domingo", "manana"] },
+    { "id": "d047-14", "type": "dictation", "es": "Trato hecho.", "hint": "Deal. (silent h)", "vocab": ["trato-hecho"] },
+    { "id": "d047-15", "type": "dictation", "es": "¿Me hace un precio?", "hint": "Can you do me a deal?", "vocab": ["me-hace-un-precio"] },
+    { "id": "d047-16", "type": "dictation", "es": "Es un poco caro.", "hint": "It's a bit expensive.", "vocab": ["es-un-poco-caro"] },
+    { "id": "d047-17", "type": "build-sentence", "es": "¿Cuánto pide por esto?", "en": "How much do you want for this?", "distractors": ["pido", "para"], "vocab": ["cuanto-pide"] },
+    { "id": "d047-18", "type": "build-sentence", "es": "Es un poco caro. ¿Me lo deja en diez?", "en": "It's a bit expensive. Will you let me have it for ten?", "distractors": ["cara", "de"], "vocab": ["es-un-poco-caro", "me-lo-deja-en", "diez"] },
+    { "id": "d047-19", "type": "build-sentence", "direction": "audio-to-es", "es": "Le doy ocho euros.", "en": "I'll give you eight euros.", "distractors": ["doce"], "vocab": ["le-doy", "ocho", "euro"] },
+    { "id": "d047-20", "type": "repeat", "prompt": "Point at an old lamp:", "es": "Perdone, ¿cuánto pide por esto?", "en": "Excuse me, how much do you want for this?", "vocab": ["perdone", "cuanto-pide"] },
+    { "id": "d047-21", "type": "repeat", "prompt": "Make an offer:", "es": "Es un poco caro. Le doy diez.", "en": "It's a bit expensive. I'll give you ten.", "vocab": ["es-un-poco-caro", "le-doy", "diez"] },
+    { "id": "d047-22", "type": "shadow", "es": "¿Me lo deja en diez?", "en": "Will you let me have it for ten?", "listenFor": "diez ends in a th sound: DYETH. Keep it light and friendly: haggling at the Rastro is a game.", "vocab": ["me-lo-deja-en", "diez"] },
+    { "id": "d047-23", "type": "fill-blank", "prompt": "Review: in a shop.", "es": "¿Puedo {{cambiarlo}}?", "en": "Can I exchange it? (el abrigo)", "options": ["cambiarlo", "cambiarla", "cambiarlos"], "vocab": ["puedo-cambiarlo", "abrigo"] },
+    { "id": "d047-24", "type": "listen-choose", "prompt": "Review: what's the discount?", "audio": "Tiene el veinte por ciento de descuento.", "optionsLang": "en", "options": ["20% off", "2% off", "€20 off"], "answer": 0, "vocab": ["por-ciento-de-descuento", "veinte"] }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "./schema.json",
+  "day": 34,
+  "level": 2,
+  "title": { "en": "Question words", "es": "Las preguntas" },
+  "objectives": [
+    "Ask with qué, dónde, cuándo, cuánto, cómo, cuál, quién and por qué",
+    "Tell qué from cuál, and por qué from porque",
+    "Ask and say someone's age: ¿Cuántos años tienes?"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**You already use most of these** inside phrases: *¿Qué tal?*, *¿Dónde está…?*, *¿Cuánto es?*, *¿Cómo te llamas?* Today they get their own cards:\n\n- **¿qué?** what? · **¿dónde?** where? · **¿cuándo?** when?\n- **¿cuánto?** how much? · **¿cómo?** how? · **¿quién?** who?\n- **¿cuál?** which? · **¿por qué?** why?\n\nQuestion words always carry an **accent**, and the question opens with **¿**."
+    },
+    { "kind": "phrase", "es": "¿Cuándo llegas?", "en": "When do you arrive?", "note": "The verb usually comes right after the question word." },
+    {
+      "kind": "note",
+      "md": "**qué or cuál?**\n\n- **qué** + a noun: *¿Qué tapa quieres?* (What tapa do you want?)\n- **cuál** + *es / son*, choosing from options: *¿Cuál es tu hotel?* (Which one is your hotel?)\n\nEnglish says *what* for both. Spanish says *¿Cuál es tu nombre?*, not ~~¿Qué es tu nombre?~~ (that would mean *what is a name?*)."
+    },
+    { "kind": "phrase", "es": "¿Por qué? Porque hace frío.", "en": "Why? Because it's cold.", "note": "Two words with an accent for the question (por qué), one word without for the answer (porque)." },
+    { "kind": "phrase", "es": "¿Cuánto cuesta? ¿Cuántas cañas?", "en": "How much does it cost? How many beers?", "note": "cuánto, cuánta for how much; cuántos, cuántas for how many (day 17)." },
+    { "kind": "phrase", "es": "¿Cuántos años tienes? Tengo treinta años.", "en": "How old are you? I'm thirty.", "note": "Spanish has years, with tener (day 19). el año = year. Fine with friends; with strangers, adults rarely ask." }
+  ],
+  "vocab": [
+    { "id": "que", "es": "¿qué?", "en": "what?", "pos": "pron", "ipa": "ˈke", "note": "Without the accent, que = that / than." },
+    { "id": "donde", "es": "¿dónde?", "en": "where?", "pos": "adv", "ipa": "ˈdonde", "note": "¿adónde? = where to?" },
+    { "id": "cuando", "es": "¿cuándo?", "en": "when?", "pos": "adv", "ipa": "ˈkwando" },
+    { "id": "cuanto", "es": "¿cuánto?, ¿cuánta?", "en": "how much?", "pos": "pron", "ipa": "ˈkwanto, ˈkwanta", "note": "Plural cuántos, cuántas = how many." },
+    { "id": "como", "es": "¿cómo?", "en": "how?; pardon?", "pos": "adv", "ipa": "ˈkomo", "note": "¿Cómo? on its own = Sorry, what did you say?" },
+    { "id": "cual", "es": "¿cuál?", "en": "which (one)?", "pos": "pron", "ipa": "ˈkwal", "note": "Plural: ¿cuáles? Use before es / son." },
+    { "id": "quien", "es": "¿quién?", "en": "who?", "pos": "pron", "ipa": "ˈkjen", "note": "Plural: ¿quiénes?" },
+    { "id": "por-que", "es": "¿por qué?", "en": "why?", "pos": "adv", "ipa": "poɾ ˈke", "note": "The answer: porque (one word, no accent) = because." },
+    { "id": "ano", "es": "el año", "en": "year", "pos": "noun", "gender": "m", "ipa": "ˈaɲo", "note": "Keep the ñ: año (year) ≠ ano (anus)." },
+    { "id": "cuantos-anos", "es": "¿Cuántos años tienes? Tengo … años.", "en": "How old are you? I'm … (years old).", "pos": "phrase", "ipa": "ˈkwantos ˈaɲos ˈtjenes, ˈteŋgo … ˈaɲos", "note": "Age uses tener, not ser." }
+  ],
+  "exercises": [
+    { "id": "d034-01", "type": "listen-choose", "audio": "¿cuándo?", "options": ["¿cuándo?", "¿cuánto?", "¿dónde?"], "answer": 0, "vocab": ["cuando"] },
+    { "id": "d034-02", "type": "listen-choose", "audio": "¿quién?", "options": ["¿quién?", "¿qué?", "¿cuál?"], "answer": 0, "vocab": ["quien"] },
+    { "id": "d034-03", "type": "listen-choose", "audio": "¿por qué?", "options": ["¿por qué?", "porque", "¿qué?"], "answer": 0, "vocab": ["por-que"] },
+    { "id": "d034-04", "type": "match-pairs", "pairs": [["¿qué?", "what?"], ["¿dónde?", "where?"], ["¿cuándo?", "when?"], ["¿cuánto?", "how much?"], ["¿cómo?", "how?"]], "vocab": ["que", "donde", "cuando", "cuanto", "como"] },
+    { "id": "d034-05", "type": "match-pairs", "pairs": [["¿cuál?", "which?"], ["¿quién?", "who?"], ["¿por qué?", "why?"], ["porque", "because"], ["el año", "year"]], "vocab": ["cual", "quien", "por-que", "ano"] },
+    { "id": "d034-06", "type": "fill-blank", "es": "¿{{Dónde}} está el museo?", "en": "Where is the museum?", "options": ["Dónde", "Cuándo", "Quién"], "vocab": ["donde", "museo"] },
+    { "id": "d034-07", "type": "fill-blank", "es": "¿{{Cuándo}} llegas a Madrid?", "en": "When do you arrive in Madrid?", "options": ["Cuándo", "Dónde", "Cómo"], "vocab": ["cuando", "llegar"] },
+    { "id": "d034-08", "type": "fill-blank", "es": "¿{{Cuál}} es tu hotel?", "en": "Which one is your hotel?", "options": ["Cuál", "Qué"], "prompt": "Before es, choosing one.", "vocab": ["cual", "hotel", "tu-your"] },
+    { "id": "d034-09", "type": "fill-blank", "es": "¿{{Qué}} tapa quieres?", "en": "Which tapa do you want?", "options": ["Qué", "Cuál"], "prompt": "Straight before a noun.", "vocab": ["que", "tapa", "quieres"] },
+    { "id": "d034-10", "type": "fill-blank", "es": "¿Por qué? {{Porque}} estoy cansado.", "en": "Why? Because I'm tired.", "options": ["Porque", "Por qué"], "vocab": ["por-que", "estoy-cansado"] },
+    { "id": "d034-11", "type": "fill-blank", "es": "¿Cuántos {{años}} tienes?", "en": "How old are you?", "options": ["años", "anos", "días"], "prompt": "Mind the ñ.", "vocab": ["cuantos-anos", "ano"] },
+    { "id": "d034-12", "type": "listen-choose", "prompt": "How old is she?", "audio": "Tengo veintiocho años.", "optionsLang": "en", "options": ["28", "38", "18"], "answer": 0, "vocab": ["cuantos-anos"] },
+    { "id": "d034-13", "type": "listen-choose", "prompt": "What does he want to know?", "audio": "¿Quién paga hoy?", "optionsLang": "en", "options": ["Who's paying today", "How much it is today", "When they pay"], "answer": 0, "vocab": ["quien", "pagar", "hoy"] },
+    { "id": "d034-14", "type": "listen-choose", "prompt": "What does she want to know?", "audio": "¿Cómo vamos al aeropuerto?", "optionsLang": "en", "options": ["How to get to the airport", "When they go to the airport", "Where the airport is"], "answer": 0, "vocab": ["como", "vamos", "aeropuerto"] },
+    { "id": "d034-15", "type": "dictation", "es": "¿dónde?", "hint": "where? (accent)", "vocab": ["donde"] },
+    { "id": "d034-16", "type": "dictation", "es": "¿quién?", "hint": "who?", "vocab": ["quien"] },
+    { "id": "d034-17", "type": "dictation", "es": "el año", "hint": "year (ñ)", "vocab": ["ano"] },
+    { "id": "d034-18", "type": "build-sentence", "es": "¿Cuántos años tienes? Tengo treinta años.", "en": "How old are you? I'm thirty.", "distractors": ["soy", "eres"], "vocab": ["cuantos-anos", "treinta"] },
+    { "id": "d034-19", "type": "build-sentence", "es": "¿Por qué no vamos en metro?", "en": "Why don't we go by metro?", "distractors": ["porque", "van"], "vocab": ["por-que", "vamos", "metro"] },
+    { "id": "d034-20", "type": "build-sentence", "direction": "audio-to-es", "es": "¿Cuánto cuesta y cuándo abre?", "en": "How much does it cost and when does it open?", "distractors": ["cuántos"], "vocab": ["cuanto", "cuesta", "cuando", "abre"] },
+    { "id": "d034-21", "type": "repeat", "es": "¿Cuántos años tienes?", "en": "How old are you?", "vocab": ["cuantos-anos"] },
+    { "id": "d034-22", "type": "shadow", "es": "¿Qué? ¿Cuándo? ¿Dónde? ¿Por qué?", "en": "What? When? Where? Why?", "listenFor": "Each question word stressed and rising: KE? KWAN-do? DON-de? por-KE?", "vocab": ["que", "cuando", "donde", "por-que"] },
+    { "id": "d034-23", "type": "fill-blank", "prompt": "Review: -ar verbs.", "es": "Perdón, ¿{{habla}} inglés?", "en": "Excuse me, do you speak English? (usted)", "options": ["habla", "hablas", "hablo"], "vocab": ["hablas-ingles"] },
+    { "id": "d034-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Me duele la cabeza. Necesito ir a la farmacia.", "en": "I have a headache. I need to go to the pharmacy.", "vocab": ["me-duele", "cabeza", "necesito", "farmacia"] }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "./schema.json",
+  "day": 32,
+  "level": 2,
+  "title": { "en": "Body and feelings", "es": "El cuerpo" },
+  "objectives": [
+    "Name the parts of the body you'd mention at a pharmacy",
+    "Say what hurts with me duele and me duelen",
+    "Say you're tired or ill with estoy cansado and estoy enfermo"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**The body**\n\n- **la cabeza**: head\n- **la garganta**: throat\n- **el estómago**: stomach\n- **la espalda**: back\n- **la mano**: hand. It ends in -o but is **feminine**: *la mano*.\n- **el pie**: foot\n\n*el cuerpo* = the body."
+    },
+    {
+      "kind": "note",
+      "md": "**me duele works like me gusta.** The thing that hurts is the subject:\n\n- one thing → **me duele**: *Me duele la cabeza.* (I have a headache.)\n- several → **me duelen**: *Me duelen los pies.*\n\nUse **la, el, los**, not *my*: *me duele **la** cabeza*, never ~~me duele mi cabeza~~."
+    },
+    { "kind": "phrase", "es": "Me duele la garganta.", "en": "I have a sore throat.", "note": "Madrid's dry winter air makes this a classic. At the farmacia, the pharmacist can help with minor things without a prescription." },
+    {
+      "kind": "note",
+      "md": "**estar for how you are.** On day 23, *estar* said where you are. It also says how you are **right now**:\n\n- **Estoy cansado** (a man) / **cansada** (a woman): I'm tired.\n- **Estoy enfermo / enferma**: I'm ill.\n\nThe adjective agrees with the speaker, like nationalities and colours."
+    },
+    { "kind": "phrase", "es": "Estoy muy cansada. Me duelen los pies.", "en": "I'm very tired. My feet hurt.", "note": "After a day of walking from the Prado to the Palacio Real." },
+    { "kind": "phrase", "es": "Estoy enfermo. Necesito ir a la farmacia.", "en": "I'm ill. I need to go to the pharmacy.", "note": "In an emergency anywhere in Spain or the EU, call 112." }
+  ],
+  "vocab": [
+    { "id": "cabeza", "es": "la cabeza", "en": "head", "pos": "noun", "gender": "f", "ipa": "kaˈβeθa", "tags": ["health"] },
+    { "id": "garganta", "es": "la garganta", "en": "throat", "pos": "noun", "gender": "f", "ipa": "gaɾˈɣanta", "tags": ["health"] },
+    { "id": "estomago", "es": "el estómago", "en": "stomach", "pos": "noun", "gender": "m", "ipa": "esˈtomaɣo", "tags": ["health"] },
+    { "id": "espalda", "es": "la espalda", "en": "back (body)", "pos": "noun", "gender": "f", "ipa": "esˈpalda", "tags": ["health"] },
+    { "id": "mano", "es": "la mano", "en": "hand", "pos": "noun", "gender": "f", "ipa": "ˈmano", "note": "Feminine, despite the -o.", "tags": ["health"] },
+    { "id": "pie", "es": "el pie", "en": "foot", "pos": "noun", "gender": "m", "ipa": "ˈpje", "note": "Plural: los pies. A pie = on foot.", "tags": ["health"] },
+    { "id": "me-duele", "es": "me duele, me duelen", "en": "it hurts (me), they hurt (me)", "pos": "phrase", "ipa": "me ˈðwele, me ˈðwelen", "note": "Me duele la cabeza = I have a headache.", "tags": ["health", "survival"] },
+    { "id": "estoy-cansado", "es": "estoy cansado, estoy cansada", "en": "I'm tired", "pos": "phrase", "ipa": "esˈtoi kanˈsaðo, esˈtoi kanˈsaða", "tags": ["health"] },
+    { "id": "estoy-enfermo", "es": "estoy enfermo, estoy enferma", "en": "I'm ill, I'm sick", "pos": "phrase", "ipa": "esˈtoi emˈfeɾmo, esˈtoi emˈfeɾma", "tags": ["health", "survival"] }
+  ],
+  "exercises": [
+    { "id": "d032-01", "type": "listen-choose", "audio": "la cabeza", "options": ["la cabeza", "la cerveza", "la calle"], "answer": 0, "vocab": ["cabeza"] },
+    { "id": "d032-02", "type": "listen-choose", "audio": "la espalda", "options": ["la espalda", "la ensalada", "la estación"], "answer": 0, "vocab": ["espalda"] },
+    { "id": "d032-03", "type": "listen-choose", "audio": "me duelen", "options": ["me duele", "me duelen", "me gustan"], "answer": 1, "vocab": ["me-duele"] },
+    { "id": "d032-04", "type": "match-pairs", "pairs": [["la cabeza", "head"], ["la garganta", "throat"], ["el estómago", "stomach"], ["la espalda", "back"], ["la mano", "hand"]], "vocab": ["cabeza", "garganta", "estomago", "espalda", "mano"] },
+    { "id": "d032-05", "type": "match-pairs", "pairs": [["el pie", "foot"], ["me duele", "it hurts"], ["estoy cansado", "I'm tired"], ["estoy enfermo", "I'm ill"]], "vocab": ["pie", "me-duele", "estoy-cansado", "estoy-enfermo"] },
+    { "id": "d032-06", "type": "fill-blank", "es": "Me {{duele}} la cabeza.", "en": "I have a headache.", "options": ["duele", "duelen"], "vocab": ["me-duele", "cabeza"] },
+    { "id": "d032-07", "type": "fill-blank", "es": "Me {{duelen}} los pies.", "en": "My feet hurt.", "options": ["duelen", "duele"], "prompt": "pies is plural.", "vocab": ["me-duele", "pie"] },
+    { "id": "d032-08", "type": "fill-blank", "es": "Me duele {{la}} garganta.", "en": "I have a sore throat.", "options": ["la", "mi", "una"], "prompt": "Spanish uses the article, not 'my'.", "vocab": ["me-duele", "garganta"] },
+    { "id": "d032-09", "type": "fill-blank", "es": "{{La}} mano.", "en": "The hand.", "options": ["La", "El"], "vocab": ["mano"] },
+    { "id": "d032-10", "type": "fill-blank", "es": "Ana {{está}} cansada.", "en": "Ana is tired.", "options": ["está", "es", "hay"], "prompt": "How she is right now.", "vocab": ["esta", "estoy-cansado"] },
+    { "id": "d032-11", "type": "fill-blank", "es": "Estoy {{enferma}}.", "en": "I'm ill. (a woman speaking)", "options": ["enferma", "enfermo"], "vocab": ["estoy-enfermo"] },
+    { "id": "d032-12", "type": "listen-choose", "prompt": "What hurts?", "audio": "Me duele el estómago.", "optionsLang": "en", "options": ["His stomach", "His back", "His head"], "answer": 0, "vocab": ["me-duele", "estomago"] },
+    { "id": "d032-13", "type": "listen-choose", "prompt": "What hurts?", "audio": "Me duele mucho la espalda.", "optionsLang": "en", "options": ["Her back, a lot", "Her hand, a bit", "Her feet"], "answer": 0, "vocab": ["me-duele", "espalda", "mucho"] },
+    { "id": "d032-14", "type": "listen-choose", "prompt": "How is he?", "audio": "Estoy muy cansado. Vamos al hotel.", "optionsLang": "en", "options": ["Very tired", "Ill", "Cold"], "answer": 0, "vocab": ["estoy-cansado", "vamos", "hotel"] },
+    { "id": "d032-15", "type": "dictation", "es": "la cabeza", "hint": "head", "vocab": ["cabeza"] },
+    { "id": "d032-16", "type": "dictation", "es": "me duele", "hint": "it hurts", "vocab": ["me-duele"] },
+    { "id": "d032-17", "type": "dictation", "es": "el estómago", "hint": "stomach (accent on the o)", "vocab": ["estomago"] },
+    { "id": "d032-18", "type": "build-sentence", "es": "Me duele la garganta.", "en": "I have a sore throat.", "distractors": ["mi", "duelen"], "vocab": ["me-duele", "garganta"] },
+    { "id": "d032-19", "type": "build-sentence", "es": "Estoy enfermo. Necesito ir a la farmacia.", "en": "I'm ill. I need to go to the pharmacy.", "distractors": ["soy", "al"], "vocab": ["estoy-enfermo", "necesito", "farmacia"] },
+    { "id": "d032-20", "type": "build-sentence", "direction": "audio-to-es", "es": "Estoy cansada y me duelen los pies.", "en": "I'm tired and my feet hurt.", "distractors": ["duele"], "vocab": ["estoy-cansado", "me-duele", "pie"] },
+    { "id": "d032-21", "type": "repeat", "es": "Me duele la cabeza. ¿Hay una farmacia cerca?", "en": "I have a headache. Is there a pharmacy nearby?", "vocab": ["me-duele", "cabeza", "farmacia"] },
+    { "id": "d032-22", "type": "shadow", "es": "Me duelen los pies.", "en": "My feet hurt.", "listenFor": "Soft d in duelen (between vowels), and pies as one syllable: PYES.", "vocab": ["me-duele", "pie"] },
+    { "id": "d032-23", "type": "fill-blank", "prompt": "Review: poder.", "es": "¿{{Puedo}} ir al baño?", "en": "Can I go to the toilet?", "options": ["Puedo", "Puede", "Necesito"], "vocab": ["puedo", "aseos"] },
+    { "id": "d032-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Perdón, ¿usted es de Madrid?", "en": "Excuse me, are you from Madrid?", "vocab": ["usted", "perdon"] }
+  ]
+}

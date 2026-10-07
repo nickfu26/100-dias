@@ -1,0 +1,73 @@
+{
+  "$schema": "./schema.json",
+  "day": 33,
+  "level": 2,
+  "title": { "en": "Regular -ar verbs", "es": "Verbos en -ar" },
+  "objectives": [
+    "Conjugate any regular -ar verb in the present",
+    "Ask ¿Hablas inglés? and ¿Habla inglés?",
+    "Use buscar, llegar, tomar, pagar and trabajar in short sentences"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**The good news:** most Spanish verbs are regular, and the biggest group ends in **-ar**. Drop the -ar and add the endings:\n\n**-o, -as, -a, -amos, -áis, -an**\n\nLearn one, and you can use hundreds."
+    },
+    {
+      "kind": "conjugation",
+      "verb": "hablar",
+      "verbEn": "to speak, to talk",
+      "tense": "present",
+      "forms": {
+        "yo": "hablo",
+        "tu": "hablas",
+        "el": "habla",
+        "nosotros": "hablamos",
+        "vosotros": "habláis",
+        "ellos": "hablan"
+      }
+    },
+    { "kind": "phrase", "es": "¿Hablas inglés?", "en": "Do you speak English?", "note": "To staff or an older stranger: ¿Habla inglés? Try your Spanish first, though. People appreciate it." },
+    { "kind": "phrase", "es": "Hablo un poco de español.", "en": "I speak a little Spanish.", "note": "un poco de = a little. Languages are lowercase, like nationalities: el español, el inglés." },
+    {
+      "kind": "note",
+      "md": "**Five more, same endings**\n\n- **buscar**: to look for. *Busco la estación.* (no word for *for*)\n- **llegar**: to arrive. *Llego a Madrid el trece.*\n- **tomar**: to take, to have (food or drink). *¿Qué tomas?* = What are you having?\n- **pagar**: to pay. *Pago yo.* = I'll pay.\n- **trabajar**: to work. *Trabajo en un banco.*"
+    },
+    { "kind": "phrase", "es": "Llego a Madrid el miércoles.", "en": "I arrive in Madrid on Wednesday.", "note": "Spanish often uses the present for fixed plans, like English 'I arrive on Wednesday'. Arrive in a city = llegar a." }
+  ],
+  "vocab": [
+    { "id": "hablar", "es": "hablar", "en": "to speak, to talk", "pos": "verb", "ipa": "aˈβlaɾ", "note": "hablo, hablas, habla, hablamos, habláis, hablan" },
+    { "id": "hablas-ingles", "es": "¿Hablas inglés?, ¿Habla inglés?", "en": "Do you speak English?", "pos": "phrase", "ipa": "ˈaβlas iŋˈɡles, ˈaβla iŋˈɡles", "note": "habla = usted.", "tags": ["survival"] },
+    { "id": "buscar", "es": "buscar", "en": "to look for", "pos": "verb", "ipa": "busˈkaɾ", "note": "Busco el hotel = I'm looking for the hotel." },
+    { "id": "llegar", "es": "llegar", "en": "to arrive", "pos": "verb", "ipa": "ʝeˈɣaɾ", "note": "llegar a = arrive in / at.", "tags": ["transport"] },
+    { "id": "tomar", "es": "tomar", "en": "to take; to have (food, drink)", "pos": "verb", "ipa": "toˈmaɾ", "note": "¿Qué tomas? = What are you having?", "tags": ["restaurant"] },
+    { "id": "pagar", "es": "pagar", "en": "to pay", "pos": "verb", "ipa": "paˈɣaɾ", "note": "Pago yo = I'll pay.", "tags": ["shopping", "restaurant"] },
+    { "id": "trabajar", "es": "trabajar", "en": "to work", "pos": "verb", "ipa": "tɾaβaˈxaɾ" }
+  ],
+  "exercises": [
+    { "id": "d033-01", "type": "listen-choose", "audio": "hablo", "options": ["hablo", "habla", "hablas"], "answer": 0, "vocab": ["hablar"] },
+    { "id": "d033-02", "type": "listen-choose", "audio": "¿Hablas inglés?", "options": ["¿Hablas inglés?", "¿Eres inglés?", "¿Habla inglés?"], "answer": 0, "vocab": ["hablas-ingles"] },
+    { "id": "d033-03", "type": "listen-choose", "audio": "llegamos", "options": ["llegamos", "llegan", "llego"], "answer": 0, "vocab": ["llegar"] },
+    { "id": "d033-04", "type": "match-pairs", "pairs": [["hablar", "to speak"], ["buscar", "to look for"], ["llegar", "to arrive"], ["tomar", "to have (a drink)"], ["pagar", "to pay"]], "vocab": ["hablar", "buscar", "llegar", "tomar", "pagar"] },
+    { "id": "d033-05", "type": "match-pairs", "pairs": [["trabajo", "I work"], ["trabajas", "you work"], ["trabaja", "she works"], ["trabajamos", "we work"], ["trabajan", "they work"]], "prompt": "Same endings as hablar.", "vocab": ["trabajar"] },
+    { "id": "d033-06", "type": "fill-blank", "es": "Yo {{hablo}} un poco de español.", "en": "I speak a little Spanish.", "options": ["hablo", "habla", "hablas"], "vocab": ["hablar", "espanol"] },
+    { "id": "d033-07", "type": "fill-blank", "es": "Perdón, ¿{{habla}} inglés?", "en": "Excuse me, do you speak English? (usted)", "options": ["habla", "hablas", "hablo"], "vocab": ["hablas-ingles", "perdon"] },
+    { "id": "d033-08", "type": "fill-blank", "es": "{{Busco}} la estación de Atocha.", "en": "I'm looking for Atocha station.", "options": ["Busco", "Busca", "Buscar"], "vocab": ["buscar", "estacion"] },
+    { "id": "d033-09", "type": "fill-blank", "es": "¿Qué {{tomas}}? Una caña.", "en": "What are you having? A beer.", "options": ["tomas", "tomo", "toman"], "vocab": ["tomar", "cana"] },
+    { "id": "d033-10", "type": "fill-blank", "es": "Hoy {{pago}} yo.", "en": "Today I'll pay.", "options": ["pago", "paga", "pagas"], "vocab": ["pagar", "hoy", "yo"] },
+    { "id": "d033-11", "type": "fill-blank", "es": "Nosotros {{llegamos}} el miércoles.", "en": "We arrive on Wednesday.", "options": ["llegamos", "llegan", "llego"], "vocab": ["llegar", "miercoles"] },
+    { "id": "d033-12", "type": "listen-choose", "prompt": "When does she arrive?", "audio": "Llego a Madrid el trece de enero.", "optionsLang": "en", "options": ["13 January", "30 January", "3 January"], "answer": 0, "vocab": ["llegar", "fecha"] },
+    { "id": "d033-13", "type": "listen-choose", "prompt": "Who is paying?", "audio": "No, no. Pago yo.", "optionsLang": "en", "options": ["The speaker", "The other person", "They split it"], "answer": 0, "vocab": ["pagar"] },
+    { "id": "d033-14", "type": "listen-choose", "prompt": "What is he looking for?", "audio": "Busco una farmacia. ¿Está cerca?", "optionsLang": "en", "options": ["A pharmacy", "A supermarket", "The station"], "answer": 0, "vocab": ["buscar", "farmacia"] },
+    { "id": "d033-15", "type": "dictation", "es": "hablo", "hint": "I speak (silent h)", "vocab": ["hablar"] },
+    { "id": "d033-16", "type": "dictation", "es": "pagar", "hint": "to pay", "vocab": ["pagar"] },
+    { "id": "d033-17", "type": "dictation", "es": "trabajo", "hint": "I work", "vocab": ["trabajar"] },
+    { "id": "d033-18", "type": "build-sentence", "es": "¿Hablas inglés? Hablo un poco de español.", "en": "Do you speak English? I speak a little Spanish.", "distractors": ["habla", "eres"], "vocab": ["hablas-ingles", "hablar", "espanol"] },
+    { "id": "d033-19", "type": "build-sentence", "es": "Busco el metro. ¿Está lejos?", "en": "I'm looking for the metro. Is it far?", "distractors": ["es", "busca"], "vocab": ["buscar", "metro", "lejos"] },
+    { "id": "d033-20", "type": "build-sentence", "direction": "audio-to-es", "es": "Trabajo en Estados Unidos, pero hablo español.", "en": "I work in the United States, but I speak Spanish.", "distractors": ["trabaja"], "vocab": ["trabajar", "hablar", "pero"] },
+    { "id": "d033-21", "type": "repeat", "es": "Perdón, ¿habla inglés?", "en": "Excuse me, do you speak English?", "vocab": ["hablas-ingles", "perdon"] },
+    { "id": "d033-22", "type": "shadow", "es": "Llegamos a Madrid el miércoles.", "en": "We arrive in Madrid on Wednesday.", "listenFor": "ll like the y in yes, and the soft g in llegamos.", "vocab": ["llegar", "miercoles"] },
+    { "id": "d033-23", "type": "listen-choose", "prompt": "Review: what hurts?", "audio": "Me duele la garganta.", "optionsLang": "en", "options": ["Her throat", "Her head", "Her back"], "answer": 0, "vocab": ["me-duele", "garganta"] },
+    { "id": "d033-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Estoy muy cansado. ¿Puedo ir al hotel?", "en": "I'm very tired. Can I go to the hotel?", "vocab": ["estoy-cansado", "puedo", "hotel"] }
+  ]
+}

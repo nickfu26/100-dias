@@ -372,7 +372,14 @@ function Intro({
       <p className="muted small">
         {!reviewOnly && (
           <>
-            <span className="num">{lesson.vocab.length}</span> new words · <span className="num">{lesson.exercises.length}</span> exercises
+            {lesson.vocab.length ? (
+              <>
+                <span className="num">{lesson.vocab.length}</span> new words
+              </>
+            ) : (
+              'Review day'
+            )}{' '}
+            · <span className="num">{lesson.exercises.length}</span> exercises
           </>
         )}
         {reviews === null ? (

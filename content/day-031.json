@@ -1,0 +1,73 @@
+{
+  "$schema": "./schema.json",
+  "day": 31,
+  "level": 2,
+  "title": { "en": "Can I…?", "es": "¿Puedo…?" },
+  "objectives": [
+    "Ask permission with ¿Puedo…? and ¿Se puede…?",
+    "Say what you need with necesito",
+    "Use verb + infinitive: puedo ir, necesito ir",
+    "Know when to use usted instead of tú"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**poder** = *can, to be able to*. Like *querer*, it changes its stem, here **o → ue**: **puedo, puedes, puede**.\n\nAfter *poder*, the next verb stays in the infinitive (the dictionary form), just like English *can go*: **¿Puedo ir?**"
+    },
+    {
+      "kind": "conjugation",
+      "verb": "poder",
+      "verbEn": "can, to be able to",
+      "tense": "present",
+      "forms": {
+        "yo": "puedo",
+        "tu": "puedes",
+        "el": "puede",
+        "nosotros": "podemos",
+        "vosotros": "podéis",
+        "ellos": "pueden"
+      }
+    },
+    { "kind": "phrase", "es": "¿Puedo ir al baño?", "en": "Can I go to the toilet?", "note": "puedo + infinitive. You already know ¿Puedes repetirlo? from day 6: that's puedes + repetir." },
+    { "kind": "phrase", "es": "¿Se puede?", "en": "May I? / Is it allowed?", "note": "Said at a half-open door, or pointing at a free chair. ¿Se puede ir en metro? = Can you get there by metro?" },
+    { "kind": "phrase", "es": "Necesito un cajero.", "en": "I need a cash machine.", "note": "necesito + a noun, or + an infinitive: Necesito ir a la farmacia. Necesitar is regular: necesito, necesitas, necesita." },
+    {
+      "kind": "note",
+      "md": "**usted** is the polite *you*. It uses the **he/she** form of the verb: *¿Usted **es** de Madrid?*, *¿**Puede** repetir?*, *¿**Tiene** mesa?*\n\nSpain uses *tú* much more than Latin America does. Waiters, shop staff and people your age will usually say *tú* to you. Use **usted** with older people, officials, police and in formal places, or whenever you're unsure. Nobody minds being given *usted*."
+    }
+  ],
+  "vocab": [
+    { "id": "poder", "es": "poder", "en": "can, to be able to", "pos": "verb", "ipa": "poˈðeɾ" },
+    { "id": "puedo", "es": "puedo", "en": "I can", "pos": "verb", "ipa": "ˈpweðo", "note": "¿Puedo…? = Can I…?", "tags": ["survival"] },
+    { "id": "puede", "es": "puede", "en": "he / she can; you can (usted)", "pos": "verb", "ipa": "ˈpweðe", "note": "¿Puede repetir? = Could you repeat that? (polite)" },
+    { "id": "se-puede", "es": "¿Se puede…?", "en": "Is it OK to…? Can one…?", "pos": "phrase", "ipa": "se ˈpweðe", "note": "On its own, ¿Se puede? = May I come in?", "tags": ["survival"] },
+    { "id": "necesito", "es": "necesito", "en": "I need", "pos": "verb", "ipa": "neθeˈsito", "note": "From necesitar (regular).", "tags": ["survival"] },
+    { "id": "usted", "es": "usted", "en": "you (formal)", "pos": "pron", "ipa": "usˈteð", "note": "Uses the he/she verb form. Written Ud. on signs." }
+  ],
+  "exercises": [
+    { "id": "d031-01", "type": "listen-choose", "audio": "puedo", "options": ["puedo", "puede", "pueden"], "answer": 0, "vocab": ["puedo"] },
+    { "id": "d031-02", "type": "listen-choose", "audio": "necesito", "options": ["necesito", "necesita", "necesitas"], "answer": 0, "vocab": ["necesito"] },
+    { "id": "d031-03", "type": "listen-choose", "audio": "usted", "options": ["usted", "tú", "yo"], "answer": 0, "vocab": ["usted"] },
+    { "id": "d031-04", "type": "match-pairs", "pairs": [["puedo", "I can"], ["puede", "she can"], ["necesito", "I need"], ["usted", "you (formal)"], ["¿Se puede?", "May I?"]], "vocab": ["puedo", "puede", "necesito", "usted", "se-puede"] },
+    { "id": "d031-05", "type": "fill-blank", "es": "¿{{Puedo}} ir al baño?", "en": "Can I go to the toilet?", "options": ["Puedo", "Puede", "Necesito"], "vocab": ["puedo", "aseos"] },
+    { "id": "d031-06", "type": "fill-blank", "es": "{{Necesito}} un cajero.", "en": "I need a cash machine.", "options": ["Necesito", "Puedo", "Voy"], "vocab": ["necesito", "cajero"] },
+    { "id": "d031-07", "type": "fill-blank", "es": "Necesito {{ir}} a la farmacia.", "en": "I need to go to the pharmacy.", "options": ["ir", "voy", "va"], "prompt": "After necesito, use the infinitive.", "vocab": ["necesito", "ir", "farmacia"] },
+    { "id": "d031-08", "type": "fill-blank", "es": "Perdón, ¿{{puede}} repetir?", "en": "Sorry, could you repeat that?", "options": ["puede", "puedo", "puedes"], "prompt": "To an older stranger (usted).", "vocab": ["puede", "perdon"] },
+    { "id": "d031-09", "type": "fill-blank", "es": "¿Usted {{es}} de Madrid?", "en": "Are you from Madrid? (formal)", "options": ["es", "eres", "soy"], "prompt": "usted takes the he/she form.", "vocab": ["usted", "es-is"] },
+    { "id": "d031-10", "type": "fill-blank", "es": "¿Se {{puede}} ir en metro?", "en": "Can you get there by metro?", "options": ["puede", "puedo", "pueden"], "vocab": ["se-puede", "metro"] },
+    { "id": "d031-11", "type": "listen-choose", "prompt": "What does he need?", "audio": "Necesito ir al aeropuerto.", "optionsLang": "en", "options": ["To go to the airport", "To go to the station", "A ticket to the airport"], "answer": 0, "vocab": ["necesito", "aeropuerto"] },
+    { "id": "d031-12", "type": "listen-choose", "prompt": "What is she asking?", "audio": "¿Puedo ir ahora?", "optionsLang": "en", "options": ["If she can go now", "If she can go tomorrow", "Where she should go"], "answer": 0, "vocab": ["puedo", "ir", "ahora"] },
+    { "id": "d031-13", "type": "listen-choose", "prompt": "tú or usted?", "audio": "¿Tiene usted el horario?", "optionsLang": "en", "options": ["usted (formal)", "tú (informal)"], "answer": 0, "vocab": ["usted", "horario"] },
+    { "id": "d031-14", "type": "listen-choose", "prompt": "tú or usted?", "audio": "¿Quieres un café?", "optionsLang": "en", "options": ["tú (informal)", "usted (formal)"], "answer": 0, "vocab": ["quieres-q"] },
+    { "id": "d031-15", "type": "dictation", "es": "puedo", "hint": "I can", "vocab": ["puedo"] },
+    { "id": "d031-16", "type": "dictation", "es": "necesito", "hint": "I need (c before i = θ)", "vocab": ["necesito"] },
+    { "id": "d031-17", "type": "dictation", "es": "usted", "hint": "you (formal)", "vocab": ["usted"] },
+    { "id": "d031-18", "type": "build-sentence", "es": "Necesito ir a la farmacia.", "en": "I need to go to the pharmacy.", "distractors": ["voy", "al"], "vocab": ["necesito", "ir", "farmacia"] },
+    { "id": "d031-19", "type": "build-sentence", "es": "¿Puedo ir en metro al museo?", "en": "Can I go to the museum by metro?", "distractors": ["puede", "el"], "vocab": ["puedo", "ir", "metro", "museo"] },
+    { "id": "d031-20", "type": "build-sentence", "direction": "audio-to-es", "es": "Perdón, ¿usted es de Madrid?", "en": "Excuse me, are you from Madrid?", "distractors": ["eres"], "vocab": ["perdon", "usted", "es-is"] },
+    { "id": "d031-21", "type": "repeat", "es": "Perdón, ¿puede repetir, por favor?", "en": "Sorry, could you repeat that, please?", "vocab": ["puede", "perdon"] },
+    { "id": "d031-22", "type": "shadow", "es": "¿Se puede?", "en": "May I?", "listenFor": "ue in puede as one quick glide, PWE-ðe, with a soft d.", "vocab": ["se-puede"] },
+    { "id": "d031-23", "type": "listen-choose", "prompt": "Review: what does he think of Madrid?", "audio": "Me encanta Madrid, pero no me gusta nada el frío.", "optionsLang": "en", "options": ["Loves Madrid, hates the cold", "Likes the cold, not Madrid", "Loves both"], "answer": 0, "vocab": ["me-encanta", "no-me-gusta-nada"] },
+    { "id": "d031-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Hace frío. Necesito un abrigo y unos guantes.", "en": "It's cold. I need a coat and some gloves.", "vocab": ["hace-frio", "necesito", "abrigo", "guantes"] }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "./schema.json",
+  "day": 35,
+  "level": 2,
+  "title": { "en": "Level 2 review", "es": "Repaso del nivel dos" },
+  "objectives": [
+    "Pick the right 'to be': ser, estar or hay",
+    "Use the core verbs: querer, tener, ir, poder, gustar",
+    "Handle numbers, prices, times and dates at listening speed",
+    "Get ready for the Level 2 checkpoint"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**No new words today.** Level 2 gave you 224 words and phrases. Today mixes them all, and the **checkpoint** unlocks when you finish."
+    },
+    {
+      "kind": "note",
+      "md": "**ser, estar or hay?**\n\n- **ser**: who and where from: *Soy de Estados Unidos.*\n- **estar**: where now, and how you are: *Estoy en Madrid. Estoy cansado.*\n- **hay**: there is / are: *¿Hay una farmacia cerca?*\n\nAnd for weather, **hace**: *Hace frío.* For how you feel, **tener**: *Tengo frío.*"
+    },
+    {
+      "kind": "note",
+      "md": "**The core verbs, yo form**\n\n- **soy** / **estoy**: I am\n- **tengo**: I have\n- **quiero** / **quería**: I want / I'd like\n- **voy**: I go\n- **puedo**: I can\n- **necesito**: I need\n- **hablo, busco, llego, tomo, pago, trabajo**: regular -ar\n\nAnd backwards: **me gusta(n)**, **me encanta(n)**, **me duele(n)**."
+    },
+    {
+      "kind": "note",
+      "md": "**Numbers you'll hear in Madrid**\n\n- Prices: *Son doce con cincuenta.* = €12.50\n- Times: *a las ocho y media de la tarde* = 20:30, or *las veinte treinta* on announcements\n- Dates: *el miércoles trece de enero*\n- Weather: *dos grados bajo cero* = −2 °C"
+    },
+    { "kind": "phrase", "es": "Llego a Madrid el miércoles trece de enero.", "en": "I arrive in Madrid on Wednesday 13 January.", "note": "Level 3 starts tomorrow: whole conversations at the bar, the restaurant, the shop and the station." }
+  ],
+  "vocab": [],
+  "exercises": [
+    { "id": "d035-01", "type": "fill-blank", "prompt": "ser, estar or hay?", "es": "{{Soy}} de Estados Unidos.", "en": "I'm from the United States.", "options": ["Soy", "Estoy", "Hay"], "vocab": ["soy-de"] },
+    { "id": "d035-02", "type": "fill-blank", "prompt": "ser, estar or hay?", "es": "{{Estoy}} en el hotel.", "en": "I'm at the hotel.", "options": ["Estoy", "Soy", "Hay"], "vocab": ["estoy", "hotel"] },
+    { "id": "d035-03", "type": "fill-blank", "prompt": "ser, estar or hay?", "es": "¿{{Hay}} un cajero cerca?", "en": "Is there a cash machine nearby?", "options": ["Hay", "Está", "Es"], "vocab": ["hay-q", "cajero", "cerca"] },
+    { "id": "d035-04", "type": "fill-blank", "prompt": "hace or tengo?", "es": "Hoy {{hace}} mucho frío.", "en": "It's very cold today.", "options": ["hace", "tengo", "está"], "vocab": ["hace-frio", "hoy"] },
+    { "id": "d035-05", "type": "fill-blank", "es": "Me {{gustan}} los churros.", "en": "I like churros.", "options": ["gustan", "gusta"], "vocab": ["me-gustan", "churros"] },
+    { "id": "d035-06", "type": "fill-blank", "es": "Voy {{al}} museo.", "en": "I'm going to the museum.", "options": ["al", "a la", "en"], "vocab": ["voy-a", "museo"] },
+    { "id": "d035-07", "type": "fill-blank", "es": "Una bufanda {{roja}}, por favor.", "en": "A red scarf, please.", "options": ["roja", "rojo"], "vocab": ["bufanda", "rojo"] },
+    { "id": "d035-08", "type": "listen-choose", "prompt": "How much is it?", "audio": "Son veintitrés con cincuenta.", "optionsLang": "en", "options": ["€23.50", "€33.50", "€23.15"], "answer": 0, "vocab": ["son-con", "veintitres", "cincuenta"] },
+    { "id": "d035-09", "type": "listen-choose", "prompt": "How much is it?", "audio": "Cuesta noventa euros.", "optionsLang": "en", "options": ["€90", "€19", "€70"], "answer": 0, "vocab": ["cuesta", "noventa", "euro"] },
+    { "id": "d035-10", "type": "listen-choose", "prompt": "Which 24-hour time?", "audio": "a las siete menos cuarto de la tarde", "optionsLang": "en", "options": ["18:45", "19:15", "06:45"], "answer": 0, "vocab": ["menos-cuarto", "de-la-tarde"] },
+    { "id": "d035-11", "type": "listen-choose", "prompt": "When does the train leave?", "audio": "El tren es a las dieciséis cuarenta.", "optionsLang": "en", "options": ["16:40", "6:40", "16:14"], "answer": 0, "vocab": ["tren", "hora-24"] },
+    { "id": "d035-12", "type": "listen-choose", "prompt": "When is the shop closed?", "audio": "La tienda cierra de dos a cinco.", "optionsLang": "en", "options": ["14:00–17:00", "12:00–15:00", "All afternoon"], "answer": 0, "vocab": ["tienda", "cierra"] },
+    { "id": "d035-13", "type": "listen-choose", "prompt": "What's the weather like?", "audio": "Hace sol, pero hay un grado bajo cero.", "optionsLang": "en", "options": ["Sunny, −1 °C", "Cloudy, 1 °C", "Sunny, 11 °C"], "answer": 0, "vocab": ["hace-sol", "bajo-cero", "grados"] },
+    { "id": "d035-14", "type": "listen-choose", "prompt": "What does he order?", "audio": "Quería una caña y una ración de calamares.", "optionsLang": "en", "options": ["A beer + a plate of squid", "A wine + a tapa of squid", "A beer + croquettes"], "answer": 0, "vocab": ["queria", "cana", "racion", "calamares"] },
+    { "id": "d035-15", "type": "listen-choose", "prompt": "What's wrong?", "audio": "Estoy enferma. Me duele el estómago.", "optionsLang": "en", "options": ["She's ill, stomach ache", "She's tired, sore feet", "She's cold, headache"], "answer": 0, "vocab": ["estoy-enfermo", "me-duele", "estomago"] },
+    { "id": "d035-16", "type": "match-pairs", "pairs": [["el lunes", "Monday"], ["el jueves", "Thursday"], ["el sábado", "Saturday"], ["ayer", "yesterday"], ["el fin de semana", "weekend"]], "vocab": ["lunes", "jueves", "sabado", "ayer", "fin-de-semana"] },
+    { "id": "d035-17", "type": "match-pairs", "pairs": [["la estación", "station"], ["la salida", "exit"], ["la taquilla", "ticket office"], ["la parada", "stop"], ["los aseos", "toilets"]], "vocab": ["estacion", "salida", "taquilla", "parada", "aseos"] },
+    { "id": "d035-18", "type": "dictation", "es": "¿Dónde está la estación?", "hint": "Where is the station?", "vocab": ["donde-esta", "estacion"] },
+    { "id": "d035-19", "type": "dictation", "es": "el miércoles", "hint": "Wednesday", "vocab": ["miercoles"] },
+    { "id": "d035-20", "type": "dictation", "es": "Tengo hambre.", "hint": "I'm hungry.", "vocab": ["tengo-hambre"] },
+    { "id": "d035-21", "type": "build-sentence", "es": "¿A qué hora abre el museo?", "en": "What time does the museum open?", "distractors": ["cierra", "es"], "vocab": ["a-que-hora", "abre", "museo"] },
+    { "id": "d035-22", "type": "build-sentence", "es": "Necesito un abrigo porque hace frío.", "en": "I need a coat because it's cold.", "distractors": ["tengo", "por"], "vocab": ["necesito", "abrigo", "hace-frio"] },
+    { "id": "d035-23", "type": "build-sentence", "direction": "audio-to-es", "es": "¿Puedo pagar aquí? Sí, vale.", "en": "Can I pay here? Yes, OK.", "distractors": ["puede"], "vocab": ["puedo", "pagar", "aqui", "vale"] },
+    { "id": "d035-24", "type": "repeat", "es": "Soy de Estados Unidos, pero hablo un poco de español.", "en": "I'm from the United States, but I speak a little Spanish.", "vocab": ["soy-de", "hablar"] },
+    { "id": "d035-25", "type": "repeat", "es": "Perdón, ¿dónde están los aseos?", "en": "Excuse me, where are the toilets?", "vocab": ["donde-esta", "aseos"] },
+    { "id": "d035-26", "type": "shadow", "es": "Llego a Madrid el miércoles trece de enero.", "en": "I arrive in Madrid on Wednesday 13 January.", "listenFor": "ll in llego, stress on MIÉR, θ in trece, and the whole date in one smooth line.", "vocab": ["llegar", "miercoles", "fecha"] }
+  ]
+}

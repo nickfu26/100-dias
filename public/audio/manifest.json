@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-07T15:23:33+00:00",
+ "generated": "2026-10-07T16:05:54+00:00",
  "voices": {
   "f": "es-ES-ElviraNeural",
   "m": "es-ES-AlvaroNeural"
@@ -9,6 +9,10 @@
  "entries": {
   "A la una. A las ocho.": {
    "id": "dadf2ebb85e1",
+   "slow": true
+  },
+  "Abierto de diez a dos y de cinco a ocho.": {
+   "id": "43f651024149",
    "slow": true
   },
   "Abre a las diez de la mañana.": {
@@ -37,6 +41,10 @@
   },
   "Ahora no, mañana.": {
    "id": "7303c25eb875",
+   "slow": true
+  },
+  "Ana está cansada.": {
+   "id": "2aa3fed6991a",
    "slow": true
   },
   "Ana quiere un té.": {
@@ -71,6 +79,18 @@
    "id": "241e4b13a411",
    "slow": true
   },
+  "Busco el metro. ¿Está lejos?": {
+   "id": "fa13ece326f3",
+   "slow": true
+  },
+  "Busco la estación de Atocha.": {
+   "id": "cb9cdff59013",
+   "slow": true
+  },
+  "Busco una farmacia. ¿Está cerca?": {
+   "id": "d53f802499a0",
+   "slow": true
+  },
   "Cerrado de dos a cinco.": {
    "id": "12881302f6b4",
    "slow": true
@@ -101,6 +121,10 @@
   },
   "Consonantes fáciles y la hache muda": {
    "id": "e2e92f32b32b",
+   "slow": true
+  },
+  "Cuesta noventa euros.": {
+   "id": "b09779d803dd",
    "slow": true
   },
   "De nada.": {
@@ -175,6 +199,10 @@
    "id": "7e71a53d7953",
    "slow": true
   },
+  "El cuerpo": {
+   "id": "6eeefd162abd",
+   "slow": true
+  },
   "El fin de semana hay churros.": {
    "id": "6743240e4529",
    "slow": true
@@ -233,6 +261,10 @@
   },
   "El trece de enero.": {
    "id": "afc393d407fb",
+   "slow": true
+  },
+  "El tren es a las dieciséis cuarenta.": {
+   "id": "8d0e62e3313b",
    "slow": true
   },
   "El tren es a las veintitrés quince.": {
@@ -295,6 +327,10 @@
    "id": "43d461ac819b",
    "slow": true
   },
+  "Estoy cansada y me duelen los pies.": {
+   "id": "093aac44cf50",
+   "slow": true
+  },
   "Estoy en el hotel.": {
    "id": "c8d7a3d7df2b",
    "slow": true
@@ -305,6 +341,30 @@
   },
   "Estoy en la plaza. ¿Dónde estás?": {
    "id": "417e1380e417",
+   "slow": true
+  },
+  "Estoy enferma.": {
+   "id": "8717658320b7",
+   "slow": true
+  },
+  "Estoy enferma. Me duele el estómago.": {
+   "id": "f51ff665a830",
+   "slow": true
+  },
+  "Estoy enfermo. Necesito ir a la farmacia.": {
+   "id": "a316ca490702",
+   "slow": true
+  },
+  "Estoy muy cansada. Me duelen los pies.": {
+   "id": "e21191385906",
+   "slow": true
+  },
+  "Estoy muy cansado. Vamos al hotel.": {
+   "id": "859c39f94b34",
+   "slow": true
+  },
+  "Estoy muy cansado. ¿Puedo ir al hotel?": {
+   "id": "4bfc9205e5bc",
    "slow": true
   },
   "Está allí, no está lejos.": {
@@ -335,12 +395,28 @@
    "id": "3eec18fc9795",
    "slow": true
   },
+  "Hablo un poco de español.": {
+   "id": "2d4e7e5d6375",
+   "slow": true
+  },
+  "Hace frío. Necesito un abrigo y unos guantes.": {
+   "id": "ae38a4463bc2",
+   "slow": true
+  },
   "Hace frío. Vamos a un bar.": {
    "id": "44c90b5750e0",
    "slow": true
   },
+  "Hace frío. ¿Tomamos un chocolate con churros?": {
+   "id": "7b19567ef2d9",
+   "slow": true
+  },
   "Hace sol, pero hace mucho frío.": {
    "id": "92292487f16c",
+   "slow": true
+  },
+  "Hace sol, pero hay un grado bajo cero.": {
+   "id": "5e0fe0888ddc",
    "slow": true
   },
   "Hace viento y está nublado.": {
@@ -431,6 +507,10 @@
    "id": "3919641bde53",
    "slow": true
   },
+  "Hoy pago yo.": {
+   "id": "56867b95058e",
+   "slow": true
+  },
   "La bufanda cuesta veinte euros.": {
    "id": "67aeff077d83",
    "slow": true
@@ -495,6 +575,10 @@
    "id": "f33b6ba13217",
    "slow": true
   },
+  "La mano.": {
+   "id": "7a30c44f05b8",
+   "slow": true
+  },
   "La ropa": {
    "id": "ecc2aa227fe5",
    "slow": true
@@ -509,6 +593,10 @@
   },
   "La tienda cierra a mediodía.": {
    "id": "5848d6b31f40",
+   "slow": true
+  },
+  "La tienda cierra de dos a cinco.": {
+   "id": "30b13fe22c46",
    "slow": true
   },
   "La tienda es muy pequeña.": {
@@ -531,8 +619,36 @@
    "id": "6763681a3dcf",
    "slow": true
   },
+  "Las patatas bravas y el pan.": {
+   "id": "77f919830768",
+   "slow": true
+  },
+  "Las preguntas": {
+   "id": "2d8d76a6a19f",
+   "slow": true
+  },
   "Las vocales": {
    "id": "4e6f528b8ad4",
+   "slow": true
+  },
+  "Llegamos a Madrid el miércoles.": {
+   "id": "028922100ab8",
+   "slow": true
+  },
+  "Llego a Madrid el miércoles trece de enero.": {
+   "id": "a97aeb60b207",
+   "slow": true
+  },
+  "Llego a Madrid el miércoles.": {
+   "id": "562ab378becb",
+   "slow": true
+  },
+  "Llego a Madrid el trece de enero.": {
+   "id": "6961e759208d",
+   "slow": true
+  },
+  "Llueve y hace mucho viento.": {
+   "id": "602c6c8a0f9c",
    "slow": true
   },
   "Llueve y hace viento.": {
@@ -599,12 +715,52 @@
    "id": "2546e06779cc",
    "slow": true
   },
+  "Mañana vamos a la catedral.": {
+   "id": "57acb4e26291",
+   "slow": true
+  },
   "Mañana voy a la tienda.": {
    "id": "123ae84745dd",
    "slow": true
   },
   "Mañana voy al Museo del Prado.": {
    "id": "d81c248835e5",
+   "slow": true
+  },
+  "Me duele el estómago.": {
+   "id": "ede1d6db70f7",
+   "slow": true
+  },
+  "Me duele la cabeza.": {
+   "id": "607b2edf1cb3",
+   "slow": true
+  },
+  "Me duele la cabeza. Necesito ir a la farmacia.": {
+   "id": "08cb656e9706",
+   "slow": true
+  },
+  "Me duele la cabeza. ¿Hay una farmacia cerca?": {
+   "id": "5a1c2188f123",
+   "slow": true
+  },
+  "Me duele la garganta.": {
+   "id": "2d55fb790434",
+   "slow": true
+  },
+  "Me duele la mano.": {
+   "id": "834b09d37c3c",
+   "slow": true
+  },
+  "Me duele mucho la espalda.": {
+   "id": "cb4c83426fb5",
+   "slow": true
+  },
+  "Me duelen los pies.": {
+   "id": "ab6204e202e8",
+   "slow": true
+  },
+  "Me encanta Madrid, pero no me gusta nada el frío.": {
+   "id": "8f29d563c814",
    "slow": true
   },
   "Me encanta Madrid.": {
@@ -651,6 +807,10 @@
    "id": "18aee1088bb6",
    "slow": true
   },
+  "Me gustan los churros.": {
+   "id": "c13e862c6ec9",
+   "slow": true
+  },
   "Me gustan mucho los calamares.": {
    "id": "d2aa284d78e7",
    "slow": true
@@ -671,6 +831,10 @@
    "id": "2a8130c879ca",
    "slow": true
   },
+  "Mis amigos trabajan en Madrid.": {
+   "id": "d0cb6f719ea6",
+   "slow": true
+  },
   "Muchas gracias.": {
    "id": "04a4f089b6be",
    "slow": true
@@ -681,6 +845,26 @@
   },
   "Más despacio, por favor.": {
    "id": "02b4fd4d60b9",
+   "slow": true
+  },
+  "Necesito ir a la farmacia.": {
+   "id": "46d91c594021",
+   "slow": true
+  },
+  "Necesito ir al aeropuerto.": {
+   "id": "4fdd936441f2",
+   "slow": true
+  },
+  "Necesito un abrigo porque hace frío.": {
+   "id": "7604a8bcc35c",
+   "slow": true
+  },
+  "Necesito un cajero.": {
+   "id": "eee6fb13abd7",
+   "slow": true
+  },
+  "Necesito un paraguas. Llueve.": {
+   "id": "cdba7de69c35",
    "slow": true
   },
   "Nieva y hay un grado bajo cero.": {
@@ -731,6 +915,14 @@
    "id": "882af50cf697",
    "slow": true
   },
+  "No, no. Pago yo.": {
+   "id": "32fb9a345d4a",
+   "slow": true
+  },
+  "Nosotros llegamos el miércoles.": {
+   "id": "6eb67161bdd8",
+   "slow": true
+  },
   "Otra caña, por favor.": {
    "id": "3670c6fe51c4",
    "slow": true
@@ -745,6 +937,10 @@
   },
   "Perdón, no entiendo. ¿Puedes repetirlo?": {
    "id": "246684f8e097",
+   "slow": true
+  },
+  "Perdón, ¿a qué hora cierra el museo?": {
+   "id": "80d1f852f1cf",
    "slow": true
   },
   "Perdón, ¿a qué hora cierra?": {
@@ -767,8 +963,20 @@
    "id": "3c1015643ffc",
    "slow": true
   },
+  "Perdón, ¿habla inglés?": {
+   "id": "6f6f4e1e5127",
+   "slow": true
+  },
   "Perdón, ¿hay un supermercado cerca?": {
    "id": "9500285c55c8",
+   "slow": true
+  },
+  "Perdón, ¿puede repetir, por favor?": {
+   "id": "6bc7fcd5eb09",
+   "slow": true
+  },
+  "Perdón, ¿puede repetir?": {
+   "id": "557e8ead8b7f",
    "slow": true
   },
   "Perdón, ¿puedes repetirlo?": {
@@ -781,6 +989,10 @@
   },
   "Perdón, ¿tiene pan?": {
    "id": "50421b235a67",
+   "slow": true
+  },
+  "Perdón, ¿usted es de Madrid?": {
+   "id": "fce6ea827735",
    "slow": true
   },
   "Perdón.": {
@@ -809,6 +1021,10 @@
   },
   "Por favor.": {
    "id": "0cb4dc00702a",
+   "slow": true
+  },
+  "Prueba del nivel dos": {
+   "id": "9e0554fd7570",
    "slow": true
   },
   "Prueba del nivel uno": {
@@ -859,6 +1075,10 @@
    "id": "db3d900517b5",
    "slow": true
   },
+  "Quería una caña y una ración de calamares.": {
+   "id": "dc7fe3fceb45",
+   "slow": true
+  },
   "Quería una caña, por favor.": {
    "id": "10d341a1f61a",
    "slow": true
@@ -869,6 +1089,10 @@
   },
   "Quería una sopa y pescado, por favor.": {
    "id": "1f966c5306ab",
+   "slow": true
+  },
+  "Quería unos guantes negros, talla grande.": {
+   "id": "57fc229d18aa",
    "slow": true
   },
   "Quiero otra cerveza.": {
@@ -883,12 +1107,20 @@
    "id": "7ed40a1ada88",
    "slow": true
   },
+  "Repaso del nivel dos": {
+   "id": "caae1e09c12f",
+   "slow": true
+  },
   "Son catorce euros.": {
    "id": "e32a5adde9ae",
    "slow": true
   },
   "Son cinco euros.": {
    "id": "e31a2149d461",
+   "slow": true
+  },
+  "Son cuarenta y cinco con veinte.": {
+   "id": "67eda37c8686",
    "slow": true
   },
   "Son diecinueve euros.": {
@@ -929,6 +1161,10 @@
   },
   "Son las ocho menos cuarto.": {
    "id": "971fe3f5c8e3",
+   "slow": true
+  },
+  "Son las once menos cuarto.": {
+   "id": "4866e7aa19bc",
    "slow": true
   },
   "Son las once y cuarto.": {
@@ -979,12 +1215,20 @@
    "id": "9d586b30f67e",
    "slow": true
   },
+  "Son veintitrés con cincuenta.": {
+   "id": "bec713ae95d7",
+   "slow": true
+  },
   "Son… con…": {
    "id": "d809a322cf0f",
    "slow": true
   },
   "Soy de Estados Unidos, pero estoy en Madrid.": {
    "id": "d91aefc87b32",
+   "slow": true
+  },
+  "Soy de Estados Unidos, pero hablo un poco de español.": {
+   "id": "402a31ff0fe5",
    "slow": true
   },
   "Soy de Estados Unidos.": {
@@ -1051,6 +1295,10 @@
    "id": "7badafe08f00",
    "slow": true
   },
+  "Tengo hambre.": {
+   "id": "34eb272ca936",
+   "slow": true
+  },
   "Tengo hambre. ¿Hay tapas?": {
    "id": "a4ee4bf50d46",
    "slow": true
@@ -1075,8 +1323,20 @@
    "id": "4ffafbf5fbb4",
    "slow": true
   },
+  "Tengo sed. ¿Tiene agua?": {
+   "id": "ffd39eb27726",
+   "slow": true
+  },
   "Tengo un abrigo negro y una bufanda roja.": {
    "id": "b8dd36f47417",
+   "slow": true
+  },
+  "Tengo veintinueve años y soy de Estados Unidos.": {
+   "id": "2b3bcdc239e0",
+   "slow": true
+  },
+  "Tengo veintiocho años.": {
+   "id": "7b30fc54f6f9",
    "slow": true
   },
   "Tengo…": {
@@ -1093,6 +1353,10 @@
   },
   "Tom y Kate son estadounidenses.": {
    "id": "cd4987d8eae5",
+   "slow": true
+  },
+  "Trabajo en Estados Unidos, pero hablo español.": {
+   "id": "41b3cbefc7b1",
    "slow": true
   },
   "Treinta y uno.": {
@@ -1125,6 +1389,10 @@
   },
   "Un café solo y un té, por favor.": {
    "id": "d8e28492295e",
+   "slow": true
+  },
+  "Un café solo y un zumo, por favor.": {
+   "id": "dd1ae4dc4123",
    "slow": true
   },
   "Un café y un té.": {
@@ -1181,6 +1449,10 @@
   },
   "Una botella de agua, por favor.": {
    "id": "caf4f259b786",
+   "slow": true
+  },
+  "Una bufanda roja, por favor.": {
+   "id": "1aa422326a37",
    "slow": true
   },
   "Una bufanda roja.": {
@@ -1247,6 +1519,10 @@
    "id": "e6b323bb1e65",
    "slow": true
   },
+  "Unas camisetas blancas.": {
+   "id": "fb6f578bf081",
+   "slow": true
+  },
   "Unas croquetas de jamón, por favor.": {
    "id": "1c3d30d54732",
    "slow": true
@@ -1295,6 +1571,10 @@
    "id": "1683fd131fa0",
    "slow": true
   },
+  "Verbos en -ar": {
+   "id": "1e2f778ce6a9",
+   "slow": true
+  },
   "Vivo en Estados Unidos.": {
    "id": "718f744e5c63",
    "slow": true
@@ -1319,12 +1599,20 @@
    "id": "80f8d63e8f05",
    "slow": true
   },
+  "Voy al museo.": {
+   "id": "3b0c5eb97505",
+   "slow": true
+  },
   "Voy a…": {
    "id": "90a6e619abad",
    "slow": true
   },
   "Yo estoy en Madrid.": {
    "id": "5b9cba3acb0d",
+   "slow": true
+  },
+  "Yo hablo un poco de español.": {
+   "id": "5fc6fabb6552",
    "slow": true
   },
   "Yo me llamo Pablo. Encantado.": {
@@ -1363,8 +1651,16 @@
    "id": "19ae4b396de6",
    "slow": true
   },
+  "a las nueve y media de la noche": {
+   "id": "ec1e6e88591b",
+   "slow": true
+  },
   "a las ocho y media de la tarde": {
    "id": "e3594c9f75de",
+   "slow": true
+  },
+  "a las siete menos cuarto de la tarde": {
+   "id": "c3f1c70963c5",
    "slow": true
   },
   "a, be, ce, de, e, efe, ge": {
@@ -1469,6 +1765,10 @@
   },
   "buenos días": {
    "id": "a25b998dff5d",
+   "slow": true
+  },
+  "buscar": {
+   "id": "ac55cf0cc275",
    "slow": true
   },
   "café": {
@@ -1683,6 +1983,10 @@
    "id": "1c8c182a8cb3",
    "slow": true
   },
+  "el año": {
+   "id": "f444ec56f6c1",
+   "slow": true
+  },
   "el banco": {
    "id": "d133c8ad5bf1",
    "slow": true
@@ -1749,6 +2053,14 @@
   },
   "el domingo": {
    "id": "71a1bb29aeb8",
+   "slow": true
+  },
+  "el domingo diecisiete de enero": {
+   "id": "ce764082064e",
+   "slow": true
+  },
+  "el estómago": {
+   "id": "66b4860bda58",
    "slow": true
   },
   "el euro": {
@@ -1863,6 +2175,10 @@
    "id": "d41c76cec80e",
    "slow": true
   },
+  "el pie": {
+   "id": "70ef82d06004",
+   "slow": true
+  },
   "el pollo": {
    "id": "542047ddb5b7",
    "slow": true
@@ -1943,6 +2259,14 @@
    "id": "e0da597f1ae2",
    "slow": true
   },
+  "ellos hablan": {
+   "id": "ad07b6ead5c5",
+   "slow": true
+  },
+  "ellos pueden": {
+   "id": "a9a67cad7954",
+   "slow": true
+  },
   "ellos quieren": {
    "id": "f41673ec387a",
    "slow": true
@@ -2011,8 +2335,24 @@
    "id": "dddcbea4571d",
    "slow": true
   },
+  "estoy cansado": {
+   "id": "cb4cf89bf57c",
+   "slow": true
+  },
+  "estoy cansado, estoy cansada": {
+   "id": "13bda7801084",
+   "slow": true
+  },
   "estoy en": {
    "id": "544bd4f6cfb7",
+   "slow": true
+  },
+  "estoy enfermo": {
+   "id": "6e4dd4a12230",
+   "slow": true
+  },
+  "estoy enfermo, estoy enferma": {
+   "id": "98629d6e01d9",
    "slow": true
   },
   "está": {
@@ -2081,6 +2421,22 @@
   },
   "guitarra": {
    "id": "4436a76d1c8a",
+   "slow": true
+  },
+  "habla": {
+   "id": "df2e99bf62be",
+   "slow": true
+  },
+  "hablar": {
+   "id": "18c35a29fc2f",
+   "slow": true
+  },
+  "hablas": {
+   "id": "185414e3206a",
+   "slow": true
+  },
+  "hablo": {
+   "id": "7dd286a81f6a",
    "slow": true
   },
   "hace frío": {
@@ -2179,6 +2535,10 @@
    "id": "437a1977850e",
    "slow": true
   },
+  "la cabeza": {
+   "id": "ea93219240db",
+   "slow": true
+  },
   "la calle": {
    "id": "7a0a8927d566",
    "slow": true
@@ -2243,12 +2603,20 @@
    "id": "ec468a24953c",
    "slow": true
   },
+  "la espalda": {
+   "id": "7c57f53cb710",
+   "slow": true
+  },
   "la estación": {
    "id": "464444603c45",
    "slow": true
   },
   "la farmacia": {
    "id": "c4ee15c82065",
+   "slow": true
+  },
+  "la garganta": {
+   "id": "02031cd663ca",
    "slow": true
   },
   "la gente": {
@@ -2269,6 +2637,10 @@
   },
   "la llave": {
    "id": "3912d423d502",
+   "slow": true
+  },
+  "la mano": {
+   "id": "6fc0efb1d33e",
    "slow": true
   },
   "la mesa": {
@@ -2399,6 +2771,22 @@
    "id": "b48663d247ed",
    "slow": true
   },
+  "llegamos": {
+   "id": "7c855b641a0e",
+   "slow": true
+  },
+  "llegan": {
+   "id": "cb46ca89e0c5",
+   "slow": true
+  },
+  "llegar": {
+   "id": "ec24f23b3aec",
+   "slow": true
+  },
+  "llego": {
+   "id": "50dc69123067",
+   "slow": true
+  },
   "llueve": {
    "id": "e983354756d4",
    "slow": true
@@ -2483,6 +2871,18 @@
    "id": "8727ae650349",
    "slow": true
   },
+  "me duele": {
+   "id": "5367888becf9",
+   "slow": true
+  },
+  "me duele, me duelen": {
+   "id": "b48531cd8e01",
+   "slow": true
+  },
+  "me duelen": {
+   "id": "eb34b7934c89",
+   "slow": true
+  },
   "me encanta": {
    "id": "afa359175c48",
    "slow": true
@@ -2539,6 +2939,18 @@
    "id": "d683c820daad",
    "slow": true
   },
+  "necesita": {
+   "id": "2dbfbbb087f8",
+   "slow": true
+  },
+  "necesitas": {
+   "id": "63462a0ff6f0",
+   "slow": true
+  },
+  "necesito": {
+   "id": "06d5d444f509",
+   "slow": true
+  },
   "negro": {
    "id": "867268472cd8",
    "slow": true
@@ -2579,8 +2991,16 @@
    "id": "97ca0ae9b6d9",
    "slow": true
   },
+  "nosotros hablamos": {
+   "id": "5201caa9edb8",
+   "slow": true
+  },
   "nosotros nos llamamos": {
    "id": "a30692d30364",
+   "slow": true
+  },
+  "nosotros podemos": {
+   "id": "08e80f267c70",
    "slow": true
   },
   "nosotros queremos": {
@@ -2641,6 +3061,10 @@
   },
   "otro, otra": {
    "id": "20a0df33b1ce",
+   "slow": true
+  },
+  "pagar": {
+   "id": "7b125739d81e",
    "slow": true
   },
   "papa": {
@@ -2707,12 +3131,32 @@
    "id": "2366c31fc3f3",
    "slow": true
   },
+  "poder": {
+   "id": "b1b3592ddf08",
+   "slow": true
+  },
   "pollo con verduras": {
    "id": "d01a1d723972",
    "slow": true
   },
   "por favor": {
    "id": "e392209eb260",
+   "slow": true
+  },
+  "porque": {
+   "id": "a6d1c03761a9",
+   "slow": true
+  },
+  "puede": {
+   "id": "2a5cc4e04b9d",
+   "slow": true
+  },
+  "pueden": {
+   "id": "b22c4c49415a",
+   "slow": true
+  },
+  "puedo": {
+   "id": "90bbe9e24136",
    "slow": true
   },
   "querer": {
@@ -2785,6 +3229,10 @@
   },
   "setenta": {
    "id": "6dfea5de0c02",
+   "slow": true
+  },
+  "setenta y seis": {
+   "id": "a249a36f6c9c",
    "slow": true
   },
   "señor": {
@@ -2875,8 +3323,36 @@
    "id": "05f20a71783d",
    "slow": true
   },
+  "tomar": {
+   "id": "026a02225735",
+   "slow": true
+  },
   "tomate": {
    "id": "13f20098aaeb",
+   "slow": true
+  },
+  "trabaja": {
+   "id": "52f8aebac624",
+   "slow": true
+  },
+  "trabajamos": {
+   "id": "24efab1a1616",
+   "slow": true
+  },
+  "trabajan": {
+   "id": "40478a1539fd",
+   "slow": true
+  },
+  "trabajar": {
+   "id": "a4adaa626dee",
+   "slow": true
+  },
+  "trabajas": {
+   "id": "c82149b6930c",
+   "slow": true
+  },
+  "trabajo": {
+   "id": "09d2e3a1502e",
    "slow": true
   },
   "trece": {
@@ -2921,6 +3397,14 @@
   },
   "tú estás": {
    "id": "3a21d3e60b2f",
+   "slow": true
+  },
+  "tú hablas": {
+   "id": "f727a61bab99",
+   "slow": true
+  },
+  "tú puedes": {
+   "id": "8754818c25d7",
    "slow": true
   },
   "tú quieres": {
@@ -2999,6 +3483,10 @@
    "id": "67a944260f59",
    "slow": true
   },
+  "usted": {
+   "id": "5155ddcd5c09",
+   "slow": true
+  },
   "uve": {
    "id": "f52a9644cc24",
    "slow": true
@@ -3071,8 +3559,16 @@
    "id": "34b718c5ded4",
    "slow": true
   },
+  "vosotros habláis": {
+   "id": "97827002d69f",
+   "slow": true
+  },
   "vosotros os llamáis": {
    "id": "6cc2c8d4c485",
+   "slow": true
+  },
+  "vosotros podéis": {
+   "id": "6b51bcda8782",
    "slow": true
   },
   "vosotros queréis": {
@@ -3119,8 +3615,16 @@
    "id": "a99974a1e2d9",
    "slow": true
   },
+  "yo hablo": {
+   "id": "23fa3bc3c1f6",
+   "slow": true
+  },
   "yo me llamo": {
    "id": "56319b36abe1",
+   "slow": true
+  },
+  "yo puedo": {
+   "id": "a09da62019f3",
    "slow": true
   },
   "yo quiero": {
@@ -3145,6 +3649,10 @@
   },
   "¡Vamos!": {
    "id": "456de1ee8799",
+   "slow": true
+  },
+  "¿A qué hora abre el museo?": {
+   "id": "b32a0eae718d",
    "slow": true
   },
   "¿A qué hora abre?": {
@@ -3183,6 +3691,22 @@
    "id": "4f39c642acd4",
    "slow": true
   },
+  "¿Cuál es tu hotel?": {
+   "id": "18f0e5117f73",
+   "slow": true
+  },
+  "¿Cuándo abre la taquilla?": {
+   "id": "aef05cfbdc1d",
+   "slow": true
+  },
+  "¿Cuándo llegas a Madrid?": {
+   "id": "aa2406232063",
+   "slow": true
+  },
+  "¿Cuándo llegas?": {
+   "id": "942f888043ef",
+   "slow": true
+  },
   "¿Cuántas cañas?": {
    "id": "8d29ab1511ba",
    "slow": true
@@ -3203,8 +3727,16 @@
    "id": "931d8181da44",
    "slow": true
   },
+  "¿Cuánto cuesta y cuándo abre?": {
+   "id": "c96389f40638",
+   "slow": true
+  },
   "¿Cuánto cuesta?": {
    "id": "882e7f82f8dd",
+   "slow": true
+  },
+  "¿Cuánto cuesta? ¿Cuántas cañas?": {
+   "id": "8bdc8bb15830",
    "slow": true
   },
   "¿Cuánto cuestan dos cañas?": {
@@ -3237,6 +3769,18 @@
   },
   "¿Cuánto es? —Son cuatro euros.": {
    "id": "837d4c728957",
+   "slow": true
+  },
+  "¿Cuántos años tienes?": {
+   "id": "ca8c6a998137",
+   "slow": true
+  },
+  "¿Cuántos años tienes? Tengo treinta años.": {
+   "id": "124f23bd1535",
+   "slow": true
+  },
+  "¿Cuántos años tienes? Tengo … años.": {
+   "id": "070226d195fe",
    "slow": true
   },
   "¿Cuántos bocadillos?": {
@@ -3275,6 +3819,10 @@
    "id": "f9d4d5f29080",
    "slow": true
   },
+  "¿Cómo vamos al aeropuerto?": {
+   "id": "95d8f7b2527f",
+   "slow": true
+  },
   "¿De dónde eres?": {
    "id": "449b0a0e511f",
    "slow": true
@@ -3303,8 +3851,20 @@
    "id": "2505d736d08a",
    "slow": true
   },
+  "¿Dónde está el museo?": {
+   "id": "8e1c942ea87d",
+   "slow": true
+  },
+  "¿Dónde está la estación?": {
+   "id": "4b2491e3820a",
+   "slow": true
+  },
   "¿Dónde está la parada de metro?": {
    "id": "e66248da695a",
+   "slow": true
+  },
+  "¿Dónde está la parada de metro? Está allí, no está lejos.": {
+   "id": "cbc03e8fd1e4",
    "slow": true
   },
   "¿Dónde está la salida?": {
@@ -3333,6 +3893,26 @@
   },
   "¿Eres española?": {
    "id": "e2927cc800e5",
+   "slow": true
+  },
+  "¿Eres inglés?": {
+   "id": "bc05b53fb634",
+   "slow": true
+  },
+  "¿Habla inglés?": {
+   "id": "f1b992253779",
+   "slow": true
+  },
+  "¿Hablas inglés?": {
+   "id": "a5fe8f6dfb6a",
+   "slow": true
+  },
+  "¿Hablas inglés? Hablo un poco de español.": {
+   "id": "120922109a5b",
+   "slow": true
+  },
+  "¿Hablas inglés?, ¿Habla inglés?": {
+   "id": "665439ef23d9",
    "slow": true
   },
   "¿Hay agua?": {
@@ -3379,6 +3959,10 @@
    "id": "10be62de9dfc",
    "slow": true
   },
+  "¿Hay una farmacia cerca del hotel?": {
+   "id": "0810e3c2ecfc",
+   "slow": true
+  },
   "¿Hay una farmacia cerca?": {
    "id": "6a19ee6c0769",
    "slow": true
@@ -3387,8 +3971,40 @@
    "id": "3a2fdeceeba9",
    "slow": true
   },
+  "¿Por qué no vamos en metro?": {
+   "id": "465b4cb8f777",
+   "slow": true
+  },
+  "¿Por qué? Porque estoy cansado.": {
+   "id": "e460f36c198d",
+   "slow": true
+  },
+  "¿Por qué? Porque hace frío.": {
+   "id": "47fbd5212be5",
+   "slow": true
+  },
   "¿Puedes repetirlo?": {
    "id": "7283f108a072",
+   "slow": true
+  },
+  "¿Puedo ir ahora?": {
+   "id": "acdf0b7996e4",
+   "slow": true
+  },
+  "¿Puedo ir al baño?": {
+   "id": "3b928e040ea2",
+   "slow": true
+  },
+  "¿Puedo ir en metro al museo?": {
+   "id": "c17074a0b776",
+   "slow": true
+  },
+  "¿Puedo pagar aquí? Sí, vale.": {
+   "id": "69bcf250418d",
+   "slow": true
+  },
+  "¿Puedo…?": {
+   "id": "c443afaa9baa",
    "slow": true
   },
   "¿Quieres otra tapa?": {
@@ -3411,6 +4027,10 @@
    "id": "1e231eb49617",
    "slow": true
   },
+  "¿Quién paga hoy?": {
+   "id": "d7b83f8ef05a",
+   "slow": true
+  },
   "¿Qué hora es?": {
    "id": "f9555b50b884",
    "slow": true
@@ -3423,6 +4043,10 @@
    "id": "a8506c246b78",
    "slow": true
   },
+  "¿Qué tapa quieres?": {
+   "id": "54be7bbf6640",
+   "slow": true
+  },
   "¿Qué tiempo hace hoy en Madrid?": {
    "id": "7b5b84cf4f9b",
    "slow": true
@@ -3433,6 +4057,30 @@
   },
   "¿Qué tiempo hace? Hace sol, pero hace frío.": {
    "id": "d1734b2eb9ca",
+   "slow": true
+  },
+  "¿Qué tomas? Una caña.": {
+   "id": "62f2ee7dae53",
+   "slow": true
+  },
+  "¿Qué? ¿Cuándo? ¿Dónde? ¿Por qué?": {
+   "id": "ab5d422f66ae",
+   "slow": true
+  },
+  "¿Se puede ir en metro?": {
+   "id": "b6d08679b33b",
+   "slow": true
+  },
+  "¿Se puede?": {
+   "id": "3a907f604284",
+   "slow": true
+  },
+  "¿Se puede…?": {
+   "id": "4e41d6bde513",
+   "slow": true
+  },
+  "¿Te gusta el cocido madrileño?": {
+   "id": "863f5feedf7a",
    "slow": true
   },
   "¿Te gusta el cocido?": {
@@ -3479,6 +4127,10 @@
    "id": "4b3140f0d145",
    "slow": true
   },
+  "¿Tiene usted el horario?": {
+   "id": "f0ca6ed3825e",
+   "slow": true
+  },
   "¿Tiene vino blanco?": {
    "id": "b4dea162c582",
    "slow": true
@@ -3495,6 +4147,10 @@
    "id": "82a8402e29bc",
    "slow": true
   },
+  "¿Usted es de Madrid?": {
+   "id": "3d467c6b1203",
+   "slow": true
+  },
   "¿Vais al mercado?": {
    "id": "ab47f974d1b9",
    "slow": true
@@ -3507,12 +4163,56 @@
    "id": "6c3a47647674",
    "slow": true
   },
+  "¿cuál?": {
+   "id": "7a9ca931474a",
+   "slow": true
+  },
+  "¿cuándo?": {
+   "id": "dbb024ed4997",
+   "slow": true
+  },
+  "¿cuánto?": {
+   "id": "48f54f5ed4f0",
+   "slow": true
+  },
+  "¿cuánto?, ¿cuánta?": {
+   "id": "28d9d7af4f7f",
+   "slow": true
+  },
+  "¿cómo?": {
+   "id": "b4f801fc44e7",
+   "slow": true
+  },
+  "¿dónde?": {
+   "id": "dd5d49c1ce88",
+   "slow": true
+  },
+  "¿por qué?": {
+   "id": "19c60b0dab88",
+   "slow": true
+  },
+  "¿quién?": {
+   "id": "345d7159ce89",
+   "slow": true
+  },
+  "¿qué?": {
+   "id": "740d35bea353",
+   "slow": true
+  },
   "él es": {
    "id": "9c2fe2542725",
    "slow": true
   },
   "él está": {
    "id": "7d626107f56e",
+   "slow": true
+  },
+  "él habla": {
+   "id": "38e7ec430af1",
+   "slow": true
+  },
+  "él puede": {
+   "id": "71708695db05",
    "slow": true
   },
   "él quiere": {

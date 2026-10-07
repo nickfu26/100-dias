@@ -1,0 +1,75 @@
+{
+  "$schema": "./schema.json",
+  "day": 19,
+  "level": 2,
+  "title": { "en": "I have", "es": "Tengo…" },
+  "objectives": [
+    "Use tengo, tienes and tiene to say what someone has",
+    "Ask ¿Tienes…? to friends and ¿Tiene…? in a shop or bar",
+    "Say you're hungry, thirsty, cold or hot with tener"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**tener** means *to have*. Like *querer*, its stem changes to **tien-** in most forms. And *yo* is irregular: **tengo**, with a g."
+    },
+    {
+      "kind": "conjugation",
+      "verb": "tener",
+      "verbEn": "to have",
+      "tense": "present",
+      "forms": {
+        "yo": "tengo",
+        "tu": "tienes",
+        "el": "tiene",
+        "nosotros": "tenemos",
+        "vosotros": "tenéis",
+        "ellos": "tienen"
+      }
+    },
+    { "kind": "phrase", "es": "¿Tienes el móvil?", "en": "Have you got your phone?", "note": "Spanish uses el, not tu, when it's obvious whose it is." },
+    { "kind": "phrase", "es": "¿Tiene agua sin gas?", "en": "Do you have still water?", "note": "Use tiene (usted) to a waiter or shop assistant. It's the normal way to ask if they sell or serve something." },
+    {
+      "kind": "note",
+      "md": "**Spanish *has* hunger, thirst, cold and heat.** English says *I am hungry*; Spanish says *I have hunger*:\n\n- **tengo hambre**: I'm hungry\n- **tengo sed**: I'm thirsty\n- **tengo frío**: I'm cold\n- **tengo calor**: I'm hot\n\nDon't say ~~estoy frío~~. That describes something cold to the touch. For *very*, use **mucho** or **mucha**: *tengo mucho frío*, *tengo mucha hambre* (hambre is feminine).\n\nAge works the same way: *Tengo treinta años* = I'm thirty."
+    },
+    { "kind": "phrase", "es": "Tengo mucho frío.", "en": "I'm really cold.", "note": "You'll say this a lot in Madrid in January. Mornings are often around 0 °C." }
+  ],
+  "vocab": [
+    { "id": "tener", "es": "tener", "en": "to have", "pos": "verb", "ipa": "teˈneɾ" },
+    { "id": "tengo", "es": "tengo", "en": "I have", "pos": "verb", "ipa": "ˈteŋgo" },
+    { "id": "tienes", "es": "tienes", "en": "you have", "pos": "verb", "ipa": "ˈtjenes", "note": "Informal tú. With usted: tiene." },
+    { "id": "tiene", "es": "tiene", "en": "he / she has; you have (usted)", "pos": "verb", "ipa": "ˈtjene" },
+    { "id": "tienes-q", "es": "¿Tienes…?, ¿Tiene…?", "en": "Do you have…?", "pos": "phrase", "ipa": "ˈtjenes, ˈtjene", "note": "¿Tienes…? to a friend, ¿Tiene…? to staff.", "tags": ["survival", "shopping"] },
+    { "id": "tengo-hambre", "es": "tengo hambre", "en": "I'm hungry", "pos": "phrase", "ipa": "ˈteŋgo ˈambɾe", "note": "The h is silent.", "tags": ["survival"] },
+    { "id": "tengo-sed", "es": "tengo sed", "en": "I'm thirsty", "pos": "phrase", "ipa": "ˈteŋgo ˈseð", "tags": ["survival"] },
+    { "id": "tengo-frio", "es": "tengo frío", "en": "I'm cold", "pos": "phrase", "ipa": "ˈteŋgo ˈfɾio", "tags": ["survival"] },
+    { "id": "tengo-calor", "es": "tengo calor", "en": "I'm hot", "pos": "phrase", "ipa": "ˈteŋgo kaˈloɾ" }
+  ],
+  "exercises": [
+    { "id": "d019-01", "type": "listen-choose", "audio": "tengo", "options": ["tengo", "tiene", "tienes"], "answer": 0, "vocab": ["tengo"] },
+    { "id": "d019-02", "type": "listen-choose", "audio": "tienes", "options": ["tiene", "tengo", "tienes"], "answer": 2, "vocab": ["tienes"] },
+    { "id": "d019-03", "type": "listen-choose", "audio": "tengo sed", "options": ["tengo sed", "tengo seis", "tengo frío"], "answer": 0, "vocab": ["tengo-sed"] },
+    { "id": "d019-04", "type": "match-pairs", "pairs": [["tengo hambre", "I'm hungry"], ["tengo sed", "I'm thirsty"], ["tengo frío", "I'm cold"], ["tengo calor", "I'm hot"]], "vocab": ["tengo-hambre", "tengo-sed", "tengo-frio", "tengo-calor"] },
+    { "id": "d019-05", "type": "match-pairs", "pairs": [["tengo", "I have"], ["tienes", "you have"], ["tiene", "she has"], ["quiero", "I want"], ["quieres", "you want"]], "prompt": "tener or querer?", "vocab": ["tengo", "tienes", "tiene", "quiero", "quieres"] },
+    { "id": "d019-06", "type": "fill-blank", "es": "Yo {{tengo}} un perro.", "en": "I have a dog.", "options": ["tengo", "tienes", "tiene"], "vocab": ["tengo", "yo", "perro"] },
+    { "id": "d019-07", "type": "fill-blank", "es": "¿{{Tienes}} el móvil?", "en": "Have you got your phone?", "options": ["Tienes", "Tengo", "Tiene"], "vocab": ["tienes-q", "movil"] },
+    { "id": "d019-08", "type": "fill-blank", "es": "Perdón, ¿{{tiene}} pan?", "en": "Excuse me, do you have bread?", "options": ["tiene", "tienes", "tengo"], "prompt": "You're asking a waiter (usted).", "vocab": ["tienes-q", "pan", "perdon"] },
+    { "id": "d019-09", "type": "fill-blank", "es": "Tengo {{frío}}. Un café, por favor.", "en": "I'm cold. A coffee, please.", "options": ["frío", "calor", "sed"], "vocab": ["tengo-frio", "cafe"] },
+    { "id": "d019-10", "type": "fill-blank", "es": "Tengo {{hambre}}. ¿Hay tapas?", "en": "I'm hungry. Are there tapas?", "options": ["hambre", "sed", "calor"], "vocab": ["tengo-hambre", "hay-q", "tapa"] },
+    { "id": "d019-11", "type": "fill-blank", "es": "Ana {{tiene}} un gato.", "en": "Ana has a cat.", "options": ["tiene", "tienes", "tengo"], "vocab": ["tiene", "gato"] },
+    { "id": "d019-12", "type": "listen-choose", "prompt": "How does he feel?", "audio": "Tengo mucha sed.", "optionsLang": "en", "options": ["Very thirsty", "Very hungry", "Very cold"], "answer": 0, "vocab": ["tengo-sed", "mucho"] },
+    { "id": "d019-13", "type": "listen-choose", "prompt": "What is she asking the waiter?", "audio": "¿Tiene vino blanco?", "optionsLang": "en", "options": ["Do you have white wine?", "Do you want white wine?", "Is there red wine?"], "answer": 0, "vocab": ["tienes-q", "vino-blanco"] },
+    { "id": "d019-14", "type": "listen-choose", "prompt": "Why does he want a drink?", "audio": "Tengo calor. Quiero agua.", "optionsLang": "en", "options": ["He's hot", "He's cold", "He's hungry"], "answer": 0, "vocab": ["tengo-calor", "quiero", "agua"] },
+    { "id": "d019-15", "type": "dictation", "es": "tengo", "hint": "I have", "vocab": ["tengo"] },
+    { "id": "d019-16", "type": "dictation", "es": "tengo hambre", "hint": "I'm hungry (silent h)", "vocab": ["tengo-hambre"] },
+    { "id": "d019-17", "type": "dictation", "es": "¿Tienes agua?", "hint": "Do you have water?", "vocab": ["tienes-q", "agua"] },
+    { "id": "d019-18", "type": "build-sentence", "es": "Tengo mucho frío.", "en": "I'm really cold.", "distractors": ["estoy", "calor"], "vocab": ["tengo-frio", "mucho"] },
+    { "id": "d019-19", "type": "build-sentence", "es": "¿Tiene una botella de agua?", "en": "Do you have a bottle of water?", "distractors": ["tienes", "vaso"], "vocab": ["tienes-q", "botella", "agua"] },
+    { "id": "d019-20", "type": "build-sentence", "direction": "audio-to-es", "es": "Tengo hambre y quiero un bocadillo.", "en": "I'm hungry and I want a sandwich.", "distractors": ["sed"], "vocab": ["tengo-hambre", "quiero", "bocadillo"] },
+    { "id": "d019-21", "type": "repeat", "es": "Tengo hambre. ¿Tiene croquetas?", "en": "I'm hungry. Do you have croquettes?", "vocab": ["tengo-hambre", "tienes-q", "croquetas"] },
+    { "id": "d019-22", "type": "shadow", "es": "Tengo mucho frío.", "en": "I'm really cold.", "listenFor": "ng in tengo said like in English 'finger', and the tapped r in frío.", "vocab": ["tengo-frio"] },
+    { "id": "d019-23", "type": "listen-choose", "prompt": "Review: how much is it?", "audio": "Son setenta con cincuenta.", "optionsLang": "en", "options": ["€70.50", "€60.50", "€17.50"], "answer": 0, "vocab": ["son-con", "setenta", "cincuenta"] },
+    { "id": "d019-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "¿Cuánto cuesta el cocido madrileño?", "en": "How much is the cocido madrileño?", "vocab": ["cuesta", "cocido"] }
+  ]
+}

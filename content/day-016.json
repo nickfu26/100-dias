@@ -1,0 +1,75 @@
+{
+  "$schema": "./schema.json",
+  "day": 16,
+  "level": 2,
+  "title": { "en": "I want", "es": "Quiero…" },
+  "objectives": [
+    "Use quiero, quieres and quiere to say what someone wants",
+    "Offer something with ¿Quieres…?",
+    "Order politely with quería",
+    "Ask for another one with otro and otra"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**querer** means *to want*. It's the verb you'll use most when ordering.\n\nThe stem changes from **quer-** to **quier-** in four of its six forms: **quiero**, **quieres**, **quiere**, **quieren**. The *we* and *you all* forms keep the plain stem: **queremos**, **queréis**."
+    },
+    {
+      "kind": "conjugation",
+      "verb": "querer",
+      "verbEn": "to want",
+      "tense": "present",
+      "forms": {
+        "yo": "quiero",
+        "tu": "quieres",
+        "el": "quiere",
+        "nosotros": "queremos",
+        "vosotros": "queréis",
+        "ellos": "quieren"
+      }
+    },
+    { "kind": "phrase", "es": "Quiero un café.", "en": "I want a coffee.", "note": "Grammatically fine, but on its own it can sound a little blunt. Add por favor." },
+    { "kind": "phrase", "es": "¿Quieres una caña?", "en": "Do you want a beer?", "note": "A question is just the statement with rising intonation. No extra word needed." },
+    { "kind": "phrase", "es": "Quería un café con leche, por favor.", "en": "I'd like a white coffee, please.", "note": "Quería is literally 'I wanted', but Spaniards use it as the polite 'I'd like'. It's the safest way to start an order." },
+    {
+      "kind": "note",
+      "md": "**otro, otra** = *another* (or *other*).\n\nIt agrees with the noun: **otro** café, **otra** caña. Never put *un* in front of it: say **otra cerveza**, not ~~una otra cerveza~~.\n\nFor *more*, Spain says **más**: *más pan*. You met it in *más despacio*."
+    },
+    { "kind": "phrase", "es": "Otra caña, por favor.", "en": "Another beer, please.", "note": "Point at your empty glass and you're done." }
+  ],
+  "vocab": [
+    { "id": "querer", "es": "querer", "en": "to want; to love (a person)", "pos": "verb", "ipa": "keˈɾeɾ", "note": "Te quiero = I love you (to family, a partner, close friends)." },
+    { "id": "quiero", "es": "quiero", "en": "I want", "pos": "verb", "ipa": "ˈkjeɾo" },
+    { "id": "quieres", "es": "quieres", "en": "you want", "pos": "verb", "ipa": "ˈkjeɾes", "note": "Informal tú. With usted: quiere." },
+    { "id": "quiere", "es": "quiere", "en": "he / she wants; you want (usted)", "pos": "verb", "ipa": "ˈkjeɾe" },
+    { "id": "quieres-q", "es": "¿Quieres…?", "en": "Do you want…? Would you like…?", "pos": "phrase", "ipa": "ˈkjeɾes", "tags": ["survival"] },
+    { "id": "queria", "es": "quería", "en": "I'd like (polite)", "pos": "verb", "ipa": "keˈɾia", "note": "Use it to start an order: Quería…", "tags": ["survival", "restaurant"] },
+    { "id": "otro", "es": "otro, otra", "en": "another; other", "pos": "adj", "ipa": "ˈotɾo, ˈotɾa", "note": "Never un otro: otro café, otra caña.", "tags": ["restaurant"] }
+  ],
+  "exercises": [
+    { "id": "d016-01", "type": "listen-choose", "audio": "quiero", "options": ["quiero", "quiere", "quieres"], "answer": 0, "vocab": ["quiero"] },
+    { "id": "d016-02", "type": "listen-choose", "audio": "quieres", "options": ["quiere", "quieres", "quiero"], "answer": 1, "vocab": ["quieres"] },
+    { "id": "d016-03", "type": "listen-choose", "audio": "quería", "options": ["quiero", "quería", "querer"], "answer": 1, "vocab": ["queria"] },
+    { "id": "d016-04", "type": "match-pairs", "pairs": [["quiero", "I want"], ["quieres", "you want"], ["quiere", "she wants"], ["quería", "I'd like"], ["otra", "another"]], "vocab": ["quiero", "quieres", "quiere", "queria", "otro"] },
+    { "id": "d016-05", "type": "fill-blank", "es": "Yo {{quiero}} un café.", "en": "I want a coffee.", "options": ["quiero", "quieres", "quiere"], "vocab": ["quiero", "yo", "cafe"] },
+    { "id": "d016-06", "type": "fill-blank", "es": "¿{{Quieres}} una caña?", "en": "Do you want a beer?", "options": ["Quieres", "Quiero", "Quiere"], "vocab": ["quieres-q", "cana"] },
+    { "id": "d016-07", "type": "fill-blank", "es": "Ana {{quiere}} un té.", "en": "Ana wants a tea.", "options": ["quiere", "quiero", "quieres"], "vocab": ["quiere", "te"] },
+    { "id": "d016-08", "type": "fill-blank", "es": "{{Otra}} caña, por favor.", "en": "Another beer, please.", "options": ["Otra", "Otro"], "prompt": "caña is feminine.", "vocab": ["otro", "cana"] },
+    { "id": "d016-09", "type": "fill-blank", "es": "{{Otro}} café, por favor.", "en": "Another coffee, please.", "options": ["Otro", "Otra", "Un otro"], "vocab": ["otro", "cafe"] },
+    { "id": "d016-10", "type": "fill-blank", "es": "{{Quería}} una ración de croquetas, por favor.", "en": "I'd like a plate of croquettes, please.", "options": ["Quería", "Quieres", "Quiere"], "vocab": ["queria", "racion", "croquetas"] },
+    { "id": "d016-11", "type": "listen-choose", "prompt": "What does he want?", "audio": "Quiero otra cerveza.", "optionsLang": "en", "options": ["Another beer", "A beer", "Another wine"], "answer": 0, "vocab": ["quiero", "otro", "cerveza"] },
+    { "id": "d016-12", "type": "listen-choose", "prompt": "What is she doing?", "audio": "¿Quieres un café?", "optionsLang": "en", "options": ["Offering you a coffee", "Ordering a coffee for herself", "Asking for another coffee"], "answer": 0, "vocab": ["quieres-q", "cafe"] },
+    { "id": "d016-13", "type": "listen-choose", "prompt": "What does the customer want?", "audio": "Quería un bocadillo de jamón y agua sin gas.", "optionsLang": "en", "options": ["Ham sandwich + still water", "Ham sandwich + sparkling water", "Cheese sandwich + still water"], "answer": 0, "vocab": ["queria", "bocadillo", "jamon", "agua-sin-gas"] },
+    { "id": "d016-14", "type": "dictation", "es": "quiero", "hint": "I want", "vocab": ["quiero"] },
+    { "id": "d016-15", "type": "dictation", "es": "quería", "hint": "I'd like (polite)", "vocab": ["queria"] },
+    { "id": "d016-16", "type": "dictation", "es": "otra caña", "hint": "another small beer", "vocab": ["otro", "cana"] },
+    { "id": "d016-17", "type": "build-sentence", "es": "Quería un café con leche, por favor.", "en": "I'd like a white coffee, please.", "distractors": ["quiere", "sin"], "vocab": ["queria", "cafe-con-leche"] },
+    { "id": "d016-18", "type": "build-sentence", "es": "¿Quieres otra tapa?", "en": "Do you want another tapa?", "distractors": ["una", "quiero"], "vocab": ["quieres-q", "otro", "tapa"] },
+    { "id": "d016-19", "type": "build-sentence", "direction": "audio-to-es", "es": "No quiero nada, gracias.", "en": "I don't want anything, thanks.", "distractors": ["todo"], "vocab": ["quiero", "nada", "gracias"] },
+    { "id": "d016-20", "type": "repeat", "es": "Quería una caña, por favor.", "en": "I'd like a small beer, please.", "vocab": ["queria", "cana"] },
+    { "id": "d016-21", "type": "repeat", "es": "¿Quieres otro café?", "en": "Do you want another coffee?", "vocab": ["quieres-q", "otro"] },
+    { "id": "d016-22", "type": "shadow", "es": "Quería un café con leche, por favor.", "en": "I'd like a white coffee, please.", "listenFor": "The single tap of r in quería (not rolled), and quería said in one smooth breath: ke-RI-a.", "vocab": ["queria"] },
+    { "id": "d016-23", "type": "listen-choose", "prompt": "Review: what's for dessert?", "audio": "De postre, chocolate con churros.", "optionsLang": "en", "options": ["Hot chocolate with churros", "Chocolate cake", "Churros with coffee"], "answer": 0, "vocab": ["postre", "chocolate", "churros"] },
+    { "id": "d016-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "¿Hay patatas bravas?", "en": "Are there patatas bravas?", "vocab": ["hay-q", "patatas-bravas"] }
+  ]
+}

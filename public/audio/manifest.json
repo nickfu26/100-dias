@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-07T04:42:43+00:00",
+ "generated": "2026-10-07T14:32:51+00:00",
  "voices": {
   "f": "es-ES-ElviraNeural",
   "m": "es-ES-AlvaroNeural"
@@ -31,6 +31,18 @@
    "id": "7303c25eb875",
    "slow": true
   },
+  "Ana quiere un té.": {
+   "id": "68402ea8a53c",
+   "slow": true
+  },
+  "Ana tiene un gato.": {
+   "id": "4e98388b05a6",
+   "slow": true
+  },
+  "Ayer, hoy y mañana.": {
+   "id": "605340220c38",
+   "slow": true
+  },
   "Buenas noches.": {
    "id": "69011223f6e0",
    "slow": true
@@ -55,6 +67,10 @@
    "id": "d9a1f7e4c1ed",
    "slow": true
   },
+  "Cien euros.": {
+   "id": "28f1ed086ac7",
+   "slow": true
+  },
   "Claudia es alemana.": {
    "id": "9e0a3a481591",
    "slow": true
@@ -67,12 +83,20 @@
    "id": "c310b65511ac",
    "slow": true
   },
+  "De postre, chocolate con churros.": {
+   "id": "764fb0bff290",
+   "slow": true
+  },
   "De tapas": {
    "id": "1ebbcea6a963",
    "slow": true
   },
   "Del once al veinte y repaso": {
    "id": "14d76f203254",
+   "slow": true
+  },
+  "Del veintiuno al cincuenta": {
+   "id": "50e942e2ca3f",
    "slow": true
   },
   "Dos bocadillos de calamares y dos cañas.": {
@@ -107,8 +131,28 @@
    "id": "59f08aef1f46",
    "slow": true
   },
+  "El fin de semana hay churros.": {
+   "id": "6743240e4529",
+   "slow": true
+  },
   "El hotel es caro.": {
    "id": "da1a04acaf8c",
+   "slow": true
+  },
+  "El menú cuesta quince euros con noventa.": {
+   "id": "29668868a790",
+   "slow": true
+  },
+  "El miércoles trece de enero.": {
+   "id": "521c56b047f9",
+   "slow": true
+  },
+  "El sábado y el domingo son el fin de semana.": {
+   "id": "e7d62b264c7c",
+   "slow": true
+  },
+  "El trece de enero.": {
+   "id": "afc393d407fb",
    "slow": true
   },
   "Ella es de Madrid.": {
@@ -147,8 +191,16 @@
    "id": "3eec18fc9795",
    "slow": true
   },
+  "Hasta cien": {
+   "id": "deba9619ada0",
+   "slow": true
+  },
   "Hasta luego.": {
    "id": "c39dd2e76f5f",
+   "slow": true
+  },
+  "Hay cuarenta y dos mesas.": {
+   "id": "af32db064e7a",
    "slow": true
   },
   "Hay dos hoteles en la plaza.": {
@@ -181,6 +233,22 @@
   },
   "Hola.": {
    "id": "5a383fbf2ea3",
+   "slow": true
+  },
+  "Hoy es martes y mañana es miércoles.": {
+   "id": "2980032f5278",
+   "slow": true
+  },
+  "Hoy es martes, no lunes.": {
+   "id": "031783aa4de3",
+   "slow": true
+  },
+  "Hoy es martes.": {
+   "id": "f6905c8834d6",
+   "slow": true
+  },
+  "Hoy es viernes.": {
+   "id": "928016eb54a1",
    "slow": true
   },
   "Hoy no, gracias.": {
@@ -255,12 +323,24 @@
    "id": "cbc2e3c6261c",
    "slow": true
   },
+  "Los domingos.": {
+   "id": "b90ce60fa4de",
+   "slow": true
+  },
+  "Los días y las fechas": {
+   "id": "339ccb9a8e03",
+   "slow": true
+  },
   "Los hoteles son caros.": {
    "id": "20465bb79902",
    "slow": true
   },
   "Los números del cero al diez": {
    "id": "50d97207ce28",
+   "slow": true
+  },
+  "Lunes, martes, miércoles, jueves.": {
+   "id": "02c1225379e2",
    "slow": true
   },
   "Madrid": {
@@ -315,6 +395,10 @@
    "id": "e08ebfe8d18d",
    "slow": true
   },
+  "No quiero nada, gracias.": {
+   "id": "473b2117c3b9",
+   "slow": true
+  },
   "No soy inglés, soy estadounidense.": {
    "id": "b9c3919a6e0f",
    "slow": true
@@ -325,6 +409,14 @@
   },
   "No, no hay.": {
    "id": "882af50cf697",
+   "slow": true
+  },
+  "Otra caña, por favor.": {
+   "id": "3670c6fe51c4",
+   "slow": true
+  },
+  "Otro café, por favor.": {
+   "id": "ce9f095cdd79",
    "slow": true
   },
   "Perdón, no entiendo.": {
@@ -341,6 +433,10 @@
   },
   "Perdón, ¿puedes repetirlo?": {
    "id": "b2efff1b63f5",
+   "slow": true
+  },
+  "Perdón, ¿tiene pan?": {
+   "id": "50421b235a67",
    "slow": true
   },
   "Perdón.": {
@@ -371,6 +467,42 @@
    "id": "7665db802d27",
    "slow": true
   },
+  "Quería otra caña, por favor.": {
+   "id": "81e777968d8c",
+   "slow": true
+  },
+  "Quería un bocadillo de jamón y agua sin gas.": {
+   "id": "c4087f9ca057",
+   "slow": true
+  },
+  "Quería un café con leche, por favor.": {
+   "id": "bc5a1234c86b",
+   "slow": true
+  },
+  "Quería una caña, por favor.": {
+   "id": "10d341a1f61a",
+   "slow": true
+  },
+  "Quería una ración de croquetas, por favor.": {
+   "id": "e063a9482b96",
+   "slow": true
+  },
+  "Quería una sopa y pescado, por favor.": {
+   "id": "1f966c5306ab",
+   "slow": true
+  },
+  "Quiero otra cerveza.": {
+   "id": "9791edc254e6",
+   "slow": true
+  },
+  "Quiero un café.": {
+   "id": "745e64a4fdb6",
+   "slow": true
+  },
+  "Quiero…": {
+   "id": "7ed40a1ada88",
+   "slow": true
+  },
   "Son catorce euros.": {
    "id": "e32a5adde9ae",
    "slow": true
@@ -387,12 +519,32 @@
    "id": "22efbbb3e7ce",
    "slow": true
   },
+  "Son doce con cincuenta.": {
+   "id": "e1d365a10701",
+   "slow": true
+  },
   "Son doce euros.": {
    "id": "719ab7eccee2",
    "slow": true
   },
+  "Son ochenta euros con cincuenta.": {
+   "id": "1a7ceaf6275b",
+   "slow": true
+  },
   "Son ocho euros.": {
    "id": "e75683724a3c",
+   "slow": true
+  },
+  "Son sesenta euros.": {
+   "id": "de15c40b78e5",
+   "slow": true
+  },
+  "Son setenta con cincuenta.": {
+   "id": "482693244918",
+   "slow": true
+  },
+  "Son tres con veinte.": {
+   "id": "97e2466555b2",
    "slow": true
   },
   "Son tres euros.": {
@@ -405,6 +557,10 @@
   },
   "Son veinte euros.": {
    "id": "9d586b30f67e",
+   "slow": true
+  },
+  "Son… con…": {
+   "id": "d809a322cf0f",
    "slow": true
   },
   "Soy de Estados Unidos.": {
@@ -439,8 +595,44 @@
    "id": "3a95e134a5b3",
    "slow": true
   },
+  "Tengo calor. Quiero agua.": {
+   "id": "5b5f0ac09c10",
+   "slow": true
+  },
   "Tengo cinco años.": {
    "id": "5f4c49d8e9a1",
+   "slow": true
+  },
+  "Tengo frío. Un café, por favor.": {
+   "id": "3fa48094be0e",
+   "slow": true
+  },
+  "Tengo hambre y quiero un bocadillo.": {
+   "id": "7badafe08f00",
+   "slow": true
+  },
+  "Tengo hambre. ¿Hay tapas?": {
+   "id": "a4ee4bf50d46",
+   "slow": true
+  },
+  "Tengo hambre. ¿Tiene croquetas?": {
+   "id": "4d9663194865",
+   "slow": true
+  },
+  "Tengo mucha sed.": {
+   "id": "dfd6a69a6394",
+   "slow": true
+  },
+  "Tengo mucho frío.": {
+   "id": "819686464e59",
+   "slow": true
+  },
+  "Tengo sed. Agua, por favor.": {
+   "id": "4ffafbf5fbb4",
+   "slow": true
+  },
+  "Tengo…": {
+   "id": "9e2954381755",
    "slow": true
   },
   "Todo bien, gracias.": {
@@ -453,6 +645,10 @@
   },
   "Tom y Kate son estadounidenses.": {
    "id": "cd4987d8eae5",
+   "slow": true
+  },
+  "Treinta y uno.": {
+   "id": "b5f7dd022c77",
    "slow": true
   },
   "Un bocadillo de calamares, por favor.": {
@@ -607,6 +803,14 @@
    "id": "62fd7c007f31",
    "slow": true
   },
+  "Veinte, veintiuno, veintidós.": {
+   "id": "397c4b998296",
+   "slow": true
+  },
+  "Veintiuna croquetas.": {
+   "id": "1683fd131fa0",
+   "slow": true
+  },
   "Vivo en Estados Unidos.": {
    "id": "718f744e5c63",
    "slow": true
@@ -615,8 +819,16 @@
    "id": "4e1adff9f009",
    "slow": true
   },
+  "Yo quiero un café.": {
+   "id": "c7425bdc8c8a",
+   "slow": true
+  },
   "Yo soy de Estados Unidos.": {
    "id": "ba58442646be",
+   "slow": true
+  },
+  "Yo tengo un perro.": {
+   "id": "8c8d68a4c976",
    "slow": true
   },
   "a, be, ce, de, e, efe, ge": {
@@ -665,6 +877,14 @@
   },
   "aquí": {
    "id": "fe01be3cb3e2",
+   "slow": true
+  },
+  "ayer": {
+   "id": "d2617dbaadf4",
+   "slow": true
+  },
+  "ayer, hoy, mañana": {
+   "id": "c5d7f3287e1a",
    "slow": true
   },
   "bien": {
@@ -743,12 +963,28 @@
    "id": "db8a6b98e4c4",
    "slow": true
   },
+  "cien": {
+   "id": "2786f4877b90",
+   "slow": true
+  },
+  "cien euros": {
+   "id": "2d6dddb5f737",
+   "slow": true
+  },
   "ciento": {
    "id": "7b1ca82dd1a3",
    "slow": true
   },
   "cinco": {
    "id": "a097b33b7758",
+   "slow": true
+  },
+  "cincuenta": {
+   "id": "ae338e4e0cbb",
+   "slow": true
+  },
+  "cincuenta y cinco": {
+   "id": "8596503e29a7",
    "slow": true
   },
   "coche": {
@@ -759,12 +995,32 @@
    "id": "ab09653b80db",
    "slow": true
   },
+  "cuarenta": {
+   "id": "e115b86bf726",
+   "slow": true
+  },
+  "cuarenta y cinco": {
+   "id": "746d329adb52",
+   "slow": true
+  },
   "cuatro": {
    "id": "a37e3bea6f0b",
    "slow": true
   },
+  "cuesta": {
+   "id": "425f38f590d9",
+   "slow": true
+  },
+  "cuestan": {
+   "id": "3fca03807ebb",
+   "slow": true
+  },
   "de nada": {
    "id": "671cfd4fde3f",
+   "slow": true
+  },
+  "diciembre": {
+   "id": "953567227110",
    "slow": true
   },
   "diecinueve": {
@@ -867,6 +1123,22 @@
    "id": "6fae175a2461",
    "slow": true
   },
+  "el céntimo": {
+   "id": "1eed488226a1",
+   "slow": true
+  },
+  "el domingo": {
+   "id": "71a1bb29aeb8",
+   "slow": true
+  },
+  "el euro": {
+   "id": "bc29552f0416",
+   "slow": true
+  },
+  "el fin de semana": {
+   "id": "285fbe53ba9c",
+   "slow": true
+  },
   "el gato": {
    "id": "1085e3cc91b1",
    "slow": true
@@ -883,8 +1155,28 @@
    "id": "acfceb687c5c",
    "slow": true
   },
+  "el jueves": {
+   "id": "e7ea1cc39758",
+   "slow": true
+  },
+  "el lunes": {
+   "id": "78b09cd46e1f",
+   "slow": true
+  },
+  "el martes": {
+   "id": "fc3275413946",
+   "slow": true
+  },
   "el menú": {
    "id": "99506bddb457",
+   "slow": true
+  },
+  "el miércoles": {
+   "id": "0a8248c3122d",
+   "slow": true
+  },
+  "el miércoles trece de enero": {
+   "id": "a406c115352f",
    "slow": true
   },
   "el móvil": {
@@ -927,8 +1219,16 @@
    "id": "8c81fea09c44",
    "slow": true
   },
+  "el sábado": {
+   "id": "8703e6c5380e",
+   "slow": true
+  },
   "el tinto de verano": {
    "id": "3409d7b6a050",
+   "slow": true
+  },
+  "el trece de enero": {
+   "id": "a61016b18936",
    "slow": true
   },
   "el té": {
@@ -937,6 +1237,14 @@
   },
   "el vaso": {
    "id": "a3c85825fac6",
+   "slow": true
+  },
+  "el veinticuatro de diciembre": {
+   "id": "0dc62f34793c",
+   "slow": true
+  },
+  "el viernes": {
+   "id": "f1050b13f25d",
    "slow": true
   },
   "el vino": {
@@ -959,6 +1267,10 @@
    "id": "bedba1cf3b21",
    "slow": true
   },
+  "ellos quieren": {
+   "id": "f41673ec387a",
+   "slow": true
+  },
   "ellos se llaman": {
    "id": "d67eb8b3bb4a",
    "slow": true
@@ -967,12 +1279,20 @@
    "id": "06a263fd05be",
    "slow": true
   },
+  "ellos tienen": {
+   "id": "401c210efde5",
+   "slow": true
+  },
   "encantado": {
    "id": "78f29cc2c705",
    "slow": true
   },
   "encantado, encantada": {
    "id": "743d91309d75",
+   "slow": true
+  },
+  "enero": {
+   "id": "6d5e647d87a5",
    "slow": true
   },
   "eres": {
@@ -1187,6 +1507,10 @@
    "id": "59086c3798c1",
    "slow": true
   },
+  "la semana": {
+   "id": "12d565ce3ba5",
+   "slow": true
+  },
   "la señora": {
    "id": "8558870ec709",
    "slow": true
@@ -1275,6 +1599,10 @@
    "id": "11e6ab9f3ce4",
    "slow": true
   },
+  "lunes, martes, miércoles, jueves, viernes, sábado, domingo": {
+   "id": "869aa318e19a",
+   "slow": true
+  },
   "mapa": {
    "id": "4a472d01a3c9",
    "slow": true
@@ -1347,8 +1675,20 @@
    "id": "a30692d30364",
    "slow": true
   },
+  "nosotros queremos": {
+   "id": "a3a51f941010",
+   "slow": true
+  },
   "nosotros somos": {
    "id": "f5c8246ca196",
+   "slow": true
+  },
+  "nosotros tenemos": {
+   "id": "3d1ef1589c05",
+   "slow": true
+  },
+  "noventa": {
+   "id": "af396360a969",
    "slow": true
   },
   "nueve": {
@@ -1357,6 +1697,14 @@
   },
   "o, pe, cu, erre, ese, te, u": {
    "id": "75ce774563fc",
+   "slow": true
+  },
+  "ochenta": {
+   "id": "0ed3189f790d",
+   "slow": true
+  },
+  "ochenta y ocho": {
+   "id": "5b29312cb738",
    "slow": true
   },
   "ocho": {
@@ -1369,6 +1717,18 @@
   },
   "once, doce, trece, catorce, quince": {
    "id": "bcec7e150bbd",
+   "slow": true
+  },
+  "otra": {
+   "id": "4fece336d4a2",
+   "slow": true
+  },
+  "otra caña": {
+   "id": "a24741871633",
+   "slow": true
+  },
+  "otro, otra": {
+   "id": "20a0df33b1ce",
    "slow": true
   },
   "papa": {
@@ -1431,8 +1791,28 @@
    "id": "e392209eb260",
    "slow": true
   },
+  "querer": {
+   "id": "e4fc0cb8188b",
+   "slow": true
+  },
+  "quería": {
+   "id": "b0915695b060",
+   "slow": true
+  },
   "queso": {
    "id": "8e5fc65edb4d",
+   "slow": true
+  },
+  "quiere": {
+   "id": "31e8a85b2301",
+   "slow": true
+  },
+  "quieres": {
+   "id": "f985b2b46d50",
+   "slow": true
+  },
+  "quiero": {
+   "id": "aa5d0afa6bc4",
    "slow": true
   },
   "quince": {
@@ -1457,6 +1837,18 @@
   },
   "ser": {
    "id": "605d3374e661",
+   "slow": true
+  },
+  "sesenta": {
+   "id": "9fa82b2bc350",
+   "slow": true
+  },
+  "sesenta, setenta": {
+   "id": "292130cd9e31",
+   "slow": true
+  },
+  "setenta": {
+   "id": "6dfea5de0c02",
    "slow": true
   },
   "señor": {
@@ -1495,6 +1887,42 @@
    "id": "33e9505d1294",
    "slow": true
   },
+  "tener": {
+   "id": "1ab1b3e3530d",
+   "slow": true
+  },
+  "tengo": {
+   "id": "fd3d44f63d79",
+   "slow": true
+  },
+  "tengo calor": {
+   "id": "f5d45257cbaa",
+   "slow": true
+  },
+  "tengo frío": {
+   "id": "a3fe0f1cb4bf",
+   "slow": true
+  },
+  "tengo hambre": {
+   "id": "a7acd263ff7d",
+   "slow": true
+  },
+  "tengo sed": {
+   "id": "08f777c035a7",
+   "slow": true
+  },
+  "tengo seis": {
+   "id": "77816ec1de55",
+   "slow": true
+  },
+  "tiene": {
+   "id": "5979ff27cea2",
+   "slow": true
+  },
+  "tienes": {
+   "id": "1145553fe6c2",
+   "slow": true
+  },
   "todo": {
    "id": "05f20a71783d",
    "slow": true
@@ -1505,6 +1933,22 @@
   },
   "trece": {
    "id": "0f72d7d73e80",
+   "slow": true
+  },
+  "treinta": {
+   "id": "0f02d36805a0",
+   "slow": true
+  },
+  "treinta y uno": {
+   "id": "78df530c7ecc",
+   "slow": true
+  },
+  "treinta y uno, cuarenta, cincuenta": {
+   "id": "744967278ea7",
+   "slow": true
+  },
+  "treinta, cuarenta, cincuenta": {
+   "id": "616e637b4ebd",
    "slow": true
   },
   "tres": {
@@ -1527,8 +1971,16 @@
    "id": "cd5d5964ccf0",
    "slow": true
   },
+  "tú quieres": {
+   "id": "72f43ff414b8",
+   "slow": true
+  },
   "tú te llamas": {
    "id": "bb09799bf0ca",
+   "slow": true
+  },
+  "tú tienes": {
+   "id": "49d1b8416a23",
    "slow": true
   },
   "un bocadillo de calamares": {
@@ -1603,6 +2055,26 @@
    "id": "3b1b17811d3b",
    "slow": true
   },
+  "veintidós": {
+   "id": "1a4184c2cd3e",
+   "slow": true
+  },
+  "veintiséis": {
+   "id": "a115800bae99",
+   "slow": true
+  },
+  "veintitrés": {
+   "id": "2397db7096a2",
+   "slow": true
+  },
+  "veintiuno": {
+   "id": "509f38ecca02",
+   "slow": true
+  },
+  "veintiuno, veintidós, veintitrés": {
+   "id": "971ffe3d2554",
+   "slow": true
+  },
   "vino": {
    "id": "f0e4876639b7",
    "slow": true
@@ -1611,8 +2083,16 @@
    "id": "6cc2c8d4c485",
    "slow": true
   },
+  "vosotros queréis": {
+   "id": "e3fa6d0579e3",
+   "slow": true
+  },
   "vosotros sois": {
    "id": "b4af601343f6",
+   "slow": true
+  },
+  "vosotros tenéis": {
+   "id": "fcbece04d8e8",
    "slow": true
   },
   "y": {
@@ -1627,12 +2107,56 @@
    "id": "56319b36abe1",
    "slow": true
   },
+  "yo quiero": {
+   "id": "450993718c3b",
+   "slow": true
+  },
   "yo soy": {
    "id": "d4a1fe527854",
    "slow": true
   },
+  "yo tengo": {
+   "id": "710c1fb87ad5",
+   "slow": true
+  },
   "¿Agua con gas o sin gas?": {
    "id": "4f39c642acd4",
+   "slow": true
+  },
+  "¿Cuántas cañas?": {
+   "id": "8d29ab1511ba",
+   "slow": true
+  },
+  "¿Cuántas cervezas? Treinta y una.": {
+   "id": "eb2655aaf806",
+   "slow": true
+  },
+  "¿Cuánto cuesta el bocadillo?": {
+   "id": "bd058b2964be",
+   "slow": true
+  },
+  "¿Cuánto cuesta el cocido madrileño?": {
+   "id": "5a73079175d5",
+   "slow": true
+  },
+  "¿Cuánto cuesta un café con leche?": {
+   "id": "931d8181da44",
+   "slow": true
+  },
+  "¿Cuánto cuesta?": {
+   "id": "882e7f82f8dd",
+   "slow": true
+  },
+  "¿Cuánto cuestan dos cañas?": {
+   "id": "36588f2d465e",
+   "slow": true
+  },
+  "¿Cuánto cuestan las aceitunas?": {
+   "id": "6c6fde4c1ead",
+   "slow": true
+  },
+  "¿Cuánto cuestan las croquetas?": {
+   "id": "ba1e192e3c82",
    "slow": true
   },
   "¿Cuánto es?": {
@@ -1649,6 +2173,18 @@
   },
   "¿Cuánto es? —Son cuatro euros.": {
    "id": "837d4c728957",
+   "slow": true
+  },
+  "¿Cuántos bocadillos?": {
+   "id": "4e4e8ad06da6",
+   "slow": true
+  },
+  "¿Cuántos?": {
+   "id": "685dd73c6c82",
+   "slow": true
+  },
+  "¿Cuántos?, ¿Cuántas?": {
+   "id": "069dce139057",
    "slow": true
   },
   "¿Cómo os llamáis?": {
@@ -1711,6 +2247,10 @@
    "id": "2e31e8ac5160",
    "slow": true
   },
+  "¿Hay patatas bravas?": {
+   "id": "cd2ad72768e9",
+   "slow": true
+  },
   "¿Hay postre?": {
    "id": "799b408f2cc5",
    "slow": true
@@ -1727,8 +2267,52 @@
    "id": "7283f108a072",
    "slow": true
   },
+  "¿Quieres otra tapa?": {
+   "id": "82db9bdca77d",
+   "slow": true
+  },
+  "¿Quieres otro café?": {
+   "id": "76b3f23f889b",
+   "slow": true
+  },
+  "¿Quieres un café?": {
+   "id": "19b43b31d90b",
+   "slow": true
+  },
+  "¿Quieres una caña?": {
+   "id": "73c3a1eb1ae8",
+   "slow": true
+  },
+  "¿Quieres…?": {
+   "id": "1e231eb49617",
+   "slow": true
+  },
   "¿Qué tal?": {
    "id": "a8506c246b78",
+   "slow": true
+  },
+  "¿Tiene agua sin gas?": {
+   "id": "866ba65d233d",
+   "slow": true
+  },
+  "¿Tiene una botella de agua?": {
+   "id": "4b3140f0d145",
+   "slow": true
+  },
+  "¿Tiene vino blanco?": {
+   "id": "b4dea162c582",
+   "slow": true
+  },
+  "¿Tienes agua?": {
+   "id": "01b9667251c5",
+   "slow": true
+  },
+  "¿Tienes el móvil?": {
+   "id": "c15628db7129",
+   "slow": true
+  },
+  "¿Tienes…?, ¿Tiene…?": {
+   "id": "82a8402e29bc",
    "slow": true
   },
   "¿Y tú?": {
@@ -1739,8 +2323,16 @@
    "id": "9c2fe2542725",
    "slow": true
   },
+  "él quiere": {
+   "id": "816158ea31bf",
+   "slow": true
+  },
   "él se llama": {
    "id": "97bf3ed6174f",
+   "slow": true
+  },
+  "él tiene": {
+   "id": "1d3a8f00ef0e",
    "slow": true
   },
   "—Gracias. —De nada.": {

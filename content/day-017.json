@@ -1,0 +1,65 @@
+{
+  "$schema": "./schema.json",
+  "day": 17,
+  "level": 2,
+  "title": { "en": "21 to 50", "es": "Del veintiuno al cincuenta" },
+  "objectives": [
+    "Count from 21 to 29 as single words",
+    "Build 31 to 50 with tens + y + units",
+    "Ask ¿Cuántos? and ¿Cuántas? about how many"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**21 to 29 are written as one word.** Take *veinte*, swap the final -e for **-i**, and add the unit:\n\n- veinte → **veinti**uno, **veinti**dós, **veinti**trés\n- veinticuatro, veinticinco, **veintiséis**, veintisiete, veintiocho, veintinueve\n\nThree of them take an accent: **veintidós**, **veintitrés**, **veintiséis**."
+    },
+    { "kind": "phrase", "es": "veintiuno, veintidós, veintitrés", "en": "21, 22, 23" },
+    {
+      "kind": "note",
+      "md": "**From 31 on, it's tens + y + units**, written as three words:\n\n- **treinta** (30) → **treinta y uno**, treinta y dos…\n- **cuarenta** (40) → cuarenta y cinco…\n- **cincuenta** (50)\n\nThe *y* is said quickly, joined to the words around it: *treinta-y-uno*."
+    },
+    { "kind": "phrase", "es": "treinta y uno, cuarenta, cincuenta", "en": "31, 40, 50", "note": "Cuarenta and cincuenta both start with the cu- of cuatro and cinco." },
+    {
+      "kind": "note",
+      "md": "Before a masculine noun, **uno** shortens: *veintiún euros*, *treinta y un euros*. Before a feminine noun it becomes **una**: *veintiuna cervezas*. On its own, counting, it stays **uno**."
+    },
+    { "kind": "phrase", "es": "¿Cuántos?", "en": "How many?", "note": "It agrees with the noun: ¿Cuántos amigos? (m) / ¿Cuántas cañas? (f). ¿Cuánto es? asks the price, which is a different question." }
+  ],
+  "vocab": [
+    { "id": "veintiuno", "es": "veintiuno", "en": "twenty-one", "pos": "num", "ipa": "beintiˈuno", "note": "veintiún before a masculine noun: veintiún euros." },
+    { "id": "veintidos", "es": "veintidós", "en": "twenty-two", "pos": "num", "ipa": "beintiˈðos" },
+    { "id": "veintitres", "es": "veintitrés", "en": "twenty-three", "pos": "num", "ipa": "beintiˈtɾes" },
+    { "id": "veintiseis", "es": "veintiséis", "en": "twenty-six", "pos": "num", "ipa": "beintiˈseis" },
+    { "id": "treinta", "es": "treinta", "en": "thirty", "pos": "num", "ipa": "ˈtɾeinta" },
+    { "id": "treinta-y-uno", "es": "treinta y uno", "en": "thirty-one", "pos": "num", "ipa": "ˈtɾeinta i ˈuno", "note": "The pattern for 31–99: tens + y + units." },
+    { "id": "cuarenta", "es": "cuarenta", "en": "forty", "pos": "num", "ipa": "kwaˈɾenta" },
+    { "id": "cincuenta", "es": "cincuenta", "en": "fifty", "pos": "num", "ipa": "θiŋˈkwenta" },
+    { "id": "cuantos", "es": "¿Cuántos?, ¿Cuántas?", "en": "How many?", "pos": "phrase", "ipa": "ˈkwantos, ˈkwantas", "tags": ["survival"] }
+  ],
+  "exercises": [
+    { "id": "d017-01", "type": "listen-choose", "audio": "veintiuno", "options": ["veintiuno", "veintidós", "treinta y uno"], "answer": 0, "vocab": ["veintiuno"] },
+    { "id": "d017-02", "type": "listen-choose", "audio": "treinta", "options": ["trece", "treinta", "tres"], "answer": 1, "vocab": ["treinta"] },
+    { "id": "d017-03", "type": "listen-choose", "audio": "cuarenta", "options": ["catorce", "cuatro", "cuarenta"], "answer": 2, "vocab": ["cuarenta"] },
+    { "id": "d017-04", "type": "listen-choose", "audio": "cincuenta", "options": ["cincuenta", "quince", "cinco"], "answer": 0, "vocab": ["cincuenta"] },
+    { "id": "d017-05", "type": "listen-choose", "prompt": "Which number do you hear?", "audio": "veintiséis", "optionsLang": "en", "options": ["26", "16", "36"], "answer": 0, "vocab": ["veintiseis"] },
+    { "id": "d017-06", "type": "listen-choose", "prompt": "Which number do you hear?", "audio": "veintitrés", "optionsLang": "en", "options": ["13", "23", "33"], "answer": 1, "vocab": ["veintitres"] },
+    { "id": "d017-07", "type": "match-pairs", "pairs": [["veintidós", "22"], ["treinta", "30"], ["cuarenta", "40"], ["cincuenta", "50"], ["treinta y uno", "31"]], "vocab": ["veintidos", "treinta", "cuarenta", "cincuenta", "treinta-y-uno"] },
+    { "id": "d017-08", "type": "match-pairs", "pairs": [["trece", "13"], ["treinta", "30"], ["catorce", "14"], ["cuarenta", "40"]], "prompt": "Teens or tens? Don't mix them up.", "vocab": ["trece", "treinta", "catorce", "cuarenta"] },
+    { "id": "d017-09", "type": "fill-blank", "es": "Veinte, {{veintiuno}}, veintidós.", "en": "20, 21, 22.", "options": ["veintiuno", "veinteuno", "veinte y uno"], "vocab": ["veintiuno", "veinte", "veintidos"] },
+    { "id": "d017-10", "type": "fill-blank", "es": "Treinta {{y}} uno.", "en": "31.", "options": ["y", "e", "de"], "vocab": ["treinta-y-uno"] },
+    { "id": "d017-11", "type": "fill-blank", "es": "¿{{Cuántas}} cañas?", "en": "How many beers?", "options": ["Cuántas", "Cuántos"], "prompt": "caña is feminine.", "vocab": ["cuantos", "cana"] },
+    { "id": "d017-12", "type": "fill-blank", "es": "¿{{Cuántos}} bocadillos?", "en": "How many sandwiches?", "options": ["Cuántos", "Cuántas"], "vocab": ["cuantos", "bocadillo"] },
+    { "id": "d017-13", "type": "listen-choose", "prompt": "How many croquettes?", "audio": "Veintiuna croquetas.", "optionsLang": "en", "options": ["21", "31", "12"], "answer": 0, "vocab": ["veintiuno", "croquetas"] },
+    { "id": "d017-14", "type": "listen-choose", "prompt": "Which number?", "audio": "cuarenta y cinco", "optionsLang": "en", "options": ["45", "54", "40"], "answer": 0, "vocab": ["cuarenta", "cinco"] },
+    { "id": "d017-15", "type": "dictation", "es": "treinta", "hint": "30", "vocab": ["treinta"] },
+    { "id": "d017-16", "type": "dictation", "es": "veintidós", "hint": "22 (one word, with an accent)", "vocab": ["veintidos"] },
+    { "id": "d017-17", "type": "dictation", "es": "cincuenta", "hint": "50", "vocab": ["cincuenta"] },
+    { "id": "d017-18", "type": "build-sentence", "es": "¿Cuántas cervezas? Treinta y una.", "en": "How many beers? Thirty-one.", "distractors": ["Cuántos", "uno"], "vocab": ["cuantos", "cerveza", "treinta-y-uno"] },
+    { "id": "d017-19", "type": "build-sentence", "direction": "audio-to-es", "es": "Hay cuarenta y dos mesas.", "en": "There are forty-two tables.", "distractors": ["es"], "vocab": ["hay", "cuarenta", "dos", "mesa"] },
+    { "id": "d017-20", "type": "repeat", "es": "veintiuno, veintidós, veintitrés", "en": "21, 22, 23", "vocab": ["veintiuno", "veintidos", "veintitres"] },
+    { "id": "d017-21", "type": "repeat", "es": "treinta, cuarenta, cincuenta", "en": "30, 40, 50", "vocab": ["treinta", "cuarenta", "cincuenta"] },
+    { "id": "d017-22", "type": "shadow", "es": "cincuenta y cinco", "en": "fifty-five", "listenFor": "θ at the start of cincuenta and cinco (Spain), and the y running straight into cinco.", "vocab": ["cincuenta", "cinco"] },
+    { "id": "d017-23", "type": "fill-blank", "prompt": "Review: querer.", "es": "¿{{Quieres}} otro café?", "en": "Do you want another coffee?", "options": ["Quieres", "Quiero", "Quiere"], "vocab": ["quieres-q", "otro", "cafe"] },
+    { "id": "d017-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Quería una sopa y pescado, por favor.", "en": "I'd like a soup and fish, please.", "vocab": ["queria", "sopa", "pescado"] }
+  ]
+}

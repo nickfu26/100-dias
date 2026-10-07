@@ -1,0 +1,71 @@
+{
+  "$schema": "./schema.json",
+  "day": 18,
+  "level": 2,
+  "title": { "en": "Up to 100 and prices", "es": "Hasta cien" },
+  "objectives": [
+    "Count in tens up to 100",
+    "Tell sesenta from setenta when you hear them",
+    "Understand prices like doce con cincuenta",
+    "Ask how much something costs with cuesta and cuestan"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**The tens up to 100**\n\n- **sesenta** (60): from *seis*\n- **setenta** (70): from *siete*\n- **ochenta** (80): from *ocho*\n- **noventa** (90): from *nueve*\n- **cien** (100)\n\nThey combine like 31–50: *sesenta y cinco*, *noventa y nueve*."
+    },
+    {
+      "kind": "minimalPair",
+      "a": "sesenta",
+      "b": "setenta",
+      "aEn": "60",
+      "bEn": "70",
+      "contrast": "s vs t"
+    },
+    { "kind": "phrase", "es": "cien euros", "en": "a hundred euros", "note": "Exactly 100 is cien. From 101 it's ciento: ciento uno, ciento veinte." },
+    {
+      "kind": "note",
+      "md": "**Prices.** A euro has 100 **céntimos**. In Spain you'll hear prices said with **con** between the euros and the cents:\n\n- *Son doce euros con cincuenta.* = €12.50\n- or just *Son doce con cincuenta.*\n\nWritten prices use a comma: **12,50 €**."
+    },
+    { "kind": "phrase", "es": "Son doce con cincuenta.", "en": "That's twelve fifty.", "note": "Son = they are (plural, because it's many euros). For one euro: Es un euro." },
+    { "kind": "phrase", "es": "¿Cuánto cuesta?", "en": "How much does it cost?", "note": "For one thing. For several, ¿Cuánto cuestan? ¿Cuánto es? (day 9) is how you ask for the total bill." }
+  ],
+  "vocab": [
+    { "id": "sesenta", "es": "sesenta", "en": "sixty", "pos": "num", "ipa": "seˈsenta" },
+    { "id": "setenta", "es": "setenta", "en": "seventy", "pos": "num", "ipa": "seˈtenta", "note": "setenta (70) has a t. sesenta (60) has an s." },
+    { "id": "ochenta", "es": "ochenta", "en": "eighty", "pos": "num", "ipa": "oˈtʃenta" },
+    { "id": "noventa", "es": "noventa", "en": "ninety", "pos": "num", "ipa": "noˈβenta" },
+    { "id": "cien", "es": "cien", "en": "a hundred", "pos": "num", "ipa": "ˈθjen", "note": "From 101: ciento uno, ciento dos…" },
+    { "id": "euro", "es": "el euro", "en": "euro", "pos": "noun", "gender": "m", "ipa": "ˈeuɾo", "tags": ["shopping"] },
+    { "id": "centimo", "es": "el céntimo", "en": "cent", "pos": "noun", "gender": "m", "ipa": "ˈθentimo", "tags": ["shopping"] },
+    { "id": "son-con", "es": "Son… con…", "en": "That's … euros … (price)", "pos": "phrase", "ipa": "ˈson ˈkon", "note": "Son doce con cincuenta = €12.50.", "tags": ["shopping", "survival"] },
+    { "id": "cuesta", "es": "cuesta", "en": "it costs", "pos": "verb", "ipa": "ˈkwesta", "note": "¿Cuánto cuesta? = How much is it?", "tags": ["shopping", "survival"] },
+    { "id": "cuestan", "es": "cuestan", "en": "they cost", "pos": "verb", "ipa": "ˈkwestan", "note": "¿Cuánto cuestan? = How much are they?", "tags": ["shopping"] }
+  ],
+  "exercises": [
+    { "id": "d018-01", "type": "listen-choose", "audio": "sesenta", "options": ["sesenta", "setenta", "seis"], "answer": 0, "vocab": ["sesenta"] },
+    { "id": "d018-02", "type": "listen-choose", "audio": "setenta", "options": ["sesenta", "siete", "setenta"], "answer": 2, "vocab": ["setenta"] },
+    { "id": "d018-03", "type": "listen-choose", "audio": "noventa", "options": ["nueve", "noventa", "ochenta"], "answer": 1, "vocab": ["noventa"] },
+    { "id": "d018-04", "type": "listen-choose", "prompt": "Which number do you hear?", "audio": "ochenta y ocho", "optionsLang": "en", "options": ["88", "18", "80"], "answer": 0, "vocab": ["ochenta", "ocho"] },
+    { "id": "d018-05", "type": "match-pairs", "pairs": [["sesenta", "60"], ["setenta", "70"], ["ochenta", "80"], ["noventa", "90"], ["cien", "100"]], "vocab": ["sesenta", "setenta", "ochenta", "noventa", "cien"] },
+    { "id": "d018-06", "type": "match-pairs", "pairs": [["el euro", "euro"], ["el céntimo", "cent"], ["cuesta", "it costs"], ["cuestan", "they cost"]], "vocab": ["euro", "centimo", "cuesta", "cuestan"] },
+    { "id": "d018-07", "type": "fill-blank", "es": "¿Cuánto {{cuesta}} el bocadillo?", "en": "How much is the sandwich?", "options": ["cuesta", "cuestan"], "vocab": ["cuesta", "bocadillo"] },
+    { "id": "d018-08", "type": "fill-blank", "es": "¿Cuánto {{cuestan}} las croquetas?", "en": "How much are the croquettes?", "options": ["cuestan", "cuesta"], "vocab": ["cuestan", "croquetas"] },
+    { "id": "d018-09", "type": "fill-blank", "es": "Son doce {{con}} cincuenta.", "en": "That's €12.50.", "options": ["con", "y", "de"], "vocab": ["son-con", "doce", "cincuenta"] },
+    { "id": "d018-10", "type": "fill-blank", "es": "{{Cien}} euros.", "en": "A hundred euros.", "options": ["Cien", "Ciento"], "vocab": ["cien", "euro"] },
+    { "id": "d018-11", "type": "listen-choose", "prompt": "How much is it?", "audio": "Son doce con cincuenta.", "optionsLang": "en", "options": ["€12.50", "€12.15", "€2.50"], "answer": 0, "vocab": ["son-con", "doce", "cincuenta"] },
+    { "id": "d018-12", "type": "listen-choose", "prompt": "How much is it?", "audio": "Son sesenta euros.", "optionsLang": "en", "options": ["€60", "€70", "€16"], "answer": 0, "vocab": ["son-con", "sesenta", "euro"] },
+    { "id": "d018-13", "type": "listen-choose", "prompt": "How much is it?", "audio": "Son tres con veinte.", "optionsLang": "en", "options": ["€3.20", "€23", "€3.12"], "answer": 0, "vocab": ["son-con", "tres", "veinte"] },
+    { "id": "d018-14", "type": "listen-choose", "prompt": "How much is the menú del día?", "audio": "El menú cuesta quince euros con noventa.", "optionsLang": "en", "options": ["€15.90", "€15.19", "€50.90"], "answer": 0, "vocab": ["menu", "cuesta", "quince", "noventa"] },
+    { "id": "d018-15", "type": "dictation", "es": "setenta", "hint": "70", "vocab": ["setenta"] },
+    { "id": "d018-16", "type": "dictation", "es": "cien", "hint": "100", "vocab": ["cien"] },
+    { "id": "d018-17", "type": "dictation", "es": "¿Cuánto cuesta?", "hint": "How much does it cost?", "vocab": ["cuesta"] },
+    { "id": "d018-18", "type": "build-sentence", "es": "¿Cuánto cuesta un café con leche?", "en": "How much is a white coffee?", "distractors": ["cuestan", "es"], "vocab": ["cuesta", "cafe-con-leche"] },
+    { "id": "d018-19", "type": "build-sentence", "direction": "audio-to-es", "es": "Son ochenta euros con cincuenta.", "en": "That's €80.50.", "distractors": ["y"], "vocab": ["son-con", "ochenta", "euro", "cincuenta"] },
+    { "id": "d018-20", "type": "repeat", "es": "¿Cuánto cuestan las aceitunas?", "en": "How much are the olives?", "vocab": ["cuestan", "aceitunas"] },
+    { "id": "d018-21", "type": "repeat", "es": "Son doce con cincuenta.", "en": "That's twelve fifty.", "vocab": ["son-con"] },
+    { "id": "d018-22", "type": "shadow", "es": "sesenta, setenta", "en": "60, 70", "listenFor": "The s in the middle of sesenta against the t in setenta.", "vocab": ["sesenta", "setenta"] },
+    { "id": "d018-23", "type": "listen-choose", "prompt": "Review: which number?", "audio": "treinta y uno", "optionsLang": "en", "options": ["31", "13", "41"], "answer": 0, "vocab": ["treinta-y-uno"] },
+    { "id": "d018-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Quería otra caña, por favor.", "en": "I'd like another beer, please.", "vocab": ["queria", "otro", "cana"] }
+  ]
+}

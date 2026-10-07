@@ -1,0 +1,71 @@
+{
+  "$schema": "./schema.json",
+  "day": 20,
+  "level": 2,
+  "title": { "en": "Days and dates", "es": "Los días y las fechas" },
+  "objectives": [
+    "Name the seven days of the week",
+    "Recognise the months, and say enero and diciembre",
+    "Say a date: el trece de enero",
+    "Talk about the week, the weekend and yesterday"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**The week starts on Monday** in Spain, and days are written in **lowercase**:\n\n- **lunes** (Mon), **martes** (Tue), **miércoles** (Wed), **jueves** (Thu), **viernes** (Fri)\n- **sábado** (Sat), **domingo** (Sun)\n\nAll of them are masculine: *el lunes*."
+    },
+    { "kind": "phrase", "es": "Hoy es martes.", "en": "Today is Tuesday.", "note": "No article after es: Hoy es martes, not Hoy es el martes." },
+    {
+      "kind": "note",
+      "md": "**el** with a day means *on*: **el lunes** = on Monday (this one). **los lunes** = on Mondays (every week).\n\nDays ending in -s don't change in the plural: *el martes*, *los martes*."
+    },
+    { "kind": "phrase", "es": "el fin de semana", "en": "the weekend", "note": "Literally 'the end of the week'. Many shops in Madrid close on Sunday, but most bars and restaurants stay open." },
+    {
+      "kind": "note",
+      "md": "**The months**, also lowercase: enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre.\n\nFor now, learn the two you'll actually need: **diciembre** (the end of this course) and **enero** (the trip)."
+    },
+    { "kind": "phrase", "es": "el miércoles trece de enero", "en": "Wednesday 13 January", "note": "Your arrival day. A date is el + number + de + month. Day first, as in the UK: 13/1/2027." },
+    { "kind": "phrase", "es": "ayer, hoy, mañana", "en": "yesterday, today, tomorrow", "note": "You already know hoy and mañana. Ayer completes the set." }
+  ],
+  "vocab": [
+    { "id": "lunes", "es": "el lunes", "en": "Monday", "pos": "noun", "gender": "m", "ipa": "ˈlunes" },
+    { "id": "martes", "es": "el martes", "en": "Tuesday", "pos": "noun", "gender": "m", "ipa": "ˈmaɾtes" },
+    { "id": "miercoles", "es": "el miércoles", "en": "Wednesday", "pos": "noun", "gender": "m", "ipa": "ˈmjeɾkoles" },
+    { "id": "jueves", "es": "el jueves", "en": "Thursday", "pos": "noun", "gender": "m", "ipa": "ˈxweβes", "note": "j is the throaty Spanish x sound." },
+    { "id": "viernes", "es": "el viernes", "en": "Friday", "pos": "noun", "gender": "m", "ipa": "ˈbjeɾnes" },
+    { "id": "sabado", "es": "el sábado", "en": "Saturday", "pos": "noun", "gender": "m", "ipa": "ˈsaβaðo" },
+    { "id": "domingo", "es": "el domingo", "en": "Sunday", "pos": "noun", "gender": "m", "ipa": "doˈmiŋgo" },
+    { "id": "semana", "es": "la semana", "en": "week", "pos": "noun", "gender": "f", "ipa": "seˈmana" },
+    { "id": "fin-de-semana", "es": "el fin de semana", "en": "weekend", "pos": "noun", "gender": "m", "ipa": "ˈfin de seˈmana" },
+    { "id": "ayer", "es": "ayer", "en": "yesterday", "pos": "adv", "ipa": "aˈʝeɾ" },
+    { "id": "enero", "es": "enero", "en": "January", "pos": "noun", "gender": "m", "ipa": "eˈneɾo", "note": "Lowercase, like all months.", "tags": ["madrid"] },
+    { "id": "diciembre", "es": "diciembre", "en": "December", "pos": "noun", "gender": "m", "ipa": "diˈθjembɾe" },
+    { "id": "fecha", "es": "el trece de enero", "en": "13 January (how to say a date)", "pos": "phrase", "ipa": "el ˈtɾeθe ðe eˈneɾo", "note": "el + number + de + month.", "tags": ["madrid"] }
+  ],
+  "exercises": [
+    { "id": "d020-01", "type": "listen-choose", "audio": "el martes", "options": ["el martes", "el miércoles", "el jueves"], "answer": 0, "vocab": ["martes"] },
+    { "id": "d020-02", "type": "listen-choose", "audio": "el jueves", "options": ["el viernes", "el jueves", "el lunes"], "answer": 1, "vocab": ["jueves"] },
+    { "id": "d020-03", "type": "listen-choose", "audio": "el sábado", "options": ["el domingo", "la semana", "el sábado"], "answer": 2, "vocab": ["sabado"] },
+    { "id": "d020-04", "type": "match-pairs", "pairs": [["el lunes", "Monday"], ["el martes", "Tuesday"], ["el miércoles", "Wednesday"], ["el jueves", "Thursday"], ["el viernes", "Friday"]], "vocab": ["lunes", "martes", "miercoles", "jueves", "viernes"] },
+    { "id": "d020-05", "type": "match-pairs", "pairs": [["el sábado", "Saturday"], ["el domingo", "Sunday"], ["el fin de semana", "weekend"], ["ayer", "yesterday"], ["enero", "January"]], "vocab": ["sabado", "domingo", "fin-de-semana", "ayer", "enero"] },
+    { "id": "d020-06", "type": "fill-blank", "es": "Lunes, martes, {{miércoles}}, jueves.", "en": "Monday, Tuesday, Wednesday, Thursday.", "options": ["miércoles", "viernes", "domingo"], "vocab": ["miercoles", "lunes", "martes", "jueves"] },
+    { "id": "d020-07", "type": "fill-blank", "es": "Hoy es martes y mañana es {{miércoles}}.", "en": "Today is Tuesday and tomorrow is Wednesday.", "options": ["miércoles", "lunes", "jueves"], "vocab": ["martes", "miercoles", "hoy", "manana"] },
+    { "id": "d020-08", "type": "fill-blank", "es": "El sábado y el domingo son el {{fin}} de semana.", "en": "Saturday and Sunday are the weekend.", "options": ["fin", "día", "centro"], "vocab": ["sabado", "domingo", "fin-de-semana"] },
+    { "id": "d020-09", "type": "fill-blank", "es": "El trece {{de}} enero.", "en": "13 January.", "options": ["de", "y", "con"], "vocab": ["fecha", "enero"] },
+    { "id": "d020-10", "type": "fill-blank", "es": "{{Ayer}}, hoy y mañana.", "en": "Yesterday, today and tomorrow.", "options": ["Ayer", "Ahora", "Aquí"], "vocab": ["ayer", "hoy", "manana"] },
+    { "id": "d020-11", "type": "listen-choose", "prompt": "What date is it?", "audio": "el trece de enero", "optionsLang": "en", "options": ["13 January", "30 January", "13 December"], "answer": 0, "vocab": ["fecha", "enero"] },
+    { "id": "d020-12", "type": "listen-choose", "prompt": "What date is it?", "audio": "el veinticuatro de diciembre", "optionsLang": "en", "options": ["24 December", "24 January", "4 December"], "answer": 0, "vocab": ["diciembre"] },
+    { "id": "d020-13", "type": "listen-choose", "prompt": "When is the market open?", "audio": "Los domingos.", "optionsLang": "en", "options": ["On Sundays", "This Sunday only", "At the weekend"], "answer": 0, "vocab": ["domingo"] },
+    { "id": "d020-14", "type": "listen-choose", "prompt": "What day is it today?", "audio": "Hoy es viernes.", "optionsLang": "en", "options": ["Friday", "Thursday", "Tuesday"], "answer": 0, "vocab": ["viernes", "hoy"] },
+    { "id": "d020-15", "type": "dictation", "es": "el lunes", "hint": "Monday", "vocab": ["lunes"] },
+    { "id": "d020-16", "type": "dictation", "es": "la semana", "hint": "the week", "vocab": ["semana"] },
+    { "id": "d020-17", "type": "dictation", "es": "enero", "hint": "January (lowercase)", "vocab": ["enero"] },
+    { "id": "d020-18", "type": "build-sentence", "es": "El miércoles trece de enero.", "en": "Wednesday 13 January.", "distractors": ["martes", "y"], "vocab": ["miercoles", "fecha"] },
+    { "id": "d020-19", "type": "build-sentence", "es": "Hoy es martes, no lunes.", "en": "Today is Tuesday, not Monday.", "distractors": ["el", "ayer"], "vocab": ["hoy", "martes", "lunes"] },
+    { "id": "d020-20", "type": "build-sentence", "direction": "audio-to-es", "es": "El fin de semana hay churros.", "en": "At the weekend there are churros.", "distractors": ["semanas"], "vocab": ["fin-de-semana", "hay", "churros"] },
+    { "id": "d020-21", "type": "repeat", "es": "lunes, martes, miércoles, jueves, viernes, sábado, domingo", "en": "Monday to Sunday", "vocab": ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"] },
+    { "id": "d020-22", "type": "shadow", "es": "el miércoles trece de enero", "en": "Wednesday 13 January", "listenFor": "Stress on MIÉR in miércoles, θ in trece, and the soft d in de.", "vocab": ["miercoles", "fecha"] },
+    { "id": "d020-23", "type": "fill-blank", "prompt": "Review: tener.", "es": "Tengo {{sed}}. Agua, por favor.", "en": "I'm thirsty. Water, please.", "options": ["sed", "hambre", "frío"], "vocab": ["tengo-sed", "agua"] },
+    { "id": "d020-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "¿Cuánto cuestan dos cañas?", "en": "How much are two beers?", "vocab": ["cuestan", "cana", "dos"] }
+  ]
+}

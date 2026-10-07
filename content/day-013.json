@@ -1,0 +1,63 @@
+{
+  "$schema": "./schema.json",
+  "day": 13,
+  "level": 2,
+  "title": { "en": "Drinks", "es": "Las bebidas" },
+  "objectives": [
+    "Name the drinks you'll order in a Madrid bar",
+    "Choose between a caña, a coffee and a glass of wine",
+    "Ask for still or sparkling water",
+    "Order two drinks with un / una and por favor"
+  ],
+  "teach": [
+    { "kind": "phrase", "es": "Una caña, por favor.", "en": "A small draught beer, please.", "note": "The standard beer order in Madrid: a small glass of draught beer, about 200 ml. Ask for una cerveza and you may get a bottle." },
+    {
+      "kind": "note",
+      "md": "**Coffee, the Spanish way**\n\n- **un café solo**: a small black espresso\n- **un cortado**: espresso with a splash of milk\n- **un café con leche**: about half coffee, half hot milk. The breakfast classic.\n\nAll three are served small. A big takeaway coffee is the exception in Spain."
+    },
+    { "kind": "phrase", "es": "Un vino tinto, por favor.", "en": "A red wine, please.", "note": "In a bar, un tinto alone also means a glass of red." },
+    { "kind": "phrase", "es": "Un tinto de verano.", "en": "A tinto de verano.", "note": "Red wine with lemon soda over ice. Madrid drinks it more than sangría." },
+    { "kind": "phrase", "es": "¿Agua con gas o sin gas?", "en": "Sparkling or still water?", "note": "The waiter's question. Answer: Sin gas, por favor. Tap water is agua del grifo." },
+    { "kind": "phrase", "es": "Una botella de agua y dos vasos.", "en": "A bottle of water and two glasses.", "note": "de links the container to its contents: una botella de vino, un vaso de leche." }
+  ],
+  "vocab": [
+    { "id": "cana", "es": "la caña", "en": "small draught beer", "pos": "noun", "gender": "f", "ipa": "ˈkaɲa", "tags": ["madrid", "bar"] },
+    { "id": "cafe-solo", "es": "el café solo", "en": "espresso (black coffee)", "pos": "noun", "gender": "m", "ipa": "kaˈfe ˈsolo", "tags": ["bar"] },
+    { "id": "cortado", "es": "el cortado", "en": "espresso with a dash of milk", "pos": "noun", "gender": "m", "ipa": "koɾˈtaðo", "tags": ["bar"] },
+    { "id": "cafe-con-leche", "es": "el café con leche", "en": "coffee with milk", "pos": "noun", "gender": "m", "ipa": "kaˈfe kon ˈletʃe", "tags": ["bar"] },
+    { "id": "te", "es": "el té", "en": "tea", "pos": "noun", "gender": "m", "ipa": "ˈte", "note": "With an accent. te without one = you (object): te quiero.", "tags": ["bar"] },
+    { "id": "vino-tinto", "es": "el vino tinto", "en": "red wine", "pos": "noun", "gender": "m", "ipa": "ˈbino ˈtinto", "tags": ["bar"] },
+    { "id": "vino-blanco", "es": "el vino blanco", "en": "white wine", "pos": "noun", "gender": "m", "ipa": "ˈbino ˈblaŋko", "tags": ["bar"] },
+    { "id": "tinto-de-verano", "es": "el tinto de verano", "en": "red wine with lemon soda", "pos": "noun", "gender": "m", "ipa": "ˈtinto ðe βeˈɾano", "note": "verano = summer, but it's drunk all year.", "tags": ["madrid", "bar"] },
+    { "id": "agua-con-gas", "es": "agua con gas", "en": "sparkling water", "pos": "phrase", "ipa": "ˈaɣwa koŋ ˈɡas", "tags": ["bar"] },
+    { "id": "agua-sin-gas", "es": "agua sin gas", "en": "still water", "pos": "phrase", "ipa": "ˈaɣwa siŋ ˈɡas", "tags": ["bar"] },
+    { "id": "botella", "es": "la botella", "en": "bottle", "pos": "noun", "gender": "f", "ipa": "boˈteʝa" },
+    { "id": "vaso", "es": "el vaso", "en": "glass (tumbler)", "pos": "noun", "gender": "m", "ipa": "ˈbaso", "note": "Wine comes in una copa (a stemmed glass): una copa de vino." }
+  ],
+  "exercises": [
+    { "id": "d013-01", "type": "listen-choose", "audio": "la caña", "options": ["la caña", "la casa", "la cena"], "answer": 0, "vocab": ["cana"] },
+    { "id": "d013-02", "type": "listen-choose", "audio": "el cortado", "options": ["el café solo", "el cortado", "el café con leche"], "answer": 1, "vocab": ["cortado"] },
+    { "id": "d013-03", "type": "match-pairs", "pairs": [["el café solo", "espresso"], ["el cortado", "espresso + dash of milk"], ["el café con leche", "coffee with milk"], ["el té", "tea"]], "vocab": ["cafe-solo", "cortado", "cafe-con-leche", "te"] },
+    { "id": "d013-04", "type": "match-pairs", "pairs": [["la caña", "small draught beer"], ["el vino tinto", "red wine"], ["el vino blanco", "white wine"], ["el tinto de verano", "red wine + lemon soda"]], "vocab": ["cana", "vino-tinto", "vino-blanco", "tinto-de-verano"] },
+    { "id": "d013-05", "type": "listen-choose", "prompt": "Which water?", "audio": "Agua sin gas, por favor.", "optionsLang": "en", "options": ["Still water", "Sparkling water", "Tap water"], "answer": 0, "vocab": ["agua-sin-gas"] },
+    { "id": "d013-06", "type": "listen-choose", "prompt": "Which water?", "audio": "Agua con gas, por favor.", "optionsLang": "en", "options": ["Still water", "Sparkling water", "A bottle of water"], "answer": 1, "vocab": ["agua-con-gas"] },
+    { "id": "d013-07", "type": "fill-blank", "es": "{{Una}} caña, por favor.", "en": "A small beer, please.", "options": ["Una", "Un"], "vocab": ["cana", "un-una"] },
+    { "id": "d013-08", "type": "fill-blank", "es": "{{Un}} café con leche y un cortado.", "en": "A coffee with milk and a cortado.", "options": ["Un", "Una"], "vocab": ["cafe-con-leche", "cortado", "un-una"] },
+    { "id": "d013-09", "type": "fill-blank", "es": "Una botella {{de}} agua, por favor.", "en": "A bottle of water, please.", "options": ["de", "con", "y"], "vocab": ["botella", "agua"] },
+    { "id": "d013-10", "type": "fill-blank", "es": "Agua {{sin}} gas, por favor.", "en": "Still water, please.", "options": ["sin", "con"], "vocab": ["agua-sin-gas"] },
+    { "id": "d013-11", "type": "fill-blank", "es": "Dos {{cañas}}, por favor.", "en": "Two small beers, please.", "options": ["cañas", "caña", "cañes"], "vocab": ["cana", "dos"] },
+    { "id": "d013-12", "type": "dictation", "es": "un cortado", "hint": "espresso with a dash of milk", "vocab": ["cortado"] },
+    { "id": "d013-13", "type": "dictation", "es": "una caña", "hint": "small draught beer (don't forget the ñ)", "vocab": ["cana"] },
+    { "id": "d013-14", "type": "dictation", "es": "el vino blanco", "hint": "white wine", "vocab": ["vino-blanco"] },
+    { "id": "d013-15", "type": "build-sentence", "es": "Una caña y un tinto de verano, por favor.", "en": "A small beer and a tinto de verano, please.", "distractors": ["el", "con"], "vocab": ["cana", "tinto-de-verano"] },
+    { "id": "d013-16", "type": "build-sentence", "es": "Una botella de agua y dos vasos.", "en": "A bottle of water and two glasses.", "distractors": ["con", "sin"], "vocab": ["botella", "vaso", "agua"] },
+    { "id": "d013-17", "type": "build-sentence", "direction": "audio-to-es", "es": "Un café solo y un té, por favor.", "en": "An espresso and a tea, please.", "distractors": ["leche"], "vocab": ["cafe-solo", "te"] },
+    { "id": "d013-18", "type": "listen-choose", "prompt": "What did they order?", "audio": "Dos cafés con leche y un zumo, por favor.", "optionsLang": "en", "options": ["2 coffees with milk + 1 juice", "1 coffee with milk + 2 juices", "2 espressos + 1 juice"], "answer": 0, "vocab": ["cafe-con-leche", "zumo", "dos"] },
+    { "id": "d013-19", "type": "repeat", "es": "Una caña, por favor.", "en": "A small beer, please.", "vocab": ["cana"] },
+    { "id": "d013-20", "type": "repeat", "es": "Un café con leche, por favor.", "en": "A coffee with milk, please.", "vocab": ["cafe-con-leche"] },
+    { "id": "d013-21", "type": "shadow", "es": "Agua sin gas, por favor.", "en": "Still water, please.", "listenFor": "The soft g in agua, and the n of sin sounding like ng before gas.", "vocab": ["agua-sin-gas"] },
+    { "id": "d013-22", "type": "fill-blank", "prompt": "Review", "es": "¿{{Hay}} cerveza sin alcohol?", "en": "Is there alcohol-free beer?", "options": ["Hay", "Es", "Soy"], "vocab": ["hay-q", "cerveza"] },
+    { "id": "d013-23", "type": "listen-choose", "prompt": "Review: how much is it?", "audio": "Son catorce euros.", "optionsLang": "en", "options": ["€14", "€4", "€40"], "answer": 0, "vocab": ["catorce"] },
+    { "id": "d013-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Perdón, ¿cuánto es?", "en": "Excuse me, how much is it?", "vocab": ["perdon", "cuanto-es"] }
+  ]
+}

@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-28T02:43:04+00:00",
+ "generated": "2026-10-07T04:42:43+00:00",
  "voices": {
   "f": "es-ES-ElviraNeural",
   "m": "es-ES-AlvaroNeural"
@@ -9,6 +9,14 @@
  "entries": {
   "Adiós.": {
    "id": "9961cceabf42",
+   "slow": true
+  },
+  "Agua con gas, por favor.": {
+   "id": "23ab6482d324",
+   "slow": true
+  },
+  "Agua sin gas, por favor.": {
+   "id": "e5fe47fa2d14",
    "slow": true
   },
   "Agua, por favor.": {
@@ -39,6 +47,18 @@
    "id": "241e4b13a411",
    "slow": true
   },
+  "Chocolate con churros, por favor.": {
+   "id": "c55beb092df0",
+   "slow": true
+  },
+  "Chocolate con churros.": {
+   "id": "d9a1f7e4c1ed",
+   "slow": true
+  },
+  "Claudia es alemana.": {
+   "id": "9e0a3a481591",
+   "slow": true
+  },
   "Consonantes fáciles y la hache muda": {
    "id": "e2e92f32b32b",
    "slow": true
@@ -47,16 +67,32 @@
    "id": "c310b65511ac",
    "slow": true
   },
+  "De tapas": {
+   "id": "1ebbcea6a963",
+   "slow": true
+  },
   "Del once al veinte y repaso": {
    "id": "14d76f203254",
+   "slow": true
+  },
+  "Dos bocadillos de calamares y dos cañas.": {
+   "id": "ac24f924b5e7",
    "slow": true
   },
   "Dos cafés con leche y un agua, por favor.": {
    "id": "fc5ebcd0e5d1",
    "slow": true
   },
+  "Dos cafés con leche y un zumo, por favor.": {
+   "id": "f7ec5c40bbf9",
+   "slow": true
+  },
   "Dos cafés, por favor.": {
    "id": "e3f1f6134f4b",
+   "slow": true
+  },
+  "Dos cañas, por favor.": {
+   "id": "06b9c84e7d9c",
    "slow": true
   },
   "El abecedario": {
@@ -67,8 +103,28 @@
    "id": "4f1f82618f26",
    "slow": true
   },
+  "El café, por favor.": {
+   "id": "59f08aef1f46",
+   "slow": true
+  },
+  "El hotel es caro.": {
+   "id": "da1a04acaf8c",
+   "slow": true
+  },
+  "Ella es de Madrid.": {
+   "id": "7f02e69cee27",
+   "slow": true
+  },
   "Encantado. Encantada.": {
    "id": "ffd6bb99d860",
+   "slow": true
+  },
+  "Es francesa.": {
+   "id": "4ced3616d687",
+   "slow": true
+  },
+  "Es inglés.": {
+   "id": "801b70c52136",
    "slow": true
   },
   "Es muy caro.": {
@@ -95,12 +151,24 @@
    "id": "c39dd2e76f5f",
    "slow": true
   },
+  "Hay dos hoteles en la plaza.": {
+   "id": "32301a8a5be5",
+   "slow": true
+  },
   "Hay mucha gente.": {
    "id": "2fc75bfd3e17",
    "slow": true
   },
+  "Hay unos amigos en el bar.": {
+   "id": "714a15c9e884",
+   "slow": true
+  },
   "Hola, buenos días.": {
    "id": "ef2c1e881471",
+   "slow": true
+  },
+  "Hola, me llamo Pablo. Encantado.": {
+   "id": "a2313f38ee90",
    "slow": true
   },
   "Hola, me llamo Pablo. ¿Y tú?": {
@@ -123,8 +191,24 @@
    "id": "3919641bde53",
    "slow": true
   },
+  "La calle y la plaza.": {
+   "id": "eb4a39ff2608",
+   "slow": true
+  },
+  "La carne y el pescado.": {
+   "id": "04c276c95a71",
+   "slow": true
+  },
   "La cena es a las diez.": {
    "id": "c3c4b427b364",
+   "slow": true
+  },
+  "La cerveza, por favor.": {
+   "id": "704e1537c2cf",
+   "slow": true
+  },
+  "La comida": {
+   "id": "5959f525842a",
    "slow": true
   },
   "La distinción": {
@@ -143,6 +227,14 @@
    "id": "f33b6ba13217",
    "slow": true
   },
+  "Las bebidas": {
+   "id": "e0a856083b84",
+   "slow": true
+  },
+  "Las llaves, por favor.": {
+   "id": "37a7fbe4128a",
+   "slow": true
+  },
   "Las vocales": {
    "id": "4e6f528b8ad4",
    "slow": true
@@ -155,6 +247,18 @@
    "id": "cd626d0e33a3",
    "slow": true
   },
+  "Los artículos y hay": {
+   "id": "e4071eeccd64",
+   "slow": true
+  },
+  "Los coches son caros.": {
+   "id": "cbc2e3c6261c",
+   "slow": true
+  },
+  "Los hoteles son caros.": {
+   "id": "20465bb79902",
+   "slow": true
+  },
   "Los números del cero al diez": {
    "id": "50d97207ce28",
    "slow": true
@@ -165,6 +269,10 @@
   },
   "Me gusta mucho el jamón.": {
    "id": "e5d9767131fc",
+   "slow": true
+  },
+  "Me llamo Ana y soy de Madrid.": {
+   "id": "e05817095be3",
    "slow": true
   },
   "Me llamo Ana.": {
@@ -199,8 +307,24 @@
    "id": "777b48ba81c1",
    "slow": true
   },
+  "No hay cerveza.": {
+   "id": "a869822876da",
+   "slow": true
+  },
+  "No hay queso.": {
+   "id": "e08ebfe8d18d",
+   "slow": true
+  },
+  "No soy inglés, soy estadounidense.": {
+   "id": "b9c3919a6e0f",
+   "slow": true
+  },
   "No, nada. Todo bien.": {
    "id": "f84a75fe3690",
+   "slow": true
+  },
+  "No, no hay.": {
+   "id": "882af50cf697",
    "slow": true
   },
   "Perdón, no entiendo.": {
@@ -211,6 +335,10 @@
    "id": "246684f8e097",
    "slow": true
   },
+  "Perdón, ¿cuánto es?": {
+   "id": "589390c456c6",
+   "slow": true
+  },
   "Perdón, ¿puedes repetirlo?": {
    "id": "b2efff1b63f5",
    "slow": true
@@ -219,12 +347,32 @@
    "id": "a0c4da078de0",
    "slow": true
   },
+  "Pescado con ensalada, por favor.": {
+   "id": "4446f88823eb",
+   "slow": true
+  },
+  "Pescado con verduras, por favor.": {
+   "id": "d31a19eaf1e1",
+   "slow": true
+  },
+  "Pierre es francés.": {
+   "id": "fc063337697b",
+   "slow": true
+  },
+  "Pollo con verduras, por favor.": {
+   "id": "311eb90b41e7",
+   "slow": true
+  },
   "Por favor.": {
    "id": "0cb4dc00702a",
    "slow": true
   },
   "Prueba del nivel uno": {
    "id": "7665db802d27",
+   "slow": true
+  },
+  "Son catorce euros.": {
+   "id": "e32a5adde9ae",
    "slow": true
   },
   "Son cinco euros.": {
@@ -251,8 +399,36 @@
    "id": "82da7fe3fa8a",
    "slow": true
   },
+  "Son unos diez euros.": {
+   "id": "a4b1e7d83959",
+   "slow": true
+  },
   "Son veinte euros.": {
    "id": "9d586b30f67e",
+   "slow": true
+  },
+  "Soy de Estados Unidos.": {
+   "id": "32e5588bc973",
+   "slow": true
+  },
+  "Soy de Estados Unidos. ¿Y tú, de dónde eres?": {
+   "id": "ed6705e14afe",
+   "slow": true
+  },
+  "Soy de Inglaterra. Soy inglesa.": {
+   "id": "2c6e04b6644e",
+   "slow": true
+  },
+  "Soy de…": {
+   "id": "22f417e9552c",
+   "slow": true
+  },
+  "Soy estadounidense.": {
+   "id": "aa70a04a27c8",
+   "slow": true
+  },
+  "Soy estadounidense. ¿Y tú?": {
+   "id": "5b387b9572ca",
    "slow": true
   },
   "Sí, gracias.": {
@@ -275,8 +451,28 @@
    "id": "e0137ccca1e9",
    "slow": true
   },
+  "Tom y Kate son estadounidenses.": {
+   "id": "cd4987d8eae5",
+   "slow": true
+  },
+  "Un bocadillo de calamares, por favor.": {
+   "id": "6f8e5adabd01",
+   "slow": true
+  },
+  "Un bocadillo de jamón y una caña.": {
+   "id": "3622c2ca6b37",
+   "slow": true
+  },
+  "Un café con leche y un cortado.": {
+   "id": "ebc43267b7db",
+   "slow": true
+  },
   "Un café con leche, por favor.": {
    "id": "6091528a54e3",
+   "slow": true
+  },
+  "Un café solo y un té, por favor.": {
+   "id": "d8e28492295e",
    "slow": true
   },
   "Un café y un té.": {
@@ -289,6 +485,22 @@
   },
   "Un café, por favor.": {
    "id": "62673b67bf88",
+   "slow": true
+  },
+  "Un cortado, por favor.": {
+   "id": "754090c1bb74",
+   "slow": true
+  },
+  "Un tinto de verano y agua sin gas, por favor.": {
+   "id": "6234cd69eaf0",
+   "slow": true
+  },
+  "Un tinto de verano.": {
+   "id": "a849629551b5",
+   "slow": true
+  },
+  "Un vino tinto, por favor.": {
+   "id": "ef115974ebe8",
    "slow": true
   },
   "Un vino, por favor.": {
@@ -307,8 +519,80 @@
    "id": "2c5d5393674e",
    "slow": true
   },
+  "Una botella de agua y dos vasos.": {
+   "id": "e62054f71e3a",
+   "slow": true
+  },
+  "Una botella de agua, por favor.": {
+   "id": "caf4f259b786",
+   "slow": true
+  },
+  "Una caña y un tinto de verano, por favor.": {
+   "id": "2014ca214797",
+   "slow": true
+  },
+  "Una caña, por favor.": {
+   "id": "ba2547b250d1",
+   "slow": true
+  },
   "Una cerveza y un zumo, por favor.": {
    "id": "c74c6f04671d",
+   "slow": true
+  },
+  "Una ensalada sin queso y agua sin gas.": {
+   "id": "6fbb04a27f33",
+   "slow": true
+  },
+  "Una ensalada sin queso, por favor.": {
+   "id": "f8ec62645dcf",
+   "slow": true
+  },
+  "Una mesa para dos, por favor.": {
+   "id": "c7e78539e047",
+   "slow": true
+  },
+  "Una ración de calamares, por favor.": {
+   "id": "29c404db6160",
+   "slow": true
+  },
+  "Una ración de calamares.": {
+   "id": "6e0a66020d7e",
+   "slow": true
+  },
+  "Una ración de croquetas y unas aceitunas.": {
+   "id": "103b0bc19255",
+   "slow": true
+  },
+  "Una ración de croquetas.": {
+   "id": "96a888a7219a",
+   "slow": true
+  },
+  "Una ración de patatas bravas, por favor.": {
+   "id": "183587865c58",
+   "slow": true
+  },
+  "Una sopa y carne con patatas.": {
+   "id": "52a630ac6589",
+   "slow": true
+  },
+  "Una sopa y pollo con verduras, por favor.": {
+   "id": "aeae97468fc0",
+   "slow": true
+  },
+  "Una tapa de tortilla, por favor.": {
+   "id": "e6b323bb1e65",
+   "slow": true
+  },
+  "Unas croquetas de jamón, por favor.": {
+   "id": "1c3d30d54732",
+   "slow": true
+  },
+  "Unas patatas bravas y dos cañas.": {
+   "id": "dedb7f3e490f",
+   "slow": true
+  },
+  "Unas patatas bravas y unas aceitunas.": {
+   "id": "1b552f7713eb",
    "slow": true
   },
   "Vale, gracias.": {
@@ -323,8 +607,16 @@
    "id": "62fd7c007f31",
    "slow": true
   },
+  "Vivo en Estados Unidos.": {
+   "id": "718f744e5c63",
+   "slow": true
+  },
   "Yo me llamo Pablo. Encantado.": {
    "id": "4e1adff9f009",
+   "slow": true
+  },
+  "Yo soy de Estados Unidos.": {
+   "id": "ba58442646be",
    "slow": true
   },
   "a, be, ce, de, e, efe, ge": {
@@ -343,8 +635,24 @@
    "id": "c1962c232baf",
    "slow": true
   },
+  "agua con gas": {
+   "id": "1220ccaeba26",
+   "slow": true
+  },
+  "agua sin gas": {
+   "id": "abfd8500b2d9",
+   "slow": true
+  },
   "ahora": {
    "id": "317914bb85c2",
+   "slow": true
+  },
+  "alemana": {
+   "id": "4703cf2ede81",
+   "slow": true
+  },
+  "alemán, alemana": {
+   "id": "500bc5a5fa76",
    "slow": true
   },
   "amigo": {
@@ -431,6 +739,10 @@
    "id": "e996f592b0e4",
    "slow": true
   },
+  "chocolate con churros": {
+   "id": "db8a6b98e4c4",
+   "slow": true
+  },
   "ciento": {
    "id": "7b1ca82dd1a3",
    "slow": true
@@ -491,6 +803,10 @@
    "id": "e67f16d28ac3",
    "slow": true
   },
+  "el": {
+   "id": "4f1ea4f09db2",
+   "slow": true
+  },
   "el agua": {
    "id": "76277cc030a3",
    "slow": true
@@ -507,8 +823,20 @@
    "id": "1c8c182a8cb3",
    "slow": true
   },
+  "el bocadillo": {
+   "id": "d517ce09dd68",
+   "slow": true
+  },
   "el café": {
    "id": "b309e34c0e94",
+   "slow": true
+  },
+  "el café con leche": {
+   "id": "5738595f4d46",
+   "slow": true
+  },
+  "el café solo": {
+   "id": "5f31d89ea07a",
    "slow": true
   },
   "el café, el menú, el autobús": {
@@ -523,8 +851,20 @@
    "id": "3dbda7e6e3b1",
    "slow": true
   },
+  "el chocolate": {
+   "id": "94cc5f09e04b",
+   "slow": true
+  },
   "el coche": {
    "id": "1cd6c8235362",
+   "slow": true
+  },
+  "el cocido madrileño": {
+   "id": "5a556bd2a804",
+   "slow": true
+  },
+  "el cortado": {
+   "id": "6fae175a2461",
    "slow": true
   },
   "el gato": {
@@ -559,8 +899,24 @@
    "id": "d130d78c4feb",
    "slow": true
   },
+  "el pan": {
+   "id": "fece107f15ac",
+   "slow": true
+  },
   "el perro": {
    "id": "15cc1ee3c319",
+   "slow": true
+  },
+  "el pescado": {
+   "id": "d41c76cec80e",
+   "slow": true
+  },
+  "el pollo": {
+   "id": "542047ddb5b7",
+   "slow": true
+  },
+  "el postre": {
+   "id": "fca6d4d92aa1",
    "slow": true
   },
   "el queso": {
@@ -571,16 +927,44 @@
    "id": "8c81fea09c44",
    "slow": true
   },
+  "el tinto de verano": {
+   "id": "3409d7b6a050",
+   "slow": true
+  },
+  "el té": {
+   "id": "a892e1c21431",
+   "slow": true
+  },
+  "el vaso": {
+   "id": "a3c85825fac6",
+   "slow": true
+  },
   "el vino": {
    "id": "77706bd8c0f8",
+   "slow": true
+  },
+  "el vino blanco": {
+   "id": "bdfd7903ed4b",
+   "slow": true
+  },
+  "el vino tinto": {
+   "id": "810aa5c1217f",
    "slow": true
   },
   "el zumo": {
    "id": "85357cbd6c24",
    "slow": true
   },
+  "ella es": {
+   "id": "bedba1cf3b21",
+   "slow": true
+  },
   "ellos se llaman": {
    "id": "d67eb8b3bb4a",
+   "slow": true
+  },
+  "ellos son": {
+   "id": "06a263fd05be",
    "slow": true
   },
   "encantado": {
@@ -589,6 +973,34 @@
   },
   "encantado, encantada": {
    "id": "743d91309d75",
+   "slow": true
+  },
+  "eres": {
+   "id": "a3ef4bb56146",
+   "slow": true
+  },
+  "es": {
+   "id": "09cd68a2a77b",
+   "slow": true
+  },
+  "español": {
+   "id": "d2a8463fbad3",
+   "slow": true
+  },
+  "español, española": {
+   "id": "459ec9b75146",
+   "slow": true
+  },
+  "estadounidense": {
+   "id": "0e5f124b57ad",
+   "slow": true
+  },
+  "francés": {
+   "id": "51222bc00403",
+   "slow": true
+  },
+  "francés, francesa": {
+   "id": "4e220770a1d8",
    "slow": true
   },
   "gato": {
@@ -631,6 +1043,10 @@
    "id": "15fee4809bf5",
    "slow": true
   },
+  "hay": {
+   "id": "ebddd6b268d9",
+   "slow": true
+  },
   "higo": {
    "id": "d073257f1b84",
    "slow": true
@@ -663,6 +1079,14 @@
    "id": "fa75ce70e6f9",
    "slow": true
   },
+  "inglesa": {
+   "id": "9211621e0398",
+   "slow": true
+  },
+  "inglés, inglesa": {
+   "id": "3f534edd9c39",
+   "slow": true
+  },
   "jamón": {
    "id": "8d298a01d5ca",
    "slow": true
@@ -675,6 +1099,14 @@
    "id": "9a02f63cf75b",
    "slow": true
   },
+  "la": {
+   "id": "3efd4c0fe185",
+   "slow": true
+  },
+  "la botella": {
+   "id": "156a7a5de535",
+   "slow": true
+  },
   "la calle": {
    "id": "7a0a8927d566",
    "slow": true
@@ -683,12 +1115,20 @@
    "id": "739721294a45",
    "slow": true
   },
+  "la carne": {
+   "id": "8b0db73c625f",
+   "slow": true
+  },
   "la casa": {
    "id": "d70b579be499",
    "slow": true
   },
   "la casa, la mesa": {
    "id": "22eece223209",
+   "slow": true
+  },
+  "la caña": {
+   "id": "ea2232853378",
    "slow": true
   },
   "la cena": {
@@ -701,6 +1141,14 @@
   },
   "la ciudad": {
    "id": "a5165b44ef3c",
+   "slow": true
+  },
+  "la ciudad, las ciudades": {
+   "id": "501527b5f304",
+   "slow": true
+  },
+  "la ensalada": {
+   "id": "0b776261948d",
    "slow": true
   },
   "la gente": {
@@ -735,8 +1183,52 @@
    "id": "107bf33ec19a",
    "slow": true
   },
+  "la ración": {
+   "id": "59086c3798c1",
+   "slow": true
+  },
   "la señora": {
    "id": "8558870ec709",
+   "slow": true
+  },
+  "la sopa": {
+   "id": "5b823e09b6f3",
+   "slow": true
+  },
+  "la tapa": {
+   "id": "1573e11c2a39",
+   "slow": true
+  },
+  "la tortilla": {
+   "id": "d1fa30260a81",
+   "slow": true
+  },
+  "las": {
+   "id": "5db3d4f1d6b4",
+   "slow": true
+  },
+  "las aceitunas": {
+   "id": "5e9db27f4b32",
+   "slow": true
+  },
+  "las cervezas": {
+   "id": "4817eb945bee",
+   "slow": true
+  },
+  "las ciudades": {
+   "id": "1b1381512283",
+   "slow": true
+  },
+  "las croquetas": {
+   "id": "96169e3cc49d",
+   "slow": true
+  },
+  "las patatas bravas": {
+   "id": "02df50047d0c",
+   "slow": true
+  },
+  "las verduras": {
+   "id": "6e020b4505a1",
    "slow": true
   },
   "leche": {
@@ -753,6 +1245,30 @@
   },
   "lo siento": {
    "id": "557d905c450f",
+   "slow": true
+  },
+  "los": {
+   "id": "71c61afd3e6c",
+   "slow": true
+  },
+  "los autobuses": {
+   "id": "de6a340e026b",
+   "slow": true
+  },
+  "los cafés": {
+   "id": "3ebdf3ba81ed",
+   "slow": true
+  },
+  "los calamares": {
+   "id": "d95e20819b6e",
+   "slow": true
+  },
+  "los churros": {
+   "id": "dd587dc100e4",
+   "slow": true
+  },
+  "los hoteles": {
+   "id": "3fcbdeb5e897",
    "slow": true
   },
   "luego": {
@@ -819,12 +1335,20 @@
    "id": "f7aad0bb4818",
    "slow": true
   },
+  "no hay": {
+   "id": "9e0d290ac4b5",
+   "slow": true
+  },
   "nombre": {
    "id": "4832ec78c988",
    "slow": true
   },
   "nosotros nos llamamos": {
    "id": "a30692d30364",
+   "slow": true
+  },
+  "nosotros somos": {
+   "id": "f5c8246ca196",
    "slow": true
   },
   "nueve": {
@@ -899,6 +1423,10 @@
    "id": "2366c31fc3f3",
    "slow": true
   },
+  "pollo con verduras": {
+   "id": "d01a1d723972",
+   "slow": true
+  },
   "por favor": {
    "id": "e392209eb260",
    "slow": true
@@ -927,6 +1455,10 @@
    "id": "d9e3457158ee",
    "slow": true
   },
+  "ser": {
+   "id": "605d3374e661",
+   "slow": true
+  },
   "señor": {
    "id": "93f6a8523ab7",
    "slow": true
@@ -945,6 +1477,14 @@
   },
   "siete": {
    "id": "c0bdfc8b5282",
+   "slow": true
+  },
+  "soy": {
+   "id": "55e30b376939",
+   "slow": true
+  },
+  "soy de…": {
+   "id": "b85d74030b6b",
    "slow": true
   },
   "sí": {
@@ -983,8 +1523,52 @@
    "id": "044e993fbe3c",
    "slow": true
   },
+  "tú eres": {
+   "id": "cd5d5964ccf0",
+   "slow": true
+  },
   "tú te llamas": {
    "id": "bb09799bf0ca",
+   "slow": true
+  },
+  "un bocadillo de calamares": {
+   "id": "f7e5e8cf540e",
+   "slow": true
+  },
+  "un cortado": {
+   "id": "0cf27092467b",
+   "slow": true
+  },
+  "un, una": {
+   "id": "b0f5bc6a81a2",
+   "slow": true
+  },
+  "una caña": {
+   "id": "f25dae83d0c3",
+   "slow": true
+  },
+  "una ensalada y una sopa": {
+   "id": "565e9fc4b981",
+   "slow": true
+  },
+  "una tortilla de patatas": {
+   "id": "7914c14a55a1",
+   "slow": true
+  },
+  "unas aceitunas y pan": {
+   "id": "7aa332e6f076",
+   "slow": true
+  },
+  "unas aceitunas, una ración": {
+   "id": "aa1116ab1f14",
+   "slow": true
+  },
+  "unas croquetas de jamón": {
+   "id": "a5d08673817e",
+   "slow": true
+  },
+  "unas patatas bravas": {
+   "id": "4270ce18768f",
    "slow": true
   },
   "uno": {
@@ -993,6 +1577,10 @@
   },
   "uno, dos, tres, cuatro, cinco": {
    "id": "d4fe68d8a493",
+   "slow": true
+  },
+  "unos, unas": {
+   "id": "67a944260f59",
    "slow": true
   },
   "uve": {
@@ -1023,6 +1611,10 @@
    "id": "6cc2c8d4c485",
    "slow": true
   },
+  "vosotros sois": {
+   "id": "b4af601343f6",
+   "slow": true
+  },
   "y": {
    "id": "95cb0bfd2977",
    "slow": true
@@ -1033,6 +1625,14 @@
   },
   "yo me llamo": {
    "id": "56319b36abe1",
+   "slow": true
+  },
+  "yo soy": {
+   "id": "d4a1fe527854",
+   "slow": true
+  },
+  "¿Agua con gas o sin gas?": {
+   "id": "4f39c642acd4",
    "slow": true
   },
   "¿Cuánto es?": {
@@ -1075,6 +1675,54 @@
    "id": "f9d4d5f29080",
    "slow": true
   },
+  "¿De dónde eres?": {
+   "id": "449b0a0e511f",
+   "slow": true
+  },
+  "¿De dónde eres? Soy de Estados Unidos.": {
+   "id": "ce0366e3e0ad",
+   "slow": true
+  },
+  "¿Eres español? No, soy estadounidense.": {
+   "id": "e2e0885f7cbb",
+   "slow": true
+  },
+  "¿Eres española?": {
+   "id": "e2927cc800e5",
+   "slow": true
+  },
+  "¿Hay agua?": {
+   "id": "1538ed5425f8",
+   "slow": true
+  },
+  "¿Hay agua? No, no hay.": {
+   "id": "6e35fe8960c4",
+   "slow": true
+  },
+  "¿Hay cerveza sin alcohol?": {
+   "id": "6e9a7adf24cc",
+   "slow": true
+  },
+  "¿Hay cocido madrileño hoy?": {
+   "id": "5365706b1857",
+   "slow": true
+  },
+  "¿Hay jamón? No, no hay.": {
+   "id": "2e31e8ac5160",
+   "slow": true
+  },
+  "¿Hay postre?": {
+   "id": "799b408f2cc5",
+   "slow": true
+  },
+  "¿Hay tortilla? Sí, y croquetas.": {
+   "id": "f78ca996ff6d",
+   "slow": true
+  },
+  "¿Hay…?": {
+   "id": "3a2fdeceeba9",
+   "slow": true
+  },
   "¿Puedes repetirlo?": {
    "id": "7283f108a072",
    "slow": true
@@ -1085,6 +1733,10 @@
   },
   "¿Y tú?": {
    "id": "6c3a47647674",
+   "slow": true
+  },
+  "él es": {
+   "id": "9c2fe2542725",
    "slow": true
   },
   "él se llama": {

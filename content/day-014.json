@@ -1,0 +1,60 @@
+{
+  "$schema": "./schema.json",
+  "day": 14,
+  "level": 2,
+  "title": { "en": "Bar food", "es": "De tapas" },
+  "objectives": [
+    "Tell a tapa from a ración",
+    "Name the classic Madrid bar dishes",
+    "Use de for what something is made of: croquetas de jamón",
+    "Order food and drink together"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**Tapa or ración?**\n\n- **una tapa**: a small plate, sometimes free with your drink in Madrid\n- **una ración**: a full plate to share\n\nMenus often list both sizes, and sometimes **media ración** (half) too."
+    },
+    { "kind": "phrase", "es": "una tortilla de patatas", "en": "a Spanish potato omelette", "note": "In Spain una tortilla is this thick egg and potato omelette, not a wrap. Patatas, not papas." },
+    { "kind": "phrase", "es": "unas patatas bravas", "en": "fried potatoes with spicy sauce", "note": "Madrid's own tapa. Order them as plural: unas bravas." },
+    { "kind": "phrase", "es": "unas croquetas de jamón", "en": "ham croquettes", "note": "de tells you what it's made of: croquetas de jamón, bocadillo de queso." },
+    { "kind": "phrase", "es": "un bocadillo de calamares", "en": "a fried squid sandwich", "note": "Madrid's most famous snack, sold all around the Plaza Mayor. A bocadillo is a sandwich on a crusty baguette." },
+    { "kind": "phrase", "es": "unas aceitunas y pan", "en": "some olives and bread", "note": "Often the first thing on the table. Bread is usually charged on the bill, so you can say no if you don't want it." }
+  ],
+  "vocab": [
+    { "id": "tapa", "es": "la tapa", "en": "tapa (small plate)", "pos": "noun", "gender": "f", "ipa": "ˈtapa", "tags": ["madrid", "bar"] },
+    { "id": "racion", "es": "la ración", "en": "portion (plate to share)", "pos": "noun", "gender": "f", "ipa": "raˈθjon", "note": "Plural: las raciones (no accent).", "tags": ["bar"] },
+    { "id": "patatas-bravas", "es": "las patatas bravas", "en": "fried potatoes with spicy sauce", "pos": "noun", "gender": "f", "ipa": "paˈtatas ˈβɾaβas", "note": "una patata = a potato. LatAm: la papa.", "tags": ["madrid", "bar"] },
+    { "id": "tortilla", "es": "la tortilla", "en": "Spanish omelette (egg and potato)", "pos": "noun", "gender": "f", "ipa": "toɾˈtiʝa", "note": "In full: la tortilla de patatas, or tortilla española.", "tags": ["bar"] },
+    { "id": "croquetas", "es": "las croquetas", "en": "croquettes", "pos": "noun", "gender": "f", "ipa": "kɾoˈketas", "tags": ["bar"] },
+    { "id": "calamares", "es": "los calamares", "en": "fried squid rings", "pos": "noun", "gender": "m", "ipa": "kalaˈmaɾes", "note": "Calamares a la romana = battered squid rings.", "tags": ["madrid", "bar"] },
+    { "id": "bocadillo", "es": "el bocadillo", "en": "sandwich (on a baguette)", "pos": "noun", "gender": "m", "ipa": "bokaˈðiʝo", "note": "Sliced-bread sandwiches are un sándwich.", "tags": ["madrid", "bar"] },
+    { "id": "aceitunas", "es": "las aceitunas", "en": "olives", "pos": "noun", "gender": "f", "ipa": "aθeiˈtunas", "tags": ["bar"] },
+    { "id": "pan", "es": "el pan", "en": "bread", "pos": "noun", "gender": "m", "ipa": "ˈpan" }
+  ],
+  "exercises": [
+    { "id": "d014-01", "type": "listen-choose", "audio": "la ración", "options": ["la ración", "la tapa", "la cena"], "answer": 0, "vocab": ["racion"] },
+    { "id": "d014-02", "type": "listen-choose", "audio": "las croquetas", "options": ["las aceitunas", "las croquetas", "los calamares"], "answer": 1, "vocab": ["croquetas"] },
+    { "id": "d014-03", "type": "listen-choose", "audio": "el bocadillo", "options": ["el bocadillo", "el cortado", "el pan"], "answer": 0, "vocab": ["bocadillo"] },
+    { "id": "d014-04", "type": "match-pairs", "pairs": [["la tapa", "small plate"], ["la ración", "plate to share"], ["el pan", "bread"], ["las aceitunas", "olives"], ["el bocadillo", "baguette sandwich"]], "vocab": ["tapa", "racion", "pan", "aceitunas", "bocadillo"] },
+    { "id": "d014-05", "type": "match-pairs", "pairs": [["las patatas bravas", "spicy fried potatoes"], ["la tortilla", "potato omelette"], ["las croquetas", "croquettes"], ["los calamares", "fried squid"]], "vocab": ["patatas-bravas", "tortilla", "croquetas", "calamares"] },
+    { "id": "d014-06", "type": "fill-blank", "es": "Unas croquetas {{de}} jamón, por favor.", "en": "Some ham croquettes, please.", "options": ["de", "con", "y"], "vocab": ["croquetas", "jamon"] },
+    { "id": "d014-07", "type": "fill-blank", "es": "Una {{ración}} de calamares.", "en": "A plate of fried squid.", "options": ["ración", "tapa", "botella"], "vocab": ["racion", "calamares"] },
+    { "id": "d014-08", "type": "fill-blank", "es": "Un bocadillo de {{calamares}}, por favor.", "en": "A squid sandwich, please.", "options": ["calamares", "aceitunas", "vasos"], "vocab": ["bocadillo", "calamares"] },
+    { "id": "d014-09", "type": "fill-blank", "es": "{{Unas}} patatas bravas y dos cañas.", "en": "Some patatas bravas and two small beers.", "options": ["Unas", "Unos", "Una"], "vocab": ["patatas-bravas", "unos-unas", "cana"] },
+    { "id": "d014-10", "type": "fill-blank", "es": "Una tapa de {{tortilla}}, por favor.", "en": "A tapa of Spanish omelette, please.", "options": ["tortilla", "croquetas", "pan"], "vocab": ["tapa", "tortilla"] },
+    { "id": "d014-11", "type": "listen-choose", "prompt": "What did they order?", "audio": "Una ración de croquetas y unas aceitunas.", "optionsLang": "en", "options": ["Croquettes + olives", "Squid + olives", "Croquettes + bread"], "answer": 0, "vocab": ["racion", "croquetas", "aceitunas"] },
+    { "id": "d014-12", "type": "listen-choose", "prompt": "What did they order?", "audio": "Un bocadillo de jamón y una caña.", "optionsLang": "en", "options": ["A ham sandwich + a beer", "A cheese sandwich + a beer", "A ham sandwich + a wine"], "answer": 0, "vocab": ["bocadillo", "jamon", "cana"] },
+    { "id": "d014-13", "type": "dictation", "es": "las croquetas", "hint": "croquettes", "vocab": ["croquetas"] },
+    { "id": "d014-14", "type": "dictation", "es": "la ración", "hint": "a plate to share (watch the accent)", "vocab": ["racion"] },
+    { "id": "d014-15", "type": "dictation", "es": "el pan", "hint": "bread", "vocab": ["pan"] },
+    { "id": "d014-16", "type": "build-sentence", "es": "Una ración de patatas bravas, por favor.", "en": "A plate of patatas bravas, please.", "distractors": ["tapa", "con"], "vocab": ["racion", "patatas-bravas"] },
+    { "id": "d014-17", "type": "build-sentence", "es": "¿Hay tortilla? Sí, y croquetas.", "en": "Is there any omelette? Yes, and croquettes.", "distractors": ["no"], "vocab": ["hay-q", "tortilla", "croquetas"] },
+    { "id": "d014-18", "type": "build-sentence", "direction": "audio-to-es", "es": "Dos bocadillos de calamares y dos cañas.", "en": "Two squid sandwiches and two small beers.", "distractors": ["una", "con"],"vocab": ["bocadillo", "calamares", "cana"] },
+    { "id": "d014-19", "type": "repeat", "es": "Una ración de calamares, por favor.", "en": "A plate of fried squid, please.", "vocab": ["racion", "calamares"] },
+    { "id": "d014-20", "type": "repeat", "es": "Unas patatas bravas y unas aceitunas.", "en": "Some patatas bravas and some olives.", "vocab": ["patatas-bravas", "aceitunas"] },
+    { "id": "d014-21", "type": "shadow", "es": "unas aceitunas, una ración", "en": "some olives, a plate", "listenFor": "θ in aceitunas (a-θei-TU-nas) and ración (ra-θYON).", "vocab": ["aceitunas", "racion"] },
+    { "id": "d014-22", "type": "listen-choose", "prompt": "Review: which coffee?", "audio": "Un cortado, por favor.", "optionsLang": "en", "options": ["Espresso + dash of milk", "Black espresso", "Coffee with milk"], "answer": 0, "vocab": ["cortado"] },
+    { "id": "d014-23", "type": "fill-blank", "prompt": "Review", "es": "{{Los}} hoteles son caros.", "en": "The hotels are expensive.", "options": ["Los", "Las", "El"], "vocab": ["los-the", "hotel", "caro"] },
+    { "id": "d014-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Un tinto de verano y agua sin gas, por favor.", "en": "A tinto de verano and still water, please.", "vocab": ["tinto-de-verano", "agua-sin-gas"] }
+  ]
+}

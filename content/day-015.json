@@ -1,0 +1,61 @@
+{
+  "$schema": "./schema.json",
+  "day": 15,
+  "level": 2,
+  "title": { "en": "A proper meal", "es": "La comida" },
+  "objectives": [
+    "Name meat, fish, chicken and vegetables on a menu",
+    "Ask for soup, salad and dessert",
+    "Know what cocido madrileño is before you meet it in January",
+    "Use con and sin with food: pollo con verduras"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**Reading a menu**\n\n- **la carne**: meat\n- **el pescado**: fish (to eat)\n- **el pollo**: chicken\n- **las verduras**: vegetables\n\nA live fish swimming in the sea is **un pez**. Once it's on the plate it's **pescado**."
+    },
+    { "kind": "phrase", "es": "una ensalada y una sopa", "en": "a salad and a soup", "note": "In winter, look for sopa castellana: garlic soup with bread, ham and egg." },
+    { "kind": "phrase", "es": "pollo con verduras", "en": "chicken with vegetables", "note": "con = with, sin = without. You met both with agua con gas and agua sin gas." },
+    { "kind": "phrase", "es": "el cocido madrileño", "en": "Madrid stew", "note": "Madrid's January dish: chickpeas, meats and vegetables. It's served in courses: first the broth as a noodle soup, then the chickpeas and meat. Mostly at lunchtime." },
+    { "kind": "phrase", "es": "¿Hay postre?", "en": "Is there dessert?", "note": "el postre = dessert. It comes after the main course, often with a coffee." },
+    { "kind": "phrase", "es": "chocolate con churros", "en": "hot chocolate with churros", "note": "Thick hot chocolate for dipping fried churros: breakfast, a cold afternoon, or the end of a long night out." }
+  ],
+  "vocab": [
+    { "id": "carne", "es": "la carne", "en": "meat", "pos": "noun", "gender": "f", "ipa": "ˈkaɾne", "tags": ["restaurant"] },
+    { "id": "pescado", "es": "el pescado", "en": "fish (food)", "pos": "noun", "gender": "m", "ipa": "pesˈkaðo", "note": "A live fish is el pez.", "tags": ["restaurant"] },
+    { "id": "pollo", "es": "el pollo", "en": "chicken", "pos": "noun", "gender": "m", "ipa": "ˈpoʝo", "tags": ["restaurant"] },
+    { "id": "ensalada", "es": "la ensalada", "en": "salad", "pos": "noun", "gender": "f", "ipa": "ensaˈlaða", "note": "Ensalada mixta: lettuce, tomato, onion, tuna, egg. Spain's standard salad.", "tags": ["restaurant"] },
+    { "id": "sopa", "es": "la sopa", "en": "soup", "pos": "noun", "gender": "f", "ipa": "ˈsopa", "tags": ["restaurant"] },
+    { "id": "verduras", "es": "las verduras", "en": "vegetables", "pos": "noun", "gender": "f", "ipa": "beɾˈðuɾas", "tags": ["restaurant"] },
+    { "id": "postre", "es": "el postre", "en": "dessert", "pos": "noun", "gender": "m", "ipa": "ˈpostɾe", "tags": ["restaurant"] },
+    { "id": "cocido", "es": "el cocido madrileño", "en": "Madrid chickpea stew", "pos": "noun", "gender": "m", "ipa": "koˈθiðo maðɾiˈleɲo", "note": "Madrileño, madrileña = from Madrid.", "tags": ["madrid", "restaurant"] },
+    { "id": "chocolate", "es": "el chocolate", "en": "hot chocolate; chocolate", "pos": "noun", "gender": "m", "ipa": "tʃokoˈlate", "tags": ["madrid"] },
+    { "id": "churros", "es": "los churros", "en": "churros (fried dough sticks)", "pos": "noun", "gender": "m", "ipa": "ˈtʃuros", "note": "Thicker ones are porras, also very madrileño.", "tags": ["madrid"] }
+  ],
+  "exercises": [
+    { "id": "d015-01", "type": "listen-choose", "audio": "el pescado", "options": ["el pescado", "el pollo", "el postre"], "answer": 0, "vocab": ["pescado"] },
+    { "id": "d015-02", "type": "listen-choose", "audio": "la sopa", "options": ["la sopa", "la tapa", "la cena"], "answer": 0, "vocab": ["sopa"] },
+    { "id": "d015-03", "type": "listen-choose", "audio": "el postre", "options": ["el pollo", "el postre", "el pescado"], "answer": 1, "vocab": ["postre"] },
+    { "id": "d015-04", "type": "match-pairs", "pairs": [["la carne", "meat"], ["el pescado", "fish"], ["el pollo", "chicken"], ["las verduras", "vegetables"], ["la ensalada", "salad"]], "vocab": ["carne", "pescado", "pollo", "verduras", "ensalada"] },
+    { "id": "d015-05", "type": "match-pairs", "pairs": [["la sopa", "soup"], ["el postre", "dessert"], ["el cocido madrileño", "Madrid stew"], ["los churros", "churros"]], "vocab": ["sopa", "postre", "cocido", "churros"] },
+    { "id": "d015-06", "type": "fill-blank", "es": "Pollo {{con}} verduras, por favor.", "en": "Chicken with vegetables, please.", "options": ["con", "sin", "de"], "vocab": ["pollo", "verduras"] },
+    { "id": "d015-07", "type": "fill-blank", "es": "Una ensalada {{sin}} queso, por favor.", "en": "A salad without cheese, please.", "options": ["sin", "con", "y"], "vocab": ["ensalada", "queso"] },
+    { "id": "d015-08", "type": "fill-blank", "es": "Chocolate con {{churros}}.", "en": "Hot chocolate with churros.", "options": ["churros", "croquetas", "calamares"], "vocab": ["chocolate", "churros"] },
+    { "id": "d015-09", "type": "fill-blank", "es": "¿Hay {{postre}}?", "en": "Is there dessert?", "options": ["postre", "pescado", "pollo"], "vocab": ["postre", "hay-q"] },
+    { "id": "d015-10", "type": "fill-blank", "es": "{{La}} carne y el pescado.", "en": "The meat and the fish.", "options": ["La", "El"], "vocab": ["carne", "pescado", "la-the"] },
+    { "id": "d015-11", "type": "listen-choose", "prompt": "What does she want?", "audio": "Pescado con ensalada, por favor.", "optionsLang": "en", "options": ["Fish with salad", "Chicken with salad", "Fish with vegetables"], "answer": 0, "vocab": ["pescado", "ensalada"] },
+    { "id": "d015-12", "type": "listen-choose", "prompt": "What does he want?", "audio": "Una sopa y carne con patatas.", "optionsLang": "en", "options": ["Soup + meat with potatoes", "Salad + meat with potatoes", "Soup + chicken with potatoes"], "answer": 0, "vocab": ["sopa", "carne"] },
+    { "id": "d015-13", "type": "dictation", "es": "el pollo", "hint": "chicken", "vocab": ["pollo"] },
+    { "id": "d015-14", "type": "dictation", "es": "las verduras", "hint": "vegetables", "vocab": ["verduras"] },
+    { "id": "d015-15", "type": "dictation", "es": "el chocolate", "hint": "hot chocolate", "vocab": ["chocolate"] },
+    { "id": "d015-16", "type": "build-sentence", "es": "Una sopa y pollo con verduras, por favor.", "en": "A soup and chicken with vegetables, please.", "distractors": ["sin", "el"], "vocab": ["sopa", "pollo", "verduras"] },
+    { "id": "d015-17", "type": "build-sentence", "es": "¿Hay cocido madrileño hoy?", "en": "Is there cocido madrileño today?", "distractors": ["es"], "vocab": ["hay-q", "cocido", "hoy"] },
+    { "id": "d015-18", "type": "build-sentence", "direction": "audio-to-es", "es": "Una ensalada sin queso y agua sin gas.", "en": "A salad without cheese and still water.", "distractors": ["con"], "vocab": ["ensalada", "queso", "agua-sin-gas"] },
+    { "id": "d015-19", "type": "repeat", "es": "Pescado con verduras, por favor.", "en": "Fish with vegetables, please.", "vocab": ["pescado", "verduras"] },
+    { "id": "d015-20", "type": "repeat", "es": "Chocolate con churros, por favor.", "en": "Hot chocolate with churros, please.", "vocab": ["chocolate", "churros"] },
+    { "id": "d015-21", "type": "shadow", "es": "el cocido madrileño", "en": "Madrid stew", "listenFor": "θ in cocido, the soft d in cocido and madrileño, and ñ in madrileño.", "vocab": ["cocido"] },
+    { "id": "d015-22", "type": "listen-choose", "prompt": "Review: tapa or ración?", "audio": "Una ración de croquetas.", "optionsLang": "en", "options": ["A full plate of croquettes", "A small plate of croquettes", "A croquette sandwich"], "answer": 0, "vocab": ["racion", "croquetas"] },
+    { "id": "d015-23", "type": "dictation", "prompt": "Review: type what you hear.", "es": "la caña", "hint": "small draught beer", "vocab": ["cana"] },
+    { "id": "d015-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Soy de Estados Unidos. ¿Y tú, de dónde eres?", "en": "I'm from the United States. And you, where are you from?", "vocab": ["soy-de", "y-tu", "de-donde-eres"] }
+  ]
+}

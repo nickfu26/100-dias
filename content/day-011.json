@@ -1,0 +1,73 @@
+{
+  "$schema": "./schema.json",
+  "day": 11,
+  "level": 2,
+  "title": { "en": "I am… where are you from?", "es": "Soy de…" },
+  "objectives": [
+    "Use soy, eres and es to say who someone is",
+    "Ask where someone is from and answer",
+    "Say where you live",
+    "Make nationalities agree: inglés, inglesa"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**ser** is one of Spanish's two verbs for *to be*. Use it for **who** someone is and **where they're from**: *Soy Ana. Soy de Madrid.*\n\nSpanish usually drops the pronoun, because the verb ending already says who: **soy** = I am, **eres** = you are. Add *yo* or *tú* only for contrast: *Yo soy de Madrid, ¿y tú?*"
+    },
+    {
+      "kind": "conjugation",
+      "verb": "ser",
+      "verbEn": "to be (who, where from)",
+      "tense": "present",
+      "forms": { "yo": "soy", "tu": "eres", "el": "es", "nosotros": "somos", "vosotros": "sois", "ellos": "son" }
+    },
+    { "kind": "phrase", "es": "¿De dónde eres?", "en": "Where are you from?", "note": "Literally 'From where are you?'. The de goes first. To a stranger (usted): ¿De dónde es usted?" },
+    { "kind": "phrase", "es": "Soy de Estados Unidos.", "en": "I'm from the United States.", "note": "Soy de + a city or country: Soy de Madrid, Soy de Inglaterra." },
+    { "kind": "phrase", "es": "Vivo en Estados Unidos.", "en": "I live in the United States.", "note": "Learn it as a whole chunk for now. You'll meet the verb vivir properly later." },
+    {
+      "kind": "note",
+      "md": "Nationalities are written in **lowercase**: *inglés*, not *Inglés*.\n\nThey agree with the person. A man is **inglés**, a woman is **inglesa**. The accent disappears in the feminine form because the stress falls naturally: in*GLÉS* → in*GLE*sa. Words ending in -e, like **estadounidense**, are the same for both."
+    },
+    { "kind": "phrase", "es": "¿Eres español? No, soy estadounidense.", "en": "Are you Spanish? No, I'm American.", "note": "In Spain, americano usually means from the Americas in general. Estadounidense is the precise word for the USA." }
+  ],
+  "vocab": [
+    { "id": "ser", "es": "ser", "en": "to be (identity, origin)", "pos": "verb", "ipa": "ˈseɾ", "note": "The other 'to be', estar, comes on day 23." },
+    { "id": "soy", "es": "soy", "en": "I am", "pos": "verb", "ipa": "ˈsoi" },
+    { "id": "eres", "es": "eres", "en": "you are", "pos": "verb", "ipa": "ˈeɾes", "note": "Informal tú. With usted: es." },
+    { "id": "es-is", "es": "es", "en": "he / she / it is; you are (usted)", "pos": "verb", "ipa": "ˈes" },
+    { "id": "de-donde-eres", "es": "¿De dónde eres?", "en": "Where are you from?", "pos": "phrase", "ipa": "de ˈðonde ˈeɾes", "tags": ["survival"] },
+    { "id": "soy-de", "es": "soy de…", "en": "I'm from…", "pos": "phrase", "ipa": "ˈsoi ðe" },
+    { "id": "vivo-en-estados-unidos", "es": "Vivo en Estados Unidos.", "en": "I live in the United States.", "pos": "phrase", "ipa": "ˈbiβo en esˈtaðos uˈniðos" },
+    { "id": "estadounidense", "es": "estadounidense", "en": "American (from the USA)", "pos": "adj", "ipa": "estaðowniˈðense", "note": "Same form for men and women." },
+    { "id": "ingles", "es": "inglés, inglesa", "en": "English", "pos": "adj", "ipa": "iŋˈɡles, iŋˈɡlesa", "note": "Also the language: Hablo inglés." },
+    { "id": "espanol", "es": "español, española", "en": "Spanish", "pos": "adj", "ipa": "espaˈɲol, espaˈɲola", "note": "Also the language: el español (or el castellano)." },
+    { "id": "frances", "es": "francés, francesa", "en": "French", "pos": "adj", "ipa": "fɾanˈθes, fɾanˈθesa" },
+    { "id": "aleman", "es": "alemán, alemana", "en": "German", "pos": "adj", "ipa": "aleˈman, aleˈmana" }
+  ],
+  "exercises": [
+    { "id": "d011-01", "type": "listen-choose", "audio": "soy", "options": ["soy", "eres", "es"], "answer": 0, "vocab": ["soy"] },
+    { "id": "d011-02", "type": "listen-choose", "audio": "eres", "options": ["es", "eres", "soy"], "answer": 1, "vocab": ["eres"] },
+    { "id": "d011-03", "type": "match-pairs", "pairs": [["yo soy", "I am"], ["tú eres", "you are"], ["ella es", "she is"], ["nosotros somos", "we are"], ["ellos son", "they are"]], "vocab": ["ser", "soy", "eres", "es-is"] },
+    { "id": "d011-04", "type": "fill-blank", "es": "Yo {{soy}} de Estados Unidos.", "en": "I'm from the United States.", "options": ["soy", "eres", "es"], "vocab": ["soy", "soy-de"] },
+    { "id": "d011-05", "type": "fill-blank", "es": "¿{{Eres}} española?", "en": "Are you Spanish? (to a woman)", "options": ["Eres", "Soy", "Es"], "vocab": ["eres", "espanol"] },
+    { "id": "d011-06", "type": "fill-blank", "es": "Ella {{es}} de Madrid.", "en": "She's from Madrid.", "options": ["es", "soy", "eres"], "vocab": ["es-is"] },
+    { "id": "d011-07", "type": "listen-choose", "prompt": "What does it mean?", "audio": "¿De dónde eres?", "optionsLang": "en", "options": ["Where are you from?", "What's your name?", "How are you?"], "answer": 0, "vocab": ["de-donde-eres"] },
+    { "id": "d011-08", "type": "build-sentence", "es": "¿De dónde eres?", "en": "Where are you from?", "distractors": ["cómo", "soy"], "vocab": ["de-donde-eres"] },
+    { "id": "d011-09", "type": "build-sentence", "es": "Me llamo Ana y soy de Madrid.", "en": "My name is Ana and I'm from Madrid.", "distractors": ["eres"], "vocab": ["me-llamo", "soy-de"] },
+    { "id": "d011-10", "type": "listen-choose", "prompt": "Who is it?", "audio": "Es francesa.", "optionsLang": "en", "options": ["She's French.", "He's French.", "She's English."], "answer": 0, "vocab": ["frances", "es-is"] },
+    { "id": "d011-11", "type": "listen-choose", "prompt": "Who is it?", "audio": "Es inglés.", "optionsLang": "en", "options": ["She's English.", "He's English.", "He's German."], "answer": 1, "vocab": ["ingles", "es-is"] },
+    { "id": "d011-12", "type": "match-pairs", "pairs": [["estadounidense", "American (USA)"], ["inglesa", "English (woman)"], ["español", "Spanish (man)"], ["francés", "French (man)"], ["alemana", "German (woman)"]], "vocab": ["estadounidense", "ingles", "espanol", "frances", "aleman"] },
+    { "id": "d011-13", "type": "fill-blank", "es": "Pierre es {{francés}}.", "en": "Pierre is French.", "options": ["francés", "francesa"], "vocab": ["frances"] },
+    { "id": "d011-14", "type": "fill-blank", "es": "Claudia es {{alemana}}.", "en": "Claudia is German.", "options": ["alemán", "alemana"], "vocab": ["aleman"] },
+    { "id": "d011-15", "type": "fill-blank", "es": "Tom y Kate son {{estadounidenses}}.", "en": "Tom and Kate are American.", "options": ["estadounidenses", "estadounidense"], "prompt": "Two people: plural adds -s.", "vocab": ["estadounidense"] },
+    { "id": "d011-16", "type": "dictation", "es": "estadounidense", "hint": "American (from the USA)", "vocab": ["estadounidense"] },
+    { "id": "d011-17", "type": "dictation", "es": "¿De dónde eres?", "hint": "Where are you from?", "vocab": ["de-donde-eres"] },
+    { "id": "d011-18", "type": "build-sentence", "direction": "audio-to-es", "es": "No soy inglés, soy estadounidense.", "en": "I'm not English, I'm American.", "distractors": ["eres"], "vocab": ["soy", "ingles", "estadounidense"] },
+    { "id": "d011-19", "type": "repeat", "es": "Soy estadounidense.", "en": "I'm American.", "vocab": ["soy", "estadounidense"] },
+    { "id": "d011-20", "type": "repeat", "es": "Vivo en Estados Unidos.", "en": "I live in the United States.", "vocab": ["vivo-en-estados-unidos"] },
+    { "id": "d011-21", "type": "shadow", "es": "¿De dónde eres? Soy de Estados Unidos.", "en": "Where are you from? I'm from the United States.", "listenFor": "The soft d (like 'th' in 'this') in dónde and in Estados and Unidos, and the tapped r in eres.", "vocab": ["de-donde-eres", "soy-de"] },
+    { "id": "d011-22", "type": "listen-choose", "prompt": "Review: what does it mean?", "audio": "¿Cómo te llamas?", "optionsLang": "en", "options": ["What's your name?", "Where are you from?", "How do you spell it?"], "answer": 0, "vocab": ["como-te-llamas"] },
+    { "id": "d011-23", "type": "dictation", "prompt": "Review: type what you hear.", "es": "dieciocho", "accept": ["18"], "hint": "a number", "vocab": ["dieciocho"] },
+    { "id": "d011-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Hola, me llamo Pablo. Encantado.", "en": "Hi, my name is Pablo. Nice to meet you.", "vocab": ["hola", "me-llamo", "encantado"] }
+  ]
+}

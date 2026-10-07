@@ -1,0 +1,66 @@
+{
+  "$schema": "./schema.json",
+  "day": 12,
+  "level": 2,
+  "title": { "en": "The, a, some, and 'there is'", "es": "Los artículos y hay" },
+  "objectives": [
+    "Choose el, la, los or las for a noun",
+    "Make nouns plural with -s or -es",
+    "Use un, una, unos, unas",
+    "Say there is / there are with hay, and ask ¿Hay…?"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "Every Spanish noun is **masculine** or **feminine**, and the word for *the* shows which:\n\n- **el** café, **el** hotel (masculine)\n- **la** cerveza, **la** calle (feminine)\n\nMost nouns ending in **-o** are masculine and most ending in **-a** are feminine. Others, like *el hotel* or *la calle*, just have to be learned. That's why every noun in this course comes with its article."
+    },
+    {
+      "kind": "note",
+      "md": "**Plurals**\n\n- After a vowel, add **-s**: el café → **los cafés**, la casa → **las casas**\n- After a consonant, add **-es**: el hotel → **los hoteles**, la ciudad → **las ciudades**\n- **el** becomes **los** and **la** becomes **las**.\n\nWatch the accent: *el autobús* → **los autobuses**. The extra syllable moves the stress to where it falls naturally, so the accent goes away."
+    },
+    {
+      "kind": "note",
+      "md": "*A* and *some*:\n\n- **un** coche, **una** mesa = a car, a table\n- **unos** coches, **unas** mesas = some cars, some tables\n\nIn Spain *unos/unas* also means *about*: **unos diez euros** = about ten euros."
+    },
+    { "kind": "phrase", "es": "Hay dos hoteles en la plaza.", "en": "There are two hotels in the square.", "note": "hay = there is AND there are. It never changes. The h is silent: it sounds like 'eye'." },
+    { "kind": "phrase", "es": "¿Hay agua?", "en": "Is there any water?", "note": "Ask for things with ¿Hay…? and no article: ¿Hay cerveza? ¿Hay jamón?" },
+    { "kind": "phrase", "es": "No, no hay.", "en": "No, there isn't (any).", "note": "You'll hear this a lot in bars when something has run out." }
+  ],
+  "vocab": [
+    { "id": "el-the", "es": "el", "en": "the (masculine)", "pos": "det", "ipa": "ˈel", "note": "No accent. él with an accent = he." },
+    { "id": "la-the", "es": "la", "en": "the (feminine)", "pos": "det", "ipa": "ˈla" },
+    { "id": "los-the", "es": "los", "en": "the (masculine plural)", "pos": "det", "ipa": "ˈlos", "note": "Also for mixed groups: los amigos = friends (men, or men and women)." },
+    { "id": "las-the", "es": "las", "en": "the (feminine plural)", "pos": "det", "ipa": "ˈlas" },
+    { "id": "un-una", "es": "un, una", "en": "a, an", "pos": "det", "ipa": "ˈun, ˈuna", "note": "un before a masculine noun, una before a feminine one." },
+    { "id": "unos-unas", "es": "unos, unas", "en": "some; about (with numbers)", "pos": "det", "ipa": "ˈunos, ˈunas" },
+    { "id": "hay", "es": "hay", "en": "there is, there are", "pos": "verb", "ipa": "ˈai", "tags": ["survival"] },
+    { "id": "hay-q", "es": "¿Hay…?", "en": "Is there…? Are there…? Do you have…?", "pos": "phrase", "ipa": "ˈai", "tags": ["survival"] },
+    { "id": "no-hay", "es": "no hay", "en": "there isn't, there aren't", "pos": "phrase", "ipa": "ˈno ˈai" }
+  ],
+  "exercises": [
+    { "id": "d012-01", "type": "fill-blank", "es": "{{La}} cerveza, por favor.", "en": "The beer, please.", "options": ["La", "El"], "vocab": ["la-the", "cerveza"] },
+    { "id": "d012-02", "type": "fill-blank", "es": "{{El}} café, por favor.", "en": "The coffee, please.", "options": ["El", "La"], "vocab": ["el-the", "cafe", "por-favor"] },
+    { "id": "d012-03", "type": "fill-blank", "es": "{{La}} calle y la plaza.", "en": "The street and the square.", "options": ["La", "El"], "prompt": "calle doesn't end in -a. Which article does it take?", "vocab": ["la-the", "calle", "plaza"] },
+    { "id": "d012-04", "type": "fill-blank", "es": "{{El}} hotel es caro.", "en": "The hotel is expensive.", "options": ["El", "La"], "vocab": ["el-the", "hotel", "caro"] },
+    { "id": "d012-05", "type": "match-pairs", "pairs": [["los cafés", "the coffees"], ["las cervezas", "the beers"], ["los hoteles", "the hotels"], ["las ciudades", "the cities"], ["los autobuses", "the buses"]], "vocab": ["los-the", "las-the"] },
+    { "id": "d012-06", "type": "fill-blank", "es": "Hay dos {{hoteles}} en la plaza.", "en": "There are two hotels in the square.", "options": ["hoteles", "hotels", "hotel"], "vocab": ["hay", "hotel"] },
+    { "id": "d012-07", "type": "fill-blank", "es": "{{Las}} llaves, por favor.", "en": "The keys, please.", "options": ["Las", "Los", "La"], "vocab": ["las-the", "llave"] },
+    { "id": "d012-08", "type": "fill-blank", "es": "{{Los}} coches son caros.", "en": "The cars are expensive.", "options": ["Los", "Las", "El"], "vocab": ["los-the", "coche"] },
+    { "id": "d012-09", "type": "listen-choose", "prompt": "One or more than one?", "audio": "los autobuses", "options": ["el autobús", "los autobuses"], "answer": 1, "vocab": ["los-the", "autobus"] },
+    { "id": "d012-10", "type": "listen-choose", "prompt": "One or more than one?", "audio": "la ciudad", "options": ["la ciudad", "las ciudades"], "answer": 0, "vocab": ["la-the", "ciudad"] },
+    { "id": "d012-11", "type": "fill-blank", "es": "{{Una}} mesa para dos, por favor.", "en": "A table for two, please.", "options": ["Una", "Un", "Unos"], "vocab": ["un-una", "mesa"] },
+    { "id": "d012-12", "type": "fill-blank", "es": "Son {{unos}} diez euros.", "en": "It's about ten euros.", "options": ["unos", "unas", "un"], "vocab": ["unos-unas", "diez"] },
+    { "id": "d012-13", "type": "listen-choose", "prompt": "What does it mean?", "audio": "¿Hay agua?", "optionsLang": "en", "options": ["Is there any water?", "Where is the water?", "The water, please."], "answer": 0, "vocab": ["hay-q", "agua"] },
+    { "id": "d012-14", "type": "listen-choose", "prompt": "What does it mean?", "audio": "No hay cerveza.", "optionsLang": "en", "options": ["There's no beer.", "Is there any beer?", "A beer, please."], "answer": 0, "vocab": ["no-hay", "cerveza"] },
+    { "id": "d012-15", "type": "build-sentence", "es": "¿Hay jamón? No, no hay.", "en": "Is there any ham? No, there isn't.", "distractors": ["el", "es"], "vocab": ["hay-q", "no-hay", "jamon"] },
+    { "id": "d012-16", "type": "build-sentence", "es": "Hay dos hoteles en la plaza.", "en": "There are two hotels in the square.", "distractors": ["los", "hotel"], "vocab": ["hay", "hotel", "plaza"] },
+    { "id": "d012-17", "type": "dictation", "es": "No hay queso.", "hint": "There's no cheese.", "vocab": ["no-hay", "queso"] },
+    { "id": "d012-18", "type": "dictation", "es": "los hoteles", "hint": "the hotels", "vocab": ["los-the", "hotel"] },
+    { "id": "d012-19", "type": "repeat", "es": "¿Hay agua? No, no hay.", "en": "Is there any water? No, there isn't.", "vocab": ["hay-q", "no-hay", "agua"] },
+    { "id": "d012-20", "type": "repeat", "es": "Hay unos amigos en el bar.", "en": "There are some friends in the bar.", "vocab": ["hay", "unos-unas", "amigo"] },
+    { "id": "d012-21", "type": "shadow", "es": "la ciudad, las ciudades", "en": "the city, the cities", "listenFor": "θ in ciudad, and the very soft d at the end of ciudad. Spaniards barely say it.", "vocab": ["la-the", "las-the", "ciudad"] },
+    { "id": "d012-22", "type": "listen-choose", "prompt": "Review: where is she from?", "audio": "Soy de Inglaterra. Soy inglesa.", "optionsLang": "en", "options": ["England", "Germany", "France"], "answer": 0, "vocab": ["soy-de", "ingles"] },
+    { "id": "d012-23", "type": "fill-blank", "prompt": "Review", "es": "¿De dónde {{eres}}?", "en": "Where are you from?", "options": ["eres", "soy", "es"], "vocab": ["de-donde-eres", "eres"] },
+    { "id": "d012-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Soy estadounidense. ¿Y tú?", "en": "I'm American. And you?", "vocab": ["soy", "estadounidense", "y-tu"] }
+  ]
+}

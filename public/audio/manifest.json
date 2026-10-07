@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-07T15:14:18+00:00",
+ "generated": "2026-10-07T15:23:33+00:00",
  "voices": {
   "f": "es-ES-ElviraNeural",
   "m": "es-ES-AlvaroNeural"
@@ -45,6 +45,10 @@
   },
   "Ana tiene un gato.": {
    "id": "4e98388b05a6",
+   "slow": true
+  },
+  "Ana y Pablo van al bar.": {
+   "id": "f1781059f81a",
    "slow": true
   },
   "Ayer, hoy y mañana.": {
@@ -143,6 +147,10 @@
    "id": "08d4fa433917",
    "slow": true
   },
+  "Dos entradas, por favor. ¿Dónde está la salida?": {
+   "id": "589000395c54",
+   "slow": true
+  },
   "El abecedario": {
    "id": "84ce9dedc902",
    "slow": true
@@ -219,6 +227,10 @@
    "id": "e7d62b264c7c",
    "slow": true
   },
+  "El tiempo en enero": {
+   "id": "946464cbfac2",
+   "slow": true
+  },
   "El trece de enero.": {
    "id": "afc393d407fb",
    "slow": true
@@ -231,6 +243,10 @@
    "id": "7f02e69cee27",
    "slow": true
   },
+  "En enero tengo abrigo, gorro y guantes.": {
+   "id": "d6f4cd45051f",
+   "slow": true
+  },
   "En la ciudad": {
    "id": "9e5fbe05528a",
    "slow": true
@@ -241,6 +257,10 @@
   },
   "Es francesa.": {
    "id": "4ced3616d687",
+   "slow": true
+  },
+  "Es grande. ¿Tiene una talla pequeña?": {
+   "id": "d3b43bc19c20",
    "slow": true
   },
   "Es inglés.": {
@@ -263,12 +283,20 @@
    "id": "5c5b7489cd89",
    "slow": true
   },
+  "Es pequeña. ¿Tiene una talla grande?": {
+   "id": "4f4eb419ad04",
+   "slow": true
+  },
   "España": {
    "id": "1ea132ffbd7c",
    "slow": true
   },
   "España, mañana, señora": {
    "id": "43d461ac819b",
+   "slow": true
+  },
+  "Estoy en el hotel.": {
+   "id": "c8d7a3d7df2b",
    "slow": true
   },
   "Estoy en el hotel. ¿Y tú?": {
@@ -291,12 +319,32 @@
    "id": "021268b6c371",
    "slow": true
   },
+  "Está nublado y hace viento.": {
+   "id": "67617801ff20",
+   "slow": true
+  },
+  "Está nublado.": {
+   "id": "6dbfe586fcab",
+   "slow": true
+  },
   "Gracias, vale, hasta luego.": {
    "id": "6992b666ff68",
    "slow": true
   },
   "Gracias.": {
    "id": "3eec18fc9795",
+   "slow": true
+  },
+  "Hace frío. Vamos a un bar.": {
+   "id": "44c90b5750e0",
+   "slow": true
+  },
+  "Hace sol, pero hace mucho frío.": {
+   "id": "92292487f16c",
+   "slow": true
+  },
+  "Hace viento y está nublado.": {
+   "id": "3f36d59e1d9e",
    "slow": true
   },
   "Hasta cien": {
@@ -311,12 +359,24 @@
    "id": "af32db064e7a",
    "slow": true
   },
+  "Hay doce grados.": {
+   "id": "a226ba7fbb99",
+   "slow": true
+  },
+  "Hay dos grados bajo cero.": {
+   "id": "b3fa18dfb046",
+   "slow": true
+  },
   "Hay dos hoteles en la plaza.": {
    "id": "32301a8a5be5",
    "slow": true
   },
   "Hay mucha gente.": {
    "id": "2fc75bfd3e17",
+   "slow": true
+  },
+  "Hay tres grados bajo cero.": {
+   "id": "ad6ef26bccbb",
    "slow": true
   },
   "Hay unos amigos en el bar.": {
@@ -359,12 +419,20 @@
    "id": "928016eb54a1",
    "slow": true
   },
+  "Hoy hace mucho frío.": {
+   "id": "10dad0c947a6",
+   "slow": true
+  },
   "Hoy no, gracias.": {
    "id": "ad30e282503e",
    "slow": true
   },
   "Hoy no, mañana.": {
    "id": "3919641bde53",
+   "slow": true
+  },
+  "La bufanda cuesta veinte euros.": {
+   "id": "67aeff077d83",
    "slow": true
   },
   "La calle y la plaza.": {
@@ -385,6 +453,14 @@
   },
   "La cerveza, por favor.": {
    "id": "704e1537c2cf",
+   "slow": true
+  },
+  "La chaqueta es grande. ¿Tiene una talla pequeña?": {
+   "id": "83603e0a3667",
+   "slow": true
+  },
+  "La chaqueta y el abrigo.": {
+   "id": "2449c5e98fc7",
    "slow": true
   },
   "La comida": {
@@ -419,6 +495,10 @@
    "id": "f33b6ba13217",
    "slow": true
   },
+  "La ropa": {
+   "id": "ecc2aa227fe5",
+   "slow": true
+  },
   "La salida está allí, cerca de la taquilla.": {
    "id": "b0bcf20920e7",
    "slow": true
@@ -429,6 +509,10 @@
   },
   "La tienda cierra a mediodía.": {
    "id": "5848d6b31f40",
+   "slow": true
+  },
+  "La tienda es muy pequeña.": {
+   "id": "71ad7a925bba",
    "slow": true
   },
   "Las bebidas": {
@@ -451,6 +535,14 @@
    "id": "4e6f528b8ad4",
    "slow": true
   },
+  "Llueve y hace viento.": {
+   "id": "bc37371e0362",
+   "slow": true
+  },
+  "Llueve. ¿Tienes paraguas?": {
+   "id": "a267c76ef56e",
+   "slow": true
+  },
   "Lo siento, hoy no.": {
    "id": "c32f40ac58e1",
    "slow": true
@@ -467,12 +559,20 @@
    "id": "cbc2e3c6261c",
    "slow": true
   },
+  "Los colores": {
+   "id": "44a8d82283fb",
+   "slow": true
+  },
   "Los domingos.": {
    "id": "b90ce60fa4de",
    "slow": true
   },
   "Los días y las fechas": {
    "id": "339ccb9a8e03",
+   "slow": true
+  },
+  "Los guantes y la bufanda.": {
+   "id": "dad238bcc69c",
    "slow": true
   },
   "Los hoteles son caros.": {
@@ -483,6 +583,10 @@
    "id": "50d97207ce28",
    "slow": true
   },
+  "Los zapatos marrones, por favor.": {
+   "id": "647810798b65",
+   "slow": true
+  },
   "Lunes, martes, miércoles, jueves.": {
    "id": "02c1225379e2",
    "slow": true
@@ -491,8 +595,64 @@
    "id": "7a2191964a3d",
    "slow": true
   },
+  "Mañana llueve. ¿Tienes paraguas?": {
+   "id": "2546e06779cc",
+   "slow": true
+  },
+  "Mañana voy a la tienda.": {
+   "id": "123ae84745dd",
+   "slow": true
+  },
+  "Mañana voy al Museo del Prado.": {
+   "id": "d81c248835e5",
+   "slow": true
+  },
+  "Me encanta Madrid.": {
+   "id": "f991a1e0700c",
+   "slow": true
+  },
+  "Me encanta el jamón. ¿Y a ti?": {
+   "id": "51e34465349a",
+   "slow": true
+  },
+  "Me encantan las croquetas.": {
+   "id": "c821c2f5fafe",
+   "slow": true
+  },
+  "Me encantan los churros.": {
+   "id": "1091e2f5cd9a",
+   "slow": true
+  },
+  "Me gusta": {
+   "id": "f3b81e58282d",
+   "slow": true
+  },
+  "Me gusta el café.": {
+   "id": "471be4ed18e1",
+   "slow": true
+  },
+  "Me gusta el chocolate con churros. ¿Y a ti? A mí también.": {
+   "id": "ba54c887484c",
+   "slow": true
+  },
+  "Me gusta el jamón.": {
+   "id": "715336f52b4f",
+   "slow": true
+  },
+  "Me gusta el vino, pero no me gusta nada la cerveza.": {
+   "id": "f3325b25cb7e",
+   "slow": true
+  },
   "Me gusta mucho el jamón.": {
    "id": "e5d9767131fc",
+   "slow": true
+  },
+  "Me gustan las croquetas.": {
+   "id": "18aee1088bb6",
+   "slow": true
+  },
+  "Me gustan mucho los calamares.": {
+   "id": "d2aa284d78e7",
    "slow": true
   },
   "Me llamo Ana y soy de Madrid.": {
@@ -523,6 +683,10 @@
    "id": "02b4fd4d60b9",
    "slow": true
   },
+  "Nieva y hay un grado bajo cero.": {
+   "id": "0a81ddbf5710",
+   "slow": true
+  },
   "No cierra a mediodía. Horario continuo.": {
    "id": "7b87175cc793",
    "slow": true
@@ -541,6 +705,10 @@
   },
   "No hay queso.": {
    "id": "e08ebfe8d18d",
+   "slow": true
+  },
+  "No me gusta nada el frío.": {
+   "id": "b26cc2b60fa1",
    "slow": true
   },
   "No quiero nada, gracias.": {
@@ -661,6 +829,34 @@
   },
   "Quería un café con leche, por favor.": {
    "id": "bc5a1234c86b",
+   "slow": true
+  },
+  "Quería un gorro verde.": {
+   "id": "64c5d5dc5e71",
+   "slow": true
+  },
+  "Quería un gorro y una bufanda.": {
+   "id": "6c59d37fde9e",
+   "slow": true
+  },
+  "Quería un gorro y unos guantes.": {
+   "id": "da699043d883",
+   "slow": true
+  },
+  "Quería una bufanda azul y unos guantes grises.": {
+   "id": "0a343be7e210",
+   "slow": true
+  },
+  "Quería una bufanda y un gorro, por favor.": {
+   "id": "4445b2d7d915",
+   "slow": true
+  },
+  "Quería una camiseta blanca, por favor.": {
+   "id": "f96abb8b83f8",
+   "slow": true
+  },
+  "Quería una camiseta.": {
+   "id": "db3d900517b5",
    "slow": true
   },
   "Quería una caña, por favor.": {
@@ -831,8 +1027,20 @@
    "id": "5f4c49d8e9a1",
    "slow": true
   },
+  "Tengo frío. Quiero un jersey.": {
+   "id": "1ba5921c7794",
+   "slow": true
+  },
+  "Tengo frío. Quiero unos guantes.": {
+   "id": "e1fc0a0a1af4",
+   "slow": true
+  },
   "Tengo frío. Un café, por favor.": {
    "id": "3fa48094be0e",
+   "slow": true
+  },
+  "Tengo frío. ¿Dónde está mi abrigo?": {
+   "id": "a37e96c18eee",
    "slow": true
   },
   "Tengo frío. ¿Quieres un café?": {
@@ -859,8 +1067,16 @@
    "id": "819686464e59",
    "slow": true
   },
+  "Tengo mucho frío. ¿Dónde está el abrigo?": {
+   "id": "b900def927e1",
+   "slow": true
+  },
   "Tengo sed. Agua, por favor.": {
    "id": "4ffafbf5fbb4",
+   "slow": true
+  },
+  "Tengo un abrigo negro y una bufanda roja.": {
+   "id": "b8dd36f47417",
    "slow": true
   },
   "Tengo…": {
@@ -885,6 +1101,10 @@
   },
   "Tres entradas, por favor.": {
    "id": "fb634d1271c3",
+   "slow": true
+  },
+  "Un abrigo negro.": {
+   "id": "63525b2f2f42",
    "slow": true
   },
   "Un bocadillo de calamares, por favor.": {
@@ -923,6 +1143,10 @@
    "id": "754090c1bb74",
    "slow": true
   },
+  "Un paraguas negro.": {
+   "id": "a40e41380bb4",
+   "slow": true
+  },
   "Un tinto de verano y agua sin gas, por favor.": {
    "id": "6234cd69eaf0",
    "slow": true
@@ -959,6 +1183,10 @@
    "id": "caf4f259b786",
    "slow": true
   },
+  "Una bufanda roja.": {
+   "id": "84d94f9b6043",
+   "slow": true
+  },
   "Una caña y un tinto de verano, por favor.": {
    "id": "2014ca214797",
    "slow": true
@@ -969,6 +1197,10 @@
   },
   "Una cerveza y un zumo, por favor.": {
    "id": "c74c6f04671d",
+   "slow": true
+  },
+  "Una chaqueta azul.": {
+   "id": "f078b0feacce",
    "slow": true
   },
   "Una ensalada sin queso y agua sin gas.": {
@@ -1027,6 +1259,14 @@
    "id": "1b552f7713eb",
    "slow": true
   },
+  "Unos guantes grises.": {
+   "id": "23b7a2dc2958",
+   "slow": true
+  },
+  "Vais al Prado, ¿no?": {
+   "id": "f40900d913ce",
+   "slow": true
+  },
   "Vale, gracias.": {
    "id": "59e9bbf7f3ad",
    "slow": true
@@ -1039,6 +1279,14 @@
    "id": "62fd7c007f31",
    "slow": true
   },
+  "Vamos al centro en metro.": {
+   "id": "e6b3e13e437f",
+   "slow": true
+  },
+  "Vamos al restaurante a las nueve.": {
+   "id": "18ce7d80ed79",
+   "slow": true
+  },
   "Veinte, veintiuno, veintidós.": {
    "id": "397c4b998296",
    "slow": true
@@ -1049,6 +1297,30 @@
   },
   "Vivo en Estados Unidos.": {
    "id": "718f744e5c63",
+   "slow": true
+  },
+  "Voy a la estación.": {
+   "id": "cb5461eeff21",
+   "slow": true
+  },
+  "Voy a la farmacia.": {
+   "id": "68362d2f54ab",
+   "slow": true
+  },
+  "Voy a la plaza. ¿Y tú, adónde vas?": {
+   "id": "636f2a7002dc",
+   "slow": true
+  },
+  "Voy al aeropuerto.": {
+   "id": "beceac56a6ae",
+   "slow": true
+  },
+  "Voy al hotel.": {
+   "id": "80f8d63e8f05",
+   "slow": true
+  },
+  "Voy a…": {
+   "id": "90a6e619abad",
    "slow": true
   },
   "Yo estoy en Madrid.": {
@@ -1069,6 +1341,10 @@
   },
   "Yo tengo un perro.": {
    "id": "8c8d68a4c976",
+   "slow": true
+  },
+  "Yo voy al museo.": {
+   "id": "f032e9e87460",
    "slow": true
   },
   "a la una, a las…": {
@@ -1163,8 +1439,24 @@
    "id": "c5d7f3287e1a",
    "slow": true
   },
+  "azul": {
+   "id": "1768d39c5bb4",
+   "slow": true
+  },
+  "bajo cero": {
+   "id": "f89c733b4c0a",
+   "slow": true
+  },
   "bien": {
    "id": "d4e2f6084164",
+   "slow": true
+  },
+  "blanco": {
+   "id": "062c2aa8b289",
+   "slow": true
+  },
+  "blanco, blanca": {
+   "id": "d8e900a52d35",
    "slow": true
   },
   "buenas noches": {
@@ -1367,6 +1659,10 @@
    "id": "4f1ea4f09db2",
    "slow": true
   },
+  "el abrigo": {
+   "id": "180f0917c3d3",
+   "slow": true
+  },
   "el aeropuerto": {
    "id": "3d02587b6633",
    "slow": true
@@ -1467,6 +1763,10 @@
    "id": "1085e3cc91b1",
    "slow": true
   },
+  "el gorro": {
+   "id": "64ae4a2d4ab8",
+   "slow": true
+  },
   "el hijo": {
    "id": "6540f2953b1b",
    "slow": true
@@ -1481,6 +1781,14 @@
   },
   "el jamón": {
    "id": "acfceb687c5c",
+   "slow": true
+  },
+  "el jersey": {
+   "id": "118c22c23f40",
+   "slow": true
+  },
+  "el jersey y los zapatos": {
+   "id": "6013b8fbef49",
    "slow": true
   },
   "el jueves": {
@@ -1541,6 +1849,10 @@
   },
   "el pan": {
    "id": "fece107f15ac",
+   "slow": true
+  },
+  "el paraguas": {
+   "id": "43208813e050",
    "slow": true
   },
   "el perro": {
@@ -1647,6 +1959,10 @@
    "id": "401c210efde5",
    "slow": true
   },
+  "ellos van": {
+   "id": "0940d9c1d515",
+   "slow": true
+  },
   "en punto": {
    "id": "9b16682d31e7",
    "slow": true
@@ -1703,6 +2019,18 @@
    "id": "2d10807a093b",
    "slow": true
   },
+  "está cerrado": {
+   "id": "bb89372fb977",
+   "slow": true
+  },
+  "está lejos": {
+   "id": "8dd79f9ad0db",
+   "slow": true
+  },
+  "está nublado": {
+   "id": "3f38597d3b52",
+   "slow": true
+  },
   "estás": {
    "id": "f6b3e5bc5d4e",
    "slow": true
@@ -1731,6 +2059,10 @@
    "id": "b52e0a7a806e",
    "slow": true
   },
+  "gorro": {
+   "id": "dda0aa486023",
+   "slow": true
+  },
   "gracias": {
    "id": "a30b3970f3a5",
    "slow": true
@@ -1739,8 +2071,28 @@
    "id": "bba18d30d7ff",
    "slow": true
   },
+  "grande": {
+   "id": "35272bf81dfc",
+   "slow": true
+  },
+  "gris": {
+   "id": "28c94237bca0",
+   "slow": true
+  },
   "guitarra": {
    "id": "4436a76d1c8a",
+   "slow": true
+  },
+  "hace frío": {
+   "id": "a606e0e6dfda",
+   "slow": true
+  },
+  "hace sol": {
+   "id": "5143f3ef7a97",
+   "slow": true
+  },
+  "hace viento": {
+   "id": "0d9b1109210c",
    "slow": true
   },
   "hache": {
@@ -1799,6 +2151,10 @@
    "id": "3f534edd9c39",
    "slow": true
   },
+  "ir": {
+   "id": "aa1553beed5d",
+   "slow": true
+  },
   "jamón": {
    "id": "8d298a01d5ca",
    "slow": true
@@ -1819,12 +2175,20 @@
    "id": "156a7a5de535",
    "slow": true
   },
+  "la bufanda": {
+   "id": "437a1977850e",
+   "slow": true
+  },
   "la calle": {
    "id": "7a0a8927d566",
    "slow": true
   },
   "la calle, la playa, yo": {
    "id": "739721294a45",
+   "slow": true
+  },
+  "la camiseta": {
+   "id": "1fb734ca4d43",
    "slow": true
   },
   "la carne": {
@@ -1853,6 +2217,10 @@
   },
   "la cerveza": {
    "id": "d8210d0932cd",
+   "slow": true
+  },
+  "la chaqueta": {
+   "id": "92601bbd1846",
    "slow": true
   },
   "la ciudad": {
@@ -1937,6 +2305,10 @@
   },
   "la sopa": {
    "id": "5b823e09b6f3",
+   "slow": true
+  },
+  "la talla": {
+   "id": "86e44c9bd725",
    "slow": true
   },
   "la tapa": {
@@ -2027,6 +2399,10 @@
    "id": "b48663d247ed",
    "slow": true
   },
+  "llueve": {
+   "id": "e983354756d4",
+   "slow": true
+  },
   "lo siento": {
    "id": "557d905c450f",
    "slow": true
@@ -2063,8 +2439,24 @@
    "id": "dd587dc100e4",
    "slow": true
   },
+  "los grados": {
+   "id": "73e012f34fcb",
+   "slow": true
+  },
+  "los guantes": {
+   "id": "90a2884d411a",
+   "slow": true
+  },
   "los hoteles": {
    "id": "3fcbdeb5e897",
+   "slow": true
+  },
+  "los pantalones": {
+   "id": "9b069f0abf7c",
+   "slow": true
+  },
+  "los zapatos": {
+   "id": "7122f340896f",
    "slow": true
   },
   "luego": {
@@ -2079,12 +2471,28 @@
    "id": "4a472d01a3c9",
    "slow": true
   },
+  "marrón": {
+   "id": "512ade2d63b9",
+   "slow": true
+  },
   "masa": {
    "id": "2a1e2e18004b",
    "slow": true
   },
   "mañana": {
    "id": "8727ae650349",
+   "slow": true
+  },
+  "me encanta": {
+   "id": "afa359175c48",
+   "slow": true
+  },
+  "me gusta": {
+   "id": "3a15de23fd54",
+   "slow": true
+  },
+  "me gustan": {
+   "id": "c8246e4a1993",
    "slow": true
   },
   "me llamo…": {
@@ -2131,6 +2539,18 @@
    "id": "d683c820daad",
    "slow": true
   },
+  "negro": {
+   "id": "867268472cd8",
+   "slow": true
+  },
+  "negro, negra": {
+   "id": "094870f35e08",
+   "slow": true
+  },
+  "nieva": {
+   "id": "76c89b180bb2",
+   "slow": true
+  },
   "no": {
    "id": "fd1286353570",
    "slow": true
@@ -2141,6 +2561,14 @@
   },
   "no hay": {
    "id": "9e0d290ac4b5",
+   "slow": true
+  },
+  "no me gusta": {
+   "id": "00eb077df716",
+   "slow": true
+  },
+  "no me gusta nada": {
+   "id": "f8ae14fdc3cb",
    "slow": true
   },
   "nombre": {
@@ -2165,6 +2593,10 @@
   },
   "nosotros tenemos": {
    "id": "3d1ef1589c05",
+   "slow": true
+  },
+  "nosotros vamos": {
+   "id": "25b2bd5f7021",
    "slow": true
   },
   "noventa": {
@@ -2229,6 +2661,18 @@
   },
   "pe, e, erre, erre, o": {
    "id": "c45e03f0b0bc",
+   "slow": true
+  },
+  "pequeña": {
+   "id": "1dc975aef67e",
+   "slow": true
+  },
+  "pequeño": {
+   "id": "f5a425f86ad6",
+   "slow": true
+  },
+  "pequeño, pequeña": {
+   "id": "c2ffa35f758c",
    "slow": true
   },
   "perdón": {
@@ -2303,8 +2747,20 @@
    "id": "69820d08768a",
    "slow": true
   },
+  "roja": {
+   "id": "364d297ac1c9",
+   "slow": true
+  },
   "rojo": {
    "id": "af6c1a0ca271",
+   "slow": true
+  },
+  "rojo, negro, verde, marrón": {
+   "id": "3de669121c5b",
+   "slow": true
+  },
+  "rojo, roja": {
+   "id": "f5393154b4ca",
    "slow": true
   },
   "seis": {
@@ -2373,6 +2829,10 @@
   },
   "te": {
    "id": "33e9505d1294",
+   "slow": true
+  },
+  "te gusta": {
+   "id": "aeeb14d631eb",
    "slow": true
   },
   "tener": {
@@ -2475,12 +2935,24 @@
    "id": "49d1b8416a23",
    "slow": true
   },
+  "tú vas": {
+   "id": "bb16d191f241",
+   "slow": true
+  },
+  "un abrigo negro y una bufanda roja": {
+   "id": "c6b6c48fee54",
+   "slow": true
+  },
   "un bocadillo de calamares": {
    "id": "f7e5e8cf540e",
    "slow": true
   },
   "un cortado": {
    "id": "0cf27092467b",
+   "slow": true
+  },
+  "un taxi blanco": {
+   "id": "8475bca8212b",
    "slow": true
   },
   "un, una": {
@@ -2535,12 +3007,32 @@
    "id": "4c7934a30f8e",
    "slow": true
   },
+  "va": {
+   "id": "665a4dc918dd",
+   "slow": true
+  },
+  "vais": {
+   "id": "1ae052d4930f",
+   "slow": true
+  },
   "vale": {
    "id": "24c4de7fefa3",
    "slow": true
   },
   "vale, bien, el vino, por favor": {
    "id": "677391bc70f7",
+   "slow": true
+  },
+  "vamos": {
+   "id": "cdfd0dfaa10c",
+   "slow": true
+  },
+  "van": {
+   "id": "efa44987b6e3",
+   "slow": true
+  },
+  "vas": {
+   "id": "8723baf2cf46",
    "slow": true
   },
   "veinte": {
@@ -2567,6 +3059,10 @@
    "id": "971ffe3d2554",
    "slow": true
   },
+  "verde": {
+   "id": "2030abee0fb9",
+   "slow": true
+  },
   "vino": {
    "id": "f0e4876639b7",
    "slow": true
@@ -2589,6 +3085,18 @@
   },
   "vosotros tenéis": {
    "id": "fcbece04d8e8",
+   "slow": true
+  },
+  "vosotros vais": {
+   "id": "f235c37392a1",
+   "slow": true
+  },
+  "voy": {
+   "id": "4215b0c922d6",
+   "slow": true
+  },
+  "voy a la…, voy al…": {
+   "id": "b9edf8e9c4fe",
    "slow": true
   },
   "y": {
@@ -2627,6 +3135,18 @@
    "id": "710c1fb87ad5",
    "slow": true
   },
+  "yo voy": {
+   "id": "dfb07c2a0eb4",
+   "slow": true
+  },
+  "¡Vamos al bar!": {
+   "id": "81a5b5462438",
+   "slow": true
+  },
+  "¡Vamos!": {
+   "id": "456de1ee8799",
+   "slow": true
+  },
   "¿A qué hora abre?": {
    "id": "1e7abbc2ea6d",
    "slow": true
@@ -2645,6 +3165,18 @@
   },
   "¿A qué hora…?": {
    "id": "b8566b254935",
+   "slow": true
+  },
+  "¿Adónde vais? Vamos al mercado.": {
+   "id": "38d1408837ba",
+   "slow": true
+  },
+  "¿Adónde vas ahora?": {
+   "id": "1a12276a5fba",
+   "slow": true
+  },
+  "¿Adónde vas?": {
+   "id": "79de53a726dd",
    "slow": true
   },
   "¿Agua con gas o sin gas?": {
@@ -2685,6 +3217,10 @@
   },
   "¿Cuánto cuestan las croquetas?": {
    "id": "ba1e192e3c82",
+   "slow": true
+  },
+  "¿Cuánto cuestan los zapatos?": {
+   "id": "746f79e4820a",
    "slow": true
   },
   "¿Cuánto es?": {
@@ -2745,6 +3281,18 @@
   },
   "¿De dónde eres? Soy de Estados Unidos.": {
    "id": "ce0366e3e0ad",
+   "slow": true
+  },
+  "¿De qué color es el abrigo?": {
+   "id": "f7a07f0ca5b7",
+   "slow": true
+  },
+  "¿De qué color es?": {
+   "id": "86c31d83268c",
+   "slow": true
+  },
+  "¿De qué color…?": {
+   "id": "d40382980c90",
    "slow": true
   },
   "¿Dónde está el centro? ¿Está lejos?": {
@@ -2875,8 +3423,56 @@
    "id": "a8506c246b78",
    "slow": true
   },
+  "¿Qué tiempo hace hoy en Madrid?": {
+   "id": "7b5b84cf4f9b",
+   "slow": true
+  },
+  "¿Qué tiempo hace?": {
+   "id": "990933ace3ee",
+   "slow": true
+  },
+  "¿Qué tiempo hace? Hace sol, pero hace frío.": {
+   "id": "d1734b2eb9ca",
+   "slow": true
+  },
+  "¿Te gusta el cocido?": {
+   "id": "2ac7b0f6fcdd",
+   "slow": true
+  },
+  "¿Te gusta el tinto de verano?": {
+   "id": "714ccb59c27a",
+   "slow": true
+  },
+  "¿Te gusta?": {
+   "id": "a2068837ae7b",
+   "slow": true
+  },
+  "¿Te gustan las aceitunas?": {
+   "id": "d14801b95510",
+   "slow": true
+  },
+  "¿Te gustan las patatas bravas?": {
+   "id": "1be95e68b124",
+   "slow": true
+  },
+  "¿Te gusta…?": {
+   "id": "15607bb316d3",
+   "slow": true
+  },
   "¿Tiene agua sin gas?": {
    "id": "866ba65d233d",
+   "slow": true
+  },
+  "¿Tiene la talla cuarenta?": {
+   "id": "6d8c32ececb7",
+   "slow": true
+  },
+  "¿Tiene la talla cuarenta? Quería unos pantalones.": {
+   "id": "7c98acd7764d",
+   "slow": true
+  },
+  "¿Tiene los pantalones en la talla cuarenta y dos?": {
+   "id": "e5cab1eb7c6e",
    "slow": true
   },
   "¿Tiene una botella de agua?": {
@@ -2897,6 +3493,14 @@
   },
   "¿Tienes…?, ¿Tiene…?": {
    "id": "82a8402e29bc",
+   "slow": true
+  },
+  "¿Vais al mercado?": {
+   "id": "ab47f974d1b9",
+   "slow": true
+  },
+  "¿Y a ti? A mí también. / A mí no.": {
+   "id": "51e2066a40df",
    "slow": true
   },
   "¿Y tú?": {
@@ -2921,6 +3525,10 @@
   },
   "él tiene": {
    "id": "1d3a8f00ef0e",
+   "slow": true
+  },
+  "él va": {
+   "id": "224b9335ef29",
    "slow": true
   },
   "—Gracias. —De nada.": {

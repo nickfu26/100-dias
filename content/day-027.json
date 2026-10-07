@@ -1,0 +1,66 @@
+{
+  "$schema": "./schema.json",
+  "day": 27,
+  "level": 2,
+  "title": { "en": "Winter clothes", "es": "La ropa" },
+  "objectives": [
+    "Name the clothes you'll pack for Madrid in January",
+    "Ask for your size in a shop",
+    "Say what you have and what you need with tengo and quiero"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**For the cold**\n\n- **el abrigo**: coat\n- **la bufanda**: scarf\n- **los guantes**: gloves\n- **el gorro**: woolly hat\n- **el jersey**: jumper, sweater\n\nMadrid in January is dry and sunny but cold: often around 0 °C in the morning and 10 °C in the afternoon."
+    },
+    {
+      "kind": "note",
+      "md": "**Everyday clothes**\n\n- **la chaqueta**: jacket\n- **los pantalones**: trousers (always plural, like English)\n- **la camiseta**: T-shirt\n- **los zapatos**: shoes\n\n*La ropa* = clothes. It's singular in Spanish: *la ropa es bonita*."
+    },
+    { "kind": "phrase", "es": "¿Tiene la talla cuarenta?", "en": "Do you have size 40?", "note": "La talla = clothes size. Spain uses European sizes. For shoes, say el número: ¿Tiene el número cuarenta y dos?" },
+    { "kind": "phrase", "es": "Quería un gorro y una bufanda.", "en": "I'd like a hat and a scarf.", "note": "Polite quería from day 16 works in shops, too." },
+    { "kind": "phrase", "es": "Tengo frío. ¿Dónde está mi abrigo?", "en": "I'm cold. Where is my coat?", "note": "mi = my (mis for plural: mis guantes)." },
+    {
+      "kind": "note",
+      "md": "**Las rebajas.** Spain's winter sales traditionally start on **7 January**. You'll arrive right in the middle of them, so shop windows will say *REBAJAS* everywhere."
+    }
+  ],
+  "vocab": [
+    { "id": "abrigo", "es": "el abrigo", "en": "coat", "pos": "noun", "gender": "m", "ipa": "aˈβɾiɣo", "tags": ["shopping"] },
+    { "id": "bufanda", "es": "la bufanda", "en": "scarf", "pos": "noun", "gender": "f", "ipa": "buˈfanda", "tags": ["shopping"] },
+    { "id": "guantes", "es": "los guantes", "en": "gloves", "pos": "noun", "gender": "m", "ipa": "ˈgwantes", "tags": ["shopping"] },
+    { "id": "gorro", "es": "el gorro", "en": "woolly hat", "pos": "noun", "gender": "m", "ipa": "ˈgoro", "note": "A hat with a brim is el sombrero.", "tags": ["shopping"] },
+    { "id": "jersey", "es": "el jersey", "en": "jumper, sweater", "pos": "noun", "gender": "m", "ipa": "xeɾˈsei", "note": "Spain. The j is the throaty Spanish j.", "tags": ["shopping"] },
+    { "id": "chaqueta", "es": "la chaqueta", "en": "jacket", "pos": "noun", "gender": "f", "ipa": "tʃaˈketa", "tags": ["shopping"] },
+    { "id": "pantalones", "es": "los pantalones", "en": "trousers", "pos": "noun", "gender": "m", "ipa": "pantaˈlones", "tags": ["shopping"] },
+    { "id": "camiseta", "es": "la camiseta", "en": "T-shirt", "pos": "noun", "gender": "f", "ipa": "kamiˈseta", "tags": ["shopping"] },
+    { "id": "zapatos", "es": "los zapatos", "en": "shoes", "pos": "noun", "gender": "m", "ipa": "θaˈpatos", "tags": ["shopping"] },
+    { "id": "talla", "es": "la talla", "en": "size (clothes)", "pos": "noun", "gender": "f", "ipa": "ˈtaʝa", "note": "For shoes: el número.", "tags": ["shopping"] }
+  ],
+  "exercises": [
+    { "id": "d027-01", "type": "listen-choose", "audio": "la bufanda", "options": ["la bufanda", "la botella", "la parada"], "answer": 0, "vocab": ["bufanda"] },
+    { "id": "d027-02", "type": "listen-choose", "audio": "el gorro", "options": ["el gorro", "el perro", "el gato"], "answer": 0, "vocab": ["gorro"] },
+    { "id": "d027-03", "type": "listen-choose", "audio": "los zapatos", "options": ["los zapatos", "los guantes", "los pantalones"], "answer": 0, "vocab": ["zapatos"] },
+    { "id": "d027-04", "type": "match-pairs", "pairs": [["el abrigo", "coat"], ["la bufanda", "scarf"], ["los guantes", "gloves"], ["el gorro", "woolly hat"], ["el jersey", "jumper"]], "vocab": ["abrigo", "bufanda", "guantes", "gorro", "jersey"] },
+    { "id": "d027-05", "type": "match-pairs", "pairs": [["la chaqueta", "jacket"], ["los pantalones", "trousers"], ["la camiseta", "T-shirt"], ["los zapatos", "shoes"], ["la talla", "size"]], "vocab": ["chaqueta", "pantalones", "camiseta", "zapatos", "talla"] },
+    { "id": "d027-06", "type": "fill-blank", "es": "{{Los}} guantes y la bufanda.", "en": "The gloves and the scarf.", "options": ["Los", "Las", "El"], "vocab": ["guantes", "bufanda", "los-the"] },
+    { "id": "d027-07", "type": "fill-blank", "es": "{{La}} chaqueta y el abrigo.", "en": "The jacket and the coat.", "options": ["La", "El"], "vocab": ["chaqueta", "abrigo", "la-the"] },
+    { "id": "d027-08", "type": "fill-blank", "es": "¿Tiene la {{talla}} cuarenta?", "en": "Do you have size 40?", "options": ["talla", "tapa", "taquilla"], "vocab": ["talla", "tienes-q", "cuarenta"] },
+    { "id": "d027-09", "type": "fill-blank", "es": "Tengo frío. Quiero un {{jersey}}.", "en": "I'm cold. I want a jumper.", "options": ["jersey", "camiseta", "zapatos"], "vocab": ["jersey", "tengo-frio", "quiero"] },
+    { "id": "d027-10", "type": "fill-blank", "es": "Quería {{una}} camiseta.", "en": "I'd like a T-shirt.", "options": ["una", "un", "unos"], "vocab": ["camiseta", "queria", "un-una"] },
+    { "id": "d027-11", "type": "listen-choose", "prompt": "What does she want?", "audio": "Quería un gorro y unos guantes.", "optionsLang": "en", "options": ["A hat and gloves", "A scarf and gloves", "A hat and a scarf"], "answer": 0, "vocab": ["queria", "gorro", "guantes"] },
+    { "id": "d027-12", "type": "listen-choose", "prompt": "What is he asking?", "audio": "¿Tiene los pantalones en la talla cuarenta y dos?", "optionsLang": "en", "options": ["If the trousers come in size 42", "How much the trousers cost", "Where the trousers are"], "answer": 0, "vocab": ["pantalones", "talla", "cuarenta"] },
+    { "id": "d027-13", "type": "listen-choose", "prompt": "Why does she want a coat?", "audio": "Tengo mucho frío. ¿Dónde está el abrigo?", "optionsLang": "en", "options": ["She's very cold", "It's raining", "She's going out"], "answer": 0, "vocab": ["tengo-frio", "abrigo"] },
+    { "id": "d027-14", "type": "listen-choose", "prompt": "How much is the scarf?", "audio": "La bufanda cuesta veinte euros.", "optionsLang": "en", "options": ["€20", "€12", "€22"], "answer": 0, "vocab": ["bufanda", "cuesta", "veinte"] },
+    { "id": "d027-15", "type": "dictation", "es": "el abrigo", "hint": "coat", "vocab": ["abrigo"] },
+    { "id": "d027-16", "type": "dictation", "es": "la chaqueta", "hint": "jacket (qu = k)", "vocab": ["chaqueta"] },
+    { "id": "d027-17", "type": "dictation", "es": "los guantes", "hint": "gloves", "vocab": ["guantes"] },
+    { "id": "d027-18", "type": "build-sentence", "es": "Quería una bufanda y un gorro, por favor.", "en": "I'd like a scarf and a hat, please.", "distractors": ["unos", "guantes"], "vocab": ["queria", "bufanda", "gorro"] },
+    { "id": "d027-19", "type": "build-sentence", "es": "¿Cuánto cuestan los zapatos?", "en": "How much are the shoes?", "distractors": ["cuesta", "las"], "vocab": ["cuestan", "zapatos"] },
+    { "id": "d027-20", "type": "build-sentence", "direction": "audio-to-es", "es": "En enero tengo abrigo, gorro y guantes.", "en": "In January I've got a coat, a hat and gloves.", "distractors": ["camiseta"], "vocab": ["enero", "tengo", "abrigo", "gorro", "guantes"] },
+    { "id": "d027-21", "type": "repeat", "es": "¿Tiene la talla cuarenta?", "en": "Do you have size 40?", "vocab": ["talla", "tienes-q"] },
+    { "id": "d027-22", "type": "shadow", "es": "el jersey y los zapatos", "en": "the jumper and the shoes", "listenFor": "The throaty j at the start of jersey, and z in zapatos said as θ (Spain).", "vocab": ["jersey", "zapatos"] },
+    { "id": "d027-23", "type": "fill-blank", "prompt": "Review: ir.", "es": "Mañana {{voy}} a la tienda.", "en": "Tomorrow I'm going to the shop.", "options": ["voy", "va", "estoy"], "vocab": ["voy-a", "tienda", "manana"] },
+    { "id": "d027-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "¿Adónde vais? Vamos al mercado.", "en": "Where are you all going? We're going to the market.", "vocab": ["vais", "vamos", "mercado"] }
+  ]
+}

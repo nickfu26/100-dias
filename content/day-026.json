@@ -1,0 +1,77 @@
+{
+  "$schema": "./schema.json",
+  "day": 26,
+  "level": 2,
+  "title": { "en": "I'm going", "es": "Voy a…" },
+  "objectives": [
+    "Use all six forms of ir in the present",
+    "Say where you're going with a la… and al…",
+    "Ask ¿Adónde vas?",
+    "Use vamos for 'let's go'"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**ir** means *to go*. It's completely irregular: none of its present forms look like *ir*. But the forms rhyme with each other: **voy, vas, va, vamos, vais, van**."
+    },
+    {
+      "kind": "conjugation",
+      "verb": "ir",
+      "verbEn": "to go",
+      "tense": "present",
+      "forms": {
+        "yo": "voy",
+        "tu": "vas",
+        "el": "va",
+        "nosotros": "vamos",
+        "vosotros": "vais",
+        "ellos": "van"
+      }
+    },
+    {
+      "kind": "note",
+      "md": "**Going *to* a place uses a.** Like *de + el = del*, **a + el** becomes **al**:\n\n- **a la** + feminine: *Voy a la estación.*\n- **al** + masculine: *Voy al museo.* (not ~~a el museo~~)\n- **a** + a city: *Voy a Madrid.*"
+    },
+    { "kind": "phrase", "es": "Voy al hotel.", "en": "I'm going to the hotel.", "note": "Spanish uses the same present tense for 'I go' and 'I'm going'." },
+    { "kind": "phrase", "es": "¿Adónde vas?", "en": "Where are you going?", "note": "adónde = to where. ¿Dónde estás? asks where you are; ¿Adónde vas? asks where you're heading." },
+    { "kind": "phrase", "es": "¡Vamos!", "en": "Let's go! / Come on!", "note": "vamos = we go, but on its own it's 'let's go'. You'll hear ¡Vamos! at every football match." },
+    { "kind": "phrase", "es": "Vais al Prado, ¿no?", "en": "You're all going to the Prado, right?", "note": "vosotros form, used in Spain for 'you all'. Adding ¿no? at the end turns it into 'right?'." }
+  ],
+  "vocab": [
+    { "id": "ir", "es": "ir", "en": "to go", "pos": "verb", "ipa": "ˈiɾ" },
+    { "id": "voy", "es": "voy", "en": "I go, I'm going", "pos": "verb", "ipa": "ˈboi" },
+    { "id": "vas", "es": "vas", "en": "you go, you're going", "pos": "verb", "ipa": "ˈbas", "note": "Informal tú. With usted: va." },
+    { "id": "va", "es": "va", "en": "he / she goes; you go (usted)", "pos": "verb", "ipa": "ˈba" },
+    { "id": "vamos", "es": "vamos", "en": "we go; let's go", "pos": "verb", "ipa": "ˈbamos" },
+    { "id": "vais", "es": "vais", "en": "you all go (vosotros)", "pos": "verb", "ipa": "ˈbais", "note": "Spain only. Latin America uses van." },
+    { "id": "van", "es": "van", "en": "they go; you all go (ustedes)", "pos": "verb", "ipa": "ˈban" },
+    { "id": "voy-a", "es": "voy a la…, voy al…", "en": "I'm going to the…", "pos": "phrase", "ipa": "ˈboi a la, ˈboi al", "note": "a + el = al: voy al museo.", "tags": ["directions"] },
+    { "id": "adonde-vas", "es": "¿Adónde vas?", "en": "Where are you going?", "pos": "phrase", "ipa": "aˈðonde ˈbas", "tags": ["directions"] }
+  ],
+  "exercises": [
+    { "id": "d026-01", "type": "listen-choose", "audio": "voy", "options": ["voy", "va", "vas"], "answer": 0, "vocab": ["voy"] },
+    { "id": "d026-02", "type": "listen-choose", "audio": "vamos", "options": ["van", "vamos", "vais"], "answer": 1, "vocab": ["vamos"] },
+    { "id": "d026-03", "type": "listen-choose", "audio": "¿Adónde vas?", "options": ["¿Adónde vas?", "¿Dónde estás?", "¿De dónde eres?"], "answer": 0, "vocab": ["adonde-vas"] },
+    { "id": "d026-04", "type": "match-pairs", "pairs": [["voy", "I go"], ["vas", "you go"], ["va", "she goes"], ["vamos", "we go"], ["van", "they go"]], "vocab": ["voy", "vas", "va", "vamos", "van"] },
+    { "id": "d026-05", "type": "match-pairs", "pairs": [["soy", "I am (who)"], ["estoy", "I am (where)"], ["voy", "I go"], ["tengo", "I have"], ["quiero", "I want"]], "prompt": "Five verbs, the yo form.", "vocab": ["soy", "estoy", "voy", "tengo", "quiero"] },
+    { "id": "d026-06", "type": "fill-blank", "es": "Yo {{voy}} al museo.", "en": "I'm going to the museum.", "options": ["voy", "va", "vas"], "vocab": ["voy", "yo", "museo"] },
+    { "id": "d026-07", "type": "fill-blank", "es": "Voy {{al}} aeropuerto.", "en": "I'm going to the airport.", "options": ["al", "a la", "a el"], "prompt": "aeropuerto is masculine.", "vocab": ["voy-a", "aeropuerto"] },
+    { "id": "d026-08", "type": "fill-blank", "es": "Voy {{a la}} farmacia.", "en": "I'm going to the pharmacy.", "options": ["a la", "al"], "vocab": ["voy-a", "farmacia"] },
+    { "id": "d026-09", "type": "fill-blank", "es": "¿Adónde {{vas}}?", "en": "Where are you going?", "options": ["vas", "voy", "estás"], "vocab": ["adonde-vas"] },
+    { "id": "d026-10", "type": "fill-blank", "es": "Ana y Pablo {{van}} al bar.", "en": "Ana and Pablo are going to the bar.", "options": ["van", "va", "vamos"], "vocab": ["van", "bar"] },
+    { "id": "d026-11", "type": "fill-blank", "es": "¿{{Vais}} al mercado?", "en": "Are you all going to the market?", "options": ["Vais", "Vas", "Van"], "prompt": "Talking to two friends (vosotros).", "vocab": ["vais", "mercado"] },
+    { "id": "d026-12", "type": "listen-choose", "prompt": "Where is she going?", "audio": "Voy a la estación.", "optionsLang": "en", "options": ["To the station", "To the shop", "To the square"], "answer": 0, "vocab": ["voy-a", "estacion"] },
+    { "id": "d026-13", "type": "listen-choose", "prompt": "Where are they going?", "audio": "Vamos al restaurante a las nueve.", "optionsLang": "en", "options": ["To the restaurant at nine", "To the bar at nine", "To the restaurant at five"], "answer": 0, "vocab": ["vamos", "restaurante", "a-las"] },
+    { "id": "d026-14", "type": "listen-choose", "prompt": "Going or there already?", "audio": "Estoy en el hotel.", "optionsLang": "en", "options": ["She's at the hotel", "She's going to the hotel", "She's leaving the hotel"], "answer": 0, "vocab": ["estoy", "hotel"] },
+    { "id": "d026-15", "type": "dictation", "es": "voy", "hint": "I go (v sounds like b)", "vocab": ["voy"] },
+    { "id": "d026-16", "type": "dictation", "es": "vamos", "hint": "let's go", "vocab": ["vamos"] },
+    { "id": "d026-17", "type": "dictation", "es": "¿Adónde vas?", "hint": "Where are you going?", "vocab": ["adonde-vas"] },
+    { "id": "d026-18", "type": "build-sentence", "es": "Mañana voy al Museo del Prado.", "en": "Tomorrow I'm going to the Prado Museum.", "distractors": ["el", "estoy"], "vocab": ["manana", "voy-a", "museo"] },
+    { "id": "d026-19", "type": "build-sentence", "es": "¿Adónde vas ahora?", "en": "Where are you going now?", "distractors": ["dónde", "estás"], "vocab": ["adonde-vas", "ahora"] },
+    { "id": "d026-20", "type": "build-sentence", "direction": "audio-to-es", "es": "Vamos al centro en metro.", "en": "We're going to the centre by metro.", "distractors": ["van"], "vocab": ["vamos", "centro", "metro"] },
+    { "id": "d026-21", "type": "repeat", "es": "Voy a la plaza. ¿Y tú, adónde vas?", "en": "I'm going to the square. And you, where are you going?", "vocab": ["voy-a", "plaza", "adonde-vas"] },
+    { "id": "d026-22", "type": "shadow", "es": "¡Vamos al bar!", "en": "Let's go to the bar!", "listenFor": "v said as b at the start of vamos, and vamos al joined into one: va-mo-sal.", "vocab": ["vamos", "bar"] },
+    { "id": "d026-23", "type": "listen-choose", "prompt": "Review: what is he asking for?", "audio": "¿Hay un cajero cerca?", "optionsLang": "en", "options": ["A cash machine", "A ticket office", "A metro stop"], "answer": 0, "vocab": ["cajero", "cerca"] },
+    { "id": "d026-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Dos entradas, por favor. ¿Dónde está la salida?", "en": "Two tickets, please. Where is the exit?", "vocab": ["entrada", "salida", "donde-esta"] }
+  ]
+}

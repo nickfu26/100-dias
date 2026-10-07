@@ -1,0 +1,64 @@
+{
+  "$schema": "./schema.json",
+  "day": 28,
+  "level": 2,
+  "title": { "en": "Colours", "es": "Los colores" },
+  "objectives": [
+    "Name the basic colours",
+    "Put the adjective after the noun: un abrigo negro",
+    "Make colours and sizes agree: una bufanda roja, unos guantes grises",
+    "Ask ¿De qué color…?"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**Colours go after the noun**, and most agree like nationalities did on day 11:\n\n- **-o / -a**: *negro, negra* · *blanco, blanca* · *rojo, roja*: *un abrigo negro*, *una bufanda negra*\n- **one form for both**: *azul, verde, gris, marrón*: *un gorro azul*, *una chaqueta azul*\n\nPlurals add **-s** after a vowel and **-es** after a consonant: *negros*, *verdes*, *azules*, *grises*, *marrones* (the accent goes)."
+    },
+    { "kind": "phrase", "es": "un abrigo negro y una bufanda roja", "en": "a black coat and a red scarf" },
+    { "kind": "phrase", "es": "¿De qué color es?", "en": "What colour is it?", "note": "Literally 'Of what colour is it?'. The answer: Es azul." },
+    {
+      "kind": "note",
+      "md": "**Big and small**\n\n- **grande**: big (same for both genders): *un museo grande*, *una plaza grande*\n- **pequeño, pequeña**: small: *un bar pequeño*, *una tienda pequeña*\n\nFor clothes, *grande* and *pequeño* mean the size is wrong: *Es grande* = It's too big."
+    },
+    { "kind": "phrase", "es": "Es pequeña. ¿Tiene una talla grande?", "en": "It's small. Do you have a large size?", "note": "Pequeña, because la talla and la chaqueta are feminine." },
+    { "kind": "phrase", "es": "un taxi blanco", "en": "a white taxi", "note": "Madrid taxis are white with a red stripe on the front doors. A green light on the roof means it's free." }
+  ],
+  "vocab": [
+    { "id": "negro", "es": "negro, negra", "en": "black", "pos": "adj", "ipa": "ˈneɣɾo, ˈneɣɾa" },
+    { "id": "blanco", "es": "blanco, blanca", "en": "white", "pos": "adj", "ipa": "ˈblaŋko, ˈblaŋka", "note": "Remember vino blanco." },
+    { "id": "rojo", "es": "rojo, roja", "en": "red", "pos": "adj", "ipa": "ˈroxo, ˈroxa", "note": "Red wine is vino tinto, never vino rojo." },
+    { "id": "azul", "es": "azul", "en": "blue", "pos": "adj", "ipa": "aˈθul", "note": "Same for m and f. Plural: azules." },
+    { "id": "verde", "es": "verde", "en": "green", "pos": "adj", "ipa": "ˈbeɾðe" },
+    { "id": "gris", "es": "gris", "en": "grey", "pos": "adj", "ipa": "ˈgɾis", "note": "Plural: grises." },
+    { "id": "marron", "es": "marrón", "en": "brown", "pos": "adj", "ipa": "maˈron", "note": "Same for m and f. Plural: marrones." },
+    { "id": "grande", "es": "grande", "en": "big, large", "pos": "adj", "ipa": "ˈgɾande" },
+    { "id": "pequeno", "es": "pequeño, pequeña", "en": "small", "pos": "adj", "ipa": "peˈkeɲo, peˈkeɲa" },
+    { "id": "de-que-color", "es": "¿De qué color…?", "en": "What colour…?", "pos": "phrase", "ipa": "de ˈke koˈloɾ", "tags": ["shopping"] }
+  ],
+  "exercises": [
+    { "id": "d028-01", "type": "listen-choose", "audio": "rojo", "options": ["rojo", "roja", "gorro"], "answer": 0, "vocab": ["rojo"] },
+    { "id": "d028-02", "type": "listen-choose", "audio": "azul", "options": ["azul", "gris", "verde"], "answer": 0, "vocab": ["azul"] },
+    { "id": "d028-03", "type": "listen-choose", "audio": "pequeña", "options": ["pequeño", "pequeña", "grande"], "answer": 1, "vocab": ["pequeno"] },
+    { "id": "d028-04", "type": "match-pairs", "pairs": [["negro", "black"], ["blanco", "white"], ["rojo", "red"], ["azul", "blue"], ["verde", "green"]], "vocab": ["negro", "blanco", "rojo", "azul", "verde"] },
+    { "id": "d028-05", "type": "match-pairs", "pairs": [["gris", "grey"], ["marrón", "brown"], ["grande", "big"], ["pequeño", "small"]], "vocab": ["gris", "marron", "grande", "pequeno"] },
+    { "id": "d028-06", "type": "fill-blank", "es": "Una bufanda {{roja}}.", "en": "A red scarf.", "options": ["roja", "rojo"], "vocab": ["rojo", "bufanda"] },
+    { "id": "d028-07", "type": "fill-blank", "es": "Un abrigo {{negro}}.", "en": "A black coat.", "options": ["negro", "negra"], "vocab": ["negro", "abrigo"] },
+    { "id": "d028-08", "type": "fill-blank", "es": "Unos guantes {{grises}}.", "en": "Some grey gloves.", "options": ["grises", "gris", "grisos"], "vocab": ["gris", "guantes", "unos-unas"] },
+    { "id": "d028-09", "type": "fill-blank", "es": "Una chaqueta {{azul}}.", "en": "A blue jacket.", "options": ["azul", "azula"], "prompt": "azul has one form for both genders.", "vocab": ["azul", "chaqueta"] },
+    { "id": "d028-10", "type": "fill-blank", "es": "La tienda es muy {{pequeña}}.", "en": "The shop is very small.", "options": ["pequeña", "pequeño"], "vocab": ["pequeno", "tienda", "muy"] },
+    { "id": "d028-11", "type": "fill-blank", "es": "¿De qué {{color}} es?", "en": "What colour is it?", "options": ["color", "hora", "talla"], "vocab": ["de-que-color"] },
+    { "id": "d028-12", "type": "listen-choose", "prompt": "What is she looking for?", "audio": "Quería un gorro verde.", "optionsLang": "en", "options": ["A green hat", "A grey hat", "A green scarf"], "answer": 0, "vocab": ["queria", "gorro", "verde"] },
+    { "id": "d028-13", "type": "listen-choose", "prompt": "What's wrong with the jacket?", "audio": "La chaqueta es grande. ¿Tiene una talla pequeña?", "optionsLang": "en", "options": ["It's too big", "It's too small", "It's the wrong colour"], "answer": 0, "vocab": ["chaqueta", "grande", "talla", "pequeno"] },
+    { "id": "d028-14", "type": "listen-choose", "prompt": "Which shoes?", "audio": "Los zapatos marrones, por favor.", "optionsLang": "en", "options": ["The brown shoes", "The black shoes", "The big shoes"], "answer": 0, "vocab": ["zapatos", "marron"] },
+    { "id": "d028-15", "type": "dictation", "es": "negro", "hint": "black", "vocab": ["negro"] },
+    { "id": "d028-16", "type": "dictation", "es": "azul", "hint": "blue (z = θ)", "vocab": ["azul"] },
+    { "id": "d028-17", "type": "dictation", "es": "pequeño", "hint": "small (ñ)", "vocab": ["pequeno"] },
+    { "id": "d028-18", "type": "build-sentence", "es": "Quería una camiseta blanca, por favor.", "en": "I'd like a white T-shirt, please.", "distractors": ["blanco", "un"], "vocab": ["queria", "camiseta", "blanco"] },
+    { "id": "d028-19", "type": "build-sentence", "es": "¿De qué color es el abrigo?", "en": "What colour is the coat?", "distractors": ["hora", "la"], "vocab": ["de-que-color", "abrigo"] },
+    { "id": "d028-20", "type": "build-sentence", "direction": "audio-to-es", "es": "Tengo un abrigo negro y una bufanda roja.", "en": "I have a black coat and a red scarf.", "distractors": ["negra", "rojo"], "vocab": ["tengo", "abrigo", "negro", "bufanda", "rojo"] },
+    { "id": "d028-21", "type": "repeat", "es": "Es grande. ¿Tiene una talla pequeña?", "en": "It's big. Do you have a small size?", "vocab": ["grande", "talla", "pequeno"] },
+    { "id": "d028-22", "type": "shadow", "es": "rojo, negro, verde, marrón", "en": "red, black, green, brown", "listenFor": "Rolled r at the start of rojo and in marrón, the throaty j in rojo, and the soft g in negro.", "vocab": ["rojo", "negro", "verde", "marron"] },
+    { "id": "d028-23", "type": "listen-choose", "prompt": "Review: what does he need?", "audio": "Tengo frío. Quiero unos guantes.", "optionsLang": "en", "options": ["Gloves", "A scarf", "A coat"], "answer": 0, "vocab": ["guantes", "tengo-frio"] },
+    { "id": "d028-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "¿Tiene la talla cuarenta? Quería unos pantalones.", "en": "Do you have size 40? I'd like some trousers.", "vocab": ["talla", "pantalones", "queria"] }
+  ]
+}

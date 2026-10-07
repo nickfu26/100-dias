@@ -1,0 +1,59 @@
+{
+  "$schema": "./schema.json",
+  "day": 30,
+  "level": 2,
+  "title": { "en": "I like", "es": "Me gusta" },
+  "objectives": [
+    "Say what you like with me gusta and me gustan",
+    "Ask ¿Te gusta…?",
+    "Say you love something with me encanta",
+    "Say you don't like something at all"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**gustar works backwards.** *Me gusta el café* is literally *coffee pleases me*. The thing you like is the subject, so the verb agrees with **it**, not with you:\n\n- one thing → **me gusta**: *Me gusta el jamón.*\n- several things → **me gustan**: *Me gustan las croquetas.*"
+    },
+    {
+      "kind": "note",
+      "md": "**Keep the article.** English says *I like coffee*. Spanish says *me gusta **el** café*: ~~me gusta café~~ is wrong. Use *el, la, los, las* with gustar."
+    },
+    { "kind": "phrase", "es": "¿Te gusta el cocido?", "en": "Do you like cocido?", "note": "te = to you. ¿Te gustan…? for plural things." },
+    { "kind": "phrase", "es": "Me encanta Madrid.", "en": "I love Madrid.", "note": "Stronger than me gusta. Same pattern: me encanta + one thing, me encantan + several. Use it for things, not people (for people, querer: te quiero)." },
+    { "kind": "phrase", "es": "No me gusta nada el frío.", "en": "I don't like the cold at all.", "note": "no … nada = not at all. Just no me gusta is a milder 'I don't like it'." },
+    { "kind": "phrase", "es": "¿Y a ti? A mí también. / A mí no.", "en": "And you? Me too. / Not me.", "note": "With gustar, 'and you?' is ¿Y a ti?, not ¿Y tú?. Learn the replies as chunks." }
+  ],
+  "vocab": [
+    { "id": "me-gusta", "es": "me gusta", "en": "I like (one thing)", "pos": "phrase", "ipa": "me ˈgusta", "note": "Me gusta el café." },
+    { "id": "me-gustan", "es": "me gustan", "en": "I like (several things)", "pos": "phrase", "ipa": "me ˈgustan", "note": "Me gustan los churros." },
+    { "id": "te-gusta-q", "es": "¿Te gusta…?", "en": "Do you like…?", "pos": "phrase", "ipa": "te ˈgusta", "note": "Plural: ¿Te gustan…?" },
+    { "id": "me-encanta", "es": "me encanta", "en": "I love (it)", "pos": "phrase", "ipa": "me enˈkanta", "note": "Plural: me encantan." },
+    { "id": "no-me-gusta-nada", "es": "no me gusta nada", "en": "I don't like it at all", "pos": "phrase", "ipa": "ˈno me ˈgusta ˈnaða" }
+  ],
+  "exercises": [
+    { "id": "d030-01", "type": "listen-choose", "audio": "me gusta", "options": ["me gusta", "me gustan", "te gusta"], "answer": 0, "vocab": ["me-gusta"] },
+    { "id": "d030-02", "type": "listen-choose", "audio": "me encanta", "options": ["me encanta", "me gusta", "no me gusta"], "answer": 0, "vocab": ["me-encanta"] },
+    { "id": "d030-03", "type": "match-pairs", "pairs": [["me gusta", "I like it"], ["me encanta", "I love it"], ["no me gusta nada", "I don't like it at all"], ["¿Te gusta?", "Do you like it?"]], "vocab": ["me-gusta", "me-encanta", "no-me-gusta-nada", "te-gusta-q"] },
+    { "id": "d030-04", "type": "fill-blank", "es": "Me {{gusta}} el jamón.", "en": "I like ham.", "options": ["gusta", "gustan"], "prompt": "One thing.", "vocab": ["me-gusta", "jamon"] },
+    { "id": "d030-05", "type": "fill-blank", "es": "Me {{gustan}} las croquetas.", "en": "I like croquettes.", "options": ["gustan", "gusta"], "prompt": "Several things.", "vocab": ["me-gustan", "croquetas"] },
+    { "id": "d030-06", "type": "fill-blank", "es": "Me gusta {{el}} café.", "en": "I like coffee.", "options": ["el", "un", "la"], "prompt": "gustar keeps the article.", "vocab": ["me-gusta", "cafe", "el-the"] },
+    { "id": "d030-07", "type": "fill-blank", "es": "¿{{Te}} gusta el cocido?", "en": "Do you like cocido?", "options": ["Te", "Me", "Tú"], "vocab": ["te-gusta-q", "cocido"] },
+    { "id": "d030-08", "type": "fill-blank", "es": "Me {{encantan}} los churros.", "en": "I love churros.", "options": ["encantan", "encanta"], "vocab": ["me-encanta", "churros"] },
+    { "id": "d030-09", "type": "fill-blank", "es": "No me gusta {{nada}} el frío.", "en": "I don't like the cold at all.", "options": ["nada", "mucho", "todo"], "vocab": ["no-me-gusta-nada"] },
+    { "id": "d030-10", "type": "fill-blank", "es": "¿Te {{gustan}} las aceitunas?", "en": "Do you like olives?", "options": ["gustan", "gusta"], "vocab": ["te-gusta-q", "aceitunas"] },
+    { "id": "d030-11", "type": "listen-choose", "prompt": "How does she feel about Madrid?", "audio": "Me encanta Madrid.", "optionsLang": "en", "options": ["She loves it", "She likes it a bit", "She doesn't like it"], "answer": 0, "vocab": ["me-encanta"] },
+    { "id": "d030-12", "type": "listen-choose", "prompt": "What doesn't he like?", "audio": "Me gusta el vino, pero no me gusta nada la cerveza.", "optionsLang": "en", "options": ["Beer", "Wine", "Neither"], "answer": 0, "vocab": ["me-gusta", "no-me-gusta-nada", "vino", "cerveza"] },
+    { "id": "d030-13", "type": "listen-choose", "prompt": "What is she asking?", "audio": "¿Te gustan las patatas bravas?", "optionsLang": "en", "options": ["If you like patatas bravas", "If you want patatas bravas", "If there are patatas bravas"], "answer": 0, "vocab": ["te-gusta-q", "patatas-bravas"] },
+    { "id": "d030-14", "type": "listen-choose", "prompt": "Does he agree?", "audio": "Me gusta el chocolate con churros. ¿Y a ti? A mí también.", "optionsLang": "en", "options": ["Yes, he likes it too", "No, he doesn't", "He's never tried it"], "answer": 0, "vocab": ["me-gusta", "chocolate", "churros"] },
+    { "id": "d030-15", "type": "dictation", "es": "me gusta", "hint": "I like", "vocab": ["me-gusta"] },
+    { "id": "d030-16", "type": "dictation", "es": "me encanta", "hint": "I love it", "vocab": ["me-encanta"] },
+    { "id": "d030-17", "type": "dictation", "es": "¿Te gusta?", "hint": "Do you like it?", "vocab": ["te-gusta-q"] },
+    { "id": "d030-18", "type": "build-sentence", "es": "Me gustan mucho los calamares.", "en": "I really like squid.", "distractors": ["gusta", "las"], "vocab": ["me-gustan", "calamares", "mucho"] },
+    { "id": "d030-19", "type": "build-sentence", "es": "¿Te gusta el tinto de verano?", "en": "Do you like tinto de verano?", "distractors": ["gustan", "me"], "vocab": ["te-gusta-q", "tinto-de-verano"] },
+    { "id": "d030-20", "type": "build-sentence", "direction": "audio-to-es", "es": "No me gusta nada el frío.", "en": "I don't like the cold at all.", "distractors": ["mucho"], "vocab": ["no-me-gusta-nada"] },
+    { "id": "d030-21", "type": "repeat", "es": "Me encanta el jamón. ¿Y a ti?", "en": "I love ham. And you?", "vocab": ["me-encanta", "jamon"] },
+    { "id": "d030-22", "type": "shadow", "es": "Me encantan las croquetas.", "en": "I love croquettes.", "listenFor": "me encantan said as one phrase, me-en-KAN-tan, with the stress on KAN.", "vocab": ["me-encanta", "croquetas"] },
+    { "id": "d030-23", "type": "listen-choose", "prompt": "Review: what's the weather like?", "audio": "Está nublado y hace viento.", "optionsLang": "en", "options": ["Cloudy and windy", "Sunny and windy", "Raining and cold"], "answer": 0, "vocab": ["esta-nublado", "hace-viento"] },
+    { "id": "d030-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Hace frío. Vamos a un bar.", "en": "It's cold. Let's go to a bar.", "vocab": ["hace-frio", "vamos", "bar"] }
+  ]
+}

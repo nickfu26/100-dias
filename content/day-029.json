@@ -1,0 +1,64 @@
+{
+  "$schema": "./schema.json",
+  "day": 29,
+  "level": 2,
+  "title": { "en": "January weather", "es": "El tiempo en enero" },
+  "objectives": [
+    "Ask ¿Qué tiempo hace? and answer with hace frío, sol or viento",
+    "Say it's raining, snowing or cloudy",
+    "Understand a temperature like dos grados bajo cero",
+    "Tell tengo frío from hace frío"
+  ],
+  "teach": [
+    { "kind": "phrase", "es": "¿Qué tiempo hace?", "en": "What's the weather like?", "note": "el tiempo = the weather (it also means time, as in 'no time')." },
+    {
+      "kind": "note",
+      "md": "**Spanish weather *makes*.** Most weather uses **hace** (*it makes*):\n\n- **hace frío**: it's cold\n- **hace sol**: it's sunny\n- **hace viento**: it's windy\n- *hace calor*: it's hot (not in January!)\n\nRain and snow are verbs of their own: **llueve** (it's raining), **nieva** (it's snowing). Clouds use *estar*: **está nublado**."
+    },
+    {
+      "kind": "note",
+      "md": "**Three kinds of cold**\n\n- **Tengo frío.** *I* feel cold (day 19).\n- **Hace frío.** The *weather* is cold.\n- *La sopa está fría.* The *soup* is cold to the touch."
+    },
+    { "kind": "phrase", "es": "Hace sol, pero hace mucho frío.", "en": "It's sunny, but it's really cold.", "note": "Typical Madrid January: blue sky, dry air, around 0 °C in the morning and 10 °C in the afternoon." },
+    { "kind": "phrase", "es": "Hay dos grados bajo cero.", "en": "It's minus two degrees.", "note": "Celsius, of course. You'll also hear Estamos a dos grados bajo cero. Hay cinco grados = it's 5 °C." },
+    { "kind": "phrase", "es": "Llueve. ¿Tienes paraguas?", "en": "It's raining. Have you got an umbrella?", "note": "Rain is uncommon in a Madrid January, but it happens. Snow is rare in the city, though the mountains north of Madrid often have it." }
+  ],
+  "vocab": [
+    { "id": "que-tiempo-hace", "es": "¿Qué tiempo hace?", "en": "What's the weather like?", "pos": "phrase", "ipa": "ˈke ˈtjempo ˈaθe", "tags": ["weather"] },
+    { "id": "hace-frio", "es": "hace frío", "en": "it's cold (weather)", "pos": "phrase", "ipa": "ˈaθe ˈfɾio", "note": "Tengo frío = I feel cold.", "tags": ["weather"] },
+    { "id": "hace-sol", "es": "hace sol", "en": "it's sunny", "pos": "phrase", "ipa": "ˈaθe ˈsol", "note": "el sol = the sun. Puerta del Sol = Gate of the Sun.", "tags": ["weather"] },
+    { "id": "hace-viento", "es": "hace viento", "en": "it's windy", "pos": "phrase", "ipa": "ˈaθe ˈβjento", "tags": ["weather"] },
+    { "id": "llueve", "es": "llueve", "en": "it's raining; it rains", "pos": "verb", "ipa": "ˈʝweβe", "note": "la lluvia = rain.", "tags": ["weather"] },
+    { "id": "nieva", "es": "nieva", "en": "it's snowing; it snows", "pos": "verb", "ipa": "ˈnjeβa", "note": "la nieve = snow.", "tags": ["weather"] },
+    { "id": "esta-nublado", "es": "está nublado", "en": "it's cloudy", "pos": "phrase", "ipa": "esˈta nuˈβlaðo", "tags": ["weather"] },
+    { "id": "grados", "es": "los grados", "en": "degrees", "pos": "noun", "gender": "m", "ipa": "ˈgɾaðos", "note": "Hay cinco grados = it's 5 °C.", "tags": ["weather"] },
+    { "id": "bajo-cero", "es": "bajo cero", "en": "below zero", "pos": "phrase", "ipa": "ˈbaxo ˈθeɾo", "note": "Dos grados bajo cero = −2 °C.", "tags": ["weather"] },
+    { "id": "paraguas", "es": "el paraguas", "en": "umbrella", "pos": "noun", "gender": "m", "ipa": "paˈɾaɣwas", "note": "Same in the plural: los paraguas.", "tags": ["weather"] }
+  ],
+  "exercises": [
+    { "id": "d029-01", "type": "listen-choose", "audio": "llueve", "options": ["llueve", "nieva", "llave"], "answer": 0, "vocab": ["llueve"] },
+    { "id": "d029-02", "type": "listen-choose", "audio": "hace sol", "options": ["hace sol", "hace frío", "hace viento"], "answer": 0, "vocab": ["hace-sol"] },
+    { "id": "d029-03", "type": "listen-choose", "audio": "está nublado", "options": ["está nublado", "está cerrado", "está lejos"], "answer": 0, "vocab": ["esta-nublado"] },
+    { "id": "d029-04", "type": "match-pairs", "pairs": [["hace frío", "it's cold"], ["hace sol", "it's sunny"], ["hace viento", "it's windy"], ["llueve", "it's raining"], ["nieva", "it's snowing"]], "vocab": ["hace-frio", "hace-sol", "hace-viento", "llueve", "nieva"] },
+    { "id": "d029-05", "type": "match-pairs", "pairs": [["está nublado", "it's cloudy"], ["los grados", "degrees"], ["bajo cero", "below zero"], ["el paraguas", "umbrella"]], "vocab": ["esta-nublado", "grados", "bajo-cero", "paraguas"] },
+    { "id": "d029-06", "type": "fill-blank", "es": "Hoy {{hace}} mucho frío.", "en": "It's very cold today.", "options": ["hace", "tengo", "está"], "prompt": "The weather, not how you feel.", "vocab": ["hace-frio", "hoy", "mucho"] },
+    { "id": "d029-07", "type": "fill-blank", "es": "{{Tengo}} frío. ¿Dónde está mi abrigo?", "en": "I'm cold. Where's my coat?", "options": ["Tengo", "Hace"], "prompt": "How you feel, not the weather.", "vocab": ["tengo-frio", "abrigo"] },
+    { "id": "d029-08", "type": "fill-blank", "es": "{{Está}} nublado.", "en": "It's cloudy.", "options": ["Está", "Hace", "Es"], "vocab": ["esta-nublado"] },
+    { "id": "d029-09", "type": "fill-blank", "es": "Hay dos grados {{bajo}} cero.", "en": "It's minus two degrees.", "options": ["bajo", "menos", "de"], "vocab": ["bajo-cero", "grados", "dos"] },
+    { "id": "d029-10", "type": "fill-blank", "es": "Llueve. ¿Tienes {{paraguas}}?", "en": "It's raining. Have you got an umbrella?", "options": ["paraguas", "abrigo", "gorro"], "vocab": ["paraguas", "llueve", "tienes-q"] },
+    { "id": "d029-11", "type": "listen-choose", "prompt": "What's the weather like?", "audio": "Hace sol, pero hace mucho frío.", "optionsLang": "en", "options": ["Sunny but very cold", "Cloudy and cold", "Sunny and warm"], "answer": 0, "vocab": ["hace-sol", "hace-frio", "pero"] },
+    { "id": "d029-12", "type": "listen-choose", "prompt": "What's the temperature?", "audio": "Hay tres grados bajo cero.", "optionsLang": "en", "options": ["−3 °C", "3 °C", "13 °C"], "answer": 0, "vocab": ["grados", "bajo-cero", "tres"] },
+    { "id": "d029-13", "type": "listen-choose", "prompt": "What's the temperature?", "audio": "Hay doce grados.", "optionsLang": "en", "options": ["12 °C", "2 °C", "−12 °C"], "answer": 0, "vocab": ["grados", "doce"] },
+    { "id": "d029-14", "type": "listen-choose", "prompt": "What is she asking?", "audio": "Mañana llueve. ¿Tienes paraguas?", "optionsLang": "en", "options": ["If you have an umbrella", "If you have a scarf", "If it's raining today"], "answer": 0, "vocab": ["llueve", "paraguas", "manana"] },
+    { "id": "d029-15", "type": "dictation", "es": "hace frío", "hint": "it's cold (weather)", "vocab": ["hace-frio"] },
+    { "id": "d029-16", "type": "dictation", "es": "llueve", "hint": "it's raining (ll)", "vocab": ["llueve"] },
+    { "id": "d029-17", "type": "dictation", "es": "el paraguas", "hint": "umbrella", "vocab": ["paraguas"] },
+    { "id": "d029-18", "type": "build-sentence", "es": "¿Qué tiempo hace hoy en Madrid?", "en": "What's the weather like in Madrid today?", "distractors": ["hora", "es"], "vocab": ["que-tiempo-hace", "hoy"] },
+    { "id": "d029-19", "type": "build-sentence", "es": "Hace viento y está nublado.", "en": "It's windy and cloudy.", "distractors": ["es", "sol"], "vocab": ["hace-viento", "esta-nublado"] },
+    { "id": "d029-20", "type": "build-sentence", "direction": "audio-to-es", "es": "Nieva y hay un grado bajo cero.", "en": "It's snowing and it's minus one degree.", "distractors": ["llueve"], "vocab": ["nieva", "grados", "bajo-cero"] },
+    { "id": "d029-21", "type": "repeat", "es": "¿Qué tiempo hace? Hace sol, pero hace frío.", "en": "What's the weather like? It's sunny, but cold.", "vocab": ["que-tiempo-hace", "hace-sol", "hace-frio"] },
+    { "id": "d029-22", "type": "shadow", "es": "Llueve y hace viento.", "en": "It's raining and windy.", "listenFor": "ll like the y in yes, and the soft b of the v in llueve and viento.", "vocab": ["llueve", "hace-viento"] },
+    { "id": "d029-23", "type": "fill-blank", "prompt": "Review: colours.", "es": "Un paraguas {{negro}}.", "en": "A black umbrella.", "options": ["negro", "negra"], "vocab": ["negro", "paraguas"] },
+    { "id": "d029-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Quería una bufanda azul y unos guantes grises.", "en": "I'd like a blue scarf and some grey gloves.", "vocab": ["bufanda", "azul", "guantes", "gris"] }
+  ]
+}

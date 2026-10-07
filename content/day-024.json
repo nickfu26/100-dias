@@ -1,0 +1,62 @@
+{
+  "$schema": "./schema.json",
+  "day": 24,
+  "level": 2,
+  "title": { "en": "Around town", "es": "En la ciudad" },
+  "objectives": [
+    "Name the places you'll look for in Madrid",
+    "Ask where the toilets are",
+    "Combine places with hay, está and opening times"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**Places you'll need**\n\n- **el museo**: museum (*el Museo del Prado*)\n- **la estación**: station (*la estación de Atocha*)\n- **el aeropuerto**: airport (*Barajas*)\n- **el restaurante**, **el bar**\n- **la tienda**: shop\n- **el supermercado**: supermarket\n- **el banco**: bank\n\nMany are close to English. Watch the gender: *la* estación, *la* tienda."
+    },
+    { "kind": "phrase", "es": "¿Hay una farmacia cerca?", "en": "Is there a pharmacy nearby?", "note": "Look for the green cross. At night, one farmacia de guardia per area stays open; the address is posted on the door of the others." },
+    { "kind": "phrase", "es": "¿Dónde están los aseos?", "en": "Where are the toilets?", "note": "Los aseos (always plural) is what signs and waiters say. El baño is also fine and very common. Están is plural, because aseos is." },
+    { "kind": "phrase", "es": "El museo está cerca de la estación.", "en": "The museum is near the station.", "note": "True for the Prado: it's a short walk from Atocha." },
+    {
+      "kind": "note",
+      "md": "Words ending in **-ión** are feminine and lose the accent in the plural: *la estación* → *las estaciones*. You've seen this already with *la ración*."
+    }
+  ],
+  "vocab": [
+    { "id": "museo", "es": "el museo", "en": "museum", "pos": "noun", "gender": "m", "ipa": "muˈseo", "tags": ["madrid"] },
+    { "id": "estacion", "es": "la estación", "en": "station", "pos": "noun", "gender": "f", "ipa": "estaˈθjon", "tags": ["transport"] },
+    { "id": "aeropuerto", "es": "el aeropuerto", "en": "airport", "pos": "noun", "gender": "m", "ipa": "aeɾoˈpweɾto", "tags": ["transport"] },
+    { "id": "farmacia", "es": "la farmacia", "en": "pharmacy", "pos": "noun", "gender": "f", "ipa": "faɾˈmaθja", "note": "Farmacia de guardia = the duty pharmacy open at night.", "tags": ["survival"] },
+    { "id": "restaurante", "es": "el restaurante", "en": "restaurant", "pos": "noun", "gender": "m", "ipa": "restawˈɾante", "tags": ["restaurant"] },
+    { "id": "bar", "es": "el bar", "en": "bar, café-bar", "pos": "noun", "gender": "m", "ipa": "ˈbaɾ", "note": "A Spanish bar serves coffee and breakfast too.", "tags": ["restaurant"] },
+    { "id": "tienda", "es": "la tienda", "en": "shop", "pos": "noun", "gender": "f", "ipa": "ˈtjenda", "tags": ["shopping"] },
+    { "id": "supermercado", "es": "el supermercado", "en": "supermarket", "pos": "noun", "gender": "m", "ipa": "supeɾmeɾˈkaðo", "tags": ["shopping"] },
+    { "id": "banco", "es": "el banco", "en": "bank; bench", "pos": "noun", "gender": "m", "ipa": "ˈbaŋko" },
+    { "id": "aseos", "es": "los aseos, el baño", "en": "the toilets, the bathroom", "pos": "noun", "gender": "m", "ipa": "aˈseos, ˈbaɲo", "note": "¿Dónde están los aseos? / ¿Dónde está el baño?", "tags": ["survival"] }
+  ],
+  "exercises": [
+    { "id": "d024-01", "type": "listen-choose", "audio": "la estación", "options": ["la estación", "la ración", "la ensalada"], "answer": 0, "vocab": ["estacion"] },
+    { "id": "d024-02", "type": "listen-choose", "audio": "la tienda", "options": ["la tienda", "la tapa", "tiene"], "answer": 0, "vocab": ["tienda"] },
+    { "id": "d024-03", "type": "listen-choose", "audio": "los aseos", "options": ["los aseos", "las aceitunas", "los amigos"], "answer": 0, "vocab": ["aseos"] },
+    { "id": "d024-04", "type": "match-pairs", "pairs": [["el museo", "museum"], ["la estación", "station"], ["el aeropuerto", "airport"], ["la farmacia", "pharmacy"], ["el banco", "bank"]], "vocab": ["museo", "estacion", "aeropuerto", "farmacia", "banco"] },
+    { "id": "d024-05", "type": "match-pairs", "pairs": [["la tienda", "shop"], ["el supermercado", "supermarket"], ["el restaurante", "restaurant"], ["los aseos", "toilets"]], "vocab": ["tienda", "supermercado", "restaurante", "aseos"] },
+    { "id": "d024-06", "type": "fill-blank", "es": "{{La}} estación de Atocha.", "en": "Atocha station.", "options": ["La", "El"], "prompt": "-ión words are feminine.", "vocab": ["estacion", "la-the"] },
+    { "id": "d024-07", "type": "fill-blank", "es": "¿Dónde {{están}} los aseos?", "en": "Where are the toilets?", "options": ["están", "está"], "prompt": "aseos is plural.", "vocab": ["donde-esta", "aseos"] },
+    { "id": "d024-08", "type": "fill-blank", "es": "¿{{Hay}} una farmacia cerca?", "en": "Is there a pharmacy nearby?", "options": ["Hay", "Está"], "vocab": ["hay-q", "farmacia", "cerca"] },
+    { "id": "d024-09", "type": "fill-blank", "es": "El {{museo}} abre a las diez.", "en": "The museum opens at ten.", "options": ["museo", "aeropuerto", "banco"], "vocab": ["museo", "abre"] },
+    { "id": "d024-10", "type": "fill-blank", "es": "La tienda {{cierra}} a mediodía.", "en": "The shop closes at midday.", "options": ["cierra", "abre", "está"], "vocab": ["tienda", "cierra", "mediodia"] },
+    { "id": "d024-11", "type": "listen-choose", "prompt": "What is he looking for?", "audio": "Perdón, ¿hay un supermercado cerca?", "optionsLang": "en", "options": ["A supermarket", "A pharmacy", "A bank"], "answer": 0, "vocab": ["supermercado", "cerca"] },
+    { "id": "d024-12", "type": "listen-choose", "prompt": "Where is the restaurant?", "audio": "El restaurante está cerca del museo.", "optionsLang": "en", "options": ["Near the museum", "Far from the museum", "Inside the museum"], "answer": 0, "vocab": ["restaurante", "esta", "cerca", "museo"] },
+    { "id": "d024-13", "type": "listen-choose", "prompt": "Is the airport close?", "audio": "El aeropuerto está lejos del centro.", "optionsLang": "en", "options": ["No, it's far from the centre", "Yes, it's in the centre", "Yes, it's near the centre"], "answer": 0, "vocab": ["aeropuerto", "lejos", "centro"] },
+    { "id": "d024-14", "type": "listen-choose", "prompt": "Is the pharmacy open?", "audio": "La farmacia está cerrada. Abre a las cinco.", "optionsLang": "en", "options": ["No, it opens at five", "Yes, until five", "No, it's closed all day"], "answer": 0, "vocab": ["farmacia", "cerrado", "abre"] },
+    { "id": "d024-15", "type": "dictation", "es": "la farmacia", "hint": "pharmacy", "vocab": ["farmacia"] },
+    { "id": "d024-16", "type": "dictation", "es": "el museo", "hint": "museum", "vocab": ["museo"] },
+    { "id": "d024-17", "type": "dictation", "es": "la estación", "hint": "station (accent on the o)", "vocab": ["estacion"] },
+    { "id": "d024-18", "type": "build-sentence", "es": "Perdón, ¿dónde están los aseos?", "en": "Excuse me, where are the toilets?", "distractors": ["está", "hay"], "vocab": ["perdon", "donde-esta", "aseos"] },
+    { "id": "d024-19", "type": "build-sentence", "es": "¿Hay un bar cerca de la estación?", "en": "Is there a bar near the station?", "distractors": ["lejos", "el"], "vocab": ["hay-q", "bar", "cerca", "estacion"] },
+    { "id": "d024-20", "type": "build-sentence", "direction": "audio-to-es", "es": "El banco está allí, cerca de la tienda.", "en": "The bank is over there, near the shop.", "distractors": ["hay"], "vocab": ["banco", "esta", "alli", "cerca", "tienda"] },
+    { "id": "d024-21", "type": "repeat", "es": "¿Hay una farmacia cerca?", "en": "Is there a pharmacy nearby?", "vocab": ["hay-q", "farmacia", "cerca"] },
+    { "id": "d024-22", "type": "shadow", "es": "el aeropuerto", "en": "the airport", "listenFor": "Every vowel said separately: a-e-ro-PUER-to. Don't merge the a and e.", "vocab": ["aeropuerto"] },
+    { "id": "d024-23", "type": "fill-blank", "prompt": "Review: hay or está?", "es": "¿Dónde {{está}} el hotel?", "en": "Where is the hotel?", "options": ["está", "hay"], "vocab": ["donde-esta", "hotel"] },
+    { "id": "d024-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Estoy en la plaza. ¿Dónde estás?", "en": "I'm in the square. Where are you?", "vocab": ["estoy", "plaza", "estas"] }
+  ]
+}

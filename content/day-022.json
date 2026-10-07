@@ -1,0 +1,74 @@
+{
+  "$schema": "./schema.json",
+  "day": 22,
+  "level": 2,
+  "title": { "en": "At what time?", "es": "¿A qué hora?" },
+  "objectives": [
+    "Ask and say when something happens: ¿A qué hora…? A las…",
+    "Use de la mañana, de la tarde, de la noche and mediodía",
+    "Turn 24-hour times like 20:30 into spoken Spanish",
+    "Know Madrid's meal times and the midday closing of small shops"
+  ],
+  "teach": [
+    { "kind": "phrase", "es": "¿A qué hora abre?", "en": "What time does it open?", "note": "a = at. ¿Qué hora es? asks the time now; ¿A qué hora…? asks when." },
+    { "kind": "phrase", "es": "A la una. A las ocho.", "en": "At one. At eight.", "note": "Same pattern as yesterday, with a in front: a la una, a las dos, a las tres y media." },
+    {
+      "kind": "note",
+      "md": "**Parts of the day.** Spoken Spanish uses the 12-hour clock plus a part of the day:\n\n- **de la mañana**: morning, until lunch (*las nueve de la mañana* = 09:00)\n- **el mediodía**: midday, 12:00 (*las doce del mediodía*)\n- **de la tarde**: afternoon *and* early evening, roughly until 20:00 or 21:00 (*las ocho de la tarde* = 20:00)\n- **de la noche**: night, from about 21:00 (*las diez de la noche* = 22:00)\n\nSpanish *tarde* runs later than English *afternoon*: 19:00 is still *de la tarde*.\n\nIn Spain, *a mediodía* often just means *at lunchtime*, which is about 14:00."
+    },
+    {
+      "kind": "note",
+      "md": "**From the timetable to speech.** Take off 12, then add the part of the day:\n\n- **20:30** → *las ocho y media de la tarde*\n- **22:00** → *las diez de la noche*\n- **09:15** → *las nueve y cuarto de la mañana*\n- **13:45** → *las dos menos cuarto de la tarde*\n\nAnnouncements still read 20:30 as *las veinte treinta*, so you need both."
+    },
+    {
+      "kind": "note",
+      "md": "**Madrid meal times are late.**\n\n- **el desayuno** (breakfast): 8:00–10:00, light, often coffee and toast\n- **la comida** (lunch, the main meal): about **14:00–15:30**\n- **la cena** (dinner): **21:00–22:30**\n\n*La comida* also just means *food*. Restaurants in the centre often serve lunch from 13:00 and dinner from 20:00, but a full dining room at 19:00 is rare."
+    },
+    {
+      "kind": "note",
+      "md": "**Opening hours** (*el horario*). Many small, independent shops close at midday. A sign on the door might say:\n\n**Horario: 10:00–14:00 y 17:00–20:30**\n**Cerrado de 14:00 a 17:00**\n\n*de … a …* = *from … to …*. Spoken: *de dos a cinco*.\n\nBig department stores, chains, most supermarkets in the centre and the big museums **don't close at midday**. Their signs may say *horario continuo* (open straight through). Museums have one closing day a week, though: the Reina Sofía, for example, closes on Tuesdays. Check before you go."
+    },
+    { "kind": "phrase", "es": "Cerrado de dos a cinco.", "en": "Closed from two to five.", "note": "On door signs you'll see ABIERTO (open) and CERRADO (closed). Come back after five." }
+  ],
+  "vocab": [
+    { "id": "a-que-hora", "es": "¿A qué hora…?", "en": "At what time…?", "pos": "phrase", "ipa": "a ˈke ˈoɾa", "tags": ["survival"] },
+    { "id": "a-las", "es": "a la una, a las…", "en": "at one, at … o'clock", "pos": "phrase", "ipa": "a la ˈuna, a las" },
+    { "id": "de-la-manana", "es": "de la mañana", "en": "in the morning (a.m.)", "pos": "phrase", "ipa": "de la maˈɲana" },
+    { "id": "mediodia", "es": "el mediodía", "en": "midday, noon; lunchtime", "pos": "noun", "gender": "m", "ipa": "meðjoˈðia", "note": "Las doce del mediodía = 12:00. A mediodía often means around lunch (14:00)." },
+    { "id": "de-la-tarde", "es": "de la tarde", "en": "in the afternoon / early evening (p.m.)", "pos": "phrase", "ipa": "de la ˈtaɾðe", "note": "Until about 20:00–21:00." },
+    { "id": "de-la-noche", "es": "de la noche", "en": "at night (p.m.)", "pos": "phrase", "ipa": "de la ˈnotʃe", "note": "From about 21:00." },
+    { "id": "desayuno", "es": "el desayuno", "en": "breakfast", "pos": "noun", "gender": "m", "ipa": "desaˈʝuno", "tags": ["restaurant"] },
+    { "id": "comida", "es": "la comida", "en": "lunch; food", "pos": "noun", "gender": "f", "ipa": "koˈmiða", "note": "Spain's main meal, about 14:00.", "tags": ["restaurant"] },
+    { "id": "abre", "es": "abre", "en": "it opens", "pos": "verb", "ipa": "ˈaβɾe", "tags": ["shopping"] },
+    { "id": "cierra", "es": "cierra", "en": "it closes", "pos": "verb", "ipa": "ˈθjera", "tags": ["shopping"] },
+    { "id": "abierto", "es": "abierto, abierta", "en": "open", "pos": "adj", "ipa": "aˈβjeɾto, aˈβjeɾta", "note": "On a door sign: ABIERTO.", "tags": ["shopping"] },
+    { "id": "cerrado", "es": "cerrado, cerrada", "en": "closed", "pos": "adj", "ipa": "θeˈraðo, θeˈraða", "note": "On a door sign: CERRADO.", "tags": ["shopping"] },
+    { "id": "horario", "es": "el horario", "en": "opening hours; timetable", "pos": "noun", "gender": "m", "ipa": "oˈɾaɾjo", "note": "Horario continuo = open all day, no midday break.", "tags": ["shopping", "transport"] }
+  ],
+  "exercises": [
+    { "id": "d022-01", "type": "listen-choose", "audio": "de la tarde", "options": ["de la tarde", "de la noche", "de la mañana"], "answer": 0, "vocab": ["de-la-tarde"] },
+    { "id": "d022-02", "type": "listen-choose", "audio": "cierra", "options": ["cierra", "cena", "cerrado"], "answer": 0, "vocab": ["cierra"] },
+    { "id": "d022-03", "type": "match-pairs", "pairs": [["el desayuno", "breakfast"], ["la comida", "lunch"], ["la cena", "dinner"], ["el mediodía", "midday"], ["el horario", "opening hours"]], "vocab": ["desayuno", "comida", "cena", "mediodia", "horario"] },
+    { "id": "d022-04", "type": "match-pairs", "pairs": [["abre", "it opens"], ["cierra", "it closes"], ["abierto", "open"], ["cerrado", "closed"]], "vocab": ["abre", "cierra", "abierto", "cerrado"] },
+    { "id": "d022-05", "type": "listen-choose", "prompt": "Which 24-hour time is this?", "audio": "a las ocho y media de la tarde", "optionsLang": "en", "options": ["20:30", "08:30", "18:30"], "answer": 0, "vocab": ["a-las", "y-media", "de-la-tarde"] },
+    { "id": "d022-06", "type": "listen-choose", "prompt": "Which 24-hour time is this?", "audio": "a las diez de la noche", "optionsLang": "en", "options": ["10:00", "20:00", "22:00"], "answer": 2, "vocab": ["a-las", "de-la-noche"] },
+    { "id": "d022-07", "type": "listen-choose", "prompt": "Which 24-hour time is this?", "audio": "a las nueve y cuarto de la mañana", "optionsLang": "en", "options": ["09:15", "21:15", "08:45"], "answer": 0, "vocab": ["a-las", "y-cuarto", "de-la-manana"] },
+    { "id": "d022-08", "type": "listen-choose", "prompt": "Which 24-hour time is this?", "audio": "a las dos menos cuarto de la tarde", "optionsLang": "en", "options": ["14:15", "13:45", "02:45"], "answer": 1, "vocab": ["a-las", "menos-cuarto", "de-la-tarde"] },
+    { "id": "d022-09", "type": "fill-blank", "es": "Las ocho y media de la {{tarde}}.", "en": "8:30 p.m. (20:30).", "options": ["tarde", "mañana", "noche"], "prompt": "In Spain, 20:30 is still tarde.", "vocab": ["de-la-tarde", "y-media"] },
+    { "id": "d022-10", "type": "fill-blank", "es": "Las once de la {{noche}}.", "en": "11 p.m. (23:00).", "options": ["noche", "tarde", "mañana"], "vocab": ["de-la-noche", "once"] },
+    { "id": "d022-11", "type": "fill-blank", "es": "¿A qué hora {{abre}}?", "en": "What time does it open?", "options": ["abre", "abierto", "es"], "vocab": ["a-que-hora", "abre"] },
+    { "id": "d022-12", "type": "fill-blank", "es": "Cierra {{a}} las dos.", "en": "It closes at two.", "options": ["a", "de", "en"], "vocab": ["cierra", "a-las"] },
+    { "id": "d022-13", "type": "fill-blank", "es": "Cerrado {{de}} dos a cinco.", "en": "Closed from two to five.", "options": ["de", "a", "en"], "vocab": ["cerrado"] },
+    { "id": "d022-14", "type": "listen-choose", "prompt": "When is the shop closed?", "audio": "Cerrado de dos a cinco.", "optionsLang": "en", "options": ["14:00–17:00", "02:00–05:00", "12:00–15:00"], "answer": 0, "vocab": ["cerrado"] },
+    { "id": "d022-15", "type": "listen-choose", "prompt": "When is lunch?", "audio": "La comida es a las dos y media.", "optionsLang": "en", "options": ["14:30", "12:30", "13:30"], "answer": 0, "vocab": ["comida", "y-media"] },
+    { "id": "d022-16", "type": "listen-choose", "prompt": "Does the museum close at midday?", "audio": "No cierra a mediodía. Horario continuo.", "optionsLang": "en", "options": ["No, it's open all day", "Yes, at 14:00", "It's closed today"], "answer": 0, "vocab": ["cierra", "mediodia", "horario"] },
+    { "id": "d022-17", "type": "dictation", "es": "cerrado", "hint": "closed (double r)", "vocab": ["cerrado"] },
+    { "id": "d022-18", "type": "dictation", "es": "el desayuno", "hint": "breakfast", "vocab": ["desayuno"] },
+    { "id": "d022-19", "type": "dictation", "es": "de la noche", "hint": "at night", "vocab": ["de-la-noche"] },
+    { "id": "d022-20", "type": "build-sentence", "es": "¿A qué hora es la cena?", "en": "What time is dinner?", "distractors": ["las", "comida"], "vocab": ["a-que-hora", "cena"] },
+    { "id": "d022-21", "type": "build-sentence", "direction": "audio-to-es", "es": "Abre a las diez de la mañana.", "en": "It opens at ten in the morning.", "distractors": ["cierra", "tarde"], "vocab": ["abre", "a-las", "de-la-manana"] },
+    { "id": "d022-22", "type": "repeat", "es": "Perdón, ¿a qué hora cierra?", "en": "Excuse me, what time do you close?", "vocab": ["perdon", "a-que-hora", "cierra"] },
+    { "id": "d022-23", "type": "shadow", "es": "Cierra a mediodía.", "en": "It closes at midday.", "listenFor": "The rolled rr in cierra, θ at its start, and the soft d sounds in mediodía.", "vocab": ["cierra", "mediodia"] },
+    { "id": "d022-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Son las ocho menos cuarto.", "en": "It's quarter to eight.", "vocab": ["son-las", "menos-cuarto"] }
+  ]
+}

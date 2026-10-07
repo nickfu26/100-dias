@@ -1,0 +1,65 @@
+{
+  "$schema": "./schema.json",
+  "day": 21,
+  "level": 2,
+  "title": { "en": "What time is it?", "es": "¿Qué hora es?" },
+  "objectives": [
+    "Ask the time and answer with es la una and son las…",
+    "Add y cuarto, y media, menos cuarto and en punto",
+    "Read a 24-hour time aloud the way timetables and announcements do"
+  ],
+  "teach": [
+    { "kind": "phrase", "es": "¿Qué hora es?", "en": "What time is it?", "note": "Literally 'What hour is it?'. To a stranger, start with perdón." },
+    {
+      "kind": "note",
+      "md": "**Es la una, son las dos.** The hour is feminine because it stands for *la hora*:\n\n- 1:00 → **Es la una.** (singular: one hour)\n- 2:00 → **Son las dos.**\n- 3:00 → **Son las tres.** …and so on up to *las doce*."
+    },
+    { "kind": "phrase", "es": "Son las tres en punto.", "en": "It's three o'clock exactly.", "note": "en punto = on the dot. Usually you just say Son las tres." },
+    {
+      "kind": "note",
+      "md": "**Past and to the hour**\n\n- **y cuarto**: quarter past (*las dos y cuarto* = 2:15)\n- **y media**: half past (*las dos y media* = 2:30)\n- **menos cuarto**: quarter to (*las tres menos cuarto* = 2:45)\n\nOther minutes use **y** and **menos** the same way: *las dos y diez* (2:10), *las tres menos veinte* (2:40). Spoken time counts from the *next* hour after half past: 2:45 is *three minus a quarter*."
+    },
+    { "kind": "phrase", "es": "Es la una y media.", "en": "It's half past one.", "note": "Still es la una, even with minutes added." },
+    {
+      "kind": "note",
+      "md": "**The 24-hour clock.** Spanish timetables, train tickets, museum signs and opening hours are written in 24-hour time: **20:30**, **17:45**.\n\nStation and airport announcements read them out as plain numbers: **las veinte treinta**, **las diecisiete cuarenta y cinco**. No *y media* or *menos cuarto*, just hours then minutes.\n\nIn conversation, people turn them back into the 12-hour clock: 20:30 becomes *las ocho y media*. You'll add *de la tarde* tomorrow."
+    },
+    { "kind": "phrase", "es": "las veinte treinta", "en": "20:30 (read aloud)", "note": "On a ticket, a timetable or a departures board." }
+  ],
+  "vocab": [
+    { "id": "que-hora-es", "es": "¿Qué hora es?", "en": "What time is it?", "pos": "phrase", "ipa": "ˈke ˈoɾa ˈes", "note": "The h in hora is silent.", "tags": ["survival"] },
+    { "id": "es-la-una", "es": "es la una", "en": "it's one o'clock", "pos": "phrase", "ipa": "ˈes la ˈuna", "note": "Singular only for one o'clock." },
+    { "id": "son-las", "es": "son las…", "en": "it's … o'clock (2–12)", "pos": "phrase", "ipa": "ˈson las", "note": "Son las dos, son las tres…" },
+    { "id": "y-cuarto", "es": "y cuarto", "en": "quarter past", "pos": "phrase", "ipa": "i ˈkwaɾto" },
+    { "id": "y-media", "es": "y media", "en": "half past", "pos": "phrase", "ipa": "i ˈmeðja" },
+    { "id": "menos-cuarto", "es": "menos cuarto", "en": "quarter to", "pos": "phrase", "ipa": "ˈmenos ˈkwaɾto", "note": "Las tres menos cuarto = 2:45. Count from the next hour." },
+    { "id": "en-punto", "es": "en punto", "en": "o'clock exactly, on the dot", "pos": "phrase", "ipa": "em ˈpunto" },
+    { "id": "hora-24", "es": "las veinte treinta", "en": "20:30 (24-hour time read aloud)", "pos": "phrase", "ipa": "las ˈbeinte ˈtɾeinta", "note": "Timetables and announcements: hours, then minutes.", "tags": ["transport"] }
+  ],
+  "exercises": [
+    { "id": "d021-01", "type": "listen-choose", "audio": "¿Qué hora es?", "options": ["¿Qué hora es?", "¿Qué tal?", "¿Cuánto es?"], "answer": 0, "vocab": ["que-hora-es"] },
+    { "id": "d021-02", "type": "listen-choose", "prompt": "What time is it?", "audio": "Son las tres y media.", "optionsLang": "en", "options": ["3:30", "3:15", "2:30"], "answer": 0, "vocab": ["son-las", "y-media", "tres"] },
+    { "id": "d021-03", "type": "listen-choose", "prompt": "What time is it?", "audio": "Son las cinco y cuarto.", "optionsLang": "en", "options": ["5:45", "5:15", "4:45"], "answer": 1, "vocab": ["son-las", "y-cuarto", "cinco"] },
+    { "id": "d021-04", "type": "listen-choose", "prompt": "What time is it?", "audio": "Son las nueve menos cuarto.", "optionsLang": "en", "options": ["9:15", "9:45", "8:45"], "answer": 2, "vocab": ["son-las", "menos-cuarto", "nueve"] },
+    { "id": "d021-05", "type": "listen-choose", "prompt": "What time is it?", "audio": "Es la una en punto.", "optionsLang": "en", "options": ["1:00", "11:00", "1:30"], "answer": 0, "vocab": ["es-la-una", "en-punto"] },
+    { "id": "d021-06", "type": "match-pairs", "pairs": [["y cuarto", "quarter past"], ["y media", "half past"], ["menos cuarto", "quarter to"], ["en punto", "o'clock exactly"]], "vocab": ["y-cuarto", "y-media", "menos-cuarto", "en-punto"] },
+    { "id": "d021-07", "type": "match-pairs", "pairs": [["las dos y cuarto", "2:15"], ["las dos y media", "2:30"], ["las tres menos cuarto", "2:45"], ["las tres en punto", "3:00"]], "prompt": "All between 2 and 3.", "vocab": ["y-cuarto", "y-media", "menos-cuarto", "en-punto"] },
+    { "id": "d021-08", "type": "fill-blank", "es": "{{Es}} la una.", "en": "It's one o'clock.", "options": ["Es", "Son"], "vocab": ["es-la-una"] },
+    { "id": "d021-09", "type": "fill-blank", "es": "{{Son}} las cuatro.", "en": "It's four o'clock.", "options": ["Son", "Es"], "vocab": ["son-las", "cuatro"] },
+    { "id": "d021-10", "type": "fill-blank", "es": "Son las seis y {{media}}.", "en": "It's half past six.", "options": ["media", "cuarto", "punto"], "vocab": ["y-media", "seis"] },
+    { "id": "d021-11", "type": "fill-blank", "es": "Son las ocho {{menos}} cuarto.", "en": "It's quarter to eight.", "options": ["menos", "y", "en"], "prompt": "7:45", "vocab": ["menos-cuarto", "ocho"] },
+    { "id": "d021-12", "type": "fill-blank", "es": "Son las once y {{cuarto}}.", "en": "It's quarter past eleven.", "options": ["cuarto", "media", "punto"], "vocab": ["y-cuarto", "once"] },
+    { "id": "d021-13", "type": "listen-choose", "prompt": "The announcement gives a 24-hour time. Which?", "audio": "las veinte treinta", "optionsLang": "en", "options": ["20:30", "22:30", "20:13"], "answer": 0, "vocab": ["hora-24", "veinte", "treinta"] },
+    { "id": "d021-14", "type": "listen-choose", "prompt": "The announcement gives a 24-hour time. Which?", "audio": "las diecisiete cuarenta y cinco", "optionsLang": "en", "options": ["17:45", "7:45", "16:45"], "answer": 0, "vocab": ["hora-24", "diecisiete", "cuarenta"] },
+    { "id": "d021-15", "type": "listen-choose", "prompt": "The announcement gives a 24-hour time. Which?", "audio": "las trece quince", "optionsLang": "en", "options": ["13:15", "3:15", "13:50"], "answer": 0, "vocab": ["hora-24", "trece", "quince"] },
+    { "id": "d021-16", "type": "dictation", "es": "¿Qué hora es?", "hint": "What time is it? (silent h)", "vocab": ["que-hora-es"] },
+    { "id": "d021-17", "type": "dictation", "es": "y media", "hint": "half past", "vocab": ["y-media"] },
+    { "id": "d021-18", "type": "dictation", "es": "las veinte treinta", "hint": "20:30, as an announcer says it", "vocab": ["hora-24"] },
+    { "id": "d021-19", "type": "build-sentence", "es": "Son las dos y media.", "en": "It's half past two.", "distractors": ["Es", "la"], "vocab": ["son-las", "y-media", "dos"] },
+    { "id": "d021-20", "type": "build-sentence", "direction": "audio-to-es", "es": "Perdón, ¿qué hora es? Es la una y cuarto.", "en": "Excuse me, what time is it? It's quarter past one.", "distractors": ["Son", "las"], "vocab": ["perdon", "que-hora-es", "es-la-una", "y-cuarto"] },
+    { "id": "d021-21", "type": "repeat", "es": "Son las diez menos cuarto.", "en": "It's quarter to ten.", "vocab": ["son-las", "menos-cuarto"] },
+    { "id": "d021-22", "type": "shadow", "es": "¿Qué hora es? Son las doce en punto.", "en": "What time is it? It's twelve o'clock.", "listenFor": "Silent h in hora, and en punto said as em-punto: the n turns into m before p.", "vocab": ["que-hora-es", "en-punto"] },
+    { "id": "d021-23", "type": "listen-choose", "prompt": "Review: which day?", "audio": "el miércoles trece de enero", "optionsLang": "en", "options": ["Wednesday 13 January", "Tuesday 13 January", "Wednesday 30 January"], "answer": 0, "vocab": ["miercoles", "fecha"] },
+    { "id": "d021-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "Tengo frío. ¿Quieres un café?", "en": "I'm cold. Do you want a coffee?", "vocab": ["tengo-frio", "quieres-q"] }
+  ]
+}

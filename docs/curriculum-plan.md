@@ -2,7 +2,7 @@
 
 Status: **approved 2026-10-07.** Level 2 is written in batches of 5 days. Days 1–10 and checkpoint 1 stay as they are.
 
-Decisions: two lessons per trip day; light days on 24–25 Dec are fine; nationality stays generic (the learner lives in the US, so the tax-free lesson stays).
+Decisions: two lessons per trip day; light days on 24–25 Dec are fine; nationality stays generic (the learner lives in the US, so the tax-free lesson stays). Batch 2 narrowings approved (only some of 21–29 and two months get cards). Age (*¿Cuántos años tienes? / Tengo … años*) gets a card when *años* arrives on day 34. Telling time teaches spoken time and the 24-hour clock used on timetables.
 
 **Trip:** Madrid Wed 13 – Sun 17 Jan 2027, then fly Barajas → Marrakesh on Sun 17 (Marrakesh 17–21 Jan).
 **Calendar:** Día 1 = Thu 1 Oct 2026, so Día 100 = Fri 8 Jan 2027 and "Antes del viaje" runs 9–12 Jan.
@@ -41,7 +41,7 @@ How to read the tables:
 | 31 | Oct 31 | Can I…? / *¿Puedo…?* | Core verbs: **poder**, **necesitar** | puedo, puede, ¿Se puede…?, necesito, usted (formal you) |
 | 32 | Nov 1 | Body and feelings / *El cuerpo* | Body + estar for states | la cabeza, la garganta, el estómago, la espalda, la mano, el pie, me duele(n), estoy cansado/a, estoy enfermo/a |
 | 33 | Nov 2 | Regular -ar verbs / *Verbos en -ar* | Core verbs | hablar, buscar, llegar, tomar, pagar, trabajar (present forms), ¿Hablas inglés? |
-| 34 | Nov 3 | Question words / *Las preguntas* | Questions | qué, dónde, cuándo, cuánto/a/os/as, cómo, cuál, quién, por qué |
+| 34 | Nov 3 | Question words / *Las preguntas* | Questions | qué, dónde, cuándo, cuánto/a/os/as, cómo, cuál, quién, por qué, el año, ¿Cuántos años tienes? / Tengo … años |
 | 35 | Nov 4 | Level 2 review / *Repaso del nivel dos* | Review → **checkpoint 2** | none (review only) |
 
 ---

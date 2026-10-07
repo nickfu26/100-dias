@@ -1,0 +1,75 @@
+{
+  "$schema": "./schema.json",
+  "day": 23,
+  "level": 2,
+  "title": { "en": "Where is it?", "es": "¿Dónde está?" },
+  "objectives": [
+    "Use estoy, estás and está to say where someone or something is",
+    "Ask ¿Dónde está…?",
+    "Say aquí, allí, cerca and lejos",
+    "Choose between hay and está"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**estar** is the second *to be*. On day 11, **ser** said *who* you are and *where you're from*. **estar** says *where* someone or something **is right now**:\n\n- *Soy de Estados Unidos.* (origin: ser)\n- *Estoy en Madrid.* (location: estar)"
+    },
+    {
+      "kind": "conjugation",
+      "verb": "estar",
+      "verbEn": "to be (location, state)",
+      "tense": "present",
+      "forms": {
+        "yo": "estoy",
+        "tu": "estás",
+        "el": "está",
+        "nosotros": "estamos",
+        "vosotros": "estáis",
+        "ellos": "están"
+      }
+    },
+    { "kind": "phrase", "es": "¿Dónde está el hotel?", "en": "Where is the hotel?", "note": "The most useful question in a new city. For plurals: ¿Dónde están…?" },
+    { "kind": "phrase", "es": "Está allí.", "en": "It's over there.", "note": "aquí = here, allí = there (further away). You'll also hear ahí: there, near you." },
+    { "kind": "phrase", "es": "Está cerca. No está lejos.", "en": "It's close. It isn't far.", "note": "Add de for 'near to' or 'far from': cerca del hotel, lejos de la plaza. de + el becomes del." },
+    {
+      "kind": "note",
+      "md": "**hay or está?**\n\n- **hay** says something *exists* somewhere. It goes with *un, una* or no article: *¿Hay un bar cerca?* = Is there a bar nearby?\n- **está** says where a *specific* thing is. It goes with *el, la*: *¿Dónde está el bar?* = Where is the bar?\n\nThink: *hay* to find one, *está* to find *the* one."
+    }
+  ],
+  "vocab": [
+    { "id": "estar", "es": "estar", "en": "to be (location, how something is)", "pos": "verb", "ipa": "esˈtaɾ", "note": "ser for who and where from, estar for where now." },
+    { "id": "estoy", "es": "estoy", "en": "I am (location)", "pos": "verb", "ipa": "esˈtoi" },
+    { "id": "estas", "es": "estás", "en": "you are (location)", "pos": "verb", "ipa": "esˈtas", "note": "Informal tú. With usted: está." },
+    { "id": "esta", "es": "está", "en": "he / she / it is; you are (usted)", "pos": "verb", "ipa": "esˈta", "note": "With the accent. Without it, esta means this." },
+    { "id": "donde-esta", "es": "¿Dónde está…?", "en": "Where is…?", "pos": "phrase", "ipa": "ˈdonde esˈta", "note": "Plural: ¿Dónde están…?", "tags": ["survival", "directions"] },
+    { "id": "alli", "es": "allí", "en": "there, over there", "pos": "adv", "ipa": "aˈʝi", "tags": ["directions"] },
+    { "id": "cerca", "es": "cerca", "en": "near, close", "pos": "adv", "ipa": "ˈθeɾka", "note": "cerca de = near to.", "tags": ["directions"] },
+    { "id": "lejos", "es": "lejos", "en": "far", "pos": "adv", "ipa": "ˈlexos", "note": "lejos de = far from.", "tags": ["directions"] }
+  ],
+  "exercises": [
+    { "id": "d023-01", "type": "listen-choose", "audio": "estoy", "options": ["estoy", "está", "estás"], "answer": 0, "vocab": ["estoy"] },
+    { "id": "d023-02", "type": "listen-choose", "audio": "lejos", "options": ["lejos", "cerca", "allí"], "answer": 0, "vocab": ["lejos"] },
+    { "id": "d023-03", "type": "listen-choose", "audio": "¿Dónde está?", "options": ["¿Dónde está?", "¿De dónde eres?", "¿Dónde estás?"], "answer": 0, "vocab": ["donde-esta"] },
+    { "id": "d023-04", "type": "match-pairs", "pairs": [["estoy", "I am"], ["estás", "you are"], ["está", "it is"], ["aquí", "here"], ["allí", "there"]], "vocab": ["estoy", "estas", "esta", "aqui", "alli"] },
+    { "id": "d023-05", "type": "match-pairs", "pairs": [["cerca", "near"], ["lejos", "far"], ["soy de", "I'm from"], ["estoy en", "I'm in"]], "prompt": "ser or estar?", "vocab": ["cerca", "lejos", "soy-de", "estoy"] },
+    { "id": "d023-06", "type": "fill-blank", "es": "Yo {{estoy}} en Madrid.", "en": "I'm in Madrid.", "options": ["estoy", "soy", "está"], "vocab": ["estoy", "yo"] },
+    { "id": "d023-07", "type": "fill-blank", "es": "{{Soy}} de Estados Unidos.", "en": "I'm from the United States.", "options": ["Soy", "Estoy"], "prompt": "Origin, not location.", "vocab": ["soy-de"] },
+    { "id": "d023-08", "type": "fill-blank", "es": "¿Dónde {{está}} el hotel?", "en": "Where is the hotel?", "options": ["está", "es", "hay"], "vocab": ["donde-esta", "hotel"] },
+    { "id": "d023-09", "type": "fill-blank", "es": "¿{{Hay}} un hotel cerca?", "en": "Is there a hotel nearby?", "options": ["Hay", "Está"], "prompt": "Any hotel, not a specific one.", "vocab": ["hay-q", "hotel", "cerca"] },
+    { "id": "d023-10", "type": "fill-blank", "es": "¿Dónde {{estás}}?", "en": "Where are you?", "options": ["estás", "estoy", "eres"], "vocab": ["estas", "donde-esta"] },
+    { "id": "d023-11", "type": "fill-blank", "es": "El centro no está {{lejos}}.", "en": "The centre isn't far.", "options": ["lejos", "cerca", "aquí"], "vocab": ["lejos", "centro", "esta"] },
+    { "id": "d023-12", "type": "listen-choose", "prompt": "Where is the hotel?", "audio": "El hotel está cerca de la plaza.", "optionsLang": "en", "options": ["Near the square", "Far from the square", "In the square"], "answer": 0, "vocab": ["hotel", "esta", "cerca", "plaza"] },
+    { "id": "d023-13", "type": "listen-choose", "prompt": "Where is she?", "audio": "Estoy en el hotel. ¿Y tú?", "optionsLang": "en", "options": ["At the hotel", "Near the hotel", "On her way to the hotel"], "answer": 0, "vocab": ["estoy", "hotel", "y-tu"] },
+    { "id": "d023-14", "type": "listen-choose", "prompt": "Is it close?", "audio": "No, está muy lejos.", "optionsLang": "en", "options": ["No, it's very far", "Yes, it's very close", "It's right here"], "answer": 0, "vocab": ["esta", "muy", "lejos"] },
+    { "id": "d023-15", "type": "dictation", "es": "estoy", "hint": "I am (location)", "vocab": ["estoy"] },
+    { "id": "d023-16", "type": "dictation", "es": "cerca", "hint": "near", "vocab": ["cerca"] },
+    { "id": "d023-17", "type": "dictation", "es": "¿Dónde está?", "hint": "Where is it?", "vocab": ["donde-esta"] },
+    { "id": "d023-18", "type": "build-sentence", "es": "Perdón, ¿dónde está la plaza?", "en": "Excuse me, where is the square?", "distractors": ["es", "hay"], "vocab": ["perdon", "donde-esta", "plaza"] },
+    { "id": "d023-19", "type": "build-sentence", "es": "El hotel está allí, muy cerca.", "en": "The hotel is over there, very close.", "distractors": ["lejos", "es"], "vocab": ["hotel", "esta", "alli", "muy", "cerca"] },
+    { "id": "d023-20", "type": "build-sentence", "direction": "audio-to-es", "es": "Soy de Estados Unidos, pero estoy en Madrid.", "en": "I'm from the United States, but I'm in Madrid.", "distractors": ["estás"], "vocab": ["soy-de", "pero", "estoy"] },
+    { "id": "d023-21", "type": "repeat", "es": "¿Dónde está el centro? ¿Está lejos?", "en": "Where is the centre? Is it far?", "vocab": ["donde-esta", "centro", "lejos"] },
+    { "id": "d023-22", "type": "shadow", "es": "Está allí, no está lejos.", "en": "It's over there, it isn't far.", "listenFor": "Stress on the last syllable of está, the ll in allí (like y in yes), and the throaty j in lejos.", "vocab": ["esta", "alli", "lejos"] },
+    { "id": "d023-23", "type": "listen-choose", "prompt": "Review: when does it open?", "audio": "Abre a las diez de la mañana.", "optionsLang": "en", "options": ["10:00", "22:00", "12:00"], "answer": 0, "vocab": ["abre", "de-la-manana"] },
+    { "id": "d023-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "¿A qué hora cierra? A las ocho y media de la tarde.", "en": "What time does it close? At half past eight in the evening.", "vocab": ["a-que-hora", "cierra", "de-la-tarde"] }
+  ]
+}

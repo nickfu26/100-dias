@@ -1,0 +1,62 @@
+{
+  "$schema": "./schema.json",
+  "day": 25,
+  "level": 2,
+  "title": { "en": "Getting around", "es": "Por Madrid" },
+  "objectives": [
+    "Name the metro, train, stops and stations",
+    "Read the signs: entrada, salida, taquilla",
+    "Find a cash machine, a market and the cathedral"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**Getting around Madrid**\n\n- **el metro**: the underground. Sol is the station at the centre of everything.\n- **la parada**: a stop (bus, or a metro station on the map)\n- **el tren**: train. Trains run from **Atocha** and **Chamartín**, and the airport has a train station at T4.\n\nYou'll learn tickets (*el billete*) and lines properly in Level 3."
+    },
+    {
+      "kind": "note",
+      "md": "**Signs you'll see everywhere**\n\n- **ENTRADA**: way in. **La entrada** is also a ticket for a museum, a show or a match.\n- **SALIDA**: way out. At the airport, **Salidas** = Departures.\n- **TAQUILLA**: ticket office, box office"
+    },
+    { "kind": "phrase", "es": "¿Dónde está la salida?", "en": "Where is the exit?", "note": "Big metro stations like Sol have several exits. Signs name the street each one comes out on." },
+    { "kind": "phrase", "es": "Dos entradas, por favor.", "en": "Two tickets, please.", "note": "At a museum taquilla. For the metro or a train you'll say billete instead." },
+    { "kind": "phrase", "es": "¿Hay un cajero cerca?", "en": "Is there a cash machine nearby?", "note": "Short for cajero automático. Banks' own machines are usually cheaper than the stand-alone ones in tourist areas." },
+    { "kind": "phrase", "es": "el mercado y la catedral", "en": "the market and the cathedral", "note": "The Mercado de San Miguel is next to the Plaza Mayor. The Catedral de la Almudena is next to the Royal Palace." }
+  ],
+  "vocab": [
+    { "id": "metro", "es": "el metro", "en": "metro, underground", "pos": "noun", "gender": "m", "ipa": "ˈmetɾo", "tags": ["transport", "madrid"] },
+    { "id": "parada", "es": "la parada", "en": "stop (bus, metro)", "pos": "noun", "gender": "f", "ipa": "paˈɾaða", "tags": ["transport"] },
+    { "id": "tren", "es": "el tren", "en": "train", "pos": "noun", "gender": "m", "ipa": "ˈtɾen", "tags": ["transport"] },
+    { "id": "mercado", "es": "el mercado", "en": "market", "pos": "noun", "gender": "m", "ipa": "meɾˈkaðo", "tags": ["madrid", "shopping"] },
+    { "id": "catedral", "es": "la catedral", "en": "cathedral", "pos": "noun", "gender": "f", "ipa": "kateˈðɾal", "tags": ["madrid"] },
+    { "id": "entrada", "es": "la entrada", "en": "entrance; ticket (museum, show)", "pos": "noun", "gender": "f", "ipa": "enˈtɾaða", "note": "A transport ticket is el billete.", "tags": ["madrid"] },
+    { "id": "salida", "es": "la salida", "en": "exit; departure", "pos": "noun", "gender": "f", "ipa": "saˈliða", "note": "Airport: Salidas = Departures.", "tags": ["transport"] },
+    { "id": "taquilla", "es": "la taquilla", "en": "ticket office, box office", "pos": "noun", "gender": "f", "ipa": "taˈkiʝa", "tags": ["transport", "madrid"] },
+    { "id": "cajero", "es": "el cajero", "en": "cash machine, ATM", "pos": "noun", "gender": "m", "ipa": "kaˈxeɾo", "note": "Short for el cajero automático.", "tags": ["survival"] }
+  ],
+  "exercises": [
+    { "id": "d025-01", "type": "listen-choose", "audio": "la salida", "options": ["la salida", "la ensalada", "la entrada"], "answer": 0, "vocab": ["salida"] },
+    { "id": "d025-02", "type": "listen-choose", "audio": "la parada", "options": ["la parada", "la plaza", "la playa"], "answer": 0, "vocab": ["parada"] },
+    { "id": "d025-03", "type": "listen-choose", "audio": "el cajero", "options": ["el cajero", "el coche", "el queso"], "answer": 0, "vocab": ["cajero"] },
+    { "id": "d025-04", "type": "match-pairs", "pairs": [["el metro", "metro"], ["el tren", "train"], ["la parada", "stop"], ["el cajero", "cash machine"], ["el mercado", "market"]], "vocab": ["metro", "tren", "parada", "cajero", "mercado"] },
+    { "id": "d025-05", "type": "match-pairs", "pairs": [["la entrada", "way in; ticket"], ["la salida", "way out"], ["la taquilla", "ticket office"], ["la catedral", "cathedral"]], "vocab": ["entrada", "salida", "taquilla", "catedral"] },
+    { "id": "d025-06", "type": "fill-blank", "es": "¿Dónde está la {{salida}}?", "en": "Where is the exit?", "options": ["salida", "entrada", "parada"], "vocab": ["salida", "donde-esta"] },
+    { "id": "d025-07", "type": "fill-blank", "es": "Dos {{entradas}}, por favor.", "en": "Two tickets, please.", "options": ["entradas", "salidas", "paradas"], "prompt": "At the museum taquilla.", "vocab": ["entrada", "dos"] },
+    { "id": "d025-08", "type": "fill-blank", "es": "¿Hay un {{cajero}} cerca?", "en": "Is there a cash machine nearby?", "options": ["cajero", "mercado", "tren"], "vocab": ["cajero", "hay-q", "cerca"] },
+    { "id": "d025-09", "type": "fill-blank", "es": "{{La}} catedral está cerca.", "en": "The cathedral is near.", "options": ["La", "El"], "vocab": ["catedral", "la-the", "cerca"] },
+    { "id": "d025-10", "type": "fill-blank", "es": "La {{taquilla}} abre a las nueve.", "en": "The ticket office opens at nine.", "options": ["taquilla", "salida", "tienda"], "vocab": ["taquilla", "abre"] },
+    { "id": "d025-11", "type": "listen-choose", "prompt": "Where is the market?", "audio": "El mercado está cerca de la plaza.", "optionsLang": "en", "options": ["Near the square", "Near the station", "Far from the square"], "answer": 0, "vocab": ["mercado", "cerca", "plaza"] },
+    { "id": "d025-12", "type": "listen-choose", "prompt": "What does she want?", "audio": "Tres entradas, por favor.", "optionsLang": "en", "options": ["Three tickets", "Three exits", "Three stops"], "answer": 0, "vocab": ["entrada", "tres"] },
+    { "id": "d025-13", "type": "listen-choose", "prompt": "When is the train?", "audio": "El tren es a las veintitrés quince.", "optionsLang": "en", "options": ["23:15", "13:15", "23:50"], "answer": 0, "vocab": ["tren", "hora-24", "veintitres"] },
+    { "id": "d025-14", "type": "listen-choose", "prompt": "Where is the metro?", "audio": "El metro está allí, a la salida de la estación.", "optionsLang": "en", "options": ["Over there, at the station exit", "Far from the station", "Inside the market"], "answer": 0, "vocab": ["metro", "alli", "salida", "estacion"] },
+    { "id": "d025-15", "type": "dictation", "es": "el metro", "hint": "underground", "vocab": ["metro"] },
+    { "id": "d025-16", "type": "dictation", "es": "la entrada", "hint": "way in; museum ticket", "vocab": ["entrada"] },
+    { "id": "d025-17", "type": "dictation", "es": "la taquilla", "hint": "ticket office (qu + ll)", "vocab": ["taquilla"] },
+    { "id": "d025-18", "type": "build-sentence", "es": "¿Dónde está la parada de metro?", "en": "Where is the metro stop?", "distractors": ["hay", "tren"], "vocab": ["donde-esta", "parada", "metro"] },
+    { "id": "d025-19", "type": "build-sentence", "es": "La salida está allí, cerca de la taquilla.", "en": "The exit is over there, near the ticket office.", "distractors": ["entrada", "lejos"], "vocab": ["salida", "alli", "cerca", "taquilla"] },
+    { "id": "d025-20", "type": "build-sentence", "direction": "audio-to-es", "es": "Quería dos entradas, por favor.", "en": "I'd like two tickets, please.", "distractors": ["quiere", "salidas"], "vocab": ["queria", "entrada", "dos"] },
+    { "id": "d025-21", "type": "repeat", "es": "Perdón, ¿dónde está la salida?", "en": "Excuse me, where is the exit?", "vocab": ["perdon", "donde-esta", "salida"] },
+    { "id": "d025-22", "type": "shadow", "es": "la taquilla", "en": "the ticket office", "listenFor": "qu sounds like k (no u), and ll like the y in yes: ta-KI-ya.", "vocab": ["taquilla"] },
+    { "id": "d025-23", "type": "listen-choose", "prompt": "Review: what is he looking for?", "audio": "¿Dónde están los aseos?", "optionsLang": "en", "options": ["The toilets", "The exit", "The pharmacy"], "answer": 0, "vocab": ["aseos", "donde-esta"] },
+    { "id": "d025-24", "type": "repeat", "prompt": "Review: say it aloud.", "es": "El museo abre a las diez y cierra a las ocho de la tarde.", "en": "The museum opens at ten and closes at eight in the evening.", "vocab": ["museo", "abre", "cierra", "de-la-tarde"] }
+  ]
+}

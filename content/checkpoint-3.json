@@ -34,6 +34,6 @@
     { "id": "c3-27", "type": "fill-blank", "es": "¿Dónde está la {{recogida}} de equipajes?", "en": "Where's baggage claim?", "options": ["recogida", "salida", "terminal"], "vocab": ["recogida-de-equipajes"] },
     { "id": "c3-28", "type": "dictation", "es": "la tarjeta de embarque", "hint": "boarding pass", "vocab": ["tarjeta-de-embarque"] },
     { "id": "c3-29", "type": "repeat", "prompt": "At the pharmacy:", "es": "¿Tiene algo para el dolor de cabeza?", "en": "Do you have something for a headache?", "vocab": ["tiene-algo-para", "dolor-de-cabeza"] },
-    { "id": "c3-30", "type": "repeat", "prompt": "At the police station:", "es": "He perdido el pasaporte. Quiero poner una denuncia.", "en": "I've lost my passport. I want to file a report.", "vocab": ["he-perdido", "poner-una-denuncia"] }
+    { "id": "c3-30", "type": "repeat", "prompt": "At hotel reception:", "es": "He perdido el pasaporte. ¿Qué hago?", "en": "I've lost my passport. What should I do?", "vocab": ["he-perdido", "que-hago"] }
   ]
 }

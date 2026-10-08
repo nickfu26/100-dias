@@ -356,6 +356,9 @@
   box-shadow: var(--lift-1);
   font-size: 20px;
 }
+.say-aloud {
+  font-weight: 600;
+}
 .listen-for {
   padding: 10px 14px;
   border-radius: var(--r-m);

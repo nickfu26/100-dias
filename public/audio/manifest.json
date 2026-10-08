@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-08T01:06:20+00:00",
+ "generated": "2026-10-08T02:12:31+00:00",
  "voices": {
   "f": "es-ES-ElviraNeural",
   "m": "es-ES-AlvaroNeural"
@@ -883,16 +883,12 @@
    "id": "68c33077cab8",
    "slow": true
   },
-  "He perdido el pasaporte. Quiero poner una denuncia.": {
-   "id": "d7196d1fa84c",
+  "He perdido el pasaporte. ¿Qué hago?": {
+   "id": "c9b97ce6dd52",
    "slow": true
   },
-  "He perdido el pasaporte. ¿Dónde está la comisaría?": {
-   "id": "a0b6bae3af5d",
-   "slow": true
-  },
-  "He perdido el pasaporte. ¿Dónde está la embajada?": {
-   "id": "d1eeda5bdaf8",
+  "He perdido la cartera. ¿Qué hago?": {
+   "id": "697159c90462",
    "slow": true
   },
   "He perdido…": {
@@ -943,8 +939,8 @@
    "id": "bcb82b7d0b28",
    "slow": true
   },
-  "Hola. Me han robado el móvil. Quiero poner una denuncia.": {
-   "id": "ac5bcab1b7e6",
+  "Hola. Me han robado el móvil. ¿Qué hago?": {
+   "id": "86004ccef052",
    "slow": true
   },
   "Hola. Mi maleta no ha llegado.": {
@@ -1711,20 +1707,12 @@
    "id": "1c99662e99fe",
    "slow": true
   },
-  "Para el pasaporte nuevo, tiene que ir a la embajada de su país.": {
-   "id": "7ae994a48c7c",
-   "slow": true
-  },
   "Para el tax free, necesito su pasaporte.": {
    "id": "ee87a32245ff",
    "slow": true
   },
   "Para el tax free, ¿me deja su pasaporte?": {
    "id": "f0faf981ee7a",
-   "slow": true
-  },
-  "Para la denuncia, a la comisaría. Hay una cerca de la Plaza de España.": {
-   "id": "48c6d58c9b3f",
    "slow": true
   },
   "Para la luz, la tarjeta de la habitación va aquí, al lado de la puerta.": {
@@ -1757,6 +1745,14 @@
   },
   "Perdona…": {
    "id": "c30151277778",
+   "slow": true
+  },
+  "Perdone, he perdido el pasaporte. ¿Me puede ayudar?": {
+   "id": "d17ac77847c8",
+   "slow": true
+  },
+  "Perdone, he perdido la cartera. ¿Qué hago?": {
+   "id": "075292d73c57",
    "slow": true
   },
   "Perdone, la calefacción no funciona y no hay agua caliente.": {
@@ -2145,10 +2141,6 @@
   },
   "Quiero otra habitación.": {
    "id": "3942139db3ec",
-   "slow": true
-  },
-  "Quiero poner una denuncia.": {
-   "id": "a6404a25474c",
    "slow": true
   },
   "Quiero recargar la tarjeta, por favor.": {
@@ -2605,6 +2597,10 @@
   },
   "Tiene que dejar la habitación a las doce.": {
    "id": "5199b8a5b703",
+   "slow": true
+  },
+  "Tiene que ir a la comisaría. Hay una cerca de la Plaza de España.": {
+   "id": "3b7f9346d73a",
    "slow": true
   },
   "Todo bien, gracias.": {
@@ -4291,10 +4287,6 @@
    "id": "de81087a1799",
    "slow": true
   },
-  "la embajada de mi país": {
-   "id": "13e6569ab2ce",
-   "slow": true
-  },
   "la ensalada": {
    "id": "0b776261948d",
    "slow": true
@@ -4409,6 +4401,10 @@
   },
   "la ración": {
    "id": "59086c3798c1",
+   "slow": true
+  },
+  "la recepción": {
+   "id": "a5b03627d00e",
    "slow": true
   },
   "la recogida de equipajes": {
@@ -4961,10 +4957,6 @@
   },
   "pollo con verduras": {
    "id": "d01a1d723972",
-   "slow": true
-  },
-  "poner una denuncia": {
-   "id": "e138d42f0682",
    "slow": true
   },
   "por favor": {
@@ -5955,18 +5947,6 @@
    "id": "8e38d1e23e77",
    "slow": true
   },
-  "¿Dónde está la comisaría?": {
-   "id": "513029cb8732",
-   "slow": true
-  },
-  "¿Dónde está la comisaría? Quiero poner una denuncia.": {
-   "id": "fca13f7c802c",
-   "slow": true
-  },
-  "¿Dónde está la embajada de mi país?": {
-   "id": "1b1c442c3256",
-   "slow": true
-  },
   "¿Dónde está la estación?": {
    "id": "4b2491e3820a",
    "slow": true
@@ -5977,6 +5957,10 @@
   },
   "¿Dónde está la parada de metro? Está allí, no está lejos.": {
    "id": "cbc03e8fd1e4",
+   "slow": true
+  },
+  "¿Dónde está la recepción?": {
+   "id": "fddfe468edf7",
    "slow": true
   },
   "¿Dónde está la recogida de equipajes?": {
@@ -6593,6 +6577,14 @@
   },
   "¿Quién paga hoy?": {
    "id": "d7b83f8ef05a",
+   "slow": true
+  },
+  "¿Qué ha perdido? ¿El pasaporte o la cartera?": {
+   "id": "fe72dee0914b",
+   "slow": true
+  },
+  "¿Qué hago?": {
+   "id": "aea97f2a5696",
    "slow": true
   },
   "¿Qué hay de postre?": {

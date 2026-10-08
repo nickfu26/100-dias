@@ -110,7 +110,7 @@ function SpeakingSection() {
       <p className="setting-help">
         {speakingMode === 'recognition'
           ? 'Beta: say each 🎤 phrase and speech recognition checks it. It is still unreliable on iPhone; if it fails in a lesson, you can switch to recording for the rest of that lesson.'
-          : 'Record yourself, play it back next to the native voice, and rate it yourself. Works everywhere, offline too.'}
+          : 'Say each phrase aloud and rate yourself. Recording is optional: record to play yourself back next to the native voice. Works everywhere, offline too.'}
       </p>
     </section>
   );

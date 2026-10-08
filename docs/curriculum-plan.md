@@ -73,7 +73,7 @@ How to read the tables:
 | 56 | Nov 25 | Delays and lost bags / *El vuelo está retrasado* | Airports 3 | El vuelo está retrasado / cancelado, el embarque, última llamada, Mi maleta no ha llegado (as a chunk), el mostrador (el vuelo está cancelado as its own card) |
 | 57 | Nov 26 | At the pharmacy / *En la farmacia* | Problems 1 | ¿Tiene algo para…?, el dolor de cabeza, la tos, el resfriado, sin receta, la farmacia de guardia, ¿Cuántas veces al día? |
 | 58 | Nov 27 | I'm lost / *Me he perdido* | Problems 2 | Me he perdido, Estoy buscando…, ¿Me lo enseña en el mapa?, ¿Me puede ayudar?, ¡Socorro!, el ciento doce (112), el mapa |
-| 59 | Nov 28 | Lost passport, stolen phone / *Me han robado el móvil* | Problems 3 | He perdido el pasaporte, Me han robado…, la comisaría, poner una denuncia, la embajada / el consulado (kept generic: "la embajada de mi país"), el carterista, ¡Cuidado!, la cartera |
+| 59 | Nov 28 | Lost passport, stolen phone / *Me han robado el móvil* | Problems 3 | He perdido el pasaporte / la cartera, Me han robado…, la recepción, ¿Qué hago?, la comisaría (recognise only), el carterista, ¡Cuidado! (no embassy or police-report scene: tell hotel reception, who direct you) |
 | 60 | Nov 29 | Level 3 review / *Repaso: un día en Madrid* | Review → **checkpoint 3** | none (one review scene per situation) |
 
 ---

@@ -12,7 +12,7 @@ interface ShadowLike {
   listenFor?: string;
 }
 
-/** Listen, record yourself, compare with the native voice, then rate yourself. */
+/** Say it aloud (recording is optional), compare with the native voice if you recorded, then rate yourself. */
 export function Shadow({ ex, voice, answered, onAnswer, fallbackReason }: ExerciseProps<ShadowLike> & { fallbackReason?: string }) {
   const [recorder, setRecorder] = useState<RecorderSession | null>(null);
   const [starting, setStarting] = useState(false);
@@ -80,6 +80,7 @@ export function Shadow({ ex, voice, answered, onAnswer, fallbackReason }: Exerci
         {ex.es}
       </p>
       <p className="ex-en center">{ex.en}</p>
+      <p className="say-aloud center">🗣 Say it aloud{canRecord ? ', with or without recording' : ''}.</p>
       {ex.listenFor && <p className="listen-for">👂 {ex.listenFor}</p>}
       {fallbackReason && <p className="muted small center">{fallbackReason}</p>}
       <ListenButtons text={ex.es} voice={voice} disabled={recBusy} />
@@ -109,9 +110,10 @@ export function Shadow({ ex, voice, answered, onAnswer, fallbackReason }: Exerci
         <p className="muted small center">Recording isn't available here. Say it aloud with the audio, then rate yourself.</p>
       )}
 
-      {!answered && (recording || !canRecord) && (
+      {/* Rating doesn't need a recording: saying it aloud is the exercise. */}
+      {!answered && !recBusy && (
         <div className="rate">
-          <p className="rate-q">How close was it?</p>
+          <p className="rate-q">{recording ? 'How close was it?' : 'Said it aloud? How did it go?'}</p>
           <div className="rate-row">
             <button className="tile tile--light" onClick={() => onAnswer({ correct: null, note: 'needs-work', message: 'Keep practising this one.' })}>
               Tengo que practicar

@@ -1,0 +1,56 @@
+{
+  "$schema": "./schema.json",
+  "day": 58,
+  "level": 3,
+  "title": { "en": "I'm lost", "es": "Me he perdido" },
+  "objectives": [
+    "Say you're lost and what you're looking for",
+    "Ask someone to show you on the map",
+    "Ask for help, and know the emergency number"
+  ],
+  "teach": [
+    { "kind": "phrase", "es": "Perdone, me he perdido.", "en": "Excuse me, I'm lost.", "note": "Literally 'I have lost myself'. The same for men and women: perdido doesn't change." },
+    { "kind": "phrase", "es": "Estoy buscando la Plaza Mayor.", "en": "I'm looking for the Plaza Mayor.", "note": "estoy buscando = I'm looking for (right now). You met buscar on day 33." },
+    { "kind": "phrase", "es": "¿Me lo enseña en el mapa?", "en": "Can you show me on the map?", "note": "enseñar = to show. Hold out your phone: en el móvil works too. With tú: ¿Me lo enseñas?" },
+    { "kind": "phrase", "es": "¿Me puede ayudar, por favor?", "en": "Can you help me, please?", "note": "The polite all-purpose request. You heard the shop version, ¿Te puedo ayudar?, on day 45." },
+    {
+      "kind": "note",
+      "md": "**Emergencies.** In Spain, and across the EU, the emergency number is **112**: *el ciento doce*. It's free, works from any phone, and operators speak English.\n\nTo shout for help: **¡Socorro!** You'll probably never need it, but you should be able to say it without thinking."
+    }
+  ],
+  "vocab": [
+    { "id": "me-he-perdido", "es": "Me he perdido.", "en": "I'm lost.", "pos": "phrase", "ipa": "me e peɾˈðiðo", "note": "Same for men and women.", "tags": ["survival", "directions"] },
+    { "id": "estoy-buscando", "es": "Estoy buscando…", "en": "I'm looking for…", "pos": "phrase", "ipa": "esˈtoi βusˈkando", "tags": ["survival", "directions"] },
+    { "id": "me-lo-ensena", "es": "¿Me lo enseña en el mapa?", "en": "Can you show me on the map?", "pos": "phrase", "ipa": "me lo enˈseɲa en el ˈmapa", "note": "enseñar = to show. With tú: ¿Me lo enseñas?", "tags": ["directions"] },
+    { "id": "mapa", "es": "el mapa", "en": "map", "pos": "noun", "gender": "m", "ipa": "ˈmapa", "note": "Masculine, even though it ends in -a.", "tags": ["directions"] },
+    { "id": "me-puede-ayudar", "es": "¿Me puede ayudar?", "en": "Can you help me?", "pos": "phrase", "ipa": "me ˈpweðe aʝuˈðaɾ", "note": "With tú: ¿Me puedes ayudar?", "tags": ["survival"] },
+    { "id": "socorro", "es": "¡Socorro!", "en": "Help!", "pos": "interj", "ipa": "soˈkoro", "tags": ["survival"] },
+    { "id": "ciento-doce", "es": "el ciento doce", "en": "112 (emergency number)", "pos": "phrase", "ipa": "el ˈθjento ˈðoθe", "note": "Free, any phone, English spoken.", "tags": ["survival"] }
+  ],
+  "exercises": [
+    { "id": "d058-01", "type": "listen-choose", "audio": "Me he perdido.", "options": ["Me he perdido.", "Me llamo Pedro.", "He pedido."], "answer": 0, "vocab": ["me-he-perdido"] },
+    { "id": "d058-02", "type": "listen-choose", "audio": "¡Socorro!", "options": ["¡Socorro!", "¡Cuidado!", "¡Perdón!"], "answer": 0, "vocab": ["socorro"] },
+    { "id": "d058-03", "type": "listen-choose", "audio": "el ciento doce", "options": ["el ciento doce", "el ciento dos", "el doce"], "answer": 0, "vocab": ["ciento-doce"] },
+    { "id": "d058-04", "type": "match-pairs", "pairs": [["Me he perdido.", "I'm lost."], ["Estoy buscando…", "I'm looking for…"], ["¿Me lo enseña en el mapa?", "Can you show me on the map?"], ["¿Me puede ayudar?", "Can you help me?"], ["¡Socorro!", "Help!"], ["el ciento doce", "112"]], "vocab": ["me-he-perdido", "estoy-buscando", "me-lo-ensena", "me-puede-ayudar", "socorro", "ciento-doce"] },
+    { "id": "d058-05", "type": "fill-blank", "es": "Me he {{perdido}}.", "en": "I'm lost.", "options": ["perdido", "perdida", "perdón"], "prompt": "Same for men and women.", "vocab": ["me-he-perdido"] },
+    { "id": "d058-06", "type": "fill-blank", "es": "Estoy {{buscando}} la calle Mayor.", "en": "I'm looking for calle Mayor.", "options": ["buscando", "mirando", "andando"], "vocab": ["estoy-buscando", "calle"] },
+    { "id": "d058-07", "type": "fill-blank", "es": "¿Me lo enseña en el {{mapa}}?", "en": "Can you show me on the map?", "options": ["mapa", "mesa", "menú"], "vocab": ["me-lo-ensena", "mapa"] },
+    { "id": "d058-08", "type": "fill-blank", "es": "¿Me {{puede}} ayudar?", "en": "Can you help me?", "options": ["puede", "puedo", "pide"], "vocab": ["me-puede-ayudar"] },
+    { "id": "d058-09", "type": "fill-blank", "es": "Emergencias: el {{ciento}} doce.", "en": "Emergencies: 112.", "options": ["ciento", "cien", "cientos"], "vocab": ["ciento-doce"] },
+    { "id": "d058-10", "type": "listen-choose", "prompt": "What's he looking for?", "audio": "Perdone, me he perdido. Estoy buscando la Plaza Mayor.", "optionsLang": "en", "options": ["The Plaza Mayor", "The metro", "His hotel"], "answer": 0, "vocab": ["me-he-perdido", "estoy-buscando", "plaza"] },
+    { "id": "d058-11", "type": "listen-choose", "prompt": "What does the woman do?", "audio": "Sí. En el mapa: tú estás aquí, y la plaza está allí.", "optionsLang": "en", "options": ["She shows him on the map", "She walks him there", "She calls a taxi"], "answer": 0, "vocab": ["mapa", "estas", "aqui", "alli"] },
+    { "id": "d058-12", "type": "listen-choose", "prompt": "What's the emergency number?", "audio": "En España, el número de emergencias es el ciento doce.", "optionsLang": "en", "options": ["112", "911", "012"], "answer": 0, "vocab": ["ciento-doce", "espana"] },
+    { "id": "d058-13", "type": "listen-choose", "prompt": "How do you get there?", "audio": "No está lejos. Todo recto, cinco minutos.", "optionsLang": "en", "options": ["Straight on, five minutes", "First left, five minutes", "It's far: take the metro"], "answer": 0, "vocab": ["esta-lejos", "todo-recto", "cinco"] },
+    { "id": "d058-14", "type": "dictation", "es": "Me he perdido.", "hint": "I'm lost. (silent h)", "vocab": ["me-he-perdido"] },
+    { "id": "d058-15", "type": "dictation", "es": "el mapa", "hint": "map", "vocab": ["mapa"] },
+    { "id": "d058-16", "type": "dictation", "es": "¡Socorro!", "hint": "Help! (rr)", "vocab": ["socorro"] },
+    { "id": "d058-17", "type": "build-sentence", "es": "Perdone, me he perdido. ¿Me puede ayudar?", "en": "Excuse me, I'm lost. Can you help me?", "distractors": ["puedo", "perdida"], "vocab": ["perdone", "me-he-perdido", "me-puede-ayudar"] },
+    { "id": "d058-18", "type": "build-sentence", "es": "Estoy buscando el hotel. ¿Me lo enseña en el mapa?", "en": "I'm looking for the hotel. Can you show me on the map?", "distractors": ["la", "móvil"], "vocab": ["estoy-buscando", "hotel", "me-lo-ensena"] },
+    { "id": "d058-19", "type": "build-sentence", "direction": "audio-to-es", "es": "¿Me puede ayudar?", "en": "Can you help me?", "distractors": ["puedo"], "vocab": ["me-puede-ayudar"] },
+    { "id": "d058-20", "type": "repeat", "prompt": "Stop someone:", "es": "Perdone, me he perdido. Estoy buscando la Puerta del Sol.", "en": "Excuse me, I'm lost. I'm looking for the Puerta del Sol.", "vocab": ["perdone", "me-he-perdido", "estoy-buscando"] },
+    { "id": "d058-21", "type": "repeat", "prompt": "Hold out your phone:", "es": "¿Me lo enseña en el mapa?", "en": "Can you show me on the map?", "vocab": ["me-lo-ensena"] },
+    { "id": "d058-22", "type": "shadow", "es": "¡Socorro!", "en": "Help!", "listenFor": "A rolled rr: so-KO-rro. Loud, from the chest.", "vocab": ["socorro"] },
+    { "id": "d058-23", "type": "listen-choose", "prompt": "Review: what does she ask for?", "audio": "¿Tiene algo para el resfriado?", "optionsLang": "en", "options": ["Something for a cold", "Something for a headache", "Something for a cough"], "answer": 0, "vocab": ["tiene-algo-para", "resfriado"] },
+    { "id": "d058-24", "type": "repeat", "prompt": "Review: it's Sunday night.", "es": "¿Dónde hay una farmacia de guardia?", "en": "Where's an on-duty pharmacy?", "vocab": ["farmacia-de-guardia", "donde"] }
+  ]
+}

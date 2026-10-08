@@ -70,10 +70,10 @@ How to read the tables:
 | 53 | Nov 22 | Signs and announcements / *Próxima estación* | Trains & metro 3 (slow → natural speed) | Próxima estación, correspondencia con…, con destino…, efectuará su salida por la vía…, con retraso, prohibido, el próximo tren |
 | 54 | Nov 23 | Arriving at Barajas / *Llegar a Barajas* | Airports 1: T4, line 8, Exprés Aeropuerto | el control de pasaportes, la recogida de equipajes, la terminal, ¿Cómo voy al centro?, el suplemento del aeropuerto, el equipaje, ¿Motivo del viaje? — Turismo |
 | 55 | Nov 24 | Checking in for a flight / *Facturar la maleta* | Airports 2 | facturar, la tarjeta de embarque, el equipaje de mano, el control de seguridad, la puerta de embarque, el vuelo, ¿Ventanilla o pasillo? |
-| 56 | Nov 25 | Delays and lost bags / *El vuelo está retrasado* | Airports 3 | El vuelo está retrasado / cancelado, el embarque, última llamada, Mi maleta no ha llegado (as a chunk), el mostrador |
+| 56 | Nov 25 | Delays and lost bags / *El vuelo está retrasado* | Airports 3 | El vuelo está retrasado / cancelado, el embarque, última llamada, Mi maleta no ha llegado (as a chunk), el mostrador (el vuelo está cancelado as its own card) |
 | 57 | Nov 26 | At the pharmacy / *En la farmacia* | Problems 1 | ¿Tiene algo para…?, el dolor de cabeza, la tos, el resfriado, sin receta, la farmacia de guardia, ¿Cuántas veces al día? |
-| 58 | Nov 27 | I'm lost / *Me he perdido* | Problems 2 | Me he perdido, Estoy buscando…, ¿Me lo enseña en el mapa?, ¿Me puede ayudar?, ¡Socorro!, el ciento doce (112) |
-| 59 | Nov 28 | Lost passport, stolen phone / *Me han robado el móvil* | Problems 3 | He perdido el pasaporte, Me han robado…, la comisaría, poner una denuncia, la embajada / el consulado (kept generic: "la embajada de mi país"), el carterista, ¡Cuidado! |
+| 58 | Nov 27 | I'm lost / *Me he perdido* | Problems 2 | Me he perdido, Estoy buscando…, ¿Me lo enseña en el mapa?, ¿Me puede ayudar?, ¡Socorro!, el ciento doce (112), el mapa |
+| 59 | Nov 28 | Lost passport, stolen phone / *Me han robado el móvil* | Problems 3 | He perdido el pasaporte, Me han robado…, la comisaría, poner una denuncia, la embajada / el consulado (kept generic: "la embajada de mi país"), el carterista, ¡Cuidado!, la cartera |
 | 60 | Nov 29 | Level 3 review / *Repaso: un día en Madrid* | Review → **checkpoint 3** | none (one review scene per situation) |
 
 ---

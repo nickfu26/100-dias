@@ -1,0 +1,53 @@
+{
+  "$schema": "./schema.json",
+  "day": 60,
+  "level": 3,
+  "title": { "en": "Level 3 review", "es": "Repaso: un día en Madrid" },
+  "objectives": [
+    "Run through a whole day in Madrid, from breakfast to the airport",
+    "Choose tú or usted for each situation",
+    "Get ready for the Level 3 checkpoint"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**No new words today.** Level 3 gave you 169 phrases and words for the situations you'll actually be in. Today is one long day in Madrid, and the **checkpoint** unlocks when you finish."
+    },
+    {
+      "kind": "note",
+      "md": "**Four openers that cover most situations**\n\n- **¿Me pones…? / ¿Me puede…?**: asking for something (bar / everywhere else)\n- **¿Tiene…? / ¿Lo tiene en…?**: do you have…?\n- **¿Dónde está…? / ¿Por dónde se va a…?**: where?\n- **¿Cuánto…?**: *¿Cuánto es? ¿Cuánto tarda? ¿Cuánto pide por esto?*\n\nStart with **Perdone…** or **Hola, buenas** and you're polite everywhere."
+    },
+    {
+      "kind": "note",
+      "md": "**Tú or usted?**\n\n- **tú**: bar staff, market stalls, young shop assistants, anyone who uses *tú* with you\n- **usted**: hotel reception, police, pharmacists, older strangers in the street\n\nGet it wrong and nobody minds. Spain uses *tú* a lot, so if in doubt in a bar, use *tú*."
+    },
+    { "kind": "phrase", "es": "Perdone, ¿me puede ayudar?", "en": "Excuse me, can you help me?", "note": "If you remember one line from Level 3, make it this one. Level 4 starts tomorrow: the same situations in full sentences, starting with tú or usted." }
+  ],
+  "vocab": [],
+  "exercises": [
+    { "id": "d060-01", "type": "listen-choose", "prompt": "Morning, at the bar. What does the barman ask?", "audio": "Buenos días. ¿Qué te pongo?", "optionsLang": "en", "options": ["What can I get you?", "Do you want the bill?", "Anything else?"], "answer": 0, "vocab": ["que-te-pongo", "buenos-dias"] },
+    { "id": "d060-02", "type": "repeat", "prompt": "Order breakfast:", "es": "¿Me pones un café con leche y una tostada con tomate?", "en": "Can I have a white coffee and toast with tomato?", "vocab": ["me-pones", "cafe-con-leche", "tostada-con-tomate"] },
+    { "id": "d060-03", "type": "fill-blank", "prompt": "Time to pay.", "es": "¿Me {{cobras}}, por favor?", "en": "Can I pay, please?", "options": ["cobras", "pones", "debo"], "vocab": ["me-cobras"] },
+    { "id": "d060-04", "type": "listen-choose", "prompt": "To the Prado. Which way?", "audio": "Sigue todo recto y gira a la izquierda. El museo está al final de la calle.", "optionsLang": "en", "options": ["Straight on, left, at the end of the street", "Straight on, right, opposite", "Left, then the second right"], "answer": 0, "vocab": ["todo-recto", "a-la-izquierda", "al-final-de", "museo"] },
+    { "id": "d060-05", "type": "fill-blank", "prompt": "At the museum.", "es": "Dos {{entradas}}, por favor.", "en": "Two tickets, please.", "options": ["entradas", "billetes", "salidas"], "vocab": ["dos-entradas"] },
+    { "id": "d060-06", "type": "listen-choose", "prompt": "When is entry free?", "audio": "La entrada es gratuita de seis a ocho.", "optionsLang": "en", "options": ["18:00–20:00", "16:00–18:00", "All day"], "answer": 0, "vocab": ["entrada-gratuita", "seis", "ocho"] },
+    { "id": "d060-07", "type": "match-pairs", "prompt": "Lunch.", "pairs": [["el menú del día", "set lunch"], ["de primero", "first course"], ["¿Está incluida la bebida?", "Is the drink included?"], ["¿Lleva carne?", "Does it have meat in it?"], ["La cuenta, por favor.", "The bill, please."], ["¿Se deja propina?", "Do people tip?"]], "vocab": ["menu-del-dia", "que-hay-de-primero", "esta-incluida-la-bebida", "lleva-carne", "la-cuenta", "se-deja-propina"] },
+    { "id": "d060-08", "type": "listen-choose", "prompt": "What does the waiter recommend?", "audio": "De segundo, le recomiendo el pescado.", "optionsLang": "en", "options": ["The fish, for the main course", "The fish, to start", "The chicken, for the main course"], "answer": 0, "vocab": ["de-segundo", "pescado", "que-me-recomienda"] },
+    { "id": "d060-09", "type": "fill-blank", "es": "Soy {{alérgica}} al marisco.", "en": "I'm allergic to shellfish.", "options": ["alérgica", "alérgico"], "prompt": "A woman is speaking.", "vocab": ["soy-alergico", "marisco"] },
+    { "id": "d060-10", "type": "listen-choose", "prompt": "Shopping. What does the assistant say?", "audio": "En negro no, pero lo tengo en azul.", "optionsLang": "en", "options": ["Not in black, but in blue", "Only in black", "Not in any other colour"], "answer": 0, "vocab": ["lo-tiene-en", "negro", "azul", "pero"] },
+    { "id": "d060-11", "type": "build-sentence", "es": "¿Está rebajado? Me lo llevo.", "en": "Is it reduced? I'll take it.", "distractors": ["llevas", "la"], "vocab": ["esta-rebajado", "me-lo-llevo"] },
+    { "id": "d060-12", "type": "repeat", "prompt": "At the Rastro, make an offer:", "es": "Es un poco caro. ¿Me lo deja en diez?", "en": "It's a bit expensive. Will you let me have it for ten?", "vocab": ["es-un-poco-caro", "me-lo-deja-en", "diez"] },
+    { "id": "d060-13", "type": "listen-choose", "prompt": "On the metro. What does the announcement say?", "audio": "Próxima estación: Sol. Correspondencia con líneas dos y tres.", "optionsLang": "en", "options": ["Next stop Sol: change for lines 2 and 3", "Sol is closed", "Last stop: Sol"], "answer": 0, "vocab": ["proxima-estacion", "correspondencia"] },
+    { "id": "d060-14", "type": "fill-blank", "es": "¿Qué {{línea}} va a Gran Vía?", "en": "Which line goes to Gran Vía?", "options": ["línea", "vía", "calle"], "vocab": ["que-linea-va-a", "linea"] },
+    { "id": "d060-15", "type": "listen-choose", "prompt": "At Atocha. What's the news?", "audio": "El tren con destino Toledo va con retraso. Sale de la vía cuatro.", "optionsLang": "en", "options": ["Delayed, track 4", "On time, track 4", "Delayed, track 14"], "answer": 0, "vocab": ["con-destino", "con-retraso", "de-que-via-sale", "cuatro"] },
+    { "id": "d060-16", "type": "dictation", "es": "un billete de ida y vuelta", "hint": "a return ticket", "vocab": ["ida-y-vuelta"] },
+    { "id": "d060-17", "type": "listen-choose", "prompt": "Back at the hotel. What's wrong?", "audio": "Perdone, la calefacción no funciona y no hay agua caliente.", "optionsLang": "en", "options": ["No heating and no hot water", "No wifi and no towels", "The light and the heating don't work"], "answer": 0, "vocab": ["calefaccion", "no-funciona", "agua-caliente"] },
+    { "id": "d060-18", "type": "repeat", "prompt": "Last morning, at reception:", "es": "Quiero dejar la habitación. ¿Puedo dejar la maleta aquí?", "en": "I'd like to check out. Can I leave my suitcase here?", "vocab": ["quiero-dejar-la-habitacion", "puedo-dejar-la-maleta"] },
+    { "id": "d060-19", "type": "build-sentence", "direction": "audio-to-es", "es": "¿Me pide un taxi para el aeropuerto?", "en": "Could you call me a taxi to the airport?", "distractors": ["pone"], "vocab": ["me-pide-un-taxi", "aeropuerto"] },
+    { "id": "d060-20", "type": "listen-choose", "prompt": "At Barajas. What do you hear?", "audio": "Última llamada para el vuelo a Marrakech. Puerta doce.", "optionsLang": "en", "options": ["Last call, gate 12", "Delayed, gate 12", "Last call, gate 2"], "answer": 0, "vocab": ["ultima-llamada", "vuelo", "doce"] },
+    { "id": "d060-21", "type": "fill-blank", "es": "Quiero {{facturar}} la maleta.", "en": "I'd like to check in my suitcase.", "options": ["facturar", "factura", "recargar"], "vocab": ["facturar", "maleta"] },
+    { "id": "d060-22", "type": "listen-choose", "prompt": "What happened to her?", "audio": "Me han robado la cartera en el metro.", "optionsLang": "en", "options": ["Her wallet was stolen on the metro", "She lost her phone", "She's lost in the metro"], "answer": 0, "vocab": ["me-han-robado", "cartera", "metro"] },
+    { "id": "d060-23", "type": "repeat", "prompt": "At the pharmacy:", "es": "¿Tiene algo para la tos? ¿Se puede comprar sin receta?", "en": "Do you have something for a cough? Can you buy it without a prescription?", "vocab": ["tiene-algo-para", "tos", "sin-receta"] },
+    { "id": "d060-24", "type": "shadow", "es": "Perdone, me he perdido. ¿Me puede ayudar?", "en": "Excuse me, I'm lost. Can you help me?", "listenFor": "Smooth and polite: per-DO-ne, me-e-per-DI-do. The two e sounds in me he run together.", "vocab": ["perdone", "me-he-perdido", "me-puede-ayudar"] }
+  ]
+}

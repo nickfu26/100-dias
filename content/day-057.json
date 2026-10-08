@@ -1,0 +1,58 @@
+{
+  "$schema": "./schema.json",
+  "day": 57,
+  "level": 3,
+  "title": { "en": "At the pharmacy", "es": "En la farmacia" },
+  "objectives": [
+    "Ask for something for a headache, a cough or a cold",
+    "Ask whether you need a prescription",
+    "Find the on-duty pharmacy at night or on Sunday",
+    "Understand how often to take it"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**Spanish pharmacies** (look for the green cross) are the first stop for minor problems. The pharmacist (*el farmacéutico, la farmacéutica*) will listen and recommend something.\n\n- Common painkillers like paracetamol and ibuprofen are sold over the counter, at the counter.\n- Antibiotics need a prescription (**receta**).\n- At night and on Sundays, the **farmacia de guardia** (on-duty pharmacy) is open. Every pharmacy posts the list on its door. Central Madrid also has 24-hour pharmacies."
+    },
+    { "kind": "phrase", "es": "Hola. ¿Tiene algo para el dolor de cabeza?", "en": "Hi. Do you have something for a headache?", "note": "¿Tiene algo para…? works for anything: para la tos, para el resfriado, para el estómago. el dolor = pain." },
+    { "kind": "phrase", "es": "Tengo tos y un resfriado.", "en": "I have a cough and a cold.", "note": "la tos = cough. el resfriado = cold. Also: Estoy resfriado / resfriada. You know me duele la garganta from day 32." },
+    { "kind": "phrase", "es": "¿Se puede comprar sin receta?", "en": "Can you buy it without a prescription?", "note": "comprar = to buy. la receta = prescription (and recipe)." },
+    { "kind": "phrase", "es": "¿Cuántas veces al día? — Una pastilla, tres veces al día.", "en": "How many times a day? — One tablet, three times a day.", "note": "la vez, las veces = time(s), occasion(s). la pastilla = tablet, pill." },
+    { "kind": "phrase", "es": "¿Dónde hay una farmacia de guardia?", "en": "Where's an on-duty pharmacy?", "note": "Ask your hotel reception, or check the list on any pharmacy door." }
+  ],
+  "vocab": [
+    { "id": "tiene-algo-para", "es": "¿Tiene algo para…?", "en": "Do you have something for…?", "pos": "phrase", "ipa": "ˈtjene ˈalɣo ˈpaɾa", "tags": ["health", "survival"] },
+    { "id": "dolor-de-cabeza", "es": "el dolor de cabeza", "en": "headache", "pos": "phrase", "ipa": "el doˈloɾ ðe kaˈβeθa", "note": "el dolor = pain.", "tags": ["health"] },
+    { "id": "tos", "es": "la tos", "en": "cough", "pos": "noun", "gender": "f", "ipa": "ˈtos", "note": "Tengo tos.", "tags": ["health"] },
+    { "id": "resfriado", "es": "el resfriado", "en": "cold (illness)", "pos": "noun", "gender": "m", "ipa": "resfɾiˈaðo", "note": "Estoy resfriado, resfriada = I have a cold.", "tags": ["health"] },
+    { "id": "sin-receta", "es": "sin receta", "en": "without a prescription", "pos": "phrase", "ipa": "sin reˈθeta", "note": "la receta = prescription; also recipe.", "tags": ["health"] },
+    { "id": "farmacia-de-guardia", "es": "la farmacia de guardia", "en": "on-duty pharmacy (nights, Sundays)", "pos": "phrase", "ipa": "la faɾˈmaθja ðe ˈɣwaɾðja", "tags": ["health", "survival"] },
+    { "id": "cuantas-veces-al-dia", "es": "¿Cuántas veces al día?", "en": "How many times a day?", "pos": "phrase", "ipa": "ˈkwantas ˈβeθes al ˈdia", "note": "Tres veces al día.", "tags": ["health"] }
+  ],
+  "exercises": [
+    { "id": "d057-01", "type": "listen-choose", "audio": "¿Tiene algo para la tos?", "options": ["¿Tiene algo para la tos?", "¿Tiene algo para dos?", "¿Tiene algo más?"], "answer": 0, "vocab": ["tiene-algo-para", "tos"] },
+    { "id": "d057-02", "type": "listen-choose", "audio": "el resfriado", "options": ["el resfriado", "el retraso", "el rebajado"], "answer": 0, "vocab": ["resfriado"] },
+    { "id": "d057-03", "type": "listen-choose", "audio": "la farmacia de guardia", "options": ["la farmacia de guardia", "el guardarropa", "la farmacia de Sol"], "answer": 0, "vocab": ["farmacia-de-guardia"] },
+    { "id": "d057-04", "type": "match-pairs", "pairs": [["¿Tiene algo para…?", "Do you have something for…?"], ["el dolor de cabeza", "headache"], ["la tos", "cough"], ["el resfriado", "cold"], ["sin receta", "without a prescription"], ["¿Cuántas veces al día?", "How many times a day?"]], "vocab": ["tiene-algo-para", "dolor-de-cabeza", "tos", "resfriado", "sin-receta", "cuantas-veces-al-dia"] },
+    { "id": "d057-05", "type": "fill-blank", "es": "¿Tiene algo {{para}} el dolor de cabeza?", "en": "Do you have something for a headache?", "options": ["para", "por", "de"], "vocab": ["tiene-algo-para", "dolor-de-cabeza"] },
+    { "id": "d057-06", "type": "fill-blank", "es": "Tengo {{tos}}.", "en": "I have a cough.", "options": ["tos", "dos", "sed"], "vocab": ["tos", "tengo"] },
+    { "id": "d057-07", "type": "fill-blank", "es": "¿Se puede comprar sin {{receta}}?", "en": "Can you buy it without a prescription?", "options": ["receta", "tarjeta", "reserva"], "vocab": ["sin-receta", "se-puede"] },
+    { "id": "d057-08", "type": "fill-blank", "es": "¿Cuántas {{veces}} al día?", "en": "How many times a day?", "options": ["veces", "horas", "noches"], "vocab": ["cuantas-veces-al-dia"] },
+    { "id": "d057-09", "type": "fill-blank", "es": "Tengo un {{resfriado}}.", "en": "I have a cold.", "options": ["resfriado", "retraso", "descuento"], "vocab": ["resfriado", "tengo"] },
+    { "id": "d057-10", "type": "listen-choose", "prompt": "How often?", "audio": "Una pastilla, tres veces al día.", "optionsLang": "en", "options": ["Three times a day", "Every three hours", "Once a day for three days"], "answer": 0, "vocab": ["cuantas-veces-al-dia", "tres"] },
+    { "id": "d057-11", "type": "listen-choose", "prompt": "Can you buy it without a prescription?", "audio": "Sin receta, no. Necesita una receta del médico.", "optionsLang": "en", "options": ["No, you need a doctor's prescription", "Yes, no problem", "Only at the duty pharmacy"], "answer": 0, "vocab": ["sin-receta", "necesito"] },
+    { "id": "d057-12", "type": "listen-choose", "prompt": "Where's the duty pharmacy?", "audio": "La farmacia de guardia está en la calle Mayor, al lado del banco.", "optionsLang": "en", "options": ["Calle Mayor, next to the bank", "Calle Mayor, opposite the bank", "Gran Vía, next to the bank"], "answer": 0, "vocab": ["farmacia-de-guardia", "al-lado-de", "banco"] },
+    { "id": "d057-13", "type": "listen-choose", "prompt": "What's wrong with him?", "audio": "Me duele la garganta y tengo tos.", "optionsLang": "en", "options": ["Sore throat and a cough", "Headache and a cough", "Sore throat and a cold"], "answer": 0, "vocab": ["me-duele", "garganta", "tos"] },
+    { "id": "d057-14", "type": "dictation", "es": "la tos", "hint": "cough", "vocab": ["tos"] },
+    { "id": "d057-15", "type": "dictation", "es": "sin receta", "hint": "without a prescription", "vocab": ["sin-receta"] },
+    { "id": "d057-16", "type": "dictation", "es": "el dolor de cabeza", "hint": "headache", "vocab": ["dolor-de-cabeza"] },
+    { "id": "d057-17", "type": "build-sentence", "es": "¿Tiene algo para el resfriado?", "en": "Do you have something for a cold?", "distractors": ["por", "tengo"], "vocab": ["tiene-algo-para", "resfriado"] },
+    { "id": "d057-18", "type": "build-sentence", "es": "¿Dónde hay una farmacia de guardia?", "en": "Where's an on-duty pharmacy?", "distractors": ["está", "guardarropa"], "vocab": ["farmacia-de-guardia", "donde"] },
+    { "id": "d057-19", "type": "build-sentence", "direction": "audio-to-es", "es": "¿Cuántas veces al día?", "en": "How many times a day?", "distractors": ["horas"], "vocab": ["cuantas-veces-al-dia"] },
+    { "id": "d057-20", "type": "repeat", "prompt": "At the pharmacy counter:", "es": "Hola. ¿Tiene algo para el dolor de cabeza?", "en": "Hi. Do you have something for a headache?", "vocab": ["tiene-algo-para", "dolor-de-cabeza"] },
+    { "id": "d057-21", "type": "repeat", "prompt": "Describe your symptoms:", "es": "Tengo tos y un resfriado.", "en": "I have a cough and a cold.", "vocab": ["tos", "resfriado"] },
+    { "id": "d057-22", "type": "shadow", "es": "¿Tiene algo para la tos?", "en": "Do you have something for a cough?", "listenFor": "In algo the g is soft, between vowels. tos: short o, clear s.", "vocab": ["tiene-algo-para", "tos"] },
+    { "id": "d057-23", "type": "listen-choose", "prompt": "Review: what's the problem?", "audio": "Mi maleta no ha llegado.", "optionsLang": "en", "options": ["My suitcase hasn't arrived", "My flight is delayed", "My suitcase is too big"], "answer": 0, "vocab": ["mi-maleta-no-ha-llegado"] },
+    { "id": "d057-24", "type": "repeat", "prompt": "Review: find the airline desk.", "es": "Perdone, ¿dónde está el mostrador?", "en": "Excuse me, where's the desk?", "vocab": ["perdone", "mostrador"] }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "./schema.json",
+  "day": 56,
+  "level": 3,
+  "title": { "en": "Delays and lost bags", "es": "El vuelo está retrasado" },
+  "objectives": [
+    "Understand delays, cancellations and last calls",
+    "Follow a gate change",
+    "Report a missing suitcase at the desk"
+  ],
+  "teach": [
+    { "kind": "phrase", "es": "El vuelo está retrasado.", "en": "The flight is delayed.", "note": "On the screens: Retrasado. You heard con retraso for trains on day 53; both are used." },
+    { "kind": "phrase", "es": "El vuelo está cancelado.", "en": "The flight is cancelled.", "note": "On the screens: Cancelado. Go to the airline's mostrador (desk)." },
+    { "kind": "phrase", "es": "Última llamada para el vuelo a Marrakech.", "en": "Last call for the flight to Marrakesh.", "note": "la llamada = call (from llamar). Also on screens: Embarcando = boarding now." },
+    { "kind": "phrase", "es": "Atención: el embarque es ahora por la puerta treinta.", "en": "Attention: boarding is now at gate thirty.", "note": "el embarque = boarding. Gate changes are announced like this. Listen for puerta and the number." },
+    { "kind": "phrase", "es": "Mi maleta no ha llegado.", "en": "My suitcase hasn't arrived.", "note": "Learn it as a chunk: no ha llegado = hasn't arrived. Say it at the airline's baggage desk, el mostrador, before you leave the hall, and keep the reference number they give you." },
+    {
+      "kind": "note",
+      "md": "**Your rights.** Your flight to Marrakesh leaves from an EU airport, so EU rules cover it whatever the airline. For long delays and cancellations the airline must look after you (food, rebooking, a hotel if needed), and you may be owed compensation. Keep your boarding pass and receipts."
+    }
+  ],
+  "vocab": [
+    { "id": "vuelo-retrasado", "es": "El vuelo está retrasado.", "en": "The flight is delayed.", "pos": "phrase", "ipa": "el ˈβwelo esˈta retɾaˈsaðo", "note": "retrasado = delayed (screens: Retrasado).", "tags": ["airport"] },
+    { "id": "vuelo-cancelado", "es": "El vuelo está cancelado.", "en": "The flight is cancelled.", "pos": "phrase", "ipa": "el ˈβwelo esˈta kanθeˈlaðo", "tags": ["airport"] },
+    { "id": "embarque", "es": "el embarque", "en": "boarding", "pos": "noun", "gender": "m", "ipa": "emˈbaɾke", "note": "Screens: Embarcando = boarding now.", "tags": ["airport"] },
+    { "id": "ultima-llamada", "es": "Última llamada", "en": "Last call", "pos": "phrase", "ipa": "ˈultima ʝaˈmaða", "tags": ["airport"] },
+    { "id": "mi-maleta-no-ha-llegado", "es": "Mi maleta no ha llegado.", "en": "My suitcase hasn't arrived.", "pos": "phrase", "ipa": "mi maˈleta no a ʝeˈɣaðo", "note": "Learn it as a chunk.", "tags": ["airport", "survival"] },
+    { "id": "mostrador", "es": "el mostrador", "en": "desk, counter", "pos": "noun", "gender": "m", "ipa": "mostɾaˈðoɾ", "note": "el mostrador de información, de equipajes.", "tags": ["airport"] }
+  ],
+  "exercises": [
+    { "id": "d056-01", "type": "listen-choose", "audio": "El vuelo está retrasado.", "options": ["El vuelo está retrasado.", "El vuelo está cancelado.", "El vuelo está rebajado."], "answer": 0, "vocab": ["vuelo-retrasado"] },
+    { "id": "d056-02", "type": "listen-choose", "audio": "Última llamada", "options": ["Última llamada", "Última parada", "Última planta"], "answer": 0, "vocab": ["ultima-llamada"] },
+    { "id": "d056-03", "type": "listen-choose", "audio": "el mostrador", "options": ["el mostrador", "el control", "el ascensor"], "answer": 0, "vocab": ["mostrador"] },
+    { "id": "d056-04", "type": "match-pairs", "pairs": [["El vuelo está retrasado.", "The flight is delayed."], ["El vuelo está cancelado.", "The flight is cancelled."], ["el embarque", "boarding"], ["Última llamada", "Last call"], ["Mi maleta no ha llegado.", "My suitcase hasn't arrived."], ["el mostrador", "desk, counter"]], "vocab": ["vuelo-retrasado", "vuelo-cancelado", "embarque", "ultima-llamada", "mi-maleta-no-ha-llegado", "mostrador"] },
+    { "id": "d056-05", "type": "fill-blank", "es": "El vuelo está {{retrasado}}.", "en": "The flight is delayed.", "options": ["retrasado", "retrasada", "rebajado"], "vocab": ["vuelo-retrasado"] },
+    { "id": "d056-06", "type": "fill-blank", "es": "{{Última}} llamada para el vuelo a Marrakech.", "en": "Last call for the flight to Marrakesh.", "options": ["Última", "Próxima", "Primera"], "vocab": ["ultima-llamada", "vuelo"] },
+    { "id": "d056-07", "type": "fill-blank", "es": "Mi maleta no ha {{llegado}}.", "en": "My suitcase hasn't arrived.", "options": ["llegado", "llega", "llegar"], "vocab": ["mi-maleta-no-ha-llegado"] },
+    { "id": "d056-08", "type": "fill-blank", "es": "¿Dónde está el {{mostrador}} de información?", "en": "Where's the information desk?", "options": ["mostrador", "vuelo", "andén"], "vocab": ["mostrador", "donde-esta"] },
+    { "id": "d056-09", "type": "fill-blank", "es": "El vuelo está {{cancelado}}.", "en": "The flight is cancelled.", "options": ["cancelado", "cerrado", "prohibido"], "vocab": ["vuelo-cancelado"] },
+    { "id": "d056-10", "type": "listen-choose", "prompt": "What's happening?", "audio": "El vuelo a Marrakech está retrasado una hora.", "optionsLang": "en", "options": ["It's delayed one hour", "It's cancelled", "It's boarding now"], "answer": 0, "vocab": ["vuelo-retrasado"] },
+    { "id": "d056-11", "type": "listen-choose", "prompt": "What's the announcement?", "audio": "Última llamada para el vuelo a Marrakech. Puerta veinticuatro.", "optionsLang": "en", "options": ["Last call, gate 24", "Delayed, gate 24", "Last call, gate 14"], "answer": 0, "vocab": ["ultima-llamada", "puerta-de-embarque", "veinte", "cuatro"] },
+    { "id": "d056-12", "type": "listen-choose", "prompt": "What changed?", "audio": "Atención: el embarque es ahora por la puerta treinta.", "optionsLang": "en", "options": ["Boarding is now at gate 30", "Boarding starts at 3:00", "Gate 13 is closed"], "answer": 0, "vocab": ["embarque", "puerta-de-embarque", "treinta", "ahora"] },
+    { "id": "d056-13", "type": "listen-choose", "prompt": "What does the baggage desk say?", "audio": "Su maleta llega mañana al hotel.", "optionsLang": "en", "options": ["Your suitcase arrives at the hotel tomorrow", "Your suitcase is lost", "Collect it here today"], "answer": 0, "vocab": ["maleta", "llegar", "manana", "hotel"] },
+    { "id": "d056-14", "type": "dictation", "es": "retrasado", "hint": "delayed", "vocab": ["vuelo-retrasado"] },
+    { "id": "d056-15", "type": "dictation", "es": "el mostrador", "hint": "desk, counter", "vocab": ["mostrador"] },
+    { "id": "d056-16", "type": "dictation", "es": "Mi maleta no ha llegado.", "hint": "My suitcase hasn't arrived. (silent h in ha)", "vocab": ["mi-maleta-no-ha-llegado"] },
+    { "id": "d056-17", "type": "build-sentence", "es": "Mi maleta no ha llegado. ¿Dónde está el mostrador?", "en": "My suitcase hasn't arrived. Where's the desk?", "distractors": ["llega", "andén"], "vocab": ["mi-maleta-no-ha-llegado", "mostrador", "donde-esta"] },
+    { "id": "d056-18", "type": "build-sentence", "es": "El vuelo a Marrakech está cancelado.", "en": "The flight to Marrakesh is cancelled.", "distractors": ["retrasada", "es"], "vocab": ["vuelo-cancelado"] },
+    { "id": "d056-19", "type": "build-sentence", "direction": "audio-to-es", "es": "¿A qué hora es el embarque?", "en": "What time is boarding?", "distractors": ["puerta"], "vocab": ["a-que-hora", "embarque"] },
+    { "id": "d056-20", "type": "repeat", "prompt": "At the baggage desk:", "es": "Hola. Mi maleta no ha llegado.", "en": "Hi. My suitcase hasn't arrived.", "vocab": ["mi-maleta-no-ha-llegado"] },
+    { "id": "d056-21", "type": "repeat", "prompt": "Ask at the gate:", "es": "Perdone, ¿el vuelo está retrasado?", "en": "Excuse me, is the flight delayed?", "vocab": ["perdone", "vuelo-retrasado"] },
+    { "id": "d056-22", "type": "shadow", "es": "Última llamada para el vuelo a Marrakech.", "en": "Last call for the flight to Marrakesh.", "listenFor": "Última is stressed on the first syllable: ÚL-ti-ma. In llamada, ll sounds like y in Madrid: ya-MA-da.", "vocab": ["ultima-llamada"] },
+    { "id": "d056-23", "type": "listen-choose", "prompt": "Review: which seat?", "audio": "¿Ventanilla o pasillo? — Pasillo, por favor.", "optionsLang": "en", "options": ["The aisle", "The window", "No preference"], "answer": 0, "vocab": ["ventanilla-o-pasillo"] },
+    { "id": "d056-24", "type": "repeat", "prompt": "Review: at check-in, no bag.", "es": "Solo llevo equipaje de mano.", "en": "I only have hand luggage.", "vocab": ["equipaje-de-mano"] }
+  ]
+}

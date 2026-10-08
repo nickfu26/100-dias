@@ -1,0 +1,57 @@
+{
+  "$schema": "./schema.json",
+  "day": 51,
+  "level": 3,
+  "title": { "en": "The Metro", "es": "El metro de Madrid" },
+  "objectives": [
+    "Buy a single ticket or top up a transport card",
+    "Ask which line goes where",
+    "Read direction signs and change lines"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**The Madrid Metro** is quick, clean and easy:\n\n- Lines have a number and a colour: **la línea uno** is light blue, **la dos** red, **la tres** yellow. All three stop at **Sol**.\n- Tickets go on a red card, **la tarjeta transporte público**. You buy it once at a machine (small fee) and load journeys onto it.\n- The machines have an English option, but the Spanish words on them are today's words."
+    },
+    { "kind": "phrase", "es": "Un billete sencillo, por favor.", "en": "A single ticket, please.", "note": "el billete = transport ticket (a museum ticket is la entrada). sencillo = single, one journey." },
+    { "kind": "phrase", "es": "Quiero recargar la tarjeta. Diez viajes.", "en": "I'd like to top up the card. Ten journeys.", "note": "recargar = to top up, reload. Diez viajes = the ten-journey ticket, much cheaper per trip than singles." },
+    { "kind": "phrase", "es": "¿Qué línea va a Gran Vía? — La línea uno, dirección Pinar de Chamartín.", "en": "Which line goes to Gran Vía? — Line 1, towards Pinar de Chamartín.", "note": "Signs show the line and the last station: dirección… = towards… Find your stop on the line map, then follow the end station." },
+    { "kind": "phrase", "es": "Haces transbordo en Sol.", "en": "You change lines at Sol.", "note": "hacer transbordo = to change lines. In the metro, follow the signs for the other line's colour. You'll also hear: coges la línea dos = you take line 2 (coger = to take, in Spain)." }
+  ],
+  "vocab": [
+    { "id": "billete-sencillo", "es": "un billete sencillo", "en": "a single ticket", "pos": "phrase", "ipa": "um biˈʝete senˈθiʝo", "note": "el billete = transport ticket.", "tags": ["transport"] },
+    { "id": "tarjeta-transporte", "es": "la tarjeta transporte público", "en": "Madrid's transport card", "pos": "phrase", "ipa": "la taɾˈxeta tɾansˈpoɾte ˈpuβliko", "note": "Red card, bought once, then topped up.", "tags": ["transport", "madrid"] },
+    { "id": "recargar", "es": "recargar", "en": "to top up, reload", "pos": "verb", "ipa": "rekaɾˈɣaɾ", "note": "Quiero recargar la tarjeta.", "tags": ["transport"] },
+    { "id": "diez-viajes", "es": "diez viajes", "en": "ten journeys (10-trip ticket)", "pos": "phrase", "ipa": "ˈdjeθ ˈβjaxes", "note": "el viaje = journey, trip.", "tags": ["transport", "madrid"] },
+    { "id": "linea", "es": "la línea", "en": "line (metro, bus)", "pos": "noun", "gender": "f", "ipa": "ˈlinea", "note": "la línea uno, la línea dos…", "tags": ["transport"] },
+    { "id": "direccion", "es": "dirección…", "en": "towards… (on signs)", "pos": "phrase", "ipa": "diɾekˈθjon", "note": "Also means address.", "tags": ["transport"] },
+    { "id": "hacer-transbordo", "es": "hacer transbordo", "en": "to change (lines, trains)", "pos": "phrase", "ipa": "aˈθeɾ tɾansˈβoɾðo", "note": "Haces transbordo en Sol.", "tags": ["transport"] },
+    { "id": "que-linea-va-a", "es": "¿Qué línea va a…?", "en": "Which line goes to…?", "pos": "phrase", "ipa": "ˈke ˈlinea ˈβa a", "tags": ["transport", "survival"] }
+  ],
+  "exercises": [
+    { "id": "d051-01", "type": "listen-choose", "audio": "un billete sencillo", "options": ["un billete sencillo", "un billete de diez", "una tarjeta sencilla"], "answer": 0, "vocab": ["billete-sencillo"] },
+    { "id": "d051-02", "type": "listen-choose", "audio": "hacer transbordo", "options": ["hacer transbordo", "hacer fotos", "hacer cola"], "answer": 0, "vocab": ["hacer-transbordo"] },
+    { "id": "d051-03", "type": "listen-choose", "audio": "¿Qué línea va a Sol?", "options": ["¿Qué línea va a Sol?", "¿Qué tren va a Sol?", "¿Qué hora es en Sol?"], "answer": 0, "vocab": ["que-linea-va-a"] },
+    { "id": "d051-04", "type": "match-pairs", "pairs": [["un billete sencillo", "a single ticket"], ["recargar", "to top up"], ["diez viajes", "ten journeys"], ["la línea", "the line"], ["dirección…", "towards…"], ["hacer transbordo", "to change lines"]], "vocab": ["billete-sencillo", "recargar", "diez-viajes", "linea", "direccion", "hacer-transbordo"] },
+    { "id": "d051-05", "type": "fill-blank", "es": "Un billete {{sencillo}}, por favor.", "en": "A single ticket, please.", "options": ["sencillo", "sencilla", "solo"], "vocab": ["billete-sencillo"] },
+    { "id": "d051-06", "type": "fill-blank", "es": "Quiero {{recargar}} la tarjeta.", "en": "I'd like to top up the card.", "options": ["recargar", "dejar", "llevar"], "vocab": ["recargar", "tarjeta-transporte"] },
+    { "id": "d051-07", "type": "fill-blank", "es": "La línea uno, {{dirección}} Pinar de Chamartín.", "en": "Line 1, towards Pinar de Chamartín.", "options": ["dirección", "estación", "salida"], "vocab": ["direccion", "linea"] },
+    { "id": "d051-08", "type": "fill-blank", "es": "Haces {{transbordo}} en Sol.", "en": "You change lines at Sol.", "options": ["transbordo", "cola", "fotos"], "vocab": ["hacer-transbordo"] },
+    { "id": "d051-09", "type": "fill-blank", "es": "¿Qué {{línea}} va a Gran Vía?", "en": "Which line goes to Gran Vía?", "options": ["línea", "calle", "planta"], "vocab": ["que-linea-va-a", "linea"] },
+    { "id": "d051-10", "type": "listen-choose", "prompt": "Which line, which direction?", "audio": "Para Gran Vía, la línea uno, dirección Pinar de Chamartín.", "optionsLang": "en", "options": ["Line 1 towards Pinar de Chamartín", "Line 2 towards Pinar de Chamartín", "Line 1 towards Valdecarros"], "answer": 0, "vocab": ["linea", "direccion", "uno"] },
+    { "id": "d051-11", "type": "listen-choose", "prompt": "What does she want?", "audio": "Hola. Quiero recargar la tarjeta con diez viajes.", "optionsLang": "en", "options": ["Top up her card with 10 journeys", "Buy a new card", "A single ticket"], "answer": 0, "vocab": ["recargar", "diez-viajes", "quiero"] },
+    { "id": "d051-12", "type": "listen-choose", "prompt": "What's the route?", "audio": "Coges la línea dos y haces transbordo en Sol.", "optionsLang": "en", "options": ["Line 2, then change at Sol", "Line 2 straight to Sol", "Line 1, then change at Sol"], "answer": 0, "vocab": ["linea", "hacer-transbordo", "dos"] },
+    { "id": "d051-13", "type": "listen-choose", "prompt": "Which lines stop at Sol?", "audio": "En Sol hay tres líneas: la uno, la dos y la tres.", "optionsLang": "en", "options": ["1, 2 and 3", "1, 2 and 5", "2, 3 and 10"], "answer": 0, "vocab": ["linea", "hay", "tres"] },
+    { "id": "d051-14", "type": "dictation", "es": "un billete sencillo", "hint": "a single ticket (ll twice)", "vocab": ["billete-sencillo"] },
+    { "id": "d051-15", "type": "dictation", "es": "la línea uno", "hint": "line 1 (accent on the first í)", "vocab": ["linea", "uno"] },
+    { "id": "d051-16", "type": "dictation", "es": "recargar", "hint": "to top up", "vocab": ["recargar"] },
+    { "id": "d051-17", "type": "build-sentence", "es": "¿Qué línea va a la Plaza de España?", "en": "Which line goes to the Plaza de España?", "distractors": ["calle", "tren"], "vocab": ["que-linea-va-a", "plaza", "espana"] },
+    { "id": "d051-18", "type": "build-sentence", "es": "Quiero recargar la tarjeta, por favor.", "en": "I'd like to top up the card, please.", "distractors": ["billete", "dejar"], "vocab": ["recargar", "quiero"] },
+    { "id": "d051-19", "type": "build-sentence", "direction": "audio-to-es", "es": "Haces transbordo en Sol.", "en": "You change lines at Sol.", "distractors": ["hago"], "vocab": ["hacer-transbordo"] },
+    { "id": "d051-20", "type": "repeat", "prompt": "At the ticket office:", "es": "Hola. Un billete sencillo, por favor.", "en": "Hi. A single ticket, please.", "vocab": ["billete-sencillo"] },
+    { "id": "d051-21", "type": "repeat", "prompt": "Ask someone on the platform:", "es": "Perdone, ¿qué línea va a Gran Vía?", "en": "Excuse me, which line goes to Gran Vía?", "vocab": ["perdone", "que-linea-va-a"] },
+    { "id": "d051-22", "type": "shadow", "es": "Dirección Pinar de Chamartín.", "en": "Towards Pinar de Chamartín.", "listenFor": "dirección ends in THYON. Chamartín is stressed on the last syllable: cha-mar-TÍN.", "vocab": ["direccion"] },
+    { "id": "d051-23", "type": "listen-choose", "prompt": "Review: what is she asking?", "audio": "¿Me pide un taxi para el aeropuerto?", "optionsLang": "en", "options": ["Could you call a taxi to the airport?", "Is the airport far?", "Where's the airport bus?"], "answer": 0, "vocab": ["me-pide-un-taxi", "aeropuerto"] },
+    { "id": "d051-24", "type": "repeat", "prompt": "Review: confirm the taxi fare.", "es": "La tarifa fija al aeropuerto, ¿verdad?", "en": "It's the fixed fare to the airport, right?", "vocab": ["tarifa-fija"] }
+  ]
+}

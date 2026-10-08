@@ -1,0 +1,57 @@
+{
+  "$schema": "./schema.json",
+  "day": 55,
+  "level": 3,
+  "title": { "en": "Checking in for a flight", "es": "Facturar la maleta" },
+  "objectives": [
+    "Check in a bag, or say you only have hand luggage",
+    "Choose window or aisle",
+    "Find security and your gate"
+  ],
+  "teach": [
+    { "kind": "phrase", "es": "Hola. Quiero facturar la maleta.", "en": "Hi. I'd like to check in my suitcase.", "note": "facturar = to check in (a bag). Not la factura (invoice), from day 50." },
+    { "kind": "phrase", "es": "Solo llevo equipaje de mano.", "en": "I only have hand luggage.", "note": "llevo = I carry, I have with me (from llevar, as in Me lo llevo)." },
+    { "kind": "phrase", "es": "¿Ventanilla o pasillo? — Ventanilla, por favor.", "en": "Window or aisle? — Window, please.", "note": "la ventanilla = window (on a plane, train or car). el pasillo = aisle, corridor." },
+    { "kind": "phrase", "es": "Aquí tiene su tarjeta de embarque. Puerta veinticuatro.", "en": "Here's your boarding pass. Gate twenty-four.", "note": "el embarque = boarding. la puerta de embarque = the gate. Gates can change: check the screens." },
+    {
+      "kind": "note",
+      "md": "**Your Barajas morning, Sunday 17 January** (Madrid → Marrakesh):\n\n1. **DIVA kiosk** for any tax-free forms (day 46), *before* you check in your bags.\n2. **Facturar**: check in your bag.\n3. **El control de seguridad**: security. No liquids over 100 ml in hand luggage.\n4. **El control de pasaportes**: Morocco is outside the EU, so you go through passport control on the way out.\n5. **La puerta de embarque**: your gate."
+    },
+    { "kind": "phrase", "es": "¿Dónde está el control de seguridad?", "en": "Where's security?", "note": "la seguridad = security, safety." }
+  ],
+  "vocab": [
+    { "id": "facturar", "es": "facturar", "en": "to check in (a bag)", "pos": "verb", "ipa": "faktuˈɾaɾ", "note": "Quiero facturar la maleta.", "tags": ["airport"] },
+    { "id": "equipaje-de-mano", "es": "el equipaje de mano", "en": "hand luggage", "pos": "phrase", "ipa": "el ekiˈpaxe ðe ˈmano", "tags": ["airport"] },
+    { "id": "ventanilla-o-pasillo", "es": "¿Ventanilla o pasillo?", "en": "Window or aisle?", "pos": "phrase", "ipa": "bentaˈniʝa o paˈsiʝo", "tags": ["airport", "transport"] },
+    { "id": "tarjeta-de-embarque", "es": "la tarjeta de embarque", "en": "boarding pass", "pos": "phrase", "ipa": "la taɾˈxeta ðe emˈbaɾke", "tags": ["airport"] },
+    { "id": "puerta-de-embarque", "es": "la puerta de embarque", "en": "gate (boarding gate)", "pos": "phrase", "ipa": "la ˈpweɾta ðe emˈbaɾke", "note": "la puerta = door.", "tags": ["airport"] },
+    { "id": "control-de-seguridad", "es": "el control de seguridad", "en": "security (check)", "pos": "phrase", "ipa": "el konˈtɾol de seɣuɾiˈðað", "tags": ["airport"] },
+    { "id": "vuelo", "es": "el vuelo", "en": "flight", "pos": "noun", "gender": "m", "ipa": "ˈbwelo", "note": "El vuelo a Marrakech.", "tags": ["airport"] }
+  ],
+  "exercises": [
+    { "id": "d055-01", "type": "listen-choose", "audio": "facturar", "options": ["facturar", "la factura", "fumar"], "answer": 0, "vocab": ["facturar"] },
+    { "id": "d055-02", "type": "listen-choose", "audio": "la puerta de embarque", "options": ["la puerta de embarque", "la tarjeta de embarque", "la Puerta del Sol"], "answer": 0, "vocab": ["puerta-de-embarque"] },
+    { "id": "d055-03", "type": "listen-choose", "audio": "¿Ventanilla o pasillo?", "options": ["¿Ventanilla o pasillo?", "¿Fuera o dentro?", "¿Postre o café?"], "answer": 0, "vocab": ["ventanilla-o-pasillo"] },
+    { "id": "d055-04", "type": "match-pairs", "pairs": [["facturar", "to check in (a bag)"], ["el equipaje de mano", "hand luggage"], ["la tarjeta de embarque", "boarding pass"], ["la puerta de embarque", "gate"], ["el control de seguridad", "security"], ["el vuelo", "flight"]], "vocab": ["facturar", "equipaje-de-mano", "tarjeta-de-embarque", "puerta-de-embarque", "control-de-seguridad", "vuelo"] },
+    { "id": "d055-05", "type": "fill-blank", "es": "Quiero {{facturar}} la maleta.", "en": "I'd like to check in my suitcase.", "options": ["facturar", "factura", "llevo"], "vocab": ["facturar", "maleta"] },
+    { "id": "d055-06", "type": "fill-blank", "es": "Aquí tiene su tarjeta de {{embarque}}.", "en": "Here's your boarding pass.", "options": ["embarque", "seguridad", "vuelo"], "vocab": ["tarjeta-de-embarque"] },
+    { "id": "d055-07", "type": "fill-blank", "es": "Solo llevo equipaje de {{mano}}.", "en": "I only have hand luggage.", "options": ["mano", "pie", "cabeza"], "vocab": ["equipaje-de-mano", "mano"] },
+    { "id": "d055-08", "type": "fill-blank", "es": "¿Cuál es la {{puerta}} de embarque?", "en": "Which is the gate?", "options": ["puerta", "maleta", "planta"], "vocab": ["puerta-de-embarque", "cual"] },
+    { "id": "d055-09", "type": "fill-blank", "es": "El {{vuelo}} a Marrakech sale a las cuatro.", "en": "The flight to Marrakesh leaves at four.", "options": ["vuelo", "andén", "taxi"], "vocab": ["vuelo", "a-las", "cuatro"] },
+    { "id": "d055-10", "type": "listen-choose", "prompt": "What does the check-in agent ask?", "audio": "¿Factura maleta o solo equipaje de mano?", "optionsLang": "en", "options": ["Checking a bag, or hand luggage only?", "Window or aisle?", "Your passport, please"], "answer": 0, "vocab": ["facturar", "equipaje-de-mano", "maleta"] },
+    { "id": "d055-11", "type": "listen-choose", "prompt": "Which gate?", "audio": "El vuelo a Marrakech sale por la puerta veinticuatro.", "optionsLang": "en", "options": ["Gate 24", "Gate 14", "Gate 42"], "answer": 0, "vocab": ["vuelo", "puerta-de-embarque", "veinte", "cuatro"] },
+    { "id": "d055-12", "type": "listen-choose", "prompt": "What does security say?", "audio": "En el control de seguridad, el agua no, por favor.", "optionsLang": "en", "options": ["No water through security", "Buy water after security", "Show your water at the gate"], "answer": 0, "vocab": ["control-de-seguridad", "agua"] },
+    { "id": "d055-13", "type": "listen-choose", "prompt": "Which seat does she want?", "audio": "¿Ventanilla o pasillo? — Ventanilla, por favor.", "optionsLang": "en", "options": ["The window", "The aisle", "She doesn't mind"], "answer": 0, "vocab": ["ventanilla-o-pasillo"] },
+    { "id": "d055-14", "type": "dictation", "es": "la tarjeta de embarque", "hint": "boarding pass", "vocab": ["tarjeta-de-embarque"] },
+    { "id": "d055-15", "type": "dictation", "es": "el vuelo", "hint": "flight", "vocab": ["vuelo"] },
+    { "id": "d055-16", "type": "dictation", "es": "facturar", "hint": "to check in a bag", "vocab": ["facturar"] },
+    { "id": "d055-17", "type": "build-sentence", "es": "Quiero facturar la maleta, por favor.", "en": "I'd like to check in my suitcase, please.", "distractors": ["factura", "mano"], "vocab": ["facturar", "maleta"] },
+    { "id": "d055-18", "type": "build-sentence", "es": "¿Cuál es la puerta de embarque del vuelo?", "en": "Which is the gate for the flight?", "distractors": ["tarjeta", "qué"], "vocab": ["puerta-de-embarque", "vuelo", "cual"] },
+    { "id": "d055-19", "type": "build-sentence", "direction": "audio-to-es", "es": "Solo llevo equipaje de mano.", "en": "I only have hand luggage.", "distractors": ["pie"], "vocab": ["equipaje-de-mano"] },
+    { "id": "d055-20", "type": "repeat", "prompt": "At the check-in desk:", "es": "Hola. Quiero facturar la maleta. Ventanilla, por favor.", "en": "Hi. I'd like to check in my suitcase. A window seat, please.", "vocab": ["facturar", "maleta", "ventanilla-o-pasillo"] },
+    { "id": "d055-21", "type": "repeat", "prompt": "Lost in the terminal:", "es": "Perdone, ¿dónde está el control de seguridad?", "en": "Excuse me, where's security?", "vocab": ["perdone", "control-de-seguridad", "donde-esta"] },
+    { "id": "d055-22", "type": "shadow", "es": "la tarjeta de embarque", "en": "boarding pass", "listenFor": "tarjeta has the throaty j: tar-HE-ta. embarque: em-BAR-ke, the qu is a hard k.", "vocab": ["tarjeta-de-embarque"] },
+    { "id": "d055-23", "type": "listen-choose", "prompt": "Review: what does she answer?", "audio": "¿Motivo del viaje? — Turismo.", "optionsLang": "en", "options": ["Tourism", "Work", "Family"], "answer": 0, "vocab": ["motivo-del-viaje"] },
+    { "id": "d055-24", "type": "repeat", "prompt": "Review: ask how to get to the centre.", "es": "Perdone, ¿cómo voy al centro?", "en": "Excuse me, how do I get to the centre?", "vocab": ["perdone", "como-voy-al-centro"] }
+  ]
+}

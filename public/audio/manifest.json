@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-07T19:47:03+00:00",
+ "generated": "2026-10-08T00:36:07+00:00",
  "voices": {
   "f": "es-ES-ElviraNeural",
   "m": "es-ES-AlvaroNeural"
@@ -43,6 +43,10 @@
    "id": "7303c25eb875",
    "slow": true
   },
+  "Al aeropuerto, por favor. La tarifa fija, ¿verdad?": {
+   "id": "d7b28ba5186b",
+   "slow": true
+  },
   "Algo más, gracias.": {
    "id": "4a6e9778ecc9",
    "slow": true
@@ -69,6 +73,14 @@
   },
   "Aquí tiene la tarjeta de la habitación.": {
    "id": "7f95c28659c2",
+   "slow": true
+  },
+  "Aquí tiene su tarjeta de embarque.": {
+   "id": "79a5015156bf",
+   "slow": true
+  },
+  "Aquí tiene su tarjeta de embarque. Puerta veinticuatro.": {
+   "id": "d4877afb4963",
    "slow": true
   },
   "Ayer, hoy y mañana.": {
@@ -151,6 +163,18 @@
    "id": "9e0a3a481591",
    "slow": true
   },
+  "Coche cinco, asiento doce A.": {
+   "id": "c2907236d2d8",
+   "slow": true
+  },
+  "Coche cuatro, asiento quince B.": {
+   "id": "33c4a81a77fa",
+   "slow": true
+  },
+  "Coges la línea dos y haces transbordo en Sol.": {
+   "id": "a73289306fd3",
+   "slow": true
+  },
   "Con el treinta por ciento de descuento, cuesta cincuenta y seis euros.": {
    "id": "ac27636e5ad5",
    "slow": true
@@ -161,6 +185,10 @@
   },
   "Consonantes fáciles y la hache muda": {
    "id": "e2e92f32b32b",
+   "slow": true
+  },
+  "Correspondencia con línea cinco.": {
+   "id": "0d2f1b897363",
    "slow": true
   },
   "Cuesta noventa euros.": {
@@ -231,6 +259,10 @@
    "id": "bf855ce600eb",
    "slow": true
   },
+  "Dirección Pinar de Chamartín.": {
+   "id": "e74c4329939d",
+   "slow": true
+  },
   "Dos bocadillos de calamares y dos cañas.": {
    "id": "ac24f924b5e7",
    "slow": true
@@ -267,6 +299,10 @@
    "id": "c9e4733faad2",
    "slow": true
   },
+  "Efectuará su salida por la vía cinco.": {
+   "id": "88d6ff1e0150",
+   "slow": true
+  },
   "El Rastro es los domingos por la mañana.": {
    "id": "a13750af2f6b",
    "slow": true
@@ -297,6 +333,10 @@
   },
   "El ascensor está al final, a la izquierda.": {
    "id": "9aa08bebf70e",
+   "slow": true
+  },
+  "El autobús al centro cuesta cinco euros.": {
+   "id": "0a76102ae192",
    "slow": true
   },
   "El banco está al lado del hotel.": {
@@ -359,6 +399,10 @@
    "id": "ffe1d07bfee2",
    "slow": true
   },
+  "El metro de Madrid": {
+   "id": "035566a880cf",
+   "slow": true
+  },
   "El metro está allí, a la salida de la estación.": {
    "id": "e17c201e7020",
    "slow": true
@@ -391,16 +435,36 @@
    "id": "e7d62b264c7c",
    "slow": true
   },
-  "El taxi llega en cinco minutos.": {
-   "id": "e8b80fe4fe9f",
-   "slow": true
-  },
   "El tiempo en enero": {
    "id": "946464cbfac2",
    "slow": true
   },
   "El trece de enero.": {
    "id": "afc393d407fb",
+   "slow": true
+  },
+  "El tren Avant con destino Toledo efectuará su salida por la vía cinco.": {
+   "id": "f80559040693",
+   "slow": true
+  },
+  "El tren a Segovia sale de la vía siete.": {
+   "id": "5872e14a6368",
+   "slow": true
+  },
+  "El tren con destino Segovia va con retraso de veinte minutos.": {
+   "id": "4daf700fafb3",
+   "slow": true
+  },
+  "El tren con destino Toledo efectuará su salida por la vía cinco.": {
+   "id": "13cc8b9f4af5",
+   "slow": true
+  },
+  "El tren con destino Toledo va con retraso.": {
+   "id": "c5cc9751ae2f",
+   "slow": true
+  },
+  "El tren con destino Toledo.": {
+   "id": "9cefb6c8ea5a",
    "slow": true
   },
   "El tren es a las dieciséis cuarenta.": {
@@ -411,8 +475,24 @@
    "id": "10c47268abfd",
    "slow": true
   },
+  "El tren va con retraso.": {
+   "id": "95f8b0fb3550",
+   "slow": true
+  },
+  "El vuelo a Marrakech sale a las cuatro.": {
+   "id": "6a191d4af2a4",
+   "slow": true
+  },
+  "El vuelo a Marrakech sale por la puerta veinticuatro.": {
+   "id": "dbf6412de9a9",
+   "slow": true
+  },
   "Ella es de Madrid.": {
    "id": "7f02e69cee27",
+   "slow": true
+  },
+  "En Sol hay tres líneas: la uno, la dos y la tres.": {
+   "id": "3044a5d26ef4",
    "slow": true
   },
   "En azul no, pero lo tengo en gris y en negro.": {
@@ -421,6 +501,14 @@
   },
   "En efectivo.": {
    "id": "0ee4479c61de",
+   "slow": true
+  },
+  "En el aeropuerto, el metro tiene un suplemento.": {
+   "id": "b87413a0b0a6",
+   "slow": true
+  },
+  "En el control de seguridad, el agua no, por favor.": {
+   "id": "b55b3b21e2bc",
    "slow": true
   },
   "En enero tengo abrigo, gorro y guantes.": {
@@ -587,6 +675,10 @@
    "id": "6dbfe586fcab",
    "slow": true
   },
+  "Facturar la maleta": {
+   "id": "cf628f36103e",
+   "slow": true
+  },
   "Gira a la derecha. Gira a la izquierda.": {
    "id": "6306e8c439b8",
    "slow": true
@@ -637,6 +729,14 @@
   },
   "Hace viento y está nublado.": {
    "id": "3f36d59e1d9e",
+   "slow": true
+  },
+  "Haces transbordo en Sol, a la línea tres.": {
+   "id": "d2ebbc533aea",
+   "slow": true
+  },
+  "Haces transbordo en Sol.": {
+   "id": "85695375ab34",
    "slow": true
   },
   "Hasta cien": {
@@ -717,6 +817,26 @@
   },
   "Hola. Dos entradas, por favor. ¿Hay descuento?": {
    "id": "bcb82b7d0b28",
+   "slow": true
+  },
+  "Hola. Quiero facturar la maleta.": {
+   "id": "e8efa00c6b03",
+   "slow": true
+  },
+  "Hola. Quiero facturar la maleta. Ventanilla, por favor.": {
+   "id": "3948c65dc12a",
+   "slow": true
+  },
+  "Hola. Quiero recargar la tarjeta con diez viajes.": {
+   "id": "4546aea4f502",
+   "slow": true
+  },
+  "Hola. Un billete de ida y vuelta a Toledo, por favor.": {
+   "id": "72a26174f895",
+   "slow": true
+  },
+  "Hola. Un billete sencillo, por favor.": {
+   "id": "a8bfecd42eb7",
    "slow": true
   },
   "Hoy es martes y mañana es miércoles.": {
@@ -883,6 +1003,14 @@
    "id": "5778100389ca",
    "slow": true
   },
+  "La línea uno, dirección Pinar de Chamartín.": {
+   "id": "dde697317477",
+   "slow": true
+  },
+  "La línea uno, dirección Valdecarros.": {
+   "id": "1d24246b9d5b",
+   "slow": true
+  },
   "La mano.": {
    "id": "7a30c44f05b8",
    "slow": true
@@ -899,6 +1027,10 @@
    "id": "9b87d03d9aac",
    "slow": true
   },
+  "La recogida de equipajes está a la derecha.": {
+   "id": "6cb5587401fd",
+   "slow": true
+  },
   "La ropa": {
    "id": "ecc2aa227fe5",
    "slow": true
@@ -909,6 +1041,10 @@
   },
   "La taquilla abre a las nueve.": {
    "id": "b4d5d442920b",
+   "slow": true
+  },
+  "La tarifa fija al aeropuerto, ¿verdad?": {
+   "id": "5b615d31176a",
    "slow": true
   },
   "La tienda cierra a mediodía.": {
@@ -975,6 +1111,10 @@
    "id": "028922100ab8",
    "slow": true
   },
+  "Llegar a Barajas": {
+   "id": "8170ffc4bede",
+   "slow": true
+  },
   "Llego a Madrid el miércoles trece de enero.": {
    "id": "a97aeb60b207",
    "slow": true
@@ -985,6 +1125,10 @@
   },
   "Llego a Madrid el trece de enero.": {
    "id": "6961e759208d",
+   "slow": true
+  },
+  "Llego a la terminal cuatro.": {
+   "id": "1aaf7c78bc3c",
    "slow": true
   },
   "Llueve y hace mucho viento.": {
@@ -1367,6 +1511,10 @@
    "id": "ce9f095cdd79",
    "slow": true
   },
+  "Para Gran Vía, la línea uno, dirección Pinar de Chamartín.": {
+   "id": "1c99662e99fe",
+   "slow": true
+  },
   "Para el tax free, necesito su pasaporte.": {
    "id": "ee87a32245ff",
    "slow": true
@@ -1407,12 +1555,28 @@
    "id": "294388a6fe92",
    "slow": true
   },
+  "Perdone, ¿cómo voy al centro?": {
+   "id": "ce28fc9a22d4",
+   "slow": true
+  },
+  "Perdone, ¿de qué vía sale el tren a Toledo?": {
+   "id": "5a0c5960357a",
+   "slow": true
+  },
   "Perdone, ¿dónde está el ascensor?": {
    "id": "46942fd28efa",
    "slow": true
   },
+  "Perdone, ¿dónde está el control de seguridad?": {
+   "id": "481c35c73674",
+   "slow": true
+  },
   "Perdone, ¿dónde está el guardarropa?": {
    "id": "2f3b7bdb850e",
+   "slow": true
+  },
+  "Perdone, ¿el tren a Toledo va con retraso?": {
+   "id": "965e3b501e81",
    "slow": true
   },
   "Perdone, ¿hay un cajero por aquí?": {
@@ -1441,6 +1605,14 @@
   },
   "Perdone, ¿por dónde se va a la estación de Atocha?": {
    "id": "87642980a40a",
+   "slow": true
+  },
+  "Perdone, ¿qué línea va a Gran Vía?": {
+   "id": "50123de1a2af",
+   "slow": true
+  },
+  "Perdone, ¿qué línea va a Sol?": {
+   "id": "2ab25edc069d",
    "slow": true
   },
   "Perdone…": {
@@ -1571,12 +1743,68 @@
    "id": "8b05ddea309e",
    "slow": true
   },
+  "Primera estación: Sol.": {
+   "id": "759372649bf7",
+   "slow": true
+  },
+  "Prohibido fumar.": {
+   "id": "e92c7e5ea89d",
+   "slow": true
+  },
+  "Prohibido fumar. Prohibido hacer fotos.": {
+   "id": "5ec57f2f217f",
+   "slow": true
+  },
+  "Prohibido hacer fotos.": {
+   "id": "89605ebe2142",
+   "slow": true
+  },
+  "Prohibido pasar.": {
+   "id": "5a6e8528e9f9",
+   "slow": true
+  },
   "Prueba del nivel dos": {
    "id": "9e0554fd7570",
    "slow": true
   },
   "Prueba del nivel uno": {
    "id": "7665db802d27",
+   "slow": true
+  },
+  "Próxima estación": {
+   "id": "be8893a14590",
+   "slow": true
+  },
+  "Próxima estación: Gran Vía.": {
+   "id": "22e72bc6f052",
+   "slow": true
+  },
+  "Próxima estación: Nuevos Ministerios. Correspondencia con líneas seis y diez.": {
+   "id": "2c27dc860455",
+   "slow": true
+  },
+  "Próxima estación: Sol.": {
+   "id": "ee5bfd0bf3c5",
+   "slow": true
+  },
+  "Próxima estación: Sol. Correspondencia con línea dos.": {
+   "id": "f8aa1c09a137",
+   "slow": true
+  },
+  "Próxima estación: Sol. Correspondencia con líneas dos y tres.": {
+   "id": "b42373df6832",
+   "slow": true
+  },
+  "Próxima estación: Ópera.": {
+   "id": "d4c8197e1a1d",
+   "slow": true
+  },
+  "Próximo tren: tres minutos.": {
+   "id": "3819e1994659",
+   "slow": true
+  },
+  "Puede coger el metro, la línea ocho, o el autobús Exprés Aeropuerto.": {
+   "id": "44312119370d",
    "slow": true
   },
   "Quería dos entradas, por favor.": {
@@ -1651,12 +1879,32 @@
    "id": "acbb652a1f2d",
    "slow": true
   },
+  "Quiero facturar la maleta, por favor.": {
+   "id": "593ccbd3fab3",
+   "slow": true
+  },
+  "Quiero facturar la maleta.": {
+   "id": "54ddbff69a12",
+   "slow": true
+  },
   "Quiero otra cerveza.": {
    "id": "9791edc254e6",
    "slow": true
   },
   "Quiero otra habitación.": {
    "id": "3942139db3ec",
+   "slow": true
+  },
+  "Quiero recargar la tarjeta, por favor.": {
+   "id": "ff37387b8dae",
+   "slow": true
+  },
+  "Quiero recargar la tarjeta.": {
+   "id": "8edc0feaff7d",
+   "slow": true
+  },
+  "Quiero recargar la tarjeta. Diez viajes.": {
+   "id": "b68d3889278c",
    "slow": true
   },
   "Quiero un café.": {
@@ -1671,8 +1919,16 @@
    "id": "7ed40a1ada88",
    "slow": true
   },
+  "Recogida de equipajes, número siete.": {
+   "id": "683ee0788dc9",
+   "slow": true
+  },
   "Repaso del nivel dos": {
    "id": "caae1e09c12f",
+   "slow": true
+  },
+  "Salidas y llegadas.": {
+   "id": "c05d8b9089c2",
    "slow": true
   },
   "Sigue todo recto y gira a la derecha.": {
@@ -1705,6 +1961,14 @@
   },
   "Solo estoy pagando.": {
    "id": "65a145e99761",
+   "slow": true
+  },
+  "Solo ida, por favor.": {
+   "id": "f998c27fc635",
+   "slow": true
+  },
+  "Solo llevo equipaje de mano.": {
+   "id": "205671fae74a",
    "slow": true
   },
   "Son catorce euros.": {
@@ -1911,6 +2175,10 @@
    "id": "160bef97e726",
    "slow": true
   },
+  "Sí, la tarifa fija. Treinta y tres euros.": {
+   "id": "2386a85c7c98",
+   "slow": true
+  },
   "Sí, todo muy bien. Está buenísimo.": {
    "id": "1d95a268fa95",
    "slow": true
@@ -2087,8 +2355,28 @@
    "id": "fb634d1271c3",
    "slow": true
   },
+  "Turismo. Cuatro días en Madrid.": {
+   "id": "6c4688b71896",
+   "slow": true
+  },
   "Un abrigo negro.": {
    "id": "63525b2f2f42",
+   "slow": true
+  },
+  "Un billete a Toledo": {
+   "id": "106e4a4e835c",
+   "slow": true
+  },
+  "Un billete de ida y vuelta a Toledo, por favor.": {
+   "id": "24e9a9a0a8d9",
+   "slow": true
+  },
+  "Un billete de ida y vuelta a Toledo.": {
+   "id": "cee8efa78a4c",
+   "slow": true
+  },
+  "Un billete sencillo, por favor.": {
+   "id": "a1a7e0249e91",
    "slow": true
   },
   "Un bocadillo de calamares, por favor.": {
@@ -2707,8 +2995,28 @@
    "id": "33feb9d01a09",
    "slow": true
   },
+  "con destino": {
+   "id": "3cb7a20cfaa2",
+   "slow": true
+  },
+  "con destino…": {
+   "id": "251dc904f9e3",
+   "slow": true
+  },
+  "con reserva": {
+   "id": "e8eb42bc7a18",
+   "slow": true
+  },
+  "con retraso": {
+   "id": "361536ab13ab",
+   "slow": true
+  },
   "con tarjeta": {
    "id": "7c4b65a9005b",
+   "slow": true
+  },
+  "correspondencia con…": {
+   "id": "db3f21b53b69",
    "slow": true
   },
   "cosa": {
@@ -2795,6 +3103,14 @@
    "id": "8c95def646b6",
    "slow": true
   },
+  "diez viajes": {
+   "id": "4d1d3c07ba69",
+   "slow": true
+  },
+  "dirección…": {
+   "id": "c21367ef6809",
+   "slow": true
+  },
   "doce": {
    "id": "c24b8eb0d02c",
    "slow": true
@@ -2807,8 +3123,16 @@
    "id": "e67f16d28ac3",
    "slow": true
   },
+  "efectuará su salida por la vía…": {
+   "id": "964ade63263d",
+   "slow": true
+  },
   "el": {
    "id": "4f1ea4f09db2",
+   "slow": true
+  },
+  "el AVE": {
+   "id": "ef08336bb790",
    "slow": true
   },
   "el abrigo": {
@@ -2831,12 +3155,20 @@
    "id": "80476a2baef8",
    "slow": true
   },
+  "el andén": {
+   "id": "53e82009e9f4",
+   "slow": true
+  },
   "el apellido": {
    "id": "ad6a17db7010",
    "slow": true
   },
   "el ascensor": {
    "id": "617ff87de2b3",
+   "slow": true
+  },
+  "el asiento": {
+   "id": "99f5ce8c252c",
    "slow": true
   },
   "el autobús": {
@@ -2903,6 +3235,14 @@
    "id": "5a556bd2a804",
    "slow": true
   },
+  "el control de pasaportes": {
+   "id": "f68874d58818",
+   "slow": true
+  },
+  "el control de seguridad": {
+   "id": "26dbab76e1c7",
+   "slow": true
+  },
   "el cortado": {
    "id": "6fae175a2461",
    "slow": true
@@ -2921,6 +3261,14 @@
   },
   "el domingo diecisiete de enero": {
    "id": "ce764082064e",
+   "slow": true
+  },
+  "el equipaje": {
+   "id": "478b3448c054",
+   "slow": true
+  },
+  "el equipaje de mano": {
+   "id": "409ba100a67b",
    "slow": true
   },
   "el estómago": {
@@ -3063,6 +3411,10 @@
    "id": "fca6d4d92aa1",
    "slow": true
   },
+  "el próximo tren": {
+   "id": "8d68709a41f9",
+   "slow": true
+  },
   "el queso": {
    "id": "7ca684b5d476",
    "slow": true
@@ -3077,6 +3429,14 @@
   },
   "el supermercado": {
    "id": "8fd632b27c6d",
+   "slow": true
+  },
+  "el suplemento": {
+   "id": "56ba0ccfdc0a",
+   "slow": true
+  },
+  "el suplemento del aeropuerto": {
+   "id": "c0bf9ebbe637",
    "slow": true
   },
   "el sábado": {
@@ -3137,6 +3497,10 @@
   },
   "el vino tinto": {
    "id": "810aa5c1217f",
+   "slow": true
+  },
+  "el vuelo": {
+   "id": "d42553a43f0d",
    "slow": true
   },
   "el zumo": {
@@ -3283,6 +3647,10 @@
    "id": "f6b3e5bc5d4e",
    "slow": true
   },
+  "facturar": {
+   "id": "155e845ec0df",
+   "slow": true
+  },
   "francés": {
    "id": "51222bc00403",
    "slow": true
@@ -3297,6 +3665,10 @@
   },
   "fuera, dentro": {
    "id": "235ed6b8ddf8",
+   "slow": true
+  },
+  "fumar": {
+   "id": "5d368522f0f2",
    "slow": true
   },
   "gato": {
@@ -3371,6 +3743,18 @@
    "id": "0d9b1109210c",
    "slow": true
   },
+  "hacer cola": {
+   "id": "433a82ad2afa",
+   "slow": true
+  },
+  "hacer fotos": {
+   "id": "952e6ef558f9",
+   "slow": true
+  },
+  "hacer transbordo": {
+   "id": "385f24a3e043",
+   "slow": true
+  },
   "hache": {
    "id": "ed01695c414f",
    "slow": true
@@ -3419,6 +3803,10 @@
    "id": "fa75ce70e6f9",
    "slow": true
   },
+  "ida y vuelta": {
+   "id": "ad16531bdcee",
+   "slow": true
+  },
   "inglesa": {
    "id": "9211621e0398",
    "slow": true
@@ -3445,6 +3833,10 @@
   },
   "la": {
    "id": "3efd4c0fe185",
+   "slow": true
+  },
+  "la Puerta del Sol": {
+   "id": "12b10368eaca",
    "slow": true
   },
   "la audioguía": {
@@ -3591,6 +3983,14 @@
    "id": "cdd6b297ee2b",
    "slow": true
   },
+  "la línea": {
+   "id": "ad8f3bc918d8",
+   "slow": true
+  },
+  "la línea uno": {
+   "id": "cc72cffcb064",
+   "slow": true
+  },
   "la maleta": {
    "id": "56429c363ab7",
    "slow": true
@@ -3623,8 +4023,16 @@
    "id": "7303bd8312d7",
    "slow": true
   },
+  "la puerta de embarque": {
+   "id": "db0e31f48249",
+   "slow": true
+  },
   "la ración": {
    "id": "59086c3798c1",
+   "slow": true
+  },
+  "la recogida de equipajes": {
+   "id": "a21f06e486a5",
    "slow": true
   },
   "la salida": {
@@ -3655,12 +4063,28 @@
    "id": "4f3d306025af",
    "slow": true
   },
+  "la tarjeta": {
+   "id": "7d75a95ee6e0",
+   "slow": true
+  },
+  "la tarjeta de embarque": {
+   "id": "a72fd845c527",
+   "slow": true
+  },
   "la tarjeta de la habitación": {
    "id": "7af7537b4a69",
    "slow": true
   },
   "la tarjeta regalo": {
    "id": "d530fa798bc8",
+   "slow": true
+  },
+  "la tarjeta transporte público": {
+   "id": "a33af2598f01",
+   "slow": true
+  },
+  "la terminal": {
+   "id": "ad263aef12aa",
    "slow": true
   },
   "la terraza": {
@@ -3709,6 +4133,10 @@
   },
   "las dos y media": {
    "id": "56770b8db3ab",
+   "slow": true
+  },
+  "las llegadas": {
+   "id": "54893dde38de",
    "slow": true
   },
   "las patatas bravas": {
@@ -4159,6 +4587,14 @@
    "id": "a6d1c03761a9",
    "slow": true
   },
+  "prohibido": {
+   "id": "e49314f71cb7",
+   "slow": true
+  },
+  "prohibido, prohibida": {
+   "id": "7a42e2bed294",
+   "slow": true
+  },
   "puede": {
    "id": "2a5cc4e04b9d",
    "slow": true
@@ -4197,6 +4633,10 @@
   },
   "quince": {
    "id": "3841f10e3a41",
+   "slow": true
+  },
+  "recargar": {
+   "id": "3843319bb07d",
    "slow": true
   },
   "repetir": {
@@ -4455,6 +4895,22 @@
    "id": "c6b6c48fee54",
    "slow": true
   },
+  "un billete de diez": {
+   "id": "c7389cf716d2",
+   "slow": true
+  },
+  "un billete de ida": {
+   "id": "9cbff4831c11",
+   "slow": true
+  },
+  "un billete de ida y vuelta": {
+   "id": "f6902dd66a58",
+   "slow": true
+  },
+  "un billete sencillo": {
+   "id": "b3095f7bf528",
+   "slow": true
+  },
   "un bocadillo de calamares": {
    "id": "f7e5e8cf540e",
    "slow": true
@@ -4489,6 +4945,10 @@
   },
   "una tapa de tortilla": {
    "id": "81ed8034e302",
+   "slow": true
+  },
+  "una tarjeta sencilla": {
+   "id": "3ae75a998d8f",
    "slow": true
   },
   "una tortilla de patatas": {
@@ -4695,6 +5155,10 @@
    "id": "456de1ee8799",
    "slow": true
   },
+  "¿A Toledo? Unos treinta minutos en el Avant.": {
+   "id": "732a783fc7c7",
+   "slow": true
+  },
   "¿A la derecha o a la izquierda?": {
    "id": "3de64fca6f15",
    "slow": true
@@ -4779,6 +5243,14 @@
    "id": "017aab2214db",
    "slow": true
   },
+  "¿Cuál es la puerta de embarque del vuelo?": {
+   "id": "8b1bcc7f2580",
+   "slow": true
+  },
+  "¿Cuál es la puerta de embarque?": {
+   "id": "ff61c71c6580",
+   "slow": true
+  },
   "¿Cuál es tu hotel?": {
    "id": "18f0e5117f73",
    "slow": true
@@ -4793,6 +5265,10 @@
   },
   "¿Cuándo llegas?": {
    "id": "942f888043ef",
+   "slow": true
+  },
+  "¿Cuándo voy al centro?": {
+   "id": "d67cb744a5cb",
    "slow": true
   },
   "¿Cuántas cañas?": {
@@ -4865,6 +5341,22 @@
   },
   "¿Cuánto pide por esto?": {
    "id": "ca3d70b57e33",
+   "slow": true
+  },
+  "¿Cuánto tarda el AVE?": {
+   "id": "db0a55f82bec",
+   "slow": true
+  },
+  "¿Cuánto tarda el tren a Segovia?": {
+   "id": "f03db2a2bb16",
+   "slow": true
+  },
+  "¿Cuánto tarda?": {
+   "id": "ab25e963b3df",
+   "slow": true
+  },
+  "¿Cuánto tarda? — Unos treinta minutos.": {
+   "id": "ebb600122a88",
    "slow": true
   },
   "¿Cuánto te debo?": {
@@ -4951,6 +5443,10 @@
    "id": "95d8f7b2527f",
    "slow": true
   },
+  "¿Cómo voy al centro?": {
+   "id": "07cf452089f3",
+   "slow": true
+  },
   "¿De dónde eres?": {
    "id": "449b0a0e511f",
    "slow": true
@@ -4971,12 +5467,36 @@
    "id": "d40382980c90",
    "slow": true
   },
+  "¿De qué vía sale el tren a Segovia?": {
+   "id": "4087d9b53c20",
+   "slow": true
+  },
+  "¿De qué vía sale el tren?": {
+   "id": "d73f924cc2f6",
+   "slow": true
+  },
+  "¿De qué vía sale?": {
+   "id": "154fa725c04e",
+   "slow": true
+  },
+  "¿De qué vía sale? — De la vía cinco.": {
+   "id": "2dfeb0f46ca5",
+   "slow": true
+  },
+  "¿De qué vía sale? — De la vía ocho.": {
+   "id": "5aabf0e9b530",
+   "slow": true
+  },
   "¿Dentro o cerca?": {
    "id": "0c2c0668064a",
    "slow": true
   },
   "¿Dónde está el centro? ¿Está lejos?": {
    "id": "074ec94affd4",
+   "slow": true
+  },
+  "¿Dónde está el control de seguridad?": {
+   "id": "192940ab1987",
    "slow": true
   },
   "¿Dónde está el guardarropa?": {
@@ -5005,6 +5525,10 @@
   },
   "¿Dónde está la parada de metro? Está allí, no está lejos.": {
    "id": "cbc03e8fd1e4",
+   "slow": true
+  },
+  "¿Dónde está la recogida de equipajes?": {
+   "id": "4b8b458cc73f",
    "slow": true
   },
   "¿Dónde está la salida?": {
@@ -5129,6 +5653,10 @@
   },
   "¿Está rebajado?": {
    "id": "5d1e87ed5a94",
+   "slow": true
+  },
+  "¿Factura maleta o solo equipaje de mano?": {
+   "id": "72a01ef88d02",
    "slow": true
   },
   "¿Fuera o dentro?": {
@@ -5439,6 +5967,22 @@
    "id": "02d074b9f4de",
    "slow": true
   },
+  "¿Motivo del viaje?": {
+   "id": "af2d77bcdcc4",
+   "slow": true
+  },
+  "¿Motivo del viaje? ¿Cuántos días?": {
+   "id": "b13303421c24",
+   "slow": true
+  },
+  "¿Motivo del viaje? — Turismo.": {
+   "id": "40f15476e55c",
+   "slow": true
+  },
+  "¿Motivo del viaje? — Turismo. Cuatro días.": {
+   "id": "c80f89ba735f",
+   "slow": true
+  },
   "¿Muy bien?": {
    "id": "a6d78ab94254",
    "slow": true
@@ -5591,6 +6135,10 @@
    "id": "98780457eb33",
    "slow": true
   },
+  "¿Qué hora es en Sol?": {
+   "id": "ce921fe601ac",
+   "slow": true
+  },
   "¿Qué hora es?": {
    "id": "f9555b50b884",
    "slow": true
@@ -5617,6 +6165,26 @@
   },
   "¿Qué llevan las croquetas? — Llevan jamón.": {
    "id": "9217dac641a0",
+   "slow": true
+  },
+  "¿Qué línea va a Gran Vía?": {
+   "id": "374343235079",
+   "slow": true
+  },
+  "¿Qué línea va a Gran Vía? — La línea uno, dirección Pinar de Chamartín.": {
+   "id": "1f3f9b9ddfb1",
+   "slow": true
+  },
+  "¿Qué línea va a Sol?": {
+   "id": "c9e36b72f863",
+   "slow": true
+  },
+  "¿Qué línea va a la Plaza de España?": {
+   "id": "4adb98a88ef5",
+   "slow": true
+  },
+  "¿Qué línea va a…?": {
+   "id": "021a8d26b21b",
    "slow": true
   },
   "¿Qué me pones?": {
@@ -5675,6 +6243,10 @@
    "id": "62f2ee7dae53",
    "slow": true
   },
+  "¿Qué tren va a Sol?": {
+   "id": "ac2bbfa7999a",
+   "slow": true
+  },
   "¿Qué? ¿Cuándo? ¿Dónde? ¿Por qué?": {
    "id": "ab5d422f66ae",
    "slow": true
@@ -5709,6 +6281,10 @@
   },
   "¿Se puede…?": {
    "id": "4e41d6bde513",
+   "slow": true
+  },
+  "¿Solo ida o ida y vuelta?": {
+   "id": "c8714173ad41",
    "slow": true
   },
   "¿Te gusta el cocido madrileño?": {
@@ -5833,6 +6409,14 @@
   },
   "¿Vais al mercado?": {
    "id": "ab47f974d1b9",
+   "slow": true
+  },
+  "¿Ventanilla o pasillo?": {
+   "id": "6fa09dfe1d6d",
+   "slow": true
+  },
+  "¿Ventanilla o pasillo? — Ventanilla, por favor.": {
+   "id": "e06c95ffad15",
    "slow": true
   },
   "¿Y a ti? A mí también. / A mí no.": {

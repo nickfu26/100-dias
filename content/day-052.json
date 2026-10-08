@@ -1,0 +1,57 @@
+{
+  "$schema": "./schema.json",
+  "day": 52,
+  "level": 3,
+  "title": { "en": "Renfe and day trips", "es": "Un billete a Toledo" },
+  "objectives": [
+    "Buy a return ticket for a day trip",
+    "Ask how long it takes and which track it leaves from",
+    "Find your carriage and seat"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**Day trips by train (Renfe).** Madrid has two big stations:\n\n- **Atocha** (south): trains to **Toledo**, about half an hour.\n- **Chamartín** (north): trains to **Segovia**, about half an hour. Segovia's fast-train station is outside town, with a bus to the aqueduct.\n\nThe fast trains are the **AVE** and the **Avant**. Book ahead on renfe.com, and allow time: bags go through a scanner before the platform."
+    },
+    { "kind": "phrase", "es": "Un billete de ida y vuelta a Toledo, por favor.", "en": "A return ticket to Toledo, please.", "note": "ida = going, vuelta = coming back. One way: solo ida." },
+    { "kind": "phrase", "es": "¿Cuánto tarda? — Unos treinta minutos.", "en": "How long does it take? — About thirty minutes.", "note": "tardar = to take (time). unos treinta = about thirty." },
+    { "kind": "phrase", "es": "¿De qué vía sale? — De la vía cinco.", "en": "Which track does it leave from? — Track five.", "note": "la vía = the track number on the departures board. el andén = the platform you stand on." },
+    { "kind": "phrase", "es": "Coche cuatro, asiento quince B.", "en": "Carriage four, seat fifteen B.", "note": "On a Spanish train, el coche = the carriage (you know it as car). el asiento = seat. Both are on your ticket." },
+    { "kind": "phrase", "es": "Salidas y llegadas.", "en": "Departures and arrivals.", "note": "The two boards in every station and airport. la salida, la llegada (from llegar)." }
+  ],
+  "vocab": [
+    { "id": "ida-y-vuelta", "es": "un billete de ida y vuelta", "en": "a return ticket", "pos": "phrase", "ipa": "um biˈʝete ðe ˈiða i ˈβwelta", "note": "One way: solo ida.", "tags": ["transport"] },
+    { "id": "cuanto-tarda", "es": "¿Cuánto tarda?", "en": "How long does it take?", "pos": "phrase", "ipa": "ˈkwanto ˈtaɾða", "note": "From tardar, to take (time).", "tags": ["transport", "survival"] },
+    { "id": "de-que-via-sale", "es": "¿De qué vía sale?", "en": "Which track does it leave from?", "pos": "phrase", "ipa": "de ˈke ˈβia ˈsale", "note": "la vía = track. sale = it leaves (salir).", "tags": ["transport"] },
+    { "id": "anden", "es": "el andén", "en": "platform", "pos": "noun", "gender": "m", "ipa": "anˈden", "tags": ["transport"] },
+    { "id": "ave", "es": "el AVE", "en": "Spain's high-speed train", "pos": "noun", "gender": "m", "ipa": "ˈaβe", "note": "Said as a word: A-be. Also the Avant.", "tags": ["transport"] },
+    { "id": "asiento", "es": "el asiento", "en": "seat", "pos": "noun", "gender": "m", "ipa": "aˈsjento", "note": "el coche = carriage on a train.", "tags": ["transport"] },
+    { "id": "llegadas", "es": "las llegadas", "en": "arrivals", "pos": "noun", "gender": "f", "ipa": "ʝeˈɣaðas", "note": "Departures: las salidas.", "tags": ["transport", "airport"] }
+  ],
+  "exercises": [
+    { "id": "d052-01", "type": "listen-choose", "audio": "un billete de ida y vuelta", "options": ["un billete de ida y vuelta", "un billete sencillo", "un billete de ida"], "answer": 0, "vocab": ["ida-y-vuelta"] },
+    { "id": "d052-02", "type": "listen-choose", "audio": "¿Cuánto tarda?", "options": ["¿Cuánto tarda?", "¿Cuánto es?", "¿Cuántos sois?"], "answer": 0, "vocab": ["cuanto-tarda"] },
+    { "id": "d052-03", "type": "listen-choose", "audio": "el andén", "options": ["el andén", "el AVE", "andando"], "answer": 0, "vocab": ["anden"] },
+    { "id": "d052-04", "type": "match-pairs", "pairs": [["ida y vuelta", "return"], ["¿Cuánto tarda?", "How long does it take?"], ["¿De qué vía sale?", "Which track does it leave from?"], ["el andén", "platform"], ["el asiento", "seat"], ["las llegadas", "arrivals"]], "vocab": ["ida-y-vuelta", "cuanto-tarda", "de-que-via-sale", "anden", "asiento", "llegadas"] },
+    { "id": "d052-05", "type": "fill-blank", "es": "Un billete de ida y {{vuelta}} a Toledo.", "en": "A return ticket to Toledo.", "options": ["vuelta", "ida", "viaje"], "vocab": ["ida-y-vuelta"] },
+    { "id": "d052-06", "type": "fill-blank", "es": "¿De qué {{vía}} sale el tren?", "en": "Which track does the train leave from?", "options": ["vía", "línea", "calle"], "vocab": ["de-que-via-sale", "tren"] },
+    { "id": "d052-07", "type": "fill-blank", "es": "¿Cuánto {{tarda}} el tren a Segovia?", "en": "How long does the train to Segovia take?", "options": ["tarda", "va", "está"], "vocab": ["cuanto-tarda", "tren"] },
+    { "id": "d052-08", "type": "fill-blank", "es": "Coche cinco, {{asiento}} doce A.", "en": "Carriage five, seat twelve A.", "options": ["asiento", "andén", "vía"], "vocab": ["asiento", "cinco", "doce"] },
+    { "id": "d052-09", "type": "fill-blank", "es": "Solo {{ida}}, por favor.", "en": "One way, please.", "options": ["ida", "vuelta", "viaje"], "vocab": ["ida-y-vuelta"] },
+    { "id": "d052-10", "type": "listen-choose", "prompt": "How long to Toledo?", "audio": "¿A Toledo? Unos treinta minutos en el Avant.", "optionsLang": "en", "options": ["About 30 minutes", "About 13 minutes", "About 3 hours"], "answer": 0, "vocab": ["cuanto-tarda", "treinta", "a-minutos", "unos-unas"] },
+    { "id": "d052-11", "type": "listen-choose", "prompt": "Which track?", "audio": "El tren a Segovia sale de la vía siete.", "optionsLang": "en", "options": ["Track 7", "Track 17", "Track 2"], "answer": 0, "vocab": ["de-que-via-sale", "tren", "siete"] },
+    { "id": "d052-12", "type": "listen-choose", "prompt": "Where's her seat?", "audio": "Coche cuatro, asiento quince B.", "optionsLang": "en", "options": ["Carriage 4, seat 15B", "Carriage 14, seat 5B", "Carriage 4, seat 50B"], "answer": 0, "vocab": ["asiento", "cuatro", "quince"] },
+    { "id": "d052-13", "type": "listen-choose", "prompt": "What does the ticket seller ask?", "audio": "¿Solo ida o ida y vuelta?", "optionsLang": "en", "options": ["One way or return?", "First or second class?", "Window or aisle?"], "answer": 0, "vocab": ["ida-y-vuelta"] },
+    { "id": "d052-14", "type": "dictation", "es": "el andén", "hint": "platform (accent on the e)", "vocab": ["anden"] },
+    { "id": "d052-15", "type": "dictation", "es": "¿Cuánto tarda?", "hint": "How long does it take?", "vocab": ["cuanto-tarda"] },
+    { "id": "d052-16", "type": "dictation", "es": "ida y vuelta", "hint": "return (there and back)", "vocab": ["ida-y-vuelta"] },
+    { "id": "d052-17", "type": "build-sentence", "es": "Un billete de ida y vuelta a Toledo, por favor.", "en": "A return ticket to Toledo, please.", "distractors": ["sencillo", "para"], "vocab": ["ida-y-vuelta"] },
+    { "id": "d052-18", "type": "build-sentence", "es": "¿De qué vía sale el tren a Segovia?", "en": "Which track does the train to Segovia leave from?", "distractors": ["línea", "llega"], "vocab": ["de-que-via-sale", "tren"] },
+    { "id": "d052-19", "type": "build-sentence", "direction": "audio-to-es", "es": "¿Cuánto tarda el AVE?", "en": "How long does the AVE take?", "distractors": ["cuesta"], "vocab": ["cuanto-tarda", "ave"] },
+    { "id": "d052-20", "type": "repeat", "prompt": "At the ticket office in Atocha:", "es": "Hola. Un billete de ida y vuelta a Toledo, por favor.", "en": "Hi. A return ticket to Toledo, please.", "vocab": ["ida-y-vuelta"] },
+    { "id": "d052-21", "type": "repeat", "prompt": "Ask a station worker:", "es": "Perdone, ¿de qué vía sale el tren a Toledo?", "en": "Excuse me, which track does the train to Toledo leave from?", "vocab": ["perdone", "de-que-via-sale", "tren"] },
+    { "id": "d052-22", "type": "shadow", "es": "¿De qué vía sale? — De la vía cinco.", "en": "Which track does it leave from? — Track five.", "listenFor": "vía has two syllables: VI-a, with a soft b-like v after qué. cinco: THEEN-ko.", "vocab": ["de-que-via-sale", "cinco"] },
+    { "id": "d052-23", "type": "fill-blank", "prompt": "Review: the metro.", "es": "La línea uno, {{dirección}} Valdecarros.", "en": "Line 1, towards Valdecarros.", "options": ["dirección", "estación", "salida"], "vocab": ["direccion", "linea"] },
+    { "id": "d052-24", "type": "listen-choose", "prompt": "Review: what's the route?", "audio": "Haces transbordo en Sol, a la línea tres.", "optionsLang": "en", "options": ["Change at Sol to line 3", "Get off at Sol", "Line 3 doesn't stop at Sol"], "answer": 0, "vocab": ["hacer-transbordo", "linea", "tres"] }
+  ]
+}

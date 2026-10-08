@@ -1,0 +1,56 @@
+{
+  "$schema": "./schema.json",
+  "day": 54,
+  "level": 3,
+  "title": { "en": "Arriving at Barajas", "es": "Llegar a Barajas" },
+  "objectives": [
+    "Get through passport control: the reason for your trip",
+    "Find your bags and your terminal",
+    "Ask how to get to the centre, and choose metro, bus or taxi"
+  ],
+  "teach": [
+    { "kind": "phrase", "es": "¿Motivo del viaje? — Turismo. Cuatro días.", "en": "Reason for your trip? — Tourism. Four days.", "note": "At el control de pasaportes, arriving from outside the Schengen area. Short answers are perfect. Officers often switch to English." },
+    { "kind": "phrase", "es": "¿Dónde está la recogida de equipajes?", "en": "Where's baggage claim?", "note": "el equipaje = luggage. Screens show your flight and a belt number." },
+    { "kind": "phrase", "es": "Llego a la terminal cuatro.", "en": "I arrive at terminal 4.", "note": "la terminal is feminine. Barajas has T1, T2, T3 and the separate T4. Which one depends on your airline." },
+    { "kind": "phrase", "es": "Perdone, ¿cómo voy al centro?", "en": "Excuse me, how do I get to the centre?", "note": "voy = I go (ir). The information desk will give you the options below." },
+    {
+      "kind": "note",
+      "md": "**Barajas to the centre:**\n\n- **Metro, line 8** (pink) to Nuevos Ministerios, then change. Airport stations charge **el suplemento del aeropuerto**, an extra €3 on top of the ticket.\n- **Exprés Aeropuerto** bus: €5, runs 24 hours, to Atocha (to Cibeles at night).\n- **Cercanías** train from T4 to Atocha and Chamartín.\n- **Taxi**: the fixed €33 to anywhere inside the M-30 (day 50)."
+    }
+  ],
+  "vocab": [
+    { "id": "control-de-pasaportes", "es": "el control de pasaportes", "en": "passport control", "pos": "phrase", "ipa": "el konˈtɾol de pasaˈpoɾtes", "tags": ["airport"] },
+    { "id": "motivo-del-viaje", "es": "¿Motivo del viaje? — Turismo.", "en": "Reason for your trip? — Tourism.", "pos": "phrase", "ipa": "moˈtiβo ðel ˈβjaxe tuˈɾismo", "note": "Also: Estoy de vacaciones (I'm on holiday).", "tags": ["airport"] },
+    { "id": "equipaje", "es": "el equipaje", "en": "luggage, baggage", "pos": "noun", "gender": "m", "ipa": "ekiˈpaxe", "tags": ["airport", "hotel"] },
+    { "id": "recogida-de-equipajes", "es": "la recogida de equipajes", "en": "baggage claim", "pos": "phrase", "ipa": "la rekoˈxiða ðe ekiˈpaxes", "tags": ["airport"] },
+    { "id": "terminal", "es": "la terminal", "en": "terminal", "pos": "noun", "gender": "f", "ipa": "teɾmiˈnal", "note": "Feminine: la terminal cuatro.", "tags": ["airport"] },
+    { "id": "como-voy-al-centro", "es": "¿Cómo voy al centro?", "en": "How do I get to the centre?", "pos": "phrase", "ipa": "ˈkomo ˈβoi al ˈθentɾo", "tags": ["airport", "transport", "survival"] },
+    { "id": "suplemento", "es": "el suplemento del aeropuerto", "en": "airport supplement (metro)", "pos": "phrase", "ipa": "el supleˈmento ðel aeɾoˈpweɾto", "note": "Extra charge at the airport metro stations.", "tags": ["airport", "transport", "madrid"] }
+  ],
+  "exercises": [
+    { "id": "d054-01", "type": "listen-choose", "audio": "el control de pasaportes", "options": ["el control de pasaportes", "el control de seguridad", "la recogida de equipajes"], "answer": 0, "vocab": ["control-de-pasaportes"] },
+    { "id": "d054-02", "type": "listen-choose", "audio": "la terminal", "options": ["la terminal", "la tarjeta", "la taquilla"], "answer": 0, "vocab": ["terminal"] },
+    { "id": "d054-03", "type": "listen-choose", "audio": "¿Cómo voy al centro?", "options": ["¿Cómo voy al centro?", "¿Cómo te llamas?", "¿Cuándo voy al centro?"], "answer": 0, "vocab": ["como-voy-al-centro"] },
+    { "id": "d054-04", "type": "match-pairs", "pairs": [["el control de pasaportes", "passport control"], ["¿Motivo del viaje?", "Reason for your trip?"], ["el equipaje", "luggage"], ["la recogida de equipajes", "baggage claim"], ["¿Cómo voy al centro?", "How do I get to the centre?"], ["el suplemento", "supplement, extra charge"]], "vocab": ["control-de-pasaportes", "motivo-del-viaje", "equipaje", "recogida-de-equipajes", "como-voy-al-centro", "suplemento"] },
+    { "id": "d054-05", "type": "fill-blank", "es": "¿{{Cómo}} voy al centro?", "en": "How do I get to the centre?", "options": ["Cómo", "Qué", "Cuál"], "vocab": ["como-voy-al-centro"] },
+    { "id": "d054-06", "type": "fill-blank", "es": "La recogida de {{equipajes}} está a la derecha.", "en": "Baggage claim is on the right.", "options": ["equipajes", "pasaportes", "terminales"], "vocab": ["recogida-de-equipajes", "a-la-derecha"] },
+    { "id": "d054-07", "type": "fill-blank", "es": "En el aeropuerto, el metro tiene un {{suplemento}}.", "en": "At the airport, the metro has an extra charge.", "options": ["suplemento", "descuento", "transbordo"], "vocab": ["suplemento", "metro"] },
+    { "id": "d054-08", "type": "fill-blank", "es": "¿Motivo del viaje? — {{Turismo}}.", "en": "Reason for your trip? — Tourism.", "options": ["Turismo", "Terminal", "Equipaje"], "vocab": ["motivo-del-viaje"] },
+    { "id": "d054-09", "type": "fill-blank", "es": "Llego a la {{terminal}} cuatro.", "en": "I arrive at terminal 4.", "options": ["terminal", "planta", "línea"], "vocab": ["terminal", "llegar", "cuatro"] },
+    { "id": "d054-10", "type": "listen-choose", "prompt": "How can you get to the centre?", "audio": "Puede coger el metro, la línea ocho, o el autobús Exprés Aeropuerto.", "optionsLang": "en", "options": ["Metro line 8, or the airport express bus", "Only by taxi", "Metro line 1, or the train"], "answer": 0, "vocab": ["como-voy-al-centro", "linea", "ocho", "autobus"] },
+    { "id": "d054-11", "type": "listen-choose", "prompt": "How much is the bus?", "audio": "El autobús al centro cuesta cinco euros.", "optionsLang": "en", "options": ["€5", "€15", "€50"], "answer": 0, "vocab": ["autobus", "centro", "cuesta", "cinco"] },
+    { "id": "d054-12", "type": "listen-choose", "prompt": "What does the officer ask?", "audio": "¿Motivo del viaje? ¿Cuántos días?", "optionsLang": "en", "options": ["Reason for the trip, and how many days", "Where you're staying", "If you have anything to declare"], "answer": 0, "vocab": ["motivo-del-viaje", "cuantos"] },
+    { "id": "d054-13", "type": "listen-choose", "prompt": "Where are the bags?", "audio": "Recogida de equipajes, número siete.", "optionsLang": "en", "options": ["Belt 7", "Gate 7", "Terminal 7"], "answer": 0, "vocab": ["recogida-de-equipajes", "siete"] },
+    { "id": "d054-14", "type": "dictation", "es": "la terminal", "hint": "terminal", "vocab": ["terminal"] },
+    { "id": "d054-15", "type": "dictation", "es": "el equipaje", "hint": "luggage (qu, j)", "vocab": ["equipaje"] },
+    { "id": "d054-16", "type": "dictation", "es": "¿Cómo voy al centro?", "hint": "How do I get to the centre?", "vocab": ["como-voy-al-centro"] },
+    { "id": "d054-17", "type": "build-sentence", "es": "¿Dónde está la recogida de equipajes?", "en": "Where's baggage claim?", "distractors": ["están", "control"], "vocab": ["recogida-de-equipajes", "donde-esta"] },
+    { "id": "d054-18", "type": "build-sentence", "es": "Turismo. Cuatro días en Madrid.", "en": "Tourism. Four days in Madrid.", "distractors": ["noches", "son"], "vocab": ["motivo-del-viaje", "cuatro"] },
+    { "id": "d054-19", "type": "build-sentence", "direction": "audio-to-es", "es": "¿Cómo voy al centro?", "en": "How do I get to the centre?", "distractors": ["dónde"], "vocab": ["como-voy-al-centro"] },
+    { "id": "d054-20", "type": "repeat", "prompt": "At passport control, the officer asks ¿Motivo del viaje?", "es": "Turismo. Cuatro días en Madrid.", "en": "Tourism. Four days in Madrid.", "vocab": ["motivo-del-viaje", "cuatro"] },
+    { "id": "d054-21", "type": "repeat", "prompt": "At the information desk:", "es": "Perdone, ¿cómo voy al centro?", "en": "Excuse me, how do I get to the centre?", "vocab": ["perdone", "como-voy-al-centro"] },
+    { "id": "d054-22", "type": "shadow", "es": "la recogida de equipajes", "en": "baggage claim", "listenFor": "Two throaty sounds: re-ko-HEE-da (g before i) and e-ki-PA-hes (j).", "vocab": ["recogida-de-equipajes"] },
+    { "id": "d054-23", "type": "listen-choose", "prompt": "Review: what does the announcement say?", "audio": "Próxima estación: Nuevos Ministerios. Correspondencia con líneas seis y diez.", "optionsLang": "en", "options": ["Change here for lines 6 and 10", "Lines 6 and 10 are closed", "This train goes to line 6"], "answer": 0, "vocab": ["proxima-estacion", "correspondencia", "seis", "diez"] },
+    { "id": "d054-24", "type": "repeat", "prompt": "Review: ask which line goes to Sol.", "es": "Perdone, ¿qué línea va a Sol?", "en": "Excuse me, which line goes to Sol?", "vocab": ["perdone", "que-linea-va-a"] }
+  ]
+}

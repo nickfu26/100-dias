@@ -16,8 +16,9 @@
     { "kind": "phrase", "es": "¿Me pide un taxi para el aeropuerto?", "en": "Could you call me a taxi to the airport?", "note": "pide = you ask for, order (usted). Literally 'Will you ask for a taxi for me?'." },
     {
       "kind": "note",
-      "md": "**Taxis in Madrid** are white with a red diagonal stripe. A green light on the roof means it's free.\n\nBetween the city centre (inside the M-30 ring road) and Barajas there's a **fixed fare**, whichever terminal. The price is shown inside the taxi. Apps like Uber and Cabify work too."
+      "md": "**Taxis in Madrid** are white with a red diagonal stripe. A green light on the roof means it's free.\n\nBetween Barajas and anywhere inside the M-30 ring road (which covers the whole centre) there's a **fixed fare of €33**, whichever terminal, day or night. No extras for luggage or night-time.\n\n- Confirm it as you get in: *La tarifa fija al aeropuerto, ¿verdad?*\n- Tipping isn't expected in Madrid taxis.\n\nApps like Uber and Cabify work too."
     },
+    { "kind": "phrase", "es": "La tarifa fija al aeropuerto, ¿verdad?", "en": "It's the fixed fare to the airport, right?", "note": "la tarifa fija = the fixed fare. ¿verdad? = right? Add it to any sentence to check something. The driver will say: Sí, treinta y tres euros." },
     { "kind": "phrase", "es": "¿Me hace la factura a nombre de Smith?", "en": "Can you make out the invoice to Smith?", "note": "la factura = a full invoice with your name, for expenses. A simple receipt is el ticket or el recibo." }
   ],
   "vocab": [
@@ -27,6 +28,7 @@
     { "id": "puedo-dejar-la-maleta", "es": "¿Puedo dejar la maleta aquí?", "en": "Can I leave my suitcase here?", "pos": "phrase", "ipa": "ˈpweðo ðeˈxaɾ la maˈleta aˈki", "tags": ["hotel"] },
     { "id": "taxi", "es": "el taxi", "en": "taxi", "pos": "noun", "gender": "m", "ipa": "ˈtaksi", "tags": ["transport"] },
     { "id": "me-pide-un-taxi", "es": "¿Me pide un taxi?", "en": "Could you call me a taxi?", "pos": "phrase", "ipa": "me ˈpiðe un ˈtaksi", "note": "With tú: ¿Me pides un taxi?", "tags": ["hotel", "transport"] },
+    { "id": "tarifa-fija", "es": "La tarifa fija al aeropuerto, ¿verdad?", "en": "It's the fixed fare to the airport, right?", "pos": "phrase", "ipa": "la taˈɾifa ˈfixa al aeɾoˈpweɾto, βeɾˈðað", "note": "€33 between Barajas and anywhere inside the M-30. ¿verdad? = right?", "tags": ["transport", "madrid"] },
     { "id": "factura", "es": "la factura", "en": "invoice (with your name)", "pos": "noun", "gender": "f", "ipa": "fakˈtuɾa", "note": "A simple receipt: el ticket, el recibo.", "tags": ["hotel", "shopping"] }
   ],
   "exercises": [
@@ -41,10 +43,10 @@
     { "id": "d050-09", "type": "fill-blank", "es": "{{Tengo}} que estar en el aeropuerto a las tres.", "en": "I have to be at the airport at three.", "options": ["Tengo", "Estoy", "Soy"], "vocab": ["tengo-que", "aeropuerto", "a-las"] },
     { "id": "d050-10", "type": "listen-choose", "prompt": "When is check-out?", "audio": "Tiene que dejar la habitación a las doce.", "optionsLang": "en", "options": ["12:00", "2:00", "10:00"], "answer": 0, "vocab": ["tengo-que", "quiero-dejar-la-habitacion", "a-las", "doce"] },
     { "id": "d050-11", "type": "listen-choose", "prompt": "Where can he leave the suitcase?", "audio": "Sí. La maleta, aquí, al lado de la entrada.", "optionsLang": "en", "options": ["Here, next to the entrance", "In the room", "At the station"], "answer": 0, "vocab": ["maleta", "al-lado-de", "entrada"] },
-    { "id": "d050-12", "type": "listen-choose", "prompt": "When does the taxi arrive?", "audio": "El taxi llega en cinco minutos.", "optionsLang": "en", "options": ["In 5 minutes", "In 15 minutes", "In 50 minutes"], "answer": 0, "vocab": ["taxi", "llegar", "a-minutos"] },
+    { "id": "d050-12", "type": "listen-choose", "prompt": "How much is the taxi to Barajas?", "audio": "Sí, la tarifa fija. Treinta y tres euros.", "optionsLang": "en", "options": ["€33, the fixed fare", "€43, the fixed fare", "€33 plus luggage"], "answer": 0, "vocab": ["tarifa-fija", "taxi", "treinta", "tres", "euro"] },
     { "id": "d050-13", "type": "listen-choose", "prompt": "What does reception ask?", "audio": "¿Algo del minibar?", "optionsLang": "en", "options": ["Did you take anything from the minibar?", "Do you want a drink?", "Anything else for breakfast?"], "answer": 0, "vocab": ["algo-mas"] },
     { "id": "d050-14", "type": "dictation", "es": "la maleta", "hint": "suitcase", "vocab": ["maleta"] },
-    { "id": "d050-15", "type": "dictation", "es": "la factura", "hint": "invoice", "vocab": ["factura"] },
+    { "id": "d050-15", "type": "repeat", "prompt": "You get into the taxi. Confirm the fare:", "es": "Al aeropuerto, por favor. La tarifa fija, ¿verdad?", "en": "To the airport, please. It's the fixed fare, right?", "vocab": ["tarifa-fija", "aeropuerto"] },
     { "id": "d050-16", "type": "dictation", "es": "¿Me pide un taxi?", "hint": "Could you call me a taxi?", "vocab": ["me-pide-un-taxi"] },
     { "id": "d050-17", "type": "build-sentence", "es": "¿Puedo dejar la maleta aquí?", "en": "Can I leave my suitcase here?", "distractors": ["mesa", "allí"], "vocab": ["puedo-dejar-la-maleta"] },
     { "id": "d050-18", "type": "build-sentence", "es": "Tengo que estar en el aeropuerto a las tres.", "en": "I have to be at the airport at three.", "distractors": ["soy", "de"], "vocab": ["tengo-que", "aeropuerto", "a-las"] },

@@ -1,0 +1,57 @@
+{
+  "$schema": "./schema.json",
+  "day": 53,
+  "level": 3,
+  "title": { "en": "Signs and announcements", "es": "Próxima estación" },
+  "objectives": [
+    "Catch the key words in metro and train announcements",
+    "Understand next station, change here, destination and delays",
+    "Read prohibido signs"
+  ],
+  "teach": [
+    {
+      "kind": "note",
+      "md": "**Announcements are formal and fast**, but they always use the same few words. Listen for:\n\n- **Próxima estación**: next station\n- **Correspondencia con…**: change here for…\n- **con destino…**: going to…\n- **la vía**: the track\n- **con retraso**: delayed\n\nPlay each one slowly first, then at normal speed. You don't need every word."
+    },
+    { "kind": "phrase", "es": "Próxima estación: Sol. Correspondencia con líneas dos y tres.", "en": "Next station: Sol. Change here for lines 2 and 3.", "note": "What you'll hear on line 1 before Sol. Then: y Cercanías Renfe (local trains)." },
+    { "kind": "phrase", "es": "El tren con destino Toledo efectuará su salida por la vía cinco.", "en": "The train to Toledo will leave from track five.", "note": "efectuará su salida = will make its departure. Very formal, only in announcements. Catch three words: destino, salida, vía." },
+    { "kind": "phrase", "es": "El tren va con retraso.", "en": "The train is delayed.", "note": "el retraso = delay. On boards: Retrasado. Ask: ¿Va con retraso?" },
+    { "kind": "phrase", "es": "Próximo tren: tres minutos.", "en": "Next train: three minutes.", "note": "On the screens above every metro platform." },
+    { "kind": "phrase", "es": "Prohibido fumar. Prohibido hacer fotos.", "en": "No smoking. No photos.", "note": "prohibido = forbidden. Also prohibida for feminine nouns: Prohibida la entrada (No entry)." }
+  ],
+  "vocab": [
+    { "id": "proxima-estacion", "es": "Próxima estación", "en": "Next station", "pos": "phrase", "ipa": "ˈpɾoksima estaˈθjon", "tags": ["transport"] },
+    { "id": "correspondencia", "es": "correspondencia con…", "en": "change here for… (connection)", "pos": "phrase", "ipa": "koɾespondenˈθja kon", "note": "Metro announcements and maps.", "tags": ["transport"] },
+    { "id": "con-destino", "es": "con destino…", "en": "going to…, bound for…", "pos": "phrase", "ipa": "kon desˈtino", "tags": ["transport"] },
+    { "id": "efectuara-su-salida", "es": "efectuará su salida por la vía…", "en": "will leave from track…", "pos": "phrase", "ipa": "efektwaˈɾa su saˈliða poɾ la ˈβia", "note": "Announcement language.", "tags": ["transport"] },
+    { "id": "con-retraso", "es": "con retraso", "en": "delayed", "pos": "phrase", "ipa": "kon reˈtɾaso", "note": "el retraso = delay. El tren va con retraso.", "tags": ["transport", "airport"] },
+    { "id": "proximo-tren", "es": "el próximo tren", "en": "the next train", "pos": "phrase", "ipa": "el ˈpɾoksimo ˈtɾen", "note": "Feminine: la próxima estación.", "tags": ["transport"] },
+    { "id": "prohibido", "es": "prohibido, prohibida", "en": "forbidden, not allowed", "pos": "adj", "ipa": "pɾoiˈβiðo, pɾoiˈβiða", "note": "The h is silent. Prohibido fumar = No smoking.", "tags": ["survival"] }
+  ],
+  "exercises": [
+    { "id": "d053-01", "type": "listen-choose", "audio": "Próxima estación: Sol.", "options": ["Próxima estación: Sol.", "Próxima estación: Ópera.", "Primera estación: Sol."], "answer": 0, "vocab": ["proxima-estacion"] },
+    { "id": "d053-02", "type": "listen-choose", "audio": "con retraso", "options": ["con retraso", "con destino", "con reserva"], "answer": 0, "vocab": ["con-retraso"] },
+    { "id": "d053-03", "type": "listen-choose", "audio": "Prohibido fumar.", "options": ["Prohibido fumar.", "Prohibido pasar.", "Prohibido hacer fotos."], "answer": 0, "vocab": ["prohibido"] },
+    { "id": "d053-04", "type": "match-pairs", "pairs": [["Próxima estación", "Next station"], ["correspondencia con…", "change here for…"], ["con destino…", "going to…"], ["efectuará su salida por la vía…", "will leave from track…"], ["con retraso", "delayed"], ["prohibido", "not allowed"]], "vocab": ["proxima-estacion", "correspondencia", "con-destino", "efectuara-su-salida", "con-retraso", "prohibido"] },
+    { "id": "d053-05", "type": "fill-blank", "es": "{{Próxima}} estación: Gran Vía.", "en": "Next station: Gran Vía.", "options": ["Próxima", "Próximo", "Primera"], "vocab": ["proxima-estacion"] },
+    { "id": "d053-06", "type": "fill-blank", "es": "Correspondencia {{con}} línea cinco.", "en": "Change here for line 5.", "options": ["con", "de", "a"], "vocab": ["correspondencia", "linea", "cinco"] },
+    { "id": "d053-07", "type": "fill-blank", "es": "El tren con {{destino}} Toledo.", "en": "The train to Toledo.", "options": ["destino", "retraso", "reserva"], "vocab": ["con-destino", "tren"] },
+    { "id": "d053-08", "type": "fill-blank", "es": "El tren va {{con}} retraso.", "en": "The train is delayed.", "options": ["con", "de", "en"], "vocab": ["con-retraso", "tren"] },
+    { "id": "d053-09", "type": "fill-blank", "es": "{{Prohibido}} hacer fotos.", "en": "No photos.", "options": ["Prohibido", "Próxima", "Salida"], "vocab": ["prohibido", "se-pueden-hacer-fotos"] },
+    { "id": "d053-10", "type": "listen-choose", "prompt": "Where do you change for line 2?", "audio": "Próxima estación: Sol. Correspondencia con líneas dos y tres.", "optionsLang": "en", "options": ["At Sol, the next stop", "At the stop after Sol", "Line 2 doesn't stop here"], "answer": 0, "vocab": ["proxima-estacion", "correspondencia", "linea"] },
+    { "id": "d053-11", "type": "listen-choose", "prompt": "Which track?", "audio": "El tren Avant con destino Toledo efectuará su salida por la vía cinco.", "optionsLang": "en", "options": ["Track 5", "Track 15", "Track 9"], "answer": 0, "vocab": ["con-destino", "efectuara-su-salida", "cinco"] },
+    { "id": "d053-12", "type": "listen-choose", "prompt": "What's the news?", "audio": "El tren con destino Segovia va con retraso de veinte minutos.", "optionsLang": "en", "options": ["The Segovia train is 20 minutes late", "The Segovia train leaves in 20 minutes", "The Segovia train is cancelled"], "answer": 0, "vocab": ["con-destino", "con-retraso", "veinte", "a-minutos"] },
+    { "id": "d053-13", "type": "listen-choose", "prompt": "When's the next metro?", "audio": "Próximo tren: tres minutos.", "optionsLang": "en", "options": ["In 3 minutes", "In 13 minutes", "At 3:00"], "answer": 0, "vocab": ["proximo-tren", "tres"] },
+    { "id": "d053-14", "type": "dictation", "es": "Próxima estación", "hint": "Next station (two accents)", "vocab": ["proxima-estacion"] },
+    { "id": "d053-15", "type": "dictation", "es": "con retraso", "hint": "delayed", "vocab": ["con-retraso"] },
+    { "id": "d053-16", "type": "dictation", "es": "prohibido", "hint": "not allowed (silent h)", "vocab": ["prohibido"] },
+    { "id": "d053-17", "type": "build-sentence", "es": "El tren con destino Toledo va con retraso.", "en": "The train to Toledo is delayed.", "distractors": ["dirección", "de"], "vocab": ["con-destino", "con-retraso", "tren"] },
+    { "id": "d053-18", "type": "build-sentence", "es": "Próxima estación: Sol. Correspondencia con línea dos.", "en": "Next station: Sol. Change here for line 2.", "distractors": ["primera", "de"], "vocab": ["proxima-estacion", "correspondencia", "linea"] },
+    { "id": "d053-19", "type": "build-sentence", "direction": "audio-to-es", "es": "Efectuará su salida por la vía cinco.", "en": "It will leave from track five.", "distractors": ["línea"], "vocab": ["efectuara-su-salida", "cinco"] },
+    { "id": "d053-20", "type": "repeat", "prompt": "Check with someone on the platform:", "es": "Perdone, ¿el tren a Toledo va con retraso?", "en": "Excuse me, is the train to Toledo delayed?", "vocab": ["perdone", "con-retraso", "tren"] },
+    { "id": "d053-21", "type": "repeat", "prompt": "Read the museum sign aloud:", "es": "Prohibido hacer fotos.", "en": "No photos.", "vocab": ["prohibido"] },
+    { "id": "d053-22", "type": "shadow", "es": "El tren con destino Toledo efectuará su salida por la vía cinco.", "en": "The train to Toledo will leave from track five.", "listenFor": "Fast and flat, like a real announcement. Keep up with the slow version first, then try normal speed.", "vocab": ["con-destino", "efectuara-su-salida"] },
+    { "id": "d053-23", "type": "listen-choose", "prompt": "Review: which track?", "audio": "¿De qué vía sale? — De la vía ocho.", "optionsLang": "en", "options": ["Track 8", "Track 18", "Line 8"], "answer": 0, "vocab": ["de-que-via-sale", "ocho"] },
+    { "id": "d053-24", "type": "repeat", "prompt": "Review: ask how long it takes.", "es": "¿Cuánto tarda el tren a Segovia?", "en": "How long does the train to Segovia take?", "vocab": ["cuanto-tarda", "tren"] }
+  ]
+}

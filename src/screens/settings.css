@@ -68,6 +68,21 @@
 }
 
 /* ---------- Backup ---------- */
+.storage-status {
+  display: grid;
+  justify-items: start;
+  gap: 6px;
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border-radius: var(--r-s);
+  background: var(--paper-sunk);
+}
+.storage-ok strong {
+  color: var(--ok);
+}
+.storage-warn strong {
+  color: var(--bad);
+}
 .backup-last {
   margin-bottom: 12px;
   font-weight: 600;

@@ -12,7 +12,7 @@ import { requestPersistentStorage } from './lib/storage';
 import { registerSW } from 'virtual:pwa-register';
 
 void loadManifest();
-void requestPersistentStorage();
+void requestPersistentStorage().then((granted) => console.info('[storage] persisted:', granted));
 
 // autoUpdate: when a new service worker takes over, the page reloads onto the new build.
 // iOS Home Screen apps resume rather than relaunch, so also check on return to foreground.

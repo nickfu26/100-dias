@@ -1,4 +1,5 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { isStandalone, requestPersistentStorage, storageStatus } from '../lib/storage';
 import { backupMeta, exportBackup, makeBackup, parseBackup, restoreBackup, summarize, type Backup } from '../lib/backup';
 import { formatLongEs, localDateKey } from '../lib/date';
 import { useStore } from '../lib/persisted';
@@ -134,6 +135,34 @@ function SpeechLogButton() {
   );
 }
 
+/** Whether the browser has promised not to evict this phone's data, and where the app is running from. */
+function StorageStatus() {
+  const [s, setS] = useState<Awaited<ReturnType<typeof storageStatus>> | null>(null);
+  const refresh = () => storageStatus().then(setS);
+  useEffect(() => {
+    void refresh();
+  }, []);
+  if (!s) return null;
+  const standalone = isStandalone();
+  return (
+    <div className="storage-status">
+      <p className={s.persisted ? 'storage-ok' : 'storage-warn'}>
+        Almacenamiento persistente:{' '}
+        <strong>{s.persisted === null ? 'not supported here' : s.persisted ? 'granted ✓' : 'not granted'}</strong>
+      </p>
+      <p className="muted small">
+        {standalone ? 'Running from Home Screen' : 'Running in a browser tab: this has separate data from the Home Screen app'}
+        {s.usageMB !== undefined && <> · <span className="num">{s.usageMB.toFixed(1)}</span> MB used</>}
+      </p>
+      {s.persisted === false && (
+        <button className="tile tile--light tile--small" onClick={() => requestPersistentStorage().then(refresh)}>
+          Ask again
+        </button>
+      )}
+    </div>
+  );
+}
+
 function BackupSection() {
   const meta = useStore(backupMeta);
   const [status, setStatus] = useState<string | null>(null);
@@ -183,6 +212,7 @@ function BackupSection() {
         Your progress lives only on this phone. Export a backup now and then (weekly is plenty) and keep it in Files or email it
         to yourself.
       </p>
+      <StorageStatus />
       <p className={`backup-last${last ? '' : ' backup-last--never'}`}>
         {last ? <>Last backup: {formatLongEs(last)}</> : 'No backup yet'}
       </p>

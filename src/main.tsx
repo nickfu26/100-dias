@@ -9,6 +9,7 @@ import './styles/speech.css';
 import { App } from './App';
 import { loadManifest } from './audio/manifest';
 import { requestPersistentStorage } from './lib/storage';
+import { loadAllStores } from './lib/persisted';
 import { registerSW } from 'virtual:pwa-register';
 
 void loadManifest();
@@ -26,8 +27,11 @@ registerSW({
   },
 });
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+// Saved progress loads (IndexedDB, then the localStorage copies) before anything can read or change it.
+void loadAllStores().then(() =>
+  createRoot(document.getElementById('root')!).render(
+    <StrictMode>
+      <App />
+    </StrictMode>,
+  ),
 );

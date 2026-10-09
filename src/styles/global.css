@@ -273,6 +273,15 @@ p {
 }
 
 /* ---------- Preview banner ---------- */
+.storage-banner {
+  margin: 4px 0 8px;
+  padding: 10px 14px;
+  border-radius: var(--r-m);
+  background: var(--bad-wash);
+  color: var(--ink);
+  font-size: 14px;
+}
+
 .preview-banner {
   margin: 4px 0 8px;
   padding: 10px 14px;

@@ -5,7 +5,7 @@
 import { createEmptyCard, fsrs, generatorParameters, Rating, State, type Card, type Grade } from 'ts-fsrs';
 import type { Exercise } from '../content/types';
 import type { ItemResult } from '../lesson/session';
-import { persisted, useStore, type Store } from '../lib/persisted';
+import { persisted, requireObject, useStore, type Store } from '../lib/persisted';
 import { localDateKey } from '../lib/date';
 import { settingsStore, useSettings } from '../lib/settings';
 
@@ -16,8 +16,8 @@ export interface StoredCard extends Omit<Card, 'due' | 'last_review'> {
 }
 export type CardMap = Record<string, StoredCard>;
 
-export const realCards = persisted<CardMap>('100dias.cards.v1', {});
-export const previewCards = persisted<CardMap>('100dias.cards.preview.v1', {});
+export const realCards = persisted<CardMap>('100dias.cards.v1', {}, (r) => requireObject(r) as CardMap);
+export const previewCards = persisted<CardMap>('100dias.cards.preview.v1', {}, (r) => requireObject(r) as CardMap);
 export const activeCards = (): Store<CardMap> => (settingsStore.get().preview ? previewCards : realCards);
 
 export function useCards(): CardMap {

@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import { isStandalone, requestPersistentStorage, storageStatus } from '../lib/storage';
+import { idbAvailable } from '../lib/durable';
 import { backupMeta, exportBackup, makeBackup, parseBackup, restoreBackup, summarize, type Backup } from '../lib/backup';
 import { formatLongEs, localDateKey } from '../lib/date';
-import { useStore } from '../lib/persisted';
+import { storageHealth, useStore } from '../lib/persisted';
 import { Link } from 'react-router';
 import { resetPreviewProgress, useProgress } from '../progress/store';
 import { copySpeechLog } from '../lib/debugLog';
@@ -135,6 +136,14 @@ function SpeechLogButton() {
   );
 }
 
+function savedIn(): string {
+  const { backends: b, unknown } = storageHealth();
+  if (unknown.length) return 'couldn’t read saved data, not saving (reopen the app)';
+  const mark = (h: { read: string; write: string }) => (h.read === 'failed' || h.write === 'failed' ? '✗' : '✓');
+  const db = idbAvailable() ? `IndexedDB ${mark(b.idb)}` : 'IndexedDB unavailable';
+  return `${db} · backup copy ${mark(b.mirror)}`;
+}
+
 /** Whether the browser has promised not to evict this phone's data, and where the app is running from. */
 function StorageStatus() {
   const [s, setS] = useState<Awaited<ReturnType<typeof storageStatus>> | null>(null);
@@ -154,6 +163,7 @@ function StorageStatus() {
         {standalone ? 'Running from Home Screen' : 'Running in a browser tab: this has separate data from the Home Screen app'}
         {s.usageMB !== undefined && <> · <span className="num">{s.usageMB.toFixed(1)}</span> MB used</>}
       </p>
+      <p className="muted small">Saved in: {savedIn()}</p>
       {s.persisted === false && (
         <button className="tile tile--light tile--small" onClick={() => requestPersistentStorage().then(refresh)}>
           Ask again

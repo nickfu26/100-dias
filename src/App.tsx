@@ -3,12 +3,14 @@ import { Home } from './screens/Home';
 import { CheckpointScreen, Lesson, Review } from './screens/Lesson';
 import { MicTest } from './screens/MicTest';
 import { Settings } from './screens/Settings';
+import { StorageBanner } from './components/StorageBanner';
 
 export function App() {
   return (
     <HashRouter>
       <div className="frame">
         <div className="band" aria-hidden="true" />
+        <StorageBanner />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/day/:day" element={<Lesson />} />

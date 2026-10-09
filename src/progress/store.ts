@@ -1,7 +1,7 @@
 // Course progress: completed days, active dates (for the streak) and half-finished lessons.
 // Two separate profiles: real progress, and preview progress (Preview mode) that never
 // touches real completion or the streak.
-import { persisted, useStore, type Store } from '../lib/persisted';
+import { persisted, requireObject, useStore, type Store } from '../lib/persisted';
 import { addDays, localDateKey } from '../lib/date';
 import { settingsStore, useSettings } from '../lib/settings';
 import type { LessonSnapshot } from '../lesson/session';
@@ -33,7 +33,7 @@ export interface ProgressData {
 }
 
 const EMPTY: ProgressData = { completed: {}, activeDates: [], inProgress: {} };
-const parse = (raw: unknown): ProgressData => ({ ...EMPTY, ...(raw as Partial<ProgressData>) });
+const parse = (raw: unknown): ProgressData => ({ ...EMPTY, ...(requireObject(raw) as Partial<ProgressData>) });
 
 export const realProgress = persisted<ProgressData>('100dias.progress.v1', EMPTY, parse);
 export const previewProgress = persisted<ProgressData>('100dias.progress.preview.v1', EMPTY, parse);

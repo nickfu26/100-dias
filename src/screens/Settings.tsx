@@ -5,7 +5,8 @@ import { backupMeta, exportBackup, makeBackup, parseBackup, restoreBackup, summa
 import { formatLongEs, localDateKey } from '../lib/date';
 import { storageHealth, useStore } from '../lib/persisted';
 import { Link } from 'react-router';
-import { resetPreviewProgress, useProgress } from '../progress/store';
+import { realProgress, recoverableDays, recoverEarlyDays, resetPreviewProgress, useProgress } from '../progress/store';
+import { backfillCards } from '../srs/backfill';
 import { copySpeechLog } from '../lib/debugLog';
 import { setPreview, setSpeakingMode, useSettings, type SpeakingMode } from '../lib/settings';
 import './settings.css';
@@ -68,6 +69,8 @@ export function Settings() {
         )}
       </section>
 
+      <RecoverySection />
+
       <SpeakingSection />
 
       <BackupSection />
@@ -83,6 +86,52 @@ export function Settings() {
 
       <p className="build num settings-build">Build {__APP_VERSION__}</p>
     </main>
+  );
+}
+
+/** One-time: mark lost Días 1–5 complete. Shown only while some are missing and it has never run. */
+function RecoverySection() {
+  const { preview } = useSettings();
+  const real = useStore(realProgress);
+  const [done, setDone] = useState<number[] | null>(null);
+  const [failed, setFailed] = useState(false);
+  const missing = recoverableDays(real);
+
+  if (done)
+    return (
+      <section className="section" aria-labelledby="recover-h">
+        <h2 id="recover-h">Recuperar Días 1–5</h2>
+        <p className="backup-status" role="status">
+          Recuperado ✓ Días {done.join(', ')} marked done; their words are in your review.
+        </p>
+      </section>
+    );
+  if (preview || !missing.length) return null;
+  return (
+    <section className="section" aria-labelledby="recover-h">
+      <h2 id="recover-h">Recuperar Días 1–5</h2>
+      <p className="setting-help">
+        Progress for Días {missing.join(', ')} was lost. If you did them, mark them done: the Level 1 test opens once Días 1–10 are
+        complete, and their words join your review. This only touches Días 1–5 and works once.
+      </p>
+      <button
+        className="tile tile--light tile--block"
+        onClick={() => {
+          const days = recoverEarlyDays();
+          if (days.length) {
+            setDone(days);
+            void backfillCards();
+          } else setFailed(true);
+        }}
+      >
+        Marcar como hechos
+      </button>
+      {failed && (
+        <p className="error" role="alert">
+          Saved progress couldn’t be read, so nothing was changed. Close and reopen the app, then try again.
+        </p>
+      )}
+    </section>
   );
 }
 

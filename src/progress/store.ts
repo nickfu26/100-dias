@@ -11,6 +11,8 @@ export interface DayRecord {
   lastCompletedOn: string;
   correct: number; // first-try correct on the latest run
   graded: number;
+  /** Marked complete by the one-time recovery (no lesson run, so no score). */
+  recovered?: true;
 }
 
 export interface CheckpointAttempt {
@@ -30,6 +32,8 @@ export interface ProgressData {
   activeDates: string[];
   inProgress: Record<string, LessonSnapshot>; // by day number (0 = review, −N = checkpoint N)
   checkpoints?: Record<string, CheckpointRecord>; // by level
+  /** Set once the one-time recovery of Días 1–5 has run; it never runs again. */
+  recovery?: { on: string; days: number[] };
 }
 
 const EMPTY: ProgressData = { completed: {}, activeDates: [], inProgress: {} };
@@ -65,6 +69,7 @@ export function completeDay(day: number, correct: number, graded: number, today 
     const prev = p.completed[day];
     const { [day]: _, ...inProgress } = p.inProgress;
     return {
+      ...p, // keep checkpoint results and the recovery marker
       completed: {
         ...p.completed,
         [day]: { firstCompletedOn: prev?.firstCompletedOn ?? today, lastCompletedOn: today, correct, graded },
@@ -104,6 +109,37 @@ export function finishReviewSession(today = localDateKey()) {
       inProgress,
     };
   });
+}
+
+/** The only days the one-time recovery can mark: progress for these was lost. */
+export const RECOVERABLE_DAYS = [1, 2, 3, 4, 5] as const;
+
+/** Días 1–5 the recovery would mark: none once it has run. */
+export function recoverableDays(p: ProgressData): number[] {
+  if (p.recovery) return [];
+  return RECOVERABLE_DAYS.filter((d) => !p.completed[d]);
+}
+
+/**
+ * Mark the missing Días 1–5 complete and record that the recovery ran. Every other day, the
+ * streak, checkpoints and half-finished lessons are left as they are. A no-op once it has run.
+ */
+export function applyRecovery(p: ProgressData, today = localDateKey()): ProgressData {
+  const days = recoverableDays(p);
+  if (!days.length) return p;
+  const added = Object.fromEntries(
+    days.map((d): [number, DayRecord] => [d, { firstCompletedOn: today, lastCompletedOn: today, correct: 0, graded: 0, recovered: true }]),
+  );
+  return { ...p, completed: { ...p.completed, ...added }, recovery: { on: today, days } };
+}
+
+/** Run the recovery on REAL progress (never preview). Returns the days marked; [] if nothing to do or not saving. */
+export function recoverEarlyDays(today = localDateKey()): number[] {
+  if (realProgress.status() !== 'ready') return []; // a change we can't save could be repeated later
+  const days = recoverableDays(realProgress.get());
+  if (!days.length) return [];
+  realProgress.set((p) => applyRecovery(p, today));
+  return days;
 }
 
 export function resetPreviewProgress() {
